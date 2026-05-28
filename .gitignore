@@ -1,0 +1,17 @@
+# Aider
+.aider*
+
+# 临时请求/响应文件
+req*.txt
+resp*.txt
+requests*.txt
+
+# 临时音频/语音文件
+current_audio_b64.txt
+current_utterance_*.json
+
+# Playwright MCP
+.playwright-mcp/
+
+# 当前页面快照
+current-page.md
