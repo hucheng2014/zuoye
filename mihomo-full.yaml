@@ -1,0 +1,312 @@
+mode: rule
+profile:
+  store-selected: true
+  store-fake-ip: true
+external-controller: 0.0.0.0:9090
+secret: ''
+external-ui: /home/jianglei/V2RUI/ui
+mixed-port: 7897
+tun:
+  auto-redir: true
+  enable: true
+  stack: mixed
+  auto-route: true
+  auto-detect-interface: true
+  interface-name: wlp2s0
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  - udp://any:53
+allow-lan: true
+bind-address: '*'
+log-level: debug
+ipv6: true
+hosts:
+  dns.alidns.com: 223.5.5.5
+  cloudflare-dns.com: 1.1.1.1
+  dns.google: 8.8.8.8
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 119.29.29.29
+  - 223.5.5.5
+  proxy-server-nameserver:
+  - tls://dns.alidns.com:853
+  - https://doh.pub/dns-query
+  nameserver:
+  - 119.29.29.29
+  - 223.5.5.5
+  fallback:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  nameserver-policy:
+    geosite:geolocation-!cn:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.tryrating.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    +.scilliance.com:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  listen: 0.0.0.0:53
+  fake-ip-filter:
+  - '*.lan'
+  - '*.local'
+  - localhost.ptlogin2.qq.com
+  - +.msftconnecttest.com
+  - +.msftncsi.com
+proxy-providers:
+  smjc:
+    type: http
+    url: https://sub-1.smjcdh.top/smjc/api/v1/client/subscribe?token=f410e4da6a5079469d5a6be738181165
+    interval: 86400
+    path: ./smjc-provider.yaml
+    exclude-filter: 剩余流量|距离下次重置|套餐到期|如果很少节点可用
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
+proxies:
+- name: GCP-JP-singbox-reality
+  type: vless
+  server: 34.97.196.59
+  port: 57566
+  uuid: c0ecbc93-c6f5-4a24-b2bf-b7ce411fbe5e
+  network: tcp
+  tls: true
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: RFTzjE5-7poocDh3zJcuvK__E3mRFP-6k-VXXpTNUS4
+    short-id: ''
+  flow: xtls-rprx-vision
+proxy-groups:
+- name: 手动选择
+  type: select
+  use:
+  - smjc
+  proxies:
+  - DIRECT
+  - GCP-JP-singbox-reality
+- name: 自动选择
+  type: url-test
+  use:
+  - smjc
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - GCP-JP-singbox-reality
+- name: 故障转移
+  type: fallback
+  use:
+  - smjc
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - GCP-JP-singbox-reality
+- name: GROK
+  type: url-test
+  use:
+  - smjc
+  url: https://grok.com/
+  interval: 600
+  tolerance: 100
+  proxies:
+  - GCP-JP-singbox-reality
+- name: PROXY
+  type: select
+  proxies:
+  - 手动选择
+  - 自动选择
+  - 故障转移
+  - DIRECT
+  - GCP-JP-singbox-reality
+rules:
+- DOMAIN-SUFFIX,originrouter.com,DIRECT
+- DOMAIN,api.freemodel.dev,DIRECT
+- DOMAIN-SUFFIX,cloudflare-dns.com,DIRECT
+- DOMAIN-SUFFIX,dns.google,DIRECT
+- DOMAIN-SUFFIX,dns.alidns.com,DIRECT
+- DOMAIN-SUFFIX,github.com,PROXY
+- DOMAIN-SUFFIX,github.io,PROXY
+- DOMAIN-SUFFIX,github.dev,PROXY
+- DOMAIN-SUFFIX,github.blog,PROXY
+- DOMAIN-SUFFIX,githubusercontent.com,PROXY
+- DOMAIN-SUFFIX,githubassets.com,PROXY
+- DOMAIN-SUFFIX,githubapp.com,PROXY
+- DOMAIN-SUFFIX,githubstatus.com,PROXY
+- DOMAIN-SUFFIX,githubcopilot.com,PROXY
+- DOMAIN-SUFFIX,ghcr.io,PROXY
+- DOMAIN-SUFFIX,pkg.github.com,PROXY
+- DOMAIN-SUFFIX,github-cloud.s3.amazonaws.com,PROXY
+- DOMAIN-SUFFIX,github-production-release-asset-2e65be.s3.amazonaws.com,PROXY
+- IP-CIDR,43.206.124.31/32,DIRECT,no-resolve
+- DOMAIN,bscclheilkfs.sealosbja.site,DIRECT
+- DOMAIN-SUFFIX,oneforma.com,DIRECT
+- DOMAIN,yxfwjmvmghoq.sealosgzg.site,DIRECT
+- DOMAIN,fastai.fast,PROXY
+- DOMAIN-SUFFIX,openai.com,PROXY
+- DOMAIN-SUFFIX,chatgpt.com,PROXY
+- DOMAIN-SUFFIX,kiro.dev,PROXY
+- DOMAIN-SUFFIX,kiro.aws,PROXY
+- DOMAIN-KEYWORD,kiro,PROXY
+- DOMAIN-KEYWORD,codewhisperer,PROXY
+- DOMAIN-KEYWORD,qdeveloper,PROXY
+- DOMAIN-KEYWORD,codecatalyst,PROXY
+- DOMAIN-SUFFIX,awsapps.com,PROXY
+- DOMAIN-SUFFIX,aws.amazon.com,PROXY
+- DOMAIN-KEYWORD,cognito-idp,PROXY
+- DOMAIN-KEYWORD,bedrock,PROXY
+- DOMAIN-KEYWORD,sts.amazonaws.com,PROXY
+- DOMAIN-SUFFIX,grok.com,GROK
+- DOMAIN-SUFFIX,x.ai,GROK
+- DOMAIN-SUFFIX,x.com,PROXY
+- DOMAIN-SUFFIX,twitter.com,PROXY
+- DOMAIN-SUFFIX,twimg.com,PROXY
+- DOMAIN-SUFFIX,t.co,PROXY
+- DOMAIN-SUFFIX,perplexity.ai,PROXY
+- DOMAIN-SUFFIX,coinglass.com,PROXY
+- DOMAIN-SUFFIX,google.com,PROXY
+- DOMAIN,token.android-doc.com,DIRECT
+- DOMAIN,mtalk.google.com,PROXY
+- DOMAIN-SUFFIX,googleapis.com,PROXY
+- DOMAIN-SUFFIX,gstatic.com,PROXY
+- DOMAIN-SUFFIX,gvt1.com,PROXY
+- DOMAIN-SUFFIX,googleusercontent.com,PROXY
+- DOMAIN-SUFFIX,gemini.google.com,PROXY
+- DOMAIN-SUFFIX,googletagmanager.com,PROXY
+- DOMAIN-SUFFIX,doubleclick.net,PROXY
+- DOMAIN-SUFFIX,googleadservices.com,PROXY
+- DOMAIN-SUFFIX,microsoftonline.com,PROXY
+- DOMAIN-SUFFIX,msauth.net,PROXY
+- DOMAIN-SUFFIX,msftauth.net,PROXY
+- DOMAIN-SUFFIX,live.com,PROXY
+- DOMAIN-SUFFIX,windows.net,PROXY
+- DOMAIN-SUFFIX,android-doc.com,DIRECT
+- DOMAIN-SUFFIX,codex5.cn,DIRECT
+- DOMAIN-SUFFIX,tryrating.com,DIRECT
+- DOMAIN-SUFFIX,scilliance.com,DIRECT
+- IP-CIDR,52.193.45.111/32,DIRECT,no-resolve
+- DOMAIN-SUFFIX,jd.com,DIRECT
+- DOMAIN-SUFFIX,360buy.com,DIRECT
+- DOMAIN-SUFFIX,jdpay.com,DIRECT
+- DOMAIN-SUFFIX,jingdong.com,DIRECT
+- DOMAIN-SUFFIX,jingxi.com,DIRECT
+- DOMAIN-SUFFIX,jdcloud.com,DIRECT
+- DOMAIN-SUFFIX,joybuy.com,DIRECT
+- DOMAIN-SUFFIX,paipai.com,DIRECT
+- DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+- DOMAIN-SUFFIX,wx.qq.com,DIRECT
+- DOMAIN-SUFFIX,wechat.com,DIRECT
+- DOMAIN-SUFFIX,wechatpay.com,DIRECT
+- DOMAIN-SUFFIX,tenpay.com,DIRECT
+- DOMAIN-SUFFIX,qpic.cn,DIRECT
+- DOMAIN-SUFFIX,qlogo.cn,DIRECT
+- DOMAIN-SUFFIX,gtimg.cn,DIRECT
+- DOMAIN-SUFFIX,gtimg.com,DIRECT
+- DOMAIN-SUFFIX,xiaohongshu.com,DIRECT
+- DOMAIN-SUFFIX,xhscdn.com,DIRECT
+- DOMAIN-SUFFIX,xhscdn.net,DIRECT
+- DOMAIN-SUFFIX,redelight.com,DIRECT
+- DOMAIN-SUFFIX,douyin.com,DIRECT
+- DOMAIN-SUFFIX,douyincdn.com,DIRECT
+- DOMAIN-SUFFIX,amemv.com,DIRECT
+- DOMAIN-SUFFIX,snssdk.com,DIRECT
+- DOMAIN-SUFFIX,toutiao.com,DIRECT
+- DOMAIN-SUFFIX,ixigua.com,DIRECT
+- DOMAIN-SUFFIX,byteimg.com,DIRECT
+- DOMAIN-SUFFIX,bytecdn.cn,DIRECT
+- DOMAIN-SUFFIX,bytedance.com,DIRECT
+- DOMAIN-SUFFIX,bytednsdoc.com,DIRECT
+- DOMAIN-SUFFIX,pstatp.com,DIRECT
+- DOMAIN-SUFFIX,qq.com,DIRECT
+- DOMAIN-SUFFIX,tencent.com,DIRECT
+- DOMAIN-SUFFIX,tencent-cloud.com,DIRECT
+- DOMAIN-SUFFIX,tencent-cloud.net,DIRECT
+- DOMAIN-SUFFIX,qcloud.com,DIRECT
+- DOMAIN-SUFFIX,myqcloud.com,DIRECT
+- DOMAIN-SUFFIX,tencentvideo.com,DIRECT
+- DOMAIN-SUFFIX,taobao.com,DIRECT
+- DOMAIN-SUFFIX,tmall.com,DIRECT
+- DOMAIN-SUFFIX,tmall.hk,DIRECT
+- DOMAIN-SUFFIX,alicdn.com,DIRECT
+- DOMAIN-SUFFIX,alipay.com,DIRECT
+- DOMAIN-SUFFIX,aliyun.com,DIRECT
+- DOMAIN-SUFFIX,aliyuncs.com,DIRECT
+- DOMAIN-SUFFIX,alimama.com,DIRECT
+- DOMAIN-SUFFIX,mmstat.com,DIRECT
+- DOMAIN-SUFFIX,1688.com,DIRECT
+- DOMAIN-SUFFIX,pinduoduo.com,DIRECT
+- DOMAIN-SUFFIX,yangkeduo.com,DIRECT
+- DOMAIN-SUFFIX,pddpic.com,DIRECT
+- DOMAIN-SUFFIX,pdd.net,DIRECT
+- DOMAIN-SUFFIX,meituan.com,DIRECT
+- DOMAIN-SUFFIX,meituan.net,DIRECT
+- DOMAIN-SUFFIX,dianping.com,DIRECT
+- DOMAIN-SUFFIX,maoyan.com,DIRECT
+- DOMAIN-SUFFIX,sankuai.com,DIRECT
+- DOMAIN-SUFFIX,bilibili.com,DIRECT
+- DOMAIN-SUFFIX,bilivideo.com,DIRECT
+- DOMAIN-SUFFIX,hdslb.com,DIRECT
+- DOMAIN-SUFFIX,acgvideo.com,DIRECT
+- DOMAIN-SUFFIX,b23.tv,DIRECT
+- DOMAIN-SUFFIX,kuaishou.com,DIRECT
+- DOMAIN-SUFFIX,kuaishouzt.com,DIRECT
+- DOMAIN-SUFFIX,ksapisrv.com,DIRECT
+- DOMAIN-SUFFIX,gifshow.com,DIRECT
+- DOMAIN-SUFFIX,weishi.qq.com,DIRECT
+- DOMAIN-SUFFIX,wxs.qq.com,DIRECT
+- DOMAIN-SUFFIX,wecloudsupport.com,DIRECT
+- DOMAIN-SUFFIX,iesdouyin.com,DIRECT
+- DOMAIN-SUFFIX,lf3-cdn-tos.com,DIRECT
+- DOMAIN-SUFFIX,alipaydns.com,DIRECT
+- DOMAIN-SUFFIX,telegram.org,PROXY
+- GEOIP,CN,DIRECT
+- DOMAIN-SUFFIX,cn.ubuntu.com,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+- IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+- IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+- IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+- MATCH,PROXY
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - 8080-8880
+      override-destination: true
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+  force-domain:
+  - +.grok.com
+  - +.x.ai
+  - +.x.com
+  - +.twitter.com
+  - +.twimg.com
+  - +.t.co
+  - +.tryrating.com
+  - +.scilliance.com
+  - +.google.com
+  - +.googleapis.com
+  - +.gstatic.com
+  - +.gvt1.com
+  - +.googleusercontent.com
+  - +.microsoft.com
+  - +.microsoftonline.com
+  - +.msauth.net
+  - +.msftauth.net
+  - +.live.com
+  skip-domain:
+  - Mijia Cloud

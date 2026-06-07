@@ -1,0 +1,13 @@
+# Local credentials/configuration.
+config.local.json
+*.local.json
+
+# Real input/output data should stay private by default.
+data/
+logs/
+outputs/
+*.log
+
+# Python runtime artifacts.
+__pycache__/
+*.py[cod]

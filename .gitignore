@@ -15,3 +15,78 @@ current_utterance_*.json
 
 # 当前页面快照
 current-page.md
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 截图 (浏览器自动化调试)
+*.png
+
+# 备份和归档
+new_task_backups/
+traedocker/archive/
+
+# 压缩包
+*.zip
+
+# CSV 日志
+*.csv
+
+# 解压的第三方包
+python-timesheet-extracted/
+
+# traedocker 临时文件
+traedocker/*.txt
+traedocker/page_dom.txt
+
+# traedocker 调试备份 JSON
+traedocker/score_reason_*.json
+traedocker/session_id_*.json
+
+
+# 环境密钥配置 (仅忽略 .env，保留 .env.example)
+.env
+
+# 视频录制 (浏览器自动化)
+*.mp4
+*.webm
+
+# 日志文件
+*.log
+
+# 任务临时结果目录
+**/scratch/
+
+# 浏览器 Profile / 用户数据
+**/browser/profile*/
+**/browser/user_data/
+**/browser/user-data/
+
+# 缓存目录
+**/cache/
+.cache/
+
+# 构建输出
+**/out/
+**/dist/
+**/build/
+
+# Node
+node_modules/
+
+# Python 虚拟环境
+.venv/
+venv/
+*.egg-info/
+
+# IDE / 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store

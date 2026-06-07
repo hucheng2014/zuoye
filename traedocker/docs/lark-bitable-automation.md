@@ -121,12 +121,61 @@ Use idempotent repair:
 4. Batch update only `wrong_fields`.
 5. Repeat verification until all three sets are empty.
 
+For hierarchical Bitable tasks, verify the tree shape and field distribution in
+addition to row values. When a successful sample tab exists, read it from server
+state and compare counts by level:
+
+- Total rows by role, for example repo/topic, prompt, rollout, and stray.
+- Parent-child counts, for example each prompt should own the expected number of
+  rollout rows.
+- Field ownership by level, because some fields are intentionally repo-level
+  only while others are copied down to child rows.
+- Required attachment distribution, for example environment files on the repo
+  row and patches on rollout rows.
+
+Do not assume every field should be propagated to every level. In the BBS trial
+tables, a successful sample showed this shape:
+
+```text
+repo/topic row:
+  channel/vendor/submission/status fields and environment attachments
+
+prompt rows:
+  prompt metadata only, plus inherited source fields when required
+
+rollout rows:
+  prompt text, rollout id, session id, model, score, reason, git_diff
+```
+
+When repairing hierarchy, build a canonical keep set from stable identifiers
+before deleting:
+
+1. Keep the repo/topic row with `repo.zip` and `Dockerfile`.
+2. Keep one complete prompt row per `prompt_index`.
+3. Keep rollout rows whose `session_id` appears in the local rollout log.
+4. Delete only empty, duplicate, or fake/partial rows outside that keep set.
+
+For browser-page internal writes through `window.bitableStore`, inspect the
+command result. A mixed `SetRecords` batch may fail entirely if one field is
+blocked or has a bad cell shape. Split writes by field or by small chunks and
+re-read after each batch. Some fields can be controlled by table automation or
+permissions; report those as blocked instead of claiming success.
+
+If the table has built-in AI/quality-check columns, treat those checks as part
+of completion. For trial labeling tables, prompt rows may need a prompt quality
+check to become valid before full rollout, and rollout rows may need a score
+quality check to become reasonable after score, reason, and patch attachments
+are filled. Do not mark the table complete just because required cells are
+non-empty.
+
 ## Lessons Learned
 
 - Canvas automation should be treated as a last resort.
 - Coordinate clicks are useful for exploration, not production writes.
 - A partial success can be worse than a hard failure, because wrong select values
   or empty text fields may look plausible in the UI.
+- Sample-based comparison is valuable, but preserve task-specific business
+  values instead of copying sample values blindly.
 - Keep repair scripts idempotent. Always recompute missing/wrong records from
   the server before writing.
 - Never commit app tokens, cookies, bearer tokens, base/table IDs from private

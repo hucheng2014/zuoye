@@ -1,0 +1,38 @@
+services:
+  browser:
+    build:
+      context: ./browser
+      dockerfile: Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME:-duomotai}-browser
+    init: true
+    environment:
+      - CDP_PORT=${CDP_PORT:-9222}
+      - CDP_PROXY_PORT=${CDP_PROXY_PORT:-9223}
+      - VNC_PASSWORD=${VNC_PASSWORD:-}
+      - SCREEN_WIDTH=${SCREEN_WIDTH:-1920}
+      - SCREEN_HEIGHT=${SCREEN_HEIGHT:-1080}
+      - SCREEN_DEPTH=${SCREEN_DEPTH:-24}
+      - START_URL=${START_URL:-about:blank}
+    ports:
+      - "${NOVNC_HOST:-127.0.0.1}:${NOVNC_PORT:-6085}:6080"
+      - "${CDP_HOST:-127.0.0.1}:${HOST_CDP_PORT:-9238}:9222"
+      - "${CDP_HOST:-127.0.0.1}:${HOST_CDP_PROXY_PORT:-9239}:9223"
+    volumes:
+      - browser-profile:/home/pwuser/chrome-profile
+    shm_size: ${BROWSER_SHM_SIZE:-2g}
+    mem_limit: ${BROWSER_MEM_LIMIT:-2g}
+    pids_limit: ${BROWSER_PIDS_LIMIT:-512}
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf \"http://127.0.0.1:$${CDP_PORT}/json/version\" >/dev/null || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+volumes:
+  browser-profile:

@@ -1,0 +1,39 @@
+{
+  "name": "trae-trial-bridge",
+  "displayName": "Trae Trial Bridge",
+  "description": "Local URI bridge used by the python-timesheet trial runner.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onUri",
+    "onCommand:trae-trial-bridge.ping",
+    "onCommand:trae-trial-bridge.currentSession",
+    "onCommand:trae-trial-bridge.send"
+  ],
+  "main": "./out/extension.js",
+  "extensionKind": [
+    "ui"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "trae-trial-bridge.ping",
+        "title": "Trae Trial Bridge: Ping"
+      },
+      {
+        "command": "trae-trial-bridge.currentSession",
+        "title": "Trae Trial Bridge: Current Session"
+      },
+      {
+        "command": "trae-trial-bridge.send",
+        "title": "Trae Trial Bridge: Send"
+      }
+    ]
+  }
+}

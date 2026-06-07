@@ -1,0 +1,43 @@
+{
+  "api_base_url": "https://open.feishu.cn",
+  "auth": {
+    "tenant_access_token_env": "FEISHU_TENANT_ACCESS_TOKEN",
+    "app_id_env": "FEISHU_APP_ID",
+    "app_secret_env": "FEISHU_APP_SECRET"
+  },
+  "bitable": {
+    "app_token": "APP_TOKEN_PLACEHOLDER",
+    "table_id": "TABLE_ID_PLACEHOLDER",
+    "view_id": ""
+  },
+  "sync": {
+    "unique_key": "external_id",
+    "batch_size": 100,
+    "compare_fields": [
+      "external_id",
+      "title",
+      "status",
+      "notes",
+      "attachments"
+    ],
+    "field_mapping": {
+      "external_id": {
+        "field_name": "External ID",
+        "required": true
+      },
+      "title": {
+        "field_name": "Title",
+        "required": true
+      },
+      "status": {
+        "field_name": "Status"
+      },
+      "notes": {
+        "field_name": "Notes"
+      },
+      "attachments": {
+        "field_name": "Attachments"
+      }
+    }
+  }
+}

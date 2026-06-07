@@ -1,0 +1,12 @@
+repo/.git
+repo/.gitignore
+repo/**/__pycache__
+repo/.pytest_cache
+repo/**/*.py[cod]
+archive
+*.zip
+*.patch
+*.png
+*.log
+*.csv
+__pycache__

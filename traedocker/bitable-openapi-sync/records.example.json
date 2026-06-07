@@ -1,0 +1,32 @@
+{
+  "records": [
+    {
+      "fields": {
+        "external_id": "sample-001",
+        "title": "Sanitized sample row",
+        "status": "todo",
+        "notes": [
+          {
+            "type": "text",
+            "text": "Replace this row with local non-secret data."
+          }
+        ],
+        "attachments": []
+      }
+    },
+    {
+      "fields": {
+        "external_id": "sample-002",
+        "title": "Second sanitized sample row",
+        "status": "done",
+        "notes": [
+          {
+            "type": "text",
+            "text": "Keep real tokens, IDs, logs, and private content out of this file."
+          }
+        ],
+        "attachments": []
+      }
+    }
+  ]
+}
