@@ -1,0 +1,189 @@
+{
+  "task_type": "MAIL",
+  "display_name": "Mail Smart Reply (MSR)",
+  "version": "1.0.0",
+  "source_files": [
+    "renzheng/MAIL/grading.md",
+    "renzheng/MAIL/README.md",
+    "renzheng/MAIL/WT_Mail_Smart_Reply_MSR_Feedback_May22_中文详细总结.md"
+  ],
+  "compact_sop": "compact_sop.md",
+  "flow": "flow.md",
+  "chunks": [
+    {
+      "id": "personalization",
+      "file": "chunks/personalization.md",
+      "title": "Personalization",
+      "description": "4-level personalization scale: Personalized, Contextually Adapted, Generic, Mismatch. Excessive Padding warning.",
+      "keywords": [
+        "personalization",
+        "personalized",
+        "contextually adapted",
+        "generic",
+        "mismatch",
+        "style",
+        "profile",
+        "formatting",
+        "excessive padding",
+        "filler"
+      ],
+      "priority": 1,
+      "size_bytes": 3397
+    },
+    {
+      "id": "groundedness",
+      "file": "chunks/groundedness.md",
+      "title": "Groundedness",
+      "description": "3-level factual consistency: Grounded, Partially Grounded, Not Grounded. Name Grounding Rule and Additional Info checks.",
+      "keywords": [
+        "groundedness",
+        "grounded",
+        "partially grounded",
+        "not grounded",
+        "hallucination",
+        "fabrication",
+        "name grounding",
+        "additional info",
+        "additional personal info"
+      ],
+      "priority": 1,
+      "size_bytes": 3068
+    },
+    {
+      "id": "instruction_adherence",
+      "file": "chunks/instruction_adherence.md",
+      "title": "Instruction Adherence & Contextual Fit",
+      "description": "3 states for instruction following. Partially situations: name errors, secondary detail omission, formality mismatch.",
+      "keywords": [
+        "instruction",
+        "contextual fit",
+        "followed",
+        "partially followed",
+        "not followed",
+        "misfit",
+        "secondary detail",
+        "omission",
+        "formality"
+      ],
+      "priority": 1,
+      "size_bytes": 2823
+    },
+    {
+      "id": "localization",
+      "file": "chunks/localization.md",
+      "title": "Localization",
+      "description": "Per-locale punctuation and format rules for zh_TW, zh_CN, zh_HK, da_DK, nb_NO. Spelling/grammar are NOT localization.",
+      "keywords": [
+        "localization",
+        "locale",
+        "zh_TW",
+        "zh_CN",
+        "zh_HK",
+        "da_DK",
+        "nb_NO",
+        "punctuation",
+        "full-width",
+        "colon",
+        "comma",
+        "greeting",
+        "sign-off"
+      ],
+      "priority": 1,
+      "size_bytes": 3592
+    },
+    {
+      "id": "subject_line",
+      "file": "chunks/subject_line.md",
+      "title": "Subject Line & Pairwise Decision Chain",
+      "description": "Subject line quality rules and pairwise comparison 4-level priority framework.",
+      "keywords": [
+        "subject line",
+        "pairwise",
+        "comparison",
+        "SBS",
+        "title case",
+        "emoji",
+        "punctuation",
+        "priority",
+        "equal quality"
+      ],
+      "priority": 2,
+      "size_bytes": 1647
+    },
+    {
+      "id": "harmfulness",
+      "file": "chunks/harmfulness.md",
+      "title": "Harmfulness",
+      "description": "Safety assessment for mail drafts. Same 19-category framework.",
+      "keywords": [
+        "harmfulness",
+        "harmful",
+        "safety",
+        "hate",
+        "violence",
+        "explicit",
+        "privacy",
+        "child endangerment",
+        "Apple brand"
+      ],
+      "priority": 2,
+      "size_bytes": 2737
+    },
+    {
+      "id": "pairwise",
+      "file": "chunks/pairwise.md",
+      "title": "Pairwise Comparison",
+      "description": "4-level priority framework for side-by-side response comparison. Cascading error prevention.",
+      "keywords": [
+        "pairwise",
+        "comparison",
+        "SBS",
+        "side-by-side",
+        "preference",
+        "cascading",
+        "equal quality",
+        "A=B"
+      ],
+      "priority": 1,
+      "size_bytes": 2894
+    },
+    {
+      "id": "common_errors",
+      "file": "chunks/common_errors.md",
+      "title": "Common Errors (May 22 Feedback RCA)",
+      "description": "Root cause analysis of rating deviations from official calibration feedback.",
+      "keywords": [
+        "common errors",
+        "feedback",
+        "RCA",
+        "deviation",
+        "miscalibration",
+        "over-penalization",
+        "under-penalization",
+        "cascading"
+      ],
+      "priority": 2,
+      "size_bytes": 3766
+    },
+    {
+      "id": "cjk_cases",
+      "file": "chunks/cjk_cases.md",
+      "title": "CJK Locale Case Studies",
+      "description": "Chinese locale case studies from official feedback: zh_CN hidden Additional Info, zh_HK minor styling leniency, zh_TW punctuation format errors.",
+      "keywords": [
+        "CJK",
+        "zh_CN",
+        "zh_HK",
+        "zh_TW",
+        "Chinese",
+        "case study",
+        "additional info",
+        "interview time",
+        "styling",
+        "punctuation"
+      ],
+      "priority": 2,
+      "size_bytes": 4369
+    }
+  ]
+}

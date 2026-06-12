@@ -1,0 +1,82 @@
+{
+  "task_types": {
+    "PROOFREAD": {
+      "label": "中文 Proofreading Eval",
+      "sop": "../renzheng/PROOFREAD/SOP.md",
+      "scripts_dir": "../renzheng/PROOFREAD/scripts",
+      "browser": "work-b",
+      "cdp": "http://127.0.0.1:9235",
+      "time_per_task_min": 12,
+      "daily_max_tasks": 28,
+      "daily_max_hours": 7.5,
+      "inactive_max_pct": 30,
+      "page_markers": ["Proofreading", "proofreading", "Proofread"],
+      "extract_cmd": "node scripts/extract_task.js",
+      "fill_cmd": "node scripts/fill_task.js",
+      "submit_cmd": "node scripts/full_submit.js",
+      "keepalive_cmd": "node scripts/keepalive_lite.js",
+      "bridge_cmd": "node scripts/bridge.js",
+      "session_guard_cmd": "node scripts/session_guard.js"
+    },
+    "TA_POLLS": {
+      "label": "Intelligent Polls",
+      "sop": "../renzheng/TA Intelligent Polls/SOP.md",
+      "scripts_dir": "../renzheng/TA Intelligent Polls/scripts",
+      "browser": "work-a",
+      "cdp": "http://127.0.0.1:9233",
+      "time_per_task_min": 5,
+      "daily_max_tasks": 70,
+      "daily_max_hours": 7,
+      "inactive_max_pct": 10,
+      "page_markers": ["Intelligent Polls", "intelligent_polls", "Poll"],
+      "extract_cmd": "node scripts/extract_task.js",
+      "fill_cmd": "node scripts/fill_task.js",
+      "submit_cmd": "node scripts/full_submit.js",
+      "keepalive_cmd": "node scripts/keepalive_lite.js",
+      "bridge_cmd": "node scripts/bridge.js",
+      "session_guard_cmd": "node scripts/session_guard.js"
+    },
+    "MAIL": {
+      "label": "Mail Smart Reply",
+      "sop": "../renzheng/MAIL/grading.md",
+      "scripts_dir": "../renzheng/MAIL/scripts",
+      "browser": "work-a",
+      "cdp": "http://127.0.0.1:9233",
+      "time_per_task_min": 8,
+      "daily_max_tasks": 40,
+      "daily_max_hours": 7,
+      "inactive_max_pct": 10,
+      "page_markers": ["Mail Smart Reply", "MSR", "mail_smart_reply"],
+      "extract_cmd": "node scripts/extract_task.js",
+      "fill_cmd": "node scripts/fill_task.js"
+    },
+    "TAMESSAGE": {
+      "label": "TA Message Reply",
+      "sop": "../renzheng/TAMESSAGE/SOP.md",
+      "scripts_dir": "../renzheng/TAMESSAGE",
+      "browser": "work-a",
+      "cdp": "http://127.0.0.1:9233",
+      "time_per_task_min": 8,
+      "daily_max_tasks": 40,
+      "daily_max_hours": 7,
+      "inactive_max_pct": 10,
+      "page_markers": ["Message Reply", "PSR", "personalized_smart_reply", "TAMessage"],
+      "extract_cmd": "node scripts/extract_task.js",
+      "fill_cmd": "node scripts/fill_task.js"
+    },
+    "GLOBAL_QUERY": {
+      "label": "Global Query Daily Collect",
+      "sop": null,
+      "scripts_dir": "../renzheng/gobalquery",
+      "browser": "work-a",
+      "cdp": "http://127.0.0.1:9233",
+      "time_per_task_min": 0,
+      "daily_max_tasks": 1,
+      "daily_max_hours": 0.5,
+      "inactive_max_pct": 100,
+      "page_markers": ["Global Query", "global_query"],
+      "cron": "0 9 * * *",
+      "notes": "Daily automated data collection, no grading"
+    }
+  }
+}

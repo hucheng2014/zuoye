@@ -24,8 +24,11 @@ bash batch_runner.sh fullauto
 bash batch_runner.sh submit-fresh
 ```
 
-This runs local rule review, `ADD RECORD` style fresh group creation, attachment
-upload, attachment verify, and full remote verify.
+This runs score_reason normalization, local rule review, fresh group creation,
+attachment upload, docker build metadata, remote verify, and server-side
+`score_reason` / `score_check` repair.
+
+See `docs/bitable-submission-checklist.md` for the full anti-mistake checklist.
 
 5. Archive and stop completed trial containers:
 
@@ -38,11 +41,27 @@ bash batch_runner.sh archive-completed
 - `trial_log.csv` has exactly 35 unique 24-hex sessions.
 - Each prompt has the expected 5 models.
 - `bash batch_runner.sh review` passes before table submission.
+- `score_reason` values are structured (not auto templates); see `bitable_score_reason.py`.
 - Fresh Bitable group is exactly `1 + 7 + 35`.
 - Root row has `Dockerfile`, `repo.zip`, and build screenshot.
 - Every rollout row has `git_diff`.
 - Remote verification passes after filling.
 - Completed `*-trial` task containers are stopped before the next task starts.
+
+## Current Feishu Standard
+
+The latest downloaded standard is stored at
+`docs/feishu-standard-current.md`.
+
+Model rules currently remain strict:
+
+- The required seed model is exactly `Doubao-Seed-2.0-Code`.
+- `Doubao-Seed-1.8` and `Doubao-Seed-Code` are not approved substitutes.
+- If a model is unavailable, times out, or the session is interrupted by a
+  resource or engineering issue, retry and submit only a successful rollout.
+- Do not score or archive `4023` / Auto-fallback / wrong-model sessions.
+- Do not privately change models; model substitutions require explicit project
+  owner approval.
 
 ## Safety Rules
 

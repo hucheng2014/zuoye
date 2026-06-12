@@ -1,0 +1,950 @@
+TC Proofreading Feedback – February 2026
+Instructions Following
+• Avoid rating responses as "Fully Following" when errors are still present or when unnecessary
+changes were made to the original text.
+• "Partially Following" applies only when the original intent is preserved and deviations are minor
+(e.g., wording, tone, style). If the intent itself is altered, the correct rating is "Not Following.”
+• If even one out of a few error was not fixed - Partially Following.
+• If the response is an exact match, it’s Fully Following irrelevant if it has errors or not.
+• Be mindful of both under- and over-penalization - when in doubt, revisit the guideline
+thresholds.
+Composition
+• Do not rate a response as "Good" if errors remain uncorrected or if new errors were introduced.
+• Reserve "Bad" for responses where almost no corrections were made, new errors were
+introduced, or tone/style was significantly changed.
+• Use "Acceptable" when some errors remain but the response is largely correct.
+• If wording or sentence structure was slightly changed, mark it as Acceptable.
+Localization
+• Only flag genuine localization issues - do not penalize responses for Composition-related
+problems under this dimension.
+• Be aware of known locale-specific patterns (e.g., comma after greeting for Danish, full-width
+punctuation for Chinese, correct quotation marks to use).
+• Remember, in this task, localization issues for spelling, grammar, punctuation/format are only
+Localization errors if they’re wrong in your locale but correct in another locale!
+Groundedness
+• Any response that changes information intent from the original input, even subtly, should not be
+rated "Fully Grounded". Any time you notice a word was changed or modified, verify whether it
+alters the original meaning.
+• Look carefully for wording changes that shift meaning and apply "Partially Grounded" where
+appropriate.
+• If the main intent of the input is contradicted, hallucinated or made up in the response, fail
+Groundedness.
+Satisfaction
+• Satisfaction errors cascade from the issues in the previous dimensions.
+• Satisfaction must reflect the overall quality across all dimensions. If issues exist in Instructions
+Following or Composition, the Satisfaction score should be adjusted downward accordingly.
+Refer to the Satisfaction criteria table in the guidelines.
+• A response with notable issues in other dimensions can never be rated "Highly Satisfying".
+
+Please refer to the examples below for reference.
+
+Centific Confidential
+
+Locale
+
+Error Type
+
+Response
+
+Comment
+
+Input: Gisteren train ik mij beiden boven armen een beetje.
+
+Partially Following
+Instructions
+The response corrects
+some of the mistakes like
+'boven armen' to
+'bovenarmen' but fails to
+correct 'train' to 'trainde',
+since the sentence is in
+past tense.
+Acceptable Composition
+The response changes
+some of the mistakes,
+like improving the
+punctiation. But it fails to
+correct 'Ik ben allekker
+geschoten.', which should
+have been 'Ik benal
+lekker opgeschoten.'
+Response has a
+vocabulary issue;
+"plaatsen" is not the
+correct word in this
+context.
+
+Response: Gisteren train ik mijn bovenarmen een beetje.
+nl-nl
+
+Instruction
+following
+
+Input: Ik ben al lekker geschoten. Het is nu zover opgeruimd dat ik er
+met de grasmaajer bij kan maar ik heb de aarde nog niet.
+
+nl-nl
+
+Composition
+
+Response: Ik ben al lekker geschoten. Het is nu zover opgeruimd dat ik
+er met de grasmaaier bij kan, maar ik heb de aarde nog niet.
+
+Input: Ja, ik help wel te plaatse met slachten. Als je niks met de huiden
+doet, nam ik ze wel over, en een beetjes van het vlees.
+nl-nl
+
+Localization
+
+Response: Ja, ik help wel met plaatsen. Als je niks met de huid doet,
+neem ik ze wel over, en een beetje van het vlees.
+Input: Hoi allemaal,
+Ik ben even een grote schoonmaak aan het houden! Ik wijt dat het geen
+lente is, maar ik vind dat het huis wel een goede poetsbeurt konden
+gebruiken, haha. Gewoon even de jaloezieën schoonmaken, stofzuigen
+en dat soort dingen.
+Tot snel,
+Carina
+
+nl-nl
+
+Composition
+
+Response: Hoi allemaal,
+Ik ben even een grote schoonmaak aan het houden! Ik weet dat het
+geen lente is, maar ik vind dat het huis wel een goede poetsbeurt kon
+gebruiken, haha. Gewoon even de jaloezieën schoonmaken, stofzuigen
+en dat soort dingen.
+Tot snel,
+Carina
+Input: Servicemelding: De storing is geholpen. Nog steeds prolemen ? Ga
+naar https://greenfeldertowne.info/vedamonahan349.
+
+nl-nl
+
+Localization
+
+Centific Confidential
+
+Good Composition - All
+errors corrected with
+minimum word changes
+
+Response: Servicemelding: De storing is geholpen. Nog steeds
+problemen ? Ga naar https://greenfeldertowne.info/vedamonahan349.
+
+Localization to be
+downgraded due to
+spacing before "?";
+Incorrect in target locale
+but correct in another
+locale.
+
+Input: 明天是小美的婚禮，但她還沒找到合適的禮服。我們今天要
+去逛街，祈禱我們能幫他找到了洋妝。希望一切順利！
+zh-tw
+
+Instruction
+following
+
+Response: 明天是小美的婚禮，但她還沒找到合適的禮服。我們今天
+要去逛街，祈禱我們能幫她找到完美的洋裝。希望一切順利！
+
+Input: 我沒看到什麼奇怪的程式碼 (除了最上面的「CFM」宣告)，除
+此之外看起來都蠻正常的，用「JFW3.5」讀取也完全沒有任何問題
+。除非是有什麼由「CFM」產生的 applet 在運做，而我完全沒注意
+到。
+zh-tw
+
+Instruction
+following
+
+Response has
+overgeneration in the
+passage, hence rate it
+partially following
+instructions. "完美的"; is
+not found in the input
+text.
+Response should rated as
+partially following due to
+slight deviations from the
+original input text.
+
+Response: 我沒看到什麼奇怪的程式碼 (除了最上面的「CFM」宣告)
+，除此之外看起來都蠻正常的，用「JFW3.5」讀取也完全沒有問題
+。除非是有什麼由「CFM」產生的 applet 在運作，而我完全沒注意
+到。
+Input: 嗨，Steve， 我今天在電視上看到一個兒童牙刷的業配。它有
+內建計時器，播放了兩分鐘的音樂，這樣孩子們就知道什麼時後可
+以停止刷牙了。我想買這個給孩子們當作聖誕禮物。
+
+zh-tw
+
+Composition
+
+Response: 嗨，Steve，
+我今天在電視上看到一個兒童牙刷的廣告。它有內建計時器，播放
+了兩分鐘的音樂，這樣孩子們就知道什麼時候可以停止刷牙了。我
+想買這個給孩子們當作聖誕禮物。
+
+Centific Confidential
+
+Response is acceptable in
+composition because the
+error in the input text
+was left unfixed.
+"了"; means something
+already happened, but in
+this context it's
+describing a function of
+an item; "了"; should be
+removed for better
+fluency.
+
+Input: 我先生對這家的蟹肉三明治念念不忘了一整年，還發誓說這
+是他吃過最美味的食物。所以，為了上週他的生日，我特別規劃了
+一趟聖地牙哥之旅，就只為了這一個蟹肉三明治。我們一飛抵當地
+
+Acceptable composition,
+unnecessary change of
+word: from 這一個 to 這
+款.
+
+、取了租車，就直奔「Point Loma Seafood」。他點了兩個三明治和
+兩杯啤酒，不多也不少。我跟你說，如果你喜歡大塊又新鮮的蟹肉
+，搭配超讚的塔塔醬，夾在新鮮的酸種麵包片裡，那這款三明治絕
+對是你的菜！他說的沒錯！這真的是史上最棒的蟹肉三明治！！戶
+外坐位區就在水岸邊，這些也很讚。感謝「Point Loma Seafood」讓
+我先生度過一個這麼開心的生日！
+zh-tw
+
+Composition
+
+Response: 我先生對這家的蟹肉三明治念念不忘了一整年，還發誓說
+這是他吃過最美味的食物。所以，為了上週他的生日，我特別規劃
+了一趟聖地牙哥之旅，就只為了這款蟹肉三明治。我們一飛抵當地
+、取了租車，就直奔「Point Loma Seafood」。他點了兩個三明治和
+兩杯啤酒，不多也不少。我跟你說，如果你喜歡大塊又新鮮的蟹肉
+，搭配超讚的塔塔醬，夾在新鮮的酸種麵包片裡，那這款三明治絕
+對是你的菜！他說的沒錯！這真的是史上最棒的蟹肉三明治！！戶
+外坐位區就在水岸邊，這也很讚。感謝「Point Loma Seafood」讓我
+先生度過一個這麼開心的生日！
+Input: 我的美術和手作材料散的到處都是，我真的不知道該怎麼做
+出收納它們的動作，快要放棄了。
+
+zh-tw
+
+Localization
+
+Resp: 我的美術和手作材料散得到處都是，我真的不知道該怎麼做出
+收納它們的動作，快要放棄了。
+
+Input: 哈哈對啊,我可能會虧一下你的喔 🤣 畢竟牠的系統更新比較
+慢。
+
+zh-tw
+
+Localization
+
+Response: 哈哈對啊,我可能會虧一下你的喔 🤣 畢竟它的系統更新比
+較慢。
+
+Input: 想到明天要跟客戶開會，我現在就覺得壓力好大，明天我已
+zh-tw
+
+Instruction
+Following /
+Composition
+
+經焦慮到無法專心工做.
+Response: 想到明天要跟客戶開會，我現在就覺得壓力好大，明天我
+已經焦慮到無法專心工作了。
+
+Centific Confidential
+
+There is a localization
+issue with the response awkward/unnatural
+writing: 怎麼做出收納它
+們的動作
+
+Response has localization
+issue of punctuation; the
+full-width comma '，';
+should be used instead of
+half-width comma ',' for
+the target locale. This is
+more often than none
+missed, please pay more
+attention.
+Acceptable composition
+and Partially Following:
+Some errors listed in the
+input still exist the
+response "明天我已經焦
+慮到無法專心工作了"
+
+Input: Det eneste, jeg kan se, er links til “Giv mig besked” og “Bliv
+betatester” som fører til nogen formularer, hvor man skal indtaste de
+nødvendige oplysninger. De virke, som de skal, men der er ingen
+information om, hvad websitet egentlig går ud på. For mig lyder det som
+en masse varm luft.
+da-dk
+
+Instruction
+following
+
+Response: Det eneste, jeg kan se, er links til “Giv mig besked” og “Bliv
+betatester” som fører til nogle formularer, hvor man skal indtaste de
+nødvendige oplysninger. De virker, som de skal, men der er ingen
+information om, hvad websitet egentlig går ud på. For mig lyder det som
+en masse varm luft.
+Input: Jeg vil gerne tilføje, at vi må anerkende, at det i victoriatiden
+sandsynligvis var en uoverkommelig opgave at designe og bygge en
+kørestol til en tetraplegiker, som vedkommende selv kunne styre. Idag
+er dette muligt, omend ikke almindeligt. Det er et godt eksempel på,
+hvordan teknologi udvikler sig. På en mindre skala er vores website,
+www.peepo.com, også et grafisk hjælpemiddel til at browse på
+internettet. Det er designet til hurtig browsing. Når du ser et interessant
+link, klikker du på den. Bevæg musen for at sætte farten ned. Vi sætter
+pris på dine kommentarer.
+
+da-dk
+
+Composition
+
+Centific Confidential
+
+This should be partially
+following instructions
+due to error left.
+
+Response: Jeg vil gerne tilføje, at vi må anerkende, at det i victoriatiden
+sandsynligvis var en uoverkommelig opgave at designe og bygge en
+kørestol til en tetraplegiker, som vedkommende selv kunne styre. Idag
+er dette muligt, omend ikke almindeligt. Det er et godt eksempel på,
+hvordan teknologi udvikler sig. På en mindre skala er vores hjemmeside,
+www.peepo.com, også et grafisk hjælpemiddel til at browse på
+internettet. Den er designet til hurtig browsing. Når du ser et interessant
+link, klikker du på det. Bevæg musen for at sætte farten ned. Vi sætter
+pris på dine kommentarer.
+
+Should be Bad due to
+introducing an error,
+there should be Det
+because it is associated
+with hjelpemiddel, which
+has "et" as an article.
+
+Input: Hej Morten Hvad tænker du om et passende rørledningssegment
+til modelleringsstudiet? Jeg hælder lidt til strækningen fra station 4 til
+station 3. Det omfatter en stor del af variationen i Energinet-systemmet
+(højde, temperatur, ensartede aktiviteter i forhold til resten af det PCBforurenede system). Giv mig besked inden besøget hos DTU, så jeg kan
+begynde at indsamle de analytiske data for rørledningen og
+stationerne... Lars, sig til hvordan jeg kan hjælpe. Morten
+da-dk
+
+Composition
+
+Response: Hej Morten
+Hvad tænker du om et passende rørledningssegment til
+modelleringsstudiet? Jeg hælder lidt til strækningen fra station 4 til
+station 3. Det omfatter en stor del af variationen i Energinet-systemet
+(højde, temperatur, ensartede aktiviteter i forhold til resten af det PCBforurenede system). Giv mig besked inden besøget hos DTU, så jeg kan
+begynde at indsamle de analytiske data for rørledningen og
+stationerne...
+Lars, sig til hvordan jeg kan hjælpe. Morten
+Input: Hej Morten
+Kommandoen Gær tilgængelig er nu tilgængelig i Acrobat Pro 6.0 til
+både Mac og windows. Jeg håber, du kan bruge det.
+Lene
+
+da-dk
+
+Localization
+
+Response: Hej Morten,
+Kommandoen Gær er nu tilgængelig i Acrobat Pro 6.0 til både Mac og
+Windows. Jeg håber, du kan bruge det.
+Lene
+Input: O que eu estou a te dizer e que há estatisticas que provam que
+nãoé uma doença.
+
+pt-pt
+
+Instruction
+following
+
+pt-pt
+
+Instruction
+following
+
+Response: O que eu estou a dizer é que há estatísticas que provam que
+não é uma doença.
+
+Input: Ótimo! Nem pencei que tenha sido tu.
+Response: Ótimo! Nem pencei que fosse tu.
+Input: Ótimo! Nem pencei que tenha sido tu.
+pt-pt
+
+Composition
+
+Centific Confidential
+
+Should be good in
+composition as the
+response fixes all of the
+issues.
+
+Response: Ótimo! Nem pencei que fosse tu.
+
+There are issues present
+due to the response
+adding a comma after
+greeting, which is a
+localization issue in
+da_DK
+
+Partially Following:
+response correctly fixed
+the spacing error, but
+there is an
+overgeneration: deleting
+of 'te' that should be
+placed somewhere else
+in the sentence.
+Partially Following generates a passage with
+unnecessary word
+change
+Bad - fails to correct the
+mistake.
+
+Input: Até agora, tudo bem. A apresentação da pizza é excelente. As
+pizzas deles são enormes, fatias gigantescas de 50 cm de paraíso. A
+minha mulher disse que foi a melhor pizza que alguma vez comeu. Ela
+também me olhou bem no fundo dos olhos enquanto o dizia, porisso,
+sinto que estava a ser sincero. Eu ainda não tinha provado a piza, por
+isso vou reservar a minha opinião do assunto. Sei que o xarope da cocacola Zero tinha acabado e que tiveram de misturar Coca-Cola normal
+com cola Light. A comida pareceu demorar muito tempo a chegar.
+pt-pt
+
+Composition
+
+Response: Até agora, tudo bem. A apresentação da pizza é excelente. As
+pizzas deles são enormes, fatias gigantescas de 50 cm de paraíso. A
+minha mulher disse que foi a melhor pizza que alguma vez comeu. Ela
+também olhou-me bem no fundo dos olhos enquanto o dizia, por isso
+sinto que estava a ser sincero. Eu ainda não tinha provado a pizza, por
+isso vou reservar a minha opinião sobre o assunto. Sei que o xarope da
+coca-cola Zero tinha acabado e que tiveram de misturar Coca-Cola
+normal com cola Light. A comida pareceu demorar muito tempo a
+chegar.
+Input: 唉，我知啦。我係特燈踩吓自己，等自己重新震作啫，廢事
+它下次又做啲咁嘅傻事。
+Response 1: 唉，我知啦。我係特燈踩吓自己，等自己重新振作啫，
+
+zh-hk
+
+Instruction
+following
+
+廢事佢下次又做啲咁嘅傻事。
+Response 2: 唉，我知啦。我係特登踩吓自己，等自己重新振作啫，
+廢事佢下次又做啲咁嘅傻事。
+
+Input: 就你遇到嘅問題，聯絡 Safemoon CS 支緩團隊啦，我試過，佢
+哋真係好幫得手。
+Response: 就你遇到嘅問題，聯絡 Safemoon CS 支客服團隊啦，我試
+過，佢哋真係好幫得手。
+
+zh-hk
+
+Instruction
+following
+
+Acceptable composition
+Unnecessary changes proclitic form is the most
+correct and usual.
+
+Partially following
+because some errors are
+not yet corrected. The
+input contains multiple
+mistakes. “特燈” should
+be “特登”, “震作” should
+be “振作”, “廢事” should
+be “費事” and “它
+”should be “佢”. The
+response either
+overlooks one or two of
+these errors or leaves
+them in the sentence.
+Not Following because
+the response fails to
+follow the instruction. It
+rewrites or paraphrases
+the input text in a way
+that changes the original
+intent.
+The original typo was “⽀
+緩團隊”(incorrect) and
+should have been
+corrected to “⽀援團隊”
+(support team). However,
+it was replaced with “⽀
+客服團隊”, which makes
+the sentence sound like
+“the customer service
+team of Safemoon CS”.
+The original intent is lost
+
+Centific Confidential
+
+because “CS” which was
+meant as the shorthand
+for customer service, is
+now treated as a proper
+noun, almost like a
+department name.
+Input: 如果賣唔出就算，橫掂都係留返自己食。而且賣到一個兔仔
+賺到 20、25 蚊，已經都購俾返成竇嘅飼料 cost 啦。
+zh-hk
+
+Groundedness
+
+Partially Grounded,
+altered "俾返" to "買返"
+
+Response: 如果賣唔出就算，橫掂都係留返自己食。而且賣到隻兔仔
+賺到 20、25 蚊，已經夠買返成竇嘅飼料 cost 啦。
+Input: 你喺呢道職好多 frd 㗎？
+
+zh-hk
+
+Groundedness
+
+Response: 你喺呢份職好多 frd 㗎？
+Input: 唔使擔心，冇呀衪冇朢。
+
+zh-hk
+
+Composition
+
+Response 1: 唔使擔心，冇呀，衪冇朔。
+Response 2: 唔使擔心，冇呀，衫冇朔。
+Input: 唔使擔心，冇呀衪冇朢。
+
+zh-hk
+
+Composition
+
+Response 1: 唔使擔心，冇呀，衪冇朔。
+Response 2: 唔使擔心，冇呀，衫冇朔。
+Input: yüzü kavgadan sonra çok şişdi, yüzünde morluklar ve şişikler de
+vardı.
+
+tr-tr
+
+Instruction
+following
+
+Response: Yüzü kavgadan sonra çok şişti, yüzünde morluklar ve şişikler
+de vardı.
+Input: Bizim ekipimiz bizim taraftaki işleri nerdeyse bitirdiler, beta
+testine hazırlanacağız. Siz de durumlar nası?
+
+tr-tr
+
+Instruction
+following
+
+Composition
+
+Centific Confidential
+
+衪冇朔" and "衫冇朔",
+both are nonsensical
+phrases
+Acceptable composition
+because an original error
+is corrected with an
+unnecessary word choice
+or sentence structure
+change
+Partially comprehensve
+as response corrects
+some but not all spelling
+errors in the input text.
+
+It fully follows. There is
+no overgeneration in the
+response.
+
+Response: Bizim ekipimiz bizim taraftaki işleri neredeyse bitirdi, beta
+testine hazırlanacağız. Siz de durum nası?
+Input: Korkuyorum, ozaman bu diziyi kulakla dinlemek pekde iyi bi fikir
+diyil.
+
+tr-tr
+
+Partially grounded
+because it rewrites or
+paraphrases the input
+text that changes the
+original intent.
+Bad composition because
+it introduces new error: "
+
+Response: Korkuyorum, o zaman bu diziyi kulakla dinlemek pek de iyi bi
+fikir değil.
+
+Acceptable composition
+as it has spelling a issue
+"bi", that it failed to
+correct.
+
+Input: Bu istasyon, kısmen tesislerinin köhne hâli ve ana merkezlerden
+uzaktaki konumu nedeniyle Marmaray hattındaki en az yolcuya sahip
+istasyonlardan biridir. Bekleme alanı kötü durumda olmasına rağmen
+Marmara Denizi'nden gelen şiddetli rüzgar ve yağmura karşı bir miktar
+koruma sağlamaktadır. Nisan 2010'da bekleme alanı yıkılmış ve yerine
+daha önce geçici Yenikapı istasyonlarında kullanılan bekleme alanları
+konulmuştur. Pendik istasyonundan sonraki seferlerde bir aksama
+olduğunda yolcular alternatif ulaşım araçlarına binmek için bu istasyonda
+trenden inerler; bu araçlar ya sonraki trenler ya da otobüslerdir.
+tr-tr
+
+Composition
+
+Response: Bu istasyon, kısmen tesislerinin köhne hâli ve ana
+merkezlerden uzaktaki konumu nedeniyle Marmaray hattındaki en az
+yolcuya sahip istasyonlardan biridir. Bekleme alanı kötü durumda
+olmasına rağmen Marmara Denizi'nden gelen şiddetli rüzgar ve yağmura
+karşı bir miktar koruma sağlamaktadır. Nisan 2010'da bekleme alanı
+yıkılmış ve yerine daha önce geçici Yenikapı istasyonlarında kullanılan
+bekleme alanları konulmuştur. Pendik istasyonundan sonraki seferlerde
+bir aksama olduğunda yolcular alternatif ulaşım araçlarına binmek için
+bu istasyonda trenden inerler; bu araçlar ya sonraki trenler ya da
+otobüslerdir.
+Input: Bizim ekipimiz bizim taraftaki işleri nerdeyse bitirdiler, beta
+testine hazırlanacağız. Siz de durumlar nası?
+
+tr-tr
+
+Localization
+
+Centific Confidential
+
+Bad Composition response is identical, no
+corrections made.
+Annotators marked as
+Partial.
+
+Response: Bizim ekipimiz bizim taraftaki işleri neredeyse bitirdi, beta
+testine hazırlanacağız. Siz de durum nasıl?
+
+Uses awkward/unnatural
+writing; "Bizimekibimiz"
+doesn’t sound natural,
+saying "Ekibimiz" is
+enough and sounds more
+natural.
+
+Input: Bak, dün resmen ölüyordum ve ölmek üzere olduğumu sandığım o
+birkaç dakikada aklımdaki tek şey sen, Emre ve kızlardı. Dünden beri
+yorgunluktan ölüyorum. İki saatliğine ortadan kayboldum diye seni
+umursamadığımı mı sanıyorsun? Dün resmen aklım başıma geldi, hâlâ
+olayın şokunu atlatamadım ve neden böyle davrandığını bir türlü
+anlamıyorum. Bak, seni seviyorum. Dün her şeye yeniden
+başlayacağımızı, son bir kez gerçekten varımızı yoğumuzu ortaya
+koyacağımızı söylemiştik çünkü dün içimde bir şeyler oldu ve hayatım
+tamamen değişmek üzere. Böbrek fonksiyonlarım gerçekten çok kötü
+durumda ve sen her zaman benim yanımdaydın. Şimdi sana her
+zamankinden daha çok ihtiyacım var. Bana rakip değil, bir hayat arkadaşı
+lazım. Kusura bakma, son kelimeyi yanlış yazdım galiba.
+tr-tr
+
+Groundedness
+
+Response: Bak, dün resmen ölüyordum ve ölmek üzere olduğumu
+sandığım o birkaç dakikada aklımdaki tek şey sen, Emre ve kızlardı.
+Dünden beri yorgunluktan ölüyorum. İki saatliğine ortadan kayboldum
+diye seni umursamadığımı mı sanıyorsun? Dün resmen aklım başıma
+geldi, hâlâ olayın şokunu atlatamadım ve neden böyle davrandığımı bir
+türlü anlamıyorum. Bak, seni seviyorum. Dün her şeye yeniden
+başlayacağımızı, son bir kez gerçekten varımızı yoğumuzu ortaya
+koyacağımızı söylemiştik çünkü dün içimde bir şeyler oldu ve hayatım
+tamamen değişmek üzere. Böbrek fonksiyonlarım gerçekten çok kötü
+durumda ve sen her zaman benim yanımdaydın. Şimdi sana her
+zamankinden daha çok ihtiyacım var. Bana rakip değil, bir hayat arkadaşı
+lazım. Kusura bakma, son kelimeyi yanlış yazdım galiba.
+Input: Free People: Emma nu med upp till 50% rabbatt. (Nya stilar har
+också lagts till!) Shoppa Höstrean:
+https://lehner.biz/casandraweissnat3350
+
+sv-se
+
+Instruction
+following
+
+Response: Free People: Emma nu med upp till 50% rabatt. (Nya stilar har
+också lagts till!) Shoppa Höstrean:
+https://lehner.biz/casandraweissnat3350
+Input: Brian, nej, vi har redan gjort två omgångar för att maximera
+chanserna och eftersom vi vill ha två barn, men vi har inte börjat med
+stegen för A78539962 än.
+
+sv-se
+
+Instruction
+following
+
+Response: Brian, nej, vi har redan gjort två omgångar för att maximera
+chanserna och eftersom vi vill ha två barn, har vi inte börjat med stegen
+för A78539962 än.
+Input: Brian, nej, vi har redan gjort två omgångar för att maximera
+chanserna och eftersom vi vill ha två barn, men vi har inte börjat med
+stegen för A78539962 än.
+
+sv-se
+
+Groundedness
+
+Centific Confidential
+
+Partially Grounded. It
+changes 'davrandığını' to
+'davrandığımı' without
+any reason, and this
+makes a groundedness
+issue.
+
+Response: Brian, nej, vi har redan gjort två omgångar för att maximera
+chanserna och eftersom vi vill ha två barn, har vi inte börjat med stegen
+för A78539962 än.
+
+Fully following
+instructions as the
+response is an exact
+repeat. All graders overpenalized the response.
+
+Partially Following. It
+makes unnecessary
+changes in the input by
+alterning the wording.
+Annotators marked as
+fully following.
+Partially grounded; it
+slightly changes the
+meaning by deleting the
+"men" conjunction and
+placing the commas. Not
+caught by annotators.
+
+Input: Hej alla deltagare i arbetsgruppen,
+Som vi har diskuterat, kommer mötet att hållas torsdagen den 7 och
+fredagen den 8 oktober. Det gläder mig att medela att Allaire Corp är
+våra värdar och jag ser fram emot två produktiva dagar där vi även får
+tid att umgås.
+
+Acceptable Composition.
+It Fails to make all
+corrections like the
+English translation of
+"Boston's". Some
+annotator's marked it as
+good.
+
+Praktisk information: Anmälan är öppen fram till den 1 oktober via
+mötessidan på http://www.w3.org/WAI/AU/f2f-oct99. Där hittar du
+även information om plats och boende. Ett begränsat antal rum finns
+tillgängliga till rabbatterat pris på Royal Sonesta Hotel, där mötet hålls.
+Eftersom oktober är Boston's högsäsong är rummen dyra och blir snabbt
+fullbokade, så vi rekommenderar att du bokar så snart som möjligt.
+Om du har några frågor eller särskilda önskemål, kontakta mig så snart
+som möjligt.
+sv-se
+
+Composition
+Response: Hej alla deltagare i arbetsgruppen,
+Som vi har diskuterat, kommer mötet att hållas torsdagen den 7 och
+fredagen den 8 oktober. Det gläder mig att meddela att Allaire Corp är
+våra värdar och jag ser fram emot två produktiva dagar där vi även får
+tid att umgås.
+Praktisk information: Anmälan är öppen fram till den 1 oktober via
+mötessidan på http://www.w3.org/WAI/AU/f2f-oct99. Där hittar du
+även information om plats och boende. Ett begränsat antal rum finns
+tillgängliga till rabatterat pris på Royal Sonesta Hotel, där mötet hålls.
+Eftersom oktober är Boston's högsäsong är rummen dyra och blir snabbt
+fullbokade, så vi rekommenderar att du bokar så snart som möjligt.
+Om du har några frågor eller särskilda önskemål, kontakta mig så snart
+som möjligt.
+Input: mong cho tới lúc được gặp bởi cô âý quá.
+
+vi-vn
+
+Instruction
+following /
+Composition
+
+Response: mong cho tới lúc được gặp bởi cô ấy quá.
+
+Input: Luana - P32876499 Chăm sóc khách hàng: Xin chào bạn! Chúng tôi
+rất vui khi thấy bạn sẽ đặt lịch hẹn vaò lúc 13:00 ngày 1 tháng 12 tại
+P32876499! Bạn vui lòng xác nhận tham dự được không ạ ?
+vi-vn
+
+Instruction
+following
+
+Centific Confidential
+
+Response: Luana - P32876499 Chăm sóc khách hàng: Xin chào bạn!
+Chúng tôi rất vui khi thấy bạn đã đặt lịch hẹn vào lúc 13:00 ngày 1 tháng
+12 tại P32876499! Bạn vui lòng xác nhận tham dự được không ạ ?
+
+Partially Following and
+Acceptable Composition.
+It fixes the spelling issue
+but does not correct the
+capitalization.
+Partially Following. It
+corrects grammar error
+'sẽ' to 'đã' but still leaves
+a spacing error ' ạ ?'
+
+Input: Thêm anh Phi vào danh sách tham quan qua điện thoại. Việc anh
+ấy sẽ không có mặt tại văn phòng được báo bởi anh ấy, nên có số 1800
+thì tốt nhất.
+vi-vn
+
+Composition
+
+Response: Thêm anh Phi vào danh sách tham quan qua điện thoại. Việc
+anh ấy sẽ không có mặt tại văn phòng được báo trước bởi anh ấy, nên có
+số 1800 thì tốt nhất.
+Input: Haha, có khi tôi lại cà khịa mấy cái đồ Android của ông mất 🤣
+
+vi-vn
+
+Groundedness
+
+Response: Haha, có khi tôi lại cà khịa mấy cái đồ Android của ông ấy mất
+🤣
+
+Input: Trưa nay ăn gì đây? Bánh mì thịt lướng hay bò né được chọn bởi
+bạn? Nói thật là mình đang thích cả hai nên khó quyết định quá.
+vi-vn
+
+nb-no
+
+Groundedness
+
+Instruction
+following
+
+Response: Trưa nay ăn gì đây? Bánh mì thịt nguội hay bò né được chọn
+bởi bạn? Nói thật là mình đang thích cả hai nên khó quyết định quá.
+Input: Google Kristoffer Nilsen, han har en serie med videoer som ikke er
+lengre enn 5–6 minutter å gir god info om hvordan man holder en godt
+tale.
+
+Instruction
+following /
+Composition
+
+Centific Confidential
+
+Partially grounded. The
+input text was error-free
+in terms of proofreading
+scope. The response
+unnecessarily adds "ấy"
+slightly shifting the
+meaning and violating
+groundedness.
+Partially grounded.
+It changes ' thịt lướng'
+(thịt nướng) to 'thịt
+nguội', which impacts the
+meaning.
+Partially following
+instructions, due to
+unnecessary adding of
+<som>
+
+Response: Google Kristoffer Nilsen, han har en serie med videoer som
+ikke er lengre enn 5–6 minutter, og som gir god info om hvordan man
+holder en god tale.
+Input: hun ligner på dine katt unge
+
+nb-no
+
+Acceptable Composition.
+The addition of “trước” is
+an unnecessary wording
+change.
+
+Response: hun ligner på din kattunge
+
+Partially Following and
+Acceptable composition
+due to not using capital
+letter at the beginning
+and lack of a period at
+the end.
+
+Input: Nesten alle kjente mineralogiske form for MgSO₄ forefaller som
+hydrater. Epsomitt er den naturlige analogien til «epsomsalt». Et annet
+heptahydrat, det kobberholdige mineralet alpersitt (Mg,Cu)SO₄·7H₂O,
+ble nylig anerkjent. Begge er imidlertid ikke de høyest kjente hydratene
+av MgSO₄. På grunn av det nylige jordiske funnet av meridianiitt,
+MgSO₄·11H₂O, som man antar også finnes på Mars. Heksahydritt er det
+nest lavere (6) hydratet. Tre lavere hydrater – pentahydritt (5), starkeyitt
+(4) og spesielt sanderitt (2) – er sjeldnere funnet. Kieseritt er et
+monohydrat og er vanlig i evaporittavsetninger. Vannfritt
+magnesiumsulfat har blitt rapportert fra noen brennende kullhauger,
+men har aldri blitt ansett som et mineral. pH-verdien til hydratene er i
+gjennomsnitt 6,0 (5,5 til 6,5). Magnesiumhydrater har krystallvann.
+nb-no
+
+Composition
+
+Response: Nesten alle kjente mineralogiske former for MgSO₄ forefaller
+som hydrater. Epsomitt er den naturlige analogien til «epsomsalt». Et
+annet heptahydrat, det kobberholdige mineralet alpersitt
+(Mg,Cu)SO₄·7H₂O, ble nylig anerkjent. Begge er imidlertid ikke de høyest
+kjente hydratene av MgSO₄. På grunn av det nylige jordiske funnet av
+meridianiitt, MgSO₄·11H₂O, som man antar også finnes på Mars.
+Heksahydritt er det nest lavere (6) hydratet. Tre lavere hydrater –
+pentahydritt (5), starkeyitt (4) og spesielt sanderitt (2) – er sjeldnere
+funnet. Kieseritt er et monohydrat og er vanlig i evaporittavsetninger.
+Vannfritt magnesiumsulfat har blitt rapportert fra noen brennende
+kullhauger, men har aldri blitt ansett som et mineral. pH-verdien til
+hydratene er i gjennomsnitt 6,0 (5,5 til 6,5). Magnesiumhydrater har
+krystallvann.
+Input: Du skjønner jeg har ikke jobbet med utvikling så lenge, men det er
+ikke vanskelig å få med at JavaScript eier “nett markeden”, for å si det
+sånn.
+
+nb-no
+
+Localization
+
+Centific Confidential
+
+The response has Good
+composition and not
+Acceptable as evaluated
+by some annotators.
+
+Response: Du skjønner, jeg har ikke jobbet med utvikling så lenge, men
+det er ikke vanskelig å få med at JavaScript eier “nettmarkedet”, for å si
+det sånn.
+
+Has localization issue format/punctuation. It
+should use Norwegian
+quotation marks.
+
+

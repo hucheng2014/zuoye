@@ -1,0 +1,2723 @@
+{
+  "snapshot_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\page_after_submit_20260402_175123.json",
+  "audio_dir": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123",
+  "output_prefix": "C:\\Users\\BERN7P\\codex-audio\\41398\\review_20260402_175123",
+  "url": "https://ilabel.weixin.qq.com/mission/41398/label",
+  "title": "2026音频check_first_part196 - 任务标注",
+  "count": 25,
+  "noise_model": "Etherll/NoisySpeechDetection-v0.2",
+  "whisper_models": {
+    "large-v3": "C:\\Users\\BERN7P\\codex-browser\\models\\faster-whisper-large-v3",
+    "medium": "C:\\Users\\BERN7P\\codex-browser\\models\\faster-whisper-medium"
+  },
+  "noise_threshold": 0.2,
+  "window_seconds": 2.5,
+  "stride_seconds": 1.0,
+  "items": [
+    {
+      "filename": "20260127_00004330_atpj_351_19.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_19.wav",
+      "page_text": "呃这款酒的生产日期是二零一零年五月十一日的，我们把这个。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000301
+        },
+        "max_window_noisy": 0.449219,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000301
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 0.550781,
+            "noisy": 0.449219
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000423
+          },
+          {
+            "start_seconds": 2.641,
+            "clean": 1.0,
+            "noisy": 0.000275
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 5.141,
+        "tail_silence_seconds": 0.037,
+        "overall_rms": 0.074252,
+        "end_rms": 0.125105,
+        "end_peak": 0.559885,
+        "end_rms_ratio": 1.684883,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.449219,
+      "noise_suggestion": "yes",
+      "transcript_consensus": {
+        "text": "这款酒的生产日期是2010年5月11日的我们把这个",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "这款酒的生产日期是2010年5月11日的我们把这个",
+            "similarity_to_page": 0.7059,
+            "avg_logprob": -0.18493941483589318,
+            "no_speech_prob": 0.30238285660743713
+          },
+          {
+            "model_name": "medium",
+            "text": "这款有的生产日期是2010年5月11日的",
+            "similarity_to_page": 0.5217,
+            "avg_logprob": -0.2702041467030843,
+            "no_speech_prob": 0.1991783082485199
+          }
+        ],
+        "agreement": 0.8444
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "呃"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "二零一零",
+            "2010"
+          ],
+          [
+            "五",
+            "5"
+          ],
+          [
+            "十一",
+            "11"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 7,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.52,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.76,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "high_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7059,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_24.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_24.wav",
+      "page_text": "没有闻到酒味儿。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000216
+        },
+        "max_window_noisy": 0.000216,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000216
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.003,
+        "tail_silence_seconds": 0.059,
+        "overall_rms": 0.038804,
+        "end_rms": 0.02275,
+        "end_peak": 0.160964,
+        "end_rms_ratio": 0.586274,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000216,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "没有闻到酒味",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "没有跟那几个人",
+            "similarity_to_page": 0.2857,
+            "avg_logprob": -0.8091762721538543,
+            "no_speech_prob": 0.522505521774292
+          },
+          {
+            "model_name": "medium",
+            "text": "没有闻到酒味",
+            "similarity_to_page": 0.9231,
+            "avg_logprob": -0.3219799730512831,
+            "no_speech_prob": 0.08470546454191208
+          }
+        ],
+        "agreement": 0.3077
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "儿"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": true,
+        "has_tail_overhang": true
+      },
+      "text_review_hint": {
+        "score": 0.6,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "tail_overhang"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.7,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "medium_end_rms_ratio",
+          "page_has_tail_overhang",
+          "small_delete_only_diff"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9231,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_3.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_3.wav",
+      "page_text": "包装这么用心，到底是什么呢？",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00033
+        },
+        "max_window_noisy": 0.00033,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.00033
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.219,
+        "tail_silence_seconds": 0.035,
+        "overall_rms": 0.039133,
+        "end_rms": 0.033536,
+        "end_peak": 0.109424,
+        "end_rms_ratio": 0.856982,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.00033,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "包装这么用心到底是什么呢",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "包装这么用心到底是什么呢",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.15168003394053534,
+            "no_speech_prob": 0.25008293986320496
+          },
+          {
+            "model_name": "medium",
+            "text": "包装这么用心到底是什么呢",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.31002883727733904,
+            "no_speech_prob": 0.12486715614795685
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.56,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_rms_ratio",
+          "text_ends_with_呢"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_7.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_7.wav",
+      "page_text": "直接打开看一下，诶这个它还塞着这个哈，缓冲防撞。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00033
+        },
+        "max_window_noisy": 0.000418,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000418
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000341
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000404
+          },
+          {
+            "start_seconds": 2.321,
+            "clean": 1.0,
+            "noisy": 0.000296
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 4.821,
+        "tail_silence_seconds": 0.085,
+        "overall_rms": 0.061274,
+        "end_rms": 0.055973,
+        "end_peak": 0.401213,
+        "end_rms_ratio": 0.913478,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000418,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "直接打开这个它还带着这个管通防撞",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "直接打开这个它还带着这个管通防撞",
+            "similarity_to_page": 0.7027,
+            "avg_logprob": -0.315242585810748,
+            "no_speech_prob": 0.5384057760238647
+          },
+          {
+            "model_name": "medium",
+            "text": "直接打一下诶 这个他还戴一下这个啊管通防撞",
+            "similarity_to_page": 0.6341,
+            "avg_logprob": -0.6658245921134949,
+            "no_speech_prob": 0.5089792013168335
+          }
+        ],
+        "agreement": 0.6667
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "看一下诶"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "塞",
+            "带"
+          ],
+          [
+            "哈缓冲",
+            "管通"
+          ]
+        ],
+        "deleted_len": 4,
+        "inserted_len": 0,
+        "replace_delta": 4,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "page_has_extra_chars"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.64,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "high_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7027,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_0.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_0.wav",
+      "page_text": "名牌写着威永盛。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000237
+        },
+        "max_window_noisy": 0.000237,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.091,
+        "tail_silence_seconds": 0.043,
+        "overall_rms": 0.024114,
+        "end_rms": 0.037142,
+        "end_peak": 0.160803,
+        "end_rms_ratio": 1.540265,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000237,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "名牌写着温永生",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "名牌写着温永生",
+            "similarity_to_page": 0.7143,
+            "avg_logprob": -0.23367270139547494,
+            "no_speech_prob": 0.6467224359512329
+          },
+          {
+            "model_name": "medium",
+            "text": "名牌写着微永生",
+            "similarity_to_page": 0.7143,
+            "avg_logprob": -0.5125206559896469,
+            "no_speech_prob": 0.22227743268013
+          }
+        ],
+        "agreement": 0.8571
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "威",
+            "温"
+          ],
+          [
+            "盛",
+            "生"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.66,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_peak",
+          "high_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7143,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_22.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_22.wav",
+      "page_text": "把它这个红布打开看看。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000296
+        },
+        "max_window_noisy": 0.000296,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000296
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.347,
+        "tail_silence_seconds": 0.147,
+        "overall_rms": 0.055795,
+        "end_rms": 0.006253,
+        "end_peak": 0.035951,
+        "end_rms_ratio": 0.11207,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000296,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "把它这个红布打给看看",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "把它这个红布打给看看",
+            "similarity_to_page": 0.9,
+            "avg_logprob": -0.2650537545030767,
+            "no_speech_prob": 0.05151757597923279
+          },
+          {
+            "model_name": "medium",
+            "text": "把他这个红布打开看看",
+            "similarity_to_page": 0.9,
+            "avg_logprob": -0.47677281002203625,
+            "no_speech_prob": 0.16776686906814575
+          }
+        ],
+        "agreement": 0.8
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "开",
+            "给"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 0.9,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_21.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_21.wav",
+      "page_text": "不过今天就先不开瓶了。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00025
+        },
+        "max_window_noisy": 0.00025,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.941,
+        "tail_silence_seconds": 0.053,
+        "overall_rms": 0.024005,
+        "end_rms": 0.017912,
+        "end_peak": 0.121342,
+        "end_rms_ratio": 0.746166,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.00025,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "不过今天就先不开屏了",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "不过今天就先不开屏了",
+            "similarity_to_page": 0.9,
+            "avg_logprob": -0.15022809230364287,
+            "no_speech_prob": 0.13160857558250427
+          },
+          {
+            "model_name": "medium",
+            "text": "不過今天就先不開屏了",
+            "similarity_to_page": 0.7,
+            "avg_logprob": -0.22589457159241041,
+            "no_speech_prob": 0.10109952092170715
+          }
+        ],
+        "agreement": 0.8
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "瓶",
+            "屏"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.56,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "medium_end_rms_ratio",
+          "text_ends_with_了"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_13.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_13.wav",
+      "page_text": "净含量九百五十毫升，浓香型白酒。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000257
+        },
+        "max_window_noisy": 0.000315,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          },
+          {
+            "start_seconds": 0.401,
+            "clean": 1.0,
+            "noisy": 0.000315
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.901,
+        "tail_silence_seconds": 0.053,
+        "overall_rms": 0.064912,
+        "end_rms": 0.031504,
+        "end_peak": 0.141401,
+        "end_rms_ratio": 0.485342,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000315,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "净含量950毫升农厢型的白酒",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "净含量950毫升农厢型的白酒",
+            "similarity_to_page": 0.5714,
+            "avg_logprob": -0.24413806977479355,
+            "no_speech_prob": 0.39931970834732056
+          },
+          {
+            "model_name": "medium",
+            "text": "净含量950毫升农想型白酒",
+            "similarity_to_page": 0.5926,
+            "avg_logprob": -0.33678679239182246,
+            "no_speech_prob": 0.17096549272537231
+          }
+        ],
+        "agreement": 0.8889
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [
+          "的"
+        ],
+        "replaced_pairs": [
+          [
+            "九百五十",
+            "950"
+          ],
+          [
+            "浓香",
+            "农厢"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 1,
+        "replace_delta": 6,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.5714,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_5.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_5.wav",
+      "page_text": "终于露出庐山真面目了，这是一款超高端的浓香型白酒，泸州老窖的温永盛，我们来看一下，前面有写荣膺巴拿马太平洋万国博览会金奖九十五周年纪念，我估计它这个容量是九百五十毫升是不是和它这个九十五周年。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.001701
+        },
+        "max_window_noisy": 0.015625,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000345
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000301
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000345
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000357
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000437
+          },
+          {
+            "start_seconds": 5.0,
+            "clean": 1.0,
+            "noisy": 0.000385
+          },
+          {
+            "start_seconds": 6.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          },
+          {
+            "start_seconds": 7.0,
+            "clean": 1.0,
+            "noisy": 0.000301
+          },
+          {
+            "start_seconds": 8.0,
+            "clean": 1.0,
+            "noisy": 0.000305
+          },
+          {
+            "start_seconds": 9.0,
+            "clean": 1.0,
+            "noisy": 0.000345
+          },
+          {
+            "start_seconds": 10.0,
+            "clean": 1.0,
+            "noisy": 0.000399
+          },
+          {
+            "start_seconds": 11.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 12.0,
+            "clean": 1.0,
+            "noisy": 0.000257
+          },
+          {
+            "start_seconds": 13.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          },
+          {
+            "start_seconds": 14.0,
+            "clean": 1.0,
+            "noisy": 0.000362
+          },
+          {
+            "start_seconds": 15.0,
+            "clean": 0.996094,
+            "noisy": 0.005737
+          },
+          {
+            "start_seconds": 16.0,
+            "clean": 0.984375,
+            "noisy": 0.015625
+          },
+          {
+            "start_seconds": 16.06,
+            "clean": 0.988281,
+            "noisy": 0.01001
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 18.56,
+        "tail_silence_seconds": 0.056,
+        "overall_rms": 0.066022,
+        "end_rms": 0.034315,
+        "end_peak": 0.181456,
+        "end_rms_ratio": 0.519757,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.015625,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "终于露出庐山这面目了这是一款超高端的农想式白酒卢州老江的温永胜我们来看一下前面有写荣迎巴达玛太平洋万国博览会新奖95周年纪念我估计它这个容量是950毫升是不是和它这个95周年",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "终于露出庐山这面目了这是一款超高端的农产品白酒庐州老教的温永胜我们来看一下前面有写荣英巴达马太平洋万国博览会新疆95周年纪念我估计它这个容量是950毫升适不适合它这个95周年",
+            "similarity_to_page": 0.7458,
+            "avg_logprob": -0.15463765854595088,
+            "no_speech_prob": 0.5694306492805481
+          },
+          {
+            "model_name": "medium",
+            "text": "终于露出庐山这面目了这是一款超高端的农想式白酒卢州老江的温永胜我们来看一下前面有写荣迎巴达玛太平洋万国博览会新奖95周年纪念我估计它这个容量是950毫升是不是和它这个95周年",
+            "similarity_to_page": 0.7797,
+            "avg_logprob": -0.2450289689976236,
+            "no_speech_prob": 0.2965828776359558
+          }
+        ],
+        "agreement": 0.8851
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "真",
+            "这"
+          ],
+          [
+            "浓香型",
+            "农想式"
+          ],
+          [
+            "泸",
+            "卢"
+          ],
+          [
+            "窖",
+            "江"
+          ],
+          [
+            "盛",
+            "胜"
+          ],
+          [
+            "膺",
+            "迎"
+          ],
+          [
+            "拿马",
+            "达玛"
+          ],
+          [
+            "金",
+            "新"
+          ],
+          [
+            "九十五",
+            "95"
+          ],
+          [
+            "九百五十",
+            "950"
+          ],
+          [
+            "九十五",
+            "95"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 21,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7797,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_8.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_8.wav",
+      "page_text": "我们把酒拿出来哈。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.001099
+        },
+        "max_window_noisy": 0.001099,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.001099
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.685,
+        "tail_silence_seconds": 0.061,
+        "overall_rms": 0.020043,
+        "end_rms": 0.012425,
+        "end_peak": 0.064001,
+        "end_rms_ratio": 0.619928,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.001099,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "我们把酒拿出来喝",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "我们把酒拿出来喝",
+            "similarity_to_page": 0.875,
+            "avg_logprob": -0.6123790211147733,
+            "no_speech_prob": 0.24157653748989105
+          },
+          {
+            "model_name": "medium",
+            "text": "我們拍攝完畢",
+            "similarity_to_page": 0.1429,
+            "avg_logprob": -1.010810101032257,
+            "no_speech_prob": 0.18888454139232635
+          }
+        ],
+        "agreement": 0.1429
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "哈",
+            "喝"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.875,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_12.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_12.wav",
+      "page_text": "酒精度是六十度。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000257
+        },
+        "max_window_noisy": 0.000257,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000257
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.515,
+        "tail_silence_seconds": 0.059,
+        "overall_rms": 0.029613,
+        "end_rms": 0.013356,
+        "end_peak": 0.061508,
+        "end_rms_ratio": 0.451026,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000257,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "酒精度是60度",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "酒精度是60度",
+            "similarity_to_page": 0.7143,
+            "avg_logprob": -0.19239772690667045,
+            "no_speech_prob": 0.07725971937179565
+          },
+          {
+            "model_name": "medium",
+            "text": "酒精度是60度",
+            "similarity_to_page": 0.7143,
+            "avg_logprob": -0.34994962480333114,
+            "no_speech_prob": 0.10422202944755554
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "六十",
+            "60"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7143,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_23.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_23.wav",
+      "page_text": "主要看盆不跑酒。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000265
+        },
+        "max_window_noisy": 0.000265,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.152,
+        "tail_silence_seconds": 0.032,
+        "overall_rms": 0.025765,
+        "end_rms": 0.020058,
+        "end_peak": 0.09549,
+        "end_rms_ratio": 0.778505,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000265,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "不要看彭帕这个",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "然後看彭佩季",
+            "similarity_to_page": 0.1538,
+            "avg_logprob": -0.87673696604642,
+            "no_speech_prob": 0.4548534154891968
+          },
+          {
+            "model_name": "medium",
+            "text": "不要看彭帕这个",
+            "similarity_to_page": 0.2857,
+            "avg_logprob": -0.7099161386489868,
+            "no_speech_prob": 0.4543541371822357
+          }
+        ],
+        "agreement": 0.3077
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "主",
+            "不"
+          ],
+          [
+            "盆不跑酒",
+            "彭帕这个"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 5,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.2857,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_4.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_4.wav",
+      "page_text": "我们继续拆哈。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000265
+        },
+        "max_window_noisy": 0.000265,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.131,
+        "tail_silence_seconds": 0.059,
+        "overall_rms": 0.024336,
+        "end_rms": 0.021075,
+        "end_peak": 0.117564,
+        "end_rms_ratio": 0.865981,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000265,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "我们继续拆吧",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "我们继续拆吧",
+            "similarity_to_page": 0.8333,
+            "avg_logprob": -0.35857252099297265,
+            "no_speech_prob": 0.0660453736782074
+          },
+          {
+            "model_name": "medium",
+            "text": "我们继续拆吧",
+            "similarity_to_page": 0.8333,
+            "avg_logprob": -0.36023112860592926,
+            "no_speech_prob": 0.03337369114160538
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "哈",
+            "吧"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_rms_ratio",
+          "text_ends_with_吧"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8333,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_28.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_28.wav",
+      "page_text": "等下一期视频我们就盘它。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00021
+        },
+        "max_window_noisy": 0.000231,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 0.252,
+            "clean": 1.0,
+            "noisy": 0.000223
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.752,
+        "tail_silence_seconds": 0.088,
+        "overall_rms": 0.061183,
+        "end_rms": 0.019395,
+        "end_peak": 0.142369,
+        "end_rms_ratio": 0.317003,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000231,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "等下一期视频 我们就盘他",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "等下一期视频我们就谈谈",
+            "similarity_to_page": 0.8182,
+            "avg_logprob": -0.14889439567923546,
+            "no_speech_prob": 0.2676413059234619
+          },
+          {
+            "model_name": "medium",
+            "text": "等下一期视频 我们就盘他",
+            "similarity_to_page": 0.9091,
+            "avg_logprob": -0.3052081508295877,
+            "no_speech_prob": 0.20854713022708893
+          }
+        ],
+        "agreement": 0.8182
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "它",
+            "他"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9091,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_1.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_1.wav",
+      "page_text": "酒精度是六十度，净含量九百五十毫升。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000254
+        },
+        "max_window_noisy": 0.000254,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 0.828,
+            "clean": 1.0,
+            "noisy": 0.000254
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.328,
+        "tail_silence_seconds": 0.096,
+        "overall_rms": 0.062252,
+        "end_rms": 0.026222,
+        "end_peak": 0.150444,
+        "end_rms_ratio": 0.421229,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000254,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "酒精度是60度净含量950毫升",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "酒精度是60度净含量950毫升",
+            "similarity_to_page": 0.6452,
+            "avg_logprob": -0.16032437483469644,
+            "no_speech_prob": 0.1172800213098526
+          },
+          {
+            "model_name": "medium",
+            "text": "酒精度是60度,净含量950毫升",
+            "similarity_to_page": 0.6452,
+            "avg_logprob": -0.23153643012046815,
+            "no_speech_prob": 0.09375093132257462
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "六十",
+            "60"
+          ],
+          [
+            "九百五十",
+            "950"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 6,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.22,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_130ms",
+          "medium_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.6452,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_11.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_11.wav",
+      "page_text": "我们来看一下哈，这边有一个名牌，写着威永盛。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000341
+        },
+        "max_window_noisy": 0.000393,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000393
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000385
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 2.151,
+            "clean": 1.0,
+            "noisy": 0.000231
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 4.651,
+        "tail_silence_seconds": 0.075,
+        "overall_rms": 0.061317,
+        "end_rms": 0.070816,
+        "end_peak": 0.436949,
+        "end_rms_ratio": 1.154921,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000393,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "我们来看一下,这边有一个名牌,写着威勇盛",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "我们来看一下这边有一个名牌写着威武胜",
+            "similarity_to_page": 0.8649,
+            "avg_logprob": -0.25905498504638674,
+            "no_speech_prob": 0.056096937507390976
+          },
+          {
+            "model_name": "medium",
+            "text": "我们来看一下,这边有一个名牌,写着威勇盛",
+            "similarity_to_page": 0.9189,
+            "avg_logprob": -0.40604281052947044,
+            "no_speech_prob": 0.03797447308897972
+          }
+        ],
+        "agreement": 0.8889
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "哈"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "永",
+            "勇"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.52,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.64,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "high_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9189,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_15.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_15.wav",
+      "page_text": "我已经预约了有几个月时间了，但一直没买到，就属于比较稀缺，可遇而不可求。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000282
+        },
+        "max_window_noisy": 0.000301,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000301
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000223
+          },
+          {
+            "start_seconds": 4.007,
+            "clean": 1.0,
+            "noisy": 0.000216
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.507,
+        "tail_silence_seconds": 0.099,
+        "overall_rms": 0.064303,
+        "end_rms": 0.012833,
+        "end_peak": 0.063201,
+        "end_rms_ratio": 0.199563,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000301,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "我已经预约了有几个月时间了但一直没买到就属于必要稀缺可预而不可求",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "我已经预约了有几个月时间了但一直没买到就属于必要稀缺可预而不可求",
+            "similarity_to_page": 0.9062,
+            "avg_logprob": -0.1237119928650234,
+            "no_speech_prob": 0.2463170737028122
+          },
+          {
+            "model_name": "medium",
+            "text": "我已经预约了有几个月时间了但一直没买到就属于比较稀缺可遇而不可求",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.17274671539347222,
+            "no_speech_prob": 0.1169205754995346
+          }
+        ],
+        "agreement": 0.9062
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "比较",
+            "必要"
+          ],
+          [
+            "遇",
+            "预"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 3,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.1,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_130ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9062,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_14.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_14.wav",
+      "page_text": "我手上的这款温永盛酒精度是六十度的，它的上边还有一款就是六十八度的那个温永盛。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000374
+        },
+        "max_window_noisy": 0.000362,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000278
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 3.985,
+            "clean": 1.0,
+            "noisy": 0.000362
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.485,
+        "tail_silence_seconds": 0.077,
+        "overall_rms": 0.067569,
+        "end_rms": 0.034341,
+        "end_peak": 0.200312,
+        "end_rms_ratio": 0.508225,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000374,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "我手中的这款文勇胜酒精度是60度的它的上边还有一款就是68度的那个文勇胜",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "我手中的这款文勇胜酒精度是60度的它的上边还有一款就是68度的那个文勇胜",
+            "similarity_to_page": 0.6849,
+            "avg_logprob": -0.1503048012422961,
+            "no_speech_prob": 0.0783088356256485
+          },
+          {
+            "model_name": "medium",
+            "text": "我手中的这款文永胜酒精度是60度的它的上边还有一款就是68度的那个文永胜",
+            "similarity_to_page": 0.7397,
+            "avg_logprob": -0.3295433907895475,
+            "no_speech_prob": 0.1540592461824417
+          }
+        ],
+        "agreement": 0.9444
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "上",
+            "中"
+          ],
+          [
+            "温永盛",
+            "文勇胜"
+          ],
+          [
+            "六十",
+            "60"
+          ],
+          [
+            "六十八",
+            "68"
+          ],
+          [
+            "温永盛",
+            "文勇胜"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 12,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.6849,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_9.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_9.wav",
+      "page_text": "这边也是一个抽拉式的。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000261
+        },
+        "max_window_noisy": 0.000261,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.941,
+        "tail_silence_seconds": 0.061,
+        "overall_rms": 0.022037,
+        "end_rms": 0.013097,
+        "end_peak": 0.063948,
+        "end_rms_ratio": 0.594324,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000261,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "这边也是一个抽拉式的",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "这边也是一个抽拉式的",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.24901875040747903,
+            "no_speech_prob": 0.38882312178611755
+          },
+          {
+            "model_name": "medium",
+            "text": "这边也是一个抽拉式的",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.41343098337000067,
+            "no_speech_prob": 0.03205031156539917
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_rms_ratio",
+          "text_ends_with_的"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_20.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_20.wav",
+      "page_text": "打开看一下啊。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000286
+        },
+        "max_window_noisy": 0.000286,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.067,
+        "tail_silence_seconds": 0.059,
+        "overall_rms": 0.023872,
+        "end_rms": 0.012124,
+        "end_peak": 0.063016,
+        "end_rms_ratio": 0.507867,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000286,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "来看一下",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "来看一下",
+            "similarity_to_page": 0.6,
+            "avg_logprob": -0.5613685131072998,
+            "no_speech_prob": 0.35864776372909546
+          },
+          {
+            "model_name": "medium",
+            "text": "來看一下",
+            "similarity_to_page": 0.6,
+            "avg_logprob": -0.7297800540924072,
+            "no_speech_prob": 0.11648400127887726
+          }
+        ],
+        "agreement": 0.75
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "打开",
+            "来"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.4,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.6,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_18.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_18.wav",
+      "page_text": "价格其实也不低哈嗯大概接近七千了。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000282
+        },
+        "max_window_noisy": 0.000275,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000275
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 1.873,
+            "clean": 1.0,
+            "noisy": 0.00025
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 4.373,
+        "tail_silence_seconds": 0.069,
+        "overall_rms": 0.066919,
+        "end_rms": 0.071144,
+        "end_peak": 0.36823,
+        "end_rms_ratio": 1.063132,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000282,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "价格其实也不低哈大概接近7000了",
+        "source": "agree:medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "价格其实也不低大概接近7000了",
+            "similarity_to_page": 0.75,
+            "avg_logprob": -0.1614462153779136,
+            "no_speech_prob": 0.21437764167785645
+          },
+          {
+            "model_name": "medium",
+            "text": "价格其实也不低哈大概接近7000了",
+            "similarity_to_page": 0.7879,
+            "avg_logprob": -0.3682202602687635,
+            "no_speech_prob": 0.03165239468216896
+          }
+        ],
+        "agreement": 0.9697
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "嗯"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "七千",
+            "7000"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 4,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.65,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.76,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "high_end_rms_ratio",
+          "text_ends_with_了"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7879,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_16.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_16.wav",
+      "page_text": "那之后等有机会我们买到了再做视频评测，即便是这款六十度的我也是费了。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000292
+        },
+        "max_window_noisy": 0.000404,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000257
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000292
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000404
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 3.025,
+            "clean": 1.0,
+            "noisy": 0.000241
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 5.525,
+        "tail_silence_seconds": 0.085,
+        "overall_rms": 0.070054,
+        "end_rms": 0.031376,
+        "end_peak": 0.206853,
+        "end_rms_ratio": 0.447886,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000404,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "那之后等有机会我们买到了再做视频评测即便是这款60度的我也是费了",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "那之后等有机会我们买到了再做视频评测即便是这款60度的我也是费了",
+            "similarity_to_page": 0.9375,
+            "avg_logprob": -0.09837736443775456,
+            "no_speech_prob": 0.12660734355449677
+          },
+          {
+            "model_name": "medium",
+            "text": "那之后,等有机会我们买到了,再做视频评测即便是这款60度的,我也是废了",
+            "similarity_to_page": 0.9062,
+            "avg_logprob": -0.2528563141822815,
+            "no_speech_prob": 0.11671380698680878
+          }
+        ],
+        "agreement": 0.9688
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "六十",
+            "60"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "text_ends_with_了"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9375,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_17.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_17.wav",
+      "page_text": "很大的劲儿，也属于比较稀缺吧，因为你着急要买就不是特别好买，正好碰见一个朋友，他用来是摆棍儿的，让我这个软磨硬泡硬生生的给买过来了。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000599
+        },
+        "max_window_noisy": 0.000351,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000315
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000324
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000311
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000345
+          },
+          {
+            "start_seconds": 5.0,
+            "clean": 1.0,
+            "noisy": 0.000351
+          },
+          {
+            "start_seconds": 6.0,
+            "clean": 1.0,
+            "noisy": 0.000305
+          },
+          {
+            "start_seconds": 7.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          },
+          {
+            "start_seconds": 8.0,
+            "clean": 1.0,
+            "noisy": 0.000278
+          },
+          {
+            "start_seconds": 9.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          },
+          {
+            "start_seconds": 9.212,
+            "clean": 1.0,
+            "noisy": 0.000261
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 11.712,
+        "tail_silence_seconds": 0.056,
+        "overall_rms": 0.06861,
+        "end_rms": 0.044267,
+        "end_peak": 0.186762,
+        "end_rms_ratio": 0.645195,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000599,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "很大的劲儿也属于比较稀缺吧因为你着急要买就不是特别好买正好碰见一个朋友他用来是摆柜的让我这个软磨硬泡硬生生的给买过来了",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "很大的劲儿也属于比较稀缺吧因为你着急要买就不是特别好买正好碰见一个朋友他用来是摆柜的让我这个软磨硬泡硬生生的给买过来了",
+            "similarity_to_page": 0.9748,
+            "avg_logprob": -0.1312147904844845,
+            "no_speech_prob": 0.7090059518814087
+          },
+          {
+            "model_name": "medium",
+            "text": "很大的劲也属于比较稀缺吧因为你着急要买就不是特别好买正好碰见一个朋友他用来是摆棍的让我这个软膜硬泡硬生生的给卖过来了",
+            "similarity_to_page": 0.9492,
+            "avg_logprob": -0.15246085319668054,
+            "no_speech_prob": 0.8425390720367432
+          }
+        ],
+        "agreement": 0.9402
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "棍儿",
+            "柜"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.56,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "medium_end_rms_ratio",
+          "text_ends_with_了"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9748,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_10.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_10.wav",
+      "page_text": "哎呀，这样就把这个酒拿出来了。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000257
+        },
+        "max_window_noisy": 0.000301,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000301
+          },
+          {
+            "start_seconds": 0.209,
+            "clean": 1.0,
+            "noisy": 0.000261
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.709,
+        "tail_silence_seconds": 0.085,
+        "overall_rms": 0.056122,
+        "end_rms": 0.023403,
+        "end_peak": 0.190899,
+        "end_rms_ratio": 0.417009,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000301,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "哎呀,这样就把这个酒拿出来了",
+        "source": "agree:medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "这样就把这个酒拿出来了",
+            "similarity_to_page": 0.9167,
+            "avg_logprob": -0.24390096014196222,
+            "no_speech_prob": 0.07799020409584045
+          },
+          {
+            "model_name": "medium",
+            "text": "哎呀,这样就把这个酒拿出来了",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.3555441605193274,
+            "no_speech_prob": 0.02409491501748562
+          }
+        ],
+        "agreement": 0.9167
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "text_ends_with_了"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004330_atpj_351_2.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_175123\\20260127_00004330_atpj_351_2.wav",
+      "page_text": "今天我们来一个重器开箱。",
+      "page_selected_indexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000261
+        },
+        "max_window_noisy": 0.000336,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000336
+          },
+          {
+            "start_seconds": 0.231,
+            "clean": 1.0,
+            "noisy": 0.000257
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.731,
+        "tail_silence_seconds": 0.075,
+        "overall_rms": 0.03004,
+        "end_rms": 0.021478,
+        "end_peak": 0.14013,
+        "end_rms_ratio": 0.714959,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000336,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "今天我们来一个重器开箱",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "今天我们来一个重器开箱",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.2189514860510826,
+            "no_speech_prob": 0.06577391922473907
+          },
+          {
+            "model_name": "medium",
+            "text": "今天我们来一个重器开箱",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.38039365659157437,
+            "no_speech_prob": 0.0395115502178669
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    }
+  ]
+}

@@ -5,6 +5,7 @@ const path = require("path");
 const vscode = require("vscode");
 
 const EXTENSION_ID = "local.trae-trial-bridge";
+const EXTENSION_VERSION = "0.0.3";
 
 function writeJson(filePath, data) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
@@ -56,6 +57,7 @@ async function runPayload(payload) {
     return {
       ok: true,
       extensionId: EXTENSION_ID,
+      extensionVersion: EXTENSION_VERSION,
       workspaceFolders: (vscode.workspace.workspaceFolders || []).map((folder) => folder.uri.toString())
     };
   }
@@ -64,6 +66,42 @@ async function runPayload(payload) {
     return {
       ok: true,
       sessionId: await getCurrentSessionId()
+    };
+  }
+
+  if (action === "listCommands") {
+    const includeInternal = Boolean(payload.includeInternal);
+    const commands = await vscode.commands.getCommands(includeInternal);
+    const pattern = payload.pattern ? new RegExp(String(payload.pattern), "i") : undefined;
+    const filtered = pattern ? commands.filter((command) => pattern.test(command)) : commands;
+    return {
+      ok: true,
+      count: filtered.length,
+      commands: filtered.sort()
+    };
+  }
+
+  if (action === "listLanguageModels") {
+    if (!vscode.lm || typeof vscode.lm.selectChatModels !== "function") {
+      return {
+        ok: true,
+        count: 0,
+        models: [],
+        warning: "vscode.lm.selectChatModels is not available"
+      };
+    }
+    const models = await vscode.lm.selectChatModels({});
+    return {
+      ok: true,
+      count: models.length,
+      models: models.map((model) => ({
+        id: model.id,
+        vendor: model.vendor,
+        family: model.family,
+        name: model.name,
+        version: model.version,
+        maxInputTokens: model.maxInputTokens
+      }))
     };
   }
 
@@ -80,6 +118,38 @@ async function runPayload(payload) {
       ok: true,
       beforeSessionId,
       sessionId,
+      result
+    };
+  }
+
+  if (action === "sendInternal") {
+    const inputs = Array.isArray(payload.inputs) ? payload.inputs : [String(payload.input || "")];
+    if (!inputs.length || inputs.every((item) => !item)) {
+      throw new Error("sendInternal requires non-empty inputs.");
+    }
+    const options = payload.options && typeof payload.options === "object" ? payload.options : {};
+    const beforeSessionId = await getCurrentSessionId();
+    const result = await executeWithRetry("workbench.action.chat.icube.send.internal", [inputs, options], 30);
+    const sessionId = result && result.sessionId ? result.sessionId : await getCurrentSessionId();
+    return {
+      ok: true,
+      beforeSessionId,
+      sessionId,
+      result
+    };
+  }
+
+  if (action === "executeCommand") {
+    const command = String(payload.command || "");
+    if (!command) {
+      throw new Error("executeCommand requires command.");
+    }
+    const args = Array.isArray(payload.arguments) ? payload.arguments : [];
+    const attempts = Number.isFinite(Number(payload.attempts)) ? Number(payload.attempts) : 6;
+    const result = await executeWithRetry(command, args, attempts);
+    return {
+      ok: true,
+      command,
       result
     };
   }
@@ -127,6 +197,9 @@ function activate(context) {
   context.subscriptions.push(vscode.commands.registerCommand("trae-trial-bridge.ping", async () => runPayload({ action: "ping" })));
   context.subscriptions.push(vscode.commands.registerCommand("trae-trial-bridge.currentSession", async () => runPayload({ action: "currentSession" })));
   context.subscriptions.push(vscode.commands.registerCommand("trae-trial-bridge.send", async (payload) => runPayload({ ...payload, action: "send" })));
+  context.subscriptions.push(vscode.commands.registerCommand("trae-trial-bridge.sendInternal", async (payload) => runPayload({ ...payload, action: "sendInternal" })));
+  context.subscriptions.push(vscode.commands.registerCommand("trae-trial-bridge.executeCommand", async (payload) => runPayload({ ...payload, action: "executeCommand" })));
+  context.subscriptions.push(vscode.commands.registerCommand("trae-trial-bridge.listLanguageModels", async () => runPayload({ action: "listLanguageModels" })));
 }
 
 function deactivate() {}

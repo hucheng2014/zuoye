@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_013",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T14:50:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689647601",
+      "query": "新 球 体 育",
+      "query_intent": "User is searching for '新球体育' (Xinqiu Sports), a sports news and live scores application.",
+      "ad": {
+        "name": "Z8Score - Soccer & Basketball",
+        "developer": "Nanjing Xinji Technology Co., Ltd"
+      },
+      "rating": "Good",
+      "comment": "The query \"新 球 体 育\" indicates an intent to find a sports news and live scores application. The ad \"Z8Score\" is a live soccer and basketball scores and sports data application. Since both apps provide sports data and live score tracking, the ad is a highly relevant alternative serving the same core user intent. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689647602",
+      "query": "天 涯 社 区",
+      "query_intent": "User is searching for '天涯社区' (Tianya Club), a famous traditional Chinese online BBS and community forum.",
+      "ad": {
+        "name": "MOMO陌陌",
+        "developer": "Beijing Momo Technology Co., Ltd."
+      },
+      "rating": "Bad",
+      "comment": "The query \"天 涯 社 区\" indicates an intent to find the iconic Chinese online forum and community platform Tianya. The ad \"MOMO陌陌\" is a location-based social networking and dating application. While both are social platforms, they serve fundamentally different purposes (traditional forum discussion vs. location-based dating), operating in entirely unrelated domains. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689647603",
+      "query": "广 东 移 动",
+      "query_intent": "User is searching for '广东移动' (China Mobile Guangdong), the regional branch of China Mobile's services.",
+      "ad": {
+        "name": "中国移动（手机营业厅）",
+        "developer": "中移在线"
+      },
+      "rating": "Excellent",
+      "comment": "The query \"广 东 移 动\" indicates an intent to access China Mobile services in Guangdong province. The ad \"中国移动\" is the official national China Mobile mobile service application. Since the ad is the exact official platform providing the telecommunications services the user is looking for, it is a direct and exact match. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689647604",
+      "query": "miniworld",
+      "query_intent": "User is searching for '迷你世界' (Mini World), a popular open-world sandbox building and survival game.",
+      "ad": {
+        "name": "明日之后",
+        "developer": "网易移动游戏"
+      },
+      "rating": "Good",
+      "comment": "The query \"miniworld\" indicates an intent to find the popular sandbox building and survival game Mini World. The ad \"明日之后\" (LifeAfter) is also an open-world survival mobile game with building and crafting elements. Since both are survival/sandbox mobile games that appeal to similar core gamers who enjoy building, crafting, and open-world exploration, the ad is a highly relevant alternative. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689647605",
+      "query": "腾 讯 会 议",
+      "query_intent": "User is searching for '腾讯会议' (Tencent Meeting/VooV Meeting), a popular video conferencing application by Tencent.",
+      "ad": {
+        "name": "TRAE - SOLO 智能工作助手",
+        "developer": "北京引力弹弓科技有限公司"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"腾 讯 会 议\" indicates an intent to find a professional video conferencing and online meeting application. The ad \"TRAE\" is an AI-powered work productivity assistant for development and analysis tasks. While one is a video conferencing tool and the other is an AI work assistant, both are professional productivity tools targeting business users, offering a weak but valid topical association. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T13:24:17",
+    "post_submit_status": "No errors visible"
+  }
+}

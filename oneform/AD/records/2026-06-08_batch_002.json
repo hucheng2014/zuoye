@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_002",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T12:15:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689628668",
+      "query": "anyreel",
+      "query_intent": "User is searching for 'AnyReel', likely a short-video or short-drama streaming application.",
+      "ad": {
+        "name": "夜幕之下",
+        "developer": "广州天梯网络科技有限公司"
+      },
+      "rating": "Bad",
+      "comment": "The query \"anyreel\" indicates an intent to find a specific video or short-drama streaming application. The ad \"夜幕之下\" is a female-oriented Otome mobile game. Since a video streaming application and a mobile game operate in completely different categories and address entirely unrelated user needs, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689628669",
+      "query": "kpro",
+      "query_intent": "User is searching for 'kpro', which may refer to a specific software or a restaurant app like KFC's KPRO sub-brand.",
+      "ad": {
+        "name": "撕歌",
+        "developer": "Nanjing Meizhen Technology Co.,Ltd."
+      },
+      "rating": "Bad",
+      "comment": "The query \"kpro\" indicates an intent for a specific utility or dining app. The ad \"撕歌\" is an online karaoke and singing social community platform. Since the search intent for \"kpro\" does not align with a karaoke social networking application, they operate in completely different domains with no functional crossover. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689628670",
+      "query": "现 代",
+      "query_intent": "User is searching for '现代' (Hyundai), likely the automobile manufacturer's official app or services related to Modern/Hyundai.",
+      "ad": {
+        "name": "无限轮回-搜打撤",
+        "developer": "Dod Joy Co., Ltd."
+      },
+      "rating": "Bad",
+      "comment": "The query \"现 代\" indicates an intent to find apps related to 'Hyundai' cars or general modern utilities. The ad \"无限轮回-搜打撤\" is an extraction shooter and survival mobile game. Since automobile services and action mobile games belong to completely unrelated categories with different target audiences and use cases, the relationship is weak. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689628671",
+      "query": "冒 泡",
+      "query_intent": "User is searching for '冒泡', an anonymous chat and social networking application (树洞漂流瓶).",
+      "ad": {
+        "name": "小陪伴语音-在线连麦聊天交友平台",
+        "developer": "Guangzhou Qianyue Media Co., Ltd."
+      },
+      "rating": "Good",
+      "comment": "The query \"冒 泡\" indicates an intent to find a social networking and anonymous chatting application. The ad \"小陪伴语音\" is an online voice chatting and dating platform. Since both apps provide social interaction and online communication features to help users make new friends, the ad is a highly relevant alternative within the same broader social category. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689628672",
+      "query": "体 温",
+      "query_intent": "User is searching for a body temperature logging or thermometer application.",
+      "ad": {
+        "name": "Grow: Health & Fitness",
+        "developer": "Floating Island Technology Co., Ltd."
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"体 温\" indicates an intent to find an app for tracking body temperature or fever. The ad \"Grow: Health & Fitness\" is a comprehensive habit tracker and health fitness application. While it may not be a dedicated thermometer app, both serve the broader domain of personal health tracking and wellness management. Thus, there is a weak but valid topical association. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T11:29:05",
+    "post_submit_status": "No errors visible"
+  }
+}

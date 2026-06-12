@@ -1,0 +1,101 @@
+{
+  "task_type": "RQOAE",
+  "display_name": "Rating Quality of Audio Edits",
+  "version": "1.0.0",
+  "source_files": [
+    "RQOAE/gpt-5.4-mini-tryrating-template.md",
+    "RQOAE/TUTORIAL_NOTES.md",
+    "RQOAE/AGENTS.md"
+  ],
+  "compact_sop": "compact_sop.md",
+  "flow": "flow.md",
+  "chunks": [
+    {
+      "id": "scoring_rubric",
+      "file": "chunks/scoring_rubric.md",
+      "title": "5-Level Scoring Rubric",
+      "description": "Detailed quality rating criteria for each level from Awful (1) to Excellent (5), with concrete examples and distinguishing factors.",
+      "keywords": [
+        "score",
+        "rating",
+        "rubric",
+        "awful",
+        "poor",
+        "average",
+        "good",
+        "excellent",
+        "quality",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "priority": 1,
+      "size_bytes": 4652
+    },
+    {
+      "id": "edit_types",
+      "file": "chunks/edit_types.md",
+      "title": "Audio Edit Types",
+      "description": "Five edit types (intro, outro, bridge, pre-extension, post-extension) with evaluation focus areas and filename parsing rules.",
+      "keywords": [
+        "intro",
+        "outro",
+        "bridge",
+        "pre-extension",
+        "post-extension",
+        "edit type",
+        "filename",
+        "beginning",
+        "ending",
+        "transition"
+      ],
+      "priority": 1,
+      "size_bytes": 4650
+    },
+    {
+      "id": "acoustic_analysis",
+      "file": "chunks/acoustic_analysis.md",
+      "title": "Acoustic Analysis & Models",
+      "description": "Technical analysis using PANNs audio tagging, CLAP semantic matching, and acoustic features. Threshold tables for silence ratio, energy jumps, RMS, spectral features.",
+      "keywords": [
+        "PANNs",
+        "CLAP",
+        "acoustic",
+        "silence",
+        "RMS",
+        "energy",
+        "spectral",
+        "threshold",
+        "analysis",
+        "model",
+        "librosa",
+        "dual verification"
+      ],
+      "priority": 1,
+      "size_bytes": 4790
+    },
+    {
+      "id": "tutorial_examples",
+      "file": "chunks/tutorial_examples.md",
+      "title": "Tutorial Examples & Page Structure",
+      "description": "Page layout with tutorial examples (audio index 0-31) vs formal questions (32-34). Using tutorial examples for calibration. Dataset IDs and audio indexing.",
+      "keywords": [
+        "tutorial",
+        "example",
+        "page",
+        "index",
+        "calibration",
+        "dataset",
+        "formal",
+        "question",
+        "0-31",
+        "32-34",
+        "structure"
+      ],
+      "priority": 2,
+      "size_bytes": 4098
+    }
+  ]
+}

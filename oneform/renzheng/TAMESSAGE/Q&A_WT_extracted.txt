@@ -1,0 +1,244 @@
+Excel is starting.
+HeaderQ&A_WTSearch for tools, help, and more (Alt + Q)jianglei1998jianglei1998JSign in
+Header
+Q&A_WTSearch for tools, help, and more (Alt + Q)jianglei1998jianglei1998JSign in
+Q&A_WTSearch for tools, help, and more (Alt + Q)jianglei1998
+Q&A_WTSearch for tools, help, and more (Alt + Q)
+Q&A_WT
+Search for tools, help, and more (Alt + Q)
+Search for tools, help, and more (Alt + Q)
+jianglei1998
+jianglei1998J
+Sign in
+FileHomeHomeInsertInsertShareShareFormulasFormulasDataDataReviewReviewViewViewHelpHelpDrawDrawCommentsCatch upViewingShare: this file is sharedUndoThere is nothing to undo.RedoThere is nothing to redo.UndoPasteCutCopyFormat PainterClipboardClipboardGrow FontShrink FontBoldItalicUnderlineDouble UnderlineStrikethroughGrow FontShrink FontBordersFill ColorFont ColorBordersFill ColorFont ColorFontFontAlign TopAlign MiddleAlign BottomAlign Text LeftAlign CenterAlign Text RightDecrease IndentIncrease IndentOrientationWrap TextMerge & CenterAlignmentAlignmentAccountingPercentageCommaDecrease DecimalIncrease DecimalNumberNumberConditionalFormattingFormat AsTableCellStylesConditional FormattingFormat As TableCell StylesStylesStylesInsertDeleteFormatInsertDeleteFormatCellsCellsAutoSumClearSort &FilterFind &SelectAutoSumClearSort & FilterFind & SelectEditingEditingAdd-insAdd-ins
+FileHomeHomeInsertInsertShareShareFormulasFormulasDataDataReviewReviewViewViewHelpHelpDrawDrawCommentsCatch upViewingShare: this file is shared
+FileHomeHomeInsertInsertShareShareFormulasFormulasDataDataReviewReviewViewViewHelpHelpDrawDraw
+File
+HomeHomeInsertInsertShareShareFormulasFormulasDataDataReviewReviewViewViewHelpHelpDrawDraw
+HomeHome
+Home
+InsertInsert
+Insert
+ShareShare
+Share
+FormulasFormulas
+Formulas
+DataData
+Data
+ReviewReview
+Review
+ViewView
+View
+HelpHelp
+Help
+DrawDraw
+Draw
+CommentsCatch upViewingShare: this file is shared
+Comments
+Catch up
+Viewing
+Share: this file is shared
+: this file is shared
+UndoThere is nothing to undo.RedoThere is nothing to redo.UndoPasteCutCopyFormat PainterClipboardClipboardGrow FontShrink FontBoldItalicUnderlineDouble UnderlineStrikethroughGrow FontShrink FontBordersFill ColorFont ColorBordersFill ColorFont ColorFontFontAlign TopAlign MiddleAlign BottomAlign Text LeftAlign CenterAlign Text RightDecrease IndentIncrease IndentOrientationWrap TextMerge & CenterAlignmentAlignmentAccountingPercentageCommaDecrease DecimalIncrease DecimalNumberNumberConditionalFormattingFormat AsTableCellStylesConditional FormattingFormat As TableCell StylesStylesStylesInsertDeleteFormatInsertDeleteFormatCellsCellsAutoSumClearSort &FilterFind &SelectAutoSumClearSort & FilterFind & SelectEditingEditingAdd-insAdd-ins
+UndoThere is nothing to undo.RedoThere is nothing to redo.Undo
+UndoThere is nothing to undo.RedoThere is nothing to redo.
+UndoThere is nothing to undo.
+Undo
+There is nothing to undo.
+RedoThere is nothing to redo.
+Redo
+There is nothing to redo.
+PasteCutCopyFormat PainterClipboardClipboard
+PasteCutCopyFormat PainterClipboard
+PasteCutCopyFormat Painter
+Paste
+Copy
+Format Painter
+Clipboard
+Grow FontShrink FontBoldItalicUnderlineDouble UnderlineStrikethroughGrow FontShrink FontBordersFill ColorFont ColorBordersFill ColorFont ColorFontFont
+Grow FontShrink FontBoldItalicUnderlineDouble UnderlineStrikethroughGrow FontShrink FontBordersFill ColorFont ColorBordersFill ColorFont ColorFont
+Grow FontShrink Font
+Grow Font
+Shrink Font
+Bold
+Italic
+Underline
+Double Underline
+Strikethrough
+BordersFill ColorFont Color
+Borders
+Fill Color
+Font Color
+Font
+Align TopAlign MiddleAlign BottomAlign Text LeftAlign CenterAlign Text RightDecrease IndentIncrease IndentOrientationWrap TextMerge & CenterAlignmentAlignment
+Align TopAlign MiddleAlign BottomAlign Text LeftAlign CenterAlign Text RightDecrease IndentIncrease IndentOrientationWrap TextMerge & CenterAlignment
+Align Top
+Align Middle
+Align Bottom
+Align Text Left
+Align Center
+Align Text Right
+Decrease Indent
+Increase Indent
+Orientation
+Wrap TextMerge & Center
+Wrap Text
+Merge & Center
+Alignment
+AccountingPercentageCommaDecrease DecimalIncrease DecimalNumberNumber
+AccountingPercentageCommaDecrease DecimalIncrease DecimalNumber
+AccountingPercentageCommaDecrease DecimalIncrease Decimal
+Accounting
+Percentage
+Comma
+Decrease Decimal
+Increase Decimal
+Number
+ConditionalFormattingFormat AsTableCellStylesConditional FormattingFormat As TableCell StylesStylesStyles
+ConditionalFormattingFormat AsTableCellStylesConditional FormattingFormat As TableCell StylesStyles
+ConditionalFormattingFormat AsTableCellStylesConditional FormattingFormat As TableCell Styles
+ConditionalFormattingFormat AsTableCellStyles
+ConditionalFormatting
+Formatting
+Format AsTable
+Table
+CellStyles
+Styles
+Conditional FormattingFormat As TableCell Styles
+Conditional Formatting
+Format As Table
+Cell Styles
+InsertDeleteFormatInsertDeleteFormatCellsCells
+InsertDeleteFormatInsertDeleteFormatCells
+InsertDeleteFormatInsertDeleteFormat
+InsertDeleteFormat
+Delete
+Format
+Cells
+AutoSumClearSort &FilterFind &SelectAutoSumClearSort & FilterFind & SelectEditingEditing
+AutoSumClearSort &FilterFind &SelectAutoSumClearSort & FilterFind & SelectEditing
+AutoSumClearSort &FilterFind &SelectAutoSumClearSort & FilterFind & Select
+AutoSumClearSort &FilterFind &Select
+AutoSumClear
+AutoSum
+Clear
+Sort &Filter
+Filter
+Find &Select
+Select
+AutoSumClearSort & FilterFind & Select
+Sort & FilterFind & Select
+Sort & Filter
+Find & Select
+Editing
+Add-insAdd-ins
+Add-ins
+You don't have permission to download or print this file.Give Feedback
+You don't have permission to download or print this file.
+Give Feedback
+I think the intent is to have separation -- your understanding below is correct: Q1 is just about the facts staying the same (no replacement or removal) and Q3 is iust about new info being added or assumptions being made.If, say, a name is changed, it will definitely fail Q1 (which checks the preservation of factula details). Whether this fails Q3 really depends on whether the response makes any assumption or introduces a new claim.
+I think the intent is to have separation -- your understanding below is correct: Q1 is just about the facts staying the same (no replacement or removal) and Q3 is iust about new info being added or assumptions being made.
+If, say, a name is changed, it will definitely fail Q1 (which checks the preservation of factula details). Whether this fails Q3 really depends on whether the response makes any assumption or introduces a new claim.
+Q&A_WT.xlsx . Excel . Reading View . one worksheet . Current worksheet is Writing Tools . Press Alt Shift A for accessibility help .
+1234567812345678
+Writing Tools
+Workbook StatisticsWorkbook StatisticsCustomize Status BarKeyboard ShortcutsHelp ResourcesHelp Improve OfficeZoom OutZoom LevelZoom InEnter Full Screen
+Workbook StatisticsWorkbook Statistics
+Workbook Statistics
+Customize Status Bar
+Keyboard Shortcuts
+Help Resources
+Help Improve Office
+Zoom Out
+Zoom Level
+Zoom In
+Enter Full Screen
+Working on it...Give Feedback to Microsoft
+Working on it...
+Give Feedback to Microsoft
+Please wait...We're still loading the workbook.Give Feedback to Microsoft
+Please wait...We're still loading the workbook.
+Please wait...
+We're still loading the workbook.
+We are checking the status of your Copilot license.
+Please wait...We are syncing the workbook.
+We are syncing the workbook.
+No Internet.Check your connection.
+No Internet.
+Check your connection.
+Welcome back!We're reloading the data.
+Welcome back!
+We're reloading the data.
+Please wait...We'll be back in a moment.
+We'll be back in a moment.
+Trying to reconnect.Check your internet connection.
+Trying to reconnect.
+Check your internet connection.
+Loading Power Query...
+Please wait while we are preparing Power Query for you
+Alt Period, fhnsmarwy1ji00zczazmzs02h, zh, yh, vh, xh, ch, fph, zlh, ffh, fsh, fgh, fkh, 1h, 2h, 3uh, 3dh, 4h, fgh, fkh, bh, hh, fch, bh, hh, fch, zfh, ath, amh, abh, alh, ach, arh, 5h, 6h, fqh, wh, mwh, zah, nh, anh, ph, kh, ,h, .h, znh, lh, th, jh, lh, th, jh, zth, ih, dh, oh, ih, dh, oh, zch, uh, eh, sh, fdh, uh, eh, sh, fdh, zeh, gazrRibbon LayoutClassic RibbonSingle Line RibbonShow RibbonAlways show ribbonShow tabs onlyAdjust automatically
+Alt Period, fhnsmarwy1ji00zczazmzs02h, zh, yh, vh, xh, ch, fph, zlh, ffh, fsh, fgh, fkh, 1h, 2h, 3uh, 3dh, 4h, fgh, fkh, bh, hh, fch, bh, hh, fch, zfh, ath, amh, abh, alh, ach, arh, 5h, 6h, fqh, wh, mwh, zah, nh, anh, ph, kh, ,h, .h, znh, lh, th, jh, lh, th, jh, zth, ih, dh, oh, ih, dh, oh, zch, uh, eh, sh, fdh, uh, eh, sh, fdh, zeh, gazr
+Alt Period,
+h, z
+h, y
+h, v
+h, x
+h, c
+h, fp
+h, zl
+h, ff
+h, fs
+h, fg
+h, fk
+h, 1
+h, 2
+h, 3u
+h, 3d
+h, 4
+h, b
+h, h
+h, fc
+h, zf
+h, at
+h, am
+h, ab
+h, al
+h, ac
+h, ar
+h, 5
+h, 6
+h, fq
+h, w
+h, mw
+h, za
+h, n
+h, an
+h, p
+h, k
+h, ,
+h, .
+h, zn
+h, l
+h, t
+h, j
+h, zt
+h, i
+h, d
+h, o
+h, zc
+h, u
+h, e
+h, s
+h, fd
+h, ze
+h, ga
+Ribbon LayoutClassic RibbonSingle Line RibbonShow RibbonAlways show ribbonShow tabs onlyAdjust automatically
+Ribbon LayoutClassic RibbonSingle Line Ribbon
+Ribbon Layout
+Classic Ribbon
+Single Line Ribbon
+Show RibbonAlways show ribbonShow tabs onlyAdjust automatically
+Show Ribbon
+Always show ribbon
+Show tabs only
+Adjust automatically

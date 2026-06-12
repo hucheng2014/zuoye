@@ -1,0 +1,34 @@
+models/
+node_modules/
+.venv/
+.browser_profile/
+_archive/
+_work_audio/
+_work_context/
+__pycache__/
+*.py[cod]
+
+# Screenshots
+*.png
+
+# Local secrets/env files
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Local assistant/editor/browser state
+.claude/
+.openclaude/
+.commandcode/
+.kiro/
+.vscode/
+.idea/
+
+*.log
+batch_review.err.log
+batch_review.log
+.DS_Store
+Thumbs.db

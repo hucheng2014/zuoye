@@ -1,0 +1,643 @@
+--- Page 1 ---
+ 
+Preference Ranking Feedback 
+April 20206 
+Table of Contents 
+Preference Ranking Feedback ......................................................................................................... 1 
+Overview of Error Trends ............................................................................................................ 3 
+General Examples to illustrate trends ......................................................................................... 3 
+Corrective actions ........................................................................................................................ 5 
+ar-AE ............................................................................................................................................ 5 
+ar-EG ............................................................................................................................................ 8 
+ar-SA ............................................................................................................................................ 8 
+da-DK ......................................................................................................................................... 11 
+de-DE ......................................................................................................................................... 15 
+en-AU ......................................................................................................................................... 16 
+en-GB ......................................................................................................................................... 18 
+en-IN .......................................................................................................................................... 19 
+es-ES .......................................................................................................................................... 19 
+es-MX ......................................................................................................................................... 20 
+fi-FI ............................................................................................................................................. 22 
+fr-CA ........................................................................................................................................... 24 
+fr-FR ........................................................................................................................................... 25 
+he-IL ........................................................................................................................................... 26 
+hi-IN ........................................................................................................................................... 28 
+hi-Latn ........................................................................................................................................ 28 
+id-ID ........................................................................................................................................... 29 
+it-IT ............................................................................................................................................ 30 
+ja-JP ........................................................................................................................................... 32 
+ko-KR .......................................................................................................................................... 33 
+ms-MY ....................................................................................................................................... 34 
+--- Page 2 ---
+ 
+nb-NO ........................................................................................................................................ 35 
+nl-NL .......................................................................................................................................... 36 
+pl-PL ........................................................................................................................................... 38 
+pt-BR .......................................................................................................................................... 40 
+pt-PT .......................................................................................................................................... 41 
+ru-RU ......................................................................................................................................... 42 
+sv-SE ........................................................................................................................................... 44 
+th-TH .......................................................................................................................................... 46 
+tr-TR ........................................................................................................................................... 49 
+uk-UA ......................................................................................................................................... 50 
+vi-VN .......................................................................................................................................... 52 
+zh-HK ......................................................................................................................................... 53 
+zh-TW ........................................................................................................................................ 56 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 3 ---
+ 
+ 
+ 
+ 
+Overview of Error Trends 
+• The top error category was Localization, where graders frequently missed to mark 
+localization issues present in the responses. Please remember all kinds of 
+language/locale issues are considered Localization errors according to the v5 PR 
+Guidelines (Preference Ranking_V5_Vendor 26.02.11) 
+• Instruction Following and Truthfulness are frequently mixed up, resulting in an 
+overpenalization of Instruction Following and underpenalizing of Truthfulness. 
+• Truthfulness is also underpenalized because of lack of sufficient fact-checking, as well as 
+a lack of understanding contextual correctness. 
+General Examples to illustrate trends 
+• Localization > Yes, issues present 
+All language and locale issues are to be marked as Localization issues. In the below 
+response, ‘Coca Cola’ should be spelled as ‘Coca-Cola’, this is a typo in any language and 
+should be marked as a Localization issue accordingly.  
+ 
+ 
+• Instruction Following vs Truthfulness 
+1.  In cases where the model attempts to fulfil the user request and attempts to follow 
+the instructions, but gives out incorrect information, this should be penalized in 
+Truthfulness, not Instruction Following. In the below example (roughly translated 
+from ar_ae), the activities provided include ice skating, which does not make sense 
+as Al Dhaid is located in a desert region with quite hot temperatures. 
+ 
+
+--- Page 4 ---
+ 
+ 
+2. If the user request is a question to the model, and the model provides an answer to 
+this question, regardless of whether the answer is correct or not, you should not 
+penalize instruction following. This is because the main instruction, to provide an 
+answer to the user's question, is followed. In the example below we have this case, 
+where the user is asking about Devon vs Cornwall in regards to their scone eating 
+preferences. The model provides an answer to the user's question, in both response 
+A and response B, so Instruction Following should be set as Fully Following here.  
+ 
+• Truthfulness 
+Responses that are completely verifiable, featuring facts, must be completely accurate. In 
+the below example, though the response seems correct at first glance, the incorrect 
+decimals add up so that the final answer is also incorrect. There are 568.26ml in a UK pint, 
+meaning in 15 litres, there are26.3963 pints, to get 26.4172 pints would require a pint being 
+567.81ml, which i is clearly wrong. 
+  
+ 
+ 
+ 
+ 
+
+--- Page 5 ---
+Corrective actions 
+- P lease ensure you are checking for ALL kinds of language/locale issues in the response,
+since they are all considered Localization issues. This includes: all typos/spellings errors,
+all grammar and punctuation errors, cases where just one word is ina. Different
+language, etc.
+- P lease re -check the Truthfulness section in the Guidelines, and focus on the two parts of
+it: Factual Correctness and Contextual Correctness. Contextual Correctness means that
+your new ‘truth’ is the input text provided by the user, where applicable of course. Ex: if
+the user requested a summary of an input text, the summary must not introduce new
+information/hallucinations, or include info that is untrue when compared to this input.
+- P lease also remember that Truthfulness  is not applicable to fictional creative writing.
+This type of content allows for imagination, made-up facts etc. Just be sure your case
+really is fictional creative writing, since for non-fiction your response must be fact-
+checked as usual.
+- Remember that for Question & Answers user requests, if the response is attempting to
+answer the question, it is following the instructions even if the answer is wrong. This
+wrongness of the answer must be penalized in Truthfulness, not Instruction Following.
+Please find some locale-specific examples in the sections below. 
+ar-AE 
+This locale was most affected by missing to mark Localization errors, as well as the mixing up of 
+Instruction Following and Truthfulness. 
+Localization 
+All grammar, spelling, vocabulary, Formatting/Punctua tion issues are considered Localization 
+issues as per the Guidelines.  
+In the below example, the Response features several errors: Localization spelling issues such as: 
+ودﻧﻰ واﻟﻌﺠﻼنwhere there is an extra وin between the name of the participant. Also, there is a 
+whole paragraph that starts with رﻛﺰ اﻟﻤﺸﺎرﻛﺎت ﻋﻠﻰ ﻣﺰج اﻟﺤﺮﻓﯿﺔ اﻟﺘﻘﻠﯿﺪﯾﺔwhich is repeated. There is 
+als a Grammar issue such as: ﻣﺼﻤﻤﺎً إﻣﺎراﺗﯿﺎًthat should be ﻣﺼﻤﻤًﺎ إﻣﺎراﺗﯿًﺎ .
+--- Page 6 ---
+T
+ruthfulness 
+Please remember that Contextual correctness is graded in relation to the context, which would 
+be the user request in these PR tasks. This is especially important for user requests that ask to 
+have something done with the provided input text (a summary, re-write, extraction, question 
+answering, etc). This provided text is the ‘truth’ that the model needs to adopt and follow, and if 
+the response mentions information that may be factually true, but is not mentioned in the 
+original text, this would still make it not truthful. So please make sure this request is fulfilled as 
+per the input text - If the response doesn’t match the information from the input text, this has 
+to be penalized in Truthfulness. 
+In the below example, the response features incorrect information in relation to the input text: 
+ﺳﺘﺸﺎرك15 ﻣﺼﻤﻤﺎً إﻣﺎراﺗﯿﺎً/ "ﻧﺪ" ﻣﻦ اﻟﻌﺼﯿﺎﻧﻲ/ أﻋﻤﺎل اﻟﻤﺼﻤﻤﯿﻦ اﻹﻣﺎراﺗﯿﯿﻦall pieces of information that are 
+incorrect. 
+
+--- Page 8 ---
+ar-EG 
+This locale featured many instances of Instruction Following being overpenalized. In the below 
+Response, many graders penalized the fact that some of the dishes/ingredients listed are not 
+actually very safe for someone with digestion problems, as failing to follow instructions. But this 
+is related to factual accuracy, so it is enough to penalize Truthfulness. All the instructions here, 
+to provide 5 dishes, are followed. 
+ar-SA 
+The most common issue found is overpenalizing Instruction Following, and underpenalizing 
+Truthfulness. 
+Please remember that Contextual correctness is graded in relation to the context, which would 
+be the user request in these PR tasks. This is especially important for user requests that ask to 
+have something done with the provided input text (a summary, re-write, extraction, question 
+answering, etc). This provided text is the ‘truth’ that the model needs to adopt and follow, and if 
+the response mentions information that may be factually true, but is not mentioned in the 
+original text, this would still make it not truthful. So please make sure this request is fulfilled as 
+
+--- Page 9 ---
+pe
+r the input text: If the response doesn’t match the information from the input text, this has to 
+be penalized in Truthfulness. 
+In the below example, most graders missed an incorrect piece of information, in relation to the 
+input text:  أو "اﻟﻤﺸﺮﺑﯿﺎت"، وھﻲ ﻧﺎﻓﺬة ﺷﺒﮫ ﺧﺸﺒﯿﺔ ﺑﻮﺟﻮد ﻧﻮاﻓﺬ "اﻟﺮواﺷﯿﻦ-the word ﺷﺒﮫis inaccurate 
+according to the text as the window as indeed made of wood. 
+
+--- Page 11 ---
+da-DK 
+The most frequently underpenalized category for this locale is Localization: Graders are missing 
+to mark various categories of Localization errors. 
+Grammar seems to be among the commonly overlooked categories. Please pay special attention 
+to capitalization, and if the rules for capitalization are followed. In the below example, many 
+people missed that the keywords are capitalized which is not in line with Danish grammar. 
+Whe
+n you see a user request that asks to have something done with the provided input text (a 
+summary, re-write, extraction, question answering, etc), please carefully consider Truthfulness. 
+This provided text is the ‘truth’ that the model needs to adopt and follow, and if the response 
+mentions information that may be factually true, but is not mentioned in the original text, this 
+would still make it not truthful. So please make sure this request is fulfilled as per the input text: 
+If the response doesn’t match the information from the input text, this has to be penalized in 
+
+--- Page 12 ---
+T
+ruthfulness. in the below example points 7 and 10 do not exist in the input text, they are 
+hallucinations.
+
+--- Page 13 ---
+Selvom mange af de gamle ordsprog stadig er populaere i dag, er der ogsa nye ordsprog og slangudtryk, der er 
+blevet en del al det danske sprog. Disse ordsprog og slangudtryk afspejler ofte den moderne kultur og samfundet i 
+dag. 
+Uanset om man er en turist, der 0nsker at laere mere om det danske sprog og kultur eller en lokal, der 0nsker at 
+udtrykke sig mere effektivt, kan man laere meget al de danske ordsprog. De er en vigtig del af det danske sprog og 
+kultur og hjaelper med at bevare og videref0re danskernes stolte tradition for visdom og humor. 
+Lad os se pa nogle af de mest kendte danske ordsprog: 
+Ordsprogene i Oanmark gar tilbage til oldtiden og er blevet brugt af generationer til at videregive visdom fra aeldre 
+til yngre. Ou kan laere flere ordsprog genn em danskundervisning K0benhavn pa Superprof! 
+"Man skal ikke saelge skindet, f0r bj0rnen er skudt" - Oette ordsprog betyder, at man ikke skal planlaegge for noget, 
+der maske ikke vii ske. 
+"At l0be med halen mellem benene" - Dette ordsprog betyder, at man f0ler sig ydmyget eller flov over noget, der er 
+sket. 
+"At ga agurk" - Oette ordsprog betyder, at man bliver vred eller mister besindelsen. 
+"Man skal ikke kaste med sten, nar man selv bor i et glashus" - Dette ordsprog betyder, at man ikke skal kritisere 
+andre, nar man selv har de samme eller lignende fejl. 
+"At saelge sin bedstemor" - Oette ordsprog betyder, at man vii g0re alt for at opna noget, selvom det kraever en stor 
+personlig indsats eller offer. 
+"Oet er ikke alle, der har lige meget mel i posen" - Oette ordsprog betyder, at ikke alle har de samme evner, 
+faerdigheder eller fordele. 
+"At ga planken ud" - Oette ordsprog betyder, at man tager en stor risiko, som kan resultere i et stort tab eller fiasko. 
+"At tage r0ven pa nogen" - Oette ordsprog betyder, at man bedrager eller snyder nogen. 
+"Man skal ikke skue hunden pa harene" - Oette ordsprog betyder, at man ikke skal vurdere noget eller nogen ud fra 
+udseendet eller ydre omstaendigheder. 
+"At ga i hundene" - Dette ordsprog betyder, at noget gar darligt eller bliver 0delagt gradvist. Laer dansk hjemmefra 
+Der lindes hundredvis al mader at laere dansk pa. Udfordringen er at finde en studieteknik, der fungerer for dig. Ou 
+kan lave dine egne flashcards, bruge apps, se Iv-programmer, laese b0ger, fa en laerer eller 0ve dig pa ordforrad. 
+Lad os dykke ned i nogle forskellige tilgange til at laere dansk hjemmefra. 
+Fa en privatunderviser 
+Superprof har hundredvis al undervisere, som kan hjaelpe dig med at laere dansk hjemmefra. Sammen kan I lave en 
+personlig studieplan baseret pa dit eget niveau og dine mal. S0g i vores database over danskundervisere og find en, 
+du kan lide. Underviseren kan give dig opgaver, du skal l0se, hjaelpe dig med at studere eller 0ve dig i forskellige 
+situationer gennem samtaler og spil. 
+Sprog traenes bedst ved at bruge det, sa ved regelmaessigt at 0ve dit dansk med en laerer kan du bade finpudse 
+dine faerdigheder og ta feedback om udviklingsmuligheder. Oette vii ogsa hjaelpe dig med at laere dansk hurtigere. 
+
+--- Page 15 ---
+de-DE 
+Localization: Please remember that all grammatical mistakes should be considered localization 
+issues "Zum Tennis spielst du...","...einen Tennisspaß mit dir!". 
+T
+ruthfulness: Remember to carefully check and penalize all incorrect information. While the 
+response below seems fine at first glance, it’s actually stating a few things that aren’t really true: 
+-American Football: "lots of running" is misleading, game consists of short plays with long
+breaks.
+-Rugby: primarily a physical contact sport, no mention of tackling.
+-Lacrosse: does not typically contain elements from Baseball"
+
+--- Page 16 ---
+Instruction Following: When the user asks a question, and the model attempts to answer, but 
+some of the information provided is just not correct, this has to be penalized in Truthfulness, 
+not in Instruction Following. In the below response, the model has fails significantly by omitting 
+Medvedev entirely and including Boris Yeltsin, who served outside the requested period. 
+en-AU 
+For this locale, Instruction Following was often penalized, where it is actually Truthfulness is 
+affected. In the below response, there is hallucinated, made-up information and not all parks 
+are in the 20 km radius, this should be penalized in Truthfulness, as the model does fulfil the 
+request, it just lists incorrect parks. A: Croydon East Park is not within 20km. (also no gazebo) 
+Moonee Ponds Park does not exist B: Meadowvale Park does not exist. Caulfield South Park 
+does not exist. Fairfield Park Oval does not exist. Belmont Park is too far (40km from Caulfield). 
+
+--- Page 18 ---
+en-GB 
+F
+or a case of Instruction Following and Truthfulness mismatch for this locale, the general 
+examples from above are applicable here:  
+If the user request is a question to the model, and the model provides an answer to this 
+question, regardless of whether the answer is correct or not, you should not penalize 
+instruction following. This is because the main instruction, to provide an answer to the user's 
+question, is followed. In the example below we have this case, where the user is asking about 
+Devon vs Cornwall in regards to their scone eating preferences. The model provides an answer 
+to the user's question, in both response A and response B, so Instruction Following should be 
+set as Fully Following here. L
+ocalization: In the below task, please make sure you carefully check the calculations and 
+numbers; The correct answer is actually slightly off and should be penalized in Truthfulness: 
+There are 568.26ml in a UK pint, meaning in 15 litres you have 26.3963 pints, to get 26.4172 
+pints would require a pint being 567.81ml, which is clearly wrong. And many people missed the 
+Localization error (US pints being used in the explanation in Response B).  
+
+--- Page 19 ---
+en-IN 
+Localization was the primary error category for this locale. Please remember to carefully check 
+and report ALL kinds of locale/language errors. In the below examples, ‘Program’ is not the 
+correct spelling for en (India), it should be ‘programme’, regardless of the source text using both 
+spellings
+Instruction Following: Please keep in mind the specific instruction from the Guidelines for cases 
+where the model is declining: if the response declines to engage with a harmful request, this 
+should be marked as Fully Following, not Not Following (page 29 of the Guidelines). We can see 
+this in the example below: 
+es-ES 
+For this locale, graders are frequently missing Localization errors. Please remember that now 
+ALL types of locale/language issues are to be marked as Localization issues.  
+In the below response, most graders missed to mark the Awkward or unnatural writing 
+localization issue: The response uses the expression "hora solar de verano", which is a direct 
+translation from English. The correct expression should be "horario de verano". 
+
+--- Page 20 ---
+T
+ruthfulness: Please remember that contextual correctness must be checked as well as factual 
+accuracy, especially for responses which are making use of some input text. In the below 
+response, most of the information provided in the text is correct based on the prompt, but part 
+of it is a hallucination. The text mentions "dos abogados en una firma de abogados", but the 
+prompt specifies that Marta is a secretary, not a lawyer. This means the rating should be 
+Partially Truthful 
+es-MX
+O
+ne of the main issues found in this locale, is overpenalizing Instruction Following when it is 
+actually Truthfulness that is affected. In the below example, the instructions are followed: to 
+
+--- Page 21 ---
+pr
+ovide a summary, in list format, with each paragraph staying under 100 words. The fact that 
+there is a bunch of incorrect information should be marked in Truthfulness, not IF. 
+The below response also features Awkward wording which should be penalized in Localization. 
+
+--- Page 22 ---
+fi-FI
+T
+he main error trend is Instruction Following being rated too low, and Truthfulness being rated 
+too high. In the below example, Response B should not be penalized in IF as all instructions are 
+followed (list 5 breeds, their characteristics, keep each description under 50 words, list 4 
+names), it just introduces incorrect information, but this should be penalized in Truthfulness 
+only. 
+
+--- Page 24 ---
+fr-CA
+L
+ocalization is the most prominent error category, as graders are frequently missing to mark 
+localization issues in tasks. Please remember that ALL language/locale issues are now 
+considered localization issues, as per the Guidelines. 
+In the below response, the structure "démarre par construire" is grammatically incorrect. 
+Phrasings such as "en la redressant", "qui ajoute de la beauté", "cela implique de la 
+planification" and "maintenir l'accès à ta maison" in this context are awkward/unnatural or 
+inadequate. 
+
+--- Page 25 ---
+G
+raders are also overlooking the prompt/input information, and are missing to penalize 
+responses which misrepresent this input text. In the below response, there are three 
+inaccuracies when comparing with the contextual truth from the user prompt: Kate is not "the 
+queen", the translators will not be the user's professor, and the user is not expecting Charlotte 
+to write in French for it to be translated. This must be penalized in Truthfulness. 
+fr-FR 
+Localization is also the main error category for this French locale. In the example below, the first 
+sentence is awkward ("produit par HBO" is misplaced in the sentence) and "basée" should be 
+"basé" since it is linked with masculine word "feuilleton télévisé". "Troisième renouvellement 
+pour une troisième saison" is also unnatural as we tend to avoid repetitions in French. Words 
+like "admirateurs" and "évolution négative" seem slightly off as well. 
+
+--- Page 26 ---
+he-IL 
+Instruction Following seems to be frequently penalized when it is other dimensions that are 
+affected. In the below example, although it features very awkward writing, we can tell that the 
+response follows the instructions. 
+
+--- Page 28 ---
+hi-IN 
+Instruction Following is often over-penalized. In the below example, many graders have marked 
+‘Not Following’, but the instructions are followed. The instruction was to write a story for 
+children about Holi, which is what the model did. The fact that the response makes up facts, 
+uses bad quality language etc. should be penalized in other dimensions, but not Instruction 
+Following.
+hi-Latn 
+For this locale, both Instruction Following and Truthfulness are being underpenalized, i.e. 
+issues are being over looked frequently. 
+In the below task, Instruction Following should have been penalized as one instruction wasn’t 
+followed: the response fails to provide "dilchasp panktiyan" (interesting/engaging lines) meant 
+for a video news introduction. Instead, it provides a dry, bulleted summary. It lacks the "hook" 
+or "flow" required for a broadcast script. 
+And Truthfulness has several issues, the third bullet specifically: "Venkatesh Iyer par bahut badi 
+boli lagti hai, jo IPL ke naye star ko darshata hai" 
+
+--- Page 29 ---
+R
+eference does mention "Venkatesh Iyer par apratyashit taur par kaafi badi boli lagi" 
+(unexpectedly high bid) 
+ "jo IPL ke naye star ko darshata hai" (which shows him as a new IPL star) is UNGROUNDED 
+INTERPRETATION/EXTRAPOLATION 
+The reference text does NOT call him a "naye star" (new star). The reference does NOT say the 
+bid "darshata hai" (shows/indicates) anything about star status. This is adding interpretive 
+commentary beyond the source material. 
+Misleading heading: "Venkatesh Iyer ka Badlaav" (change) suggests a team change like Shreyas, 
+but reference doesn't specify which team bought him. 
+id-ID 
+Localization issues are frequently overlooked for this locale. In the below example, the use of 
+the words “mengganggu” and “terkini” are rather awkward. 
+
+--- Page 30 ---
+I
+n the example below, many graders missed to downgrade Trutfhulness, despite there being 
+some relatively obvious incorrect information in the response (such as wearing glasses as 
+protection against snakes, and that the use of gloves helps keep you safe from crocodile or 
+snake bites). 
+it-IT 
+This locale had most errors in the Localization dimension, where graders overlooked issues like 
+the unnatural repetition of ‘grave’ below 
+
+--- Page 31 ---
+When it comes to Instruction Following, many people penalized the below response even 
+though it followed the requested wordcount and wrote a story from the perspective of the ball, 
+as requested. The untrue information about 5 sets etc should only be penalized in Truthfulness, 
+not in IF. There is also a Localization error that was missed, Awkward writing, because con la 
+testa tra le mani doesn't convey any metaphorical meaning in Italian 
+
+--- Page 32 ---
+ja-JP 
+Localization and Truthfulness were the most affected dimensions error-wise. In the below 
+example, many graders failed to penalize secondary information which is incorrect: Response A 
+should be partially truthful, as the text contradicts the fact that they actually had little contact 
+until their reunion. And Response B should also be partially truthful, as text incorrectly states 
+that the speaker had no contact with K-kun until the reunion, when the actual context is that K-
+kun and M-san were the ones who lacked contact during high school. 
+The Localization errors were also missed by many, for Response A: Awkward or Unnatural 
+Writing, Rationale: Several akward phrases for “昔ながらの幼馴染”, 
+"その芸術的な感性は、彼女自身の存在感を際立たせています" and 
+"彼らの関係は、まさに理想的なパートナーシップであり、多くの友人や家族に希望と
+幸せをもたらしています。
+And for Response B: Awkward or Unnatural Writing, Rationale: Several awkward phrases for 
+“その姿を見ていると、いつも笑顔が溢れていました。” and 
+"この素晴らしい家族を築いていくお手伝いができれば幸いです。
+
+--- Page 33 ---
+ko-KR 
+The Localization dimension issues were frequently overlooked. In the below example, graders 
+missed to mark Awkward or unnatural writing - 동생분께서 독립을 축하드려요 
+T
+ruthfulness was also underpenalized, as can be seen in the below example. Both responses 
+actually feature contextually incorrect information, not in accordance with the user prompt, 
+which should be penalized in this dimension. 
+
+--- Page 34 ---
+심청
+ does not meet 용왕 and does not have mother.  A - "심청이는 용왕의 허락을 받고 작은 
+배를 타고 탈출하여 외딴 섬으로 향했다" is not true. B - "그녀는 그저 어머니의 가정을 
+책임지는 딸이 아니었소" "용왕 앞에 선 심청" is not true. 
+ms-MY 
+This locale’s errors were focused mainly on Localization and underpenalization. In the below 
+example, many graders missed Awkward writing in sentences like "setiap kanak-kanak teruja 
+dan penuh harapan melihat duit itu" 
+
+--- Page 35 ---
+A
+nd below, this 'kerjasama-seluruh-kerajaan' should not be hyphenated. 
+nb-NO 
+Localization is the most affected error category, as many graders are missing to mark 
+localization issues. In the below example, the response displays several cases of awkward 
+writing: "Sluttkampen om plassen i eliteserien" should by replaced by "Sluttkampen om 
+plassene i eliteserien", given the context of multiple teams. "og til slutt har det blitt slik det ble." 
+A native wouldn't write that, same with "Vålerenga har gjort det ekstraordinært bra". 
+
+--- Page 36 ---
+A
+nd Instruction Following seems to be rated too low, as all the relevant instructions are 
+followed: the response adopts the required persona, and is within the requested wordcount 
+range. 
+nl-NL 
+Localization is the dominant error category for this local; graders are overlooking localization 
+issues. In the below response, many graders missed to mark the localization issues like Awkward 
+or Unnatural Writing, Rationale: 
+-" In Nederland zit er een groot kasteel in Den Haag" should be 'staat' not 'zit'. 
+
+--- Page 37 ---
+-"
+en beslissingen worden gemaakt die ons allemaal iets aan doen." 'aan doen' implies harm, 
+incorrect word use. 
+And some incorrect information was also missed, which should be penalized in Truthfulness: 
+- "het grootste en belangrijkste deel van het kasteel." 'het Binnenhof' is the entire 'castle', not
+part of it.
+- "Het werd al heel lang geleden gebouwd, heel lang, heel lang geleden, namelijk in de
+dertiende eeuw!" the text doesn't mention anything about it being built, only the purchase at
+that time, so this is a hallucination made by the model which has to be penalized
+- "Dat betekent dat het bijna 700 jaar oud is." 13th century = 12XX , thus it would be over 700
+years old.
+
+--- Page 38 ---
+pl-PL 
+This locale featured many issues related to underpenalizing Truthfulness. In the below example, 
+the model hallucinated several important pieces of information about the user, so this must be 
+penalized in Truthfulness. The model has made up the: date, reason and gender. 
+
+--- Page 39 ---
+I
+n the below task, Instruction Following was penalized even though only Truthfulness is 
+affected. The instruction (to provide advice on finding amber) was followed. The incorrectness 
+of this advice and the different hallucinations however, should be marked in Truthfulness - this 
+has to be graded individually, independently from Instruction Following. 
+
+--- Page 40 ---
+pt-BR 
+For this locale, the main dimension most affected by errors is Localization, followed closely by 
+an underpenalization of Truthfulness. In the below example, many people missed to mark that 
+the response provided the word "remolque", it is a Spanish word for "reboque" in Portuguese. 
+This should be marked as a Wrong Language issue in Localization. 
+
+--- Page 41 ---
+A
+nd in Response B for the same prompt, many graders didn’t penalize Truthfulness for the 
+incorrect word used since "radial" is not a vehicle as requested in the prompt. As this is 
+precisely the information the user asked for, it makes it Primary information, so the response 
+should be. marked as Not Truthful 
+pt-PT 
+Similarly as for pt-BR, for this locale, the main dimension most affected by errors is Localization, 
+followed closely by an underpenalization of Truthfulness. In the below example, most graders 
+missed to note the capitalization error: the word following a colon should generally not be 
+capitalized if it introduces a continuation of the sentence, such as an explanation, list, or 
+clarification. 
+And for Truthfulness, please carefully consider if the primary information, or most of the 
+information as in Response B, is incorrect, and penalize as Not Truthful accordingly. Regarding 
+the Pão-por-Deus, the response misunderstands the true purpose of the celebration and how it 
+traditionally takes place, and includes dishes which are not typical culturally accurate for Pão-
+por-Deus, thus the primary information is not correct. 
+
+--- Page 42 ---
+ru-RU 
+Localization was one of the top categories affected by errors. In the below example, In the word 
+combinations "модный Дом" or "Дома моды" common noun "Дом" are incorrectly 
+capitalized. We can verify capitalization in gramota.ru, should be marked as a Grammar 
+Localization issue. 
+Truthfulness s hould also have been penalized, as the Definition "высокое искусство пошива" is 
+not mentioned in the provided text, it is some minor hallucination. As well, mentioning of the 
+high prices included in the list as a requirement is incorrect (it is not a formal requirement for 
+
+--- Page 43 ---
+the
+ status). This makes the response Partially Truthful, because of this contextual incorrectness, 
+i.e. it’s not fully in accordance with the context/provided user input.
+A
+nd in the below response, many graders missed one factual inaccuracy, that "Проксиома" is 
+an incorrect name, there is no such F-type star, the correct name is "Процион" (Procyon), so 
+this response should be Partially Truthful.  
+
+--- Page 44 ---
+A
+nd Localization should have been marked for Awkward or Unnatural Writing as well, because 
+of: "имеют голубой цвет", "имеют красный цвет", " имеют свои уникальные 
+характеристики". 
+sv-SE 
+Localization is the most affected category in this locale; graders are frequently missing to mark 
+various categories for localization issues. In the below example,  Awkward or Unnatural Writing 
+should have been marked for "räddade många gånger och höll nollan tills det blev för sent", 
+which is unnatural given the context. 
+And Instruction Following should not have been penalized, the model followed the instructions 
+to provide 5 points from the input text. 
+
+--- Page 45 ---
+Malmo FF motte Olympiacos i Europa League och forlorade pa hemmaplan med 0-1. Min son ar sju ar och haller pa 
+att Iara sig att lasa och darter blir det har matchreferatet lite for mycket for honom. Kan du sammanfatta det har 
+matchreferatet genom att i fem punkier - pa ett mycket lattlast satt - forklara hur det gick for MFF och vad som 
+hande i matchen? Du far garna ha med en hand else i matchen dar Johan Dahlin var involverad, eftersom det ar min 
+sons favoritspelare. 
+An en gang foll Malmo FF pa hemmaplan i europaspelet. Men den har gangen var det langt ifran lika platt fall som 
+senast. Olympiacos var varda segern, absolut, men under en period i andra kandes det inte helt osannolikt att 
+hemmalaget skulle kunna peta in en kvittering. 
+Det var nog tier an jag som hojde pa ogonbrynen vid asynen av startelvan. lngen Kiese Thelin, ingen Berg och ingen 
+AC, daremot en Loukili. Rydstrom har ju tidigare pratat om att man inte alltid ska stirra sig blind pa startelvan utan 
+aven tanka slutelva, och nog kunde man ana ett sant tankesatt idag. 
+Sada lagen startade matchen i hogt tempo, men det var Olympiacos som var farligast. Redan i de inledande 
+minuterna visade man sin styrka i omstallningsspelet - det gick rysligt fort Iran att de vann boll tills att de befann sig 
+obehagligt nara Johan i mal. De lick ocksa en tidig horna far de bjod pa en lite annorlunda variant, och jag hann 
+tanka att: Ska dom fortsatta sa har sa blir det jakligt jobbigt. .iiven MFF forsokte satsa framat direkt. Men det kom 
+felpass i det som kunde blivit avgorande lagen, och aven om man forsokte (och ibland lyckades) spela sig ur 
+bortalagets intensiva press med ett lint kortpassningsspel sa gick det lite for langsamt. 
+Etter knappa tio minuter kom sa den forsta riktiga farligheten. Olympiacos kom till ett skott ganska langt utifrpn, 
+bollen vobblade lite men traffade sen stolpen sa att det sjong om det. Men Dahlins nolla hell sig fortsatt intakt. 
+Malmo skapade strax darefter ocksa en malchans, men skottet Iran Bolin var inte alls lika farligt utan passerade en 
+bit utanfor stolpen. Darefter foljde en period da gasterna var de som dominerade, nar MFF vann boll hade man forst 
+svart att spela sig ur pressen och nar man val kom upp pa motstandarens planhalva gjordes lite for mycket misstag. 
+Etter ungefar halva forsta halvleken smog sig Taha over till vansterkanten, och overbelastningen dar ledde till att di 
+blae skapade ett par chanser. En av dessa ledde till en horna som Busanello slog lint mot Roslers skalle men, tyvarr 
+kolliderade han med malvakten och det blev inget av laget. Men, etter en halvtimma sa hell det inte langre. Taha Ali 
+tappade alltfor enkelt bollen vid mittlinjen. LBJ var i narheten men pa vag framat sa Olympiacosspelaren tick springa 
+helt ostord med bollen en bra bit och som avslutning pa den snabba kontringen chippade El Kaabi bollen over Johan 
+Dahlin. 
+Har ska jag erkanna att jag var radd for ett riktigt ras, att gasterna skulle fa en massa energi och att vara pagar 
+skulle borja hanga med huvena och tappa annu mer. Halvleken fortsatte dock som tidigare, med spel mot bada 
+malen, aven om det fortsatt hela tiden var farligare nar det var motstandarna som attackerade. 
+lngen bra forsta halvlek av MFF, daremot riktigt bra av Olympiacos - men sammantaget ingen katastrof. Tyckte jag. 
+Wernblom och Safari i studion hell uppenbarligen inte med mig utan verkade snarare tavla om vem som kunde saga 
+mest negativt om hemmalaget. Mer sansad var bisittare Jens Fjallstrom som lugnt konstaterade att MFF behevde fa 
+in lugn, passningssakerhet och mod i laget i andra halvlek. 
+
+--- Page 46 ---
+th-TH 
+This locale was mainly affected by Localization issues not being reported, as well as Truthfulness 
+being graded too high. 
+For Localization, in the below response, there should have been an Other issue marked, for the 
+unnatural abbreviation "ชลบ." 
+
+--- Page 47 ---
+A
+nd in the below example, Instruction Following is overpenalized. The instruction to extract 
+sentences from the input text and sort them into the four groups the user mentions is followed. 
+The fact that some sentences are in the incorrect groups should be penalized in Truthfulness, 
+not in Instruction Following. 
+
+--- Page 49 ---
+tr-TR 
+The most affected dimension for this locale is also Localization, with graders missing to mark 
+different categories of localization issues. 
+In the below example, many graders missed to mark a spelling error for even though The 
+assistant used incorrect punctuation for some words.→ Eskişehir’deki 
+The response also should be penalized for Truthfulness, as one of the pieces of information is 
+not correct.→ Eskişehir’deki Rus Konsolosluğu 
+
+--- Page 50 ---
+uk-UA 
+This locale was mostly affected by Instruction Following being rated too low, and Truthfulness 
+too high. In the below response, Instruction Following was penalized even though the 
+instruction (to provide advice), was followed. The fact that this advice was not very useful and 
+was faulty, should be penalized in Truthfulness only. 
+
+--- Page 51 ---
+A
+nd the below response should be penalized and marked as Partially Truthful, since Dust II is a 
+very popular map but it is difficult to confirm if it is the most popular one. According to some 
+sources it is not the most popular map in 2025. For comparison, Response A is Truthful. 
+
+--- Page 52 ---
+vi-VN
+For this locale there is a trend of underpenalizing both Instruction Following and Localization. 
+In the below example, neither response follows the instruction for having the response use 
+dashes (it uses bullet points instead). And both responses have foreign words, which has to be 
+penalized in Localization (low carb, carbohydrate) 
+
+--- Page 53 ---
+zh-HK 
+This locale’s errors were mainly focused on the Localization dimension, as well as over-
+penalizing Instruction Following. 
+
+--- Page 54 ---
+Fo
+r Localization, Awkward or Unnatural Writing should have been marked in the below 
+response, because of the mixed literary and colloquial styles - 不一樣 
+A
+nd in the below example, Instruction Following was penalized even though the instruction (to 
+provide activities for the four day visit) was fully followed. The model did however hallucinate 
+and list some incorrect information, but this should be penalized in T ruthfulness only . 
+
+--- Page 56 ---
+zh-TW 
+This locale was primarily affected by incorrect gradings in the Localization dimension. In the 
+below example, two issues were missed: Wrong Language: 球队…进攻策略 and 
+Awkward or unnatural writing: 更多地強調 

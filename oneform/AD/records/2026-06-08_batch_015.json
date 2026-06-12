@@ -1,0 +1,143 @@
+{
+  "batch_id": "2026-06-08_batch_015",
+  "project": "AD Search Ads Relevance",
+  "operator": "cursor-agent",
+  "created_at": "2026-06-08T21:45:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689652331",
+      "query": "第 一 证 券",
+      "query_intent": "User is searching for 第一证券 (First Capital Securities / a securities brokerage app) to open a stock trading account or manage investments.",
+      "ad": {
+        "name": "广发易淘金-证券开户炒股票 基金理财",
+        "subtitle": "一站式证券开户炒股票基金理财平台",
+        "developer": "广发证券股份有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "Both are Chinese securities brokerage apps offering stock account opening and fund trading."
+        }
+      ],
+      "relationship_analysis": "Same industry and core function (securities trading/account opening) but from a different brokerage than the one searched.",
+      "why_not_higher": "Not Excellent because the user searched for a specific brokerage (第一证券), not 广发证券.",
+      "why_not_lower": "Direct category competitor serving the same stock-trading and account-opening need.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"第 一 证 券\" indicates the user wants a securities brokerage app for stock trading account opening and investment management. [Ad Analysis] The advertised app \"广发易淘金\" is GF Securities' one-stop platform for stock account opening, trading, and fund management. [Relevance Breakdown] Both are Chinese securities brokerage apps serving the same core financial need; users searching for one broker's app often consider competing brokers as viable alternatives. [Why not higher/lower] Not Excellent because it is a different brokerage than the one searched; not Acceptable because the functional overlap in securities trading is strong and direct. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689652332",
+      "query": "中 国 移 动 广 东",
+      "query_intent": "User is searching for China Mobile Guangdong regional mobile telecom services — billing, plans, or the Guangdong branch app.",
+      "ad": {
+        "name": "rednote",
+        "subtitle": "share, connect, love",
+        "developer": "Xingin",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "rednote is Xiaohongshu, a lifestyle social media platform; China Mobile Guangdong is a telecom carrier service."
+        }
+      ],
+      "relationship_analysis": "Telecom carrier services vs social media lifestyle app — completely different domains, audiences, and use cases.",
+      "why_not_higher": "No functional, category, or user-intent overlap.",
+      "why_not_lower": "N/A — this is Bad.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"中 国 移 动 广 东\" indicates the user wants China Mobile's Guangdong regional telecom services for billing, plans, or account management. [Ad Analysis] The advertised app \"rednote\" (Xiaohongshu) is a lifestyle social media and content-sharing platform by Xingin. [Relevance Breakdown] Telecom carrier services and social media content sharing serve entirely different needs, audiences, and use cases with no logical connection. [Why not higher/lower] Not Acceptable because there is no meaningful topical or functional overlap between mobile carrier services and a lifestyle social app. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689652333",
+      "query": "豆 包 专 业 版",
+      "query_intent": "User is searching for Doubao Pro (豆包专业版), ByteDance's professional AI assistant/chatbot application.",
+      "ad": {
+        "name": "小猿AI - 原「小猿口算」检查作业神器",
+        "subtitle": "检查作业免费解析，家长辅导作业好帮手",
+        "developer": "Beijing Yuanli Science and Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "Doubao Pro is a general-purpose AI chatbot; 小猿AI is an education homework-checking tool for parents and students."
+        }
+      ],
+      "relationship_analysis": "Both incorporate AI technology but serve entirely different purposes: general AI assistant vs K-12 homework checking.",
+      "why_not_higher": "Core user intents (AI chatbot vs homework helper) are completely misaligned.",
+      "why_not_lower": "N/A — this is Bad.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"豆 包 专 业 版\" indicates the user wants Doubao Pro, ByteDance's professional AI assistant for general-purpose chat, writing, and productivity tasks. [Ad Analysis] The advertised app \"小猿AI\" (formerly 小猿口算) is an education tool for checking homework and helping parents tutor students. [Relevance Breakdown] Although both use AI, a general AI chatbot and a K-12 homework-checking app serve completely different user needs, audiences, and use scenarios. [Why not higher/lower] Not Acceptable because sharing the AI label is insufficient when the actual functions and target users are entirely unrelated. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689652334",
+      "query": "重 庆 银 行",
+      "query_intent": "User is searching for Bank of Chongqing's mobile banking app for account management, transfers, and financial services.",
+      "ad": {
+        "name": "同程旅行-订酒店机票火车票,低价打车",
+        "subtitle": "2亿用户都在用，新人领188元红包",
+        "developer": "Tongcheng Network Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "Bank of Chongqing is a regional bank; Tongcheng Travel is a travel booking platform."
+        }
+      ],
+      "relationship_analysis": "Mobile banking vs travel booking — completely unrelated financial service vs travel service domains.",
+      "why_not_higher": "No overlap in function, audience, or user intent.",
+      "why_not_lower": "N/A — this is Bad.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"重 庆 银 行\" indicates the user wants Bank of Chongqing's mobile banking app for account management, transfers, and financial services. [Ad Analysis] The advertised app \"同程旅行\" is a travel booking platform for hotels, flights, train tickets, and ride-hailing. [Relevance Breakdown] Mobile banking and travel booking serve entirely different needs with no logical connection; a user searching for their bank app would not be interested in a travel platform. [Why not higher/lower] Not Acceptable because both involve transactions but the core services, audiences, and use cases are completely unrelated. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689652335",
+      "query": "赋 能 剪 辑",
+      "query_intent": "User is searching for a video editing application — likely a tool named or described as \"赋能剪辑\" for clip editing and content creation.",
+      "ad": {
+        "name": "千问 - 阿里AI助手",
+        "subtitle": "回答聪明会办事，高考选志愿问答拍题生图写作PPT订餐购物",
+        "developer": "Shanghai Zhixin Puhui Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "千问 (Qwen) is Alibaba's general AI assistant; 赋能剪辑 implies video editing software."
+        }
+      ],
+      "relationship_analysis": "Video editing tool vs general AI chatbot — different core functions despite some overlapping content-creation AI features.",
+      "why_not_higher": "User wants video editing; the ad is a general-purpose AI assistant without video editing as its core offering.",
+      "why_not_lower": "N/A — this is Bad.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"赋 能 剪 辑\" indicates the user wants a video editing application for clip creation and content production. [Ad Analysis] The advertised app \"千问\" is Alibaba's general-purpose AI assistant for Q&A, writing, image generation, and daily tasks. [Relevance Breakdown] Video editing software and a general AI chatbot serve different core functions; while Qwen offers some content-creation features, it does not fulfill the user's specific video editing intent. [Why not higher/lower] Not Acceptable because the user is looking for a dedicated editing tool, not a general AI assistant with tangential creative features. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T13:45:26",
+    "post_submit_status": "No errors visible"
+  }
+}

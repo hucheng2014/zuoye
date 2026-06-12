@@ -1,0 +1,244 @@
+{
+  "task_type": "PROOFREAD",
+  "display_name": "Proofread V2 (Chinese zh-CN/TW/HK)",
+  "version": "1.0.0",
+  "source_files": [
+    "renzheng/PROOFREAD/SOP.md",
+    "renzheng/PROOFREAD/CLAUDE.md",
+    "renzheng/PROOFREAD/WT_Proofread_V2_Feedback_May_22_中文详细总结.md",
+    "renzheng/PROOFREAD/Proofread_V2_Important_Notes_中文详细总结.md",
+    "renzheng/PROOFREAD/Writing_Tools_Proofread_V2_v2026_Feb24_English_Tutorial_Summary.md",
+    "renzheng/PROOFREAD/Safety_Evaluation_Harmfulness_Guidelines_中文详细总结.md"
+  ],
+  "compact_sop": "compact_sop.md",
+  "flow": "flow.md",
+  "chunks": [
+    {
+      "id": "minimal_edit",
+      "file": "chunks/minimal_edit.md",
+      "title": "Minimal Edit Principle",
+      "description": "Core principle: correct ONLY objective grammar/spelling/punctuation errors. Preserve tone, style, formality, expressivity, proper nouns, abbreviations, formatting, locale conventions.",
+      "keywords": [
+        "minimal edit",
+        "preserve",
+        "tone",
+        "style",
+        "expressivity",
+        "proper nouns",
+        "formatting",
+        "locale",
+        "overgeneration",
+        "paraphrasing",
+        "unnecessary"
+      ],
+      "priority": 1,
+      "size_bytes": 2438
+    },
+    {
+      "id": "correctness",
+      "file": "chunks/correctness.md",
+      "title": "Correctness (Q3)",
+      "description": "Q3 scoring: all_necessary, some_unnecessary, all_unnecessary, alteredMeaning. Unnecessary edit categories and incorrect edit categories.",
+      "keywords": [
+        "correctness",
+        "Q3",
+        "all_necessary",
+        "some_unnecessary",
+        "all_unnecessary",
+        "alteredMeaning",
+        "editsCorrect",
+        "unnecessaryEdits",
+        "correctnessErrors",
+        "mixed"
+      ],
+      "priority": 1,
+      "size_bytes": 3121
+    },
+    {
+      "id": "completeness",
+      "file": "chunks/completeness.md",
+      "title": "Completeness (Q4)",
+      "description": "Q4 scoring: complete, nearly_complete (<20%), partial (20-50%), incomplete (>=50%). Miss rate calculation and missedErrors categories.",
+      "keywords": [
+        "completeness",
+        "Q4",
+        "complete",
+        "nearly_complete",
+        "partial",
+        "incomplete",
+        "miss rate",
+        "missedErrors",
+        "漏改率"
+      ],
+      "priority": 1,
+      "size_bytes": 2865
+    },
+    {
+      "id": "formality",
+      "file": "chunks/formality.md",
+      "title": "Formality & Three-Level Error Framework",
+      "description": "Formal vs Other classification. Critical Errors (fix always), Minor Errors (fix formal only), Stylistic Choices (preserve always). Context-dependent scoring.",
+      "keywords": [
+        "formality",
+        "formal",
+        "other",
+        "informal",
+        "critical errors",
+        "minor errors",
+        "stylistic choices",
+        "three-level",
+        "error framework",
+        "正式度"
+      ],
+      "priority": 1,
+      "size_bytes": 3108
+    },
+    {
+      "id": "abbreviations",
+      "file": "chunks/abbreviations.md",
+      "title": "SMS/Slang Abbreviation Preservation",
+      "description": "V2 rule: preserve SMS abbreviations (u, r, lol, btw, idk), emojis, hashtags, elongated spelling in informal context. Non-formal Word List reference.",
+      "keywords": [
+        "abbreviations",
+        "SMS",
+        "slang",
+        "lol",
+        "btw",
+        "idk",
+        "emoji",
+        "hashtag",
+        "elongated",
+        "preserve",
+        "word list",
+        "informal"
+      ],
+      "priority": 2,
+      "size_bytes": 1947
+    },
+    {
+      "id": "decision_tree",
+      "file": "chunks/decision_tree.md",
+      "title": "Q1-Q2-Q3-Q4 Decision Tree",
+      "description": "Branching logic from Q1 (grammar?) to Q2 (edits?) to Q3 (correctness) to Q4 (completeness). Conditional field rendering rules.",
+      "keywords": [
+        "decision tree",
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q4",
+        "branching",
+        "conditional",
+        "flow",
+        "has_grammar_errors",
+        "no_grammar_errors",
+        "has_edits",
+        "no_edits"
+      ],
+      "priority": 1,
+      "size_bytes": 3075
+    },
+    {
+      "id": "cjk_locale",
+      "file": "chunks/cjk_locale.md",
+      "title": "CJK Locale Rules (zh-CN, zh-TW, zh-HK)",
+      "description": "zh-CN: honorific preservation, synonym overgeneration, ellipsis. zh-TW: overgeneration, aspect markers, full-width, API spacing, quote pairing. zh-HK: dialect characters, CS terminology, oral pronouns.",
+      "keywords": [
+        "CJK",
+        "zh-CN",
+        "zh-TW",
+        "zh-HK",
+        "locale",
+        "simplified",
+        "traditional",
+        "cantonese",
+        "dialect",
+        "honorific",
+        "ellipsis",
+        "full-width",
+        "overgeneration"
+      ],
+      "priority": 1,
+      "size_bytes": 4495
+    },
+    {
+      "id": "harmfulness",
+      "file": "chunks/harmfulness.md",
+      "title": "Harmfulness (Safety Assessment)",
+      "description": "23 sub-categories safety assessment. Golden rule: mentioning a topic != harmful. High-risk regulated domains: medical, financial, legal.",
+      "keywords": [
+        "harmfulness",
+        "safety",
+        "hateful",
+        "vulgar",
+        "sexual",
+        "privacy",
+        "disinformation",
+        "violence",
+        "child endangerment",
+        "Apple brand",
+        "regulated"
+      ],
+      "priority": 2,
+      "size_bytes": 4111
+    },
+    {
+      "id": "pairwise",
+      "file": "chunks/pairwise.md",
+      "title": "Pairwise Comparison",
+      "description": "AvsB, AvsC, BvsC three-pair comparison. Operators >, >>, >>>, =. Extreme Rule: identical quality = About the same even if wording differs. Tab letter order rule.",
+      "keywords": [
+        "pairwise",
+        "comparison",
+        "AvsB",
+        "AvsC",
+        "BvsC",
+        "preference",
+        "about the same",
+        "slightly better",
+        "much better",
+        "tab order"
+      ],
+      "priority": 1,
+      "size_bytes": 2461
+    },
+    {
+      "id": "common_errors",
+      "file": "chunks/common_errors.md",
+      "title": "Common Errors (May 22 Feedback RCA)",
+      "description": "Completeness blindly trusting model, Correctness formality misconceptions, Pairwise forcing differentiation. Severity calibration with quantified thresholds.",
+      "keywords": [
+        "common errors",
+        "feedback",
+        "RCA",
+        "miscalibration",
+        "completeness miss",
+        "correctness misconception",
+        "pairwise forcing",
+        "severity",
+        "calibration"
+      ],
+      "priority": 2,
+      "size_bytes": 4025
+    },
+    {
+      "id": "json_format",
+      "file": "chunks/json_format.md",
+      "title": "JSON Answer Format",
+      "description": "Complete JSON structure with conditional fields. correctnessErrors categories, unnecessaryEdits categories, missedErrors categories. Conditional rendering rules.",
+      "keywords": [
+        "JSON",
+        "format",
+        "answers",
+        "template",
+        "correctnessErrors",
+        "unnecessaryEdits",
+        "missedErrors",
+        "conditional",
+        "pairwise",
+        "observation"
+      ],
+      "priority": 1,
+      "size_bytes": 3731
+    }
+  ]
+}

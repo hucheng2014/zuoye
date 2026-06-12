@@ -1,0 +1,346 @@
+TC Proofread Feedback Nov.19
+Instruction Following
+Common mistakes:
+• Failing to penalize unnecessary changes (extra words, wording changes, stylistic edits, tone
+shifts) even though guidelines require a downgrade.
+• Incorrectly penalizing outputs that simply repeat the input, despite the guidelines clearly
+stating that these should be Fully Following Instructions.
+Note: Only an exact repeat is fully following. If even a comma was changed or extra space
+removed, that’s not an exact repeat and therefore cannot be Fully Following UNLESS that was
+the only issue with the input. In which case it’s considered that the model reviewed the input
+and fixed all errors.
+• Overlooking cases where only some errors were fixed, which should result in Partially Following
+Instructions.
+• Missing small uncorrected details (spacing, punctuation, minor grammar) that should trigger a
+downgrade.
+Impact
+As instruction following is closely related to Composition, the issues missed in this dimension will
+sometimes cascade into Composition and eventually Satisfaction, creating a large gap between the
+expected and provided grading.
+
+Composition
+Common mistakes:
+1. Failing to capture when a new error has been introduced, which would fail the dimension OR
+2. Accepting responses with uncorrected or newly introduced errors as “Acceptable” or “Good”.
+3. Not recognizing that minor residual mistakes still lower the composition score to “Acceptable”.
+4. Penalizing responses when no errors exist. An input text that is good does not require changes,
+and a repeat would therefore be Good.
+5. Under-penalizing or not penalizing grammar, punctuation, spacing, and formatting errors.
+Reminder:
+o An exact repeat that contains errors is Bad.
+o A exact repeat where the input was already error free is Good.
+o All errors fixed without change in style/tone or minimal to none change of word
+choice is Good.
+o Unnecessary changes in wording and partial error fixing is Acceptable. Even if one
+out of five errors was not fixed – Acceptable.
+o Format/structure of the response was changed – Acceptable.
+o Change in style/tone is Bad (different from following instructions!)
+o New errors introduced is Bad.
+o Most errors not fixed is Bad.
+Impact
+As the task scope is to Proofread content, Composition is one of the most critical dimensions.
+Overlooking errors or penalizing answers that don’t contain issues will gravely affect the Satisfaction
+evaluation.
+
+Centific Confidential ©
+
+Groundedness
+Common mistakes:
+• Missing subtle semantic changes introduced by the model (word choice changes that actually
+altering the meaning compared to the input).
+• Incorrectly marking partially grounded responses as fully grounded.
+• Occasional incorrect flagging of groundedness issues where none exist.
+Remember: Proofreading generally does not require wording changes compared to the input. In terms of
+Groundedness, you should be just matching the input to the output. The moment you see a change in
+wording, it should be a signal for you to verify whether it affects this dimension, i.e. does it change the
+intended meaning from the input? Does it change the tense or the grammatical gender or number?
+Otherwise, it should be a relatively easy check if no changes to the wording have been made.
+
+Comprehensiveness
+Common mistake:
+• Incorrect penalization even when all essential information was present.
+Remember: As the expectation is to maintain the original input pretty much the same, there should be
+no content removed from the input, unless the removal is necessary as a correction (eg. “the” was used
+twice in sequence). A simple comparison between input and response will tell you if any important
+content was removed, be it a sentence or keywords, which in turn would affect Comprehensiveness.
+
+Satisfaction Issues
+Common mistakes:
+• Overrating or underrating satisfaction: this occurs as a result of misjudging the primarily the
+dimensions of IF and Composition.
+• Inconsistent application of satisfaction rules across the board. Use the tables for Satisfaction
+criteria in the GLs. The bullet points will guide you to the correct grading but, again, evaluating
+the prior dimensions like Composition and IF are critical for a better understanding of
+Satisfaction grading. As the primary goal of the task is to fix minor errors while maintaining the
+same wording, failure to fix any errors or introducing new errors would be Unsatisfying
+responses.
+• Penalizing responses when all dimensions are good. This issue occurs across various task when
+graders evaluate all dimensions as good but downgrade Satisfaction to SS. You should not be
+downgrading Satisfaction if you have deemed everything else to be good.
+
+Localization
+Common mistakes:
+• Missing formatting and punctuation patterns characteristic of the locale (spacing,
+comma/period rules, date/number formats).
+• Confusing composition issues with localization issues (mis-categorizing errors).
+• Over-penalizing localization where no real localization issue exists.
+Remember: Proofreading does not require the model to re-structure the sentences, change the style or
+tone. If this happens, pay attention that the new sentence does not sound unnatural/awkward in your
+locale, in which case you might have to raise a Localization issue.
+
+Centific Confidential ©
+
+Harmfulness
+Common mistakes:
+• False positives: flagging harm where there was none, e.g. “smoke” misinterpreted.
+
+Locale specific examples
+(Note: each task was done by 3 different graders. These examples point out dimension errors where 2 or
+3 graders got it wrong).
+
+Jump to
+it-IT............................................................................................................................................................ 4
+da-DK ........................................................................................................................................................ 6
+pt-PT ......................................................................................................................................................... 8
+sv-SE ........................................................................................................................................................ 11
+ja-JP ........................................................................................................................................................ 12
+zh-CN ...................................................................................................................................................... 14
+
+Centific Confidential ©
+
+it-IT
+1. Groundedness should have been penalized in response C, as it slightly changed the meaning in
+input text in dropping “mi” from the original “venirmi” vs “venire” (or same meaning would have
+been “venire a raccogliermi”), but not mentioning at all “mi” changed the meaning.
+
+2. Following instructions and localization should have been penalized because one spelling mistake
+has not been fixed, “annullato VS anullato” the rest has been fixed correctly.
+
+3. Following instructions should have been penalized and marked as partially following because
+some of the issues have been fixed but not all (space before”?” And extra space before
+“tenuto”), for the same reason composition should have been penalized too as not all issues
+have been fixed.
+
+Centific Confidential ©
+
+4. The response should have been penalized as Partially Following Instructions as it only fixed some
+formatting issue. For the same reason Composition should have been penalized too.
+Additionally, localization is also affected as the quotation marks are not correct.
+
+5. Response should have been graded as Partially Following Instructions as it fixed “vede” into
+“vedere”, it added the full stop at the end BUT did not fix the extra space before “le date”. For
+the same reason composition should have been penalized too and marked as Acceptable, and
+overall rated as SS.
+
+6. Composition error incorrectly marked by graders. In general, the word used is not the correct
+one for the context “quanto” vs “quando”, this should be penalized in composition.
+
+7. Composition issue not penalized. In the last sentence of the response we are missing “li”, the
+sentence without that is incomplete
+
+Centific Confidential ©
+
+8. Composition should be marked as Acceptable as the comma at the end has not been removed.
+
+9.
+
+Composition was incorrectly marked as Acceptable. There are no mistakes in the
+response, it has Good Composition (Ke changed into Che and comma added after
+Idem).
+
+10. The below response should have been marked as harmful because it is vulgar. For this reason it
+would have been Highly Unsatisfying too.
+
+da-DK
+1. In the example below, the majority of the graders marked Response A as Partially Following
+Instructions, but since the input and the response are identical, the Instruction Following should
+be set as Fully Following (despite the error not being fixed).
+
+Centific Confidential ©
+
+2. In the example below, all graders correctly downgraded the Composition to Acceptable, but
+missed to downgrade the Instruction Following to Partially Following. There are added commas
+in the response, so some errors were fixed, but the use of ‘hende’ is a remaining error in the
+response.
+
+3. For Composition, all graders missed a remaining error in the response, which is a missing comma
+(gået noget tid, siden der ...), so the Composition here should have been graded as ‘Acceptable’.
+
+4. For Localization, please remember to carefully check that the standard greeting isn’t followed by
+a comma, as this is incorrect Danish grammar. This wasn’t corrected by the AI in the below
+example, which then also should have affected your grading of Composition.
+
+Centific Confidential ©
+
+pt-PT
+1. Composition issues since Response A and B introduce unnecessary rewriting, which is a
+violation. Response A also changes “pesado” to “pesada”, which is wrong and an introduction of
+a new error. Therefore, Resp A is Bad Composition and resp B is Acceptable.
+
+2. Response B keeps the “tou” in the response. While natural in pt_PT, it does sound too informal
+and more used orally than written. Changing it to the full form in this case would not change the
+tone and the correction is warranted. Composition should be Bad as the error was not fixed.
+
+Centific Confidential ©
+
+3. The same error appears on all 3 responses. A new error has been introduced.
+Whenever a new error appears, Composition is Bad, Following Instructions is downgraded,
+Satisfaction becomes Highly Unsatisfying.
+
+4. Response adds the word “um”. This sentence is already grammatically correct without the
+article. Adding “um” is an unnecessary change in wording, which is not permitted in
+
+Centific Confidential ©
+
+proofreading. As per the guideline, unnecessary wording changes must be penalized in FI and
+Composition.
+
+5. The original sentence is grammatically correct and doesn’t require any correction. Therefore, a
+repeat would be expected. However, both responses altered the word “webspeak” to “web
+speak,” which is not a grammatical correction. Therefore, it should be graded as Partially
+Following, and this would in turn affect Composition as well.
+
+6. The added comma in “não tenho sorte no jogo, e só fumei…” is incorrect for PT because you
+don’t separate coordinated clauses with a comma before e when the subject doesn’t change. It
+introduces a punctuation error that wasn’t in the input text.
+
+7. Responses B and C alter the sentence’s meaning and structure even without any grammatical
+errors. For example, “Eu queria só” is rewritten as “Eu só queria,”, a style change rather than a
+
+Centific Confidential ©
+
+correction. Additionally, both responses introduce an unnecessary article before “dia 12,” since
+dates in pt-PT are treated as adverbial time expressions, they don’t need an article (determiner).
+Response B does not correct the capitalization in “Sexta”. These modifications are unnecessary,
+and the guidelines mandate penalizing any change that isn’t a genuine grammatical correction,
+in both IF and Composition.
+
+sv-SE
+1.
+
+In the below example, all graders missed the errors that remained in all three responses, and so
+didn’t downgrade the Composition and Instruction Following (to ‘Acceptable’ and ‘Partially
+Following’). Please carefully note the remaining issues, and whenever you notice that some
+errors are corrected, and some still remain, make sure you’ve penalized this in the appropriate
+dimensions.
+Response A: the Composition and Instruction Following issue remains with the word(s)
+‘lördagkväll’, which should be connected with an ‘s’, and the punctuation is not improved at all.
+Response B: It only improved the punctuation, and left the spelling issue with ‘Icakassas’. There
+is also an issue with separating the word(s) ‘lördagkväll’, since ‘s’ should have been added in
+between, so the response should have the same grading as above.
+Response C: The same issue with ‘lördagkväll’ remains.
+
+2.
+
+All graders missed a Composition issue (Composition would be ‘Acceptable’). The categories
+should be capitalized as per Swedish grammar rules.
+
+Centific Confidential ©
+
+ja-JP
+1.
+
+The Instruction Following dimension should have been downgraded. Please note that as per the
+ja-JP specific section of the Guidelines (page 46), when the script is changed for no reason
+(katakana in this case), this should be penalized in the Instruction Following dimension.
+
+2.
+
+The Instruction Following dimension in the below example should have been downgraded to
+‘Partially Following Instructions’. An unnecessary change was introduced by adding the は, which
+affects the tone/focus.
+
+Centific Confidential ©
+
+3.
+
+In cases like the below one, where there is an error in the input text, but the response is
+identical to the input, so no changes or corrections were made, you should still mark it as Fully
+Following Instructions. Because there are errors remaining that weren’t fixed, this should then
+be downgraded by selecting Bad Composition.
+
+4.
+
+The majority of graders didn’t penalize a remaining issue in the below response. While the input
+text and Response A are identical, which was correctly reflected by grading it as Fully Following
+Instructions, the の in マンスフィールド・ウッドハウスからノリッジへ直行南行き便 is
+missing, which should be reflected by grading as Acceptable Composition.
+
+5.
+
+An unnecessary change was introduced in Response C, replacing 行ってた with 行ってます.
+Most graders correctly downgraded Composition, but Instruction Following should have been
+downgraded as well, to ‘Partially Following’. This tense change also affects the meaning, so
+Groundedness should have been downgraded as well.
+
+6.
+
+In the below example, while everyone correctly downgraded to Partially Following Instructions
+and Acceptable Composition, the response should also have been penalized in Localization,
+since there is awkward and unnatural writing in おっしゃっていましたには and とat the end.
+
+Centific Confidential ©
+
+zh-CN
+1. Following Instructions
+Partially following: made
+unnecessary change, deleting
+“您”
+Partially following: made
+unnecessary change, 只程序性
+to 进行程序性, 问题 to 提问
+Not following, reword 描绘 to
+动物园, some part misaligned
+with input and missing
+information, such as 问询 to
+品种, and 逗号 to 顺利.
+Response B: Partially following,
+the extra space is not
+corrected but made
+unnecessary changes to put a
+full stop before the emoji.
+Response C: Fully following,
+corrected the error without
+unnecessary change.
+Not following, did not correct
+the improper spacing before
+“无论”, and “see” was changed
+to English, causing a significant
+localization issue.
+
+Centific Confidential ©
+
+2. Composition
+Response A: Bad composition,
+no error correction, failed to
+correct error “成为” to “得”
+Response B: Good composition
+Bad composition: made
+unnecessary modification
+question mark to full stop,
+change input tone.
+Acceptable composition:
+corrected some but still not
+smooth
+Bad composition: Writing style
+changed
+
+3. Localization
+Localization issue: Wrong
+punctuation “。。。” should
+be “……”
+Localization issue: Wrong
+language “Deluxe” and extra
+space after exclamation mark
+Localization issue: Extra space
+after the emoji 🆘 and 8️⃣
+symbol
+4. Groundedness
+Not grounded as both shift
+from a self-introduction to
+addressing someone else,
+which has different meaning.
+
+Centific Confidential ©
+
+

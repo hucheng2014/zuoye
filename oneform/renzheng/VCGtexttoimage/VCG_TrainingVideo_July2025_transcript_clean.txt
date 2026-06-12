@@ -1,0 +1,640 @@
+Hi everyone, and welcome.
+I'm excited to kick off this training video on visual content generation, or as it's usually referred to as VCG.
+Think about how much visual content you see every day, from social media posts to ads to illustrations and articles.
+A lot of that content is now being generated, at least in part, by visual content generation models.
+This training is all about giving you a solid understanding of how we evaluate the projects that train such models.
+We're not just generating images, we're making sure they're good images, that they meet the user's needs, and that they're safe and appropriate.
+Specifically, we'll be diving into how text prompts and even existing images can be used to generate a whole range of different image styles.
+We'll also breakdown the different types of VCG tasks that we work on, walk through the typical workflow, and most importantly, cover the key criteria and methods we use to evaluate these images.
+Your role in this project is to make sure the images are high quality and safe for our users.
+By the end of this course, you'll be equipped to describe the purpose and outcome of the VCG projects, to define the main terms used across VCG projects, to recognize the steps of the evaluation process, identify the main evaluation methods, and finally apply evaluation criteria to different cases.
+So what exactly is Visual Content generation or VCG?
+And VCG is an artificial intelligence technology used to create images, videos, graphics and other visual media.
+These technologies help create completely new images and videos or improve the quality of existing visuals like restoring old photos, upscaling, low resolution, etcetera.
+Image generation is used in entertainment, advertising and virtual environments.
+Among the areas where VCG technologies are used a lot are film and media production, documentary and historical research, educational materials, art restoration and cultural preservation, genealogy projects, and medicine, where enhanced images are used for diagnostics and research.
+VCG is a versatile AI tool, transforming how we create and use visuals across industries.
+It solves problems and unlocks new possibilities.
+VCG offers incredible potential, but we also need to be aware of the ethical implications.
+The ability to create realistic yet fake images and videos raises serious concerns.
+Think about misinformation.
+So VCG could be used to spread false information and create convincing fakes.
+Think about intellectual property.
+Generating images too similar to existing works can lead to copyright issues, and beyond that, we need to consider bias and fairness.
+The data used to train VCG models can contain biases leading to unfair or discriminatory outputs.
+It's crucial to address these ethical challenges and to ensure that this technology is used responsibly.
+VC GS impact on our lives is diverse.
+It can be both positive and negative.
+Let's look at a couple examples.
+A potential positive impact.
+Sarah used AI to enhance an old photo revealing a hidden detail.
+This led to her discovering her great grandmother's achievements, writing a viral article and helping to launch a successful career.
+Now let's look at a potential negative impact.
+Doctor P relied on a low quality AI enhanced MRI.
+The AI introduced artifacts obscuring a tumor, leading to a misdiagnosis and significantly impacting the patient's health.
+These two examples, they highlight a crucial point.
+Image quality matters.
+The quality of AI generated images directly impacts the user experience and it can have significant real world consequences.
+As you can see, while VCG offers incredible benefits, it's essential to be aware of its limitations and potential risks.
+And this brings us to the next key question.
+What factors contribute to the quality of AI generated visual content?
+Let's dive into quality considerations next.
+The characteristics we look for in high quality AI generated visual content are listed here.
+So things like realism, high quality AI images should look realistic.
+That means accurate textures, lighting, and details without obvious AI generated artifacts or distortions.
+Basically the closer it looks to a real photo, assuming that that's the goal, the better consistency.
+So quality images, they maintain a consistent style, color palette and overall aesthetic.
+All the elements.
+So objects, textures, lighting, they should work together harmoniously.
+Think of it like a well designed room where everything complements each other.
+Detail and clarity.
+Good images should have clear details and sharp edges.
+Even when you zoom in.
+Fine details should be preserved and there shouldn't be excessive noise or blurriness.
+It should be crisp and easy to see.
+Creativity.
+We're not looking for simple copies here.
+AI should be able to take input and create something new, something visually appealing and unique.
+It should demonstrate imagination and artistic flair, going beyond mirror replication.
+Next up, user intent.
+This is all about alignment.
+Did the AI actually understand what we are trying to create?
+Whether it's a realistic landscape, a stylized portrait, or an abstract concept, the visual needs to effectively convey the intended message or idea.
+Then we have contextual understanding.
+If we gave the AIA description of some background information, how well does that visual fit that context?
+Does it make sense in relation to the provided information?
+This shows a deeper level of understanding from the AI.
+And finally, and perhaps most importantly, emotion and impact.
+A truly high quality visual should evoke an emotional response in the viewer.
+It should leave a lasting impression, whether it's a feeling of awe, nostalgia, inspiration or empathy.
+It's about creating a connection with the audience.
+So when you're evaluating AI generated visuals, remember to consider these more subjective qualities.
+They're what separate a good image from a truly great one.
+Let's talk about why we're even focusing on visual content generation in the 1st place.
+What's the purpose behind these projects and what value do they bring?
+Essentially, visual content generation projects are all about evaluating the quality of AI generated images in relation to the prompt.
+We want to see how well the AI is doing and more importantly, where it can improve.
+The main goal is to uncover areas where the model falls short, where are the weaknesses and its capabilities.
+By focusing on these areas, we can drive significant improvements.
+One key purpose is model performance and enhancement.
+Identifying shortcomings, things like artifacts, distortions, or inconsistencies is crucial for making the model better.
+By understanding these errors, developers can refine the algorithms and optimize the parameters to generate higher quality images.
+Another major purpose is user experience improvement.
+We need to build trust in AI generated images.
+People need to feel confident in the reliability and accuracy.
+By evaluating and ensuring the quality of these visuals, we can foster that trust and encourage wider adoption across various applications and industries.
+Ultimately, these projects are about making AI generated visuals more reliable, more trustworthy, and more valuable for everyone.
+Next up, we'll cover some of the image styles that you can expect to see when working on these projects.
+The styles that will be presented depend entirely on which specific project you're working on.
+1st, we have animation.
+Think of images that look like they're straight out of a cartoon or an animated film and there's illustration.
+These images often have a more artistic or hand drawn feel, similar to what you might find in a book or magazine.
+We also see sketch styles.
+These images are often more rough and preliminary, like a quick drawing or concept art.
+Finally, we have emoji.
+These are small stylized icons that we use in digital communication.
+Let's look at each style.
+In this case, animation refers specifically to a modern 3D style of animation, such as the image on the left rather than the 2D animated figure on the right.
+Illustration refers to a more minimalistic style.
+It's usually colorful, posterized, or a comic book like style with a minimal background like the image on the left, rather than something highly detailed and hyper real like the image on the right.
+A sketch image style is meant to be highly detailed with thin lines, usually quite realistic, but unfinished, like the example on the left versus the more simplistic, unrealistic example on the right.
+And finally, emoji is fairly straightforward.
+There are simple digital icons used to express emotions, ideas, or concepts in digital communication.
+They have a consistent minimalistic design with bold outlines, bright colors, and exaggerated facial expressions to convey meaning clearly.
+In this next section, we'll see an overview of the workflow of VCG projects before diving into each step.
+So the typical VCG project workflow starts with reviewing and understanding the user's prompt, then applying any necessary flags.
+This is where an annotator would flag any safety issues.
+Then evaluating the generated images for any human presence or anthropomorphism.
+After that you would move on to evaluating each image individually based on the evaluation criteria, then moving on to ranking the images against each other and finally adding any necessary comments before submitting and moving on to the next task.
+This is just a general overview of the end to end workflow of most VCG projects.
+Let's have a closer look at step one now.
+Now that we understand the why behind VCG and the general workflow, let's talk about the first step.
+Specifically, let's delve into the prompts that we use to generate these images.
+The quality of the prompt is absolutely critical to the quality of the output.
+A well crafted prompt can guide the AI to create stunning and relevant visuals, while a poorly written prompt can lead to disappointing results.
+So let's explore what makes a good VCG prompt.
+VCG projects are all about evaluating those images based on the prompt.
+So what is a prompt in this context?
+Simply put, a prompt is a request that we give to the machine learning model.
+It's the instruction that tells the AI what kind of image we want it to generate.
+Based on that prompt, the MO model generates the image, and that's what we evaluate using our quality criteria.
+Now, these prompts, or inputs as they're sometimes called, can come in a variety of different forms.
+They might be text, an image, or even a combination of both.
+And the text prompts themselves can vary a lot.
+They can be short and to the point, or long and very detailed.
+They can be crystal clear or intentionally vague.
+Sometimes you might even need to do a little research to fully understand the prompt.
+The key take away here is that the prompt is the foundation.
+It's where the whole visual creation process begins.
+There are a variety of prompt types which you can expect to come across when working on VCG projects.
+Accurately identifying the type of prompt is essential for accurate evaluation.
+You'll come across text prompts which just consist of a text based user request to the system, drawing on image prompts which consist of an image that has been drawn on by the user.
+Fairly self-explanatory.
+Image prompts are just straightforward images submitted to the system.
+Image plus text prompts are a combination image plus text prompt pair submitted to the system.
+Usually the text prompt is providing the system with some context as to what the user wants done with the submitted image.
+Emoji prompts are also pretty self-explanatory.
+Usually they consist of the user providing the system with two or more emojis they wish to combine.
+And finally, emoji plus text prompts are the same as emoji prompts but also include a text prompt along with them, usually providing extra instructions to the system, much like image plus text prompts.
+Here are a couple of examples of text based prompts and what they've generated.
+This demonstrates the variety present in text prompts.
+So the one here on the left is a full sentence.
+A confident cheetah running across the grassy Savannah.
+It's sleek fur glistening in the sun.
+The cheetah is running across a wide open plain, and the prompt on the right is more of a list of concepts.
+So man, volcano birthday.
+Surprised.
+You might notice in this image, Earth Day hasn't really been reflected.
+That would be something which would affect its score in the evaluation phase, but we'll discuss that a little further on.
+Image prompts are quite simple.
+They're just any type of image submitted to the ML model as is, without any extra content or modifications.
+Any kind of image could be submitted photographs, drawings, animations, diagrams, or even screenshots.
+The way the model interprets these inputs and changes them in the output generally depends on the project being worked on.
+It's important to know that the output doesn't have to be an exact copy of the image we give.
+The model isn't recreating it, it's using the image more like a reference.
+As you can see the example here, the model has changed the setting and stylization of the submitted photograph while accurately depicting the main subject, the car of the scene.
+Now for drawing on image prompts.
+Imagine you have a photo and want to add something to it, like say a hot air balloon to this photo on the left.
+With a Drawing on image prompt, you can literally draw a hot air balloon on the photo.
+The model then tries to understand your drawing and generates a new image that reflects that idea.
+It's like telling the model exactly what you want by showing it with a simple sketch.
+Here are some examples of prompts containing both text and an image.
+In the first example, you can see that the user has written dolphin and provided a photograph of a Stingray jumping out of the water.
+The generated image on the right should incorporate key aspects from both the text and the image prompts, which it's done here by maintaining the pose of the Stingray or replacing it with a dolphin.
+In the example below this, you'll see that the user wrote GNOME as well as provided a sketch of a GNOME to further guide the system.
+The generated image on the right should keep within the bounds of these concepts provided by the user.
+So the general shape, size and positioning of the sketch should be reflected while at the same time adding additional details like the colors, the structure and the background.
+Lastly, let's talk about emoji and emoji plus text prompts.
+The first one is called an emoji prompt.
+This just means that we use only emojis, no words.
+The model interprets one or more emojis and generates an image based on what those symbols represent visually or conceptually.
+In the example at the top of the slide here, you can see that the user has submitted 2 emojis to the system, and the system has returned a couple examples of those two emojis merged into one.
+The second one is an emoji plus text prompt.
+Here we use emojis along with some words.
+The emojis help set the theme or the mood, and the text adds more detail.
+The result is an image that reflects both the symbolic meaning of the emojis as well as the nuance provided by the accompanying text.
+Such as in the example at the bottom of the slide where the user has submitted 2 emojis and specified that they want emoji one to be wearing emoji 2.
+Providing the system with the extra context to generate that final output.
+Before beginning any evaluation, a deep understanding of the input prompt is crucial.
+There are a number of steps we take in order to properly analyze the user prompt and avoid any misinterpretation.
+These include a thorough reading.
+You need to read the entire prompt carefully.
+Pay close attention to every word in detail.
+For non text prompts, for example images or sketches, make sure you examine the visual input to understand its key features, its composition and style, identifying core components and elements.
+It's often helpful to break down the prompt into its essential elements.
+Consider things like the subject or subjects, IE the main person or animal or object or character requested.
+You have to consider the action or actions.
+So what the subjects are doing.
+Any attributes or details generally about the main subject.
+So things like color, texture, size, emotion, clothing, etcetera.
+The setting or environment, so the location or surroundings, for example the time of day, any background elements, etcetera.
+The style or medium.
+This refers to any requested artistic style.
+So for example, photo, realistic, emoji, sketch, or even a specific artist style.
+The mood or atmosphere.
+Consider the emotion or feeling the image should evoke.
+Composition and layout, and this refers to instructions of an arrangement, angle, or perspective.
+And finally, consider implied context.
+Some prompts include words that carry a wider meaning or a cultural context.
+For example, if the prompt says cricketer, it usually suggests more than just the player.
+It might also include a stadium or a crowd, uniforms, a ball or a pitch.
+Even if these aren't clearly listed in the prompt, these extra details are part of what makes the image feel more complete.
+The third step is understanding relationships.
+This is where you would consider all of those elements I just shared and how they interact with each other.
+For instance, a cat sleeping on a red cushion incorporates the subject cat, the action sleeping, the object cushion, and a defining detail that being red.
+Next, there's extra or redundant elements.
+Sometimes the output image might include extra elements that were not mentioned in the prompt, and these extra elements are not necessarily a problem.
+Consider whether or not the extra elements connect to the main elements in any way, or if they support the overall scene or theme or mood.
+If the added elements visually or conceptually relate to what was requested, even in a creative way, they're usually acceptable.
+For example, if the prompt is a dragon flying over a village, and the image includes clouds, birds, or a castle, these additions might help set the scene and enhance the story.
+However, if any extra elements appear random or distracting, or just completely unrelated to the prompt, they should be penalized.
+Next up, we have recognizing nuance and intent.
+Here we want to try and understand the intent of the user or their overall goal.
+Some prompts may be ambiguous.
+Try to interpret them in the most likely or reasonable way.
+And if the prompt is mixing multiple formats such as text plus an image or drawing, consider how each format influences the final output.
+And finally, consider conducting external research.
+If you encounter unfamiliar terms, concepts, styles, or cultural references, it's best practice to briefly research them to ensure that you fully understand the prompt.
+I briefly mentioned ambiguous prompts in the last slide.
+Let's dig into that concept in more detail here.
+We can think of ambiguous prompts as any prompt where the final outcome isn't clearly defined.
+They may be incomplete, they might have multiple different interpretations, or they could be composed just of loosely connected ideas.
+There are some considerations and tips for analyzing prompts like this.
+Firstly, in cases where the prompt is a collection of concepts, we want to try to identify and interpret each concept.
+Look at the example prompt on the slide right now.
+Rainbow underwater Crab.
+Each concept must be reflected in the output images in some way.
+For requests which are even more abstract than this, think something like love or summer.
+The output images should have symbolic representations of those concepts.
+So think of things like hearts or flowers for love and the sun, or beaches for summer.
+Do we think here that the output images are accurately reflecting the ambiguous prompt?
+Well, I would say that we're definitely missing one of the concepts in the prompt rainbow.
+We also need to think about whether or not the prompt intends its concepts to be shown together or separately.
+If this is not explicitly stated by the prompt, then either approach can be valid as long as it's coherent.
+For example, consider the prompt Gym Sunrise Aux.
+There are a few different ways to interpret these concepts right, and since the intent is ambiguous, all of them would be acceptable.
+The user could want an aux standing outside of a gym, it could want a scene depicting an aux in the gym itself working out, or they could even just want a depiction of an aux with gym equipment.
+As we can see on the screen here, all of these interpretations are valid.
+As mentioned before, we want to make sure that the image is complete and relevant to all of the concepts provided in the prompt, whether they be explicit, such as whale or crab, or abstract, such as love or summer.
+That'll cover completeness and relevance for coherence and creativity.
+We need to ensure that if the image is combining unrelated elements into a single scene, but the integration makes sense either logically, stylistically, or artistically.
+Even if the image doesn't make perfect sense in reality, it should still show a clear connection to each part of the prompt.
+Of course, the image doesn't have to be realistic.
+It can be fun, strange, or imaginative.
+What matters is that the image includes all the ideas from the prompt.
+Can you think of a few concepts which may have been asked to the system to create the image you see on the slide?
+Now imagine things like eggplant.
+I can see a tricycle.
+The setting is a desert.
+As we can see, it's pretty silly when it comes to ambiguous prompts.
+Some degree of creative flexibility is allowed and expected, but the end result should always reflect some connection to each concept.
+OK, you've understood how to analyze the user's prompt.
+Now let's look at Step 2 of the workflow applying flags.
+This is a screening step where you decide whether or not to proceed with the rating steps.
+You may need to skip the task if the image is not loading or if the prompt or output image is inappropriate or sensitive.
+This is where you identify any safety concerns and prevent inappropriate images from being further evaluated.
+There are three common flagging categories we deal with in VCG projects, though each project may have its own considerations when it comes to flagging content, so always review each individual projects guidelines for the most up to date and relevant information.
+The first flag type are inappropriate flags.
+You'll select this flag if the image depicts any of the following content categories that you can see in the bullet points on the screen, either in photorealistic or in stylized formats.
+Only select the category if you can clearly tell that the image contains this content.
+Don't select the flag if the content is just referred to in the text prompt.
+The second flag type are sensitive flags.
+Again, we will select these flags if the image depicts any of the content listed on the screen, whether photo realistic or stylized.
+Thirdly, we have flags for stereotypes, exact same as the others.
+We'll select this flag if the image is depicting anything listed on the screen here, regardless of the image style.
+Each one of these categories is described in more detail in the project guidelines, so I would encourage everyone to take a bit of time to have a read through of the categories to get more familiar with what to look out for.
+Here are a few examples of images which would fall under each category to help demonstrate what we mean.
+The first image on the left would be considered inappropriate due to the inclusion of violence, even if only between animals.
+The second image would be considered sensitive due to the inclusion of trademarked content being generated in response to a prompt naming that character.
+And lastly, the third image would fall under stereotypes due to it adding headwear or stereotypical clothing to a depiction of a negative prompt.
+After applying flags, we move on to evaluating the criteria of human presence and anthropomorphism.
+Now that you've checked for general safety if the project requires it, we move on to Step 3, which is human presence and anthropomorphism detection.
+In this step, you will evaluate if there is human presence or anthropomorphism in the output image.
+Remember, this step is only applicable if it's specified in the project guidelines.
+In this question, you will help evaluate the presence of a human or anthropomorphism in the output images generated in response to the input.
+Anthropomorphism refers to the attribution of human characteristics to non human entities.
+We will focus on the output images in this evaluation.
+The main question here is are there humans slash humans or anthropomorphism present in the output image?
+And here are your possible answers.
+No, there is neither human presence nor anthropomorphism in the output image.
+Yes, the humans are large in size and front facing with visible facial features.
+Yes, the humans are not front facing or their figures are small in size.
+And finally, yes, there is no human, but there is anthropomorphism in the output image.
+You will choose a response that best reflects what you see in the image.
+This step helps us identify potentially sensitive content related to human representation or the personification of non human entities.
+Some VCG projects may not have this evaluation criteria, so it's always important to review each project's individual guidelines.
+This slide explains what we mean by human presence and anthropomorphism detection.
+The step in the task focuses on identifying 2 elements in the output images, whether there are humans or whether non human entities exhibit human like characteristics.
+Human presence includes any depiction of humans, whether it's partial like a face or legs or a silhouette or fully rendered figures.
+Anthropomorphism on the other hand, refers to giving human traits to non human entities.
+This could include animals with human like features, objects with faces or similar depictions.
+Identifying these elements is crucial for ensuring that the generated images are safe and appropriate.
+Now let's look at some examples.
+The first image here on the top left showcases human presence.
+It clearly depicts a front facing human figure with visible facial features which qualifies as human presence in this evaluation.
+In the image next to it, human silhouettes are depicted against a sunset.
+Even though the figures are not detailed, they are clearly recognizable as humans and so this also qualifies as human presence.
+At the bottom here is an example of anthropomorphism.
+The objects, a matchstick or some sort of pencil has been given human like traits such as a face and a hand, and this qualifies as a clearly non human entity exhibiting human characteristics.
+All right, I made it through that section without mispronouncing anthropomorphism.
+The next steps of the workflow are the most involved and complex, as they are where we begin analyzing and grading the output from the system.
+The first step in this process is called Single Image Rating.
+So now you've identified the type of user prompt you're dealing with, you've screened for safety and if applicable, assessed human presence and anthropomorphism.
+Now we get to the core of the evaluation process in step four, Single Image rating.
+In this step, you will evaluate the quality of the output image against the following 3 dimensions, Optical fidelity, structural integrity, and input output alignment.
+These 3 dimensions are the primary focus for this project.
+We're looking at aesthetics, accuracy, and adherence to the prompt.
+However, it is important to understand that depending on the specific project you are working on, you may or may not evaluate some of these dimensions.
+It is critical to review the project specific guidelines before proceeding with your ratings.
+Let's dive into these 3 dimensions now.
+The first dimension we need to consider is structural integrity.
+Structural integrity refers to the anatomical correctness and visual integrity of subjects and objects in a generated image.
+We need to ensure that the elements in the output are all formed correctly and consistently based on the user's prompt.
+So a human face should have two eyes, a nose, a mouth, and two ears.
+An animal, say a tiger, would normally have 4 legs, a tail, maybe sharp teeth and claws, depending on the viewpoint.
+Buildings usually have roofs, windows, doors, etcetera.
+Cars would have four wheels, windows, doors, and any text should be legible and not gibberish.
+I think you get the idea.
+Now remember that this rating is all relative to the user's prompt, not necessarily based on reality.
+So if, for example, the user asks for a three headed dog, it would be completely structurally sound for the output to be a three headed dog.
+I'll also consider that even if the prompt describes something fantastical, the generated object should still be internally consistent.
+A3 headed dog should have three well formed heads, not heads merging into each other or floating in space.
+Simply put, the image needs to make some amount of sense in relation to the prompt.
+When analyzing the structural integrity of a generated image, the workflow detailed on the slide here will help you to determine the appropriate grade.
+Firstly, you need to identify the main subject or subjects in the image.
+The main subject is usually the person, an animal, or a primary object in the image.
+We need to identify these because they're more important than background elements or accessories.
+So any structural issues which affect the main subject are considered more critical than ones which might affect background elements.
+Once that's done, we should apply a triage approach.
+What we mean by this is that when you encounter an edge case, try moving from the most severe to the least severe indicators until you find the best fit.
+So if, for example, when examining an image, you come across a clearly severe flaw, something large enough to ruin the subject's basic form, then you would choose severe.
+If not, you would move on to checking for noticeable indicators, IE distortions which while not catastrophic, still stand out.
+If yes, then you would choose noticeable.
+If not, then you would move on to checking for minor indicators, so small anomalies, things which require a closer look to spot.
+If yes, you would choose minor.
+If not, then there are likely no structural integrity issues.
+Another thing that is important to consider when analyzing the image is the impact on the viewer.
+Ask yourself whether any structural flaws might distract or confuse the average viewer.
+If a flaw is immediately distracting, then it would fall under noticeable or severe.
+If the viewer could easily overlook it, then it's minor.
+The context can also matter when considering viewer impact.
+A structural flaw which might be considered minor if it manifested in the background of the image could be considered major if it affected, say, the face of the main subject.
+To that point, we always want to check the relative size and location of any structural flaws.
+Are the flaws peripheral in the small corner detail of the image or are they central part of the main focal point of the image?
+Again, consider a distortion affecting the background of an image.
+Such a distortion would likely be much less noticeable to the viewer than a distortion of comparable size affecting the subject's face.
+Once all of these considerations have been taken, you should then combine your observations to help you choose your final structural integrity rating for the image.
+Focus especially on the severity of structural issues in the main subject using the criteria provided in the guidelines.
+As we've just demonstrated, structural integrity is graded on a four point rating scale ranging from no structural integrity issues to severe structural integrity issues.
+Have a look at the examples on the slide Here on the left we have an image with no structural integrity issues.
+There are no issues in terms of anatomical structure and proportions to this image.
+Next up, we have an image that we would consider to have minor structural integrity issues.
+If you notice, at first glance the image looks pretty good, but once you start scrutinizing it, the issues become more apparent.
+If you look closely, the cup and the teapot on the bottom row of the shelf are merged together in an unnatural way.
+The generated image initially looks good, but has some issues when further examined.
+This is usually a good indication that the structural integrity issues are minor.
+Moving on, we have an image with what we would consider to have noticeable structural integrity issues.
+In these cases, the issues are quite obvious.
+You don't necessarily need to look very closely to notice that something is off here.
+However, what's being generated is still very obvious, right?
+It's clearly meant to be a man holding a cat.
+While we see a noticeable abnormality in the man's hands, these are not necessarily the primary focus of the image.
+So it would fall short of being considered severe.
+And finally, on the right we have an image with severe structural integrity issues.
+Here it is plainly obvious that significant aspects of the primary subject, in this case the elephant, are distorted and anatomically incorrect.
+The elephant appears to have only three legs, and one of the legs is even formed in the shape of an extra trunk.
+Here we'll have a look at some more examples of images side by side using this rating scale.
+We have a prompt for Halloween Starry Night Beret Beanie.
+The first thing we need to ask ourselves here is do we need all of these elements to be present when evaluating structural integrity?
+And of course, the answer is no.
+We are going to be looking at that aspect of evaluation in the input output alignment dimension.
+For structural integrity, we want to review the anatomical correctness of what is in the image regardless of the prompt.
+In our first image, we can see that there are no structural integrity issues.
+Even after careful analysis of the image, we cannot find anything wrong with the output in the second image on the right.
+It requires very little analysis to understand that there are obvious issues with the anatomical correctness of the person in the image.
+Due to the severity of these issues, we would grade this as having severe structural integrity issues.
+Let's look at another example.
+Here we have the prompt curious monkey with a furry body and long arms swinging from tree to tree in a dense jungle.
+On the left we have an image that we would grade as having noticeable structural integrity issues as the amount of fingers on the monkey's paw are both anatomically incorrect and also highly prominent in the picture.
+Now on the right we have an image that we would consider having severe structural integrity issues as we can see that the monkey not only has extra fingers but has also been given multiple additional pause which leads to a highly unrealistic image.
+The second dimension we need to consider is optical fidelity.
+This dimension refers to how visually pleasing and engaging the output image is.
+This can of course be quite subjective, so there are three criteria we focus on when evaluating clarity, color harmony, and lighting.
+Keep each of these criteria in mind when determining what to grade the image's overall optical fidelity.
+For example, the image on the slide here would certainly score very low for the criteria of clarity due to its blurriness, it's fog, and pixelation.
+Typically, this dimension is graded on a three-point scale of not appealing, moderately appealing, and highly appealing.
+Let's breakdown what each of those ratings means.
+Starting from the left, Image A A highly appealing image has good arrangement of elements without any distractions.
+The subject is clear, sharp and in focus.
+The colors are coordinated, lighting is masterfully utilized to create a sense of depth, volume and dimension, and overall, the image is very visually appealing.
+It's a top tier image in terms of aesthetics.
+Next up, a moderately appealing image generally has a focused subject with no distractions and tells a visual story.
+However, some accessories, details, or background elements may be slightly blurry or hard to distinguish.
+The background lighting might be off, or there might be a lack of sufficient contrast.
+Essentially, A moderately appealing image has some good qualities, but there are noticeable flaws.
+And finally, a not appealing image may have focused subjects and may convey a clear narrative.
+However, maybe it has poor lighting and shadows that make it visually not appealing.
+Or the lighting could be varied and natural looking, but the image itself could be highly blurred or pixelated.
+Despite it potentially having some positive aspects, the overall aesthetic of the image is seriously lacking.
+In this final evaluation dimension, we'll explore how to evaluate whether a generated image aligns with the input it was based on.
+We call this input output alignment.
+This concept helps us assess the quality and accuracy of visual content generation.
+We'll cover four types of alignment categories, text image, image to image, sketch to image, and emoji to image, each with its own evaluation criteria.
+Before we move on, I want to emphasize a crucial point.
+As with the other dimensions, input output alignment must be evaluated independently from the other quality dimensions.
+Now, what does this mean?
+An image can perfectly represent what you asked for in the prompt.
+It can have excellent input output alignment, but still be a poor quality image overall.
+For example, it might be blurry, low optical fidelity, or have distorted shapes low structural integrity.
+Conversely, an image might have great optical fidelity and structural integrity.
+It might be sharp, well structured, but it could fail to accurately depict all of the elements in the prompt, therefore having low input output alignment.
+When evaluating, focus solely on the specific dimension that you're assessing.
+Don't let your judgement of other aspects of the image influence your input output alignment score, or vice versa.
+We need to assess each dimension objectively and independently to get a complete picture of the image quality.
+Let's dive into what text image alignment means in the context of this project.
+It's really about one key question.
+How well does the image match what the text prompt is asking for?
+And that includes the objects mentioned, the details described, and even the overall feel or intent behind the words.
+So whether the prompt is simple, like chocolate bar, or more detailed like a chocolate bar with broken pieces scattered around it placed on a clean blue surface in a minimal calm setting, the goal is still the same.
+Does the image reflect what was asked as accurately and completely as possible?
+In order to evaluate how well an image matches the text prompt, here are the steps you'll follow.
+First, identify elements.
+Begin by carefully reading the text prompt and identifying all the key elements it contains.
+This includes the main objects, their details, spatial relationships, and any mood or atmosphere that the prompt suggests.
+Next up, compare to the output image.
+Look at the generated image and check how well it represents each of those identified elements.
+Are all the objects there?
+Do they look the way the prompt described?
+Are they positioned as expected?
+After this, consider missing and redundant elements.
+Pay attention to anything important that might be missing from the image, as well as anything that appears but wasn't asked for in the prompt.
+Both can impact how well the image aligns with the text.
+And finally, you'll assign a rating.
+Once you've analyzed the image, use the Text Image Alignment Grading Scale to give it an overall score.
+This rating should reflect how fully and accurately the image matches the prompt.
+Based on everything that we just reviewed, let's look at an example.
+First, let's identify all the elements in a prompt by breaking it down into objects, details, spatial relationships, and mood and atmosphere.
+The prompt is a chocolate bar with broken pieces scattered around it, placed on a clean blue surface in a minimal calm setting.
+Let's start with the objects.
+These are the physical things mentioned, the chocolate bar, the broken pieces, and the surface that they're sitting on.
+Next up, we look at the details.
+These are the descriptive words that tell us more about these objects.
+For example, the broken pieces add a visual texture.
+The blue, of course, tells us the color of the surface.
+These details matter when checking if the image is aligned with the prompt.
+Then we move on to spatial relationships.
+This is about how things are positioned in relation to each other.
+The prompt says the pieces are scattered around the chocolate bar.
+That tells us there should be some randomness and separation in the layout, and everything is placed on a surface which should also be visible.
+And finally, the mood or atmosphere.
+This prompt is more explicit than usual.
+It directly mentions A minimal calm setting.
+The image should reflect a sense of simplicity, calm, and visual clarity.
+It shouldn't be cluttered or chaotic.
+Now we will compare the elements in the prompt with the output image.
+Ask yourself, does it contain all of these elements?
+Are they represented accurately?
+Is there a chocolate bar?
+Are there broken pieces?
+Is it on a blue surface?
+Does the overall scene feel minimal and calm?
+While we are reviewing the output image, we will also look for any missing elements or redundant elements.
+Remember, our prompt was a chocolate bar with broken pieces scattered around it, placed on a clean blue surface in a minimal calm setting.
+First, let's consider missing elements.
+Looking at the image, are there any elements from the prompt that are completely missing?
+Well, we have a chocolate bar.
+We have broken pieces, we have a clean blue surface, and the overall scene looks minimal and calm.
+So in this particular example, there aren't any obvious missing elements.
+Everything that was explicitly mentioned in the prompt is present in the image.
+Now let's think about redundant major elements.
+Are there any major elements in this image that were not mentioned in the prompt and aren't reasonably implied?
+Let's say, hypothetically, that there was a huge realistic looking grasshopper crawling on the chocolate bar in the image.
+Would that be a redundant major element?
+Well, yes, it takes up a significant portion of the image.
+That would be a redundant major element, and it would negatively impact the alignment score.
+In this actual image, though, we don't see any redundant major elements.
+The image sticks to what was described in the prompts and doesn't add anything that feels out of place or unrelated.
+And what exactly do we mean by not reasonably implied?
+Well, sometimes an element might not be explicitly mentioned in the prompt, but it's a logical addition to the scene based on the context.
+For example, for the same prompt, we wouldn't penalize the image for including, say, a subtle reflection of the chocolate bar on the shiny blue surface, or showing some part of the chocolate bar melting, or maybe showing a wrapper of the chocolate bar with a name on it.
+These elements are reasonable and expected given the scene.
+Now, finally, we'll move on to assigning a rating.
+This rating is based on clear guidelines that directly reflect the four areas we've just analyzed in the prompt objects, details, spatial relationships, and mood or atmosphere.
+Image to image alignment is about evaluating how closely A generated image reflects the content and character of an input image.
+But it's important to note the input image is not a blueprint, it's a source of inspiration for the output image.
+The output image doesn't have to be identical, but it should resemble the input in meaningful ways unless a text prompt asks for changes.
+In those cases, the text prompt takes priority.
+We use a few key criteria to guide our assessment.
+First, thematic consistency.
+Does the overall vibe, setting and style of the output image feel like it was inspired by the input?
+Then we look at key elements.
+Is the same object present?
+If there's an animal, is it the same species?
+For pets like cats and dogs, we can go even deeper.
+Is it the same breed or color?
+We also consider actions.
+If the animal is doing something specific, like sleeping or jumping, the output should ideally maintain that action.
+And finally, locations.
+While the exact place doesn't need to be the same, the category should match.
+A beach should still look like a beach.
+For example, let's look at an example.
+If the input image is a picture of a cat on a bed and the text prompt is in the sea, the output image should depict the same cat in a sea environment.
+The change of environment should not be penalized since it's been explicitly asked for in the text prompt.
+When looking at sketch to image alignment, this alignment type focuses on evaluating how closely the generated image matches the sketch provided as input.
+The sketch serves as a visual prompt, and the goal is for the output image to be a faithful representation of it, capturing not just the objects but also the overall structure, layout, and the intent behind the drawing.
+It's important to note that in these cases, we completely ignore the text input prompt, if there is one.
+The sketch alone is what we evaluate against all of our judgments.
+Whether something is missing, inaccurate, or aligned should be based only on what we see in the sketch, irrespective of any text prompt.
+Some more criteria to consider for sketch image alignment are things like objects and details.
+The main forms in the sketch must be clearly present in the image.
+Pay attention to shapes and applied textures.
+If a sketch hints at something rough or smooth, the image should carry that over.
+Extra detail is OK as long as it doesn't contradict the sketch.
+Next is context.
+Ask yourself, what is the sketch suggesting beyond the objects?
+A bitten apple might imply it's being eaten.
+If there's background or setting like a table or a field, that context should appear in the image as well.
+Mood and atmosphere is more subtle, but still important.
+Think of the energy in the lines.
+Does the sketch feel calm, chaotic, rushed, or soft?
+The output image should echo that emotion when it's clearly present.
+Spatial layout and perspective are also key.
+If the sketch shows something from the side, the image should show it from the side.
+Object positions should remain consistent.
+And finally, remember the sketch is the core.
+The output can add realistic elements like texture or lighting, but those additions must stay true to the sketch's intent.
+If the sketch is simple, like a stick figure, then focus on shape and proportion over intricate detail.
+Let's now look at the emoji image alignment in this category.
+The prompt is broken down into elements, which can be text, descriptions, emojis, or both.
+For each element, we assess if it's completely missing, not well represented, or well represented in the output.
+For text, completely missing means the idea isn't there at all.
+Not well represented means the idea is there but some details are wrong.
+And well represented means it's clearly and accurately depicted.
+For emojis, it's very similar.
+Completely missing means the emoji's concept is absent.
+Not well represented means the concept is there, but the emoji's appearance is significantly different.
+Well represented means it's clearly and recognizably the emoji we used.
+Remember, we're looking for accuracy and how the prompt translates to the image.
+Let's look at a familiar example.
+Here the prompt is fox emoji, sunglasses emoji, wearing.
+So we have three elements, the fox emoji, the sunglasses emoji, and the word wearing.
+Looking at the output image, we see a fox wearing sunglasses.
+Let's break it down.
+The fox emoji is well represented because we clearly see a fox in the image and it looks very similar to the fox emoji we used in the prompt.
+The sunglasses emoji is also well represented because we see sunglasses on the fox and they look very similar to the sunglasses emoji we used.
+Finally, the word wearing is also well represented because the image clearly shows the fox wearing the sunglasses.
+So in this example, all three elements are well represented indicating good input output alignment.
+Also important to note for this specific type of alignment, emoji image alignment, we use a different rating scale for the single side ratings.
+Instead of highly aligned, somewhat aligned and not aligned, we use fairly, mostly and fully.
+This is to better capture the nuances of how emojis are translated into images.
+So in this example, all three elements are well represented, indicating good input output alignment, and so will be rated as fully represented.
+OK, you've evaluated the individual images.
+Now it's time to compare them.
+The next step of the annotation workflow is preference ranking.
+When more than one output image is evaluated, it is expected to select which one is better.
+We're looking for the best image from the set.
+Ranking is usually based on the same criteria that are used for single image evaluation, IE structural integrity, optical fidelity, and input output alignment.
+You're using the same dimensions, but now you're comparing them against each other.
+Keep in mind that the side by side evaluation will be driven by the ratings that you've already assigned to each image in the previous step.
+For example, an image with severe structural integrity issues cannot be better than an image with noticeable structural integrity issues.
+Your single image ratings should guide your ranking.
+An image with a higher rating on the individual dimensions should generally be ranked higher overall.
+In the side by Side image comparison section of the tool, we have a preference ranking type rating scale where you can choose whether the left or right image is better, how much better they are, or if they're about the same.
+In some cases, you may be making paired comparisons between many different image sets.
+Which you can see would be toggle between at the top left of the tool UI screenshot.
+The options you have to select from Indiana, the side by side ranking step look like the screenshot you see here.
+Your goal in this step is to determine whether the left or right image is much better, slightly better, or if they're about the same in quality.
+Again, based on the grading dimensions that you've already analyzed in Step 4, Much better would be chosen when there is a clear and significant difference in quality between the two output images for any specific dimension.
+Keep in mind that the distinction should be evident and meaningful, making one image clearly superior in fulfilling the criteria of the dimension.
+Slightly better should be chosen when there is a noticeable yet moderate difference in quality between the two output images for any specific dimension.
+It should be chosen when one image has minor advantages over the other while both images remain fairly close in overall quality for that dimension.
+If both of the images were given the same single side evaluation score in Step 4, but one image is more similar to the input image than the other in the case of an image prompt, then you would select slightly better.
+About the same would be chosen when there is no meaningful difference in the quality of the two output images for any specific dimension.
+Keep in mind that this rating is not always a +1.
+The output images could be equal in how poorly they scored in the single side evaluation dimensions.
+We would select this rating if the images either equally meet or fail to meet the criteria for the dimension.
+Now let's have a look at some examples.
+Often the side by side ranking step is evaluated by dimension.
+So we would need to evaluate first the preference ranking of these two images on structural integrity alone.
+For these two images, we would grade the image on the left as much better.
+If you recall from when we looked at this example in Step 4, it has no structural integrity issues, while the image on the right has severe structural integrity issues.
+In this case, both of the images have issues with their structural integrity, but we still need to assess the preference ranking of the two.
+In this situation, even though neither is the ideal image, we will grade the one on the left as slightly better than the one on the right due to the severity of the issues with the image on the right.
+Now of course, if we were ranking the preference between these two images based solely on the dimension of input output alignment, then they would be considered about the same.
+In that regard, they both align with the user's prompt in an equal way.
+But here we are focusing on the dimension of structural integrity.
+In this example, we'll grade the preference between the two images based on the input output alignment dimension.
+The user's prompt is minimalist Bedroom with a single bed, fireworks disco lighthouse.
+Right off the bat, both of the images appear quite similar.
+We've got a bedroom with one bed, fireworks, and a lighthouse in both images.
+We definitely couldn't say that either of these images are highly aligned, however, since it seems they've both missed including the element disco in this situation.
+Both of the images are not ideal.
+However, they aren't ideal in exactly the same way.
+Therefore, the best way to rank this would be to mark them as about the same.
+Now you've rated and ranked the images for the final touch.
+Adding comments.
+This is your chance to explain your reasoning to the engineers reviewing the data.
+In most of the VCG projects, you'll be asked to provide comments once your evaluation is complete.
+Your comments are valuable.
+The purpose of them is to explain your decision making process to the engineers.
+We want to understand why you're making the choices you did.
+If there is a difference in scores, your rationales provide more informative insights to help engineers understand why there is such a difference and to take action.
+Your comments help us improve the AI models.
+A good comment should reflect factors influencing your evaluation decisions.
+It should refer to the images using letters, so ABC not left or right.
+This ensures clarity and avoids confusion since sometimes you may be ranking the preference between 3 images.
+Comments should align with the ratings you have selected.
+Your comments should support your scores.
+Be specific about the differences and the criteria or dimensions you're evaluating.
+Point out exactly what you saw and why it mattered.
+Be concise and informative.
+Get to the point without rambling.
+Be well structured so the readers can easily follow your explanation.
+Make it easy for us to understand your thought process, and of course, avoid grammar and spelling errors.
+Proofread your comments before submitting them.
+Let's quickly review some examples.
+So here on the slide is a helpful comment.
+As you can see, this comment refers to images as AB and C and points out specifically which dimensions are considered.
+It describes what's in the images, the differences between the prompt and the output, and the reasons for the rating.
+The whole comment is well written and informative.
+Feel free to pause the video to review the comment in depth if you wish.
+Now let's look at this comment.
+Both images are having clarity and quality will be satisfied for structural integrity.
+So clarity, quality and satisfy are rather vague and subjective.
+There's no detail for the reasoning and there are some grammatical errors.
+Try to avoid vague, lengthy, irrelevant, subjective and generic comments.
+Ensure your comments are grammatically correct and easily understandable.
+Before finishing up, let's have a quick look at everything that's been covered today.
+Visual Content Generation is a set of projects that aim to evaluate the quality of machine generated images in relevance to the prompt.
+The prompt or the input data comes in the form of text, images, or both.
+The output computer generated images is being evaluated against designated criteria.
+Evaluation criteria are project specific.
+However, among the criteria that are common for the majority of BCG projects are optical fidelity, structural integrity, and input output alignment.
+The evaluation process consists of three main steps, image screening, single image evaluation, and comparison evaluation or preference evaluation.
+By providing your evaluation and explaining your decision making via comments, you contribute to the process of building the training data for the ML model to enhance its capabilities.
+Thank you for all your time and attention today.
+I know this is a lot of information, but your contributions to these VCG projects are incredibly valuable.
+Remember to always refer back to the project specific guidelines, prioritize safety, and provide clear and thoughtful comments.
+Now it's time to put your knowledge into practice.
+I'm confident that you'll all do a great job in evaluating these AI generated visuals.
+Thanks again for watching.

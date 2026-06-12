@@ -2,8 +2,8 @@
 """Upload and verify attachments for the current fresh Bitable task group.
 
 This script is deliberately scoped to the record IDs saved in a
-new_task_group_plan_*.json file. It never creates records and never targets the
-old task root.
+new_task_group_plan_*.json file. It never creates records and never targets
+existing task groups.
 """
 
 from __future__ import annotations
@@ -26,6 +26,7 @@ import submit_new_task_group as group
 BASE_DIR = Path(__file__).resolve().parent
 BACKUP_DIR = BASE_DIR / "new_task_backups"
 CDP_URL = "http://127.0.0.1:9235"
+PROTECTED_ROOT_IDS = group.PROTECTED_ROOT_IDS
 OLD_ROOT_RECORD_ID = group.OLD_ROOT_RECORD_ID
 
 ROOT_ATTACHMENT_SPECS = [
@@ -66,8 +67,8 @@ def load_plan(path: Path) -> dict[str, Any]:
     missing = required.difference(payload)
     if missing:
         raise RuntimeError(f"plan missing keys: {sorted(missing)}")
-    if payload["root_id"] == OLD_ROOT_RECORD_ID:
-        raise RuntimeError("refusing to target the old root record")
+    if payload["root_id"] in PROTECTED_ROOT_IDS:
+        raise RuntimeError(f"refusing to target protected old task root: {payload['root_id']}")
     if int(payload["record_count"]) != 43:
         raise RuntimeError(f"expected 43 records in plan, got {payload['record_count']}")
     return payload
@@ -155,30 +156,16 @@ def validate_shapes_and_attachments(
     rollout_record_ids = set(str(v) for v in plan["rollout_ids"].values())
     local_sessions = {row["session_id"] for row in trial_rows}
 
-    if len(rows) != 86:
-        errors.append(f"table row count should be 86 after old+new groups, got {len(rows)}")
-
-    if root_id == OLD_ROOT_RECORD_ID:
-        errors.append("new plan points at old root")
-    if OLD_ROOT_RECORD_ID not in by_id:
-        errors.append(f"old root missing: {OLD_ROOT_RECORD_ID}")
+    if root_id in PROTECTED_ROOT_IDS:
+        errors.append(f"new plan points at protected old root: {root_id}")
     if root_id not in by_id:
         errors.append(f"new root missing: {root_id}")
 
-    old_prompt_ids = {
-        row["recordId"]
-        for row in rows
-        if row["parent"] == [OLD_ROOT_RECORD_ID] and not row["session_id"]
-    }
-    old_rollouts = [
+    current_session_rows = [
         row
         for row in rows
-        if row["parent"] and row["parent"][0] in old_prompt_ids and row["session_id"]
+        if any(group.session_value_matches(row["session_id"], session_id) for session_id in local_sessions)
     ]
-    if len(old_prompt_ids) != 7 or len(old_rollouts) != 35:
-        errors.append(f"old group shape mismatch: prompts={len(old_prompt_ids)} rollouts={len(old_rollouts)}")
-
-    current_session_rows = [row for row in rows if row["session_id"] in local_sessions]
     current_session_ids = {row["recordId"] for row in current_session_rows}
     if current_session_ids != rollout_record_ids:
         errors.append(
@@ -205,7 +192,7 @@ def validate_shapes_and_attachments(
             continue
         if rec_summary["parent"] != [expected_parent]:
             errors.append(f"rollout parent mismatch for {key}: {rec_summary['parent']} != {[expected_parent]}")
-        if rec_summary["session_id"] != row["session_id"]:
+        if not group.session_value_matches(rec_summary["session_id"], row["session_id"]):
             errors.append(f"rollout session mismatch for {key}: {rec_summary['session_id']}")
 
     if require_attachments and root_id in record_map:

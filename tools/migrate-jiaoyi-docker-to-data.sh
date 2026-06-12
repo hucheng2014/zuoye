@@ -1,3 +1,6 @@
+# ⚠️ LINUX-ONLY: This script formats ext4 partitions and uses systemd.
+# It will NOT work on macOS. Kept for reference only.
+
 #!/usr/bin/env bash
 set -euo pipefail
 
@@ -13,12 +16,12 @@ BACKUP_SUFFIX="$(date +%Y%m%d-%H%M%S)"
 usage() {
   cat <<'EOF'
 Usage:
-  sudo /home/jianglei/zuoye/tools/migrate-jiaoyi-docker-to-data.sh --yes
+  sudo /Users/xaa/zuoye/tools/migrate-jiaoyi-docker-to-data.sh --yes
 
 This script:
   1. Erases /dev/nvme0n1p6 and formats it as ext4.
   2. Mounts it permanently at /data.
-  3. Moves /home/jianglei/jiaoyi to /data/jiaoyi and creates a symlink.
+  3. Moves /Users/xaa/jiaoyi to /data/jiaoyi and creates a symlink.
   4. Migrates Docker root data to /data/docker if Docker is installed.
 
 It only operates on /dev/nvme0n1p6 and exits if the partition does not match the

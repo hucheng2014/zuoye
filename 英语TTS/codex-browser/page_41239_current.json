@@ -1,0 +1,24 @@
+﻿(() => {
+  const audios = [...document.querySelectorAll('audio')];
+  const findRoot = (a) => {
+    let r = a;
+    for (let d = 0; d < 10 && r; d += 1, r = r.parentElement) {
+      const t = r.innerText || '';
+      if (t.includes('是否同一个人') && t.includes('音频内容')) return r;
+    }
+    return a.parentElement;
+  };
+  const items = audios.map((a, i) => {
+    const r = findRoot(a);
+    const text = [...r.querySelectorAll('textarea,input[type="text"]')].map(x => x.value).join(' ').trim();
+    const filename = ((r.innerText || '').match(/目录[:：]\s*([^\n]+)/) || [])[1] || '';
+    return {
+      index: i,
+      src: a.currentSrc || a.src || '',
+      duration: a.duration || 0,
+      filename,
+      text,
+    };
+  });
+  copy(JSON.stringify({ url: location.href, title: document.title, count: audios.length, items }, null, 2));
+})()

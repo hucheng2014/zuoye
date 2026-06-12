@@ -90,3 +90,29 @@ venv/
 
 # macOS
 .DS_Store
+# macOS additional
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# Large model files (macOS: use external storage or download separately)
+*.safetensors
+*.gguf
+*.onnx
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# PostgreSQL data
+postgres_data/
+
+# Docker volumes
+**/browser-profile/
+
+# Trae/Cursor IDE
+.trae/
+.cursor/

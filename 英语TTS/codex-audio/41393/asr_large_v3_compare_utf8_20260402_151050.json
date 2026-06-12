@@ -1,0 +1,187 @@
+{
+  "model": "C:\\Users\\BERN7P\\codex-browser\\models\\faster-whisper-large-v3",
+  "audio_dir": "C:\\Users\\BERN7P\\codex-audio\\41393\\audios",
+  "elapsed_sec": 154.94,
+  "items": [
+    {
+      "index": 0,
+      "file": "20260127_00004324_lzjsk_24_1.wav",
+      "noise_page": "否",
+      "page_text": "我具体解释一下这什么意思我们都知道换电最大的作用可能就是说解决。",
+      "asr_large_v3": "我具体解释一下这什么意思我们都知道换电最大的作用可能就是解决",
+      "language": "zh",
+      "duration": 4.053375,
+      "sim": 0.9836
+    },
+    {
+      "index": 1,
+      "file": "20260127_00004324_lzjsk_24_9.wav",
+      "noise_page": "否",
+      "page_text": "所以这个事情就相当于什？",
+      "asr_large_v3": "所以这个事情就相当于什么",
+      "language": "zh",
+      "duration": 1.4506875,
+      "sim": 0.9565
+    },
+    {
+      "index": 2,
+      "file": "20260127_00004324_lzjsk_24_18.wav",
+      "noise_page": "是",
+      "page_text": "如果你现在要买vision pro 推荐m 五还是咸鱼买m？",
+      "asr_large_v3": "如果你现在要买Vision Pro推荐M5还是嫌疑买M5",
+      "language": "zh",
+      "duration": 2.901375,
+      "sim": 0.8679
+    },
+    {
+      "index": 3,
+      "file": "20260127_00004324_lzjsk_24_0.wav",
+      "noise_page": "是",
+      "page_text": "话你应该呃接受一个观点，还是首先没有必要的不要新增一些实体，但是有一种必要的情况下是什么是技术没有发展到这个阶段，所以它有必要，但是等到技术发展到这个阶段以后它就没有必要了。",
+      "asr_large_v3": "你应该接受一个观点还是首先没有必要不要新增一些实体但是有一种必要的情况下是什么是技术没有发展到这个阶段所以才有必要但是等到技术发展到这个阶段以后它就没有必要了",
+      "language": "zh",
+      "duration": 13.6746875,
+      "sim": 0.9689
+    },
+    {
+      "index": 4,
+      "file": "20260127_00004324_lzjsk_24_3.wav",
+      "noise_page": "是",
+      "page_text": "但是我们应该有技术的长远发展眼光充电这件事情它一定会越来越快的。",
+      "asr_large_v3": "但是我们应该有技术的长远发展眼光充电这件事情它一定会越来越快",
+      "language": "zh",
+      "duration": 4.2666875,
+      "sim": 0.9836
+    },
+    {
+      "index": 5,
+      "file": "20260127_00004324_lzjsk_24_37.wav",
+      "noise_page": "否",
+      "page_text": "诸葛亮的计策，为什么刘备不投？",
+      "asr_large_v3": "诸葛亮的计策为什么刘备不投票",
+      "language": "zh",
+      "duration": 2.197375,
+      "sim": 0.963
+    },
+    {
+      "index": 6,
+      "file": "20260127_00004324_lzjsk_24_45.wav",
+      "noise_page": "否",
+      "page_text": "屏幕掉队了？",
+      "asr_large_v3": "屏幕掉队了",
+      "language": "zh",
+      "duration": 0.853375,
+      "sim": 1.0
+    },
+    {
+      "index": 7,
+      "file": "20260127_00004324_lzjsk_24_6.wav",
+      "noise_page": "是",
+      "page_text": "高的投入建设，你要让用户接受一个不稳定的一个电池你要接受这个。",
+      "asr_large_v3": "高的投入建设你要让用户接受一个不稳定的一个电池你要接受这个",
+      "language": "zh",
+      "duration": 5.2266875,
+      "sim": 1.0
+    },
+    {
+      "index": 8,
+      "file": "20260127_00004324_lzjsk_24_7.wav",
+      "noise_page": "否",
+      "page_text": "毕竟电池就是损耗的这些东西你都让用户接。",
+      "asr_large_v3": "毕竟电池贴入是损耗的这些东西你都让用户去",
+      "language": "zh",
+      "duration": 2.773375,
+      "sim": 0.8718
+    },
+    {
+      "index": 9,
+      "file": "20260127_00004324_lzjsk_24_44.wav",
+      "noise_page": "否",
+      "page_text": "综合素质是主流。",
+      "asr_large_v3": "综合素质是主流",
+      "language": "zh",
+      "duration": 2.261375,
+      "sim": 1.0
+    },
+    {
+      "index": 10,
+      "file": "20260127_00004324_lzjsk_24_15.wav",
+      "noise_page": "是",
+      "page_text": "所以这个你要敏锐的看到未来的技术发展因为你作为礼宾类也好你做电动车它不是做两年三年，你可能要做十年二十年。",
+      "asr_large_v3": "所以你要敏锐地看到未来的技术发展因为你作为理工业也好你做电动车它不是做两年三年你可能要做十年二年",
+      "language": "zh",
+      "duration": 8.192,
+      "sim": 0.8889
+    },
+    {
+      "index": 11,
+      "file": "20260127_00004324_lzjsk_24_5.wav",
+      "noise_page": "否",
+      "page_text": "你要有很。",
+      "asr_large_v3": "",
+      "language": "zh",
+      "duration": 0.981375,
+      "sim": 0.0
+    },
+    {
+      "index": 12,
+      "file": "20260127_00004324_lzjsk_24_2.wav",
+      "noise_page": "是",
+      "page_text": "充电慢的这个问题，在电动车刚起步的时候这是一个非常严重的一个刚需。",
+      "asr_large_v3": "充电慢的这个秘密在电动车刚起步的时候这是一个非常严重的一个刚需",
+      "language": "zh",
+      "duration": 4.16,
+      "sim": 0.9355
+    },
+    {
+      "index": 13,
+      "file": "20260127_00004324_lzjsk_24_11.wav",
+      "noise_page": "是",
+      "page_text": "而你前期的固定投入都已经投下去了你又不能把。",
+      "asr_large_v3": "而你前期的固定投入都已经投下去了你又不能把",
+      "language": "zh",
+      "duration": 3.605375,
+      "sim": 1.0
+    },
+    {
+      "index": 14,
+      "file": "20260127_00004324_lzjsk_24_8.wav",
+      "noise_page": "是",
+      "page_text": "但是长远角度来说收益又越来越小。",
+      "asr_large_v3": "但是长远角度来说收益又越来越小",
+      "language": "zh",
+      "duration": 2.4746875,
+      "sim": 1.0
+    },
+    {
+      "index": 15,
+      "file": "20260127_00004324_lzjsk_24_36.wav",
+      "noise_page": "否",
+      "page_text": "哎呀你你熟悉古代计策就知道了我用的是这个。",
+      "asr_large_v3": "你熟悉古代技策就知道了我用的是这个",
+      "language": "zh",
+      "duration": 4.693375,
+      "sim": 0.8649
+    },
+    {
+      "index": 16,
+      "file": "20260127_00004324_lzjsk_24_43.wav",
+      "noise_page": "否",
+      "page_text": "天马屏和京东屏的差距大吗？",
+      "asr_large_v3": "天马屏和京东屏的差距大吗",
+      "language": "zh",
+      "duration": 2.368,
+      "sim": 1.0
+    },
+    {
+      "index": 17,
+      "file": "20260127_00004324_lzjsk_24_13.wav",
+      "noise_page": "否",
+      "page_text": "它不支持什么彩信不支持好多当时的一些。",
+      "asr_large_v3": "不支持什么采信不支持好多当时的一些",
+      "language": "zh",
+      "duration": 2.645375,
+      "sim": 0.9143
+    }
+  ]
+}

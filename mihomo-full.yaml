@@ -4,15 +4,15 @@ profile:
   store-fake-ip: true
 external-controller: 0.0.0.0:9090
 secret: ''
-external-ui: /home/jianglei/V2RUI/ui
+external-ui: /Users/xaa/V2RUI/ui
 mixed-port: 7897
 tun:
   auto-redir: true
   enable: true
-  stack: mixed
+  stack: system
   auto-route: true
   auto-detect-interface: true
-  interface-name: wlp2s0
+  interface-name: en0
   dns-hijack:
   - any:53
   - tcp://any:53
@@ -264,6 +264,15 @@ rules:
 - DOMAIN-SUFFIX,iesdouyin.com,DIRECT
 - DOMAIN-SUFFIX,lf3-cdn-tos.com,DIRECT
 - DOMAIN-SUFFIX,alipaydns.com,DIRECT
+- DOMAIN-SUFFIX,pubg.com,PROXY
+- DOMAIN-SUFFIX,pubgmobile.com,PROXY
+- DOMAIN-SUFFIX,playbattlegrounds.com,PROXY
+- DOMAIN-SUFFIX,battlegrounds.pubg.com,PROXY
+- DOMAIN-SUFFIX,igamecj.com,PROXY
+- DOMAIN-SUFFIX,proximabeta.com,PROXY
+- DOMAIN-SUFFIX,krafton.com,PROXY
+- DOMAIN-SUFFIX,levelinfinite.com,PROXY
+- DOMAIN-SUFFIX,intlgame.com,PROXY
 - DOMAIN-SUFFIX,telegram.org,PROXY
 - GEOIP,CN,DIRECT
 - DOMAIN-SUFFIX,cn.ubuntu.com,DIRECT

@@ -1,0 +1,230 @@
+Visual Content Generation
+      Emoji Evaluation Design
+                                September 13, 2024
+Task Overview
+
+The goal of this group of projects is to evaluate the quality of machine-generated products in relevance to an input request or prompt. The
+products can include texts, sketches, emojis, and more. Therefore, it is important to review the guidelines specific to the project you are working
+on to ensure your understanding of the task entirely. Please see the Image Evaluation Guidelines below to review the foundation of these
+projects.
+
+In this task, you will be shown:
+ • an input prompt
+ • output image(s)
+ • reference emojis
+     • these are Apple s existing emojis relevant to a character or an object mentioned in the input prompt, such as a pink heart, tears of joy, or
+        folded hands.
+     • note: some prompts may not have any reference emojis.
+Your job is to evaluate the quality of the emojis in relevance to the given input prompt using the Image Evaluation Guidelines in combination with
+the project-specific guidelines listed on this page.
+         ’
+Tool UI
+Section 1:
+Project-Specific Evaluation Guidelines
+Flags
+Apply the following output image flags (if applicable). A description of each flag and when to apply it can be found on the Image Evaluation
+Guidelines.
+
+- Inappropriate
+- Sensitive
+- Stereotype
+Grading Dimensions
+Evaluate each output image on the following dimensions. A description of each dimension can be found below or on the Image Evaluation
+Guidelines.
+
+- Structural Integrity
+- Input/Output Alignment
+ • Text to Image Alignment
+ • Image to Image Alignment
+Ranking Scale
+Compare and rank each Output Image based on the grades you assigned for the following dimensions found on the Image Evaluation Guidelines.
+
+- Structural Integrity
+- Input/Output Alignment
+ • Text to Image Alignment
+ • Image to Image Alignment
+Leave a Comment
+
+
+Provide a concise, specific, well-structured comment that explains your decision-making process to the engineers.
+Special Note on Background Segmentation
+In certain evaluation projects, the goal is to assess how effectively the object or people are separated from the background scene. In such cases,
+you will see the emoji displayed on a solid green background in the grading UI (see examples below). This background is provided to help you
+identify any artifacts or areas that have been improperly carved out.
+
+• The solid green background can be treated the same as a white background. When grading the "input-output" alignment question, you
+   should consider if any of the element mentioned in the prompt (e.g., beach, forest, city) is missing from the output emoji.
+Special Note on Background Segmentation
+See below for examples of miscarved regions. In the below examples, left image is the original image, while the right image is segmented.
+Section 2:
+Examples
+  Examples
+
+   Input Prompt            Reference Emojis   Output Image       Structural Integrity                  Input/Output Alignment
+                                                             • No Structural Integrity Issue
+                                                             • The emoji is free of any visible
+An emoji of rainbow flag                                       defects, and accurately depicts
+                                                                                                                     High
+heart shaped                                                   the users intention. The style
+                                                               matches the style of an Apple
+                                                               Emoji
+                                                                                                   • Low
+                                                             • Severe Structural Integrity Issue   • While the input prompt doesn't
+                                                                                                     explicitly specify a 'shrimp with a full
+                                                             • Shrimp don't have claws, that is      body,' the prevailing interpretation of
+                                                               an artifact.
+                                                                                                     'shrimp' typically includes the entire
+                                                                                                     body. However, this emoji only features
+                                                                                                     the shrimp head and lacks the full body
+                                                             • Severe Structural Integrity Issue • Low
+yellow shrimp                                                • This is an emoji of a worm, not a • This is an emoji of a worm, not a
+                                                               shrimp.                               shrimp.
+
+
+                                                             • Noticeable Structural Integrity     • Low
+                                                               Issue
+                                                                                                   • This emoji portrays a fusion of a snake
+                                                             • This emoji portrays a fusion of a     and a shrimp, but it deviates from the
+                                                               snake and a shrimp, but it            accurate representation of a genuine
+                                                               deviates from the accurate            shrimp
+                                                               representation of a genuine
+                                                               shrimp.
+  Examples
+
+    Input Prompt                Reference Emojis   Output Image        Structural Integrity                         Input/Output Alignment
+                                                                  • Noticeable Structural Integrity Issue
+                                                                  • The face of the cat looks good, but this                          High
+                                                                    emoji has a prominent distortion to the
+                                                                    right.
+
+
+An emoji of a cat wearing
+sunglasses                                                              No Structural Integrity Issue                                 High
+
+
+
+
+                                                                        No Structural Integrity Issue                                 High
+
+
+
+                                                                                                               • Low
+                                                                        No Structural Integrity Issue
+                                                                                                               • This emoji depicts a giant panda practicing Tai
+                                                                                                                 Chi, but it lacks the crucial context of the
+                                                                                                                 serene 'bamboo forest.
+
+                                                                                                               • Moderate
+A giant panda practicing Tai                                                                                   • This emoji portrays a giant panda practing Tai
+                                                                        No Structural Integrity Issue            Chi and holding some bamboo. However, the
+Chi in a serene bamboo forest
+                                                                                                                 bamboo doesn't convey the atmosphere of a
+                                                                                                                 complete forest.
+
+
+                                                                        No Structural Integrity Issue                                 High
+  Examples
+
+  Input Prompt              Reference Emojis   Output Image     Structural Integrity                         Input/Output Alignment
+                                                                                                      • Moderate
+                                                              Noticeable Structural Integrity Issue   • This hugging blob-face emoji is holding balloons
+                                                                                                      • The emoji does not wear a Christmas hat
+
+a blob-face wearing a
+                                                                                                      • Moderate
+Christmas hat and holding                                     Noticeable Structural Integrity Issue
+                                                                                                      • This hugging blob-face emoji is holding balloons,
+                                                                                                        but the Christmas hat is almost entirely blocked by
+balloons
+                                                                                                        the purple ballon, which is almost invisible.
+
+
+
+                                                                  No Structural Integrity Issue
+                                                                                                      • High
+                                                                                                      • This emoji accurately depicts the input prompt.
+
+                                                                                                      • Low
+                                                                  No Structural Integrity Issue       • This emoji only shows a dog face, which lacks the
+                                                                                                        crucial contexts specified in the input prompt.
+
+                                                                                                      • Moderate
+                                                                  No Structural Integrity Issue       • This emoji depicts a dog with a surfboard, which is
+                                                                                                        loosely aligned with the context in the input prompt.
+
+a dog with full body                                                                                  • Moderate
+surfing on the sea on a                                                                               • This animated-style emoji depicts a dog surfing on
+sunny day                                                                                               the sea, which generally aligns with the input prompt
+                                                                Minor Structural Integrity Issue
+                                                                                                        and is visually appealing.
+                                                                                                      • However, the element of a 'sunny day' is not very
+                                                                                                        pronounced.
+
+
+                                                                  No Structural Integrity Issue
+                                                                                                      • High
+                                                                                                      • This emoji accurately depicts the input prompt.
+  Examples
+
+   Input Prompt            Reference Emojis   Output Image       Structural Integrity                 Input/Output Alignment
+
+
+a kid wearing a backback                                        No Structural Integrity Issue                      High
+
+
+
+
+a boy holding a balloon                                         No Structural Integrity Issue                      High
+
+
+
+                                                             • Minor Structural Integrity Issue
+a man holding a kitten                                       • The hands of the man have                           High
+                                                               some artifacts.
+
+                                                             • Noticeable Structural Integrity    • Moderate
+                                                               Issue
+a rainbow ice-cream
+                                                                                                  • The input prompt asks for one ice
+                                                             • The cone on the right is             cream, but the emoji output shows
+                                                               incomplete.                          two.
+
+
+bowl of oatmeal with
+                                                                No Structural Integrity Issue                      High
+blueberries
+  Examples
+
+   Input Prompt               Reference Emojis   Output Image        Structural Integrity                  Input/Output Alignment
+
+                                                                                                       Moderate: There are two toilets in the
+a bathroom with a                                               Minor Structural Integrity Issue: The
+                                                                                                       bathroom, the left one can be better
+shower and a toilet                                             toilet on the left side is mis-shaped.
+                                                                                                       replaced with a bathtub.
+
+
+
+a bicycle with a basket
+                                                                    No Structural Integrity Issue                         High
+full of flowers
+
+
+
+
+a candle on a shelf                                                 No Structural Integrity Issue                         High
+
+
+
+
+person wearing a bowler
+hat                       🎩🧑                                        No Structural Integrity Issue                         High
+
+
+
+
+a person giving a
+presentation              🧑                                         No Structural Integrity Issue                         High
+            Congratulations
+You have completed the guidelines “Emoji Evaluation Design”!
+

@@ -1,0 +1,82 @@
+WT – Mail Smart Reply Feedback
+This feedback is based on Inter-Analyst Agreement (IAA). That is, how much do different people
+analyzing the same task agree with each other? The observations and feedback below are sorted
+based on the most recurring issues, i.e. from the lowest agreement scores.
+
+1. Personalization (HIGH RISK)
+This is the most widespread and severe issue in the data. You should revisit how you’re are applying the
+Personalization dimension.
+The guidelines are explicit that a Personalized response must reflect the user's writing style patterns
+(vocabulary, formatting, padding, sentence structure), their Mail Component Patterns (salutations,
+openings, closings, sign-offs, signature), and the relationship context. A response that is functionally
+correct but uses a generic salutation, wrong sign-off, or misses the user's typical formatting should be
+rated Generic, not Personalized.
+Key reminders from the guidelines:
+• The user profile describes tendencies, not strict rules, but you should look for meaningful
+alignment, not just surface-level checks.
+• If a user profile shows "strong_formatting" and the draft uses no lists or structure when the
+prompt explicitly asked for one, that is Generic.
+• If the draft uses a completely different sign-off than what the profile shows (e.g., "Thanks" vs.
+"Thank You"), that also pushes toward Generic.
+• You should think about the overall "feel"; does this read as authentically from this particular
+person, or could anyone have written it?
+Calibrate against the given examples in Step 6, especially the contrast between Reply 1 (Personalized)
+and Reply 2 (Generic) in the Marija example, which is the clearest illustration of what "missing style
+elements" looks like in practice, and what would be the more common scenarios across tasks.
+2. Groundedness (HIGH RISK)
+The v1.3 update introduced a three-tier scale - Grounded, Partially Grounded, Not Grounded. The
+"Partially Grounded" tier is new; make sure you’re clear on the correct approach applicable to the in-task
+scenarios.
+The critical distinctions to reinforce:
+• Standard professional phrases ("Thanks for checking in," "Hope you are doing well," pleasantries,
+conventional closings) are Grounded - do not penalize these.
+• A draft that gets the core message right but adds one minor invented detail (a specific time not
+in the prompt, a fabricated duration, a reference to a prior conversation that didn't happen) is
+Partially Grounded, not Not Grounded.
+• A draft that introduces an invented fact that changes the meaning of the message, or brings in a
+topic entirely unrelated to the instruction, is Not Grounded.
+• Rule 5 is particularly important: if the recipient's name cannot be found anywhere in the input
+(prompt, prior email, user profile, additional info), the response should be rated Partially
+Grounded, not Not Grounded — as long as the core message is correct.
+• As long as a name is found in the task (user prompt, previous email, additional info or profile), it
+would be marked as Grounded, even if contradicting the user instruction. For example, prompt
+
+Centific Confidential ©
+
+says “Email Mark….”, but the profile says “John” and the response starts with “Hi John”. It’s
+Grounded but Contextually Misfit.
+Reserve Not Grounded only for clear failures. Minor invented details with the core message intact =
+Partially Grounded.
+3. Instruction Adherence & Contextual Fit (HIGH RISK)
+This dimension also now has a three-tier scale, and the same calibration risk applies. You should be
+careful not to rate a response as Not Followed or Misfit when Partially Followed and Fit is more accurate.
+The key rules:
+• If a draft fulfills the primary instruction but omits a secondary element, or responds to most but
+not all key points in the prior email, or has a minor formality mismatch — that is Partially
+Followed and Fit.
+• Not Followed or Misfit is reserved for cases where a critical element is missing, the instruction is
+contradicted, or the formality gap is significant (e.g., casual tone in a clearly formal professional
+thread).
+You should also remember: when there is a prior email, you need to evaluate both instruction adherence
+and contextual fit together. A response can follow the instruction but fail to address the prior email's key
+points. That would be Partially Followed and Fit at best.
+4. Locale-Specific Issues
+For zh-CN and zh-HK specifically: the Localization dimension is HIGH RISK, which is unique to these
+locales. You should pay close attention to script-level issues, wrong punctuation format or formatting
+that does not fit Chinese-language conventions. Do NOT apply LE cert localization rules. Writing Tools
+have their own localization rules outlined in the guides. Grammar/Spelling do not fall under localization.
+Most other locales are at MEDIUM RISK, so please observe the exact expectations on Localization and be
+cautious in your evaluations.
+For vi-VN: Naturalness is also flagging as HIGH RISK, which is unusual compared to other locales. This
+may reflect model output that is grammatically acceptable but reads as translated or stilted in
+Vietnamese. You should apply the Naturalness standard carefully, the question is whether the draft
+sounds like a real person wrote it in that language, not just whether the grammar is correct.
+5. What's Working - Don't Overcorrect
+Harmful and Tone are consistently LOW RISK across all locales. You should not feel pressure to find issues
+in these dimensions where none exist. Tone in particular should only be rated Not Aligned when there is
+a clear mismatch — a cold, robotic reply to someone expressing frustration, or a casual tone in a formal
+professional context. If the tone is broadly appropriate, it should pass.
+
+Centific Confidential ©
+
+

@@ -1,0 +1,46 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: pure_rl_fullauto_db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=freqtrade
+      - POSTGRES_USER=freqtrade
+      - POSTGRES_PASSWORD=local_freqtrade_db_2026
+      - TZ=Asia/Shanghai
+      - PGTZ=Asia/Shanghai
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U freqtrade -d freqtrade"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  freqtrade:
+    build:
+      context: .
+      dockerfile: Dockerfile.freqtrade-pg
+    image: pure_rl_fullauto_freqtrade:pg
+    container_name: pure_rl_fullauto
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./user_data:/freqtrade/user_data
+    ports:
+      - "8088:8080"
+    environment:
+      - TZ=Asia/Shanghai
+    dns:
+      - 223.5.5.5
+      - 119.29.29.29
+      - 1.1.1.1
+    command: >
+      trade
+      --logfile /freqtrade/user_data/logs/freqtrade.log
+      --config /freqtrade/user_data/config.json
+      --config /freqtrade/user_data/config.paper.json
+      --freqaimodel MyRLEnv_FullAuto
+      --strategy PureRL_FullAuto

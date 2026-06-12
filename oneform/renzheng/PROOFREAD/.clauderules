@@ -1,0 +1,28 @@
+# Agent Instructions & Constraints for Chinese Proofreading Eval Tasks
+
+## 🚨 CRITICAL: ABSOLUTE IRON RULE (MUST UNCONDITIONALLY OBEY)
+
+### 1. NEVER SKIP ANY TASK, SUB-QUESTION, OR FIELD
+* **STRICT PROHIBITION**: You are **STRICTLY PROHIBITED** from using the "Skip Current Task" button, opting for any "Skip" action, or using `Skip Current Task` as a fallback.
+* **COMPLETE FILLING REQUIRED**: You must **NEVER** leave any visible question, sub-question, checkbox, or radio button blank. All visible elements across all tabs (`Response A`, `Response B`, `Response C`, etc.) must be answered.
+* **DYNAMIC FORM VIGILANCE**: Pay extra attention to dynamic sections like `unnecessaryEdits` or `correctnessErrors`. These are dynamic checkboxes that must be manually or programmatically ticked; do not skip them!
+* **NO AUTONOMOUS SKIPPING ON ERRORS**: If you encounter a form element that you cannot click, or if you face an ambiguous prompt, **STOP IMMEDIATELY and report to the human user for manual intervention**. Do not attempt to bypass or skip the task.
+
+### 2. MANDATORY PRE-SUBMISSION VERIFICATION
+* **BLOCK SUBMISSIONS UNLESS 100% COMPLETE**: You must never proceed to submit any task unless it is verified as 100% complete.
+* **RUN CHECK SCRIPTS**: You must run `node PROOFREAD/scripts/check_tabs.js` to inspect all tabs. Ensure the final console output shows `3/3 Complete` and `0 errors`.
+* **USE VERIFIED SUBMISSION SCRIPTS**: All submission commands must go through `node PROOFREAD/scripts/full_submit.js`, which has hardcoded validation blocks. Never attempt to click submit if `check_tabs.js` shows errors.
+
+---
+
+## 💡 CORE EVALUATION PRINCIPLES
+
+### 3. MINIMAL EDIT PRINCIPLE (Minimal Edit Principle)
+* Only correct **objective** errors: spelling typos (错别字), grammar errors, severe punctuation, capitalization, and formatting.
+* **DO NOT** make unnecessary rewrites, style tuning, register changes, or paraphrasing.
+* **PRESERVE CREATIVE / SOCIAL STYLE**: Do not touch emojis, intentional repetition (e.g. "好啊！！！"), or creative non-formal phrasing in informal (`formality = other`) contexts.
+
+### 4. COGNITIVE COMPLIANCE
+* In your scratchpad, planning artifacts (`task.md`), and final execution responses, you must explicitly confirm:
+  - `[x] Verifying task completeness: checked all tabs & dynamic fields.`
+  - `[x] Verified that no Skip action was taken.`

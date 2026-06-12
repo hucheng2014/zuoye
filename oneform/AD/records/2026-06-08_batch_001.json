@@ -1,0 +1,82 @@
+{
+  "batch_id": "2026-06-08_batch_001",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T12:00:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689623081",
+      "query": "密 码",
+      "query_intent": "User is searching for password management or account security utilities.",
+      "ad": {
+        "name": "2FA Authenticator-2FAS, Authen",
+        "developer": "林炽 钟"
+      },
+      "rating": "Good",
+      "comment": "The query \"密 码\" indicates an intent to find password managers or account security tools. The ad is for \"2FA Authenticator\", which provides multi-factor authentication for securing accounts. Since a 2FA tool is a close alternative and complementary security utility to password managers, serving similar account security needs, the relationship is strong but not an exact match. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689623082",
+      "query": "找 到 你 呦",
+      "query_intent": "User is searching for location tracking or person-finding services.",
+      "ad": {
+        "name": "手机定位找人-查找手机，手机定位找人追踪软件",
+        "developer": "盛欣 张"
+      },
+      "rating": "Excellent",
+      "comment": "The query \"找 到 你 呦\" indicates an intent to track locations or find a specific person's whereabouts. The ad is a mobile phone location tracking and sharing software. Since the ad directly and fully satisfies the user's search intent for location tracking services, the relationship is an exact match. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689623083",
+      "query": "灯 塔 旅 程",
+      "query_intent": "User is searching for an adventure or storytelling game.",
+      "ad": {
+        "name": "洪恩英语—儿童听说启蒙必备",
+        "developer": "iHuman Inc."
+      },
+      "rating": "Bad",
+      "comment": "The query \"灯 塔 旅 程\" indicates an intent to find a specific game, likely an indie adventure or narrative-driven title. The ad \"洪恩英语\" is an educational application for children's English listening and speaking. Since an indie adventure game and an English learning app operate in completely different domains and target entirely unrelated user intents, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689623084",
+      "query": "英 雄 联 盟",
+      "query_intent": "User is searching for League of Legends, a competitive MOBA game.",
+      "ad": {
+        "name": "永远的蔚蓝星球-肉鸽割草冒险小分队",
+        "developer": "Chuangyue Joy"
+      },
+      "rating": "Bad",
+      "comment": "The query \"英 雄 联 盟\" indicates an intent for \"League of Legends\", a highly popular competitive MOBA game. The ad \"永远的蔚蓝星球\" is a casual roguelike deck-building and strategy card game. Since MOBA games and casual card games belong to completely unrelated genres with different gameplay mechanics and target audiences, the relationship is weak. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689623085",
+      "query": "12345 投 诉",
+      "query_intent": "User is searching for the official 12345 government service hotline to make a complaint.",
+      "ad": {
+        "name": "法临法律咨询-法律咨询、投诉维权、中国法律服务",
+        "developer": "成都优港信息科技有限公司"
+      },
+      "rating": "Good",
+      "comment": "The query \"12345 投 诉\" indicates an intent to make a complaint or seek rights protection through the official 12345 government service hotline. The ad \"法临法律咨询\" provides legal consultation, complaints, and rights protection services. Since the ad offers a close alternative method (legal services) to achieve the user's core goal of making a complaint and protecting their rights, it is a highly relevant substitute. Rated Good.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  }
+}

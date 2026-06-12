@@ -1,0 +1,827 @@
+{
+  "url": "https://ilabel.weixin.qq.com/mission/41398/label",
+  "title": "2026音频check_first_part196 - 任务标注",
+  "extractedAt": "2026-04-02T11:55:48.857Z",
+  "count": 63,
+  "items": [
+    {
+      "index": 0,
+      "filename": "20260127_00004330_atpj_269_7.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_7.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "盖子是掉的。"
+    },
+    {
+      "index": 1,
+      "filename": "20260127_00004330_atpj_269_60.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_60.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "其实我觉得红钻狼到这个水平，和红十五已经很接近了。"
+    },
+    {
+      "index": 2,
+      "filename": "20260127_00004330_atpj_269_35.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_35.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "是比甜感和苦感要明显一点的，整个酒体爆发力是挺强的。"
+    },
+    {
+      "index": 3,
+      "filename": "20260127_00004330_atpj_269_39.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_39.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "红十三顾名思义就是处于红十和红十五之间的一款酒。"
+    },
+    {
+      "index": 4,
+      "filename": "20260127_00004330_atpj_269_38.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_38.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "也感受不到那个郎酒常有的那个塑料味儿或者说是漆味儿哈，一会儿我们拿红十和红十五和它做个对比，因为很多朋友喜欢把这款酒叫做红十三嘛，因为它本身叫做红钻郎酒。"
+    },
+    {
+      "index": 5,
+      "filename": "20260127_00004330_atpj_269_16.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_16.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "确实不是特别靠谱啊，这上面还写着撕毁不退换，你写这有什么用呢？"
+    },
+    {
+      "index": 6,
+      "filename": "20260127_00004330_atpj_269_68.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_68.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "遇到假酒的可能性还是很小的，但是品相不全有问题的情况还是有过几次的。"
+    },
+    {
+      "index": 7,
+      "filename": "20260127_00004330_atpj_269_22.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_22.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "如果酒没问题就不找他退换货了。"
+    },
+    {
+      "index": 8,
+      "filename": "20260127_00004330_atpj_269_13.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_13.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这个全部都掉了。"
+    },
+    {
+      "index": 9,
+      "filename": "20260127_00004330_atpj_269_65.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_65.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以它的性价比还是可以的。"
+    },
+    {
+      "index": 10,
+      "filename": "20260127_00004330_atpj_269_18.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_18.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "希望酒是没问题的哈。"
+    },
+    {
+      "index": 11,
+      "filename": "20260127_00004330_atpj_269_32.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_32.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那个复合香展现很好。"
+    },
+    {
+      "index": 12,
+      "filename": "20260127_00004330_atpj_269_40.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_40.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我们来看看它的酒体水平是不是这样的哈。"
+    },
+    {
+      "index": 13,
+      "filename": "20260127_00004330_atpj_269_11.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_11.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "哎呀。"
+    },
+    {
+      "index": 14,
+      "filename": "20260127_00004330_atpj_269_63.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_63.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "酒都已经品完了。"
+    },
+    {
+      "index": 15,
+      "filename": "20260127_00004330_atpj_269_43.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_43.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "蚊香上红石香气显得会淡一些。"
+    },
+    {
+      "index": 16,
+      "filename": "20260127_00004330_atpj_269_62.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_62.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "要好一些。"
+    },
+    {
+      "index": 17,
+      "filename": "20260127_00004330_atpj_269_47.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_47.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这款红石是二零二零年二三月份的，其实和这个相差时间并不是很长。"
+    },
+    {
+      "index": 18,
+      "filename": "20260127_00004330_atpj_269_20.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_20.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "也不舒服啊，如果说你是送礼啊或者什么那更不合适了。"
+    },
+    {
+      "index": 19,
+      "filename": "20260127_00004330_atpj_269_23.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_23.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "它的生产日期是二零一九年十月二十一日，我们就直接开瓶。"
+    },
+    {
+      "index": 20,
+      "filename": "20260127_00004330_atpj_269_45.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_45.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这个红石入口它的。"
+    },
+    {
+      "index": 21,
+      "filename": "20260127_00004330_atpj_269_54.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_54.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "喝完红枣郎马上试一下红花郎十五。"
+    },
+    {
+      "index": 22,
+      "filename": "20260127_00004330_atpj_269_37.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_37.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这款酒它尾段的话。"
+    },
+    {
+      "index": 23,
+      "filename": "20260127_00004330_atpj_269_25.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_25.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "闻这个香气是没问题的，狼香比较明显。"
+    },
+    {
+      "index": 24,
+      "filename": "20260127_00004330_atpj_269_49.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_49.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "它的尾段酸感会更明显。"
+    },
+    {
+      "index": 25,
+      "filename": "20260127_00004330_atpj_269_12.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_12.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "看一看，瓶子还是完好的。"
+    },
+    {
+      "index": 26,
+      "filename": "20260127_00004330_atpj_269_64.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_64.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "总结下来就是红钻郎酒它的价格更加接近红花郎十，口感更接近红花郎十五。"
+    },
+    {
+      "index": 27,
+      "filename": "20260127_00004330_atpj_269_53.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_53.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "闻香上的确是很接近的，几乎不太能分辨的出来。"
+    },
+    {
+      "index": 28,
+      "filename": "20260127_00004330_atpj_269_44.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_44.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这款红钻郎它的香气更为丰富，酱香和那个郎香风格展现更加明显，对比品尝一下。"
+    },
+    {
+      "index": 29,
+      "filename": "20260127_00004330_atpj_269_15.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_15.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "哎看看那个酒有没有问题吧，这个多多百亿补贴上面。"
+    },
+    {
+      "index": 30,
+      "filename": "20260127_00004330_atpj_269_67.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_67.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我个人的经历就是。"
+    },
+    {
+      "index": 31,
+      "filename": "20260127_00004330_atpj_269_41.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_41.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "倒点红十。"
+    },
+    {
+      "index": 32,
+      "filename": "20260127_00004330_atpj_269_31.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_31.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "郎酒的主要优点吧就是你存放时间长了，它不单是酱香突出，陈香味也是很足的。"
+    },
+    {
+      "index": 33,
+      "filename": "20260127_00004330_atpj_269_52.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_52.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我们再对比一下。"
+    },
+    {
+      "index": 34,
+      "filename": "20260127_00004330_atpj_269_30.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_30.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为这个酒是一九年的它那个陈味儿是比较足的。"
+    },
+    {
+      "index": 35,
+      "filename": "20260127_00004330_atpj_269_26.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_26.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "再来确认一下。"
+    },
+    {
+      "index": 36,
+      "filename": "20260127_00004330_atpj_269_1.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_1.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我们先来开个箱。"
+    },
+    {
+      "index": 37,
+      "filename": "20260127_00004330_atpj_269_56.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_56.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我觉得红花郎十五它那个酱味更足。"
+    },
+    {
+      "index": 38,
+      "filename": "20260127_00004330_atpj_269_0.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_0.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "多多百亿补贴上买了一瓶酒到货了。"
+    },
+    {
+      "index": 39,
+      "filename": "20260127_00004330_atpj_269_55.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_55.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "整体风格基本一致，还是有点区别的。"
+    },
+    {
+      "index": 40,
+      "filename": "20260127_00004330_atpj_269_29.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_29.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "嗯没问题。"
+    },
+    {
+      "index": 41,
+      "filename": "20260127_00004330_atpj_269_34.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_34.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "呃它的酸感呢。"
+    },
+    {
+      "index": 42,
+      "filename": "20260127_00004330_atpj_269_50.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_50.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "香气的丰富度也没这款酒好。"
+    },
+    {
+      "index": 43,
+      "filename": "20260127_00004330_atpj_269_61.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_61.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "比这个红十。"
+    },
+    {
+      "index": 44,
+      "filename": "20260127_00004330_atpj_269_46.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_46.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "辣感会稍明显，另外酱香啊沉香啊是没有这个红钻郎足的。"
+    },
+    {
+      "index": 45,
+      "filename": "20260127_00004330_atpj_269_21.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_21.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为我是做视频评测，直接打开来喝。"
+    },
+    {
+      "index": 46,
+      "filename": "20260127_00004330_atpj_269_6.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_6.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这什么情况？"
+    },
+    {
+      "index": 47,
+      "filename": "20260127_00004330_atpj_269_59.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_59.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "尾段相似度也很高的。"
+    },
+    {
+      "index": 48,
+      "filename": "20260127_00004330_atpj_269_17.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_17.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这个盒子都已经碎掉了。"
+    },
+    {
+      "index": 49,
+      "filename": "20260127_00004330_atpj_269_69.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_69.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以朋友们如果说在上面买自饮用酒，那可以去尝试，如果说礼品用酒，那还是小心谨慎一点。"
+    },
+    {
+      "index": 50,
+      "filename": "20260127_00004330_atpj_269_36.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_36.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "中段爆香感很好。"
+    },
+    {
+      "index": 51,
+      "filename": "20260127_00004330_atpj_269_2.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_2.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "看看是一瓶什么酒。"
+    },
+    {
+      "index": 52,
+      "filename": "20260127_00004330_atpj_269_57.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_57.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "整个酒体的饱满度浓郁度强度也是更好的。"
+    },
+    {
+      "index": 53,
+      "filename": "20260127_00004330_atpj_269_19.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_19.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "其实很多朋友开到这一步就应该退货了，因为你如果不及时喝的话你在这放着看着。"
+    },
+    {
+      "index": 54,
+      "filename": "20260127_00004330_atpj_269_14.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_14.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "看看这上面磨的这个应该不是这一次运输过程中磨的因为它有气泡袋防护啊应该不会弄成这样啊。"
+    },
+    {
+      "index": 55,
+      "filename": "20260127_00004330_atpj_269_66.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_66.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "另外需要提醒朋友们的是，如果在多多百亿补贴上够久。"
+    },
+    {
+      "index": 56,
+      "filename": "20260127_00004330_atpj_269_4.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_4.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这是一瓶郎酒。"
+    },
+    {
+      "index": 57,
+      "filename": "20260127_00004330_atpj_269_58.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_58.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "它这个中段爆香感力道更足一些。"
+    },
+    {
+      "index": 58,
+      "filename": "20260127_00004330_atpj_269_27.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_27.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "闻香应该没问题，酱香突出郎酒那个香气。"
+    },
+    {
+      "index": 59,
+      "filename": "20260127_00004330_atpj_269_51.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_51.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我觉得这款酒它的口感更加接近红花郎十五。"
+    },
+    {
+      "index": 60,
+      "filename": "20260127_00004330_atpj_269_24.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_24.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "看看酒有没有问题。"
+    },
+    {
+      "index": 61,
+      "filename": "20260127_00004330_atpj_269_42.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_42.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "再来倒点红十五。"
+    },
+    {
+      "index": 62,
+      "filename": "20260127_00004330_atpj_269_33.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004330_atpj_269_spk0/20260127_00004330_atpj_269_33.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以经常我们就喜欢把它叫做郎香。"
+    }
+  ]
+}

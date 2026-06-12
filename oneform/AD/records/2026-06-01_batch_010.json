@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_010",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T22:33:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688693191",
+      "query": "优 逸 花",
+      "query_intent": "User is searching for '优逸花' (Youyihua), a popular mobile consumer credit lending and micro-loan application developed by Mashang Consumer Finance, intending to borrow consumer credit loans.",
+      "ad": {
+        "name": "京东金融-理财借贷分期保险一站式平台",
+        "subtitle": "30亿人都在用，理财更贴心，信贷更安心！",
+        "developer": "Beijing Jingdong Financial Technology Holdings Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id895682747) & Web research",
+          "note": "京东金融 is JD.com's flagship comprehensive financial platform, featuring a prominent consumer credit lending service (京东金条/白条) designed for micro-loans."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both apps operate in the consumer credit and micro-lending sector. '优逸花' is a specialized, pure micro-loan app, while '京东金融' is a broader financial platform offering JD Jintiao (directly equivalent to Youyihua loans). They compete directly in the mobile consumer lending market."
+        }
+      ],
+      "relationship_analysis": "The query '优 逸 花' refers to a specialized consumer credit lending and micro-loan application. The advertised app '京东金融' is a comprehensive flagship financial platform featuring a major consumer credit lending service (京东金条/白条) designed for micro-credit. Both satisfy the user's intent to borrow consumer micro-loans. While JD Finance is a broader financial portal, it serves as a highly relevant direct competitor in the consumer lending sector, making this Good.",
+      "why_not_higher": "They are not exact equivalents. '优逸花' is a dedicated, vertical micro-loan app, while '京东金融' is a broad, comprehensive financial platform including wealth management, insurance, and retail split-payments.",
+      "why_not_lower": "They share strong functional alignment in the consumer lending sector, meeting highly overlapping user needs for borrowing quick cash.",
+      "rating": "Good",
+      "comment": "The query \"优 逸 花\" refers to \"Youyihua\", a popular consumer credit lending and micro-loan application. The advertised app \"京东金融-理财借贷分期保险一站式平台\" is a comprehensive financial platform featuring a prominent consumer credit lending service (京东金条/白条). Since both platforms satisfy the user's intent to borrow consumer micro-loans, the advertised app represents a highly relevant direct competitor in the consumer lending sector. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688693192",
+      "query": "升 级",
+      "query_intent": "User is searching for '升级' (Shengji / Tractor), a highly popular, classic four-player trick-taking poker card game in China, intending to play this traditional card game on their mobile device.",
+      "ad": {
+        "name": "微乐斗地主移动版 V1.0.0-春天版",
+        "subtitle": "相聚微乐，马上开局！",
+        "developer": "Changchun Dingyuan Network Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1591571941) & Web research",
+          "note": "微乐斗地主 is a popular card game app primarily focused on '斗地主' (Dou Dizhu - another major classic Chinese card game) and local poker/mahjong games."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both '升级' and '斗地主' are the most famous classic Chinese card games played with standard poker cards. They target the exact same casual card player demographics in China. Weile Doudizhu represents a close game alternative."
+        }
+      ],
+      "relationship_analysis": "The query '升 级' refers to the classic Chinese trick-taking card game 'Shengji' (Tractor). The advertised app '微乐斗地主' is a popular card game app primarily focused on 'Doudizhu' (another leading classic Chinese card game). Since both are traditional Chinese casual poker card games targeting the same casual audience, but represent different specific poker card games, this represents a close game alternative. Rated Good.",
+      "why_not_higher": "They are different card games. A player looking specifically for 'Shengji' (Tractor) would find 'Doudizhu' to have completely different rules, mechanics, and gameplay structures.",
+      "why_not_lower": "They share the identical card game genre (traditional Chinese poker games) and target the exact same casual card-player audience.",
+      "rating": "Good",
+      "comment": "The query \"升 级\" refers to \"Shengji\" (Tractor), a highly popular classic trick-taking card game played with poker cards in China. The advertised app \"微乐斗地主移动版 V1.0.0-春天版\" is a popular card game app primarily focused on \"Doudizhu\" (another leading classic Chinese card game). Since both are traditional Chinese casual poker card games targeting the same casual audience, but represent different specific games, they constitute close alternatives. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688693193",
+      "query": "秒 针 倒 计 时",
+      "query_intent": "User is performing a broad category search for a mobile countdown timer or stopwatch app with second-hand visibility ('秒针倒计时') to set precise timers or measure seconds.",
+      "ad": {
+        "name": "使命闹钟-智能定时闹钟与轻松起床",
+        "subtitle": "",
+        "developer": "VISONXY LIMITED",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6504273260) & Web research",
+          "note": "使命闹钟 (Alarmy) is a world-famous smart alarm clock app focusing on helping users wake up through interactive missions, and includes basic clock/timer features as secondary utilities."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both apps belong to the clock, alarm, and timer utility category. However, Alarmy's primary focus is waking up (alarm clock), whereas the query seeks a simple visual countdown timer with seconds hand. The core intents differ."
+        }
+      ],
+      "relationship_analysis": "The query '秒 针 倒 计 时' is a broad category search for a mobile countdown timer or stopwatch with second-hand visibility. The advertised app '使命闹钟' is primarily a smart alarm clock app designed for waking up, which includes basic timer/countdown functions as secondary features. While both belong to the clock and timer utility category, their core intents differ (waking up alarm vs. countdown timer), representing a weak category association. Rated Acceptable.",
+      "why_not_higher": "They have different core utilities. A user wanting a simple second-hand countdown timer would find a full-featured wake-up alarm clock with missions to be broader than their specific request.",
+      "why_not_lower": "Both applications are clock utilities, maintaining a broad category relationship under the clock/timer domain.",
+      "rating": "Acceptable",
+      "comment": "The query \"秒 针 倒 计 时\" is a broad category search for a mobile countdown timer or stopwatch app with second-hand visibility. The advertised app \"使命闹钟-智能定时闹钟与轻松起床\" is primarily a smart alarm clock app designed for waking up, which includes basic timer/countdown functions as secondary features. While both belong to the clock and timer utility category, their core intents differ (waking up alarm vs. countdown timer), representing a weak category association. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688693194",
+      "query": "易 捷 加 油 app",
+      "query_intent": "User is searching specifically for '易捷加油 app', which is Sinopec's (中国石化) official gas station payment and refueling app designed for internal-combustion/gasoline vehicles to pay for fuel and manage gas cards.",
+      "ad": {
+        "name": "蔚来",
+        "subtitle": "买车租电池 立省购置税",
+        "developer": "NIO Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1116095987) & Web research",
+          "note": "蔚来 (NIO) is the official mobile application of NIO, a leading smart electric vehicle (EV) manufacturer in China, used to manage electric vehicles, battery swapping, and EV charging."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Sinopec's Yijie app is for gasoline car refueling payments. NIO is an EV car app. EV cars do not use gasoline, and gasoline cars do not use EV charging networks. The energy types (gasoline vs. electricity) and car segments are completely mismatched."
+        }
+      ],
+      "relationship_analysis": "The query '易 捷 加 油 app' specifies Sinopec's official gas station payment and refueling app designed for gasoline-powered vehicles. The advertised app '蔚来' is the official mobile application of NIO, an electric vehicle (EV) manufacturer and EV charging platform. Traditional gasoline-car fueling payment and smart electric vehicle ecosystem serve completely separate fuel/energy categories (petrol vs. electricity), user segments, and usage scenarios. There is no logical relevance, so this is Bad.",
+      "why_not_higher": "No functional or transactional connection. An EV manufacturer app cannot fulfill a user's intent to pay for gasoline at a Sinopec station.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"易 捷 加 油 app\" specifies Sinopec's official gas station payment and refueling app designed for internal-combustion/gasoline vehicles. The advertised app \"蔚来\" is the official mobile application of NIO, a smart electric vehicle (EV) manufacturer and EV battery charging platform. Traditional gasoline-car fueling payment and smart electric vehicle ecosystem serve completely separate fuel/energy categories (petrol vs. electricity), user segments, and usage scenarios, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688693195",
+      "query": "阿 虎 医 考",
+      "query_intent": "User is searching specifically for '阿虎医考', a highly popular, specialized mobile test preparation platform for medical and nursing qualification exams (such as licensed nurses, pharmacists, and medical practitioners).",
+      "ad": {
+        "name": "易小考-2026护士、护师、护理、医学资格证考试通关神器",
+        "subtitle": "护士资格/初级护师/主管护师真题题库刷题",
+        "developer": "逢考必过(上海)科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6503235356) & Web research",
+          "note": "易小考 is a dedicated mobile test-preparation and study app focusing exactly on medical/nursing qualification exams (nursing practitioners,主管护师, medical资格证)."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both apps serve the exact same highly vertical niche (medical and nursing qualification exam prep). They provide identical mock tests, question databases, and study resources for the same professional target audience."
+        }
+      ],
+      "relationship_analysis": "The query '阿 虎 医 考' refers to a highly popular, specialized mobile test preparation platform for medical and nursing qualification exams. The advertised app '易小考' is a dedicated test preparation utility focusing exactly on nursing and medical资格证 qualification exams. Since both apps provide identical mock tests and study question databases for the same professional target audience in the same vertical niche, they are direct competitors. Rated Excellent.",
+      "why_not_higher": "Cannot be higher than Excellent.",
+      "why_not_lower": "The ad's core functionality perfectly and directly satisfies the user's specific search for a medical exam prep tool, serving as a direct competitor.",
+      "rating": "Excellent",
+      "comment": "The query \"阿 虎 医 考\" refers to \"Ahu Yikao\", a highly popular specialized mobile test preparation platform for medical and nursing qualification exams. The advertised app \"易小考-2026护士、护师、护理、医学资格证考试通关神器\" is a dedicated test preparation utility focusing exactly on nursing and medical资格证 qualification exams. Since both apps provide identical mock tests and study question databases for the same professional target audience in the same vertical niche, they are direct competitors. Rated Excellent.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T14:34:24",
+    "post_submit_status": "No errors visible"
+  }
+}

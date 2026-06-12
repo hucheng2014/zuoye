@@ -1,0 +1,413 @@
+diff --git a/lesson_schedule/lesson_booking.py b/lesson_schedule/lesson_booking.py
+index 5f666e4..47269ea 100644
+--- a/lesson_schedule/lesson_booking.py
++++ b/lesson_schedule/lesson_booking.py
+@@ -13,6 +13,7 @@ from core.db import get_db
+ from music_accounts.account_auth import get_current_user, require_teacher_or_admin
+ from music_models.music_models import OldLesson, LessonScheduleType, LessonStatus
+ from music_instruments.instrument_catalog import get_instrument
++from lesson_schedule.teacher_availability import TeacherAvailability
+ 
+ 
+ class LessonCreate(BaseModel):
+@@ -81,6 +82,44 @@ async def check_time_conflict(
+     return False
+ 
+ 
++async def check_teacher_availability(
++    db: AsyncSession,
++    teacher_id: str,
++    lesson_date: datetime.date,
++    start_time: datetime.time,
++    duration_minutes: int,
++) -> bool:
++    weekday = lesson_date.weekday()
++    
++    result = await db.execute(
++        select(TeacherAvailability).where(
++            and_(
++                TeacherAvailability.teacher_id == teacher_id,
++                TeacherAvailability.weekday == weekday,
++                TeacherAvailability.is_active == True,
++            )
++        )
++    )
++    availabilities = result.scalars().all()
++    
++    if not availabilities:
++        return False
++    
++    lesson_start = datetime.datetime.combine(datetime.date.min, start_time)
++    lesson_end = lesson_start + datetime.timedelta(minutes=duration_minutes)
++    
++    for avail in availabilities:
++        avail_start = datetime.datetime.strptime(avail.start_time, "%H:%M").time()
++        avail_end = datetime.datetime.strptime(avail.end_time, "%H:%M").time()
++        avail_start_dt = datetime.datetime.combine(datetime.date.min, avail_start)
++        avail_end_dt = datetime.datetime.combine(datetime.date.min, avail_end)
++        
++        if lesson_start >= avail_start_dt and lesson_end <= avail_end_dt:
++            return True
++    
++    return False
++
++
+ async def create_lesson(db: AsyncSession, **kwargs) -> OldLesson:
+     lesson = OldLesson(id=str(uuid.uuid4()), **kwargs)
+     db.add(lesson)
+@@ -156,6 +195,19 @@ async def schedule_lesson(
+             detail="Teacher has a conflicting lesson at this time",
+         )
+ 
++    is_available = await check_teacher_availability(
++        db,
++        teacher_id=payload.teacher_id,
++        lesson_date=payload.lesson_date,
++        start_time=payload.start_time,
++        duration_minutes=payload.duration_minutes,
++    )
++    if not is_available:
++        raise HTTPException(
++            status_code=status.HTTP_400_BAD_REQUEST,
++            detail="Teacher is not available at this time",
++        )
++
+     lesson = await create_lesson(db, **payload.model_dump())
+     return lesson
+ 
+diff --git a/tests/test_prompt2.py b/tests/test_prompt2.py
+new file mode 100644
+index 0000000..93b1085
+--- /dev/null
++++ b/tests/test_prompt2.py
+@@ -0,0 +1,217 @@
++from __future__ import annotations
++
++import datetime
++import pytest
++from httpx import AsyncClient
++from sqlalchemy.ext.asyncio import AsyncSession
++
++from core.db import get_db
++from lesson_schedule.teacher_availability import TeacherAvailability
++from tests.conftest import api_key_header, register_user
++
++
++async def make_teacher(client: AsyncClient, username: str = "teacher1") -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "teacher")
++
++
++async def make_instrument(
++    client: AsyncClient, api_key: str, teacher_id: str, name: str = "Piano"
++) -> dict:
++    resp = await client.post(
++        "/instruments",
++        json={
++            "instrument_name": name,
++            "category": "keyboard",
++            "lesson_type": "private",
++            "teacher_id": teacher_id,
++            "duration_minutes": 60,
++            "price_per_session": 50.0,
++            "is_active": True,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def make_availability(
++    client: AsyncClient,
++    api_key: str,
++    teacher_id: str,
++    weekday: int,
++    start_time: str = "09:00",
++    end_time: str = "18:00",
++    is_active: bool = True,
++) -> dict:
++    resp = await client.post(
++        "/availability",
++        json={
++            "teacher_id": teacher_id,
++            "weekday": weekday,
++            "start_time": start_time,
++            "end_time": end_time,
++            "is_active": is_active,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def test_create_lesson_with_availability(client: AsyncClient):
++    teacher = await make_teacher(client, "teacher_avail1")
++    student = await register_user(client, "student1", "student1@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], teacher["id"])
++    
++    lesson_date = datetime.date(2026, 6, 10)
++    weekday = lesson_date.weekday()
++    
++    await make_availability(client, teacher["api_key"], teacher["id"], weekday, "09:00", "18:00")
++    
++    resp = await client.post(
++        "/lessons",
++        json={
++            "teacher_id": teacher["id"],
++            "student_id": student["id"],
++            "instrument_id": instrument["id"],
++            "lesson_date": lesson_date.isoformat(),
++            "start_time": "10:00",
++            "duration_minutes": 60,
++            "lesson_type": "regular",
++        },
++        headers=api_key_header(teacher["api_key"]),
++    )
++    assert resp.status_code == 201
++    assert resp.json()["teacher_id"] == teacher["id"]
++
++
++async def test_create_lesson_without_availability(client: AsyncClient):
++    teacher = await make_teacher(client, "teacher_no_avail1")
++    student = await register_user(client, "student2", "student2@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], teacher["id"])
++    
++    lesson_date = datetime.date(2026, 6, 10)
++    
++    resp = await client.post(
++        "/lessons",
++        json={
++            "teacher_id": teacher["id"],
++            "student_id": student["id"],
++            "instrument_id": instrument["id"],
++            "lesson_date": lesson_date.isoformat(),
++            "start_time": "10:00",
++            "duration_minutes": 60,
++            "lesson_type": "regular",
++        },
++        headers=api_key_header(teacher["api_key"]),
++    )
++    assert resp.status_code == 400
++    assert "Teacher is not available" in resp.json()["detail"]
++
++
++async def test_create_lesson_outside_available_time(client: AsyncClient):
++    teacher = await make_teacher(client, "teacher_outside1")
++    student = await register_user(client, "student3", "student3@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], teacher["id"])
++    
++    lesson_date = datetime.date(2026, 6, 10)
++    weekday = lesson_date.weekday()
++    
++    await make_availability(client, teacher["api_key"], teacher["id"], weekday, "09:00", "12:00")
++    
++    resp = await client.post(
++        "/lessons",
++        json={
++            "teacher_id": teacher["id"],
++            "student_id": student["id"],
++            "instrument_id": instrument["id"],
++            "lesson_date": lesson_date.isoformat(),
++            "start_time": "13:00",
++            "duration_minutes": 60,
++            "lesson_type": "regular",
++        },
++        headers=api_key_header(teacher["api_key"]),
++    )
++    assert resp.status_code == 400
++    assert "Teacher is not available" in resp.json()["detail"]
++
++
++async def test_create_lesson_with_inactive_availability(client: AsyncClient):
++    teacher = await make_teacher(client, "teacher_inactive1")
++    student = await register_user(client, "student4", "student4@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], teacher["id"])
++    
++    lesson_date = datetime.date(2026, 6, 10)
++    weekday = lesson_date.weekday()
++    
++    await make_availability(client, teacher["api_key"], teacher["id"], weekday, "09:00", "18:00", is_active=False)
++    
++    resp = await client.post(
++        "/lessons",
++        json={
++            "teacher_id": teacher["id"],
++            "student_id": student["id"],
++            "instrument_id": instrument["id"],
++            "lesson_date": lesson_date.isoformat(),
++            "start_time": "10:00",
++            "duration_minutes": 60,
++            "lesson_type": "regular",
++        },
++        headers=api_key_header(teacher["api_key"]),
++    )
++    assert resp.status_code == 400
++    assert "Teacher is not available" in resp.json()["detail"]
++
++
++async def test_create_lesson_with_partial_overlap(client: AsyncClient):
++    teacher = await make_teacher(client, "teacher_partial1")
++    student = await register_user(client, "student5", "student5@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], teacher["id"])
++    
++    lesson_date = datetime.date(2026, 6, 10)
++    weekday = lesson_date.weekday()
++    
++    await make_availability(client, teacher["api_key"], teacher["id"], weekday, "09:00", "10:30")
++    
++    resp = await client.post(
++        "/lessons",
++        json={
++            "teacher_id": teacher["id"],
++            "student_id": student["id"],
++            "instrument_id": instrument["id"],
++            "lesson_date": lesson_date.isoformat(),
++            "start_time": "10:00",
++            "duration_minutes": 60,
++            "lesson_type": "regular",
++        },
++        headers=api_key_header(teacher["api_key"]),
++    )
++    assert resp.status_code == 400
++    assert "Teacher is not available" in resp.json()["detail"]
++
++
++async def test_create_lesson_with_multiple_availabilities(client: AsyncClient):
++    teacher = await make_teacher(client, "teacher_multi1")
++    student = await register_user(client, "student6", "student6@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], teacher["id"])
++    
++    lesson_date = datetime.date(2026, 6, 10)
++    weekday = lesson_date.weekday()
++    
++    await make_availability(client, teacher["api_key"], teacher["id"], weekday, "09:00", "12:00")
++    await make_availability(client, teacher["api_key"], teacher["id"], weekday, "14:00", "18:00")
++    
++    resp = await client.post(
++        "/lessons",
++        json={
++            "teacher_id": teacher["id"],
++            "student_id": student["id"],
++            "instrument_id": instrument["id"],
++            "lesson_date": lesson_date.isoformat(),
++            "start_time": "15:00",
++            "duration_minutes": 60,
++            "lesson_type": "regular",
++        },
++        headers=api_key_header(teacher["api_key"]),
++    )
++    assert resp.status_code == 201
+diff --git a/verify_function.py b/verify_function.py
+new file mode 100644
+index 0000000..dfce307
+--- /dev/null
++++ b/verify_function.py
+@@ -0,0 +1,85 @@
++import asyncio
++import sys
++from pathlib import Path
++
++sys.path.insert(0, str(Path(__file__).parent))
++
++import datetime
++from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
++from sqlalchemy.orm import sessionmaker
++
++from core.db import Base
++from music_models.music_models import User
++from lesson_schedule.teacher_availability import TeacherAvailability
++from lesson_schedule.lesson_booking import check_teacher_availability
++
++
++async def verify():
++    # Create an in-memory SQLite database for testing
++    engine = create_async_engine("sqlite+aiosqlite:///:memory:", echo=False)
++    async with engine.begin() as conn:
++        await conn.run_sync(Base.metadata.create_all)
++    
++    async_session = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
++    
++    async with async_session() as session:
++        # Create a test user
++        teacher = User(
++            id="test-teacher-id",
++            username="test-teacher",
++            email="test@test.com",
++            password_hash="test",
++            api_key="test-key",
++            role="teacher",
++            is_active=True
++        )
++        session.add(teacher)
++        await session.commit()
++        await session.refresh(teacher)
++        
++        # Create an availability
++        avail = TeacherAvailability(
++            teacher_id=teacher.id,
++            weekday=0,
++            start_time="09:00",
++            end_time="18:00",
++            is_active=True
++        )
++        session.add(avail)
++        await session.commit()
++        
++        # Test case 1: Lesson inside availability
++        lesson_date = datetime.date(2026, 6, 9)  # This is a Monday (weekday 0)
++        start_time = datetime.time(10, 0)
++        duration = 60
++        
++        is_available = await check_teacher_availability(
++            session, teacher.id, lesson_date, start_time, duration
++        )
++        print(f"Test 1 (inside availability): {is_available} (expected: True)")
++        
++        # Test case 2: Lesson outside availability
++        start_time = datetime.time(19, 0)
++        is_available = await check_teacher_availability(
++            session, teacher.id, lesson_date, start_time, duration
++        )
++        print(f"Test 2 (outside availability): {is_available} (expected: False)")
++        
++        # Test case 3: Different weekday
++        lesson_date = datetime.date(2026, 6, 10)  # Tuesday (weekday 1)
++        start_time = datetime.time(10, 0)
++        is_available = await check_teacher_availability(
++            session, teacher.id, lesson_date, start_time, duration
++        )
++        print(f"Test 3 (different weekday): {is_available} (expected: False)")
++        
++        # Clean up
++        await session.delete(avail)
++        await session.delete(teacher)
++        await session.commit()
++    
++    await engine.dispose()
++
++
++if __name__ == "__main__":
++    asyncio.run(verify())
+diff --git a/verify_test.py b/verify_test.py
+new file mode 100644
+index 0000000..2c332ab
+--- /dev/null
++++ b/verify_test.py
+@@ -0,0 +1,16 @@
++import asyncio
++import sys
++from pathlib import Path
++
++# Add the app directory to the path
++sys.path.insert(0, str(Path(__file__).parent))
++
++import pytest
++
++async def main():
++    print("Running tests...")
++    result = pytest.main(["-v", "tests/test_prompt2.py"])
++    print(f"Test result code: {result}")
++
++if __name__ == "__main__":
++    asyncio.run(main())

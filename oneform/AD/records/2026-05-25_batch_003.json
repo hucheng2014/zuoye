@@ -1,0 +1,151 @@
+{
+  "batch_id": "2026-05-25_batch_003",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-05-25T20:15:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "01KSFC2088GFYJGSZJFBJSASK1",
+      "query": "蜜蜂家校",
+      "query_intent": "User is looking for 蜜蜂家校 (Bee Home-School), a home-school communication platform used for teacher-parent-student interaction, homework tracking, and school announcements.",
+      "ad": {
+        "name": "蜜蜂试卷 - 试卷一键擦除，AI整理错题，错题答疑辅导",
+        "subtitle": "试卷一键还原，错题重练，AI作业辅导，口算批改练习",
+        "developer": "Linguan Data",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store search verification",
+          "note": "Confirmed 蜜蜂家校 developer is also Linguan Data - same developer as the ad app."
+        },
+        {
+          "source": "SOP guidelines",
+          "note": "Same developer rule: 'If the query is the name of a developer and the ad returned is from that developer, the rating should be Excellent.' Also, apps from same developer with matching themes should be rated highly."
+        }
+      ],
+      "relationship_analysis": "Both apps are from the same developer (Linguan Data) and serve the K-12 education market. 蜜蜂家校 is for home-school communication; 蜜蜂试卷 is for test paper management and AI tutoring. They are complementary education tools from the same product family.",
+      "why_not_higher": "Excellent is the highest rating. Same developer plus complementary/same-market function.",
+      "why_not_lower": "Same developer and same education market makes this a strong match that would highly interest users.",
+      "rating": "Excellent",
+      "comment": "The query \"蜜蜂家校\" is the home-school communication platform by Linguan Data. The advertised app \"蜜蜂试卷\" is also by Linguan Data and belongs to the same 蜜蜂 (Bee) product family. Both apps serve the K-12 education market: one for teacher-parent communication, the other for test paper management and AI tutoring. As apps from the same developer with complementary educational functions, this is an ideal recommendation for the user. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "01KSFC2085KWB8JFRBG971E6RG",
+      "query": "万能遥控器电视遥控",
+      "query_intent": "User wants a universal remote control app for TV, to use their phone as a TV remote.",
+      "ad": {
+        "name": "RemoTV: Universal TV Remote",
+        "subtitle": "Screen Mirroring & TV Cast",
+        "developer": "EpicScale Inc",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "direct analysis",
+          "note": "Query literally asks for universal remote control for TV. The ad app is exactly that - a universal TV remote control app with additional screen mirroring features."
+        }
+      ],
+      "relationship_analysis": "The query asks for a universal TV remote control app. The advertised app RemoTV is precisely a universal TV remote control app. This is an exact function match. The user's most likely intent is directly satisfied by the ad. The additional screen mirroring feature is a bonus.",
+      "why_not_higher": "Excellent is the highest rating. Direct function match.",
+      "why_not_lower": "The ad directly matches what the user is searching for.",
+      "rating": "Excellent",
+      "comment": "The query \"万能遥控器电视遥控\" directly asks for a universal remote control app for TV. The advertised app \"RemoTV: Universal TV Remote\" is exactly that - a universal TV remote control app with additional screen mirroring and TV cast features. This is a direct function match where the ad satisfies the user's most likely intent. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "01KSFC208JB6DPMZ3776ZM2REV",
+      "query": "nano banana",
+      "query_intent": "An ambiguous English-language query, possibly searching for a specific app called 'nano banana' or some other meaning. The intent is unclear but does not relate to photo editing.",
+      "ad": {
+        "name": "乐拍AI写真相机、高颜值照片、时尚大片视频",
+        "subtitle": "视频换脸、照片换脸、AI写真馆、情侣写真、证件照、修图换装",
+        "developer": "泽涛 肖",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "analysis",
+          "note": "nano banana has no discernible connection to photo editing, AI portraits, or face-swapping. Regardless of interpretation, a photo/AI camera app is not relevant to this query."
+        }
+      ],
+      "relationship_analysis": "The query 'nano banana' has no perceivable logical connection to an AI photo/camera app. Whether interpreted as a specific app name, a random term, or an abbreviation, it does not relate to face-swapping, AI portraits, or photo editing.",
+      "why_not_higher": "There is no perceivable link between 'nano banana' and an AI photo editor.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"nano banana\" is ambiguous with no discernible connection to photography or AI editing. The advertised app \"乐拍AI写真理机\" is an AI photo and portrait camera app for face-swapping, AI portraits, and photo editing. There is no logical relationship between the query and the advertised app regardless of how nano banana is interpreted. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "01KSFC208E98J2E1MDY063X9AC",
+      "query": "同花顺投资账本",
+      "query_intent": "User is looking for 同花顺投资账本 (Tonghuashun Investment Ledger), a stock investment tracking and portfolio management tool from 同花顺, China's leading stock market platform.",
+      "ad": {
+        "name": "东方证券期货-期货开户交易软件",
+        "subtitle": "东方证券旗下官方期货平台",
+        "developer": "上海东证期货有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "SOP calibration",
+          "note": "Similar to 'american express' → 'Coinbase' = Acceptable. Both in financial domain but different specific instruments (stock tracking vs futures trading)."
+        },
+        {
+          "source": "local knowledge",
+          "note": "同花顺 is China's most popular stock/investment platform. 东方证券期货 is a futures trading platform. Stocks and futures are different financial instruments traded in different markets."
+        }
+      ],
+      "relationship_analysis": "Both are in the broad financial/investment domain. 同花顺投资账本 tracks stock investments while 东方证券期货 enables futures trading. While both serve investors, stock tracking and futures trading are distinct financial activities. A stock investor might have some interest in futures, but the specific needs differ significantly.",
+      "why_not_higher": "Stock portfolio tracking and futures trading are different financial instruments and activities. The user specifically wants stock investment management, not futures trading. Similar to the American Express→Coinbase example where broad financial category but different specifics.",
+      "why_not_lower": "Both are in the financial/investment category, and an investor tracking stocks might have some interest in exploring futures trading. The user would understand why this ad appeared but wouldn't be highly likely to click.",
+      "rating": "Acceptable",
+      "comment": "The query \"同花顺投资账本\" indicates the user wants a stock investment tracking and portfolio management tool. The advertised app \"东方证券期货\" is a futures trading platform. While both are in the financial/investment domain, stock tracking and futures trading are different financial instruments with different risk profiles and markets. A stock investor might recognize the financial relevance but would not be highly likely to switch to futures trading. Similar to the American Express→Coinbase pattern in the guidelines. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "01KSFC2080DPYKY0XN2PWYD6Q1",
+      "query": "拍猫相机猫咪拍照助手吸猫猫眼哈喽麻豆",
+      "query_intent": "A keyword-rich query primarily about cat photography and cat-related content: camera for taking cat photos (拍猫相机), cat photo assistant (猫咪拍照助手), enjoying cats (吸猫), cat's eye (猫眼), hello (哈喽), model (麻豆). The core intent is clearly cat-related photography/content.",
+      "ad": {
+        "name": "adidas-阿迪达斯官方购物APP",
+        "subtitle": "选购运动潮品，解锁会员福利",
+        "developer": "adidas AG",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "direct analysis",
+          "note": "The query is about cat photography and cat-related content. adidas is a sportswear/athletic brand shopping app. There is absolutely no logical connection between cats/cute animal content and sportswear shopping."
+        }
+      ],
+      "relationship_analysis": "The query is clearly about cat-related photography and content. The adidas app is for purchasing sportswear and athletic products. There is no logical connection between cat photography and sportswear shopping. None of the keywords in the query (cats, photo, cute animals) relate to athletic wear or sports.",
+      "why_not_higher": "There is no perceivable link between cat photography and sportswear shopping.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"拍猫相机猫咪拍照助手吸猫猫眼哈喽麻豆\" is clearly about cat photography and cat-related content (camera for cats, cat photo assistant, enjoying cats). The advertised app \"adidas\" is the official sportswear shopping app for purchasing athletic products. There is absolutely no logical connection between cat photography and sportswear shopping. The user would find this ad completely irrelevant and confusing. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-05-25T19:52:15",
+    "post_submit_status": "Looking for surveys..."
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_009",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T22:24:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688691424",
+      "query": "小 店",
+      "query_intent": "User is performing a broad category search for '小店' (Small Store/Shop), representing physical retail shops, offline small businesses, or merchant store management utilities. Core intent is retail shop management and business operations.",
+      "ad": {
+        "name": "有赞门店",
+        "subtitle": "零售客户管理CRM，门店新零售经营，导购提效，精准营销",
+        "developer": "杭州有赞科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1248696859) & Web research",
+          "note": "有赞门店 is Youzan's leading offline-online new retail SaaS management software, designed specifically for small-to-medium retail physical stores to manage sales, customers, CRM, and operations."
+        },
+        {
+          "source": "local knowledge",
+          "note": "The query '小店' is a broad category. The advertised app '有赞门店' is a premier B2B SaaS platform specifically designed for retail shops ('小店') to run their business. It directly and fully satisfies the merchant's category search."
+        }
+      ],
+      "relationship_analysis": "The query '小 店' is a broad category search for retail shops and store management. The advertised app '有赞门店' is Youzan's professional SaaS store management platform designed specifically for physical retail shops. Since the query represents a broad category need and the advertised app is a premier product in that category that directly and fully satisfies the merchant's core operational intent, the relationship is Excellent.",
+      "why_not_higher": "Cannot be higher than Excellent.",
+      "why_not_lower": "The ad's SaaS retail store management utility directly and fully satisfies the general category search for '小店'.",
+      "rating": "Excellent",
+      "comment": "The query \"小 店\" is a broad category search representing physical retail shops and store management. The advertised app \"有赞门店\" is a leading retail store SaaS, CRM, and shop operations platform designed specifically for physical retail merchants to manage sales, customers, and business operations. Since the query is a broad category demand and the advertised app is a premier product in that category that directly and fully satisfies the merchant's core intent, this is Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688691425",
+      "query": "小 码 盒",
+      "query_intent": "User is searching for '小码盒' (Little Code Box), a specialized mobile Web preview and local code editor/developer utility tool used by web developers to run, view, and edit HTML/CSS/JS code locally.",
+      "ad": {
+        "name": "LIAO大师-高段位聊天神器情感导师",
+        "subtitle": "口碑炸裂，10万+订阅用户的共同选择",
+        "developer": "Shanghai Yanchuang Qianyuan Information Technology Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6742834133) & Web research",
+          "note": "LIAO大师 is an AI-assisted chatting assistant and dating script helper for online matchmaking, providing quick replies and dating relationship advice."
+        },
+        {
+          "source": "local knowledge",
+          "note": "A developer coding utility is completely unrelated in functions, developer, target audience, or use cases to an AI dating script relationship assistant."
+        }
+      ],
+      "relationship_analysis": "The query '小 码 盒' is a technical developer code editor and Web preview tool. The advertised app 'LIAO大师' is an AI-assisted chatting assistant and dating script helper for online matchmaking. A software developer utility and a relationship dating script helper serve completely unrelated functional domains, user demographics, and use cases. There is no logical connection between coding HTML and using AI dating scripts, so this is Bad.",
+      "why_not_higher": "No functional or contextual relation whatsoever. They serve completely distinct industries and user demographics.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"小 码 盒\" refers to a mobile Web preview and local code editor/developer utility tool for HTML/CSS/JS. The advertised app \"LIAO大师-高段位聊天神器情感导师\" is an AI-assisted chatting assistant and dating script helper for online matchmaking. A developer coding utility and an AI relationship chatting assistant satisfy entirely unrelated functional domains, use cases, and target demographics. There is no logical connection, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688691426",
+      "query": "智 慧 综 维",
+      "query_intent": "User is looking for '智慧综维' (Intelligent Comprehensive Operations and Maintenance), a specialized B2B enterprise mobile workspace platform designed for field network maintenance, dispatching operations, and fault-clearing workflow management.",
+      "ad": {
+        "name": "掌门1对1辅导",
+        "subtitle": "学习成长好帮手",
+        "developer": "上海掌小门教育科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1087718769)",
+          "note": "掌门1对1辅导 is a famous online academic tutoring and training platform providing 1-on-1 tutoring classes for K-12 school children."
+        },
+        {
+          "source": "local knowledge",
+          "note": "An industrial operations/network maintenance platform and a K-12 school tutoring service are completely separate. There is zero relation between network O&M and academic tutoring."
+        }
+      ],
+      "relationship_analysis": "The query '智 慧 综 维' refers to an industrial network operations and maintenance mobile workspace platform. The advertised app '掌门1对1辅导' is an online academic tutoring platform for school children. An enterprise industrial operations software and an online school tutoring service satisfy entirely unrelated industries, target audiences, and use cases. There is no logical connection between the two, so this is Bad.",
+      "why_not_higher": "No functional, developer, or contextual relation whatsoever.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"智 慧 综 维\" refers to a specialized B2B enterprise mobile workspace platform for field network operations, maintenance, and dispatching工单 management. The advertised app \"掌门1对1辅导\" is an online academic tutoring and training platform for K-12 school children. An industrial operations software and an online school tutoring service satisfy entirely unrelated industries, target audiences, and use cases. There is no logical connection, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688691427",
+      "query": "猫 眼 购 票",
+      "query_intent": "User is searching specifically for '猫眼' (Maoyan), a leading ticket booking platform in China primarily for movie tickets, and also general live events (concerts, theater, sports).",
+      "ad": {
+        "name": "摩天轮-演出、比赛购票平台",
+        "subtitle": "已帮超千万人看到演唱会",
+        "developer": "Shanghai RuiShang Information Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1054861613) & Web research",
+          "note": "摩天轮 is a leading ticket booking platform specializing in live events, concerts, theater, dramas, and sports games."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both are online entertainment ticket booking platforms. Maoyan is the market leader for movie tickets and also lists general live events. Motianlun is a dedicated portal for live event tickets (concerts, theater, sports). They compete directly in the live event ticket booking domain."
+        }
+      ],
+      "relationship_analysis": "The query '猫 眼 购 票' refers to Maoyan, a leading movie and live event ticketing platform. The advertised app '摩天轮' is a leading ticket booking platform specializing in live events, concerts, and sports. Both apps occupy the entertainment ticketing segment, competing directly in the live event ticket booking domain. While Maoyan also focuses heavily on movie tickets and Motianlun focuses strictly on live performances, they represent highly relevant alternative booking services. Rated Good.",
+      "why_not_higher": "They are not exact equivalents. Maoyan is primarily a movie ticketing app, whereas '摩天轮' is strictly an event/concert ticketing platform and does not offer movie ticket bookings.",
+      "why_not_lower": "They share strong functional alignment in the live event and entertainment ticketing category, meeting highly overlapping user needs for booking performance tickets.",
+      "rating": "Good",
+      "comment": "The query \"猫 眼 购 票\" refers to Maoyan, China's leading ticket booking platform primarily for movie tickets, and also general live events. The advertised app \"摩天轮-演出、比赛购票平台\" is a leading ticket booking platform specializing in live events, concerts, theater, and sports. Both apps occupy the entertainment ticketing segment, competing directly in the live event ticket booking domain. While Maoyan also focuses heavily on movie tickets and Motianlun focuses strictly on live performances, they represent highly relevant alternative booking services. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688691428",
+      "query": "易 手 游",
+      "query_intent": "User is searching for '易手游', a professional secondhand game account trading and transaction platform, used to securely buy and sell mobile game accounts, items, and currencies.",
+      "ad": {
+        "name": "夜幕之下",
+        "subtitle": "女性向新游6月5日正式上线",
+        "developer": "广州天梯网络科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6756337465)",
+          "note": "夜幕之下 is a newly launched female-oriented card and romance story mobile game."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Yi Shou You is a B2C/C2C game account transaction marketplace (a utility trading platform). Nightfall (夜幕之下) is a specific playable romance mobile game. A transaction utility platform and a specific playable game serve entirely unrelated functional classes."
+        }
+      ],
+      "relationship_analysis": "The query '易 手 游' is a B2C/C2C game account transaction platform. The advertised app '夜幕之下' is a specific female-oriented card and romance story mobile game. A transactional marketplace for game accounts and a specific playable mobile game satisfy completely separate functional categories (utility trading platform vs. playable video game), so they share no logical relationship. A trader has no interest in playing a romance card game, so this is Bad.",
+      "why_not_higher": "No gameplay, functional, or contextual relationship. Sticking a specific card game does not fulfill the intent of trading secondhand game accounts.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"易 手 游\" refers to \"易手游\", a professional secondhand game account trading and transaction platform. The advertised app \"夜幕之下\" is a newly launched, female-oriented romance story and card mobile game. A transactional marketplace for game accounts and a specific playable mobile game satisfy completely separate functional categories (utility trading platform vs. playable video game). There is no logical connection, so this is Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T14:24:44",
+    "post_submit_status": "No errors visible"
+  }
+}

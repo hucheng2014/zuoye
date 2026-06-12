@@ -1,0 +1,41 @@
+# ASR models - mounted as volumes, never in image
+models/
+*.bin
+*.pt
+*.onnx
+
+# Python virtual environment
+.venv/
+
+# Browser profiles
+.browser_profile/
+.browser_profile_9226/
+.browser_profile_9226_login/
+
+# Node modules (rebuilt in container)
+node_modules/
+
+# Audio work files
+_work_audio/*.wav
+_work_audio/*.mp3
+
+# Git
+.git/
+.gitignore
+
+# IDE and tool configs
+.vscode/
+.kilo/
+.kiro/
+.claude/
+.openclaude/
+.commandcode/
+.playwright-mcp/
+
+# Temporary and output files
+outputs/
+*.png
+*.jpg
+*.zip
+*.log
+null

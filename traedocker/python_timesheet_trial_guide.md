@@ -1,6 +1,6 @@
 # python-timesheet 试标全通关指南
 
-本文档是针对你获取的真实试标库 [python-timesheet](file:///home/jianglei/zuoye/traedocker/python-timesheet.zip) 量身定制的标注全通关指南。我们已在本地完成了该仓库的 Docker 镜像构建验证与单元测试执行，72项测试已全部通过，完全符合项目的技术标准。
+本文档是针对你获取的真实试标库 [python-timesheet](file:///Users/xaa/zuoye/traedocker/python-timesheet.zip) 量身定制的标注全通关指南。我们已在本地完成了该仓库的 Docker 镜像构建验证与单元测试执行，72项测试已全部通过，完全符合项目的技术标准。
 
 ---
 

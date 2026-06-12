@@ -1,0 +1,32 @@
+How would this scenario be
+evaluated? Let's say Pizza and
+Burgers are two options from the
+actual input text.
+                                     This example does well on Instruction Following,
+                                     as how we define "Following" in the GL. No
+Title: Food Options
+                                     issues there. I believe it should also score well on
+                                     Groundedness.
+Options:
+- Pizza and Burgers
+                                     However, it performs poorly on Composition, as
+- [empty]
+                                     per the GL. It is debatable as to whether this is
+                                     Comprehensive or not, since the GL states "The
+Two options are provided in one
+                                     poll options appear in the same order as which
+line, rather than separately. We
+                                     they were first mentioned in the preceding
+assume this would affect
+                                     conversation" in order to be Comprehensive. One
+Composition, but what about
+                                     can argue that these options are not presented in
+Instruction Following, would it be
+                                     the same order as the conversation, since they are
+failed?
+                                     presented at once.
+Can we assume groundedness and
+comprehensiveness are not
+affected by the fact these two are
+presented as ONE option?
+

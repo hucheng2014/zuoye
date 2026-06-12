@@ -1,0 +1,390 @@
+     AIML ANNOTATION
+VCG Prompt Rewrite Variety
+   Review Guidelines
+How to Use This Document
+
+
+           This document serves as a reference for VCG Prompt Rewrite Variety Review
+       Guidelines. This document is interactive. You can read this from start to finish or jump
+                       to different topics using the Navigation Bar on the left.
+Introduction
+Project Overview
+
+      NAVIGATION BAR
+                         Overview
+                         In this project, you will assess the quality of images generated from input prompts, with a focus on the dimensions of Structural
+                         Integrity, Text-to-Image Alignment and a new dimension called Variety, which evaluates the visual and conceptual diversity across
+INTRODUCTION
+                         multiple images. The core objective is to assess not just individual image qualities but also how distinct and meaningful variations
+• Overview
+                         are presented when generating different visual interpretations of the same prompt.
+                         In this project, you will evaluate four images at once instead of one. Please note that this document should be used alongside the
+PROJECT GUIDELINES       Image Evaluation Guidelines, which define the criteria for Structural Integrity and Text-to-Image Alignment.
+• Structural Integrity
+
+  • Examples
+
+• Text-Image Alignment
+
+  • Examples
+
+• [New] Variety
+
+  • Examples
+
+• Ranking Scale
+Project Guidelines
+Structural Integrity
+
+         NAVIGATION BAR
+                          Structural Integrity
+                          Refer to the Image Evaluation Guidelines for detailed criteria for Structural Integrity.
+
+INTRODUCTION              For each of the four images you are evaluating, start by looking at them individually. Focus on the structural integrity of each image, and make a note of the
+• Overview                rating. These will help you choose the appropriate overall rating later.
+
+                          Once you ve assessed the images, use the additional criteria for Structural Integrity below to choose a rating for the overall image.
+PROJECT GUIDELINES
+
+• Structural Integrity
+
+  • Examples                Additional Criteria for Grading 4 Images
+• Text-Image Alignment
+
+  • Examples                             Rating                         Very Poor                              Poor                        Good                       Very Good
+• [New] Variety
+                                     Overall Rating         >= 3 images have SEVERE or          1 or 2 images have SEVERE or      ALL or FEWER images        ALL images have NO
+  • Examples
+                                                            Noticeable Structural Integrity     Noticeable Structural Integrity   has only Minor             Structual Integrity
+• Ranking Scale                                             issues                              issues                            Structural Integrity       issue.
+                                                                                                                                  issues, NO SEVERE or
+                                                                                                                                  Noticeable Structural
+                                                                                                                                  Integrity issues
+     ’
+Project Guidelines
+Structural Integrity
+                          Structural Integrity Examples:
+      NAVIGATION BAR
+                           Overall
+                                                                    Very Poor                                                               Poor
+                           Rating
+INTRODUCTION               Images
+• Overview
+
+
+
+
+PROJECT GUIDELINES
+
+• Structural Integrity
+
+  • Examples             Explanation   All image don't make sense in term of the shape and structure of   The 2 images in the middle show low structural integrity, with
+• Text-Image Alignment                 the shampoo bottle.                                                unnatural-looking straw and spoon.
+
+  • Examples
+                           Overall
+                                                                       Good                                                              Very Good
+• [New] Variety            Rating
+  • Examples               Images
+• Ranking Scale
+
+
+
+
+                         Explanation   There is distortion in the cinnamon stick, while the other three   All 4 images show high structural integrity with no distortion or artifact
+                                       images display high structural integrity.                          found.
+Project Guidelines
+Structural Integrity
+                          Structural Integrity Examples:
+      NAVIGATION BAR
+                           Overall
+                                                                    Very Poor                                                                   Poor
+                           Rating
+INTRODUCTION               Images
+• Overview
+
+
+
+
+PROJECT GUIDELINES
+
+• Structural Integrity
+
+  • Examples             Explanation   3 images on the left contain noticeable issues where the straws        2 images contain blurred words.
+• Text-Image Alignment                 disappear under the water.
+
+  • Examples
+                           Overall
+                                                                      Good                                                                   Very Good
+• [New] Variety            Rating
+  • Examples               Images
+• Ranking Scale
+
+
+
+
+                         Explanation   It's unnatural to see cat biting fish with tongue outside the mouth.   All 4 images show high structural integrity with no distortion or artifact
+                                                                                                              found.
+Project Guidelines
+Text-Image Alignment
+
+                          Text-Image Alignment
+         NAVIGATION BAR
+
+                          Refer to the Image Evaluation Guidelines for detailed criteria for Text-Image Alignment.
+
+INTRODUCTION              For each of the four images you are evaluating, start by looking at them individually. Focus on the text-image alignment of each image, and make a note of
+• Overview                the rating. These will help you choose the appropriate overall rating later.
+
+                          Once you ve assessed the images, use the additional criteria for text-image alignment below to choose a rating for the overall image.
+PROJECT GUIDELINES
+
+• Structural Integrity
+
+  • Examples              Additional Criteria for Grading 4 Images
+• Text-Image Alignment
+
+  • Examples
+                                        Rating                                Poor                                     Neutral                               Good
+• [New] Variety
+                                    Overall Rating           >= 3 images have alignment issues         1 or 2 images have alignment issues       All images are highly
+  • Examples                                                                                                                                     aligned with the prompt
+
+• Ranking Scale
+     ’
+Project Guidelines
+Text-Image Alignment
+                                                                         Text-Image Alignment Examples:
+      NAVIGATION BAR                                                     Poor                                                                 Poor
+
+                           Images
+INTRODUCTION
+
+• Overview
+
+
+
+
+PROJECT GUIDELINES
+
+• Structural Integrity   Input Prompt   cloud in the shape of a heart                                          mac and cheese
+  • Examples
+                         Explanation    All images are not aligned with the input prompt.                      2 images on the right don't look like it's mac and cheese but the
+• Text-Image Alignment
+                                                                                                               user can get the idea.
+  • Examples
+
+• [New] Variety                                                                                              Good
+  • Examples
+                                                  Images
+• Ranking Scale
+
+
+
+
+                                               Input Prompt             tiger playing with a toy airplane
+
+                                                Explanation             All images are aligned with the input prompt.
+Project Guidelines
+Text-Image Alignment
+                                                                         Text-Image Alignment Examples:
+      NAVIGATION BAR                                                     Poor                                                                 Neutral
+
+                           Images
+INTRODUCTION
+
+• Overview
+
+
+
+
+PROJECT GUIDELINES
+
+• Structural Integrity   Input Prompt   mouse with a balloon tied to its tail                                  table and chair
+  • Examples
+                         Explanation    None of the ballon is tied to mouses' tail in the images.              One of the images display a sofa instead of a chair, but it's
+• Text-Image Alignment
+                                                                                                               acceptable.
+  • Examples
+
+• [New] Variety                                                                                              Good
+  • Examples
+                                                   Images
+• Ranking Scale
+
+
+
+
+                                                Input Prompt            wine bottle with a cheese board
+
+                                                Explanation             All images are aligned with the input prompts.
+Project Guidelines
+[New] Variety
+                         [New] Variety
+      NAVIGATION BAR
+                         Variety refers to the visual and conceptual differences between multiple images representing the same input prompt. The visual concept can be people,
+                         living creatures, objects and even emojis...etc. A high score is awarded when each image presents a distinct and meaningful variation in composition,
+INTRODUCTION             pose, backdrop and additional attributes...etc. Sometimes lower variety is expected if the input prompt goes descriptive and exclusive.
+• Overview
+
+
+                          Grading Scale
+PROJECT GUIDELINES
+
+• Structural Integrity
+                                  Rating                             Low Variety                                   Moderate Variety                                  High Variety
+  • Examples
+                             Distinctiveness       The output images show repeated concepts.         The images show some differences, but the          Each image in the set presents a
+• Text-Image Alignment                             There's nearly no noticible difference            variations are limited in scope or depth.          clearly different visual interpretation
+                                                   between them, such as slight changes in           While not identical, the outputs may show          of the subject. The variations are
+  • Examples                                       color, background details, or viewpoint           similar compositions or visual structure.          substantial and meaningful, such as
+• [New] Variety
+                                                   which doesn't alter reviewers' experience in      Minor adjustments are present, but they do         changes in composition or visual
+                                                   a meaningful way.                                 not significantly shift the reviewers'             structure. They avoid redundancy
+  • Examples                                                                                         perception of the subject.                         and demonstrate visually diverse
+                                                                                                                                                        response to the input prompt.
+• Ranking Scale
+                                 Creativity        Or, the output images lack creativity, feeling    The output images show some degree of              The output images go beyond
+                                                   flat and predictable. The model appears to        imaginative thinking, but the creative             straightforward interpretations of the
+                                                   follow a safe, literal approach to the input      choices are only partially explored. While         input prompt, delivering suprises to
+                                                   prompt, offering no alternative styles.           the images avoid being completely                  the reviewers. These show that
+                                                   Reviewers' might find them no sense of play       repetitive, they don't fully deliver surprise to   model is not just varying visuals, but
+                                                   and surprise.                                     the reviewers.                                     actively visualizing user prompts
+                                                                                                                                                        from different aspects.
+Project Guidelines
+[New] Variety
+                                                                               Variety Examples:
+      NAVIGATION BAR
+                                                                  Low Variety                                                     Moderate Variety
+
+                           Images
+INTRODUCTION
+
+• Overview
+
+
+
+
+PROJECT GUIDELINES
+
+• Structural Integrity   Input Prompt   a bowling alley                                                   cactus wearing sunglasses
+  • Examples
+                         Explanation    The output images show repeated concept, only number of the       Some degree of variety can be observed, but still lack of some
+• Text-Image Alignment
+                                        pins and some minor changes are observed. There's room for        variations. For example, the background or the pose of the
+  • Examples                            improvement on the background...etc.                              cactus...etc.
+• [New] Variety
+
+  • Examples                                                                                   High Variety
+• Ranking Scale                             Images
+
+
+
+
+                                         Input Prompt         a satellite dish on a roof
+
+                                         Explanation          The styles of the roof and the background vary across all 4 images which show
+                                                              good variety. The image with the night sky shows surprises.
+Project Guidelines
+[New] Variety
+                                                                               Variety Examples:
+      NAVIGATION BAR
+                                                                   Low Variety                                                         Moderate Variety
+
+                           Images
+INTRODUCTION
+
+• Overview
+
+
+
+
+PROJECT GUIDELINES
+
+• Structural Integrity   Input Prompt   tandoori chicken with naan bread                                     three finger salute
+  • Examples
+                         Explanation    The output images are repeated. The layouts are identical which      The only difference is the color of the background which doesn't
+• Text-Image Alignment
+                                        barely provide any distinctness.                                     really provide creativity to the users.
+  • Examples
+
+• [New] Variety
+                                                                                                  High Variety
+  • Examples
+                                            Images
+• Ranking Scale
+
+
+
+
+                                         Input Prompt           stop sign
+
+                                         Explanation            The designs varies from image to image, providing rich variation.
+Project Guidelines
+[New] Variety
+                                                                               Variety Examples:
+      NAVIGATION BAR
+                                                                   Low Variety                                                      Moderate Variety
+
+                           Images
+INTRODUCTION
+
+• Overview
+
+
+
+
+PROJECT GUIDELINES
+
+• Structural Integrity   Input Prompt   river and bridge                                                    saw and wood
+  • Examples
+                         Explanation    The output images are basically identical which provide no          The output images slightly vary. Only angles and colors are
+• Text-Image Alignment
+                                        variation.                                                          changed. Still have room for improvement.
+  • Examples
+
+• [New] Variety
+                                                                                                 High Variety
+  • Examples
+                                            Images
+• Ranking Scale
+
+
+
+
+                                         Input Prompt          window and curtain
+
+                                          Explanation          The colors of the curtain and the views outside the window show rich variation
+                                                               to the users.
+Project Guidelines
+Ranking Scale
+                         Ranking Scale
+      NAVIGATION BAR
+
+                                         Refer to Image Evaluation Guidelines > Ranking Scale section.
+INTRODUCTION
+
+• Overview
+
+
+
+
+PROJECT GUIDELINES
+
+• Structural Integrity
+
+  • Examples
+
+• Text-Image Alignment
+
+  • Examples
+
+• [New] Variety
+
+  • Examples
+
+• Ranking Scale
+                 AIML ANNOTATION
+                 Congratulations!
+You have completed the “VCG Prompt Rewrite Variety Review” guidelines!
+

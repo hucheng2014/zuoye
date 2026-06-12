@@ -1,0 +1,26 @@
+{
+  "localStorage": {
+    "STARSHOT_DAILY": "{\"2026-05-14\":{\"timeTotalInSec\":52.603,\"tasksTotal\":1,\"annotationAdded\":1,\"annotationChanged\":0,\"annotationDeleted\":0}}",
+    "STARSHOT_TASKS": "{\"c1c96f64-3fa6-4ca1-827e-4512a963910a\":{\"latestContribution\":\"2026-05-14\",\"timeTotalInSec\":52.603,\"tasksTotal\":1,\"pluginName\":\"task-editor\",\"pluginVersion\":\"2.19.1\",\"annotationAdded\":1,\"annotationChanged\":0,\"annotationCount\":null,\"annotationDeleted\":0}}",
+    "theme": "light",
+    "STARSHOT_TASKS_DURATION": "{\"2026-05-14\":[{\"submissionDate\":\"2026-05-14T09:21:56Z\",\"duration\":52392}]}",
+    "bit-settings": "{\"resolvedTheme\":\"light\",\"theme\":\"light\"}",
+    "STARSHOT_STATS": "{\"RECENT_JOBS\":[\"c1c96f64-3fa6-4ca1-827e-4512a963910a\"]}"
+  },
+  "sessionStorage": {},
+  "windowKeys": [
+    "oncontextrestored",
+    "ondragstart",
+    "onformdata",
+    "onloadeddata",
+    "onloadedmetadata",
+    "onloadstart",
+    "onwebkitanimationstart",
+    "onselectstart",
+    "onanimationstart",
+    "ontransitionstart",
+    "queueMicrotask",
+    "cookieStore",
+    "webpackChunkstarshot"
+  ]
+}

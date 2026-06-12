@@ -10,23 +10,23 @@ This project should use a hybrid browser strategy:
 List known browsers:
 
 ```bash
-/home/jianglei/zuoye/tools/agent-browser.sh list
+/Users/xaa/zuoye/tools/agent-browser.sh list
 ```
 
 Inspect a browser without remembering the port:
 
 ```bash
-/home/jianglei/zuoye/tools/agent-browser.sh asr snapshot -i
-/home/jianglei/zuoye/tools/agent-browser.sh alibaba get url
-/home/jianglei/zuoye/tools/agent-browser.sh work-a screenshot /tmp/work-a.png
+/Users/xaa/zuoye/tools/agent-browser.sh asr snapshot -i
+/Users/xaa/zuoye/tools/agent-browser.sh alibaba get url
+/Users/xaa/zuoye/tools/agent-browser.sh work-a screenshot /tmp/work-a.png
 ```
 
 Run any native `agent-browser` command after the target name:
 
 ```bash
-/home/jianglei/zuoye/tools/agent-browser.sh work-b find text "Submit" click
-/home/jianglei/zuoye/tools/agent-browser.sh duomotai get text body
-/home/jianglei/zuoye/tools/agent-browser.sh alibaba eval "document.title"
+/Users/xaa/zuoye/tools/agent-browser.sh work-b find text "Submit" click
+/Users/xaa/zuoye/tools/agent-browser.sh duomotai get text body
+/Users/xaa/zuoye/tools/agent-browser.sh alibaba eval "document.title"
 ```
 
 ## Browser Targets
@@ -63,7 +63,7 @@ Use code when:
 1. Use `agent-browser` to observe:
 
 ```bash
-/home/jianglei/zuoye/tools/agent-browser.sh <target> snapshot -i
+/Users/xaa/zuoye/tools/agent-browser.sh <target> snapshot -i
 ```
 
 2. Put repeatable behavior in a script with explicit checks:

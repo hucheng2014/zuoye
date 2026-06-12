@@ -1,0 +1,926 @@
+Hello everyone.
+Let's let's wait a couple more minutes to see if more people will join and then we'll we'll get started.
+OK, hello, everyone.
+I think we have the majority of people already here.
+So I think we can start.
+Before we proceed, do you see my screen and do you hear me?
+Well, in a minute.
+Yeah, we do.
+Thank you.
+So before we move on to the topic of this training, let me make a short introduction.
+My name is Iana, I'm a project manager coordinating Lighthouse and Nanad.
+Our Senior Quality manager will be the one driving this meeting, so he will share the updates about VCG and prepare you to take this recertification.
+Before we move on to that, just some information for your context.
+All previous results for VCG certification will be reset to zero and only new certification.
+Only new certification results will be taken into account for any future production volumes.
+This means that in order to have VCG production tasks in the future, you need to retake and to pass this new certification.
+The reason for this is that the client noticed some gaps in the previous training and the previous certification process.
+So they it improved and updated all of the training materials and then of course certification so that it is aligned with this new training materials.
+This is something which is expected to happen from time to time because based on how they see model is behaving, based on the input we are giving, they can spot that some changes are needed and update the guidelines.
+So this is also something that we announced as a as a possibility in the beginning of the project.
+So this is nothing unusual.
+All certification details will be shared with you in the e-mail after this training.
+Before we move on to to the presentation about VCG updates, I just wanted to remind you that all information shared here is confidential.
+So it is absolutely not allowed to take any screen recordings or screenshots to share any materials from here on public platforms or in social media, or even in your private messages.
+So you're not allowed to discuss this information because everything shared here is confidential.
+So please be very careful.
+You're not allowed to create group chats to share any materials or any information about the projects, any links, any questions.
+Nothing like this is allowed because all information is strictly confidential and all communication with project participants, especially about project materials, needs to be managed by the management teams and these are all project coordinators and project managers.
+Whoever is caught doing any of these activities that are not allowed will be immediately removed from the project and sent to further checks of the account.
+So this was introduction for me.
+Nana, over to you.
+Thanks, Yana.
+So let me start by sharing my screen.
+Hope you can see it.
+All right.
+So as Yana mentioned, today we will be discussing the visual content generation or famously known as VCG workflow.
+There have been some updates to the main guidelines.
+As you know, VCG has a lot of sub projects involved as well separate let's say evaluation work flows for which we also have separate guidelines.
+The new guidelines have the updated guidelines have about 111 pages, but that's primarily because they have added some more examples.
+They have included the separate guidelines into the main guidelines as well.
+So the main guidelines will now also have a lot of information about emoji to image evaluations, get to sketch to image evaluation, image to image evaluation, and some additional tips and and information that they have also included and shared.
+But generally speaking, the core information has largely remained quite similar or the same as before.
+So what today's training will be about is we'll mostly discuss the, let's say high level changes and and updates primarily related to the the tips and core changes that have happened.
+For example, in image to image and sketch to image.
+We won't cover obviously all the same examples and and core information.
+That's pretty much remained the same.
+So we'll focus on the primary updates.
+The guidelines have been shared with you so you can review them.
+Additionally, there will be a, let's say kind of a knowledge check, let's say kind of like a test or exam before the certification, which shouldn't be too complicated.
+And on top of all that, in the SharePoint, I believe additional 2 pre recorded trainings have been shared with you as well, which you can and we encourage you to actually listen to and review.
+One of the trainings is an overall overview of VCG as a as a workflow, as a task.
+And the other one is more of a training related to the, the, the image evaluation guidelines, the primary guidelines.
+So this will be a little bit more high level, not so much detail and intricate, but we encourage you to obviously review those two recordings as well.
+And of course, definitely read and, and analyze the guidelines, particularly the updates.
+So the updates are primarily in, in purple text.
+You will see that in, in the guidelines in purple text.
+So our agenda for today is a quick overview and then we'll focus on the things that they have changed, particularly added like let's say tips for prompt analysis, human presence and anthropomorphism, details and tips, information that you can use, some additional tips for structural integrity and input output alignment, as well as the updates on image to image and sketch to image evaluations.
+So a quick overview on the task, no matter which task you're getting to do for VCG, obviously you your goal is to evaluate the input prompt, whether that's just text or it's several emojis that are being given or it's another image or a sketch.
+You have to evaluate the input prompt, apply any flags if if applicable to that prompt, and review obviously the output image against the request from the prompt, rate the output image based on all the expectations and the rules, and then obviously last but not least, rank the responses side by side.
+Now we don't know what the certification looks like right now.
+We know that the past one was primarily text to image evaluation.
+We don't know if the new certification might include sketches, might include emojis, so be sure to review all of the guidelines and to use them obviously while you're doing certification in case you need to apply certain specific rules when when evaluating a particular task.
+We also don't know if the certification will have a side by side.
+As you know, in production this is quite common, but in the certification in the old one, this was not the case because you only had one response to evaluate each time.
+So I think the side by side, there's there's been no updates there.
+So if you do have a side by side evaluation in the, in the certification itself, then obviously you would apply the the same old rules that have been applicable before the dimensions to evaluate primary dimensions or structural integrity, which again is the anatomical correctness and visual integrity of the subject.
+Meaning if you're evaluating human, obviously if you're seeing a full body, it should have two legs, you know, two hands with the fingers visible, the eyes and the nose and mouth should not have any distortions.
+There should not be like merging together or having some weird out of shape looks.
+This obviously doesn't apply to humans.
+So it applies to any kind of object or animal that you're evaluating.
+The main subject of the of the image that you're evaluating basically in the output optical fidelity is a new dimension that has been added for the AMDI believe it's called workflow or sub project or Adm.
+I'm not sure I remember anymore.
+We're not sure if this has been introduced now to the regular VCG tasks that you've been doing.
+We will see in the in the certification or maybe in production because this new dimension that has been part of a sub project before is actually applicable to the general VCG task as well.
+So they may have included it as well.
+And this usually includes the overall artistic and aesthetic quality of the image.
+And last but not least, the input and output alignment.
+Meaning how well does the output image align with the input prompt?
+Meaning if the request is to have a chef alien, for example, as we've seen in the old certifications, then obviously the expectation is to have a chef or and an alien in the image or an alien that's also a chef or a chef that's an alien.
+Basically, I'm hearing some background noise.
+So please make sure you're muted during this part of the presentation.
+So yeah, remember that all of the dimensions are evaluated separately as stand alone.
+So just because an output image, let's say, is not aligned with what the user was looking for in the prompt, that doesn't mean the structural integrity should be failed.
+And vice versa, if the structural integrity is, let's say, horrible, that doesn't mean it doesn't actually align with what the user was looking for.
+So I might ask for a person sitting in the field during a sunset, and you might actually see a person sitting there with like really distorted hands and eyes.
+And the sun might be a little bit distorted as well.
+And the tree in the background might be out of shape or something like that.
+But you know, the elements that I required for are still there.
+So the alignment might be perfect, but the structural integrity would be failed basically.
+So again, dimensions are evaluated separately.
+So don't get biased based on how you evaluated one of the dimensions.
+Don't let it affect your judgment for the other dimensions.
+So let's move on to the task analysis itself, which includes the prompt analysis and the output of course, evaluation, the image evaluation.
+So the prompt analysis is something new that they have added in the guidelines.
+So at the start of your evaluation, you need to really understand, you know what the prompt is looking for this, this will help you evaluate the image better.
+So anything that the AI model generates will be based on that.
+So the primary reference point of your, you know, quality assessment come from comes from understanding basically what the prompt or user is looking for.
+If you make a mistake in in interpreting the prompt, then obviously that will lead to inaccurate evaluations of the output images that you're evaluating.
+So they have created a few, let's say, tips or points that we can use during our evaluation.
+So I have it very like high level here because there's a lot of text in the guidelines, so you should read that, but we'll cover these points as well during the call.
+So first and foremost, obviously is the thorough reading or paying attention to every detail and every word that's being provided in the prompt.
+It does say they did say thorough reading.
+So reading is not just based on text.
+You you might be analysing the sketch and reading the details and the information that's provided from that sketch.
+So it's not purely based on text, it's general, you know, overall reading of the information that you received in the input prompt.
+So for basically for non text prompts, you would be focusing on the, let's say visual input that you receive in order to try to understand the key elements and the composition or the style or whatever may be provided.
+Whether it's an emoji or whether it's a sketch or whether it's another image.
+And the image itself could be a digital image.
+The image could be like an illustration or or something like that.
+So all of this information, it's important to understand it, to analyse it, to read it properly in order to understand what's the expectations and what are the key elements that need to be considered.
+So which brings us obviously to our second point, identifying the core components and elements.
+So once you're, once you've analysed the, the text or the image that you have in the prompt, you need to kind of break it, break it down into the essential elements.
+And this can include a lot of things.
+So it can be, you know, the, the objects or let's say the subjects of the image.
+It might be a human, for example, or the objects, the details, the, let's say, the spatial relationship between the objects in the image.
+Perhaps in some cases it might be the mood.
+So when you're doing emojis or maybe even image as an input prompt, you have to check is the emoji smiling?
+Is it upset?
+Is it, you know, doing something in particular.
+So this kind of moods need to be considered as well the atmosphere as well.
+Maybe it's a party, maybe it's people are happy, maybe it's joyful environment or something like that.
+So you know, sunny, cloudy, things like these, these are all the details that you need to consider when you're evaluating the the prompt and identifying what the core elements are for each image.
+So it can be subjects, it can be the actions that the subjects might be doing.
+So sometimes the prompt might say human running, doing, you know something else, listening to music.
+So these are the actions that you need to consider in order to properly evaluate the output image.
+It can be like the detail, the atmosphere element, it could be the mood element, it could be things like the, you know, the composition and the layout, the spatial element, as I mentioned earlier of the input prompt and of course the implied context for for the image itself.
+So some prompts might include words that might carry more extensive or wider meaning or cultural context.
+So the example they're using, the guidelines I think was about a cricket here.
+If the prompt says something like a cricket here, it could suggest something more than just it being a player, for example.
+So it could include a player within a stadium with a crowd in the background, you know, wearing the uniforms or preparing to do a pitch or something like that.
+So it's not just, it doesn't necessarily have to be just a person standing, you know, in a cricket uniform.
+So there could be more context implied within a specific input prompt that you also need to consider.
+And we'll get into this a bit later on.
+But yeah, I think point #4 is actually related to what I was about to say.
+But let's let's let's get to that in a moment.
+So Third Point is understanding the relationship.
+So, you know, you have to identify how these elements interact.
+So if someone says like a dog sleeping on the brown couch or something like that.
+So you have the subject which is the dog, you have the action which is sleeping, you have the object which is the couch and then you have the extra detail which is the colour of the couch, the brown couch.
+So all of these elements and how they interact with each other is something that you need to consider when evaluating the output image itself, how they interact with each other.
+What's the, you know, spatial relationship is it's sleeping on the couch, you know, is it sleeping next to the couch?
+So the, the prompt would normally tell you this and and help you better evaluate and understand the relationship.
+So these are the things that you need to pay attention to and understand before evaluating the output.
+And now we're getting to the point that I actually wanted to to discuss earlier, which is the extra or redundant elements.
+So sometimes there are added elements in the output that don't automatically cause a problem that are not considered a problem basically.
+So this is what I was saying earlier with the cricketeer.
+So you might have a cricketeer that's inside the stadium with the crowd in the background.
+So even though the the crowd in the stadium may not have explicitly been requested, you can still evaluate it as something that's you know relatable to to the input prompt or to the request from the user.
+So you should always ask yourself, do they connect to the main element in the prompt and do they support the overall scene, theme or mood of the requirements.
+So do not automatically penalize these images.
+Just because there are some extra elements added to kind of enhance the image or enhance the experience, the only time when you would consider penalizing this is when these elements are actually taking the center stage or they're taking the focus off the actual, let's say, subject or object that's being requested in the prompt.
+So if the extra elements appear to be like really random, distracting or unrelated to the prompt, that's when you would be basically penalizing the response.
+So keep that in mind.
+That's that's a kind of important point that sometimes people tend to overlook.
+But just because they're added elements doesn't mean that you automatically have to downgrade the evaluation.
+So always ask yourself these two questions and and check if they're actually elements taking center stage, meaning they're distracting you from the actual main object or subject.
+If they're, you know, very random or unrelated to the actual prompt, then the following points would be the recognizing the nuance and the intent.
+So you would basically be determining the overall goal or intent behind the prompts.
+So some prompts might be ambiguous.
+We'll we'll get to that in the next slides.
+So the aim is to interpret them in the most likely and reasonable way that you can.
+I think most of you who have done the certification before, you probably remember the scorpion farmer.
+What was the last word?
+I forgot Scorpion farmer something else like really, really strange image, output image that we had to evaluate in that certification.
+So obviously those those kind of prompts might be really ambiguous, but obviously you have to determine and and analyse what the actual intent might be.
+So if there is a, you know, farmer next to a scorpion in a field, that might be an acceptable image.
+They don't necessarily always have to merge.
+So like I said before, like the chef alien prompt, it can be a chef standing next to an alien, for example.
+So they could be separated or it could be an alien that's dressed as a chef, or it could be basically vice versa, the chef that's actually an alien.
+So all of these could be reasonable outputs for that kind of query when it's just like chef, aliens.
+So these are all reasonable interpretations for for these kind of prompts.
+The only thing when when they're kind of, let's say merging, you have to pay attention to the structural integrity.
+That's the only thing I want to say like the Scorpio Farmer example we had in the previous certification.
+This was like a really bad output image that that was that was really like the the integrity of the of whatever object or subject was being portrayed was really bad with additional legs.
+And oh, whale, whale was the last word.
+I just remember whale farmer Scorpion.
+So it was a really, really strange image with like really bad structural integrity.
+So even if the elements might be merged, you need to pay attention to, OK, what elements am I seeing and how they are basically structurally constructed to whether it's, you know, reasonable, something reasonable, or whether it is like all out of place messy.
+That makes absolutely no sense and therefore would have to fail the structural integrity dimension.
+And last but not least, I think you've already know this this particular point, because it has been mentioned in past trainings as well.
+So you are allowed to perform research for any unfamiliar terms, concepts, styles and so on and so forth that you might not be familiar with.
+Maybe cultural references.
+So you are allowed obviously to do research to be able to fully understand them and to know, for example, what they look like in order to better evaluate the output image itself.
+So now we'll move on to the ambiguous prompts.
+So these are prompts basically with concepts or elements whose intended meaning, scope or final outcome aren't clearly defined.
+So they might be prompts that complaint contain incomplete details, maybe multiple interpretations or just like loosely connected ideas that perhaps don't really make sense.
+So how to analyse ambiguous prompts?
+First and foremost you need to identify and interpret each concept.
+So when you have like we discussed earlier, the multi concept prompts, let's put it that way, scorpion, farmer and whale, the example that we had in the old certification, the idea would basically be that the the elements or let's say the output image should reflect all of the specified elements that are requested in the prompt.
+So if I remember correctly, the old certification for this requirement contains some odd looking scorpion figure and the background seemed like it was a farm, but it's not a farmer.
+So the query was for a farmer, not a farm.
+And the Scorpio seemed to be like some kind of merge between a scorpion and a whale, but that that was, let's say a bit of a subjective evaluation.
+So ideally for these kind of prompts, the goal would be to have these elements represented and reflected specifically in the image.
+So ideally you would have, you know, a farmer separate from a whale, separate from a Scorpio scorpion.
+Even if the image itself doesn't make sense, we don't have to care that a whale would be out outside of its, let's say, natural environment, which would be water.
+So you don't have to care about it as long as there is a whale that's, you know, properly, let's say drawn with all of its, you know, features correctly drawn and there's a farmer and there's a scorpion.
+Then you can, you can evaluate this image based on the dimensions given for more abstract requests like we've had also in the past certification like law of summer or I think there was something like summer forest or law of forest or something like that.
+So the output image should basically have a symbolic representation of these concepts.
+So we discussed in previous trainings that like, for example, love can be represented as the shape of the heart, but it could be also like people showing affection to each other, for example, or as the client says, they, they can even consider flowers to be love, for example, which maybe some of you might feel it might be a bit subjective, but use the general, let's say, concepts that represent the keywords to evaluate the output image.
+So obviously summer would be something like, you know, beach, sunny days, you know, and things like that.
+So forest, I think forest is straightforward.
+So that's not a problem.
+But these kind of more abstract requests, you have to make sure that the output image kind of represents at least one of these, let's say, concepts or elements for that particular word.
+So like we said, if it's love, then look for, you know, hearts, flowers, or, you know, people showing affection to each other in that sense.
+So that would be considered as the love element being covered within the output image.
+The second point would be to assess the integration against the separation.
+So basically determine whether the prompt likely intends each concept to be shown together or separately.
+So this is where the whole scorpion whip, farmer whale thing comes into play.
+So in this case the idea would be to have a separation and not an integration.
+Whereas the prompts like Chef, alien, there is a possibility to have an integration here as well.
+So if the output image had an integration, because chef could also be represented as an alien being a chef, so it would have the attire required attire to represent the chef or or they could be separate as well.
+So both of these could be acceptable.
+But this is part of, you know, analysing these kind of ambiguous prompts and determining where an integration is acceptable and where a separation is the expected, you know, output.
+So when the prompt is ambiguous, the reasonable approach would be to basically evaluate the elements and determine what kind of output image would be acceptable.
+So I've already given you the chef alien example.
+So in the guidelines they provided a similar example related to the farmer and whale.
+They took out the scorpion.
+So they said that, you know, expected outputs could be, you know, a whale in a farmer's attire, a whale that is farming or a whale in an ocean and the farmer on the field.
+So all these interpretations would be considered as, let's say, reasonable for, for this kind of query.
+Again, when you throw in a, a third element, then you have to consider that element as well.
+But generally speaking, for this kind of queries, you have to assess that you know, whether the the output image is expected to have a separation of the elements, definite separation of the elements, like it makes absolutely no sense to merge them together or they can be integrated in in some way.
+So even though a whale with, let's say, a farmer's attire or farming would look, let's say, ridiculous, it's still an acceptable interpretation for a whale farmer prompt user prompt.
+So because both elements are represented, we don't have to care that it looks silly because a whale cannot farm.
+So that's not the whole goal of evaluating the prompt prompt.
+Just like an alien would not be a chef, for example, or a chef would not be an alien.
+So we don't have to care about the logical interpretation in this case.
+We just have to care that, you know, OK, a chef or a farmer has specific attire that's very recognizable across the world.
+So an alien or a whale wearing this attire would be a reasonable, let's say, design or output or interpretation of the image.
+So let's say combining a whale and a scorpion into one would not be a reasonable interpretation, but giving something you know, clothing or certain let's say features that might be illogical but could be viewed as reasonable are still acceptable in the image.
+So someone might specifically require for a dog to be wearing certain clothing or for a dog to be let's say running on its hind legs.
+So running on 2 legs, this is as an output image.
+It's still, you know, acceptable.
+As long as the output image interprets the user prompt correctly, you can still accept it and evaluate it without the need to downgrade, unless obviously some elements are missing or the structural integrity itself is affected in some way.
+So like I said, don't worry too much about the logic as long as the integration of the elements is well represented and and makes some sense.
+Third Point would be to check for completeness and relevance.
+So you know, just basically verify that each concept is visibly present, clearly present and relevant to the scene that you are expected to evaluate that the prompt is requiring.
+And obviously for abstract concepts, you you need to confirm that there is a recognizable symbol or element that reflects the intended idea.
+So if it's if it's love, then let's say heart shape would be the most common interpretation so that element would be present in the picture.
+Or as the client said, flowers would be acceptable or people showing affection to each other as well.
+Last but not least is to evaluate the coherence and creativity of the image.
+So if the image combines those elements into a single scene, you have to decide whether the integration makes sense either logically, like I said, or stylistically or artistically.
+So obviously, a whale with a farmer's attire would not logically make sense.
+But, you know, artistically and stylistically, stylistically would still be, you know, accepted because it's not something unusual.
+Like, we've seen this kind of things in cartoons.
+All of us have seen this in cartoons growing up.
+So it's perfectly acceptable to, to kind of view this image and evaluate it based on, you know, the information that we have at the back of our head, at the back of our mind, based on what we, we would expect a farmer to look like, what clothes they would wear.
+And then putting that on a whale or on a dog or on an alien or whatever the, the user prompt might be requiring.
+So for ambiguous prompts, you know, to some extent some degree of creativity and flexibility is allowed, but obviously the output or end result that you're evaluating should still reflect some connection to each concept within the prompt that's being asked.
+So like they said in an earlier example, the whale might be farming or the whale might be in a farmer's attire, or you know, the whale is in the ocean and the farmer is on the field.
+So they could be completely separate concepts.
+But you know, both of these elements are, you know, covered and, and provided in the in the image, where in situations when the image doesn't make sense or, or perfect sense, it should at least still show some connection to each part of the prompt.
+So like we've had the example of the scorpion whale farmer, the, the image has to be somehow realistic rather than having some, you know, really extremely strange and unusual mergers and, and integrations between these.
+So it could be, you know, strange, it could be imaginative, it could be fun, but what matters is that you can see that the image includes all of the ideas within this prompt.
+So with the image that we had in the previous certifications, we could not see this because the farmer concept was missing.
+So the there was a kind of field in the background, but the concept of the whale and the scorpion farming or having at least farmer clothes was not there.
+And the image of that strange looking scorpion which seemed to have been merged with the whale was very, very odd looking.
+So obviously the structural integrity was really bad and the alignment, input, output, output alignment was not matching because the concepts were not clearly fine and not all of the elements were present within that image.
+OK, so let's go to the next part, which is related to the human presence or anthropomorphism detection.
+So this is a relatively, let's say, easy and straightforward question, but we have seen people struggle with this in the past.
+We have seen people also missing out the piece of information from the guidelines that said that, you know, robots, aliens, zombies would not be considered anthropomorphic.
+So pay attention to those.
+I've added that here in the slide again, but it's been there from the beginning in the guidelines.
+So you know, robots, aliens, gnomes, zombies would not be considered anthropomorphic even if you have like mermaid anthropomorphic emojis.
+For those of you who have done emoji related tasks, the sub project emojis are not considered as human presence or anthropomorphism even if they have human like traits like you know smiling emotions or doing some actions and so on.
+So none of the emojis are considered human presence or anthropomorphism.
+So remember that.
+So anthropomorphism itself is when you have, you know, when you attribute human traits or emotions or intentions to non human entities beat an animal or a specific object or some abstract concept that's behaving and acting like a person or you know, or even a human merged within an object.
+I think there are a couple of examples in the guidelines, one with human with an elephant head and one I think human legs growing out of a heart shape or something like that.
+So these would be considered, you know, anthropomorphism within an image.
+So there for an image to meet these kind of anthropomorphism, to meet the anthropomorphism requirements, it needs to meet the following conditions.
+So first of all it would have to be in itself a non human entity so be it an animal, an object or concept.
+So not a real human or direct human figure meaning like Centaur or something like that.
+So that would be considered a something that's, let's say, not real human or direct human figure.
+So you have to ask yourself, is it an animal object or, or a concept that's that's not a real human or direct human figure.
+Like I said before.
+And you can read the guidelines because they include, you know, all these examples and things.
+So mermaid would would not be considered anthropomorphism because mermaid falls under one of those let's say let's say mythical known creatures.
+That are supposed to have this kind of like human human shape and tail of of fish, let's say.
+So those there are some exceptions provided in the guidelines so you can refer to those as well.
+So for example, like clearly defined human silhouettes would count as, you know human presence and mermaids would be count count as human presence, but they would not fall under anthropomorphism.
+So human like traits.
+Does the object animal or concept that you're evaluating exhibit any such traits, whether they're wearing human clothes or accessories?
+So this may have been a concept that wasn't clarified in the previous guidelines.
+So obviously, a, let's say, dog wearing, you know, human clothes would actually be considered as part of anthropomorphism, even though, you know, we know in everyday life you can see people walking dogs around with like a sweater or something like that.
+It's becoming kind of like a normal common trait to see according to the guidelines now.
+So if if this if this let's say subject that you're evaluating or object that you're evaluating is wearing human clothes or accessories, then that would be something considered as a human like trait.
+So it would be evaluated under anthropomorphism.
+Is it displaying human emotions or facial expressions?
+This might be a little bit tricky because sometimes and subjective.
+So make sure that it's really clearly defined in the image if you're going to evaluate it, because sometimes it might appear like the, I don't know, the cat or the tiger is smiling, which could be a, let's say, normal trait or feature for an animal.
+So make sure that these emotions or the features that you're looking at, the facial expressions are really clearly and obvious, like human like, like clearly defined, like they're, you know, laughing with their mouth fully open or they seem to be, you know, I don't know, let's say raising their eyebrow and doing a green, a specific green or something like that.
+So these kind of features that are clearly and very obvious, you can mark them as as anthropomorphic if they're performing any human like actions like we've discussed before, dog running around or let's say tiger running around on its hind legs, on 2 legs or you know, talking, dancing, using specific tools, dogs playing poker, for example, the famous image.
+So these kind of things would be considered anthropomorphic.
+Obviously.
+Another point, does the scene depict a non human character or in a distinctly human environment?
+So like I said, you know, sitting at a desk driving a car.
+So dogs playing poker, dog driving car or something like that.
+So these kind of features would be considered anthropomorphic as well.
+And of course, last but not least, are the human traits merged with an object or animals.
+Like I said, we've had some examples in the guidelines like human with the head of an elephant or I think legs, human legs sticking out of a heart shape or something like that.
+So you can review those examples in the guidelines as well.
+But this would fall under the anthropomorphic features, so to speak.
+A few examples here.
+Hopefully I haven't mixed up the creatures that I mentioned before, but we'll get to that in a bit.
+So human presence.
+So obviously any depiction of a real or clearly human figure in an image, whether it's realistic or stylized, would be considered as human presence.
+So as you can see from the top image here, this would be like silhouettes of humans.
+You can see that, you know, there's, there's some heads, shoulders and there's a lot of hands raised like it's a party.
+So it's not, it doesn't always have to be like clearly defined and designed with all of the eyes features and so on and so forth.
+So if you see the silhouettes of humans, that can be considered as human presence.
+So in essence, it must fundamentally represent an human, whether it it's partial or few or, or full, you know, body depiction or it's just, you know, face, hands, legs, silhouette, you know, whatever form it may be, then that would be considered as human presence.
+Basically.
+The key factor to that you need to remember is that the subject itself is actually human.
+So even if it's drawn, rendered or exaggerated in a non realistic way, it's still considered to be human itself.
+So humans things to remember.
+Humans can be rendered partially.
+So it doesn't have to be full body.
+It doesn't.
+It can be just for example upper body, it can be just legs, it can be just human hands sticking out of a heart shape or something like that.
+So it doesn't have to be a full, you know, body or half body design like we are normally used to.
+It can be silhouettes, it could be body parts and so on.
+Human silhouettes obviously also count as human presence.
+Mythical creatures that have clearly defined and substantial human components are considered as exhibiting human presence.
+So I may have mixed up the Centaur earlier so that might be falling under mythical creatures, but the mermaid was the example that that's clear and that's provided here as well.
+So these would be considered as human presence.
+However, the exception here is creatures that are combinations of non human creatures like Griffins or sphinxes.
+They are not considered as human presence.
+So why this is important?
+So because as you know, the anthropomorphism question has four different answers.
+1 is that there's no human no anthropomorphism.
+And 1 is just that there's human, you know, present and that there's also humans that are large in size, humans that are not from facing so it's like silhouettes and so on.
+And the last one is that there's no human but there is anthropomorphism.
+So why this is important to remember that the creatures that are combinations of non human creatures like sphinxes are not considered human presence.
+Because obviously the option that you choose in the response would not be the yes there is human or yes there is human but it's not front facing.
+But you would have to choose one of the other options, which is in this case.
+If it's a sphinx, would be No, there is neither human nor anthropomorphism in the output image.
+Yeah, merging of human body parts with animals or objects are not considered human presence, but they are considered anthropomorphisms.
+So that's another important thing to remember with with this first question evaluation.
+So obviously if it's a heart shape with hands sticking out or legs sticking out, that's anthropomorphism because you know, the, we have the human elements visible, but it's not it's merged with the object.
+So the object is the key feature that has human like traits.
+So it's anthropomorphism.
+But the human presence in the sense that the, when we say that the human can be rendered partially, that means the image itself, like the, the, the human elements are not merged with the object or something else.
+So you might just have floating, floating silhouettes or floating hands or a floating head, for example.
+This is what it means with the humans can be rendered partially and they can be considered as human presence.
+But if the let's say hands are coming out of a pencil or hands are coming or legs are coming out of a heart-shaped figure, that would be anthropomorphism.
+So make sure you you understand the difference between the two and when human presence is evaluated as like a stand alone on its own and when it becomes anthropomorphism.
+So and again, remember, anthropomorphism is also about human like traits and, and and actions.
+So it's not just about, you know, the human elements being visible.
+So dogs playing poker on a table, it's anthropomorphism, even though they don't have human hands, for example.
+So just just remember that as well.
+OK, now we're moving to the structural integrity part.
+So this is more of, let's say reminder or reinforcing what's been shared before.
+So what you need to remember in general, obviously, is that for structural integrity, we're evaluating the anatomical correctness of the subjects or the objects in the images.
+So it's it's not about whether they, let's say, make sense.
+So for example, as we see in the picture here, a baby with a beard does not make sense.
+But the prompt itself requested a baby with a beard.
+So we have to evaluate that beard on this baby is, you know, let's say designed well so that there's no particular issues or distortions or artifacts that affect the beard on this baby.
+So we can see here that, you know, the the beard on its own does not really have any particular issues.
+So the structural integrity also includes the prompt relative information.
+So what does the prompt request?
+It might not necessarily be real world, real world information or things like we said, baby with a beard, you know, there are no babies with beards.
+So that's not necessarily, you know, something logical or real world.
+So it doesn't, it doesn't mean that you have to fail the structural integrity.
+So if that's what the prompt requested, that's what you have to look for in the output image and you evaluate the structural integrity based on that prompt relative information.
+So you would be looking at this baby, check if it's, you know, if the eyes, the ears are look good, if the beard is good, that there's no distortions, there's no artifacts.
+You know it has eyebrows, the hair is looking, there's no issues with the hair, you know, neck, body and everything is everything is good, everything is fine.
+Then you can say, OK, this image seems to be good that there is no issues with the particular image itself.
+So I can say that the high the the structural integrity is pretty good.
+It's, it's high the, the prompt might be asking for things like, you know, I want a tiger with five legs.
+So obviously it's not, you know, real world, but it's what the prompt was asking for.
+So if the tiger has five legs, then obviously the output image should have 5 legs.
+And you would evaluate the structural integrity based on that particular information.
+So remember that sometimes the requests from the prompt might be implied and not directly mentioned.
+So the if let's say the prompt is just for a man, this implies obviously a human being, you know, with two arms, 2 legs and so on and so forth.
+So the prompt doesn't necessarily have to tell you, give you the details, it can just be a man.
+We all know what let's say a man looks like.
+So that when you're evaluating the image, you would know what you would expect to see and, and evaluate the structural integrity based on that.
+So, you know, in these kind of cases, when it's human, you really have to pay attention to, well, not just humans, but animals as well.
+You really have to pay attention at the details and the features like, you know, eyes, nose, legs, you know, depending on the angle that you're viewing, obviously.
+So keep that in mind when you're evaluating humans, animals, and so on to to pay attention to eyes, nose, hands, fingers, if they're visible, if they're clearly visible, fingers, ears, and so on and so forth.
+Consistency is also important.
+So even if the prompt describes something like really like a fat out of fantasy world or, you know, non realistic, let's say degenerated objects should still be, you know, consistent.
+So, so I think the example in the guidelines was the fox with three tails.
+So obviously, if if that was the requirement and that's what you're evaluating, you have to evaluate that the three tails are still, you know, let's say, anatomically correct and consistent within the subject object that you're evaluating.
+So if two tails look like a Fox's tail and the third one looks like AI don't know a Tiger's tail, then obviously that might be an issue with with the image.
+Or let's say the third one is completely bent out of shape and extremely distorted, then that would be something that would affect your evaluation in, in the structural integrity.
+So yeah, last but not least, pay attention to artifacts and or distortions.
+Sometimes these are missed.
+We know that they were missed in old certification.
+Since I don't suppose we will be they will be using that image in the new certification.
+I can tell you that there was 1 output image for a prompt that had a very obvious artifact that a lot of people missed in the evaluation.
+I don't remember exactly what the prompt was.
+I think it was top hat and cap or something like that.
+Like a hat and a cap.
+The output image was just a baseball cap, but it had something below it, like something sticking out below it.
+This is an artifact, so it's, it's not something that like, let's say it belongs there.
+It, I understand it could have been easily missed, but quite a lot of people actually missed this.
+And it, it seemed like a really obvious artifact, you know, sticking out below the cap that didn't belong there.
+And that's not part of the cap basically.
+So a lot of the, a lot of people basically missed this during the evaluation, which affected the structural integrity.
+But this is something that you need to pay attention to.
+So distortions are usually related to the, let's say, design of the actual thing in the sense like let's say if this baby's ears were extremely out of shape, like like they're kind of WAVY, flowing or I don't know, let's say 1 was extremely small.
+The other one is it was extremely large.
+So this would be kind of distortions if if for example, there was text in the image and the text was very distorted, WAVY and and strange, that would be considered a a distortion as well.
+I believe there's an example also with text, text spellings that you need to pay attention to.
+There was one with an alien where the alien is wearing a sweatband or headband and the word alien is misspelled, so that's also something you need to pay attention to.
+Obviously if the text is clear and readable then you would need to consider the spelling and and how those letters and words look like in the image.
+When you're evaluating artifacts is more like things that are added to the image that just don't seem to belong there.
+The baseball cap was one example in the guidelines.
+There are examples related to I think there's a dog on a surfboard that has something that looks like earrings or something like that.
+So these would be considered an artifact, something that's, you know, added to the image that just simply does not seem to belong there basically.
+And, and those are the things that you need to, to pay attention to in structural integrity.
+So objects that don't fit in the scene or things that are basically completely, you know, twisted out of shape, kind of like they're melting or merged together, like hands merged together to form 1 long hand or something like that.
+So pay attention to those when you're evaluating structural integrity.
+Now these these these are new points added to the guidelines.
+These are more like, let's say tips or points to consider where when evaluating structural integrity that the client has shared with us.
+So it's, let's say a, an approach to the evaluation for the severity that you need to select during your structural integrity evaluation.
+So this is only related to structural integrity and not, you know, input output alignment or the fidelity content fidelity.
+I think it was the other dimension.
+So there are several points to cover here.
+So first and foremost is to identify the main subjects in the image.
+So basically, what is it in the image that draws the most attention?
+Obviously it could be, you know, the largest or most detailed one or the most centrally placed subject within the image.
+So you have to check what is the image trying to obviously depict or evaluate and based on that the major subject if the major subject has issues within the image itself, like some kind of distortions or elements.
+That draw the most focus when you look at the image, then these are the things that you need to obviously considered when evaluating the structural integrity.
+So obviously if let's say you have a human full frontal facing human in the image and you notice issues with it's, let's say eyes, nose and things like that because it's of let's say, let's say it's an passport image.
+So obviously the head is very, you know, frontal central figure of the image and at all the elements are clearly visible.
+So obviously if the eyes, mouth, nose and things like that are distorted, you would be looking at the more like severe structural integrity evaluation for this particular case.
+The background elements and the minor objects in these particular cases would be less critical if they if they don't interfere with the main subject or the overall clarity of the image.
+So let's say you have a full frontal, you know, image, passport image of a human, but there is some background, let's say elements that are not clearly visible, but we can see that there may be out of shape in some cases.
+So because the full human image is the center subject and that's what you're, you know, the major subject that you're evaluating and the the image is, let's say of the human is good, you wouldn't have to use a severe structural integrity evaluation just because the background distant image that's barely visible has some structural issues.
+So in that case, you would be looking more at a minor structural integrity and noticeable if the image, let's say, stands out more or it's clearly visible.
+So it all depends on how they relate to each other, you know, and how clearly it's defined design and how it interacts with the main subject or main, let's say, object of the image that you're evaluating.
+So that brings us to the second point, which is I kind of already jumped into using the triage approach.
+So basically when you come to certain edge cases, you should start looking for the more severe cases and then work your way down to the least severe cases.
+So anytime you're evaluating an image, the first thing you need to look for are basically the severe cases or the severe indicators.
+Like is the issue that you found large enough to ruin the subjects basic, you know, anatomical structure.
+So that's why when we're evaluating humans or animals, if they're really like, let's say the center stage of the image, you really need to pay attention to, you know, the, the details with the eyes, the, the mouth, the hands, fingers, and so on and so forth.
+Especially if they're, if they're really the focus point of the image and not like somewhere in the distance, like I said, silhouettes of humans, you wouldn't see any details.
+But when they're clearly, you know, large in size, front facing and so on and so forth, you need to pay attention to these details and check if the flaws are really large enough and, and they're really, you know, like maybe missing a hand or the hands, the two hands are completely merged with each other or, you know, there's something that completely breaks the image when you're reviewing it.
+If yes, then you would already be selecting the severe structural integrity, even if you know, you didn't get to check the other details in the image.
+So if no, then obviously you would move on to the next point, which is checking for the noticeable indicators.
+So are there any, let's say, perhaps artifacts added somewhere in the image?
+Are there really obvious distortions that are not really that don't really stand out a lot that are not really catastrophic to the image?
+So maybe the eyes are, you know, the eyes are well designed, but they're kind of, let's say, too close to each other or they're, you know, more inward looking rather than having a natural position, let's say.
+So if if you have this kind of, let's say, noticeable issues, but that they're not, let's say, catastrophic to the image that really make it, you know, like stand out or make the image really look bad and horrendous, then you would be looking more at a, let's say, a noticeable severity, structural integrity, sorry, noticeable structural integrity evaluation for an image.
+So again, if it's no in this case, then you would be moving going down to the last point, which will be the minor structural integrity.
+So you would be looking for the minor issues within the image itself, minor anomalies.
+And once you start look, taking a closer look, maybe something is out of proportion, maybe there is a misalignment, maybe something in the background just seems like it's perhaps out of shape.
+I think one of the images in the old certifications that had spaceships flying around, some of the elements there had were a bit, if I remember correctly, slightly off proportion.
+So if you have this kind of minor issues that you notice after a deeper look, if you haven't found any of the noticeable and the severe ones, then you can select the minor structural integrity.
+If not, then the image clearly has no, no issues whatsoever and you would be selecting that there are no structural integrity issues within the image itself.
+So next would be to consider the impact of on the viewer.
+So both the context and the viewer perception would play a crucial role.
+So, you know, central versus peripheral viewing and the importance of the element for that particular subject.
+So basically, no, sorry, I mixed up the points here.
+So consider the impact of the viewer is viewer perception and context matters.
+So central and peripheral is the next point.
+Ignore what I said earlier.
+So viewer perception is basically if you know, if something as you're viewing the image, the output image, if some issue distracts you immediately as soon as you see it, then it's very likely a noticeable or severe issue.
+So it wouldn't be a minor 1 and it definitely wouldn't be no structural integrity issue.
+So when you're looking at the image, obviously as soon as you look at the image, you, you don't even have to ask yourself, you know, is this something that would affect, make the viewer be confused or distracted by the image?
+You would immediately notice it yourself.
+So in, in that case, those really obvious issues that stand out with the structural integrity would fall under noticeable or severe.
+So once you do a more detailed analysis, you know, and, and using the guidelines obviously as reference, because we have those tables available there as well for the grading scale, then you can evaluate whether it falls under severe or noticeable.
+But the moment that you look at the image, if it captures your attention, if it distracts you, that means it's probably one of those two evaluations.
+If it's something that can be easily overlooked, like it's not a big detail, it's not a big issue, it's maybe not very noticeable, like you really need to, you know, look into it or it's somewhere in the background elements and details, then obviously it would be more of a minor issue.
+And like I said, context as well should be considered.
+So if the prompt is, you know, highly focused on a specific element like the close up port passport image of a person, then even in those cases, the minor issues would be leaning more towards noticeable because they are, like I said, they are very central to the figure that you're evaluating.
+So, but this is, this is only applicable obviously, like I said, when it's like a really, you know, close closed up elements.
+So passport picture might be a good example.
+The baby picture we had earlier is another good example.
+So these kind of close-ups, when you can really see all of the details of the person, the minor issues that you find within the, let's say, face might actually become part of a noticeable evaluation because they are kind of part of the central figure.
+They're like they, they kind of stand out in a sense.
+So remember that that piece of information.
+So when you have let's say kind of close up images that some minor issue might actually be upgraded to a noticeable one in that particular case and then checking their relative size and location, which is the central and peripheral topic that I was discussing earlier.
+So if the issue that you found is in the main point of the image, so like a person's face in comparison to a small detail in the background or in the corner, then that would elevate the the issue to from minor to noticeable as well.
+So let's say, let's use the example of the baby face or the person's face on the passport picture.
+So key elements are usually the things that you obviously notice from the start, eyes, nose, mouth, you know, ears probably if there is a minor issue within those, most likely you would be upgrading it to a noticeable because they, they kind of stand out.
+If you notice this is where the, you know, the whole central peripheral, you know, the focal points come into play.
+If you notice a minor issue that's not part of the, let's say focal point, let's say somewhere in the corner of their hair there's a minor distortion, or let's say you can see part of their shoulders in that image like we had with the baby somewhere else.
+Along those lines in the clothes or whatever they may be wearing, it doesn't matter.
+You find a minor issue, you wouldn't necessarily upgrade it to noticeable because by definition you found a minor issue based on, you know, all the instructions in the guidelines.
+And this issue is not something that stands out.
+It's not the focal point.
+So you can keep it as a minor.
+But if it's something that's minor but it's actually a focal point within the face, then you would be upgrading it to a noticeable issue.
+And then you have to also consider the importance of the elements for the subject.
+So, you know, small distortions in the background would stay minor, but the distortions in the subject's face obviously would be considered a noticeable, even if they're minor by definition, because the face is, you know, frontal facing is like close up.
+You would be considered upgrading that to a noticeable issue.
+And last but not least, you know, combine the all your observations for all these points to determine, you know, the final rating for the structural integrity for that particular image.
+So how important, how prominent those issues are that you found?
+What is the focus point and where did you find these these issues?
+Now, most of the times, basing this off of the, for previous certifications that we've done, most of the times these these issues are quite noticeable.
+Like once you see the image, you'll know like the scorpion farmer whale example, you'll know that it's just a horrible image that has really bad structural integrity.
+Or there was another one, I think something about the helmet, motorcycle helmet and something else that also has severe structural integrity.
+Maybe you'll remember the exact prompt, but it was something about motorcycle helmet and I forgot what the other keyword was.
+But the the whole image was just something being merged together, similar, similar to the whale farmer scorpion image.
+So most of the times these images you can see as soon as you look at them, you will know like, OK, this has really obvious structural integrities or you know, this looks like a pretty good image.
+I'll just give it a closer look to see if there's any, you know, minor issues that are maybe easy to miss and then you can evaluate it based on that.
+So the focus points is what you need to pay attention to when you have, let's say, more elements within the image or you have an element like a subject that's really close up.
+And especially for humans and animals, you need to pay attention to because of the anatomical structure of all of the features that they have.
+So eyes, nose, tail, legs, hands, you know, fingers, depending on how close up the image is, I think there's one in the guidelines where there's, or I think they haven't removed it, it's still there where there's a lady sitting in the field holding a baby.
+So it's not, it's not a real close up, but you can clearly see from the image that there are distortions with her hands.
+And I think face as well, if I'm not remembering wrongly.
+So you can clearly see, even though it's not really close up, you can clearly see those issues.
+So you would be evaluating those depending on the obviously severity, you would be evaluating them either as noticeable or severe structural integrity.
+So like I said, most of the image straight from the get go, as soon as you look at it, you would have an idea of more or less what the integrity would be.
+So you can apply these, these tips and this approach that they shared with us as a way to evaluate it more in detail and more carefully and to kind of have a have a, an idea at the back of your head on, on.
+OK, here's where I need to upgrade it because it's, you know, it's an up close of a human face or an up close of a cat.
+And these minor issue actually becomes noticeable.
+So these are the things that you need to remember.
+Obviously you have the guidelines available which have a lot of details and information and you can you, you can, you are allowed to use the guidelines during the certification and the tasks.
+So please do so when you're doing your evaluations, input output alignment.
+So, and just to mention again, related to structural integrity, the there are a lot of, there is a lot of information and guidelines, sorry, examples in the guidelines that you can refer to.
+And for the interests of time of obviously, like I mentioned at the start of the training, this is more of a high level presentation.
+And there's also another pre recording that you can you can watch, we encourage you to watch.
+Ideally, you should watch it to get a a clear idea and understanding.
+OK, so let's move on to the input output alignment now.
+So this one is, let's say, usually I would say easier to evaluate compared to structural integrity, but still something that needs to be carefully evaluated and considered.
+So the updates here were mostly related to the ambiguous cases, not so much to the other information that has been already discussed in the past and that's already provided in the in the guidelines.
+So generally speaking, input output alignment is related obviously to evaluating how well the output image aligns with the provided input.
+It doesn't matter if the input is text based, if it's a sketch, if it's another image or or illustration, or if it's an emoji.
+So depending obviously on let's say once you're doing production, what kind of tasks you're doing, remember that the task that you're doing is always provided at the top.
+So if it's emoji evaluation, you would know based on the task title at the top of the page that it's emoji.
+If it's AEDM or AMDI don't remember, then you would know that as well.
+If it's the regular 1, you know, you will know that because you would have text based input prompts or just image or sketches.
+Those, those are, let's say they're regular ones.
+So it doesn't matter what the input prompt is, you have to make sure that the elements that are being given in the input prompt are found or matched in the output image.
+So for let me just quickly check.
+OK, So generally speaking for, I will just add a few more points here.
+So generally speaking, you have to identify all the elements, be it object details, you know, spatial relationships, moods, atmospheres, emotions, and so on and so forth.
+Then compare that to the output image to see how many of those elements are there, what elements are there, whether they're, you know, being provided as expected.
+So sometimes there might be actions that are being included in the input prompt and you have to verify that those actions are also in the output image.
+And then you've of course, you have to consider the missing elements.
+Are there any missing elements or completely absent information?
+And sometimes in some cases, you also need to consider whether the the element that's, let's say the focal point is completely missing from the the image itself.
+What this means is basically like if the prompt is.
+I know in the past we said things like if one element is missing, obviously you downgrade it, which is fine.
+But in some situations you might have to provide a bit of a more strict, let's say approach where let's say if the prompt is asking for a man with I forgot the exact example, but a man.
+With a hat standing in the corner of a street, something like that.
+So if we had a man just a man provided and another the other elements was missing.
+You would have to fail this dimension because the fact that the man is standing there, it, it does cover, you know, in essence part of the elements, but the core, the whole core concept and idea is completely missing there.
+So that that input output alignment would be more failed than than downgraded to partial.
+So take into consideration what elements are missing and and how crucial they are to the actual, let's say, concept of what's being, you know, evaluated.
+But generally speaking, obviously, if if, if we use the old certification as an example, if you have three items provided like chef alien stage, then obviously if you have one of those missing, it will be a partial alignment.
+But if there are two missing, then obviously you would be failing this, this particular dimension instead.
+So generally speaking, there's there's not been a major change in terms of evaluation.
+There's just some things that need to be considered specifically.
+And they are providing in the guidelines as well when evaluating these tasks.
+So it's not as simple as, OK, you know, I have one of the five elements is missing.
+Well, not one, but a man standing in the corner on the street corner behind the store or something like that.
+If it's only just a man standing there, then obviously that would be a failed dimension, even though you have men standing as part of the elements that are being covered.
+So again, we don't know what the new certification will have, whether you will have just text based input prompts or whether they will be just the keywords like we had before or they will be more related to the production tasks we had in recent months.
+So you will work on the tasks so you know what to expect more or less.
+Just make sure you really have the guidelines in handy and use them when needed to to evaluate the dimensions.
+So don't make any assumptions.
+Use the tips and the information and the examples given in the guidelines to help you perform your evaluations and your ratings or gradings for the task.
+OK, let's move now on to the ambiguous prompts.
+So ambiguous prompts are kind of the ones that allow a bit more freedom.
+So they might be sometimes keywords like we had in the previous certifications like shy.
+I think shy was the keyword that was used with the motorcycle helmet if not mistaken, but I might be wrong, you might have keywords like shy or mystery or something like that.
+So the output might include some elements that convey a sense of let's say mystery or whatever keyword or element is being used.
+So make sure that you don't necessarily have to downgrade those additional elements if they help convey this particular message or keyword that's being used or element as they like to call it in in the guidelines.
+So what would the only thing that you need to pay attention to is that it does not conflict with other guidelines, meaning it doesn't provide, you know, disallowed content.
+And obviously that you don't have to penalize the extra creative elements that help actually convey the sense of, let's say, mystery or shyness or help clarify these ambiguous concepts.
+So anything that that helps in that sense would not necessarily have to be penalised in the input output alignment and.
+And remember in general that I think I mentioned this earlier in the in the during the call that additional elements added within the image do not necessarily have to be penalised.
+As long as the, they help the, the output image, they help convey, you know, the message or the they help enhance the image.
+So you might have a prompt like Love summer, or let's say, let's use another better example, a butterfly flying.
+You might have an image that's just a butterfly flying in a blank background.
+But if the image adds, you know, nature clouds, let's say clouds in the background, you don't necessarily have to penalize the input output alignment just because it added some elements to help enhance the image.
+OK, So remember that your focus point is obviously to make sure that the elements required from the input prompt are there and they're, you know, represented clearly.
+But you don't penalize the input output alignment dimension just because the AI model provided some more elements in the, let's say, background or more details to help enhance this particular output image.
+The thing that you need to pay attention to is obviously if the elements you need or that the user is asking for are missing.
+And if the, let's say, background elements are the only focus point of the image, like there's no or no or maybe just one of the elements from the input prompt are included.
+Well, everything else is just the background elements and details.
+So that would be something that you'd probably require you to fail this particular dimension.
+So there are also prompts.
+I think we discussed this extensively with multiple interpretation shows.
+Chef Alien can be a chef that is an alien and can be an image of a chef and an alien standing next to each other, which is I think something that we've had in the previous certification as well.
+So for these multiple interpretation prompts, you know, they do allow us to include these elements either, you know, separately or integrated, if the integration makes sense, obviously.
+So you don't have to downgrade the input output alignment.
+If let's say one image has a chef that is an alien and the other image, let's say answer B, response B has a chef and an alien standing next to each other.
+So in terms of input output alignment, let's say if you have response A and response B, both of them would be considered as highly aligned.
+And then for nonsensical prompts, these are system, sorry, the the, the prompt, the kind of prompts that the system should basically, you know, avoid to provide information that's like, let's say, unrelated to the objects or or figures.
+So I think the the whale example was one of them that we had.
+But the main idea with these nonsensical prompts is that the the model response should try to avoid adding elements that would basically make the be completely unrelated to the actual keywords that are being used in the in the input prompt.
+So it should avoid images with unrelated objects or figures that don't correspond to the keywords that are being used or elements that are being used in the input prompt.
+So you would have to penalize the output for adding these elements that have no logical connection to the words or they're completely, let's say, irrelevant or not even mentioned in the input prompt.
+So I think that we had quite a few examples of those in the old guidelines.
+I'm trying to think if I remember any of them, but the shy motorcycle helmet was I think one example where the the actual output was really just a motorbike, a strangely shaped motorbike basically.
+So there was no representation of shyness there.
+That image did not have any, let's say nonsensical elements added.
+I'm trying to remember if we had any that had nonsensical elements, but I cannot really remember any from the certification right now.
+But basically, whenever you have these prompts that don't really make sense, like the keywords don't really make sense put together, you have to make sure that the output image is not adding any figures or objects or elements that have absolutely no connection to these keywords.
+Even if the keywords are nonsensical, they have absolutely no connection to the input prompt keywords.
+So basically if I asked for a whale and a farmer and you're giving me, let's say I don't know, a tiger or a notebook in the image that has no, no connection to a whale or a farmer, for example, then that would be something completely irrelevant that that would have to be penalized in terms of input output alignment.
+So last but not least, obviously to evaluate this dimension, identify all of the elements from the prompt, check the output image and compare those elements that are included.
+Remember not to downgrade these dimension if they're elements added to help enhance the image.
+Obviously remember to consider the missing elements and for nonsensical prompts if there are items added that make absolutely no sense and they're completely relevant to the keywords and obviously penalize it.
+And then last but not least, assign a rating.
+This image here is one example that basically is providing the guidelines as well.
+So a man with an elephant head.
+I think a man with an elephant head is the exact prompt.
+So the the key elements are the man, the elephant head, and the relation between the two, which is that the man has to have the elephant head.
+So if the elephant and the man here were provided separately, then the alignment would not be good because that's not what the prompt was asking for.
+The prompt was asking for the man to have the elephant head.
+So in this case, this image would be perfectly aligned.
+And remember, structural integrity is completely unrelated dimensions.
+So structural integrity you would evaluate, you know, the, the elephant's trunk, the the hands, the fingers of the man, the ears, eyes and so on and so forth and evaluate that separately from the alignment.
+So don't get these two dimensions confused.
+I think we have a couple of more slides.
+I know we're over time a couple more slides related to the image to image alignment and the sketch to image alignment if I'm not mistaken.
+So there there are actually a couple of important updates here that were not part of the guidelines before for image to image.
+So right now the latest update is that you have to consider and match the primary subject of the image.
+So either the exact animal being used or the exact breed actually.
+So this is an update from before because in the past the guidelines had there was an example of a lemur, if I remember in a Stingray in their natural environments.
+And the output image were representing a dolphin instead of a Stingray and a koala instead of the lemur.
+And the evaluation in the past was just these images were good and aligned because they were representing an animal, similar animal in their natural environment, which included let's say the Stingray in the sea and the dolphin was also in the sea jumping out.
+Both of them were jumping out.
+So this was considered highly aligned.
+But now this would not be considered highly aligned because the the animals have changed.
+So if the image is showing a Stingray jumping out of the water, the input image I'm talking about, then the output image should show the same animal.
+If the input image was showing a lemur standing on a tree branch in nature, then the the output image should show a lemur, you know, in a tree branch in nature, whatever.
+It should not show a koala in a tree branch in nature.
+So that's the key information that you really need to remember and pay attention to.
+So now the animals need to be the same.
+And when it comes to, you know, dogs, cats and so on and so forth, we need to also make sure that the breed of the cat or the dog or the breed of the animal is also the same or at least aligned, as you can see from the examples provided here.
+So the dog image is moderately aligned because although the elements, all of the elements are present and the image is more or less matched, the dog breed is actually different.
+So it's not, I don't know if this is a poodle or whatever, but the the the dog breed is not, it's clearly not the same dog breed.
+So there's another example in the guidelines where they use the same input image and they provide the actual correct, let's say dog breed.
+You can use that as a reference point to see that, you know, the, the, the, the, the output image of the dog breed they provided is pretty much more or less the same of, of what we have in the input image.
+And they have several examples for the cats as well that you can look at.
+So they have one with the cat that's different breed.
+They have one with the cat that's like the one shared here.
+It's it's a white cat.
+So we have we don't know if the, but I don't know what the breed is on the cat on the left, but we have a white cat in the example on the right image.
+So that that's considered acceptable.
+And the only difference here, why I had I included this particular example is because when there's a text prompt provided with the image, the text prompt overrides or explicitly instructs a change of an element present in the input image.
+So I might give you a cat sleeping on the bed and then I might provide the keyword C or sleeping at the C or something like that.
+These text prompt overrides what's in the image.
+So you would provide a cat sleeping in the sea basically.
+So we have actually the matching elements in this case.
+The other examples in the guidelines, they, they provide the ones with the cat sleeping on the bed.
+So different breed and same breed.
+And then this one is just an example.
+The one with the cat and the sea is just an example to give you an idea of how the text prompt would override the requirement from the input image.
+So we have the cat, we have the cat sleeping and sleeping on the bed, and the keyword that was added was C So basically the output was providing a cat sleeping on water basically.
+So that would be considered highly aligned.
+So these are the 2 major changes for the image to image alignment.
+So remember the animal has to match or the breed of the animal would need to be a match.
+If it's not, then and and all the other elements are generally present.
+You would downgrade it to moderately aligned instead of highly aligned.
+And when you see a text prompt that overrides or basically it's let's say as an instruction to the image.
+So you will have an image prompt and text.
+In that case, the text would override part of what's expected from the input image, and the output image should include the elements, key elements plus the information from the text input as well.
+The only rule update for Sketch to image alignment is that you should not consider the text input prompt when evaluating this.
+I think there's a word missing here.
+It's this task or workflow or dimension if you wish so.
+This is only for Sketch to image alignment specific to sketch to image alignment.
+So like we said earlier here, image to image the text prompt prompt can override, but sketch to image do not consider the text input when evaluating this workflow.
+So the focus is only on the visual information provided in the sketch itself.
+So the output should be as close as possible to the sketch provided.
+So not to the do not consider the text basically, which I think in the old guidelines they said that the text can be considered, but now the difference is that do not consider the sketch, sorry, the text information.
+So just consider the sketch and evaluated based on that.
+And obviously sketches can come in different forms.
+They might be colorful, they might be just like, you know, like black and white basically.
+So ideally the output images should always contain, you know, some color, like vividly colorful, even if the sketch itself is black and white.
+Obviously we don't expect the output image to be black and white.
+So I think that's already explained in the guidelines, but I'm just reiterating here for you to to remember that key point.
+And the output obviously should not be a collage of images unless.
+The sketch itself is a collage of images, so I think that's an old point, but I felt like that should be just worth mentioning again just in case you come any such cases.
+Last but not least, this is not really an update in the guidelines, but it's a reminder because we have received feedback regarding comments, not just for VCG.
+This is a general, let's say, reminder and feedback for all of the tasks that you're working on to provide, you know, good comments really explaining your reasoning and why your evaluation was influenced a certain way, what decision you made.
+And this is particularly important if you're down grading or failing any dimension.
+It doesn't matter if you failed, you know 3 dimensions in in a task.
+This is mostly related to the TC because it has more dimensions, but it's applicable to VCG as well.
+In all of the tasks that you're working on, you need to make sure that you provide well structured, informative and consistent and very specific comments.
+Specific meaning to the issues that you found or the reasons specific to why you failed or downgraded a dimension Do not provide extremely worthy and irrelevant comments.
+We have seen some people do this and do not provide generic comments.
+Especially do not provide same comments across different tasks just by changing a few keywords.
+Do not do this because these comments are part of the quality review and these issues become very noticeable once quality checks start.
+So also do not use LLMS.
+We have repeated this many times.
+Do not use AI to perform your tasks and do not use AIS to write your comments.
+This is noticeable in the comments section and we have received multiple feedback and complaints about people using LLMS to write their comments, including today.
+We have received an e-mail today again that people are using LLMS to do their work, so do not do this.
+This is strictly forbidden and anyone who is found doing this will be automatically removed from the project task and any future work.
+Even if you did it for VCG and you're also working on TC and DE, you will be removed from the entire project.
+So please do not do this.
+You all speak English, you can all you know, describe and explain the the reasons and the issues why you failed the dimension.
+It doesn't matter if you have a typo or spelling mistake, as long as you provide you know, a, let's say well structured and informative comments specific to the issues that you found within the task, that will be sufficient enough.
+So don't, don't use any outside help, let's say to do the work.
+All right, I think that's our last slide.
+So let's jump into the questions that you might have.
+So give me just a second to first allow the mic and then we'll jump into the questions.
+OK, so Yashim, you have your hand raised.
+I think you should be able to unmute yourself and ask a question.
+Yes, I can do it.
+Thank you for the presentation.
+First of all, can you hear me?
+Yes, I think a different mic.
+OK, thank you.
+I think my question is a bit simple.
+I just want to confirm and understand.
+You said mermaids are considered human, right?
+I understood, right.
+Not anthropomorphic, but human presence, yes.
+So OK, yeah, basically they have a distinction here.
+I think when I was reading this myself, it it, it kind of confused me at first a bit, but yeah.
+So basically mythical creatures that, you know, are we know how they look and how they're, you know, defined.
+Their looks are defined and have obviously a substantial human component like mermaids would have.
+These would be considered a human presence.
+So mermaid I I initially said that Centaur would be anthropomorphic but that was a mistake.
+So mermaid and Centaur would be a human presence.
+But the the the exception was the creatures that have combinations of non human creatures basically.
+So like the Sphinx and what was the other one they had?
+I think it was Griffins, if I'm not mistaken.
+Yeah, yeah, yeah, yeah.
+So Griffins.
+Well, I mean, a Griffin doesn't have any, you know, human features.
+It's like a lion with wings or something like that.
+So, and so these kind of creatures would not be considered human presence, but mermaids and towers.
+You know, if you have a body of an animal and then yeah, torso or head of a human or body of towers and then head of a human, then that would be considered human presence in this case, because these are mythical creatures that are known to have, you know, that are defined, that are known what they look like and they have substantial human components.
+That's that's kind of the difference that they wanted to clarify.
+My first question, you kind of answered it within.
+I was just going to ask about about the mythical creatures that has a health horse and I looked up Centaur is that I didn't know the name, so I got my answer on that.
+Meanwhile, the second was that he talked about a man standing beside a road or I don't know, beside the store.
+And you said since a man standing would not be enough since there's no store or road or whatever.
+Is this because there is only one request?
+For example, consider there were three requests, a man standing on the road plus butterfly.
+If there was a butterfly and the man standing but no Rd.
+does this mean it will be fail again?
+So there was.
+The reason why I use this example is because there was one such example in one of the guidelines we received before and the logic was that I'm trying to find if to see if I can find that example, but it may not be from these general guidelines but one of the specific workflow guidelines.
+They basically the prompt had several elements and some of the elements kind of interacted with each other and the output image, they had two output images.
+1 was just a man standing.
+I think one of the part of the prompt was also like the description of the background and the colors.
+One of them was just a man standing.
+And basically even though you have the man and you have him standing, so, you know, partial coverage, all the other elements and the kind of the whole, let's say key concept or core idea of the image was missing.
+They, they said that this would be failing the dimension instead of, you know, giving it a partial.
+Whereas most of the things that we've done in the certifications were always kind of like 2 keywords, 3 keywords.
+So if one, if is missing, it's basically partial.
+There was no real like relationship and information that you could, you know, put together and, and determine OK, like, OK, these are, this is what the image is looking for and I'm missing everything except the man standing.
+So it's not really aligned.
+You know, I have to fail this dimension.
+This output is not what you know, the user is looking for.
+So that's, that's that, that's kind of what I wanted to represent that you sometimes have to consider.
+It is kind of explained through the guidelines, but I just cannot find that particular image.
+Maybe it's in another guideline to, to show you exactly what, what is meant with this.
+But in general, the, the, the idea is that you have to, you know, evaluate, analyze what the user is looking for, analyze all the elements individually and then analyze whether there is any action or relation between them.
+Maybe mood, atmosphere, maybe colors or things like that, that need to be incorporated.
+And then once you look at the output image, you are evaluating, OK, what am I seeing?
+What elements am I seeing?
+What's there, what's missing and then based on what's missing, you will determine, you know how much you have to downgrade it.
+If it's if it's a lot of core concepts and ideas like you know, the back like the street.
+We are not seeing the street men standing on the corner of the street behind the store with I don't know, I think there was some color or background involved there in the prompt as well.
+All these elements would be considered like, you know, important core elements for that image.
+So just a man standing does not satisfy.
+It's not aligned with with what we're looking for.
+And that and that that's that's particularly important because a lot of the production work actually has these kind of prompts.
+So the certification was very, let's say simplistic in that sense.
+When you look in, in hindsight, it's a lot more simplistic now that you know kind of all the rules and you know how to evaluate because it only had keywords and you basically just had to look for those keywords and elements.
+But the actual production work and maybe this next certification, we don't know, might actually include this more, let's say specific prompts where you need to, you know, evaluate and and pay attention to these relationships, the elements, the atmospheres, the how they, you know, relate to each other and and whether you know the core elements and the core concepts are missing.
+You would definitely have to consider failing that input output alignment.
+But if it's, let's say, man standing at the corner of the street behind the shop, but then you have a man standing on the corner of the street, but let's say the it's not a shop.
+It's, I don't know, something different, let's say a house or just a building.
+Then that one minor element being missing or being wrong would be a partial downgrade.
+You wouldn't fail the entire dimension.
+OK and my thank you very much for the detailed explanation.
+My and my last question is regarding during the production I don't have a Mac, I only have a normal a little small sized computer.
+So when I resort to looking at the guidelines for more than 10 seconds, it assumes what was it called inactive time.
+But I arranged it accordingly.
+But in the production, will this affect it?
+I mean this active inactive thing to look back in detail, especially in VCG, sometimes in a long, I don't know, you said 100 something pages.
+I did not look at the final guideline to sometimes find something might take more than 10 seconds to find what I'm looking for.
+Will it affect this inactive time?
+Will it affect during the certification?
+I think maybe Jana or someone else from the team can better answer the whole active inactive time situation.
+But inactive time is, as far as I know, still counted by the tool in the background.
+So maybe you don't see it in your information report because you only see the active time.
+But in the background the the timer does count in active time as well.
+So I know it counts.
+But if it's too long, I got the only thing I would say an e-mail.
+So what I'm saying that's the only thing I would say about the long is that I I think as as all tasks and all tools and everything there is a timeout setup probably.
+So if you spend 20 minutes on a task, most likely when you click submit, it will just refresh the page or it will it, it will not submit what you have done because it has timed out.
+So I, I don't know what the timeout is for the tag tool, but for sure there is a timeouts that you know after a certain time it it either logs you out or it just refreshes the page after you click submit.
+I, I don't, I never came across that during production.
+OK, so that's not a real issue as far as I understand during certification this inactive time.
+OK, thank you very much.
+Certification, No, but just an FYI for for production because in well, maybe not so much for this project, but on some other projects there might be a lot of time being spent on transcription, for example.
+So, yeah.
+So any more questions from you?
+No, thank you.
+Let me put my hand down.
+All right, Guillaume, you have your hand raised.
+Go ahead.
+Hello.
+Hello, Nina.
+I have a question about emoji to to image evaluation parts because you mentioned the the change that were made for the sketch and for the image to image, but you didn't mention emoji.
+I'm not sure if there were there was a modification in this part or not.
+There wasn't, there hasn't been any significant changes to this.
+So like I mentioned earlier, the the general guidelines now include like almost all of the workflows there.
+It doesn't include the handwriting evaluation, but you also have the separate guidelines.
+The separate guidelines have not been updated for emoji.
+The the only thing is that we have noticed that the actual task UI, like the questions you get asked are not available in the guidelines.
+So the guidelines mention, oh you have you know, emoji to image evaluation, you have to do structural integrity and you have to do input output alignment, which is still the same and hasn't changed.
+But in the task itself, what we have seen is that the task is also asking questions related to gender, to skin colour, to hair colour or things like that.
+So we have pointed this out to the client and we have told them that, you know, there is no, it's misaligned.
+It's that we have these questions and they're not mentioning the guidelines.
+And it's actually none of the, even the old guideline versions that we have don't have this information.
+So we've asked them to look into this and, and provide more information or an updated version of the guidelines.
+But other than that, there's nothing significant that's been changed.
+So everything that was there before is is basically still the same.
+I would only mention to really pay attention to at least looking at the big guidelines.
+Pay attention to page 97 when you're evaluating emoji to image because it has, I would say, a good, let's say, instruction on evaluating the alignment, which is slightly different compared to the regular image tasks that are not related to emojis.
+So page 97, note that down in the big guidelines, but this information is also available in the separate emoji guidelines.
+But yeah, we're waiting for the client to confirm and hopefully they will check this and provide updated guidelines on the new questions.
+Yeah, because yesterday I got a batch of emoji to, to, to image.
+And I, I remarked that there is a forced question about they ask if this how similar does the skin color looks like the selected individual.
+I think you are talking about this, this question because this is not mentioned in the guidelines at all.
+Yeah.
+But there's basically, I think that we, I mean, the question itself, it's easy because they just asked to to compare the color of the skin in the emoji.
+I mean in the inputs to do, to do, to do image, which we got in the in the results.
+So but for, I mean for the impact of the inputs, the text inputs in the emoji, it's not like it's not like how to say to the image to image, because in this case the text is important because we have only emoji, but the text has still overrides what we got in the emoji, right?
+There was no mention about the text not being included for the emojis.
+So I think yeah, you can still you can still use that text override.
+OK, perfect.
+And yeah, as as you mentioned, I agree.
+Like the additional questions on on their own don't really feel complicated.
+Like it's one question asking about, you know, evaluating if the skin color matches, another question asking if the gender matches, because sometimes you get, let's say, female looking emoji and then the output is a male.
+So you have to compare and things like that.
+And the last one was something I there was an additional question, I think it was related to hair color or something like that.
+So yeah, they're not really complicated questions, but of course it would be nice to have this in the guidelines as well.
+And just a question about the example you mentioned in the image to image the I.
+I'm talking about the example of the of the dog.
+So the alignment was somewhat because the breed is not the same.
+But imagine if the breed was the same.
+In this particular example, we see that the input image has, I mean it has a basket or a box where the where the dog is is not in the same form as the as the as the output, because we can see the form of the box is not similar.
+So if we assume that the breed was the same, can we consider, can we downgrade the alignments just because of the form or the shape of the this box or it's OK?
+No, in this case, it's it's OK.
+So the elements we're looking for is the obviously the dog with the correct breed and that it's basically positioned or seated inside a basket.
+So if the output provides those elements and they're highly aligned, they they will accept it, they don't downgrade it for this.
+So the dog breed or the animal being used is important.
+The overall elements and the settings are important, but the color for them in this case doesn't, doesn't seem important.
+So you wouldn't downgrade it in this case.
+OK, OK, perfect.
+So just one last question that's not related to the guidelines, It's more general question because we have received recently some new certification about summarization CYU and also VCG just before one month before the end of the project.
+So I'm just asking if this is a sign that the project will be extended for some months or or the the time is maintained at I think it's the end of August, the end of the project Because when I see new certification maybe because the the clients would would extend this the end of the project, but I'm not sure.
+I don't know if you have any additional information about this.
+So the new certifications can come for different reasons.
+1 can be new workflow, 1 can be because of major updates and like we've had here particularly, and it can also be because of let's say quality concerns, let's say.
+So there are different reasons why they might, they might send them.
+So for example, CYU, it's more related to I believe quality concerns and BCGS just because of the major updates.
+And they want to make sure everyone is aligned.
+And as I mentioned earlier in the training, there will be a kind of like a knowledge check or knowledge test before you do the certification, which is just a very basic test kind of, you know, based on the guidelines and and new information and so on.
+So yeah, so there's, as you can see, there are different reasons why they send these certification requests, ask for project continuation deadlines and termination and so on that that really depends on fluctuates.
+I think Yana can provide more information on that, but I believe you're probably doing French, which should have ended in March, but it's still ongoing.
+So it's really no indication.
+I mean this there could always be work until the end of the year.
+We it it tends to fluctuate and change.
+So yeah, OK, OK.
+Thank you very much.
+You're welcome.
+I didn't just use the chance to answer this.
+So when it comes to the project end for now we expect to have production at least until September.
+But as Nanad said, there are also chances that this will be that the project will be extended because we we saw that it was extended a couple of times already.
+The thing is that the client gives us the forecast for each quarter.
+So we, we we don't have any long term forecast.
+We only see until the end of this quarter and as soon as we see any news and updates about the end date, we will let you know so that you can plan your time accordingly.
+OK, thank you, Anna.
+Right.
+I don't see any more hands raised.
+So if that's all, Bianna, if you have anything else to add regarding the links, certifications or anything and then we can wrap it up.
+Yes, thank you, Nanet.
+Indeed.
+I wanted to close with the information about the next steps.
+So there is going to be a certification similar to one that you already had previously.
+We are still waiting for these links from the client.
+So as soon as we have them, we will share them with you.
+Also, before moving on to certification which is in tag tool.
+So the tool where all certification and all production are, there will also be one additional step which is called knowledge check.
+And this is a sort of a quiz which which is kind of a step between reading the guidelines and moving on to certification.
+So it needs to give you a chance to apply all of these new updated rules on tasks before moving on to certification.
+So this knowledge check is also mandatory.
+Please attempt it at least once each of you have 3 attempts and regardless of the results on this knowledge check, you can move on to certification.
+But please attempt this knowledge check because it is mandatory and because it will indeed help you to get yourself ready for certification.
+We are also still waiting for the link for this knowledge check.
+So as soon as we have both of these, we will send you all of this information together.
+In the meantime, please, please go through the updated guidelines and through the pre recorded videos that are already uploaded to our SharePoint and shared with you.
+So that's it about the next steps, yes.
+And so just just one more detail about the timeline.
+We expect to have all of these links by our end of the day today and to share them with you until our end of the day today.
+So that means within next 3 or 4 hours, you can expect our e-mail.
+The deadline for completing this knowledge check and certification is Monday.
+End of the day, if you can do it before, if you can do it, I don't know, but but Saturday, Sunday, that's good that that's even better.
+We will receive your results and let you know on Monday what's your score in case you maybe fail.
+You will have the time for the rework.
+So please, as soon as you receive the e-mail, we encourage you to move on to non knowledge check and certification.
+And the very important thing is that on Tuesday, there should already be some tasks available, some production tasks available with these new guidelines implemented and with with these new certification results.
+So This is why we need everything now to happen quickly.
+And finally, there will be a bonus for people who managed to pass this by Monday EOD.
+So within this requested timeline, more information about that will again be in the e-mail we will be sending.
+That's it.
+I see there is a question now.
+Yeah, Yeah.
+Just a question about how about if we see some production task on VCG during during these days.
+So before passing the certification, should we work on it or or or wait until we we pass the certification.
+So the information I got is that all VCG production was stopped.
+So ideally, there should not be any production tasks.
+So in case you see them, ideally you will not work on them.
+Please report that to us and we will check with the client or we will we will stop production ourselves for this.
+And yeah, let me then just add that based on the newest priority list, this VCG training and certification and knowledge check should be priority one or priority zero for all of you.
+This is currently for client the most important task of every of all the tasks that we have.
+So first this VCG training and certification.
+Then if you complete this, please move on to production.
+Depending on certification you passed it can be different lighthouse sub projects, maybe even some sibling projects like Polly or Cherry Opal.
+In case you qualified for these or if there is no production then please move on to CYU News topic certification.
+This information will also be included in the emails we will send.
+So that's it.
+Thank you very much everyone for for your time today and thank you Nanod for sharing all of the updates.
+I wish you all luck in this certification and we'll talk to you soon.
+Again, thank you.
+Bye, bye.
+Bye.

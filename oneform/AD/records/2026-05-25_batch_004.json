@@ -1,0 +1,143 @@
+{
+  "batch_id": "2026-05-25_batch_004",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-05-25T20:30:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "01KSFC2085FRTRSRSRYVE947Y8",
+      "query": "seetong",
+      "query_intent": "User is looking for Seetong, a security/surveillance camera monitoring app that allows viewing IP camera feeds remotely.",
+      "ad": {
+        "name": "可颂-发现生活的100种可能",
+        "subtitle": "吃喝玩乐 | 穿搭美妆｜手工潮玩",
+        "developer": "深圳市脸萌科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "local knowledge",
+          "note": "Seetong is a well-known surveillance/security camera app in China. 可颂 is a lifestyle content sharing platform by the Faceu developer."
+        }
+      ],
+      "relationship_analysis": "Seetong is a security camera app. 可颂 is a lifestyle content sharing platform. There is no logical connection between surveillance camera monitoring and lifestyle content sharing.",
+      "why_not_higher": "No perceivable relationship between security cameras and lifestyle content sharing.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"seetong\" indicates the user is looking for a security/surveillance camera monitoring app. The advertised app \"可颂\" is a lifestyle content sharing platform for food, fashion, and crafts. There is no logical connection between security camera monitoring and lifestyle content sharing. The user would find this ad completely irrelevant. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "01KSFC208CT9CPJ2SBES0FHJW0",
+      "query": "dms",
+      "query_intent": "User is searching for 'dms', which most commonly refers to Dealer Management System, Document Management System, or Digital Media Server in app context. The intent is unclear but relates to business/technical systems.",
+      "ad": {
+        "name": "日淘任意门-掌上淘遍日本",
+        "subtitle": "更简单更自由的一站式海淘平台",
+        "developer": "Chengdu SIG Service Technology Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store search",
+          "note": "Searching 'dms' on China App Store returns Dealer Management Systems, business tools, and media servers. None relate to Japan shopping."
+        }
+      ],
+      "relationship_analysis": "The query 'dms' refers to business/technical systems. The ad is a Japan-focused cross-border shopping platform. Regardless of how 'dms' is interpreted, it has no logical connection to Japanese shopping.",
+      "why_not_higher": "No interpretation of 'dms' relates to Japan cross-border shopping.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"dms\" most commonly refers to Dealer Management System, Document Management System, or similar business/technical tools. The advertised app \"日淘任意门\" is a Japan-focused cross-border shopping platform. Regardless of how dms is interpreted, there is no logical connection between DMS-related tools and Japanese shopping. The user would find this ad completely irrelevant. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "01KSFC208D1B0SGH08TX8N9676",
+      "query": "系统电池分析",
+      "query_intent": "User wants a battery analysis/monitoring app to check battery health, usage statistics, and system battery information.",
+      "ad": {
+        "name": "Charging Animation for Battery",
+        "subtitle": "Live Charging Wallpaper",
+        "developer": "Puti Development",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "SOP calibration",
+          "note": "Similar to how 'color snap' → 'Recolor coloring book' = Bad (surface word overlap on 'color' but different context). Here, both apps relate to 'battery' but serve very different functions."
+        }
+      ],
+      "relationship_analysis": "The query asks for battery analysis/data. The ad provides charging animation/wallpaper decoration. Both relate to batteries but serve very different purposes: one provides data and health information, the other provides visual effects while charging. The connection is through the battery keyword but the specific needs are different.",
+      "why_not_higher": "The specific functions differ significantly. Analysis/monitoring vs visual decoration. A user wanting battery analysis data would not want a charging animation app.",
+      "why_not_lower": "Both apps deal with batteries and charging, so the user would not be surprised to see a battery-related app. The connection is weak but exists.",
+      "rating": "Acceptable",
+      "comment": "The query \"系统电池分析\" indicates the user wants a system battery analysis app for monitoring battery health and usage data. The advertised app \"Charging Animation for Battery\" provides decorative charging animations and wallpapers. While both apps relate to batteries, they serve very different purposes: one provides analytical data, the other provides visual decoration during charging. The user would understand the battery connection but is unlikely to be interested in a charging animation when they want battery analysis. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "01KSFC208J70DMY54455DN3GZ0",
+      "query": "加查俱乐部",
+      "query_intent": "User is looking for Gacha Club, an anime-style character creation and dress-up game with gacha mechanics and mini-games.",
+      "ad": {
+        "name": "皮卡堂之梦想起源",
+        "subtitle": "派对社交，结识新朋友！",
+        "developer": "apowo.com",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "App Store research",
+          "note": "皮卡堂 is a pixel-style social simulation game with dress-up, home decoration, and social features. Gacha Club is an anime-style character creation game. Both feature character customization but different core gameplay."
+        }
+      ],
+      "relationship_analysis": "Both games feature character customization and dress-up elements, targeting similar casual-gamer audiences. Gacha Club focuses on character creation with gacha mechanics and battles. 皮卡堂 focuses on social simulation with home decoration and social interaction. They share dress-up/customization elements but have different core gameplay and visual styles (anime vs pixel art).",
+      "why_not_higher": "The core gameplay differs: character creation with gacha vs social simulation with home decoration. Visual styles differ (anime vs pixel). They are not direct competitors.",
+      "why_not_lower": "Both are casual games with significant character customization/dress-up elements, targeting similar young audiences who enjoy creative expression through their avatars. A user of one would likely understand why the other appears and might be interested.",
+      "rating": "Good",
+      "comment": "The query \"加查俱乐部\" (Gacha Club) indicates the user wants an anime-style character creation and dress-up game. The advertised game \"皮卡堂\" is a social simulation game that also features character customization, dress-up, and decoration elements. While the core gameplay differs (gacha character creation vs social simulation), both games share significant customization and dress-up features that appeal to similar casual gaming audiences. The user would quite likely be interested in this alternative. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "01KSFC2084AGY2DMF5J50E8A2Y",
+      "query": "小公主游戏",
+      "query_intent": "User is looking for a princess-themed game, likely targeting young girls with dress-up, fairy tale, and fantasy gameplay.",
+      "ad": {
+        "name": "时尚百货城",
+        "subtitle": "超休闲百货经营手游",
+        "developer": "深圳市爱的番茄科技有限公司",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "SOP game examples",
+          "note": "Similar to 'puppydog clicker' → 'Idle Heroes' = Bad. Both idle games but cute pets vs fantasy warriors have different audiences and themes."
+        }
+      ],
+      "relationship_analysis": "Gacha Club (princess game) and Fashion Department Store (business management game) have fundamentally different play styles, themes, and audiences. Princess games feature fantasy, dress-up, and fairy tales for young children. Department store management features business simulation. The 'fashion' keyword appears in the store game but the gameplay is about managing a business, not princess-themed play. Similar to puppydog clicker → Idle Heroes where both are idle games but serve different audiences.",
+      "why_not_higher": "The play style, theme, and audience are completely different. Princess fantasy vs business management simulation.",
+      "why_not_lower": "Cannot be lower than Bad. The connection is at best a surface word overlap on 'fashion/时尚' but the actual gameplay and audience are fundamentally different.",
+      "rating": "Bad",
+      "comment": "The query \"小公主游戏\" indicates the user wants a princess-themed game with fantasy, dress-up, and fairy tale elements, targeting young girls. The advertised game \"时尚百货城\" is a department store management simulation game where players run a retail business. Although the word fashion appears in the title, the gameplay is about business management, not princess fantasy play. The play style, presentation theme, and target audience are fundamentally different, similar to how a puppy clicker game differs from a fantasy warrior game. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-05-25T19:58:51",
+    "post_submit_status": "Looking for surveys..."
+  }
+}

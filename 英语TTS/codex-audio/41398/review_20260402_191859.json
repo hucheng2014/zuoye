@@ -1,0 +1,6540 @@
+{
+  "snapshot_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\page_snapshot_20260402_191859.json",
+  "audio_dir": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859",
+  "output_prefix": "C:\\Users\\BERN7P\\codex-audio\\41398\\review_20260402_191859",
+  "url": "https://ilabel.weixin.qq.com/mission/41398/label",
+  "title": "2026音频check_first_part196 - 任务标注",
+  "count": 60,
+  "noise_model": "Etherll/NoisySpeechDetection-v0.2",
+  "whisper_models": {
+    "large-v3": "C:\\Users\\BERN7P\\codex-browser\\models\\faster-whisper-large-v3",
+    "medium": "C:\\Users\\BERN7P\\codex-browser\\models\\faster-whisper-medium"
+  },
+  "noise_threshold": 0.2,
+  "window_seconds": 2.5,
+  "stride_seconds": 1.0,
+  "items": [
+    {
+      "filename": "20260127_00004326_wjdlh_613_30.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_30.wav",
+      "page_text": "嗯，清香型的酒确实是那种万金油啊，你这段时间哪怕是天天喝酱香喝董香和浓香，你再来转清香都能接受。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000374
+        },
+        "max_window_noisy": 0.000311,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000223
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000257
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          },
+          {
+            "start_seconds": 5.0,
+            "clean": 1.0,
+            "noisy": 0.000311
+          },
+          {
+            "start_seconds": 6.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 6.289,
+            "clean": 1.0,
+            "noisy": 0.00021
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 8.789,
+        "tail_silence_seconds": 0.093,
+        "overall_rms": 0.063002,
+        "end_rms": 0.031163,
+        "end_peak": 0.329467,
+        "end_rms_ratio": 0.494639,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000374,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "清香型的酒确实是那种万金油啊你这段时间哪怕是天天喝酱香喝董香喝浓香你再来转清香都能接受",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "清香型的酒确实是那种万金油啊你这段时间哪怕是天天喝酱香喝董香喝浓香你再来转清香都能接受",
+            "similarity_to_page": 0.9655,
+            "avg_logprob": -0.10501248163304158,
+            "no_speech_prob": 0.2001653015613556
+          },
+          {
+            "model_name": "medium",
+            "text": "清香型的酒确实是那种万金油啊你这段时间哪怕是天天喝酱香喝董香喝浓香你再来转清香都能接受",
+            "similarity_to_page": 0.9655,
+            "avg_logprob": -0.33049636858480946,
+            "no_speech_prob": 0.26426076889038086
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "嗯"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "和",
+            "喝"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.75,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_130ms",
+          "high_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9655,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_8.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_8.wav",
+      "page_text": "因为我后面还有几期视频要拍我不希望到时候脸是红红的红彤彤的。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000292
+        },
+        "max_window_noisy": 0.000452,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000257
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000301
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000452
+          },
+          {
+            "start_seconds": 2.492,
+            "clean": 1.0,
+            "noisy": 0.000286
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 4.992,
+        "tail_silence_seconds": 0.08,
+        "overall_rms": 0.055143,
+        "end_rms": 0.023149,
+        "end_peak": 0.155704,
+        "end_rms_ratio": 0.419809,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000452,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "因为我后面还有几期视频要拍我不希望到时候脸是红红的红通通的",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "因为我后面还有几期视频要拍我不希望到时候脸是红红的红通通的",
+            "similarity_to_page": 0.931,
+            "avg_logprob": -0.1565262551108996,
+            "no_speech_prob": 0.03231224790215492
+          },
+          {
+            "model_name": "medium",
+            "text": "因为我后面还有几期视频要拍我不希望到时候脸是红红的红彤彤的",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.17157412237591213,
+            "no_speech_prob": 0.04725303128361702
+          }
+        ],
+        "agreement": 0.931
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "彤彤",
+            "通通"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "text_ends_with_的"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.931,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_60.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_60.wav",
+      "page_text": "但是喝酒啊你不是说贵就好啊我们抛开瓶子之后我们去盲品的时候感受他们会是不一样的体验。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000296
+        },
+        "max_window_noisy": 0.000351,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000351
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000254
+          },
+          {
+            "start_seconds": 3.388,
+            "clean": 1.0,
+            "noisy": 0.000241
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 5.888,
+        "tail_silence_seconds": 0.056,
+        "overall_rms": 0.056888,
+        "end_rms": 0.018652,
+        "end_peak": 0.114176,
+        "end_rms_ratio": 0.327876,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000351,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "但是喝酒啊你不是说贵就好我们抛开瓶子之后我们去盲品的时候感受它会是不一样的体验",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "但是喝酒啊你不是说贵就好我们抛开瓶子之后我们去盲品的时候感受它会是不一样的体验",
+            "similarity_to_page": 0.95,
+            "avg_logprob": -0.08517984092235566,
+            "no_speech_prob": 0.11780955642461777
+          },
+          {
+            "model_name": "medium",
+            "text": "但是喝酒啊你不是說貴就好我們拋開瓶子之後我們去盲瓶的時候感受它會是不一樣的體驗",
+            "similarity_to_page": 0.625,
+            "avg_logprob": -0.23434145717571178,
+            "no_speech_prob": 0.11854112148284912
+          }
+        ],
+        "agreement": 0.6667
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "他们",
+            "它"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.5,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.95,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_35.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_35.wav",
+      "page_text": "主要的差别是在入口的那一下的爆香感。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000216
+        },
+        "max_window_noisy": 0.000227,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 0.295,
+            "clean": 1.0,
+            "noisy": 0.00022
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.795,
+        "tail_silence_seconds": 0.091,
+        "overall_rms": 0.057258,
+        "end_rms": 0.035524,
+        "end_peak": 0.288116,
+        "end_rms_ratio": 0.620421,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000227,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "主要的差别是在路口的那一下的爆香感",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "主要的差别是在路口的那一下的爆香感",
+            "similarity_to_page": 0.9412,
+            "avg_logprob": -0.12037420900244462,
+            "no_speech_prob": 0.16390372812747955
+          },
+          {
+            "model_name": "medium",
+            "text": "主要的差別是在入口的那一下的爆香感",
+            "similarity_to_page": 0.9412,
+            "avg_logprob": -0.25296189910487127,
+            "no_speech_prob": 0.07778575271368027
+          }
+        ],
+        "agreement": 0.8824
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "入",
+            "路"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.22,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_130ms",
+          "high_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9412,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_14.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_14.wav",
+      "page_text": "汾酒真的是特别特别的干净啊，就是很纯粹的那种淡淡的果香，己酸乙酯的那种青苹果味淡淡一点点苹果味也可以捕捉到，反正就是清新愉悦。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000458
+        },
+        "max_window_noisy": 0.000357,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000269
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000305
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000278
+          },
+          {
+            "start_seconds": 5.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 6.0,
+            "clean": 1.0,
+            "noisy": 0.000357
+          },
+          {
+            "start_seconds": 7.0,
+            "clean": 1.0,
+            "noisy": 0.000292
+          },
+          {
+            "start_seconds": 8.0,
+            "clean": 1.0,
+            "noisy": 0.000282
+          },
+          {
+            "start_seconds": 8.465,
+            "clean": 1.0,
+            "noisy": 0.000231
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 10.965,
+        "tail_silence_seconds": 0.093,
+        "overall_rms": 0.066273,
+        "end_rms": 0.023071,
+        "end_peak": 0.160884,
+        "end_rms_ratio": 0.348124,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000458,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "粉酒真的是特别特别的干净就是很纯粹的那种淡淡的果香挤酸已知的那种青苹果味淡淡一点点苹果味也可以辅佐到反正就是清新愉悦",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "粉酒真的是特别特别的干净就是很纯粹的那种淡淡的果香挤酸已知的那种青苹果味淡淡一点点苹果味也可以辅佐到反正就是清新愉悦",
+            "similarity_to_page": 0.8889,
+            "avg_logprob": -0.0956181967869783,
+            "no_speech_prob": 0.1785591095685959
+          },
+          {
+            "model_name": "medium",
+            "text": "粉酒真的是特别特别的干净就是很纯粹的那种淡淡的果香挤酸以至的那种清苹果味淡淡一点点苹果味也可以辅佐到反正就是清心愉悦",
+            "similarity_to_page": 0.8547,
+            "avg_logprob": -0.21849543868731228,
+            "no_speech_prob": 0.05735981836915016
+          }
+        ],
+        "agreement": 0.931
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "汾",
+            "粉"
+          ],
+          [
+            "己",
+            "挤"
+          ],
+          [
+            "乙酯",
+            "已知"
+          ],
+          [
+            "捕捉",
+            "辅佐"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 6,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.65,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.22,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_130ms",
+          "medium_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8889,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_65.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_65.wav",
+      "page_text": "这就是我的一个感受吧，不喜勿喷啊，感谢大家收看。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000237
+        },
+        "max_window_noisy": 0.000227,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000223
+          },
+          {
+            "start_seconds": 0.892,
+            "clean": 1.0,
+            "noisy": 0.000227
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.392,
+        "tail_silence_seconds": 0.072,
+        "overall_rms": 0.062261,
+        "end_rms": 0.041445,
+        "end_peak": 0.32084,
+        "end_rms_ratio": 0.66567,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000237,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "这就是我的一个感受吧不洗雾盆啊感谢大家收看",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "这就是我的一个感受吧不洗雾盆啊感谢大家收看",
+            "similarity_to_page": 0.8571,
+            "avg_logprob": -0.2427019214630127,
+            "no_speech_prob": 0.003236084943637252
+          },
+          {
+            "model_name": "medium",
+            "text": "這就是我的一個感受吧不喜勿騰啊感謝大家收看",
+            "similarity_to_page": 0.8095,
+            "avg_logprob": -0.3870528091986974,
+            "no_speech_prob": 0.09138432890176773
+          }
+        ],
+        "agreement": 0.7143
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "喜勿喷",
+            "洗雾盆"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 3,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.54,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8571,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_18.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_18.wav",
+      "page_text": "明显的更加的浓郁，特别传统的一种味道。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000227
+        },
+        "max_window_noisy": 0.000246,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 0.359,
+            "clean": 1.0,
+            "noisy": 0.000246
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.859,
+        "tail_silence_seconds": 0.051,
+        "overall_rms": 0.071137,
+        "end_rms": 0.022697,
+        "end_peak": 0.119158,
+        "end_rms_ratio": 0.319067,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000246,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "明显的更加的浓郁特别传统那种味道",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "明显的更加的浓郁特别传统那种味道",
+            "similarity_to_page": 0.9091,
+            "avg_logprob": -0.08791816205932544,
+            "no_speech_prob": 0.38775435090065
+          },
+          {
+            "model_name": "medium",
+            "text": "明显的更加的浓郁特别传统那种味道",
+            "similarity_to_page": 0.9091,
+            "avg_logprob": -0.2378766926435324,
+            "no_speech_prob": 0.10132347792387009
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "的一",
+            "那"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9091,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_9.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_9.wav",
+      "page_text": "所以说尽量少倒点。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000214
+        },
+        "max_window_noisy": 0.000214,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000214
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.237,
+        "tail_silence_seconds": 0.061,
+        "overall_rms": 0.030566,
+        "end_rms": 0.017119,
+        "end_peak": 0.17064,
+        "end_rms_ratio": 0.560086,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000214,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "所以说尽量扫到底",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "所以说尽量扫到底",
+            "similarity_to_page": 0.625,
+            "avg_logprob": -0.17692985859784213,
+            "no_speech_prob": 0.055859871208667755
+          },
+          {
+            "model_name": "medium",
+            "text": "所以說盡量掃到底",
+            "similarity_to_page": 0.375,
+            "avg_logprob": -0.31096496365287085,
+            "no_speech_prob": 0.050504170358181
+          }
+        ],
+        "agreement": 0.625
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "少倒点",
+            "扫到底"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 3,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.625,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_61.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_61.wav",
+      "page_text": "清香型酒就是这样，并不是说越贵的可能就是最好的，因为喝酒很多时候是看瓶子。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000278
+        },
+        "max_window_noisy": 0.000257,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000235
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.00022
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000257
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 4.391,
+            "clean": 1.0,
+            "noisy": 0.00022
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.891,
+        "tail_silence_seconds": 0.171,
+        "overall_rms": 0.056875,
+        "end_rms": 0.006389,
+        "end_peak": 0.03675,
+        "end_rms_ratio": 0.112333,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000278,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "七香型酒就是这样并不是说越贵的可能就是最好的因为喝酒很多时候是看品质",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "其实相信酒就是这样并不是说越贵的可能就是最好的因为喝酒很多时候是看皮",
+            "similarity_to_page": 0.8529,
+            "avg_logprob": -0.15071799737565658,
+            "no_speech_prob": 0.34646445512771606
+          },
+          {
+            "model_name": "medium",
+            "text": "七香型酒就是这样并不是说越贵的可能就是最好的因为喝酒很多时候是看品质",
+            "similarity_to_page": 0.9118,
+            "avg_logprob": -0.3258185708844984,
+            "no_speech_prob": 0.16187196969985962
+          }
+        ],
+        "agreement": 0.8529
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "清",
+            "七"
+          ],
+          [
+            "瓶子",
+            "品质"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 3,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 0.9118,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_41.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_41.wav",
+      "page_text": "差距不是特别大啊，没有好特别多。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000237
+        },
+        "max_window_noisy": 0.00025,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 0.167,
+            "clean": 1.0,
+            "noisy": 0.000223
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.667,
+        "tail_silence_seconds": 0.035,
+        "overall_rms": 0.028179,
+        "end_rms": 0.020466,
+        "end_peak": 0.101653,
+        "end_rms_ratio": 0.726307,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.00025,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "差距不是特别大没有好特别多",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "差距不是特别大没有好特别多",
+            "similarity_to_page": 0.963,
+            "avg_logprob": -0.1613307139452766,
+            "no_speech_prob": 0.04667932912707329
+          },
+          {
+            "model_name": "medium",
+            "text": "差距不是特别大没有好特别多",
+            "similarity_to_page": 0.963,
+            "avg_logprob": -0.39710047665764303,
+            "no_speech_prob": 0.1228109821677208
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": true,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.75,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.52,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_rms_ratio",
+          "small_delete_only_diff"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.963,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_0.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_0.wav",
+      "page_text": "不少人说汾酒越高端的智商税含量越高，越不值得购买，越没有价值。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000265
+        },
+        "max_window_noisy": 0.000296,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000235
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000296
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000296
+          },
+          {
+            "start_seconds": 2.279,
+            "clean": 1.0,
+            "noisy": 0.000265
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 4.779,
+        "tail_silence_seconds": 0.195,
+        "overall_rms": 0.059207,
+        "end_rms": 0.003691,
+        "end_peak": 0.02554,
+        "end_rms_ratio": 0.06234,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000296,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "不少人说粉酒越高端的智商税含量越高越不值得购买越没有价值",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "不少人说粉酒越高端的智商税含量越高越不值得购买越没有价值",
+            "similarity_to_page": 0.9643,
+            "avg_logprob": -0.08146591935046883,
+            "no_speech_prob": 0.17277415096759796
+          },
+          {
+            "model_name": "medium",
+            "text": "不少人说粉酒越高端的智商水含量越高越不值得购买越没有价值",
+            "similarity_to_page": 0.9286,
+            "avg_logprob": -0.2278357767745068,
+            "no_speech_prob": 0.07869083434343338
+          }
+        ],
+        "agreement": 0.9643
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "汾",
+            "粉"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 0.9643,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_54.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_54.wav",
+      "page_text": "并不是因为年份让这些酒变得更好，是因为它放到瓶子里的时候是非常好的酒。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000278
+        },
+        "max_window_noisy": 0.000265,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000235
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000235
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 3.175,
+            "clean": 1.0,
+            "noisy": 0.00025
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 5.675,
+        "tail_silence_seconds": 0.051,
+        "overall_rms": 0.056872,
+        "end_rms": 0.014776,
+        "end_peak": 0.10206,
+        "end_rms_ratio": 0.25982,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000278,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "并不是因为年份让这些酒变得更好是因为它放到瓶子里的时候是非常好的酒",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "并不是因为年份让这些酒变得更好是因为它放到瓶子里的时候是非常好的酒",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.07908099393049876,
+            "no_speech_prob": 0.056462716311216354
+          },
+          {
+            "model_name": "medium",
+            "text": "并不是因为年份让这些酒变得更好是因为它放到瓶子里的时候是非常好的酒",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.2265681334904262,
+            "no_speech_prob": 0.025994310155510902
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_33.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_33.wav",
+      "page_text": "它的香气呢中后段虽然没有非常强劲的支撑，因为清香型的酒的风格确实也就是这样它并不是有多复杂的香气来支撑，但是明显可以感受到更长啊，真的是长很多。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000519
+        },
+        "max_window_noisy": 0.000286,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000214
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 5.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          },
+          {
+            "start_seconds": 6.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 7.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 8.0,
+            "clean": 1.0,
+            "noisy": 0.00022
+          },
+          {
+            "start_seconds": 9.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 9.02,
+            "clean": 1.0,
+            "noisy": 0.000241
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 11.52,
+        "tail_silence_seconds": 0.056,
+        "overall_rms": 0.0641,
+        "end_rms": 0.039598,
+        "end_peak": 0.207255,
+        "end_rms_ratio": 0.617749,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000519,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "它的香气中后段虽然没有非常强劲的支撑因为清香型的酒的风格确实也就是这样它并不是有多复杂的香气来支撑但是明显可以感受到更长真的是长很多",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "它的香气中后段虽然没有非常强劲的支撑因为清香型的酒的风格确实也就是这样它并不是有多复杂的香气来支撑但是明显可以感受到更长真的是长很多",
+            "similarity_to_page": 0.9851,
+            "avg_logprob": -0.07751669625441233,
+            "no_speech_prob": 0.07322951406240463
+          },
+          {
+            "model_name": "medium",
+            "text": "它的香氣中後段雖然沒有非常強勁的支撐因為清香型的酒的風格確實也就是這樣它並不是有多複雜的香氣來支撐但是明顯可以感受到更長真的是長很多",
+            "similarity_to_page": 0.6567,
+            "avg_logprob": -0.19962768049703705,
+            "no_speech_prob": 0.11324957013130188
+          }
+        ],
+        "agreement": 0.6667
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "呢",
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 2,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": true,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.5,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.52,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "medium_end_rms_ratio",
+          "small_delete_only_diff"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9851,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_16.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_16.wav",
+      "page_text": "这款酒明显感觉更老更加的柔和，香气浓郁度会比它略高一点。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000275
+        },
+        "max_window_noisy": 0.000261,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          },
+          {
+            "start_seconds": 2.151,
+            "clean": 1.0,
+            "noisy": 0.000246
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 4.651,
+        "tail_silence_seconds": 0.067,
+        "overall_rms": 0.070985,
+        "end_rms": 0.015102,
+        "end_peak": 0.094955,
+        "end_rms_ratio": 0.21275,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000275,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "这款酒明显感觉更老更加的柔和相信浓郁度会比它略高一点",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "这款酒明显感觉更老更加的柔和相信浓郁度会比它略高一点",
+            "similarity_to_page": 0.9231,
+            "avg_logprob": -0.08480148806291468,
+            "no_speech_prob": 0.15507981181144714
+          },
+          {
+            "model_name": "medium",
+            "text": "这款就明显感觉更老更加的柔和相信浓郁度会比它略高一点",
+            "similarity_to_page": 0.8846,
+            "avg_logprob": -0.24706188545507543,
+            "no_speech_prob": 0.03397217392921448
+          }
+        ],
+        "agreement": 0.9615
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "香气",
+            "相信"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9231,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_43.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_43.wav",
+      "page_text": "它确实比这个前面几款啊香气浓郁的多，但是清香的香气太纯粹了，太简单了。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000292
+        },
+        "max_window_noisy": 0.000265,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000257
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000223
+          },
+          {
+            "start_seconds": 3.815,
+            "clean": 1.0,
+            "noisy": 0.000231
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.315,
+        "tail_silence_seconds": 0.059,
+        "overall_rms": 0.059146,
+        "end_rms": 0.015327,
+        "end_peak": 0.098541,
+        "end_rms_ratio": 0.259144,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000292,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "它确实比这个前面几款香气浓郁得多但是清香的香气太纯粹了太简单了",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "它确实比这个前面几款香气浓郁得多但是清香的香气太纯粹了太简单了",
+            "similarity_to_page": 0.9524,
+            "avg_logprob": -0.11504745795283207,
+            "no_speech_prob": 0.07477668672800064
+          },
+          {
+            "model_name": "medium",
+            "text": "它确实比这个前面几款香气浓郁的多但是清香的香气太纯粹太简单了",
+            "similarity_to_page": 0.9677,
+            "avg_logprob": -0.2285435926169157,
+            "no_speech_prob": 0.015078608877956867
+          }
+        ],
+        "agreement": 0.9508
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "的",
+            "得"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.75,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "text_ends_with_了"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9524,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_7.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_7.wav",
+      "page_text": "有点奢侈了，好多了。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000362
+        },
+        "max_window_noisy": 0.000362,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000362
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.984,
+        "tail_silence_seconds": 0.056,
+        "overall_rms": 0.0287,
+        "end_rms": 0.017686,
+        "end_peak": 0.163459,
+        "end_rms_ratio": 0.61622,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000362,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "有点奢侈了,抱多了",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "有点奢侈了,抱多了",
+            "similarity_to_page": 0.875,
+            "avg_logprob": -0.36071466548102243,
+            "no_speech_prob": 0.051312774419784546
+          },
+          {
+            "model_name": "medium",
+            "text": "有點奢侈了好多了",
+            "similarity_to_page": 0.875,
+            "avg_logprob": -0.49300951191357206,
+            "no_speech_prob": 0.03138867765665054
+          }
+        ],
+        "agreement": 0.75
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "好",
+            "抱"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.56,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "medium_end_rms_ratio",
+          "text_ends_with_了"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.875,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_59.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_59.wav",
+      "page_text": "那这款青花二零呢它四百块钱酒价格低了十倍，可能会被别人评为说诶这款酒确实很好喝很顺口，这就是我的一个感受啊，清香型的酒呢其实说他们之间确实是有差异，肯定是越贵的越好这不用置疑，毋庸置疑。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000767
+        },
+        "max_window_noisy": 0.000278,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          },
+          {
+            "start_seconds": 5.0,
+            "clean": 1.0,
+            "noisy": 0.000278
+          },
+          {
+            "start_seconds": 6.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 7.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 8.0,
+            "clean": 1.0,
+            "noisy": 0.000223
+          },
+          {
+            "start_seconds": 9.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 10.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 11.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 12.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 13.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 13.052,
+            "clean": 1.0,
+            "noisy": 0.000237
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 15.552,
+        "tail_silence_seconds": 0.04,
+        "overall_rms": 0.06121,
+        "end_rms": 0.023468,
+        "end_peak": 0.120023,
+        "end_rms_ratio": 0.383399,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000767,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "那这款青花20呢,它400块钱的酒价格低了10倍可能会被别人评为说,诶,这款酒确实很好喝,很顺口这就是我的一个感受啊青香型的酒呢,其实是说它们之间确实是有差异肯定是越贵的越好,这不用质疑,勿用质疑",
+        "source": "agree:medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "那这款清华20呢它400块钱的酒价格低了10倍可能会被别人评为说这款酒确实很好喝很顺口这就是我的一个感受清香型的酒呢其实是说它们之间确实是有差异肯定是越贵的越好这不用质疑毋庸置疑",
+            "similarity_to_page": 0.8636,
+            "avg_logprob": -0.10954410826959529,
+            "no_speech_prob": 0.057585183531045914
+          },
+          {
+            "model_name": "medium",
+            "text": "那这款青花20呢,它400块钱的酒价格低了10倍可能会被别人评为说,诶,这款酒确实很好喝,很顺口这就是我的一个感受啊青香型的酒呢,其实是说它们之间确实是有差异肯定是越贵的越好,这不用质疑,勿用质疑",
+            "similarity_to_page": 0.8539,
+            "avg_logprob": -0.2339000358645405,
+            "no_speech_prob": 0.062100060284137726
+          }
+        ],
+        "agreement": 0.9222
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [
+          "的",
+          "是"
+        ],
+        "replaced_pairs": [
+          [
+            "二零",
+            "20"
+          ],
+          [
+            "四百",
+            "400"
+          ],
+          [
+            "十",
+            "10"
+          ],
+          [
+            "清",
+            "青"
+          ],
+          [
+            "他",
+            "它"
+          ],
+          [
+            "置",
+            "质"
+          ],
+          [
+            "毋庸置",
+            "勿用质"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 2,
+        "replace_delta": 13,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8539,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_45.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_45.wav",
+      "page_text": "爆发或者说有层次感，没有简单。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00022
+        },
+        "max_window_noisy": 0.000227,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 0.359,
+            "clean": 1.0,
+            "noisy": 0.000227
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.859,
+        "tail_silence_seconds": 0.163,
+        "overall_rms": 0.060172,
+        "end_rms": 0.00764,
+        "end_peak": 0.037752,
+        "end_rms_ratio": 0.126966,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000227,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "爆发或者说有层次感没有 简单",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "爆发或者说有层次感没有 简单",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.10384974040483173,
+            "no_speech_prob": 0.6283925175666809
+          },
+          {
+            "model_name": "medium",
+            "text": "爆发或者说有层次感没有简单",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.3464784950017929,
+            "no_speech_prob": 0.2147665023803711
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_32.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_32.wav",
+      "page_text": "复兴版的滋味比青花二零长得多，你一口喝进去可以感觉它这个酒在口腔里面持续的那种甜感跟冲击感，持续的时间啊，都是更久的。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000418
+        },
+        "max_window_noisy": 0.000257,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000257
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000235
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000223
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 5.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 6.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 7.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 8.0,
+            "clean": 1.0,
+            "noisy": 0.000216
+          },
+          {
+            "start_seconds": 8.444,
+            "clean": 1.0,
+            "noisy": 0.000207
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 10.944,
+        "tail_silence_seconds": 0.056,
+        "overall_rms": 0.063425,
+        "end_rms": 0.02384,
+        "end_peak": 0.1151,
+        "end_rms_ratio": 0.375867,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000418,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "复兴版的滋味比氰化二磷长得多你一口喝进去可以感觉它这个酒在口腔里面持续的那种甜感跟冲击感持续的时间都是更久的",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "复兴版的滋味比氰化二磷长得多你一口喝进去可以感觉它这个酒在口腔里面持续的那种甜感跟冲击感持续的时间都是更久的",
+            "similarity_to_page": 0.9358,
+            "avg_logprob": -0.12359900007906713,
+            "no_speech_prob": 0.6755479574203491
+          },
+          {
+            "model_name": "medium",
+            "text": "復星版的滋味比青華惡靈藏的多你一口喝進去可以感覺它這個酒在口腔裡面持續的那種甜感跟衝擊感持續的時間都是更久的",
+            "similarity_to_page": 0.6422,
+            "avg_logprob": -0.24762474233284593,
+            "no_speech_prob": 0.2852327227592468
+          }
+        ],
+        "agreement": 0.6296
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "青花",
+            "氰化"
+          ],
+          [
+            "零",
+            "磷"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 3,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.4,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "text_ends_with_的"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9358,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_46.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_46.wav",
+      "page_text": "六十五度的酒就是不一样的，喝起来呢。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000286
+        },
+        "max_window_noisy": 0.000286,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.389,
+        "tail_silence_seconds": 0.037,
+        "overall_rms": 0.019394,
+        "end_rms": 0.017174,
+        "end_peak": 0.109049,
+        "end_rms_ratio": 0.885519,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000286,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "65度的酒就是不一样喝起来呢",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "65度的酒就是不一样喝起来呢",
+            "similarity_to_page": 0.8,
+            "avg_logprob": -0.2275683739606072,
+            "no_speech_prob": 0.09589141607284546
+          },
+          {
+            "model_name": "medium",
+            "text": "65度的酒就是不一样喝起来呢",
+            "similarity_to_page": 0.8,
+            "avg_logprob": -0.3251310797298656,
+            "no_speech_prob": 0.07805855572223663
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "的"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "六十五",
+            "65"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 3,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.65,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.56,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_rms_ratio",
+          "text_ends_with_呢"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_10.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_10.wav",
+      "page_text": "因为这些都是好酒啊倒出来你要浪费了也不合适，都要把它喝完。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000301
+        },
+        "max_window_noisy": 0.000301,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000275
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000301
+          },
+          {
+            "start_seconds": 2.791,
+            "clean": 1.0,
+            "noisy": 0.000235
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 5.291,
+        "tail_silence_seconds": 0.075,
+        "overall_rms": 0.064801,
+        "end_rms": 0.041026,
+        "end_peak": 0.282949,
+        "end_rms_ratio": 0.633108,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000301,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "因为这些都是好酒啊倒出来你要浪费了也不合适都要把它喝完",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "因为这些都是好酒啊倒出来你要浪费了也不合适都要把它喝完",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.13856932740001118,
+            "no_speech_prob": 0.08039700984954834
+          },
+          {
+            "model_name": "medium",
+            "text": "因为这些都是好酒啊,倒出来你要浪费了也不合适,都要把它喝完",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.22987218300501505,
+            "no_speech_prob": 0.018463963642716408
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.54,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_62.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_62.wav",
+      "page_text": "瓶子越贵，酒越好喝，这就是百分之九十五以上的消费者对白酒的一个认知。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000265
+        },
+        "max_window_noisy": 0.00022,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000216
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000216
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.00021
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000216
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.00022
+          },
+          {
+            "start_seconds": 4.22,
+            "clean": 1.0,
+            "noisy": 0.000214
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.72,
+        "tail_silence_seconds": 0.216,
+        "overall_rms": 0.06687,
+        "end_rms": 0.006242,
+        "end_peak": 0.026216,
+        "end_rms_ratio": 0.093349,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000265,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "瓶子越贵酒越好喝这就是95%以上的消费者对白酒的一个认知",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "瓶子越贵酒越好喝这就是95%以上的消费者对白酒的一个认知",
+            "similarity_to_page": 0.8475,
+            "avg_logprob": -0.09952944703400135,
+            "no_speech_prob": 0.10528069734573364
+          },
+          {
+            "model_name": "medium",
+            "text": "瓶子越贵酒越好喝这就是95%以上的消费者对白酒的一个认知",
+            "similarity_to_page": 0.8475,
+            "avg_logprob": -0.2739801906487521,
+            "no_speech_prob": 0.0645420253276825
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "百分之九十五",
+            "95%"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 6,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 0.8475,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_24.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_24.wav",
+      "page_text": "有点东西啊。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000191
+        },
+        "max_window_noisy": 0.000191,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000191
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 0.875,
+        "tail_silence_seconds": 0.083,
+        "overall_rms": 0.024153,
+        "end_rms": 0.006586,
+        "end_peak": 0.040267,
+        "end_rms_ratio": 0.272691,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000191,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "有点东西啊",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "有点东西啊",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.21922720968723297,
+            "no_speech_prob": 0.6223284006118774
+          },
+          {
+            "model_name": "medium",
+            "text": "有点东西啊",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.5192127972841263,
+            "no_speech_prob": 0.16000546514987946
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "text_ends_with_啊"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_23.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_23.wav",
+      "page_text": "浅闻闻起来的香气呢是非常的淡的啊并不是很浓郁，但是生闻又可以感受到它这款酒有东西。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000301
+        },
+        "max_window_noisy": 0.000282,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000275
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000282
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.00021
+          },
+          {
+            "start_seconds": 4.753,
+            "clean": 1.0,
+            "noisy": 0.00021
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 7.253,
+        "tail_silence_seconds": 0.061,
+        "overall_rms": 0.063824,
+        "end_rms": 0.027882,
+        "end_peak": 0.109387,
+        "end_rms_ratio": 0.436862,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000301,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "浅闻闻起来的香气是非常的淡的并不是很浓郁但是深闻又可以感受到它这款酒有东西",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "浅闻闻起来的香气是非常的淡的并不是很浓郁但是深闻又可以感受到它这款酒有东西",
+            "similarity_to_page": 0.9474,
+            "avg_logprob": -0.09714977108702368,
+            "no_speech_prob": 0.050076115876436234
+          },
+          {
+            "model_name": "medium",
+            "text": "浅闻闻起来的香气是非常的淡的并不是很浓郁但是深闻又可以感受到他这款酒有东西",
+            "similarity_to_page": 0.9211,
+            "avg_logprob": -0.23818578618638062,
+            "no_speech_prob": 0.041333846747875214
+          }
+        ],
+        "agreement": 0.973
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "呢",
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "生",
+            "深"
+          ]
+        ],
+        "deleted_len": 2,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.75,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9474,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_48.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_48.wav",
+      "page_text": "在喉咙里面是可以感受到热，不会觉得辣。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000254
+        },
+        "max_window_noisy": 0.00025,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 0.764,
+            "clean": 1.0,
+            "noisy": 0.00025
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.264,
+        "tail_silence_seconds": 0.048,
+        "overall_rms": 0.064972,
+        "end_rms": 0.085623,
+        "end_peak": 0.482456,
+        "end_rms_ratio": 1.31783,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000254,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "在喉嚨里面是可以感受到乐不会觉得辣",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "在喉嚨裏面是可以感受到樂不會覺得辣",
+            "similarity_to_page": 0.7059,
+            "avg_logprob": -0.2755728623141413,
+            "no_speech_prob": 0.06061142310500145
+          },
+          {
+            "model_name": "medium",
+            "text": "在喉嚨里面是可以感受到乐不会觉得辣",
+            "similarity_to_page": 0.8824,
+            "avg_logprob": -0.31818128715861926,
+            "no_speech_prob": 0.08241582661867142
+          }
+        ],
+        "agreement": 0.7647
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "咙",
+            "嚨"
+          ],
+          [
+            "热",
+            "乐"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.76,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "high_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8824,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_34.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_34.wav",
+      "page_text": "老的青花三零跟青花二零呢其实差别非常的小。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000275
+        },
+        "max_window_noisy": 0.000311,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000305
+          },
+          {
+            "start_seconds": 0.999,
+            "clean": 1.0,
+            "noisy": 0.000311
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.499,
+        "tail_silence_seconds": 0.059,
+        "overall_rms": 0.052169,
+        "end_rms": 0.012834,
+        "end_peak": 0.106379,
+        "end_rms_ratio": 0.246007,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000311,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "老的青花30跟青花20其實差別非常的小",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "老的清华30跟清华20其实差别非常的小",
+            "similarity_to_page": 0.5641,
+            "avg_logprob": -0.13003100951512656,
+            "no_speech_prob": 0.3119933605194092
+          },
+          {
+            "model_name": "medium",
+            "text": "老的青花30跟青花20其實差別非常的小",
+            "similarity_to_page": 0.6667,
+            "avg_logprob": -0.3487987798802993,
+            "no_speech_prob": 0.13120137155056
+          }
+        ],
+        "agreement": 0.6842
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "三零",
+            "30"
+          ],
+          [
+            "二零呢",
+            "20"
+          ],
+          [
+            "实",
+            "實"
+          ],
+          [
+            "别",
+            "別"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 7,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.6667,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_15.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_15.wav",
+      "page_text": "青花三零复兴版明显可以感受到酒体更老啊。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000246
+        },
+        "max_window_noisy": 0.000278,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 0.295,
+            "clean": 1.0,
+            "noisy": 0.000278
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.795,
+        "tail_silence_seconds": 0.035,
+        "overall_rms": 0.033629,
+        "end_rms": 0.019158,
+        "end_peak": 0.096407,
+        "end_rms_ratio": 0.569701,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000278,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "青蛙三菱复兴版明显可以感受到久体更老",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "青蛙三菱复兴版明显可以感受到久体更老",
+            "similarity_to_page": 0.8108,
+            "avg_logprob": -0.2567723751068115,
+            "no_speech_prob": 0.11085280030965805
+          },
+          {
+            "model_name": "medium",
+            "text": "青蛙三菱复型版明显可以感受到韭体更老",
+            "similarity_to_page": 0.7568,
+            "avg_logprob": -0.4405324459075928,
+            "no_speech_prob": 0.05304356664419174
+          }
+        ],
+        "agreement": 0.8889
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "花",
+            "蛙"
+          ],
+          [
+            "零",
+            "菱"
+          ],
+          [
+            "酒",
+            "久"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 3,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.52,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8108,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_11.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_11.wav",
+      "page_text": "所以说其实倒酒的时候我还是喜欢那种有珠子的，像这些没有珠子的一不小心就倒多了。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00032
+        },
+        "max_window_noisy": 0.000418,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000235
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000311
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000418
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000393
+          },
+          {
+            "start_seconds": 3.153,
+            "clean": 1.0,
+            "noisy": 0.000286
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 5.653,
+        "tail_silence_seconds": 0.037,
+        "overall_rms": 0.059816,
+        "end_rms": 0.070101,
+        "end_peak": 0.32456,
+        "end_rms_ratio": 1.171959,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000418,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "所以说其实倒酒的时候我还是喜欢那种有珠子的像这些没有珠子的一不小心就倒多了",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "所以说其实倒酒的时候我还是喜欢那种有珠子的像这些没有珠子的一不小心就倒多了",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.1284601606428623,
+            "no_speech_prob": 0.23999236524105072
+          },
+          {
+            "model_name": "medium",
+            "text": "所以说其实倒酒的时候还是喜欢那种有珠子的像这些没有珠子的一不小心就倒多了",
+            "similarity_to_page": 0.9863,
+            "avg_logprob": -0.2559604031699044,
+            "no_speech_prob": 0.067268006503582
+          }
+        ],
+        "agreement": 0.9863
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.88,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "high_end_rms_ratio",
+          "text_ends_with_了"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_63.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_63.wav",
+      "page_text": "清香型特别明显能感受到这一点。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000227
+        },
+        "max_window_noisy": 0.000237,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 0.38,
+            "clean": 1.0,
+            "noisy": 0.000237
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.88,
+        "tail_silence_seconds": 0.168,
+        "overall_rms": 0.060309,
+        "end_rms": 0.004615,
+        "end_peak": 0.044238,
+        "end_rms_ratio": 0.076514,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000237,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "清香型特别明显能感受到这一点",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "清香型特别明显能感受到这一点",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.05583078720990349,
+            "no_speech_prob": 0.1054394468665123
+          },
+          {
+            "model_name": "medium",
+            "text": "清香型特别明显能感受到这一点",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.27370351903578816,
+            "no_speech_prob": 0.07228752970695496
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_52.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_52.wav",
+      "page_text": "那一般一点的酒呢他可能做了青花二零，再低端一点的做了一些什么老白汾高端酒才会存这么多年。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000311
+        },
+        "max_window_noisy": 0.000278,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000269
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000278
+          },
+          {
+            "start_seconds": 3.9,
+            "clean": 1.0,
+            "noisy": 0.00025
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.4,
+        "tail_silence_seconds": 0.08,
+        "overall_rms": 0.056407,
+        "end_rms": 0.009225,
+        "end_peak": 0.056601,
+        "end_rms_ratio": 0.16354,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000311,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "那一般一点的酒它可能做了清华恶理再低端一点的做了一些什么老白粉高端酒才会存这么多年",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "那一般一点的酒它可能做了清华恶理再低端一点的做了一些什么老白粉高端酒才会存这么多年",
+            "similarity_to_page": 0.8434,
+            "avg_logprob": -0.15215633004903795,
+            "no_speech_prob": 0.11086420714855194
+          },
+          {
+            "model_name": "medium",
+            "text": "那一般一點的酒呢他可能做的清華惡劣再低端一點的做了一些什麼老白粉高端酒才會存這麼多年",
+            "similarity_to_page": 0.7143,
+            "avg_logprob": -0.23483123098100936,
+            "no_speech_prob": 0.1259598284959793
+          }
+        ],
+        "agreement": 0.7229
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "呢他",
+            "它"
+          ],
+          [
+            "青花二零",
+            "清华恶理"
+          ],
+          [
+            "汾",
+            "粉"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 7,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8434,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_19.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_19.wav",
+      "page_text": "那这一款呢会偏果香清甜一些。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000216
+        },
+        "max_window_noisy": 0.000216,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000216
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.475,
+        "tail_silence_seconds": 0.059,
+        "overall_rms": 0.025378,
+        "end_rms": 0.009137,
+        "end_peak": 0.047947,
+        "end_rms_ratio": 0.360054,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000216,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "那这一款的会偏果香清甜一些",
+        "source": "agree:medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "那这一款会偏果香清甜一些",
+            "similarity_to_page": 0.96,
+            "avg_logprob": -0.1993715482599595,
+            "no_speech_prob": 0.02821957692503929
+          },
+          {
+            "model_name": "medium",
+            "text": "那这一款的会偏果香清甜一些",
+            "similarity_to_page": 0.9231,
+            "avg_logprob": -0.4049232881516218,
+            "no_speech_prob": 0.028781695291399956
+          }
+        ],
+        "agreement": 0.96
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "呢",
+            "的"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9231,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_53.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_53.wav",
+      "page_text": "普通的一个酒质黄盖玻汾的酒质它可能放到五十年再卖吗？",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000237
+        },
+        "max_window_noisy": 0.000265,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000235
+          },
+          {
+            "start_seconds": 0.956,
+            "clean": 1.0,
+            "noisy": 0.000265
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.456,
+        "tail_silence_seconds": 0.048,
+        "overall_rms": 0.062633,
+        "end_rms": 0.048652,
+        "end_peak": 0.28974,
+        "end_rms_ratio": 0.776769,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000265,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "普通那个酒子黄钙剥粉的酒子它可能放到50年再卖",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "普通那个酒子黄钙剥粉的酒子它可能放到50年再卖",
+            "similarity_to_page": 0.625,
+            "avg_logprob": -0.13824700828521483,
+            "no_speech_prob": 0.20788952708244324
+          },
+          {
+            "model_name": "medium",
+            "text": "普通那个酒子黄盖拨粉的酒子他可能放到50年再卖",
+            "similarity_to_page": 0.625,
+            "avg_logprob": -0.3898322212285009,
+            "no_speech_prob": 0.16638095676898956
+          }
+        ],
+        "agreement": 0.8696
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "吗"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "的一",
+            "那"
+          ],
+          [
+            "质",
+            "子"
+          ],
+          [
+            "盖玻汾",
+            "钙剥粉"
+          ],
+          [
+            "质",
+            "子"
+          ],
+          [
+            "五十",
+            "50"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 9,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.52,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.66,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.625,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_22.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_22.wav",
+      "page_text": "感觉它的香气非常的低调。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000207
+        },
+        "max_window_noisy": 0.000207,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000207
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.453,
+        "tail_silence_seconds": 0.133,
+        "overall_rms": 0.04057,
+        "end_rms": 0.006007,
+        "end_peak": 0.030623,
+        "end_rms_ratio": 0.148063,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000207,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "感觉它的香气非常的低调",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "感觉它的香气非常的低调",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.2525957028071086,
+            "no_speech_prob": 0.008488918654620647
+          },
+          {
+            "model_name": "medium",
+            "text": "感觉它的香气非常的低调",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.2947636842727661,
+            "no_speech_prob": 0.014042667113244534
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_51.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_51.wav",
+      "page_text": "他把特别高质量的酒拿来长期储存，做成了现在的这个青花五零。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000265
+        },
+        "max_window_noisy": 0.000254,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000254
+          },
+          {
+            "start_seconds": 2.364,
+            "clean": 1.0,
+            "noisy": 0.000231
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 4.864,
+        "tail_silence_seconds": 0.12,
+        "overall_rms": 0.053908,
+        "end_rms": 0.010552,
+        "end_peak": 0.043351,
+        "end_rms_ratio": 0.195748,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000265,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "他把特别高质量的酒拿来长期储存做成了现在的清华物理",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "他把特别高质量的酒拿来长期储存做成了现在的清华物理",
+            "similarity_to_page": 0.8077,
+            "avg_logprob": -0.17033567978069186,
+            "no_speech_prob": 0.06760276854038239
+          },
+          {
+            "model_name": "medium",
+            "text": "他把特别高质量的酒拿来长期储存做成了现在的清华物品",
+            "similarity_to_page": 0.8077,
+            "avg_logprob": -0.30700936168432236,
+            "no_speech_prob": 0.1220787912607193
+          }
+        ],
+        "agreement": 0.96
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "这个青花五零",
+            "清华物理"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 6,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.1,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_130ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8077,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_39.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_39.wav",
+      "page_text": "我觉得它还没有青花二零柔和，但是它的沉香也更重。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000257
+        },
+        "max_window_noisy": 0.000269,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000269
+          },
+          {
+            "start_seconds": 0.657,
+            "clean": 1.0,
+            "noisy": 0.000246
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.157,
+        "tail_silence_seconds": 0.069,
+        "overall_rms": 0.064428,
+        "end_rms": 0.040636,
+        "end_peak": 0.293876,
+        "end_rms_ratio": 0.630718,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000269,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "我觉得它还没有清华20楼但是它的沉香也更重",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "我觉得它还没有清华20楼但是它的沉香也更重",
+            "similarity_to_page": 0.7442,
+            "avg_logprob": -0.1957096703674482,
+            "no_speech_prob": 0.13143838942050934
+          },
+          {
+            "model_name": "medium",
+            "text": "我覺得他還沒有侵華二零劉鶴但是他的沉香也更重",
+            "similarity_to_page": 0.5909,
+            "avg_logprob": -0.4305278829165867,
+            "no_speech_prob": 0.08316168934106827
+          }
+        ],
+        "agreement": 0.5116
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "青花二零柔和",
+            "清华20楼"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 6,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.54,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7442,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_49.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_49.wav",
+      "page_text": "所以说这款酒确实是非常老的一款酒，年份呢可以让酒体啊没有那么的爆烈，但是不会让一款酒的酒质变得更好，因为你酒在。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000488
+        },
+        "max_window_noisy": 0.000311,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000296
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000311
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000223
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000223
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 5.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          },
+          {
+            "start_seconds": 6.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 7.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 7.42,
+            "clean": 1.0,
+            "noisy": 0.000235
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 9.92,
+        "tail_silence_seconds": 0.032,
+        "overall_rms": 0.057195,
+        "end_rms": 0.078351,
+        "end_peak": 0.345503,
+        "end_rms_ratio": 1.369901,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000488,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "所以说这款酒确实是非常老的一款酒年份呢可以让酒体没有那么的爆裂但是不会让一款酒的酒质变得更好因为你酒在",
+        "source": "agree:medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "所以说这款酒确实是非常老的一款酒年份可以让酒体没有那么的暴烈但是不会让一款酒的酒汁变得更好因为你酒在",
+            "similarity_to_page": 0.9412,
+            "avg_logprob": -0.12384082722876753,
+            "no_speech_prob": 0.2922385632991791
+          },
+          {
+            "model_name": "medium",
+            "text": "所以说这款酒确实是非常老的一款酒年份呢可以让酒体没有那么的爆裂但是不会让一款酒的酒质变得更好因为你酒在",
+            "similarity_to_page": 0.9709,
+            "avg_logprob": -0.24330139293202332,
+            "no_speech_prob": 0.23261387646198273
+          }
+        ],
+        "agreement": 0.9307
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "烈",
+            "裂"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.75,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.88,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "high_end_rms_ratio",
+          "text_ends_with_在"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9709,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_26.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_26.wav",
+      "page_text": "竟然没有，感受到的更多是那种有深度的香气。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000241
+        },
+        "max_window_noisy": 0.000261,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          },
+          {
+            "start_seconds": 0.807,
+            "clean": 1.0,
+            "noisy": 0.000261
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.307,
+        "tail_silence_seconds": 0.043,
+        "overall_rms": 0.066337,
+        "end_rms": 0.041138,
+        "end_peak": 0.265015,
+        "end_rms_ratio": 0.620133,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000261,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "竟然没有感受到更多的是那种有深度的香",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "竟然没有感受到更多的是那种有深度的香",
+            "similarity_to_page": 0.9189,
+            "avg_logprob": -0.21434850990772247,
+            "no_speech_prob": 0.22246001660823822
+          },
+          {
+            "model_name": "medium",
+            "text": "竟然没有感受到的更多是那种有深度的想象",
+            "similarity_to_page": 0.8947,
+            "avg_logprob": -0.36772785674441943,
+            "no_speech_prob": 0.4202885031700134
+          }
+        ],
+        "agreement": 0.8649
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "的",
+          "气"
+        ],
+        "inserted_chunks": [
+          "的"
+        ],
+        "replaced_pairs": [],
+        "deleted_len": 2,
+        "inserted_len": 1,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.66,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9189,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_3.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_3.wav",
+      "page_text": "这款是青花五零啊，青花五零是一个六十五度的酒，是一款超高度的清香型白酒。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000341
+        },
+        "max_window_noisy": 0.000301,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000296
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000301
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 3.196,
+            "clean": 1.0,
+            "noisy": 0.00025
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 5.696,
+        "tail_silence_seconds": 0.136,
+        "overall_rms": 0.061649,
+        "end_rms": 0.008098,
+        "end_peak": 0.043444,
+        "end_rms_ratio": 0.131361,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000341,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "这款是清华五菱清华五菱是一个65度的酒是一款超高度的清香型白酒",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "这款是清华50清华50是一个65度的酒是一款超高度的清香型白酒",
+            "similarity_to_page": 0.6562,
+            "avg_logprob": -0.11952866179247697,
+            "no_speech_prob": 0.27979570627212524
+          },
+          {
+            "model_name": "medium",
+            "text": "这款是清华五菱清华五菱是一个65度的酒是一款超高度的清香型白酒",
+            "similarity_to_page": 0.7188,
+            "avg_logprob": -0.29664639607071874,
+            "no_speech_prob": 0.08990909904241562
+          }
+        ],
+        "agreement": 0.871
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "青花",
+            "清华"
+          ],
+          [
+            "零啊青花",
+            "菱清华"
+          ],
+          [
+            "零",
+            "菱"
+          ],
+          [
+            "六十五",
+            "65"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 10,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 0.7188,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_38.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_38.wav",
+      "page_text": "但是你要说它有没有它柔和呢？",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00022
+        },
+        "max_window_noisy": 0.00022,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.00022
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.984,
+        "tail_silence_seconds": 0.032,
+        "overall_rms": 0.058909,
+        "end_rms": 0.022929,
+        "end_peak": 0.174784,
+        "end_rms_ratio": 0.389227,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.00022,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "但是你要说他有没有他柔和",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "但是你要说他有没有他柔和",
+            "similarity_to_page": 0.8,
+            "avg_logprob": -0.2607181714131282,
+            "no_speech_prob": 0.1970241367816925
+          },
+          {
+            "model_name": "medium",
+            "text": "但是你要說他有沒有他柔和",
+            "similarity_to_page": 0.64,
+            "avg_logprob": -0.25699181606372196,
+            "no_speech_prob": 0.23573075234889984
+          }
+        ],
+        "agreement": 0.8333
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "呢"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "它",
+            "他"
+          ],
+          [
+            "它",
+            "他"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.52,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.56,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_peak",
+          "text_ends_with_和"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_56.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_56.wav",
+      "page_text": "让大家来盲品说哪一款酒更好喝啊？",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000237
+        },
+        "max_window_noisy": 0.000237,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.325,
+        "tail_silence_seconds": 0.029,
+        "overall_rms": 0.061941,
+        "end_rms": 0.072512,
+        "end_peak": 0.317967,
+        "end_rms_ratio": 1.170661,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000237,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "让大家来盲品说哪一款酒更好喝",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "让大家来盲品说哪一款酒更好喝",
+            "similarity_to_page": 0.9655,
+            "avg_logprob": -0.09620893702787511,
+            "no_speech_prob": 0.25807926058769226
+          },
+          {
+            "model_name": "medium",
+            "text": "让大家来盲评说哪一款酒更好喝",
+            "similarity_to_page": 0.8966,
+            "avg_logprob": -0.3285391529401143,
+            "no_speech_prob": 0.272202730178833
+          }
+        ],
+        "agreement": 0.9286
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": true,
+        "has_tail_overhang": true
+      },
+      "text_review_hint": {
+        "score": 0.95,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "tail_overhang",
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 1.0,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "high_end_rms_ratio",
+          "page_has_tail_overhang",
+          "small_delete_only_diff"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9655,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_31.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_31.wav",
+      "page_text": "因为这种味道是比较淡雅清爽。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00021
+        },
+        "max_window_noisy": 0.000216,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000214
+          },
+          {
+            "start_seconds": 0.295,
+            "clean": 1.0,
+            "noisy": 0.000216
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.795,
+        "tail_silence_seconds": 0.163,
+        "overall_rms": 0.06277,
+        "end_rms": 0.001801,
+        "end_peak": 0.009516,
+        "end_rms_ratio": 0.028694,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000216,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "因为这种味道是比较淡雅清爽",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "因为这种味道是比较淡雅清爽",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.0712976612542805,
+            "no_speech_prob": 0.03355659544467926
+          },
+          {
+            "model_name": "medium",
+            "text": "因為這種味道是比較淡雅清爽",
+            "similarity_to_page": 0.6923,
+            "avg_logprob": -0.20777708385139704,
+            "no_speech_prob": 0.006574679631739855
+          }
+        ],
+        "agreement": 0.6923
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.1,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_29.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_29.wav",
+      "page_text": "落口特别的近，比较绵甜。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000207
+        },
+        "max_window_noisy": 0.000207,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000207
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.411,
+        "tail_silence_seconds": 0.043,
+        "overall_rms": 0.02846,
+        "end_rms": 0.011277,
+        "end_peak": 0.076632,
+        "end_rms_ratio": 0.396231,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000207,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "落口特别的近比较腼腆",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "落口特别的近比较腼腆",
+            "similarity_to_page": 0.8,
+            "avg_logprob": -0.10699329359663858,
+            "no_speech_prob": 0.19675152003765106
+          },
+          {
+            "model_name": "medium",
+            "text": "落口特别的近比较腼腆",
+            "similarity_to_page": 0.8,
+            "avg_logprob": -0.3974149607949787,
+            "no_speech_prob": 0.03668775036931038
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "绵甜",
+            "腼腆"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_50ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_44.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_44.wav",
+      "page_text": "这种浓跟淡，它并不会让你感觉这种香气在口腔里面会那种持续的。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000254
+        },
+        "max_window_noisy": 0.000237,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000235
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.00021
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 2.855,
+            "clean": 1.0,
+            "noisy": 0.000223
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 5.355,
+        "tail_silence_seconds": 0.043,
+        "overall_rms": 0.061878,
+        "end_rms": 0.091565,
+        "end_peak": 0.52591,
+        "end_rms_ratio": 1.479753,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000254,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "这种浓跟淡它并不会让你感觉这种想起在口腔里面会那种持续的",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "这种浓跟淡它并不会让你感觉这种想起在口腔里面会那种持续的",
+            "similarity_to_page": 0.9286,
+            "avg_logprob": -0.10350347329408695,
+            "no_speech_prob": 0.17744620144367218
+          },
+          {
+            "model_name": "medium",
+            "text": "这种浓跟淡它并不会让你感觉这种香气在口腔里面会那种持续的",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.29836924565144074,
+            "no_speech_prob": 0.278138667345047
+          }
+        ],
+        "agreement": 0.9286
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "香气",
+            "想起"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.88,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "high_end_rms_ratio",
+          "text_ends_with_的"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9286,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_20.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_20.wav",
+      "page_text": "那我们来闻这个。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00025
+        },
+        "max_window_noisy": 0.00025,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 0.832,
+        "tail_silence_seconds": 0.104,
+        "overall_rms": 0.01572,
+        "end_rms": 0.006114,
+        "end_peak": 0.046517,
+        "end_rms_ratio": 0.388907,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.00025,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "那我们来问这个",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "那我们来问这个",
+            "similarity_to_page": 0.8571,
+            "avg_logprob": -0.39736001566052437,
+            "no_speech_prob": 0.19067052006721497
+          },
+          {
+            "model_name": "medium",
+            "text": "那我們來聞這個",
+            "similarity_to_page": 0.2857,
+            "avg_logprob": -0.5484712294169835,
+            "no_speech_prob": 0.0424610860645771
+          }
+        ],
+        "agreement": 0.2857
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "闻",
+            "问"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.1,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_130ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8571,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_4.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_4.wav",
+      "page_text": "那我们把酒倒上，分别来喝一喝。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000237
+        },
+        "max_window_noisy": 0.000246,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 0.039,
+            "clean": 1.0,
+            "noisy": 0.000246
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.539,
+        "tail_silence_seconds": 0.139,
+        "overall_rms": 0.029114,
+        "end_rms": 0.003888,
+        "end_peak": 0.021044,
+        "end_rms_ratio": 0.133557,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000246,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "那我们把酒倒上分别来喝一喝",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "那我们把酒倒上分别来喝一喝",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.23295684421763702,
+            "no_speech_prob": 0.03672963008284569
+          },
+          {
+            "model_name": "medium",
+            "text": "那我們把酒倒上來分別來喝一喝",
+            "similarity_to_page": 0.7407,
+            "avg_logprob": -0.5139156229355756,
+            "no_speech_prob": 0.10288120806217194
+          }
+        ],
+        "agreement": 0.7407
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.1,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_57.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_57.wav",
+      "page_text": "我觉得这五款酒可能会被评的稀巴烂。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000216
+        },
+        "max_window_noisy": 0.000235,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.00021
+          },
+          {
+            "start_seconds": 0.999,
+            "clean": 1.0,
+            "noisy": 0.000235
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.499,
+        "tail_silence_seconds": 0.083,
+        "overall_rms": 0.069805,
+        "end_rms": 0.051615,
+        "end_peak": 0.265287,
+        "end_rms_ratio": 0.73941,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000235,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "我觉得这五款酒可能会被评得稀巴烂",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "我觉得这五款酒可能会被评得稀巴烂",
+            "similarity_to_page": 0.9375,
+            "avg_logprob": -0.1668987336911653,
+            "no_speech_prob": 0.3058309853076935
+          },
+          {
+            "model_name": "medium",
+            "text": "我觉得这五款酒可能会被平的稀巴烂",
+            "similarity_to_page": 0.9375,
+            "avg_logprob": -0.28815784719255233,
+            "no_speech_prob": 0.07881351560354233
+          }
+        ],
+        "agreement": 0.875
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "的",
+            "得"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.54,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9375,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_17.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_17.wav",
+      "page_text": "那这一款青花三菱老款呢它的沉香感比较重，酯香比较重，那种己酸乙酯的这种香味啊。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00033
+        },
+        "max_window_noisy": 0.000282,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000235
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000278
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000282
+          },
+          {
+            "start_seconds": 4.881,
+            "clean": 1.0,
+            "noisy": 0.000216
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 7.381,
+        "tail_silence_seconds": 0.069,
+        "overall_rms": 0.061218,
+        "end_rms": 0.064033,
+        "end_peak": 0.433652,
+        "end_rms_ratio": 1.045991,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.00033,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "那这款青花三菱老款的它的沉香感比较重滋香比较重那种己酸已滋的这种香味",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "那这款青花三菱老款的它的沉香感比较重滋香比较重那种己酸已滋的这种香味",
+            "similarity_to_page": 0.8571,
+            "avg_logprob": -0.1477175488763926,
+            "no_speech_prob": 0.017850058153271675
+          },
+          {
+            "model_name": "medium",
+            "text": "那这款青花三菱老款的它的沉香感比较重汁香比较重那种挤酸以吃的这种香味啊",
+            "similarity_to_page": 0.8451,
+            "avg_logprob": -0.29414241450528306,
+            "no_speech_prob": 0.01619936153292656
+          }
+        ],
+        "agreement": 0.8696
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "一",
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "呢",
+            "的"
+          ],
+          [
+            "酯",
+            "滋"
+          ],
+          [
+            "乙酯",
+            "已滋"
+          ]
+        ],
+        "deleted_len": 2,
+        "inserted_len": 0,
+        "replace_delta": 4,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.52,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.64,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "high_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8571,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_5.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_5.wav",
+      "page_text": "感受一下他们到底是什么味道。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000261
+        },
+        "max_window_noisy": 0.000261,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.792,
+        "tail_silence_seconds": 0.064,
+        "overall_rms": 0.033091,
+        "end_rms": 0.007825,
+        "end_peak": 0.070375,
+        "end_rms_ratio": 0.236458,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000261,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "感受一下它们到底是什么味道",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "感受一下它们到底是什么味道",
+            "similarity_to_page": 0.9231,
+            "avg_logprob": -0.1652871691263639,
+            "no_speech_prob": 0.15749569237232208
+          },
+          {
+            "model_name": "medium",
+            "text": "感受一下他们到底是什么味道",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.3047084907690684,
+            "no_speech_prob": 0.04838033393025398
+          }
+        ],
+        "agreement": 0.9231
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "他",
+            "它"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9231,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_58.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_58.wav",
+      "page_text": "这款四五千的酒可能在评价里面会觉得这款酒特别的辣。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00025
+        },
+        "max_window_noisy": 0.000496,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.00022
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000496
+          },
+          {
+            "start_seconds": 1.425,
+            "clean": 1.0,
+            "noisy": 0.000301
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.925,
+        "tail_silence_seconds": 0.053,
+        "overall_rms": 0.070212,
+        "end_rms": 0.051339,
+        "end_peak": 0.402541,
+        "end_rms_ratio": 0.731204,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000496,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "这款四五千的酒可能在评价里面会觉得这款酒特别的辣",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "这款四五千的酒可能在评价里面会觉得这款酒特别的辣",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.13785286014899611,
+            "no_speech_prob": 0.04339757189154625
+          },
+          {
+            "model_name": "medium",
+            "text": "这款四五千的酒可能在评价里面会觉得这款酒特别的辣",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.19305059526647841,
+            "no_speech_prob": 0.03694554418325424
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.54,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_40.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_40.wav",
+      "page_text": "所以说青花三零我觉得比青花二零是有提升的酒质的浓郁度酒香浓郁度是提升的，但是论酒后的愉悦度，饮后的这种舒适度。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000473
+        },
+        "max_window_noisy": 0.00038,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.00038
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000292
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000275
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000254
+          },
+          {
+            "start_seconds": 5.0,
+            "clean": 1.0,
+            "noisy": 0.000254
+          },
+          {
+            "start_seconds": 6.0,
+            "clean": 1.0,
+            "noisy": 0.000257
+          },
+          {
+            "start_seconds": 7.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 8.0,
+            "clean": 1.0,
+            "noisy": 0.000269
+          },
+          {
+            "start_seconds": 8.337,
+            "clean": 1.0,
+            "noisy": 0.000235
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 10.837,
+        "tail_silence_seconds": 0.093,
+        "overall_rms": 0.058948,
+        "end_rms": 0.03957,
+        "end_peak": 0.228811,
+        "end_rms_ratio": 0.671264,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000473,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "所以说青花三菱我觉得比青花二菱是有提升的酒汁的浓郁度酒香浓郁度是提升的但是论酒后的愉悦度饮后的这种舒适度",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "所以说青花三菱我觉得比青花二菱是有提升的酒汁的浓郁度酒香浓郁度是提升的但是论酒后的愉悦度饮后的这种舒适度",
+            "similarity_to_page": 0.9423,
+            "avg_logprob": -0.09373799497134065,
+            "no_speech_prob": 0.2199154943227768
+          },
+          {
+            "model_name": "medium",
+            "text": "所以說青帕305我覺得比青帕205是有提升的酒汁的濃郁度酒香濃郁度是提升的但是論酒後的愉悅度飲後的這種舒適度",
+            "similarity_to_page": 0.6226,
+            "avg_logprob": -0.27102044912484974,
+            "no_speech_prob": 0.1410306990146637
+          }
+        ],
+        "agreement": 0.6415
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "零",
+            "菱"
+          ],
+          [
+            "零",
+            "菱"
+          ],
+          [
+            "质",
+            "汁"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 3,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.1,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.34,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_130ms",
+          "medium_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9423,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_27.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_27.wav",
+      "page_text": "入口品鉴一下。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000246
+        },
+        "max_window_noisy": 0.000246,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.003,
+        "tail_silence_seconds": 0.051,
+        "overall_rms": 0.020665,
+        "end_rms": 0.005616,
+        "end_peak": 0.026756,
+        "end_rms_ratio": 0.271749,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000246,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "路口品界",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "路口品界",
+            "similarity_to_page": 0.4,
+            "avg_logprob": -0.4152513231549944,
+            "no_speech_prob": 0.7587904930114746
+          },
+          {
+            "model_name": "medium",
+            "text": "路透屏借一下",
+            "similarity_to_page": 0.3333,
+            "avg_logprob": -0.5595570266246795,
+            "no_speech_prob": 0.09129272401332855
+          }
+        ],
+        "agreement": 0.2
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "入",
+            "路"
+          ],
+          [
+            "鉴一下",
+            "界"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 4,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.4,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_42.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_42.wav",
+      "page_text": "那喝下这个青花中国庄，也叫青花四里。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000231
+        },
+        "max_window_noisy": 0.000227,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 0.615,
+            "clean": 1.0,
+            "noisy": 0.000227
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.115,
+        "tail_silence_seconds": 0.051,
+        "overall_rms": 0.061165,
+        "end_rms": 0.03764,
+        "end_peak": 0.239827,
+        "end_rms_ratio": 0.615384,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000231,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "那喝下这个青花中国庄也叫青花四里",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "那喝下这个青花中国庄也叫青花四里",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.26240664422512056,
+            "no_speech_prob": 0.06365475803613663
+          },
+          {
+            "model_name": "medium",
+            "text": "那喝一下这个清华中国庄也叫清华四里",
+            "similarity_to_page": 0.7273,
+            "avg_logprob": -0.49604614214463666,
+            "no_speech_prob": 0.014938322827219963
+          }
+        ],
+        "agreement": 0.7273
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.1,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_28.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_28.wav",
+      "page_text": "甜柔舒适。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000223
+        },
+        "max_window_noisy": 0.000223,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000223
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 1.408,
+        "tail_silence_seconds": 0.08,
+        "overall_rms": 0.043364,
+        "end_rms": 0.020109,
+        "end_peak": 0.118622,
+        "end_rms_ratio": 0.463721,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000223,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "田楼舒适",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "田楼苏寺",
+            "similarity_to_page": 0.0,
+            "avg_logprob": -0.1660052016377449,
+            "no_speech_prob": 0.3662980794906616
+          },
+          {
+            "model_name": "medium",
+            "text": "田楼舒适",
+            "similarity_to_page": 0.5,
+            "avg_logprob": -0.43855486975775826,
+            "no_speech_prob": 0.2627834379673004
+          }
+        ],
+        "agreement": 0.5
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "甜柔",
+            "田楼"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.5,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_36.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_36.wav",
+      "page_text": "老青花三零的爆香感比青花二零明显的。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000246
+        },
+        "max_window_noisy": 0.000235,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000235
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 1.127,
+            "clean": 1.0,
+            "noisy": 0.00022
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.627,
+        "tail_silence_seconds": 0.059,
+        "overall_rms": 0.058229,
+        "end_rms": 0.053067,
+        "end_peak": 0.271311,
+        "end_rms_ratio": 0.911349,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000246,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "老清华三连的爆香感比清华二连明显的",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "老清华三连的爆香感比清华二连明显的",
+            "similarity_to_page": 0.6471,
+            "avg_logprob": -0.20104023814201355,
+            "no_speech_prob": 0.23820212483406067
+          },
+          {
+            "model_name": "medium",
+            "text": "老清华三连的爆香杆比清华二连明显的",
+            "similarity_to_page": 0.5882,
+            "avg_logprob": -0.3604837908194615,
+            "no_speech_prob": 0.1159471869468689
+          }
+        ],
+        "agreement": 0.9412
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "青花",
+            "清华"
+          ],
+          [
+            "零",
+            "连"
+          ],
+          [
+            "青花",
+            "清华"
+          ],
+          [
+            "零",
+            "连"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 6,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.76,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "high_end_rms_ratio",
+          "text_ends_with_的"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.6471,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_50.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_50.wav",
+      "page_text": "生产出来之后他是要分型定级啊。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000235
+        },
+        "max_window_noisy": 0.000265,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          },
+          {
+            "start_seconds": 0.188,
+            "clean": 1.0,
+            "noisy": 0.000265
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.688,
+        "tail_silence_seconds": 0.032,
+        "overall_rms": 0.017644,
+        "end_rms": 0.005437,
+        "end_peak": 0.035437,
+        "end_rms_ratio": 0.308152,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000265,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "生产出来之后它是要分型定级",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "生产出来之后它是要分型定级",
+            "similarity_to_page": 0.8889,
+            "avg_logprob": -0.1064028998738841,
+            "no_speech_prob": 0.2965257167816162
+          },
+          {
+            "model_name": "medium",
+            "text": "生产出来之后它是要分型定型",
+            "similarity_to_page": 0.8148,
+            "avg_logprob": -0.36680501885712147,
+            "no_speech_prob": 0.22676311433315277
+          }
+        ],
+        "agreement": 0.9231
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "他",
+            "它"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.65,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_50ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8889,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_21.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_21.wav",
+      "page_text": "这款蚊香反而特别的内敛。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000227
+        },
+        "max_window_noisy": 0.000227,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.005,
+        "tail_silence_seconds": 0.053,
+        "overall_rms": 0.047534,
+        "end_rms": 0.027651,
+        "end_peak": 0.128142,
+        "end_rms_ratio": 0.581702,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000227,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "这款蚊香反而特别的内敛",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "这款蚊香反而特别的内敛",
+            "similarity_to_page": 1.0,
+            "avg_logprob": -0.17739012662102194,
+            "no_speech_prob": 0.03771357983350754
+          },
+          {
+            "model_name": "medium",
+            "text": "这款文箱反而特别的内敛",
+            "similarity_to_page": 0.8182,
+            "avg_logprob": -0.25166334584355354,
+            "no_speech_prob": 0.07053600996732712
+          }
+        ],
+        "agreement": 0.8182
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 0,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.22,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 1.0,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_47.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_47.wav",
+      "page_text": "辣感很重啊对口腔的那种冲击感，热感都很大。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000282
+        },
+        "max_window_noisy": 0.000324,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000324
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 1.745,
+            "clean": 1.0,
+            "noisy": 0.000227
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 4.245,
+        "tail_silence_seconds": 0.029,
+        "overall_rms": 0.058968,
+        "end_rms": 0.110045,
+        "end_peak": 0.576668,
+        "end_rms_ratio": 1.866172,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000324,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "辣感很重对口腔的那种冲击感乐感都很大",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "辣感很重对口腔的那种冲击感乐感都很大",
+            "similarity_to_page": 0.9189,
+            "avg_logprob": -0.14818749345582108,
+            "no_speech_prob": 0.25405293703079224
+          },
+          {
+            "model_name": "medium",
+            "text": "辣感很重对口腔的那种冲击感乐感都很大",
+            "similarity_to_page": 0.9189,
+            "avg_logprob": -0.29364127948366364,
+            "no_speech_prob": 0.3290438652038574
+          }
+        ],
+        "agreement": 1.0
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "热",
+            "乐"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.65,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.76,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "high_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9189,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_64.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_64.wav",
+      "page_text": "所以说越高端的清香型的酒我个人认为智商税含量确实是越高的。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000305
+        },
+        "max_window_noisy": 0.000286,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.00025
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000261
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000254
+          },
+          {
+            "start_seconds": 4.071,
+            "clean": 1.0,
+            "noisy": 0.00025
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.571,
+        "tail_silence_seconds": 0.067,
+        "overall_rms": 0.056817,
+        "end_rms": 0.016857,
+        "end_peak": 0.133766,
+        "end_rms_ratio": 0.296686,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000305,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "所以说越高端的清香型的酒我个人认为自伤水含量确实是越高的",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "所以说越高端的清香型的酒我个人认为自伤水含量确实是越高的",
+            "similarity_to_page": 0.8929,
+            "avg_logprob": -0.1170064138296323,
+            "no_speech_prob": 0.058902107179164886
+          },
+          {
+            "model_name": "medium",
+            "text": "所以说,越高端的清香型酒,我个人认为智商水含量确实是越高的",
+            "similarity_to_page": 0.9455,
+            "avg_logprob": -0.2395651592976517,
+            "no_speech_prob": 0.021600965410470963
+          }
+        ],
+        "agreement": 0.9091
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "智商税",
+            "自伤水"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 3,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "high_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak",
+          "text_ends_with_的"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8929,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_1.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_1.wav",
+      "page_text": "那我们今天就来测评一下所有的青花汾系列，分别是青花二零青花三零复兴版。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000296
+        },
+        "max_window_noisy": 0.000265,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000254
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000246
+          },
+          {
+            "start_seconds": 3.9,
+            "clean": 1.0,
+            "noisy": 0.000241
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.4,
+        "tail_silence_seconds": 0.032,
+        "overall_rms": 0.064624,
+        "end_rms": 0.031959,
+        "end_peak": 0.149615,
+        "end_rms_ratio": 0.494544,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000296,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "那我们今天就来测评一下所有的青花粉系列分别是青花20青花30复兴版",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "那我们今天就来测评一下所有的青花粉系列分别是青花20青花30复兴版",
+            "similarity_to_page": 0.8485,
+            "avg_logprob": -0.17388240359723567,
+            "no_speech_prob": 0.06085154041647911
+          },
+          {
+            "model_name": "medium",
+            "text": "那我们今天就来测评一下所有的青花粉系列分别是青花恶里青花三菱复兴吧",
+            "similarity_to_page": 0.8485,
+            "avg_logprob": -0.29482286387965795,
+            "no_speech_prob": 0.06862858682870865
+          }
+        ],
+        "agreement": 0.8485
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "汾",
+            "粉"
+          ],
+          [
+            "二零",
+            "20"
+          ],
+          [
+            "三零",
+            "30"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 5,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.44,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8485,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004326_wjdlh_613_55.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_191859\\20260127_00004326_wjdlh_613_55.wav",
+      "page_text": "如果今天我们一个高端局啊，带着这五款酒给大家去品。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000237
+        },
+        "max_window_noisy": 0.000231,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 0.871,
+            "clean": 1.0,
+            "noisy": 0.000231
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.371,
+        "tail_silence_seconds": 0.059,
+        "overall_rms": 0.064258,
+        "end_rms": 0.010638,
+        "end_peak": 0.053933,
+        "end_rms_ratio": 0.16555,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000237,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "如果今天我们一个高端局啊带了这五款酒给大家去品",
+        "source": "agree:medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "如果今天我们一个高端局带了这五款酒给大家去品",
+            "similarity_to_page": 0.9333,
+            "avg_logprob": -0.14743834485610327,
+            "no_speech_prob": 0.304125040769577
+          },
+          {
+            "model_name": "medium",
+            "text": "如果今天我们一个高端局啊带了这五款酒给大家去品",
+            "similarity_to_page": 0.9565,
+            "avg_logprob": -0.30999160766601563,
+            "no_speech_prob": 0.06440464407205582
+          }
+        ],
+        "agreement": 0.9778
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "着",
+            "了"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.35,
+        "needs_manual_review": true,
+        "reasons": [
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9565,
+      "text_change_suggested": false
+    }
+  ]
+}

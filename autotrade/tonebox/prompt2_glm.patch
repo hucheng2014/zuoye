@@ -1,0 +1,277 @@
+diff --git a/lesson_schedule/lesson_booking.py b/lesson_schedule/lesson_booking.py
+index 5f666e4..8bf9d4c 100644
+--- a/lesson_schedule/lesson_booking.py
++++ b/lesson_schedule/lesson_booking.py
+@@ -13,6 +13,7 @@ from core.db import get_db
+ from music_accounts.account_auth import get_current_user, require_teacher_or_admin
+ from music_models.music_models import OldLesson, LessonScheduleType, LessonStatus
+ from music_instruments.instrument_catalog import get_instrument
++from lesson_schedule.teacher_availability import TeacherAvailability
+ 
+ 
+ class LessonCreate(BaseModel):
+@@ -81,6 +82,37 @@ async def check_time_conflict(
+     return False
+ 
+ 
++async def check_teacher_availability(
++    db: AsyncSession,
++    teacher_id: str,
++    lesson_date: datetime.date,
++    start_time: datetime.time,
++    duration_minutes: int,
++) -> bool:
++    weekday = lesson_date.weekday()
++    result = await db.execute(
++        select(TeacherAvailability).where(
++            and_(
++                TeacherAvailability.teacher_id == teacher_id,
++                TeacherAvailability.weekday == weekday,
++                TeacherAvailability.is_active == True,
++            )
++        )
++    )
++    availabilities = result.scalars().all()
++
++    lesson_start = start_time
++    lesson_end_dt = datetime.datetime.combine(lesson_date, start_time) + datetime.timedelta(minutes=duration_minutes)
++    lesson_end = lesson_end_dt.time()
++
++    for avail in availabilities:
++        avail_start = datetime.time.fromisoformat(avail.start_time)
++        avail_end = datetime.time.fromisoformat(avail.end_time)
++        if avail_start <= lesson_start and lesson_end <= avail_end:
++            return True
++    return False
++
++
+ async def create_lesson(db: AsyncSession, **kwargs) -> OldLesson:
+     lesson = OldLesson(id=str(uuid.uuid4()), **kwargs)
+     db.add(lesson)
+@@ -156,6 +188,19 @@ async def schedule_lesson(
+             detail="Teacher has a conflicting lesson at this time",
+         )
+ 
++    is_available = await check_teacher_availability(
++        db,
++        teacher_id=payload.teacher_id,
++        lesson_date=payload.lesson_date,
++        start_time=payload.start_time,
++        duration_minutes=payload.duration_minutes,
++    )
++    if not is_available:
++        raise HTTPException(
++            status_code=status.HTTP_400_BAD_REQUEST,
++            detail="Teacher is not available at this time",
++        )
++
+     lesson = await create_lesson(db, **payload.model_dump())
+     return lesson
+ 
+diff --git a/tests/test_prompt2.py b/tests/test_prompt2.py
+new file mode 100644
+index 0000000..ae3a759
+--- /dev/null
++++ b/tests/test_prompt2.py
+@@ -0,0 +1,201 @@
++from __future__ import annotations
++
++import datetime
++
++import pytest
++from httpx import AsyncClient
++
++from tests.conftest import api_key_header, register_user
++
++
++async def make_teacher(client: AsyncClient, username: str) -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "teacher")
++
++
++async def make_instrument(client: AsyncClient, api_key: str, name: str = "Piano") -> dict:
++    resp = await client.post(
++        "/instruments",
++        json={
++            "instrument_name": name,
++            "category": "keyboard",
++            "lesson_type": "private",
++            "levels": ["beginner"],
++            "is_active": True,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def make_availability(client: AsyncClient, api_key: str, teacher_id: str, weekday: int, start_time: str, end_time: str, is_active: bool = True) -> dict:
++    resp = await client.post(
++        "/availability",
++        json={
++            "teacher_id": teacher_id,
++            "weekday": weekday,
++            "start_time": start_time,
++            "end_time": end_time,
++            "is_active": is_active,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def schedule_lesson(client: AsyncClient, api_key: str, teacher_id: str, student_id: str, instrument_id: str, lesson_date: str, start_time: str, duration_minutes: int = 60) -> dict:
++    resp = await client.post(
++        "/lessons",
++        json={
++            "teacher_id": teacher_id,
++            "student_id": student_id,
++            "instrument_id": instrument_id,
++            "lesson_date": lesson_date,
++            "start_time": start_time,
++            "duration_minutes": duration_minutes,
++        },
++        headers=api_key_header(api_key),
++    )
++    return resp
++
++
++async def test_schedule_lesson_within_availability(client: AsyncClient):
++    teacher = await make_teacher(client, "t_avail1")
++    student = await register_user(client, "s_avail1", "s_avail1@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], "Guitar")
++
++    monday = datetime.date(2026, 6, 8)
++    await make_availability(client, teacher["api_key"], teacher["id"], monday.weekday(), "08:00", "12:00")
++
++    resp = await schedule_lesson(
++        client, teacher["api_key"], teacher["id"], student["id"], instrument["id"],
++        str(monday), "09:00:00", 60,
++    )
++    assert resp.status_code == 201, resp.text
++    data = resp.json()
++    assert data["teacher_id"] == teacher["id"]
++    assert data["status"] == "scheduled"
++
++
++async def test_schedule_lesson_no_availability(client: AsyncClient):
++    teacher = await make_teacher(client, "t_avail2")
++    student = await register_user(client, "s_avail2", "s_avail2@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], "Violin")
++
++    tuesday = datetime.date(2026, 6, 9)
++    resp = await schedule_lesson(
++        client, teacher["api_key"], teacher["id"], student["id"], instrument["id"],
++        str(tuesday), "10:00:00", 60,
++    )
++    assert resp.status_code == 400
++    assert resp.json()["detail"] == "Teacher is not available at this time"
++
++
++async def test_schedule_lesson_wrong_weekday(client: AsyncClient):
++    teacher = await make_teacher(client, "t_avail3")
++    student = await register_user(client, "s_avail3", "s_avail3@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], "Drums")
++
++    monday = datetime.date(2026, 6, 8)
++    await make_availability(client, teacher["api_key"], teacher["id"], monday.weekday(), "08:00", "17:00")
++
++    wednesday = datetime.date(2026, 6, 10)
++    resp = await schedule_lesson(
++        client, teacher["api_key"], teacher["id"], student["id"], instrument["id"],
++        str(wednesday), "10:00:00", 60,
++    )
++    assert resp.status_code == 400
++    assert resp.json()["detail"] == "Teacher is not available at this time"
++
++
++async def test_schedule_lesson_start_before_availability(client: AsyncClient):
++    teacher = await make_teacher(client, "t_avail4")
++    student = await register_user(client, "s_avail4", "s_avail4@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], "Flute")
++
++    monday = datetime.date(2026, 6, 8)
++    await make_availability(client, teacher["api_key"], teacher["id"], monday.weekday(), "09:00", "12:00")
++
++    resp = await schedule_lesson(
++        client, teacher["api_key"], teacher["id"], student["id"], instrument["id"],
++        str(monday), "08:30:00", 60,
++    )
++    assert resp.status_code == 400
++    assert resp.json()["detail"] == "Teacher is not available at this time"
++
++
++async def test_schedule_lesson_end_after_availability(client: AsyncClient):
++    teacher = await make_teacher(client, "t_avail5")
++    student = await register_user(client, "s_avail5", "s_avail5@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], "Cello")
++
++    monday = datetime.date(2026, 6, 8)
++    await make_availability(client, teacher["api_key"], teacher["id"], monday.weekday(), "09:00", "11:00")
++
++    resp = await schedule_lesson(
++        client, teacher["api_key"], teacher["id"], student["id"], instrument["id"],
++        str(monday), "10:00:00", 90,
++    )
++    assert resp.status_code == 400
++    assert resp.json()["detail"] == "Teacher is not available at this time"
++
++
++async def test_schedule_lesson_inactive_availability(client: AsyncClient):
++    teacher = await make_teacher(client, "t_avail6")
++    student = await register_user(client, "s_avail6", "s_avail6@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], "Trumpet")
++
++    monday = datetime.date(2026, 6, 8)
++    await make_availability(client, teacher["api_key"], teacher["id"], monday.weekday(), "08:00", "17:00", is_active=False)
++
++    resp = await schedule_lesson(
++        client, teacher["api_key"], teacher["id"], student["id"], instrument["id"],
++        str(monday), "10:00:00", 60,
++    )
++    assert resp.status_code == 400
++    assert resp.json()["detail"] == "Teacher is not available at this time"
++
++
++async def test_schedule_lesson_exact_availability_boundaries(client: AsyncClient):
++    teacher = await make_teacher(client, "t_avail7")
++    student = await register_user(client, "s_avail7", "s_avail7@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], "Harp")
++
++    monday = datetime.date(2026, 6, 8)
++    await make_availability(client, teacher["api_key"], teacher["id"], monday.weekday(), "09:00", "11:00")
++
++    resp = await schedule_lesson(
++        client, teacher["api_key"], teacher["id"], student["id"], instrument["id"],
++        str(monday), "09:00:00", 120,
++    )
++    assert resp.status_code == 201, resp.text
++
++
++async def test_schedule_lesson_multiple_availabilities(client: AsyncClient):
++    teacher = await make_teacher(client, "t_avail8")
++    student = await register_user(client, "s_avail8", "s_avail8@test.com", "pass", "student")
++    instrument = await make_instrument(client, teacher["api_key"], "Saxophone")
++
++    monday = datetime.date(2026, 6, 8)
++    await make_availability(client, teacher["api_key"], teacher["id"], monday.weekday(), "08:00", "10:00")
++    await make_availability(client, teacher["api_key"], teacher["id"], monday.weekday(), "14:00", "17:00")
++
++    resp_morning = await schedule_lesson(
++        client, teacher["api_key"], teacher["id"], student["id"], instrument["id"],
++        str(monday), "09:00:00", 60,
++    )
++    assert resp_morning.status_code == 201, resp_morning.text
++
++    resp_afternoon = await schedule_lesson(
++        client, teacher["api_key"], teacher["id"], student["id"], instrument["id"],
++        str(monday), "15:00:00", 60,
++    )
++    assert resp_afternoon.status_code == 201, resp_afternoon.text
++
++    resp_gap = await schedule_lesson(
++        client, teacher["api_key"], teacher["id"], student["id"], instrument["id"],
++        str(monday), "11:00:00", 60,
++    )
++    assert resp_gap.status_code == 400
++    assert resp_gap.json()["detail"] == "Teacher is not available at this time"

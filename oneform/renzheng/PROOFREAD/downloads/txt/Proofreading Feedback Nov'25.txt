@@ -1,0 +1,58 @@
+Proofreading Feedback Nov’25
+Instruction Following rules
+In proofreading, pay attention to every detail including accents, punctuation, spacing, formatting, etc.
+between the input and the response. An extra space is an error that’s part of the scope.
+Remember that:
+- An exact repeat of the input is Fully Following Instructions. But pay close attention that there
+are no changes.
+- Some errors fixed OR wording, style, tone changed is Partially Following. Do not mix this up with
+the Composition approach.
+Composition rules
+- A repeat that contains errors is Bad.
+- A repeat where the input was already error free is Good.
+- All errors fixed without change in style/tone or minimal to none change of word choice is Good.
+- Unnecessary changes in wording and partial error fixing is Acceptable. Even if one out of five
+errors wasn’t not fixed – Acceptable.
+- Format/structure of the response was changed – Acceptable.
+- Change in style/tone is Bad (different from following instructions!)
+- New errors introduced is Bad.
+- Most errors not fixed is Bad.
+The two dimensions above are the most critical ones for Proofreading specifically, as input texts are not
+supposed to be changed or summarized. Hence, Comprehensiveness and Groundedness issues would be
+less common and easier to catch.
+Changes in grading for identical responses
+We have noticed a trend of some people changing their gradings between responses even though the
+responses are exactly identical. Eg. Response A was marked as “partially following” but response B,
+which is exactly the same as resp A, was marked as fully following. Please pay attention to the response
+content and provide a standardized evaluation. These deviations are not acceptable.
+Introduction of new errors
+Any time a new error is introduced, it’s automatically a Bad composition. Many have been marking these
+as Acceptable. Any time something was changed or introduced to the text that creates a new problem in
+terms of spelling/grammar (eg. accent missing, extra article, double punctuation, verb conjugation that
+doesn’t fit the subject or context), it would fail Composition.
+Please do not confuse this with some unnecessary word changes; these would go under Acceptable.
+
+(continued ↓)
+
+Changes from input
+Any time there is a change in wording compared to the input, verify that it does not change the intended
+meaning of the input. This occasionally happens in the tasks and people fail to downgrade
+Groundedness (eg. input says “it should be reviewed” but response changes it to “we should review it”).
+Vocabulary for multiple variant locales
+For locales that have multiple variants, pay attention that the model is not using vocabulary/terminology
+that may belong to another locale (eg. pt-PT vs pt-BR; fr-FR vs fr-CA, es-ES vs es-MX and so on).
+Harmful content
+Make sure you don’t miss out on the harmful or potentially harmful content. This goes both for input
+text and responses, as we evaluate harmfulness on both, and the content would generally be the same.
+There was a task in one of the locales talking about “sub-Saharan Africa not having much of a civilization
+until the 1800s”. While many caught this as potentially harmful, it was not equally marked for both input
+and response. A significant number of people completely failed to catch this issue.
+Satisfaction ratings
+Pay close attention to the points for each grade on pages 64 and 65 of the guidelines. As this is a
+Proofreading task, spelling/grammar mistakes are more important than in some other tasks.
+Not fixing any or most errors is Highly Unsatisfying. Partial fixes of errors is Slightly Unsatisfying.
+Use the tables in the guides to determine your response satisfaction score and pay attention to where
+each issue falls under (eg. unnecessary change in word, style, tone is Slightly Unsatisfying even though
+change in word choice is Acceptable Composition and change in style/tone is Bad Composition).
+
+

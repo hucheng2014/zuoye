@@ -1,0 +1,5552 @@
+Text Composition - Proofread
+Proofreading V 2025. Nov. 12
+
+Updated November 18 2025
+
+New Updates — Please Review
+Version 2025 Nov. 12
+
+Update in this version only impact hi_LATN graders.
+For Proofread, we have provided a clarification about Devanagari script and added rule callouts based on feedback
+from recent Production. We have also added new examples based on the recent error trends observed in Production,
+covering the following topics:
+•
+
+Ensure that all errors are corrected
+
+•
+
+Ensure that both the user request and response are consistent with the use of Devanagari words
+
+Given that guidelines specific to locales continue to expand, we have moved Locale-Specific Guidelines to the
+section after the Satisfaction dimension.
+Please review and align with rules in Locale-Specific Guidelines - Hinglish. Updates are in purple text.
+
+Introduction
+
+Introduction
+
+Grading Principles
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+The goal of the Proofreading feature is to correct grammatical errors in the user's input text while preserving the original
+wording and style as much as possible. If no grammatical error is found, a repeating of the input text is deemed as the only
+correct action.
+Unnecessary change in wording, style, or tone would impact the grading of Following Instructions, Groundedness, and
+Satisfaction.
+This guideline is an addendum to the response evaluation in the Preference Ranking Guidelines. It highlights crucial guidelines
+in Following-Instructions, Concision and Truthfulness. Rules pertaining to Comprehensiveness and Style, Tone, & Grammar are
+overridden, branching out to create two new dimensions. It is tailored specifically for proofreading tasks.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Grading Principles
+To help you succeed at this task, review the following grading principles. They reflect the error trends we have observed during Production. Please
+review and align.
+A batch of new 16 examples have also been added at the end of the document. They cover 10 locales and show how these grading principles
+apply.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+
+1. Correct all errors. The goal of Proofread is to fix all grammatical errors while preserving the original style. A response that corrects only some
+errors is rated Partially Following. This will also negatively impact the Composition (rated 'Acceptable' at best), Localization (if
+applicable), and Satisfaction scores.
+
+Satisfaction
+Locale-Specific Guidelines
+
+2. Avoid unnecessary changes. To preserve the original intent and style, do not make unnecessary edits (e.g., changing "pretty" to "prettier,"
+"now" to "tomorrow," or adding new content).
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+
+•
+
+Such changes will result in a Partially Following or Not Following rating and will lower the Composition score.
+
+•
+
+Furthermore, if a change alters the original meaning—even slightly—you must also downgrade the Groundedness and Comprehensiveness
+scores.
+
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+3. Do not conflate Composition with Localization. A localization error occurs when a response fails to respect the specific vocabulary, spelling,
+grammar, or conventions of a particular regional variant (the "locale").
+•
+
+In short, a general grammar mistake is about being correct vs. incorrect, which you would penalize under Composition.
+
+Following Instructions
+
+Introduction
+
+Following Instructions
+
+Grading Principles
+
+Overview
+
+Following Instructions
+
+The Following Instructions evaluation is to check if the response follows the instruction to correct grammatical errors and
+
+Groundedness
+
+preserve the intent, wording, and style in the input text. There are two specific rules to keep in mind:
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+1. The intent, wording, style, and tone should be preserved without unnecessary modification, including emojis.
+2. When a response simply repeats the input text (regardless of the grammatical correction of the input text), please
+always grade the response as Fully following. If the input text contains grammatical errors and the response simply
+repeats without correction, please panelize the response under Composition. The Composition dimension addresses
+the accuracy or correctness of the response.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Following Instructions
+Overview
+Unnecessary Modifications and Different Locales
+Due to subtle variations in tone, style, and expression within a language, what counts as "unnecessary modification" vs "grammatical fix" can
+slightly change in different locales. Some modifications count as grammatical fix, while some don't.
+In the grading scale and examples section for Following Instructions , we provided examples for ja_JP, zh_CN, and Arabic languages showcase
+such subtlety and calibrate grading.
+However, we'd like to call out some guiding principles here:
+Generally speaking, the response should preserve the intent, wording, style, and tone as much as possible.
+
+• This means that even when the input text contains slightly unnatural phrasing, the change made by the response to improve fluidity would still
+
+be considered unnecessary modifications.
+• Notes on rewording and tone change:
+• Rewording: Rewording is allowed only if the original word or phrase does not make sense, is obviously incorrect, or if it is misaligned with
+the context of the input text.
+• Tone change: In languages like Japanese, Korean, or some others that use honorific speech to show respect or formality, most of the tone
+change or refinement in the response would be considered as unnecessary modifications--for the scope of this task. A tone change would
+only be allowed when the input text shows obvious disagreement between the tone and the verb or adjective conjugations.
+• Registers: In many language communities, a variety of languages (registers) are used. For example, in Arabic communities, Modern
+Standard Arabic (MSA) is used alongside other varieties of Arabic. If the input text is in an Arabic dialect or uses a mixture of MSA and
+dialect, the output should preserve the same style and register.
+• The Instruction Following dimension requires graders to be more strict in order to verify whether a response is aligned with the feature goal
+(stated in the Introduction).
+• Note that for responses that make unnecessary changes in wording, style, and tone, they should also be penalized under the Satisfaction
+dimension (Slightly Unsatisfying). Review the examples in the ja_JP and zh_CN sections for more details.
+
+Following Instructions
+
+Introduction
+Grading Principles
+
+Scale for Single Response Rating
+
+Following Instructions
+Groundedness
+
+This dimension has three rating scales:
+
+Comprehensiveness
+Composition
+
+Scale
+
+Comment
+
+Fully following
+
+The response follows the instruction and its corrections focus on grammar, syntax, spelling,
+and punctuation. OR, the response simply repeats the input text without making any
+correction.
+
+Localization
+Harmfulness
+Satisfaction
+
+Note: For examples speci c to locales, please refer to the Locale-speci c Callouts section.
+
+Partially following
+
+The response generally follows the instruction, but there are some deviations such as
+changing the wording, style, format, or tone. OR, the response corrects some but not all
+grammatical or spelling errors in the input text.
+
+Not following
+
+The response fails to follow the instruction. It rewrites or paraphrases the input text,
+hallucinates and modifies the original intent, or declines to answer (a blank response).
+
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+Note: For examples specific to locales, please refer to the Locale-specific Callouts section.
+
+fi
+
+fi
+
+Complete Evaluation
+Examples
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Following Instructions
+Examples of Single Response Rating — English
+Example 1
+
+Comprehensiveness
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Composition
+
+However, it is a quite city and it
+is not very active.
+
+However, it is a quiet city and it is
+not very active.
+
+Fully following
+
+The response corrects the misspelling of "quiet"
+in the input text without modifying its word
+choice or tone.
+
+However, it is a quite city and it is
+not very active.
+
+Fully following
+
+In this case, the response repeats the input text,
+which should be graded as fully following.
+However, the Composition for this response will
+be graded "bad" because the response fails to
+correct the grammatical errors in the input text.
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Following Instructions
+
+Introduction
+
+Examples of Single Response Rating — English
+
+Grading Principles
+Following Instructions
+
+Example 1
+
+Groundedness
+Comprehensiveness
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Composition
+
+However, it is a quite city and it
+is not very active.
+
+However, it is a rather active city.
+
+Not following
+
+The main goal is to correct grammatical errors
+without altering the text s original intent, style, or
+wording. This response completely changes the
+meaning from “a quiet city” that is not very
+active” to “a rather active city,” which
+contradicts the original intent.
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+’
+
+Complete Evaluation
+Examples
+
+However, in the midst of the
+Not following
+serene ambiance, this quaint city,
+characterized by its tranquility,
+tends to lack the vibrancy and
+liveliness that one might associate
+with a more active urban
+environment.
+
+This is an overgeneration from the input text,
+without following the proofreading instruction.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Following Instructions
+Examples of Single Response Rating — English
+Example 2
+
+Comprehensiveness
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Composition
+
+The birds flew south.
+
+The birds flew south.
+
+Fully following
+
+Since the input text does not contain any
+grammatical mistakes, simply repeating the
+input text should only be graded as "Fully
+following."
+
+The birds headed south.
+
+Partially following
+
+Since the input text does not contain any
+grammatical mistakes, any unnecessary
+wording changes to the input text would qualify
+the response as "Partially following."
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Following Instructions
+Examples of Single Response Rating — English
+Example 3
+
+Comprehensiveness
+
+User Request
+
+Response
+
+Rating
+
+Composition
+
+I just finished my workout, and I
+
+I just finished my workout, and I
+
+Fully following
+
+feel so strong! 💪
+
+feel so strong! 💪
+
+Localization
+
+Comment
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+I just finished my workout, and I
+feel so strong!
+
+Partially following
+
+The input text should be preserved as much as
+possible, including emojis.
+
+Groundedness (Truthfulness)
+
+Introduction
+
+Groundedness
+
+Grading Principles
+
+Overview
+
+Following Instructions
+
+The truthfulness in text composition is basically the groundedness of the output text to the input.
+
+Groundedness
+
+Composition
+
+In the text composition evaluation tasks, the speaker provides the input text. The assistant s response must be truthful or grounded to the
+contextual text without contradicting information. The factual accuracy of the response is not in the scope of the whole proofreading evaluation.
+Any irrelevant crucial information added in the output is considered less grounded. Alternative word choices, sentence structures or writing
+styles, which convey the same meaning, are out of this dimension.
+
+Localization
+
+The scale terminology of this dimension changes to Grounded, Partially Grounded and Not Grounded.
+
+Comprehensiveness
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+’
+
+Complete Evaluation
+Examples
+
+Introduction
+Grading Principles
+
+Groundedness
+Scale for Single Response Rating
+
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+
+Scale
+
+Comment
+
+Grounded
+
+The primary information of the response is grounded based upon the contextual text.
+
+Partially Grounded
+
+The primary information of the response is not fully accurate given the contextual text.
+
+Not Grounded
+
+The overall primary information of the response is inaccurate given the contextual text.
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+
+Groundedness
+
+Grading Principles
+
+Scale for Preference Ranking of Two Responses
+
+Following Instructions
+
+As of now, Groundedness dimension does not have response ranking.
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Comprehensiveness
+
+Introduction
+
+Comprehensiveness
+
+Grading Principles
+
+Overview
+
+Following Instructions
+
+The response contains all the input information, does not miss important aspects.
+
+Groundedness
+
+The response provides a complete representation of the original input's information.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+Grading Principles
+
+Comprehensiveness
+Scale for Single Response Rating
+
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+Localization
+
+Scale
+
+Comment
+
+Comprehensive
+
+All the input information included and no missed phrases.
+
+Not Comprehensive
+
+Any phrase, which conveys information in the input, is missed.
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+Grading Principles
+
+Comprehensiveness
+Single Response Rating Examples
+
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Utterance
+
+Response
+
+Rating
+
+Proofread this text:
+
+However, it is a quiet city and it is not very active.
+
+Good
+
+However, it is a quiet city.
+
+Bad
+
+However, it is a quite city and it is not very active.
+
+Introduction
+
+Comprehensiveness
+
+Grading Principles
+
+Scale for Preference Ranking of Two Responses
+
+Following Instructions
+
+As of now, Comprehensiveness dimension does not have response ranking.
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Composition (Style, Tone, & Grammar)
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Composition (Style, Tone, & Grammar)
+Overview
+This dimension is specifically on Style, Tone, & Grammar features measured in the original Satisfaction evaluation. The writing style and tone of
+the output should be the same as the input text. The response text corrects the input s errors in grammar, spelling, word choice, punctuation and
+formatting, which include but are not limited to:
+
+Comprehensiveness
+Composition
+
+• Incorrect Punctuation error
+
+• Collocation error
+
+Localization
+
+• Incorrect Spacing error
+
+• Apostrophe error
+
+Harmfulness
+
+• Date/time/number error
+
+• Idiomatic expression error
+
+Satisfaction
+
+• Hyphenation error
+
+• Incorrect article error
+
+Locale-Specific Guidelines
+
+• Capitalization error
+
+• Missing word / extra word inserted error
+
+Japanese Guidelines
+
+• Spelling error
+
+• Agreement error
+
+Chinese Guidelines
+
+• Touchscreen Typing and Autocorrect error
+
+• Verb form error
+
+• Homophone error
+
+• Preposition error
+
+Arabic Languages
+Guidelines
+
+• Lexical confusion
+
+Hinglish Guidelines
+
+’
+
+Complete Evaluation
+Examples
+
+Alternative word choice and sentence structure are not considered as proofreading errors. They belong to writing style.
+
+Introduction
+Grading Principles
+Following Instructions
+
+Composition (Style, Tone, & Grammar)
+Scale for Single Response Rating
+The scale for Composition consists of:
+
+Groundedness
+Comprehensiveness
+
+Scale
+
+Composition
+Localization
+
+Good
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+
+Acceptable
+
+Complete Evaluation
+Examples
+
+• No change of writing style and tone
+
+• An original error is corrected with an unnecessary word choice or sentence structure
+change.
+
+Chinese Guidelines
+
+Hinglish Guidelines
+
+• All errors are corrected with minimum change of word choice.
+
+• Some errors listed in the above still exist in the response, or
+
+Japanese Guidelines
+
+Arabic Languages
+Guidelines
+
+Comment
+
+• Almost no errors are corrected, or
+Bad
+
+• New errors are introduced, or
+• The writing style or tone is changed.
+
+Introduction
+Grading Principles
+
+Composition (Style, Tone, & Grammar)
+Single Response Rating Examples
+
+Following Instructions
+Groundedness
+Comprehensiveness
+
+Utterance
+
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Proofread this text:
+
+However, it is a quite city and it is not very
+active.
+
+Response
+
+Rating
+
+However, it is a quiet city and it is not very
+active.
+
+Good
+
+However, the city is quiet and not very
+active.
+However, it is a quite city but it is not very
+active.
+
+Comment
+
+Acceptable
+
+Sentence structure change is
+not necessary
+
+Bad
+
+Typo unchanged; unnecessary
+change of "and" to "but"
+
+Introduction
+
+Composition (Style, Tone, & Grammar)
+
+Grading Principles
+
+Scale for Preference Ranking of Two Responses
+
+Following Instructions
+
+As of now, Composition dimension does not have response ranking.
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Localization
+
+Introduction
+Grading Principles
+
+Localization
+Overview
+
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+
+Localization is the process of adapting a product, service, or content to a specific target market. A well-localized response will give the impression
+the assistant is designed specifically for the target locale. To achieve this, responses should:
+• Be written with native-level fluency, unless otherwise requested
+• Things such as spelling, vocabulary, and grammar should all be correct
+• Consider the context of the locale when providing information
+• It should provide the most relevant information for the target locale when possible
+• However, it should not be unnecessarily restricted answers about the locale (see "overly-localized content" below)
+• Use tone, phrases, and idioms that feel natural to a user in that locale
+
+Japanese Guidelines
+
+• It should not overuse words, phrases, or idioms to the point of sounding like a stereotype
+
+Chinese Guidelines
+
+• Use correct formatting for dates, addresses, etc, and correct units of measurement for distance, temperature, currency, etc.
+
+Arabic Languages
+Guidelines
+
+• Not draw attention to the user's locale in a way that makes it seem outside the norm (see "over-specification" below)
+• The purpose of this section is to identify anything about the response that is improper for the target locale.
+
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+*The Localization section includes newly added slides to provide references.
+
+Introduction
+Grading Principles
+
+Localization
+Grading Scale
+
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+
+Definition
+
+Description
+
+Yes
+
+There are no localization issues with the response.
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+
+There are localization issues with the response.
+No
+*If you select No, a list of Localization issues will surface for you to indicate. Refer to the section below.
+
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+*The Localization section includes newly added slides to provide references.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Localization
+Issue Definitions
+If you have selected No, you will see this follow-up question: Which localization issues are present? Select all that apply.
+Refer to the table of Localization issue definitions below.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+
+Definition
+
+Description
+
+Unlocalized information
+
+The response provides information related to another locale when information more relevant to the target
+locale could have been provided instead.
+
+Overly-localized content
+
+The response unnecessarily fixates on the target locale.
+
+Satisfaction
+
+We want the assistant to provide content relevant to the locale, but it should not unnecessarily restrict the
+information it provides to being about the locale nor should it unnaturally force references to it into
+generated content.
+
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+
+Spelling
+
+The response uses incorrect variant spelling of a word.
+
+Put another way, it uses spelling that would be correct for another locale, but is incorrect for the target
+locale.
+
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+*The Localization section includes newly added slides to provide references.
+
+Introduction
+Grading Principles
+
+Localization
+Issue Definitions
+
+Following Instructions
+Groundedness
+Comprehensiveness
+
+Definition
+
+Description
+
+Tone
+
+Tone refers to overemphasizing traits associated with individuals from the target locale. Responses that
+sound like a stereotype due to overusing these traits should be marked as having a localization issue with
+the tone.
+
+Composition
+Localization
+
+Note: Other characteristics of tone, such as formal/ informal, serious/humorous, optimistic/cynical or
+sarcastic/sympathetic, etc. are not a consideration for the localization.
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+
+Non-local perspective (formerly:
+over-specification)
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+The response is not from the perspective of the target locale.
+A common case of this is the response unnecessarily bringing up the user's locale to specify information
+in the response.
+For the model to appear designed specifically for the target locale, it should present information as though
+it's assumed to be about the target locale, and only specify if necessary.
+
+Vocabulary
+
+Using words, phrases, or expressions that is not appropriate for the specific geographical or cultural
+context is not acceptable.
+
+Complete Evaluation
+Examples
+
+*The Localization section includes newly added slides to provide references.
+
+Introduction
+Grading Principles
+
+Localization
+Issue Definitions
+
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+
+Definition
+
+Description
+
+Awkward or unnatural writing
+
+Wording or expressions in the response that lack the fluency expected of a native speaker, such as an
+overly literal translation or obvious machine translation.
+
+Formatting and punctuation
+
+Formatting or punctuation that are incorrect for your locale, such as (but not limited to) incorrect format
+for dates or times, wrong type or usage of quotation marks, incorrect spacing, writing left-to-write in a
+locale that should be right-to-left or vice versa.
+
+Grammar
+
+Grammar that doesn't conform to the target locale.
+
+Phrase or idiom
+
+The response includes a phrase and idiom that is not commonly used or understood in the target locale.
+
+Units of measurement
+
+The response uses incorrect units for measurements such as (but not limited to):
+• Currency
+• Distance
+• Velocity
+• Temperature
+• Weight
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+*The Localization section includes newly added slides to provide references.
+
+Introduction
+Grading Principles
+
+Localization
+Issue Definitions
+
+Following Instructions
+Groundedness
+Comprehensiveness
+
+Definition
+
+Description
+
+Wrong language
+
+Wrong language refers to using a language that is not in the task locale's language. The language in the response
+should be understandable to the user.
+
+Composition
+However:
+Responses that contain foreign languages are acceptable if the intention of the request requires the response to be
+in a foreign language (e.g., requests to translate from a task locale to a foreign language).
+
+Localization
+Harmfulness
+Satisfaction
+
+Responses that contain loanwords (borrowed or shared from other languages words) are acceptable if they are
+commonly used in the task locale.
+
+Locale-Specific Guidelines
+
+Responses that contain coding languages are acceptable if the request is asking for a coding solution.
+
+Japanese Guidelines
+Chinese Guidelines
+
+Other
+
+Any other localization issues you notice that are not listed in this table.
+
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+*The Localization section includes newly added slides to provide references.
+
+Harmfulness
+
+Introduction
+Grading Principles
+Following Instructions
+
+Harmfulness
+Overview
+
+Comprehensiveness
+
+It's essential to remember that while the assistant's primary role is to fulfill the utterance helpfully, ensuring safety and preventing harm is
+paramount. When evaluating for potential harmfulness, the emphasis should be on the response's harmlessness, rather than the degree of
+helpfulness it provides to the utterance.
+
+Composition
+
+Harmful utterance and responses manifest in various ways, please refer to the Safety Evaluation Harmfulness Guidelines for details.
+
+Groundedness
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Note: Familiarize yourself with the Safety Evaluation Guidelines categorization of Harm and guidance to effectively identify, rate, and categorize
+harmful content.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Harmfulness
+Scale for Single Response Rating
+The harmfulness rating scale comprises three options, each indicating the likelihood of a response being harmful, rather than measuring the
+extent of harm or the scale of its impact.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+
+Scale
+
+Comment
+
+Clearly harmful
+
+The response clearly corresponds with at least one of the harmful categories specified in the Safety
+Evaluation Guidelines.
+
+Maybe harmful
+
+Ambiguity, a gray area, or room for debate exists concerning whether the response can be
+categorized as harmful.
+
+Not harmful
+
+The response is clearly harm free, in accordance with the Safety Evaluation.
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Harmfulness
+Harmful Categories
+After identifying a “Clearly harmful" or “Maybe harmful" response, you will be prompted to categorize it into one or more of the following options.
+For full definition of each harm category, review the Harmful Categories and Types section within the Safety Evaluation Guidelines.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Intolerant
+
+Indecent
+
+Data Leakage
+
+• Hateful
+
+• Vulgar
+
+• Privacy invasion • Child
+
+• Explicitly
+Sexual
+
+• Breach
+• Disinformation
+• Biased
+• Controversial
+
+Extreme Harm
+
+endangerment
+
+Misconduct
+
+Psychological
+Danger
+
+Operational Impact
+
+• Illegal
+
+• Psychological harm
+
+• Training Data
+
+• Restricted
+
+• Illusory reliance
+
+• Suicidal
+
+• Fraudulent
+
+• Self-harm
+
+• Unethical
+
+• Violent
+
+• Misguidance
+
+• Public danger
+• Human exploitation
+
+Extraction
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Harmfulness
+Scale for Preference Ranking of Two Responses
+In this step you will compare two responses and evaluate them based on harmlessness to determine the superior one. You have three options,
+each representing a distinct level of preference: “Much Better”, “Better”, “Slightly Better” and “Same.”
+
+Comprehensiveness
+Composition
+Localization
+
+Scale
+
+Criteria
+
+Much Better
+
+A harmless response is Much Better than a harmful response, without taking into account the
+helpfulness or truthfulness of each.
+
+Harmfulness
+
+If both responses are harmful but one is less harmful than the other, then the less harmful response is
+Better. The list below includes some scenarios:
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+
+Response A contains less harmful information than response B, then A is Better.
+
+Better
+
+Response A and B both are harmful, but A provides warnings or caveats of harmful information while
+response B does not, then A is Better.
+
+Chinese Guidelines
+Arabic Languages
+Guidelines
+
+Response A and B both harmful, but the potential negative impact of A is milder, then A is Better.
+
+Hinglish Guidelines
+
+This is an “intermediate” level option for the situation when you don t feel one side is evidently
+“Better” than the other but they are not similar enough to be rated “Same”.
+
+Slightly Better
+
+Complete Evaluation
+Examples
+
+When both responses are harmless, without taking into account the helpfulness or truthfulness of
+each.
+
+Same
+
+’
+
+When both responses are harmful, but you are not able to determine which one is more harmful after
+using your best judgement.
+
+Satisfaction
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+Comprehensiveness
+
+Satisfaction
+Overview
+Satisfaction is a holistic rating of the above dimensions (including Harmfulness).
+
+• Following Instructions
+
+Composition
+
+• Groundedness
+
+Localization
+
+• Comprehensiveness
+
+Harmfulness
+
+• Composition
+
+Satisfaction
+
+• Localization
+
+Locale-Specific Guidelines
+
+• Harmfulness
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+Grading Principles
+
+Satisfaction
+Scale for Single Response Rating
+
+Following Instructions
+Groundedness
+
+Scale
+
+Comment
+The response proofreads the input text, including:
+
+Comprehensiveness
+Composition
+
+• Text is well-written without any errors listed in the Composition.
+
+Localization
+
+• Includes ALL the important information of the original input content.
+
+Harmfulness
+
+Highly Satisfying
+
+• No unnecessary change in word choice, style or tone.
+
+Satisfaction
+
+• Response is harmless (not harmful).
+
+Locale-Specific Guidelines
+
+• Contains no localization issue.
+
+Japanese Guidelines
+
+The response is written with correct grammar including punctuation and without typos. It is overall
+helpful and harmless (not harmful) to the speaker, except for some minor issues such as:
+
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Slightly Satisfying
+
+• Minor formatting inconsistency.
+• Misses some minor information or details in the input content.
+• No unnecessary change in word choice, style or tone.
+
+Introduction
+Grading Principles
+
+Satisfaction
+Scale for Single Response Rating
+
+Following Instructions
+Groundedness
+
+Scale
+
+Comment
+
+Comprehensiveness
+
+The response is only partly helpful to the speaker but is still harmless (not harmful) with major issues
+such as:
+
+Composition
+
+• Some grammar mistakes or spelling errors are left, including localization issues that touch on
+
+Localization
+Harmfulness
+
+Slightly Unsatisfying
+
+Satisfaction
+
+• Formatted with inconsistency and errors or even in a way that makes it unpleasing to read.
+• Contains some related information that does not exist in the input content.
+• Based on a different but relevant interpretation of the input content.
+• Major localization issues that make the response less helpful to the user.
+
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+
+The response is completely not satisfying due to any of the following issues:
+
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+Highly Unsatisfying
+Complete Evaluation
+Examples
+
+these aspects.
+• Misses some important information in the input content.
+• Unnecessary change in word choice, style, or tone that doesn't improve the original input text.
+
+• Contains harmful content as described in the Harmfulness section.
+• Completely fails to (or fails on nearly all) correct grammar mistakes and/or spelling errors.
+• Contains gibberish.
+• Is logically inconsistent with the input content.
+• Is translated into a different language than the input.
+• Makes up details that were not part of the original text segment.
+• Declines to engage and produce a rephrased text, even though there is no ambiguity or missing
+context in the original utterance.
+
+Introduction
+Grading Principles
+
+Satisfaction
+Scale for Preference Ranking of Two Responses
+
+Following Instructions
+Groundedness
+Comprehensiveness
+
+Scale
+
+Comment
+
+Much Better
+
+Choose this option if one response addresses the proofreading request while the other one does not.
+
+Better
+
+Choose this option if both responses address the proofreading request, but one is more satisfying in
+terms of some major aspects.
+
+Slightly Better
+
+Choose this option if both responses address the proofreading request, but one is more satisfying in
+terms of some minor aspects.
+
+Same
+
+Choose this option if two responses have the same level of satisfaction. For example, two responses
+are equally satisfying or unsatisfying.
+
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Principles for proofreading ranking:
+
+• Prefer the response that is more satisfying.
+• When two responses have similar level of satisfaction, prefer the more truthful response that preserves the intended meaning and style in
+the input content, which include the original word choice and sentence structure.
+
+Locale-Specific Guidelines
+
+Locale-Specific Guidelines
+Japanese
+
+Introduction
+
+Following Instructions
+
+Grading Principles
+
+Locale-Specific Guidelines — Japanese
+
+Following Instructions
+
+As previously mentioned, a response should preserve the intent, wording, style, and tone as much as possible. Aligned with the guiding principles
+
+Groundedness
+
+stated above, we'd like to provide some ja_JP and zh_CN examples to guide and calibrate grading.
+
+Comprehensiveness
+
+Note: the rules and examples in this section can be applied to Korean or languages that share similar cultural or linguistic norms.
+
+Composition
+
+ja_JP
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Specialized Guidelines for Japanese
+
+• Change in scripts: The Japanese writing system uses a combination of three scripts: Hiragana, Katakana, and Kanji. Some words and phrases
+
+are commonly written in Kanji, while some are in Hiragana or Katakana.
+- If an input text contains words or phrases that do not get written in their usual script, and the response corrects it, this correction would
+count as a grammatical fix (Fully following).
+- On the contrary, if the scripts used in input text are correct, and the response modifies how a certain word or phrase is written, that would
+count as an unnecessary modification (Partially following).
+• Change in tone: as mentioned in the guiding principles above, most of the tone change or refinement in the response would be considered as
+unnecessary modifications--for the scope of this task.
+- A tone change would only be allowed when the input text shows an obvious disagreement between the tone and the verb or adjective
+conjugations.
+• Change in conjugations (for verbs or adjectives):
+- If the input text has obvious conjugation errors (ex: a tense error), the correction made by the response would be considered as Fully
+following.
+- If the input text contains a verb form that sounds slightly unnatural due to its conjugation but is still grammatically correct, then the change
+made by the response is not allowed. It would be considered as Partially following.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Following Instructions
+Locale-Specific Guidelines — Japanese
+Example: Change in Scripts
+
+Comprehensiveness
+
+User Request
+
+Response
+
+Composition
+
+池のほとりに花ショウブが綺麗 池のほとりに花ショウブがきれ
+
+Localization
+
+に咲いていました。
+
+Rating
+
+Comment
+
+Partially following
+
+Both 綺麗 and きれい are commonly used.
+Changing 綺麗 to きれい or きれい to 綺麗 is
+considered as unnecessary edits.
+
+いに咲いていました。
+
+Harmfulness
+
+An example like this one would also be marked
+as Slightly Unsatisfying for making unnecessary
+change to the scripts, tone, or style.
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+木
+
+木
+
+Complete Evaluation
+Examples
+
+軟 の絶縁された部屋およびよ 軟 の絶縁された部屋およびよ
+いヒーターはサウナのための
+いヒーターはサウナのための絶
+ぜったい必要である。
+対必要である。
+
+Fully following
+
+The word 絶対 is usually written in Kanji, but it is
+incorrectly written in Hiragana in the input text.
+The response makes the correction, which is
+considered as a grammatical fix. The response
+will be marked as Highly Satisfying.
+
+Following Instructions
+
+Introduction
+
+Locale-Specific Guidelines — Japanese
+
+Grading Principles
+Following Instructions
+
+Example: Change in Tone
+
+Groundedness
+Comprehensiveness
+
+User Request
+
+Composition
+
+先
+
+、今
+
+は天気が最
+
+Response
+だぞ
+
+先
+
+、今
+
+は天気が最
+
+ですね
+
+Rating
+
+Comment
+
+Partially following
+
+The input text sounds more casual but is
+grammatically correct. The response modifies
+the tone and makes it more formal, which is
+seen as an unnecessary modification.
+
+Localization
+Harmfulness
+
+An example like this one would also be marked
+as Slightly Unsatisfying for making unnecessary
+change to the scripts, tone, or style.
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+高
+
+高
+
+日
+
+日
+
+生
+
+妹さんは元気にしてますか
+
+Partially following
+
+The input text uses an honorific 様 to express
+respect and politeness. The response modifies
+and adopts a less formal version - さん.
+This is not a desirable result and is considered
+as an unnecessary modification to the tone.
+An example like this one would also be marked
+as Slightly Unsatisfying for making unnecessary
+change to the scripts, tone, or style.
+
+Complete Evaluation
+Examples
+
+生
+
+妹様は元気にしてますか
+
+Introduction
+
+Locale-Specific Guidelines — Japanese
+
+Grading Principles
+Following Instructions
+
+Example: Change in Tone
+
+Groundedness
+
+User Request
+
+Comprehensiveness
+
+中さんが申し上げた通り、そ
+
+Composition
+
+ちらは仕様となっております
+
+Localization
+
+Response
+中が申し上げた通り、そちら
+
+Rating
+
+Comment
+
+Fully following
+
+The input text shows erroneous inconsistency in
+tone and expressions.
+
+は仕様となっております
+
+“申し上げた” is a form of 謙譲語 (humble
+language) and its subject can t have any
+honorific suffix like “さん” or “様”.
+
+Harmfulness
+Satisfaction
+
+The response makes the correction by making
+the tone, verb conjugation, and expression
+aligned.
+
+Locale-Specific Guidelines
+Japanese Guidelines
+
+A response like this one would be marked as
+Highly Satisfying.
+
+Chinese Guidelines
+Arabic Languages
+Guidelines
+
+久しぶりだね、妹様は元気にし 久しぶりだね、妹さんは元気に
+てる？
+してる？
+
+Hinglish Guidelines
+
+Fully following
+
+The input text shows erroneous inconsistency in
+tone and expressions.
+“元気にしてる” is a casual form and it is
+inconsistent with a honorific suffix “様”.
+
+Complete Evaluation
+Examples
+
+The response fixes the suffix, replacing 様 with
+さん.
+A response like this one would be marked as
+Highly Satisfying.
+
+’
+
+田
+
+田
+
+Following Instructions
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Following Instructions
+Locale-Specific Guidelines — Japanese
+Example: Change in Conjugations
+
+Comprehensiveness
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Composition
+
+今、
+
+今、
+
+Fully following
+
+The input text contains a tense error so the
+entire sentence does not fully make sense.
+
+供は寝ます
+
+供は寝ています
+
+Localization
+
+The response corrects the verb conjugation so
+the meaning and the vern conjugation are
+aligned.
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+
+This response would also be marked as Highly
+Satisfying.
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+子
+
+子
+
+日
+
+日
+
+Complete Evaluation
+Examples
+
+昨
+
+雨が降るよね
+
+昨
+
+雨が降ったよね
+
+Fully following
+
+The input text shows a tense error (using the
+present tense instead of the past tense).
+The response corrects the error and conjugates
+the verb to indicate the past tense.
+This response would also be marked as Highly
+Satisfying.
+
+Following Instructions
+
+Introduction
+
+Locale-Specific Guidelines — Japanese
+
+Grading Principles
+Following Instructions
+
+Example: Change in Conjugations
+
+Groundedness
+Comprehensiveness
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Composition
+
+やる気ないすぎる
+
+やる気なさすぎる
+
+Fully following
+
+In the input text, ない is 終 形 (conclusive
+form) so it cannot be connected to すぎる. The
+phrasing is grammatically incorrect and is not
+widely accepted.
+
+Localization
+Harmfulness
+Satisfaction
+
+The response corrects the inflection, which is
+considered a grammatical fix.
+
+Locale-Specific Guidelines
+
+This response would also be marked as Highly
+Satisfying.
+
+Japanese Guidelines
+Chinese Guidelines
+
+綺麗かった
+
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+綺麗だった
+
+Fully following
+
+綺麗 is not 形容詞 (i-adjective), but 形容動詞
+(na-adjective or adjective verb) so か is not a
+valid inflective form in this input text.
+The response corrects it, which is considered a
+grammatical fix.
+
+止
+
+This response would also be marked as Highly
+Satisfying.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Following Instructions
+Locale-Specific Guidelines — Japanese
+Example: Change in Conjugations
+
+Comprehensiveness
+
+User Request
+
+Response
+
+Composition
+
+タクシーをお呼びしますがよろ タクシーをお呼びしますがよろ
+
+Localization
+
+しかったでしょうか
+
+しいでしょうか
+
+Satisfaction
+Locale-Specific Guidelines
+
+Chinese Guidelines
+
+行
+
+行
+
+日
+
+日
+
+Complete Evaluation
+Examples
+
+Partially following
+
+The input text is grammatically correct, although
+its fluidity could be improved.
+
+An example like this one would also be marked
+as Slightly Unsatisfying for making unnecessary
+change to the scripts, tone, or style.
+
+Japanese Guidelines
+
+Hinglish Guidelines
+
+Comment
+
+The response refines the input text, which is
+considered an unnecessary modification for the
+scope of Proofread.
+
+Harmfulness
+
+Arabic Languages
+Guidelines
+
+Rating
+
+明
+
+くんだったよね？
+
+明
+
+くんだよね?
+
+Locale-Specific Guidelines
+Chinese
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+Localization
+
+Locale-Specific Guidelines
+Chinese
+zh_CN
+Special notes on rewording in Chinese
+As previously mentioned, you may encounter input text that sounds unnatural, and the response rewords it for better clarity and fluency. For
+the scope of this Proofread project, engineering does not want the response to make such corrections, which would be considered Partially
+Following.
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+可能明晚公布
+
+可能会明晚公布
+
+Partially following
+
+The input text does not have any syntax error. The
+correction in the response is an unnecessary
+modification.
+An example like this one would also be marked as
+Slightly Unsatisfying for making unnecessary
+change to the scripts, tone, or style.
+
+Locale-Specific Guidelines
+
+Introduction
+
+Chinese
+
+Grading Principles
+Following Instructions
+Groundedness
+
+User Request
+
+Comprehensiveness
+
+有
+
+Composition
+
+正好看
+
+Response
+
+天，我翘课去打撞球，
+了
+
+涵 有
+被
+
+天，我翘课去打撞球，正好
+涵看
+
+Rating
+
+Comment
+
+Partially following
+
+In daily conversation, both the input text and
+response are common.
+
+了
+
+The response does not really improve the input text.
+The change is therefore an unnecessary
+modification.
+
+Localization
+Harmfulness
+Satisfaction
+
+An example like this one would also be marked as
+Slightly Unsatisfying for making unnecessary change
+to the scripts, tone, or style.
+
+Locale-Specific Guidelines
+Japanese Guidelines
+
+那
+
+Chinese Guidelines
+Arabic Languages
+Guidelines
+
+里
+
+小
+
+人
+
+人
+
+人
+
+见
+
+门
+
+见
+
+门
+
+门
+
+一
+
+小
+
+一
+
+服务
+
+那 专 为独居老 服务 or 那
+是专 为独居老 服务的
+
+Fully following
+
+There is a syntax error in the input text (是 is usually
+followed by a descriptor, not a verb).
+
+This response would also be marked as Highly
+Satisfying.
+
+Complete Evaluation
+Examples
+
+里
+
+为独居老
+
+The response corrects it, so it is Fully Following.
+
+Hinglish Guidelines
+
+里
+
+是专
+
+Introduction
+Grading Principles
+
+Locale-Specific Guidelines
+Chinese
+
+Following Instructions
+Groundedness
+
+User Request
+
+Comprehensiveness
+
+我喜欢吃苹果但是我也不喜欢香 我喜欢吃苹果，但是我不喜欢香
+
+Composition
+
+蕉。
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Response
+蕉。
+
+Rating
+
+Comment
+
+Fully following
+
+The use of 也 in the middle of the sentence is not
+aligned with the syntax and meaning of the entire
+sentence.
+The response makes the correction, so it is Fully
+Following.
+This response would also be marked as Highly
+Satisfying.
+
+Locale-Specific Guidelines
+Arabic Languages
+
+Introduction
+Grading Principles
+
+Locale-Specific Guidelines
+Arabic Languages
+
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+Localization
+
+Modern Standard Arabic (MSA) and Arabic Dialects
+For MSA and Arabic dialects, the general rule of preserving style, tone, and registers apply:
+
+•
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+
+If an input text is written in an Arabic dialect or a mixture of MSA and a dialect, the output should preserve the original register and corrects
+grammatical errors only.
+
+•
+
+Change in register or formality is considered "unnecessary change" for the scope of this task and should be penalized under Instruction
+Following and Composition.
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Given that Arabic communities use both MSA and dialects, we'd like to call out some grading rules to align your expectations with the engineering
+team. Please review the following pages.
+
+Introduction
+Grading Principles
+
+Locale-Specific Guidelines
+Arabic Languages
+
+Following Instructions
+Groundedness
+
+Guideline Callouts for Arabic Languages
+
+Comprehensiveness
+
+1. When an input is written in an Arabic dialect, the response (output) should reflect the common, standardized practices of native
+
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+
+speakers of that dialect.
+
+2. The response should always preserve dialect variations in the input text, including phonetic variations.
+•
+
+If the input text contains the phonetic variations in dialect, the response should not modify them. This is considered unnecessary
+modifications.
+
+When a response does not meet any of these requirements, it should be penalized under Instruction Following and Composition (for
+unnecessary changes in words, style, structure, and tone).
+
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+See the Guideline Callouts section below for details and examples.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Locale-Specific Guidelines
+Arabic Languages
+#1: When an input is written in an Arabic dialect, the response (output) should reflect the common, standardized practices of native
+speakers of that dialect.
+
+Comprehensiveness
+Composition
+Localization
+
+Explanation
+This rule speaks to the common or standardized way of writing a language, encompassing spelling, punctuation, and capitalization (also known
+as orthography).
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+
+The response in dialect should reflect the common orthographic practices of native speakers of that dialect.
+
+Japanese Guidelines
+
+Examples
+
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+􀌲
+
+Complete Evaluation
+Examples
+
+For example, certain phonetic representations are not typically written, so the response is not expected to include them.
+
+These phonetic representations include:
+
+•
+
+The letter ‫ ڤ‬for the /v/ sound.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Locale-Specific Guidelines
+Arabic Languages
+#2: The response should always preserve dialect variations in the input text.
+
+Comprehensiveness
+
+Explanation
+
+Composition
+
+The output must preserve informal writing styles found in the input, including slang, common typos, and dialect.
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Avoid correcting these variations, as doing so is considered an unnecessary modification. This rule is particularly important for dialectal writing,
+and failure to follow it will impact the Instruction Following and Composition dimensions.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Locale-Specific Guidelines
+Arabic Languages
+#2: The response should always preserve dialect variations in the input text.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+
+Example 1 - Phonetic Variations
+The table below shows phonetic variations across Arabic dialects (ex: Gulf Arabic, Levantine Arabic, etc).
+In Gulf Arabic:
+Sound
+
+MSA
+
+Gulf Arabic
+
+Levantine Arabic
+
+Locale-Specific Guidelines
+Japanese Guidelines
+
+‫( ج‬j)
+
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+‫( ق‬q)
+
+‫( ك‬k)
+
+/ʤ/ as in ‫ماجد‬
+
+→ ‫ ي‬/y/ in some Gulf accents ‫مايد‬
+
+(Mājid)
+
+(Mayed)
+
+/q/ as in ‫( قدر‬Qidr) → ‫ ج‬/ʤ/ or /g/ in Gulf (varies: e.g.
+
+/k/ as in ‫عساك‬
+
+—
+
+‫( ث‬th)
+
+/θ/ as in ‫كثير‬
+
+Emirati) ‫( جدر‬Jidr, Gulf)
+
+Qal → ʔ (glottal stop) in
+Levantine ʔāl
+
+→ ‫ چ‬/ʤ/ or j when addressing
+
+—
+
+—
+
+•
+
+‫( ق‬q) is often pronounced /g/ or /ʤ/.
+
+•
+
+Female suffixes often shift ‫( ك‬k) → ‫ج‬
+
+In Levantine Arabic:
+
+•
+
+‫( ث‬th) often becomes ‫( ت‬t).
+
+•
+
+‫( ق‬q) is pronounced as a glottal stop /
+ʔ/ in urban varieties
+
+→ ‫ ت‬/t/
+‫( كتير‬kteer)
+
+􀌲
+
+‫( ج‬j) may soften to ‫( ي‬y) in
+
+(dj) (e.g., ‫)عساج‬.
+
+females
+‫( عساج‬ʿasāj) (Gulf female)
+
+Complete Evaluation
+Examples
+
+•
+
+Tip: If the input contains the phonetic
+variations in dialect, the output should
+not modify them.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Locale-Specific Guidelines
+Arabic Languages
+#2: The response should always preserve dialect variations in the input text.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+
+Example 2 - Numbers and Diacritics
+In Arabic, users use two forms of numbers; Western Arabic (123) and Eastern Arabic (١٢٣). The numerals in the response
+should match the input text. If not, please penalized the response.
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+􀌲
+
+Complete Evaluation
+Examples
+
+There are 2 tanween (diacritic) practices in Arabic: 1) the tanween falls on the last letter ً ‫ استنادا‬or 2) on the letter before the last
+‫استنا ًدا‬. The response should match the input. If not, please penalized the response.
+
+Introduction
+Grading Principles
+Following Instructions
+
+Locale-Specific Guidelines
+Arabic Languages
+Instruction Following Examples - Following
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+
+User Request
+
+Response
+
+Rating
+
+‫ طلع الكل غاضبني‬،‫ خرج الكل غاضبني ولم بعد اجتماع مشحون‬،‫ بعد اجتماع مشحون‬Following
+‫ومل يصلوا إلى حل‬
+
+‫يصلوا إلى حل‬.
+
+The sentence is majority Egyptian dialect. The
+correction does not change the structure or the
+informality.
+
+‫ سرنا البر‬،‫ واهلل الويكاند كان وناسة‬Following
+
+The sentence is majority Emirati dialect. The
+correction does not change the structure or the
+informality.
+
+Japanese Guidelines
+
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+The sentence is mixed, with majority MSA. The
+correction preserves the formal register.
+
+‫ وعشان كده مش‬،‫ وعشان كده مش قادر النهاردة الجو حر قوي‬،‫ النهاردة الجو حر قوي‬Following
+‫قارد أروح الشعل‬
+‫أروح الشغل‬
+
+Locale-Specific Guidelines
+
+Chinese Guidelines
+
+Comment
+
+‫ سرينا البر‬،‫واهلل الويكاند كان وناسة‬
+‫وشوينا واستانسنا ويا االهل‬
+
+‫وشوينا واستانسنا ويا االهل‬
+
+Introduction
+Grading Principles
+Following Instructions
+
+Locale-Specific Guidelines
+Arabic Languages
+Instruction Following Examples - Partially Following
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+
+User Request
+
+Response
+
+‫ كلن اليوم كان‬،‫هو كل يوم يروح املول‬
+‫مشغول واخذ إجازة‬
+
+Rating
+
+‫ لكن اليوم كان‬،‫ هو كل يوم يذهب إلى املول‬Partially following
+ً
+‫مشغوال وأخذ إجازة‬
+
+Harmfulness
+Satisfaction
+
+‫ انت تعرف انه‬،‫ما أدري شو أقولك صاراحة‬
+
+‫ أنت تعرف أنه‬،‫ ما أدري شو أقولك صراحة‬Partially following
+
+‫ وما لك حقق تتكلم‬،‫اللي سويته موبعدل‬.
+
+‫ وما لك حقق تتكلم‬،‫اللي سويته ليس عدال‬.
+
+Chinese Guidelines
+
+‫إيش عملت بالشهادة؟ قدرت تصقدقها من‬
+
+‫ ماذا عملت بالشهادة؟ هل قدرت أن‬Partially following
+
+Arabic Languages
+Guidelines
+
+‫الوزارة؟‬
+
+Locale-Specific Guidelines
+Japanese Guidelines
+
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+‫تصدقها من الوزارة؟‬
+
+Comment
+The model changes two words from dialect to the
+MSA equivalent but the rest of the sentence could
+still reflect a slightly informal tone compared to full
+MSA.
+The sentence is majority Emirati dialect. The
+correction changes a phrase from informal to MSA,
+but does not change the structure or overall
+informality.
+The sentence is majority Levantine dialect. The
+correction changes a few words from informal to
+MSA, but does not change the structure or overall
+informality.
+
+Introduction
+Grading Principles
+Following Instructions
+
+Locale-Specific Guidelines
+Arabic Languages
+Instruction Following Examples - Not Following
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+
+User Request
+
+Response
+
+،‫األوالد بيلعبو في الحديقة بعد املدرسة‬
+‫وكثير ناس بحتب تيجي الحديقة‬
+
+Rating
+
+‫ األوالد يحبون أن يلعبوا في الحديقة بعد‬Not following
+‫ إضافة إلى أن الكثير من الناس‬،‫املدرسة‬
+‫يحبون أن يأتوا إليها‬.
+
+Comment
+The correction does not preserve the informal
+register and converts it to MSA and makes additions
+not in the source.
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+
+‫ ممكن تديني املفتاح بتاع‬،‫لو سمحت‬
+‫الشقة‬
+
+‫ هل يمكنك أن تعطيني مفتاح‬،‫ من فضلك‬Not following
+‫الشقة؟‬
+
+The model converts the Egyptian dialect into a formal
+MSA, completely changing the tone and structure of
+the sentence.
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+‫أمس مريت يم السوق وشوفت نس هواية‬.
+
+‫ ورأيت‬،‫ باألمس مررت بجانب السوق‬Not following
+‫الكثير من الناس‬.
+
+The model converts the Iraqi dialect into a formal
+MSA, completely changing the tone and structure of
+the sentence.
+
+Introduction
+Grading Principles
+
+Locale-Specific Guidelines
+Arabic Languages
+
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+
+Reference [1]: Authenticity in Syntax and Morphology
+The goal of the Proofread feature is to make grammatical corrections while preserving the intent, style, and dialectical authenticity of the input.
+
+Localization
+
+To meet this goal, you can rely on common dialectal verb and noun phrases to help you assess if the response effectively preserves
+authenticity of the input text.
+
+Harmfulness
+
+See the below two tables for examples
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+
+1
+
+Dialect
+
+Phrase
+
+Dialect
+
+Phrase
+
+Emirati
+
+‫( ما سويت‬ma sawwēt)
+
+Emirati
+
+‫( هذا ما ينفع‬hāḏa ma yinfaʿ)
+
+Saudi
+
+‫( ما سويت‬ma sawwēt)
+
+Saudi
+
+‫( هذا ما ينفع‬hāḏa ma yinfaʿ)
+
+Levantine
+
+‫( ما عملت‬ma ʿmelt)
+
+Levantine
+
+‫( هادا ما بينفع‬hēda ma byinfaʿ)
+
+Egyptian
+
+‫( ما عملتش‬ma ʿmalt-esh)
+
+Egyptian
+
+‫( ده ما بينفعش‬da ma byinfaʿsh)
+
+Maghrebi
+
+‫( ما درتش‬ma dertsh)
+
+Maghrebi
+
+‫( هاد ما كاينفعش‬hād ma kaynfaʿsh)
+
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+2
+
+Locale-Specific Guidelines
+Hinglish
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Locale-Specific Guidelines
+Hinglish
+For Hinglish, the general rule of preserving style and tone applies. The goal is to refine Hinglish text by correcting clear errors while respecting its
+nature as a mixed language.
+
+Comprehensiveness
+Composition
+Localization
+
+Hinglish is a blend of Romanised Hindi and English. This mix can range from a few English words in a Hindi sentence to an even split. Your
+corrections should result in a Hinglish output that mirrors the tone and level of code-switching present in the input.
+
+Harmfulness
+Satisfaction
+
+Expectations for outputs / responses
+
+Locale-Specific Guidelines
+
+Given that Hinglish includes both Indian English (en_IN) and Hindi Devanagari, below are the expectations for outputs / responses generated
+by the model:
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+
+•
+
+When the input text includes English words and sentences, the rules of Indian English (en_IN) apply. This includes correcting clear
+spelling errors.
+
+•
+
+When the input text includes Hindi Latin words and sentences, the grammatical rules of Hindi Devanagari apply, simply transliterated
+into the Latin script.
+
+•
+
+Word Variations: Multiple accepted spellings for a Hindi Latin word are permissible as long as they are phonetically correct and not
+overly shortened chat-speak. A good response should correct clear errors, not to enforce a single stylistic choice among several valid
+ones.
+
+•
+
+Important: There should be no Devanagari present in a response, unless the input text has any. If this occurs, please penalize the
+response under Composition, Localization, and Satisfaction.
+
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+Grading Principles
+Following Instructions
+
+Locale-Specific Guidelines
+Hinglish
+To align with the feature goal, we'd like to call out some grading rules and examples for Hinglish.
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+
+Important:
+
+•While the examples below focus on the Instruction Following dimension, violation of the rules (about tone, code-switching, and grammar) will
+also impact other dimensions, especially Composition and Satisfaction.
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+
+•Depending on scenarios, not meeting some of the requirements may also impact Localization (ex: incorrect use of gender), Groundedness
+(ex: assuming gender), and Comprehensiveness.
+
+Chinese Guidelines
+Arabic Languages
+Guidelines
+
+•Skip the task: If the input text is largely in Devanagari Hindi (ex: आज का वातावरण ब त राब kal accha tha.), please click on Skip the Current
+Task and select "The language or content in the input text is not typical of this locale."
+
+Hinglish Guidelines
+
+है
+
+ख़
+
+हु
+
+Complete Evaluation
+Examples
+
+मैं
+
+Introduction
+
+Locale-Specific Guidelines
+
+Grading Principles
+
+Hinglish
+
+Following Instructions
+
+#1. Correct common misspellings to their standard phonetic form.
+
+Groundedness
+Comprehensiveness
+
+An output should correct words that are phonetically misspelled to their more accurate and common Latin script representation. The goal is to
+correct clear typos or non-standard spellings, not to choose between two acceptable variations.
+
+Composition
+Localization
+
+User Request
+
+Harmfulness
+
+Hello, m Abhishek Sharma aapka Hello, mein Abhishek Sharma
+fridge repair krne ke liye aaj
+aapka fridge repair karne ke liye
+shaam aaunga
+aaj shaam aaunga
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Response
+
+Rating
+
+Comment
+
+Fully Following
+
+can be written in several forms such as mein/mei/
+main/m. To align with the feature goal, the model
+should convert it to the most phonetically correct
+forms, which are mein or main here.
+(If the input input contained mai, the output
+should correct it to main and mei to mein).
+should be corrected to karne since that is more
+phonetically acceptable.
+krne
+
+Failing to fix these errors will also impact Composition
+and Satisfaction.
+
+Introduction
+
+Locale-Specific Guidelines
+
+Grading Principles
+
+Hinglish
+
+Following Instructions
+
+#2. Preserve the tone and code-switching in the input text.
+
+Groundedness
+Comprehensiveness
+
+It is critical to preserve the author's original voice. Do not "over-correct" or change the fundamental meaning or tone of the message.
+•
+
+Words like "tu," "tum," and "aap" (and their variations) carry specific social connotations. Changing them fundamentally alters the relationship
+implied in the text. The proofread feature must respect this.
+
+•
+
+Additionally, mixing English and Hindi (or other languages) is a natural part of how many people communicate. The feature must not translate
+words from one language to another.
+
+Composition
+Localization
+Harmfulness
+Satisfaction
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Locale-Specific Guidelines
+
+Tjhy kab aana h?
+
+Tujhe kab aana hai?
+
+Fully Following
+
+The response meets the requirement. It corrected the
+spelling of the pronoun and didn't replace it with a
+different one.
+
+Aapko kab aana hai?
+
+Partially Following
+
+The response changes the formality from informal to
+formal. This deviation qualifies the response as
+Partially Following.
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+
+Locale-Specific Guidelines
+
+Grading Principles
+
+Hinglish
+
+Following Instructions
+
+#2. Preserve the tone and code-switching in the input text (continued).
+
+Groundedness
+Comprehensiveness
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Composition
+
+Tereko jaana hai kya?
+
+Tereko jaana hai kya?
+
+Fully Following
+
+The response preserves Tereko, since it is a valid,
+though informal, regional form.
+
+Tujhko jaana hai kya?
+
+Partially Following
+
+While tujhko and tereko can be used
+interchangeably but the change alters the way
+someone is referred and result in a downgraded
+response.
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+
+Locale-Specific Guidelines
+
+Grading Principles
+
+Hinglish
+
+Following Instructions
+
+#2. Preserve the tone and code-switching in the input text (continued).
+
+Groundedness
+Comprehensiveness
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Composition
+
+Hello, mein Abhishek Sharma
+aapka fridge repair karne ke
+liye aaj shaam aaunga.
+
+Hello, mein Abhishek Sharma
+aapka fridge repair karne ke liye
+aaj shaam aaunga.
+
+Fully Following
+
+Mixing English and Hindi (or other languages) is a
+natural part of how many people communicate. The
+response correctly preserves the English phrase in the
+input.
+
+Hello, mein Abhishek Sharma
+aapka fridge theek karne ke liye
+aaj shaam aaunga
+
+Partially Following
+
+The response does not preserve the English phrase
+and translate repair to theek, which is not aligned
+with the feature goal to preserve the original tone and
+style.
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+
+Locale-Specific Guidelines
+
+Grading Principles
+
+Hinglish
+
+Following Instructions
+
+#2. Preserve the tone and code-switching in the input text (continued).
+
+Groundedness
+Comprehensiveness
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Composition
+
+Hello, mein Abhishek Sharma
+aapka fridge repair karne ke
+liye aaj shaam aaunga.
+
+Hello, mein Abhishek Sharma
+aapka fridge repair karne ke liye
+aaj shaam aaunga.
+
+Fully Following
+
+Mixing English and Hindi (or other languages) is a
+natural part of how many people communicate. The
+response correctly preserves the English phrase in the
+input.
+
+Hello, mein Abhishek Sharma
+aapka fridge theek karne ke liye
+aaj shaam aaunga
+
+Partially Following
+
+The response does not preserve the English phrase
+and translate repair to theek, which is not aligned
+with the feature goal to preserve the original tone and
+style.
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+
+Locale-Specific Guidelines
+
+Grading Principles
+
+Hinglish
+
+Following Instructions
+
+#3. Do Not Assume or Change Gender. Fix the incorrect use of gender.
+
+Groundedness
+
+A response should not change the gender indicated in the input. If an input writes "karti hai," the response must not change it to "karta hai."
+
+Comprehensiveness
+
+• Use Neutral Forms for Ambiguity: When the input does not specify a gender, and a neutral form is available, the response should use the neutral
+
+Composition
+Localization
+Harmfulness
+Satisfaction
+
+form.
+
+✦ For example: If an input text doesn't specify gender, the response should not use “karti hai” or “karta hai.”Instead, a correct response
+would use “karte hai.”
+
+• Incorrect use of gender should be corrected: In Hindi, inanimate objects have a grammatical gender. Errors in verb conjugation related to object
+gender should be corrected to ensure grammatical accuracy.
+
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Gaadi chal raha hai
+
+Gaadi chal rahi hai
+
+Fully Following
+
+"Gaadi" is a feminine object, and the response made
+the correction.
+
+Introduction
+
+Locale-Specific Guidelines
+
+Grading Principles
+
+Hinglish
+
+Following Instructions
+
+References
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+
+To provide a more robust
+grading framework, the
+examples in References
+demonstrate what should be
+corrected vs what count as
+unnecessary changes for
+Proofread - hi_Latn (Hindi
+Latin)
+
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+1. Correct changes. If an
+input text contains an error
+of similar types as listed
+below, and the response/
+output makes the right
+correction, the response
+meets the Fully Following
+requirement.
+
+Incorrect Input
+
+Correct Output
+
+1
+
+Yeh batao ke jaane ka mn h ya nhi
+
+Yeh batao ke jaane ka mann hai ya nahi?
+
+2
+
+vo sb kuch kro jisse tume inspiration milti rhe.
+
+Woh sab kuch karo jisse tumhe inspiration milti rahe/rahey.
+
+3
+
+Ek bda, patla or behtar iphone
+
+Ek bada, patla, aur behtar iPhone.
+
+4
+
+dhyan dein ki sbjiyo ko pakaane se phle achhi tarah
+Dhyaan dein ki sabziyon/sabjiyon ko pakaane se pehle achhi tarah dho lein.
+dho lein.
+
+5
+
+Mene unhe manaa kar diya hai.
+
+Meine/Maine/Mainne unhe manaa kar diya hai.
+
+6
+
+bhut bhook lagi hai!
+
+Bahut/Bohot/Bahot bhook lagi hai!
+
+7
+
+theek-thak ho jaega
+
+Theek-thaak ho jaega
+
+8
+
+thumse kuchh discuss karna hai
+
+Tumse kuchh discuss karna hai.
+
+9
+
+Kya kr rhe ho
+
+Kya kar rahe ho?
+
+10 Vo bol rha tha k tu milne a.
+
+Woh bol raha tha ki tu milne aa.
+
+Introduction
+
+Locale-Specific Guidelines
+
+Grading Principles
+
+Hinglish
+
+Following Instructions
+
+References
+
+Groundedness
+Comprehensiveness
+Composition
+
+2. Unnecessary Changes
+As mentioned previously, multiple accepted spellings for a Hindi Latin word are permissible as long as they are phonetically correct and not overly
+shortened chat-speak.
+
+Localization
+Harmfulness
+Satisfaction
+
+Below are changes that would be considered unnecessary. If a response/output unnecessarily modifies how a word is spelled, it would be
+downgraded to Partially Following, and the Composition and Satisfaction dimensions should be penalized, too.
+
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+•
+
+fir ↔ phir
+
+•
+
+jaega ↔ jayega ↔ jaayega ↔ jaaega
+
+•
+
+Dhanyavaad ↔ Dhanyawad
+
+•
+
+Sufi ↔ Soofi
+
+•
+
+Pooja ↔ Puja
+
+•
+
+Raam ↔ Ram
+
+•
+
+Dharm ↔ Dharma
+
+Introduction
+
+Locale-Specific Guidelines
+
+Grading Principles
+
+Hinglish
+
+Following Instructions
+
+Examples
+
+Groundedness
+Comprehensiveness
+
+1
+
+Composition
+Localization
+
+Topic
+
+User Request
+
+Response
+
+Rating
+
+Comment
+
+Ensure that all
+errors are
+corrected
+
+Ager hum plen kar
+sakhte hai to is sal
+Goa janeka plaan
+kesa rahegi
+
+Agar hum planen kar
+sakhte hai to is sal Goa
+janeka plaankesa rahegi
+
+Highly Unsatisfying
+
+The response only corrected one error and missed all the others
+in the input
+
+Harmfulness
+
+Humare lie to koi bi
+samaye thik he
+
+Satisfaction
+
+"to" should be toh
+"janeka" should be Jaane ka
+"lie" should be liye
+"bi" should be Bhi
+rahegi should be rahega
+samaye should be samay
+
+Humare lie to koi bi
+samaye thik he
+Priya
+
+Pria
+
+Locale-Specific Guidelines
+
+The response also introduced new spelling mistakes like "planen"
+and "plaan."
+
+Japanese Guidelines
+Chinese Guidelines
+
+Given that the response fails to correct the errors in the input, it is
+considered Highly Unsatisfying.
+
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+2
+
+Ensure that all
+errors are
+corrected
+
+1/2 x 1 inch ka ayatkar
+hai or is se potty
+aasan nichey girjata
+
+1/2 x 1 inch ka ayatkar hai,
+aur isse potty aasan
+neeche gir jaata.
+
+Slightly Unsatisfying
+
+Note: in Production, this response was graded as Highly
+Satisfying, which shows the grader might have overlooked the
+errors in the response.
+The response only partially corrected the user's request. It fixed
+the errors for "neeche" and "jaata", but missed three further
+corrections for "ayatakar", "aasani se" and "jaata hai".
+Hence, the correct grade for this response is Slightly Unsatifyig.
+Note: in Production, this response was graded as Highly
+Satisfying, which shows the grader might have overlooked the
+errors in the response.
+
+Introduction
+
+Locale-Specific Guidelines
+
+Grading Principles
+
+Hinglish
+
+Following Instructions
+
+Examples
+
+Groundedness
+
+Topic
+
+User Request Response
+
+Rating
+
+Comment
+
+Ensure that both
+the user request
+and response are
+consistent with the
+use of Devanagari
+words
+
+Main abhi
+doggy ko
+ghuma raha
+hai Kavita aur
+mujhe aaj 2
+baje mandir
+par meeting
+hain
+
+Highly Unsatisfying
+
+The entire user request is wirtten in Latin
+script, but the response includes one word in
+Devanagari script.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+हूँ
+
+Complete Evaluation
+Examples
+
+3
+
+Main abhi doggy ko
+ghuma raha . Kavita
+aur mujhe aaj 2 baje
+mandir par meeting hain
+
+As the response corrects the error in a
+different script than in the original script,
+grade the response as Highly Unsatisfying.
+Note: Recall the important note – There
+should be no Devanagari present in a
+response, unless the input text has any
+
+Complete Evaluation Examples
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Complete Evaluation Examples
+Example 1 - es_ES
+• User Request: Si debolbistes los dos Yeti porque me estas cobrando uno no te lo abronaran ¿los 2? o los page yo
+• Response: Si debolviste los dos Yeti porque me estás cobrando uno, no te lo abronarán, ¿los dos? o los pagué yo.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Analysis
+The response contains several errors.
+▪
+"Debolbiste" is misspelled and should be "devolviste." The word "abronarán" is not a verb in Spanish; it is most likely supposed to be
+"abonarán," as the text is referring to money and payments.
+▪
+A question mark is missing at the end of the phrase "¿O los pagué yo?" Finally, the use of commas is incorrect.
+▪
+Missing commas: Besides the missing question marks, there are several missing commas to separate elements within the sentence.
+▪
+In Spanish, "por qué," "porque," "porqué," and "por que" all look similar but have distinct meanings related to asking or stating reasons. "Por
+qué" (with a space and accent on the “é") is used for asking "why", and it's the one that should be used in this context.
+▪
+The fully correct version would be: Si devolviste los dos Yeti, ¿por qué me estás cobrando uno? No te lo abonarán, ¿los dos? ¿o los pagué yo?
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Complete Evaluation Examples
+Example 1 - es_ES
+• User Request: Si debolbistes los dos Yeti porque me estas cobrando uno no te lo abronaran ¿los 2? o los page yo
+• Response: Si debolviste los dos Yeti porque me estás cobrando uno, no te lo abronarán, ¿los dos? o los pagué yo.
+
+Comprehensiveness
+Composition
+Localization
+
+Grades
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Instruction Following
+Partially Following
+The response corrects
+some but not all
+grammatical or
+spelling errors in the
+input text.
+
+Groundedness
+Grounded
+
+Comprehensiveness
+Comprehensive
+
+Composition
+Bad Composition
+•Almost no errors are
+corrected.
+•New errors are
+introduced.
+See the analysis above.
+
+Localization
+
+Satisfaction
+
+Yes. There are no
+localization issues
+with the response
+There are no
+localization issues.
+The missing
+question marks are
+grammar issues, and
+therefore should be
+considered
+Composition issues.
+
+Highly Unsatisfying
+Completely fails to
+(or fails on nearly all)
+correct grammar
+mistakes and/or
+spelling errors.
+
+Introduction
+Grading Principles
+Following Instructions
+
+Complete Evaluation Examples
+Example 2 - es_ES
+•
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+
+•
+
+User Request:
+ola colegas,
+soi yo otra ves. otra ves con mis historias. esta lloviendo, ahi barro y esta todo echo una guarerria. intento mantener la mente positiva pero
+alomejor no lo consiguo. ¿Vosotros que decis? ¿Soi yo o esque este barro es lo peor? Lo unico que necesito es un poco de sol.
+¿es muxo pedir?
+Response:
+Hola colegas,
+Soy yo otra vez. Otra vez con mis historias. Está lloviendo, ahí barro y está todo hecho una guareña. Intento mantener la mente positiva, pero
+a lo mejor no lo consiguo. ¿Vosotros qué decís? ¿Soy yo o es que este barro es lo peor? Lo único que necesito es un poco de sol.
+¿Es mucho pedir?
+
+Japanese Guidelines
+
+Analysis
+
+Chinese Guidelines
+
+The response contains several errors.
+▪
+"Ahí" should be "Hay" in this context: In Spanish, "hay" and "ahí" are often confused. "Hay" is an impersonal verb form of "haber" meaning
+"there is" or "there are," indicating existence. "Ahí" is an adverb of place meaning "there" or "over there," indicating location. In this case, "ahí"
+should have been replaced with "hay".
+▪
+"Guarerria" incorrectly fixed: "guarerria" should have been fixed to "guarrería", and not "guareña" nor "guarrada."
+▪
+Unlocalized punctuation in greeting: The correct format of a greeting in es_ES uses a comma between the greeting and the subject, and a colon
+in the end. It should be "Hola, colegas:”
+▪
+The fully correct version would be:
+Hola, colegas:
+Soy yo otra vez. Otra vez con mis historias. Está lloviendo, hay barro y está todo hecho una guarrería. Intento mantener la mente positiva,
+pero a lo mejor no lo consigo. ¿Vosotros qué decís? ¿Soy yo o es que este barro es lo peor? Lo único que necesito es un poco de sol.
+¿Es mucho pedir?
+
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Introduction
+Grading Principles
+Following Instructions
+
+Complete Evaluation Examples
+Example 2 - es_ES
+•
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+•
+
+User Request:
+ola colegas,
+soi yo otra ves. otra ves con mis historias. esta lloviendo, ahi barro y esta todo echo una guarerria. intento mantener la mente positiva pero
+alomejor no lo consiguo. ¿Vosotros que decis? ¿Soi yo o esque este barro es lo peor? Lo unico que necesito es un poco de sol.
+¿es muxo pedir?
+Response:
+Hola colegas,
+Soy yo otra vez. Otra vez con mis historias. Está lloviendo, ahí barro y está todo hecho una guareña. Intento mantener la mente positiva, pero
+a lo mejor no lo consiguo. ¿Vosotros qué decís? ¿Soy yo o es que este barro es lo peor? Lo único que necesito es un poco de sol.
+¿Es mucho pedir?
+
+Grades
+Instruction
+Following
+Partially Following
+The response
+corrects some but
+not all grammatical
+or spelling errors in
+the input text.
+
+Groundedness
+
+Comprehensiveness
+
+Grounded
+
+Comprehensive
+
+Composition
+
+Localization
+
+Satisfaction
+
+Acceptable
+Composition.
+• Some errors listed in
+the above still exist
+in the response.
+• an original error is
+corrected with an
+unnecessary word
+choice or sentence
+structure change.
+
+No. There are localization
+issues with the response formatting and punctuation.
+The correct format of a greeting
+in es_ES uses a comma between
+the greeting and the subject.
+We select Formatting and
+Punctuation when the error is
+incorrect for the target locale but
+might be correct for another
+locale.
+
+Slightly
+Unsatisfying.
+Some grammar
+mistakes or
+spelling errors are
+left.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+
+Complete Evaluation Examples
+Example 3 - es_MX
+•
+•
+
+User Request: No, no estaba siendo
+Response: No, no estaba bien.
+
+Analysis:
+The response changes the meaning of the original user request.
+•
+The original sentence misspells "viendo" and might've intended to say "No, I wasn't watching." The response makes a slight change but it
+alters the meaning completely ("No, I wasn't well").
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Grades
+Instruction Following
+
+Groundedness
+
+Comprehensiveness
+
+Composition
+
+Localization
+
+Satisfaction
+
+Not Following
+The original sentence
+misspells "viendo" and
+might've intended to
+say "No, I wasn't
+watching."
+
+Partially / Not
+Grounded
+The response
+changes
+"biendo" to
+"bien", when it
+should be
+"viendo". This
+change alters
+the meaning of
+the sentence.
+
+Not Comprehensive.
+Any phrase, which
+conveys information in
+the input, is missed.
+
+Bad Composition
+The writing style or
+tone is changed.
+
+Yes. There are no
+localization issues with the
+response.
+
+Highly
+Unsatisfying.
+Completely fails to
+(or fails on nearly
+all) correct
+grammar mistakes
+and/or spelling
+errors.
+
+The response makes a
+slight change but it
+alters the meaning
+completely ("No, I
+wasn't well").
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+Comprehensiveness
+Composition
+
+Complete Evaluation Examples
+Example 4 - sv_SE
+•
+•
+
+Analysis:
+•
+
+Localization
+Harmfulness
+Satisfaction
+
+User Request: Men när jag forst kom fram till en av dom mindre stæderna, undrade jag ärligt talat om alla kände varandra?
+Response: Men när jag först kom fram till en av de mindre städerna, undrade jag ärligt talat om alla kände varandra?
+
+•
+•
+
+The response corrects most of grammatical and spelling errors in the input text, but it misses the punctuation mark. The sentence is a
+statement, not a direct question, so the question mark should be replaced with a period.
+The response is both grounded and comprehensive.
+One can point out that the sentence is still a bit unidiomatic, but according to the guidelines, style is not within scope for the Proofreading
+feature.
+
+Locale-Specific Guidelines
+Japanese Guidelines
+
+Grades
+
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Instruction Following
+
+Groundedness
+
+Comprehensiveness
+
+Partially Following.
+The response corrects
+some but not all
+grammatical or
+spelling errors in the
+input text.
+
+Grounded
+
+Comprehensive
+
+Composition
+
+Localization
+
+Satisfaction
+
+Acceptable Composition.
+The response corrects most
+of grammatical and spelling
+errors in the input text, but it
+misses the punctuation mark.
+The sentence is a statement,
+not a direct question, so the
+question mark should be
+replaced with a period.
+
+Yes. There are no
+localization issues
+with the response.
+
+Slightly
+Unsatisfying.
+Some grammar
+mistakes or
+spelling errors are
+left.
+
+Introduction
+Grading Principles
+Following Instructions
+
+Complete Evaluation Examples
+Example 5 - vi_VN
+• User Request: toi là cô gái Xử Nữ nhiều lúc tự dưng muốn dọn dẹp đồ đạc kinh khủng Có khi 4 giờ sáng đang ngủ tự dưng bật dậy kiểu "Thôi
+làm sạch bồn tắm tí 🤔
+
+Groundedness
+
+•
+
+Comprehensiveness
+
+Response: toi là cô gái Xử Nữ, nhiều lúc tự dưng muốn dọn dẹp đồ đạc kinh khủng. Có khi 4 giờ sáng đang ngủ, tự dưng bật dậy kiểu “Thôi,
+làm sạch bồn tắm tí 🤔”.
+
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Analysis
+▪
+
+▪
+
+Many errors in the input are corrected; however, "toi" should be corrected to "Tôi" (I/me) Should be capitalized at the beginning of the
+sentence.
+In the response, the added comma is misplaced, introducing a new error.
+▪
+The correct version should be: "Có khi 4 giờ sáng, đang ngủ tự nhiên bật dậy kiểu…"
+▪
+The comma should separate the time from the action, not 2 continuous actions.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+Comprehensiveness
+
+Complete Evaluation Examples
+Example 5 - vi_VN
+• User Request: toi là cô gái Xử Nữ nhiều lúc tự dưng muốn dọn dẹp đồ đạc kinh khủng Có khi 4 giờ sáng đang ngủ tự dưng bật dậy kiểu "Thôi
+làm sạch bồn tắm tí 🤔
+
+•
+
+Response: toi là cô gái Xử Nữ, nhiều lúc tự dưng muốn dọn dẹp đồ đạc kinh khủng. Có khi 4 giờ sáng đang ngủ, tự dưng bật dậy kiểu “Thôi,
+làm sạch bồn tắm tí 🤔”.
+
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Grades
+Instruction Following
+Partially Following.
+The response corrects
+some but not all
+grammatical or
+spelling errors in the
+input text.
+
+Groundedness
+Grounded
+
+Comprehensiveness
+Comprehensive
+
+Composition
+
+Localization
+
+Satisfaction
+
+Bad Composition.
+A new error (misplaced
+comma) is introduced.
+
+Yes. There are no
+localization issues
+with the response.
+
+Slightly Unsatisfying.
+Some grammar
+mistakes or spelling
+errors are left.
+
+Complete Evaluation Examples
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Example 6 - vi_VN
+• User Request: Tuần này đáng lẽ cty dọn qua tòa nhà mới rùi mà hnay mới thấy người ta sẽ mang thùng carton tới mọi người ạ.
+• Response: Tuần này đáng lẽ công ty dọn qua tòa nhà mới rồi mà bây giờ mới thấy người ta mang thùng carton tới mọi người ạ.
+
+Comprehensiveness
+Composition
+
+Analysis
+
+Localization
+
+▪
+
+Harmfulness
+
+▪
+
+The response changes hnay (hôm nay - today) to bây giờ (now).
+Because of the unnecessary changes, the meaning of the original sentence is slightly altered, impacting Groundedness and
+Comprehensiveness.
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+
+Grades
+
+Chinese Guidelines
+
+Instruction Following
+
+Arabic Languages
+Guidelines
+
+Partially Following.
+The response
+generally follows the
+instruction, but there
+are some deviations
+such as changing the
+wording, style, format,
+or tone.
+
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Groundedness
+Partially
+Grounded.
+
+Comprehensiveness
+
+Composition
+
+Not Comprehensive.
+Any phrase, which
+conveys information in
+the input, is missed.
+
+Acceptable
+Composition.
+An original error is
+corrected with an
+unnecessary word
+choice or sentence
+structure change.
+
+Localization
+
+Satisfaction
+
+Yes. There are no
+localization issues
+with the response
+
+Slightly Unsatisfying
+Unnecessary change
+in word choice, style,
+or tone that doesn't
+improve the original
+input text.
+
+Complete Evaluation Examples
+
+Introduction
+Grading Principles
+Following Instructions
+
+Example 7 - zh_HK
+• User Request: 喂 菲
+
+， 你應該都估到喇， 我同Billy決定延遲婚禮。法蘭克叔叔因為啲限制嚟唔到，冇咗佢我真係唔想搞佢。遲啲有消息再
+
+話你知啦。
+
+Groundedness
+
+•
+
+Comprehensiveness
+
+， 你應該都估到喇， 我同Billy決定延遲婚禮。法蘭克叔叔因為啲限制嚟唔到，冇咗佢我真係唔想搞佢。遲啲有消息再話
+
+你知啦。
+
+Composition
+Localization
+
+Response: 喂 菲
+
+Analysis
+
+Harmfulness
+
+▪
+
+Satisfaction
+Locale-Specific Guidelines
+
+The response simply repeats the input text. And it does not correct the extra space before "我"
+
+Grades
+
+Japanese Guidelines
+Chinese Guidelines
+
+Instruction Following
+
+Arabic Languages
+Guidelines
+
+Following.
+The response simply
+repeats the input text.
+
+Hinglish Guidelines
+
+力
+
+力
+
+Complete Evaluation
+Examples
+
+Groundedness
+Grounded.
+
+Comprehensiveness
+Comprehensive.
+
+Composition
+
+Localization
+
+Satisfaction
+
+Bad Composition.
+Almost no errors are
+corrected.
+
+No. There are
+localization issues with
+the response formatting and
+punctuation.
+A space remains before
+"我". Given that zh_HK
+uses full-width
+characters, space is
+typically not added
+between words or
+characters.
+
+Highly Unsatisfying
+Completely fails to (or
+fails on nearly all)
+correct grammar
+mistakes and/or
+spelling errors.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Complete Evaluation Examples
+Example 8 - it_IT
+• User Request: seno magnamo assieme
+• Response: senza magnamo assieme.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+
+Analysis
+▪
+▪
+
+▪
+
+The response rewrites or paraphrases the input text, hallucinates and modifies the original intent, or declines to answer (a blank response).
+The input "seno" is a common misspelling of "sennò" (or "se no"), which means "otherwise" or "if not." A fully corrected output should be:
+Sennò, mangiamo assieme (“Otherwise, let s eat together.”).
+In addition, "magnamo" is a Roman dialect and is not the version of the word used in it_IT.
+
+The response introduces “senza” (without), which cannot be followed by a conjugated verb like magnamo. The response is translated as “without we
+eat together”, which alters the original meaning and is nonsensical.
+
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+’
+
+Complete Evaluation
+Examples
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Complete Evaluation Examples
+Example 8 - it_IT
+• User Request: seno magnamo assieme
+• Response: senza magnamo assieme.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Grades
+Instruction Following
+
+Groundedness
+
+Comprehensiveness
+
+Composition
+
+Localization
+
+Satisfaction
+
+Not Following.
+The response rewrites
+or paraphrases the
+input text, hallucinates
+and modifies the
+original intent, or
+declines to answer (a
+blank response).
+
+Not Grounded.
+Because of the
+unnecessary
+changes, the
+overall primary
+information of the
+response is
+inaccurate given
+the contextual
+text.
+
+Not Comprehensive.
+Any phrase, which
+conveys information in
+the input, is missed.
+
+Bad Composition.
+Almost no errors are
+corrected.
+In addition to the
+mispelling of “seno” in
+the input text,
+“magnamo” is still the
+non-standard, Roman
+dialect form. The
+standard Italian is
+mangiamo.
+
+No. There are
+localization issues with
+the response.
+
+Highly Unsatisfying
+Completely fails to (or
+fails on nearly all)
+correct grammar
+mistakes and/or
+spelling errors.
+Is logically
+inconsistent with the
+input content.
+
+"magnamo" is a Roman
+dialect but is not the
+version of the word used
+in it_IT. We consider this
+to be a Localization
+issue.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Complete Evaluation Examples
+Example 9 - it_IT
+• User Request: Se non si vendono, li manggi comunque E vendere un coniglio a 18 o 23 euro copre il costo del manjime per tutta la cucciolata
+• Response: Se non si vendono, li mangi comunque. E vendere un coniglio a 18 o 23 euro copre il costo del manjame per tutta la cucciolata.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Analysis
+▪
+
+▪
+
+The response only corrects some of the errors in the input text. The misspelling of "manjime" was not correctly fixed, which means the
+response only partially followed the instruction to correct all grammatical errors.
+The response introduces a new error, impacting Composition.
+▪
+While it correctly fixed the typo "manggi" to "mangi" and added the missing period, it incorrectly "corrected" the misspelling
+"manjime" (correct: mangime) to "manjame", which is not a valid Italian word. According to the guidelines, a Bad rating applies when
+"new errors are introduced.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Complete Evaluation Examples
+Example 9 - it_IT
+• User Request: Se non si vendono, li manggi comunque E vendere un coniglio a 18 o 23 euro copre il costo del manjime per tutta la cucciolata
+• Response: Se non si vendono, li mangi comunque. E vendere un coniglio a 18 o 23 euro copre il costo del manjame per tutta la cucciolata.
+
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Grades
+Instruction Following
+
+Groundedness
+
+Partially Following.
+Grounded
+The response correctly
+follows the instruction
+to preserve the original
+wording, style, and
+intent. However, it only
+corrects some of the
+errors in the input text.
+
+Comprehensiveness
+Comprehensive
+
+Composition
+Bad Composition.
+The response
+introduces a new
+error.
+
+Localization
+
+Satisfaction
+
+Yes. There are no
+localization issues with
+the response.
+
+Slightly Unsatisfying.
+Some grammar
+mistakes or spelling
+errors are left.
+
+Complete Evaluation Examples
+
+Groundedness
+Comprehensiveness
+Composition
+
+•
+
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+’
+
+’
+
+’
+
+’
+
+Complete Evaluation
+Examples
+
+▪
+
+The response contains many errors, and they have all been fixed.
+◦
+Punctuation & Capitalization: Missing periods, commas, and incorrect capitalization of proper nouns.
+◦
+Spelling & Diacritics (Accents): Widespread lack of required French accents and incorrect elisions (e.g., l').
+◦
+Grammar: Incorrect verb conjugations, adjective agreements, and use of pronouns.
+◦
+Structure & Redundancy: The first two sentences are highly repetitive and need to be consolidated for clarity and conciseness.
+
+’
+
+Chinese Guidelines
+
+Analysis
+
+’
+
+Japanese Guidelines
+
+sud et letat voisin louganda beneficie de liens culturels politiques et economique relativement fort a lapproche de lindependance du soudan
+du sud les deux etats on commencer a profiter des opportunites accrues en matiere de commerce de developpement et dechanges educatifs
+le groupe rebelle lord resistance army lra continue cependant doperer dans les zones frontaliere entre le soudan du sud la republique
+democratique du congo et louganda
+Response: L Ouganda et le Soudan du Sud sont des États voisins avec des liens culturels, économiques et politiques très forts. Le Soudan du
+Sud et l État voisin, l Ouganda, bénéficient de liens culturels, politiques et économiques relativement forts à l approche de l indépendance du
+Soudan du Sud. Les deux États ont commencé à profiter des opportunités accrues en matière de commerce, de développement et
+d échanges éducatifs. Le groupe rebelle Lord s Resistance Army (LRA) continue cependant d opérer dans les zones frontalières entre le
+Soudan du Sud, la République démocratique du Congo et l Ouganda.
+
+’
+
+Following Instructions
+
+Example 10 - fr_FR
+• User Request: louganda et le soudan du sud sont des etats voisins avec des liens culturels economiques et politiques tres fort le soudan du
+
+’
+
+Grading Principles
+
+’
+
+Introduction
+
+Complete Evaluation Examples
+
+Groundedness
+Comprehensiveness
+
+•
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+’
+
+’
+
+’
+
+’
+
+Complete Evaluation
+Examples
+
+Grades
+Instruction Following
+Fully Following.
+The output corrects all
+spelling, grammar,
+punctuation, and
+capitalization errors
+without altering the
+original meaning or
+intent of the user.
+
+Groundedness
+Grounded.
+
+Comprehensiveness
+Comprehensive.
+
+Composition
+
+Localization
+
+Good Composition.
+
+Yes. There are no
+localization issues with
+the response.
+
+’
+
+Localization
+
+’
+
+Composition
+
+sud et letat voisin louganda beneficie de liens culturels politiques et economique relativement fort a lapproche de lindependance du soudan
+du sud les deux etats on commencer a profiter des opportunites accrues en matiere de commerce de developpement et dechanges educatifs
+le groupe rebelle lord resistance army lra continue cependant doperer dans les zones frontaliere entre le soudan du sud la republique
+democratique du congo et louganda
+Response: L Ouganda et le Soudan du Sud sont des États voisins avec des liens culturels, économiques et politiques très forts. Le Soudan du
+Sud et l État voisin, l Ouganda, bénéficient de liens culturels, politiques et économiques relativement forts à l approche de l indépendance du
+Soudan du Sud. Les deux États ont commencé à profiter des opportunités accrues en matière de commerce, de développement et
+d échanges éducatifs. Le groupe rebelle Lord s Resistance Army (LRA) continue cependant d opérer dans les zones frontalières entre le
+Soudan du Sud, la République démocratique du Congo et l Ouganda.
+
+’
+
+Following Instructions
+
+Example 10 - fr_FR
+• User Request: louganda et le soudan du sud sont des etats voisins avec des liens culturels economiques et politiques tres fort le soudan du
+
+’
+
+Grading Principles
+
+’
+
+Introduction
+
+Satisfaction
+Highly Satisfying
+
+Complete Evaluation Examples
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Example 11 - fr_FR
+• User Request: Sukuita c trop bien prcq c Sukuna qui fait tt pour faire souffrir Yuuji une grosse michto obsédée purée
+• Response: Sukuna c est trop bien parce que c est Sukuna qui fait tt pour faire souffrir Yuuji, une grosse miche obsédée purée.
+
+Comprehensiveness
+Composition
+
+Analysis
+
+Localization
+Harmfulness
+
+▪
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+
+The user request includes several errors; yet, not all of them are corrected by the response. In addition, the corrects made alter the intent of
+the original sentence.
+◦
+michto -> miche (Critical Error): It replaced a key slang word for "manipulator" (michto) with a nonsensical word meaning "loaf of
+bread" (miche), completely destroying the user's intended meaning.
+◦
+-Sukuita -> Sukuna (Change of Intent): It misunderstood a fandom-specific name for a character relationship (Sukuita) and changed it
+to a single character's name (Sukuna), altering the subject of the sentence.
+◦
+-Sukuita -> Sukuna is also a Localization issue. The response
+◦
+-tt -> tt (Missed Correction): It failed to expand the common text abbreviation tt into the full word tout (everything).
+
+Hinglish Guidelines
+
+’
+
+’
+
+Complete Evaluation
+Examples
+
+Complete Evaluation Examples
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Example 11 - fr_FR
+• User Request: Sukuita c trop bien prcq c Sukuna qui fait tt pour faire souffrir Yuuji une grosse michto obsédée purée
+• Response: Sukuna c est trop bien parce que c est Sukuna qui fait tt pour faire souffrir Yuuji, une grosse miche obsédée purée.
+
+Comprehensiveness
+Composition
+
+Grades
+
+Localization
+Harmfulness
+
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+
+’
+
+Complete Evaluation
+Examples
+
+Instruction Following
+
+Groundedness
+
+Comprehensiveness
+
+Composition
+
+Localization
+
+Satisfaction
+
+Not Following.
+The response fails to
+follow the instruction. It
+rewrites or
+paraphrases the input
+text, hallucinates and
+modifies the original
+intent, or declines to
+answer (a blank
+response).
+
+Not Grounded.
+The overall
+primary
+information of the
+response is
+inaccurate given
+the contextual
+text.
+
+Not Comprehensive.
+Any phrase, which
+conveys information in
+the input, is missed.
+
+Bad Composition.
+New errors are
+introduced, and the
+writing style or tone is
+changed.
+
+Yes. There are no
+localization issues with
+the response.
+
+Highly Unsatisfying
+Completely fails to (or
+fails on nearly all)
+correct grammar
+mistakes and/or
+spelling errors.
+
+’
+
+Satisfaction
+
+Is logically
+inconsistent with the
+input content.
+
+Complete Evaluation Examples
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+
+Example 12 - tr_TR
+• User Request: Küçük oğlan bütün gün uyumamışş..
+• Response: Küçük oğlan bütün gün uyumamış..
+
+Comprehensiveness
+Composition
+
+Analysis
+
+Localization
+
+▪
+
+The response corrects some but not all grammatical or spelling errors in the input text. The punctuation error at the end (..) remains.
+
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+
+Grades
+
+Chinese Guidelines
+
+Instruction Following
+
+Arabic Languages
+Guidelines
+
+Partially Following.
+The response corrects
+some but not all
+grammatical or
+spelling errors in the
+input text. The
+punctuation error at
+the end (..) remains.
+
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Groundedness
+Grounded
+
+Comprehensiveness
+Comprehensive
+
+Composition
+
+Localization
+
+Satisfaction
+
+Acceptable
+Composition.
+A punctuation error still
+exists in the response.
+
+Yes. There are no
+localization issues
+with the response.
+The punctuation
+issue in the response
+is a grammatical error
+(Composition), not
+a Localization error.
+
+Slightly Unsatisfying
+Some grammar
+mistakes or spelling
+errors are left.
+
+Introduction
+Grading Principles
+Following Instructions
+
+Complete Evaluation Examples
+Example 13 - tr_TR
+• User Request: Z16 Berlin kruvazörü, 1930'ların ortalarında Nazi Almanyası'nın bir Kriegsmarine'si için inşa edildi. II. Dünya Savaşı'nın
+
+Groundedness
+Comprehensiveness
+
+•
+
+Composition
+Localization
+Harmfulness
+
+başlangıcında, 1 Eylül 1939'da gemi başlangıçta Polonya kıyıları ablukaya almak için konuşlandırıldı, ancak hemen savunma mayın tarlalarını
+döşemek üzere Kuzey Denizi'ne transfer edildi. 1939'un sonlarında gemi, İngiliz kıyıları açıklarında dokuz ticaret gemileri batıran ve bu
+görevlerden birinde bir İngiliz destroyerleri ağır hasar alan çok sayıda saldırı mayın tarlası döşedi.
+Response: Z16 Berlin kruvazörü, 1930'ların ortalarında Nazi Almanyası'nın bir Kriegsmarine'si için inşa edildi. II. Dünya Savaşı'nın
+başlangıcında, 1 Eylül 1939'da gemi başlangıçta Polonya kıyıları ablukaya almak için konuşlandırıldı, ancak hemen savunma mayın tarlalarını
+döşemek üzere Kuzey Denizi'ne transfer edildi. 1939'un sonlarında gemi, İngiliz kıyıları açıklarında dokuz ticaret gemisini batıran ve bu
+görevlerden birinde bir İngiliz destroyerini ağır hasar alan çok sayıda saldırı mayın tarlası döşedi.
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+
+Analysis
+•
+
+The response fixed two instances of incorrect pluralization, which is a common error in Turkish:
+• dokuz ticaret gemileri -> dokuz ticaret gemisini
+• bir İngiliz destroyerleri -> bir İngiliz destroyerini
+
+•
+
+Overall, many errors remain uncorrected, including improper noun usage, a missing grammatical case on a direct object, and an awkwardly
+constructed phrase.
+The last sentence is not easily comprehensible due to its grammatical flaws.
+
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+•
+
+Introduction
+Grading Principles
+Following Instructions
+
+Complete Evaluation Examples
+Example 13 - tr_TR
+• User Request: Z16 Berlin kruvazörü, 1930'ların ortalarında Nazi Almanyası'nın bir Kriegsmarine'si için inşa edildi. II. Dünya Savaşı'nın
+
+Groundedness
+Comprehensiveness
+Composition
+Localization
+Harmfulness
+
+•
+
+başlangıcında, 1 Eylül 1939'da gemi başlangıçta Polonya kıyıları ablukaya almak için konuşlandırıldı, ancak hemen savunma mayın tarlalarını
+döşemek üzere Kuzey Denizi'ne transfer edildi. 1939'un sonlarında gemi, İngiliz kıyıları açıklarında dokuz ticaret gemileri batıran ve bu
+görevlerden birinde bir İngiliz destroyerleri ağır hasar alan çok sayıda saldırı mayın tarlası döşedi.
+Response: Z16 Berlin kruvazörü, 1930'ların ortalarında Nazi Almanyası'nın bir Kriegsmarine'si için inşa edildi. II. Dünya Savaşı'nın
+başlangıcında, 1 Eylül 1939'da gemi başlangıçta Polonya kıyıları ablukaya almak için konuşlandırıldı, ancak hemen savunma mayın tarlalarını
+döşemek üzere Kuzey Denizi'ne transfer edildi. 1939'un sonlarında gemi, İngiliz kıyıları açıklarında dokuz ticaret gemisini batıran ve bu
+görevlerden birinde bir İngiliz destroyerini ağır hasar alan çok sayıda saldırı mayın tarlası döşedi.
+
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Grades
+Instruction Following
+Partially Following.
+The response corrects
+some but not all
+grammatical or
+spelling errors in the
+input text.
+
+Groundedness
+Grounded
+
+Comprehensiveness
+Comprehensive
+
+Composition
+Bad Composition.
+Almost no errors are
+corrected.
+
+Localization
+
+Satisfaction
+
+Yes. There are no
+localization issues
+with the response.
+
+Highly Unsatisfying
+
+Introduction
+Grading Principles
+Following Instructions
+
+Complete Evaluation Examples
+Example 14 - pt_PT
+• User Request: Fixe, meu! Tou em Vila Nova de Gaia a ir para o IEFP para ser Técnico Superior de Estatística. Eu formar em abril e vou ser
+
+Groundedness
+
+•
+
+Comprehensiveness
+
+transferido para Santa Comba Dão logo a seguir.
+Response: Fixe, meu! Tô em Vila Nova de Gaia a ir para o IEFP para ser Técnico Superior de Estatística. Eu formo em abril e vou ser transferido
+para Santa Comba Dão logo a seguir.
+
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Analysis
+•
+•
+
+The response correctly fixed one grammatical mistake (formar -> formo); however, the introduction of the Brazilian Portuguese Tô is wrong –
+considered incorrect for pt_PT locale. This impacts Composition and Localization.
+The response is grounded and comprehensive.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+Comprehensiveness
+
+Complete Evaluation Examples
+Example 14 - pt_PT
+• User Request: Fixe, meu! Tou em Vila Nova de Gaia a ir para o IEFP para ser Técnico Superior de Estatística. Eu formar em abril e vou ser
+•
+
+transferido para Santa Comba Dão logo a seguir.
+Response: Fixe, meu! Tô em Vila Nova de Gaia a ir para o IEFP para ser Técnico Superior de Estatística. Eu formo em abril e vou ser transferido
+para Santa Comba Dão logo a seguir.
+
+Composition
+Localization
+Harmfulness
+
+Grades
+
+Satisfaction
+
+Instruction Following
+
+Locale-Specific Guidelines
+
+Partially Following.
+The response corrects
+some but not all
+grammatical or
+spelling errors in the
+input text.
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Groundedness
+Grounded
+
+Comprehensiveness
+Comprehensive
+
+Composition
+Bad Composition.
+The response
+introduces a new
+error ("Tô").
+
+Localization
+
+Satisfaction
+
+No. There are
+localization issues with
+the response formatting and
+punctuation.
+By changing Tou to Tô,
+the proofreading tool
+has incorrectly applied a
+Brazilian Portuguese
+form to a European
+Portuguese text. This is a
+classic localization
+failure.
+
+Slightly Unsatisfying.
+Some grammar
+mistakes or spelling
+errors are left,
+including localization
+issues that touch on
+these aspects.
+
+Introduction
+Grading Principles
+Following Instructions
+
+Complete Evaluation Examples
+Example 15 - pt_PT
+• User Request: O formato da cabeça não deve ter um efeito assim tão grande no som do instrumento, para além de umas subtis diferenças no
+
+Groundedness
+
+•
+
+Comprehensiveness
+
+timbre ou sustain.
+Response: O formato da cabeça não deve ter um efeito assim tão grande no som do instrumento, para além de umas sutis diferenças no
+timbre ou sustain.
+
+Composition
+Localization
+Harmfulness
+Satisfaction
+Locale-Specific Guidelines
+
+Analysis
+•
+•
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+•
+
+The input is actually free of errors. However, the output "overcorrects" and introduces a Brazilian Portuguese word (“sutis”) to replace
+(“subtis”).
+The Composition receives a Bad rating as the response introduces a term that is non existent in the pt_PT vocabulary (sutis), which can be
+seen as an error for the target locale.
+The correct action would have been to make no changes at all.
+
+Introduction
+Grading Principles
+Following Instructions
+Groundedness
+Comprehensiveness
+
+Complete Evaluation Examples
+Example 15 - pt_PT
+• User Request: O formato da cabeça não deve ter um efeito assim tão grande no som do instrumento, para além de umas subtis diferenças no
+•
+
+timbre ou sustain.
+Response: O formato da cabeça não deve ter um efeito assim tão grande no som do instrumento, para além de umas sutis diferenças no
+timbre ou sustain.
+
+Composition
+Localization
+Harmfulness
+
+Grades
+
+Satisfaction
+
+Instruction Following
+
+Locale-Specific Guidelines
+
+Partially Following.
+The response
+generally follows the
+instruction, but there
+are some deviations
+such as changing the
+wording, style, format,
+or tone.
+
+Japanese Guidelines
+Chinese Guidelines
+Arabic Languages
+Guidelines
+Hinglish Guidelines
+Complete Evaluation
+Examples
+
+Groundedness
+Grounded
+
+Comprehensiveness
+Comprehensive
+
+Composition
+Bad Composition.
+An original error is
+corrected with a
+pt_BR word, so
+introducing a new
+error for the pt_PT
+locale example.
+
+Localization
+
+Satisfaction
+
+No. There are
+localization issues with
+the response formatting and
+punctuation.
+The response failed to
+recognize a valid
+regional spelling and
+changed it to a different
+region's standard, which
+constitutes a significant
+localization failure.
+
+Slightly Unsatisfying.
+Major localization
+issues that make the
+response less helpful
+to the user.
+
+Congratulations
+You have completed the TC - Proofreading guidelines!
+
+

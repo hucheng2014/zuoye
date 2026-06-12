@@ -19,7 +19,7 @@ ROOT_FILES = [
     "Dockerfile",
     "docker_build_success.png",
     "repo.zip",
-    "python-grade.zip",
+    "python-payment.zip",
     "rollout_data.json",
     "trial_log.csv",
 ]

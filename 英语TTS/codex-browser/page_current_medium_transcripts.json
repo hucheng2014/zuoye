@@ -1,0 +1,209 @@
+[
+  {
+    "index": 0,
+    "filename": "20260127_00004314_zqbl_329_65.wav",
+    "expected_text": "这个nike skin 的话。",
+    "medium_text": "耐克 鬼牌 毒蜂 刺客 世界杯 配色 顶级 超顶 袋鼠皮 牛皮 中底 鞋面",
+    "ratio": 0.0,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 1,
+    "filename": "20260127_00004314_zqbl_329_51.wav",
+    "expected_text": "球鞋也没有这么多没有这样的感觉那么我只是来分享一下我穿过一些球鞋的感受供大家去参考。",
+    "medium_text": "球鞋也没有这么多 没有这样的感觉那么我只是来分享一下我穿过一些球鞋的感受供大家去参考",
+    "ratio": 0.988,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 2,
+    "filename": "20260127_00004314_zqbl_329_3.wav",
+    "expected_text": "传奇鬼牌跟毒分都是j p 二七零，刺客的话是穿j p 二六五，但是说在这一次终端的尺码上有一些偏差。",
+    "medium_text": "玩旗 鬼牌 跟 毒蜂 都是 JP 二七零刺客的话是穿 JP 二六五但是说在这一次终端的尺码上有一些偏差",
+    "ratio": 0.8989,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 3,
+    "filename": "20260127_00004314_zqbl_329_99.wav",
+    "expected_text": "那么综合来说的话如果让我来选择。",
+    "medium_text": "那么综合来说的话 如果让我来选择",
+    "ratio": 0.9677,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 4,
+    "filename": "20260127_00004314_zqbl_329_14.wav",
+    "expected_text": "形变的周期比较长，如果是相同面积的袋鼠皮跟牛皮相比的话，袋鼠皮变形这一天的到来会比较早就是说松垮啊还有说支撑不够啊这些情况出现的会比较早。",
+    "medium_text": "形变的周期比较长如果是相同面积的袋鼠皮跟牛皮相比的话袋鼠皮变形这一天的到来会比较早就是说松缓啊 还有时候支撑不够啊这些情况出现的会比较",
+    "ratio": 0.9333,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 5,
+    "filename": "20260127_00004314_zqbl_329_1.wav",
+    "expected_text": "今天我们来聊一聊耐克世界杯配色的四款中端。",
+    "medium_text": "今天我们来聊一聊耐克世界杯配色的四款中端",
+    "ratio": 0.9756,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 6,
+    "filename": "20260127_00004314_zqbl_329_93.wav",
+    "expected_text": "这种微微凸起是非常非常重要的它会给你怎么说呢？",
+    "medium_text": "这种微微凸起是非常非常重要的它会给你 怎么说",
+    "ratio": 0.9545,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 7,
+    "filename": "20260127_00004314_zqbl_329_0.wav",
+    "expected_text": "欢迎大家收看本期节目。",
+    "medium_text": "欢迎大家收看本期节目",
+    "ratio": 0.9524,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 8,
+    "filename": "20260127_00004314_zqbl_329_10.wav",
+    "expected_text": "在这款终端上因为加入了两个飞线的设计，它会在这个包裹性上有一个很大的提升，而且在镜头中大家可以看到我在实战的时候一些变向，像这种情况出现的就比较少这种边缘褶皱的情况就会比较少整个包裹性还是比较舒适的。",
+    "medium_text": "在这款中端上因为加入了两个飞线的设计它会在这个包裹性上有一个很大的提升而且在镜头中大家可以看到我在实战的时候一些变相像这种情况出现的就比较少这种边缘褶皱的情况就会比较少整个包裹性还是比较舒适的",
+    "ratio": 0.9592,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 9,
+    "filename": "20260127_00004314_zqbl_329_34.wav",
+    "expected_text": "这个也不知道是为啥可能是。",
+    "medium_text": "这个也不知道是为啥可能是",
+    "ratio": 0.96,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 10,
+    "filename": "20260127_00004314_zqbl_329_54.wav",
+    "expected_text": "这理论没错对吧？",
+    "medium_text": "这理论没错 对吧",
+    "ratio": 0.9333,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 11,
+    "filename": "20260127_00004314_zqbl_329_41.wav",
+    "expected_text": "但是美中不足的也是似乎是没有中底的，这是这一点是比较怎么说呢。",
+    "medium_text": "但是美中不足的也是 服务是没有中底的所以这一点是比较 说呢",
+    "ratio": 0.7931,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 12,
+    "filename": "20260127_00004314_zqbl_329_27.wav",
+    "expected_text": "用手摸起来的话也是稍微硬一些，这个跟顶级的刺客穿起来感觉还是不太一样，顶级和超顶级的刺客前面包裹都会比较紧，但是这双刺客中端的话前掌非常的宽。",
+    "medium_text": "用手摸起来的话也是稍微硬一些这个跟顶级的刺客穿起来感觉还是不太一样顶级和超顶级的刺客 前面包裹都会比较紧但是这双刺客中端的话 前掌非常的宽",
+    "ratio": 0.971,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 13,
+    "filename": "20260127_00004314_zqbl_329_46.wav",
+    "expected_text": "我感觉踢起来反而是要比。",
+    "medium_text": "我感觉提起来反而是要",
+    "ratio": 0.8182,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 14,
+    "filename": "20260127_00004314_zqbl_329_23.wav",
+    "expected_text": "似乎是一个半中底的状态，而且刺客的里面它没有这些缓震的材料，但是总体来说这双刺客还是很不错的。",
+    "medium_text": "似乎是一个半中底的状态 而且刺客的脸他没有这些缓震的材料 但是总体来说这张刺客还是很不错的",
+    "ratio": 0.8889,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 15,
+    "filename": "20260127_00004314_zqbl_329_55.wav",
+    "expected_text": "但是对于一个呃职业球员来说，或者说他有非常强烈个性的还有说有自己一些踢球习惯的人来说，选一些好球鞋早晚会成为他们的需求之一。",
+    "medium_text": "但是对于一个职业球员来说或者说他有非常强烈个性的还有说有自己的体球习惯的人来说选一些好球鞋早晚会成为他们的需求之一",
+    "ratio": 0.9244,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 16,
+    "filename": "20260127_00004314_zqbl_329_92.wav",
+    "expected_text": "这个位置它都是这样圆润过来的没有这样的一些微微的凸起。",
+    "medium_text": "这个位置它都是这样圆润过来的没有这样的一些微微的突起",
+    "ratio": 0.9434,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 17,
+    "filename": "20260127_00004314_zqbl_329_53.wav",
+    "expected_text": "呃你只要技术好其实穿什么球鞋都一样的。",
+    "medium_text": "你只要技术好 其实穿什么球鞋都一样",
+    "ratio": 0.9143,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 18,
+    "filename": "20260127_00004314_zqbl_329_21.wav",
+    "expected_text": "然后再加上这种橙色的速度感的配色，整个鞋子就会显得比较轻盈，再加上鞋面非常非常的柔软它。",
+    "medium_text": "然后再加上这种红色的速度感的配色整个鞋子就会显得比较轻盈再加上鞋面非常非常的柔软",
+    "ratio": 0.9286,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 19,
+    "filename": "20260127_00004314_zqbl_329_29.wav",
+    "expected_text": "所以说这双中端刺客的鞋圈设计应该是比较友好的。",
+    "medium_text": "所以说这双终端刺客的鞋圈设计应该是比较友好的",
+    "ratio": 0.9333,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 20,
+    "filename": "20260127_00004314_zqbl_329_52.wav",
+    "expected_text": "当然这不是所所有人都会有我这种问题你也可能会说太矫情了对吧？",
+    "medium_text": "当然这不是所有人都会有我这种问题你也可能会说 太矫情了 对吧",
+    "ratio": 0.9655,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 21,
+    "filename": "20260127_00004314_zqbl_329_91.wav",
+    "expected_text": "而且这双中端刺客的鞋底看一下它的后跟的鞋底是有棱有角的不是那不是像毒蜂这种边缘比较圆润的顶级的刺客还有超顶级的刺客的鞋底这个后跟呀。",
+    "medium_text": "而且这双中端刺客的鞋底 看一下他在后跟的鞋底是有棱有角的不是像毒蜂这种 因为比较圆润的顶级的刺客还有超顶级的刺客的鞋底这个后跟啊",
+    "ratio": 0.8906,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 22,
+    "filename": "20260127_00004314_zqbl_329_44.wav",
+    "expected_text": "呃这是一个比较重要的原因吧。",
+    "medium_text": "这是一个比较重要的原因吧",
+    "ratio": 0.9231,
+    "language": "zh",
+    "language_probability": 1
+  }
+]

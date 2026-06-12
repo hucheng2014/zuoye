@@ -1,0 +1,145 @@
+Proofreading V2 feedback – Feb 19 [updated]
+Q1 – How you answer this question will gravely impact the remainder of the evaluation and your overall
+score in the cert.
+i)
+Yes, the text is grammatically correct and free of punctuation ambiguity.
+As most of the tasks in the cert are quite short phrases or sentences, this should be an easy to determine
+option. Do not get confused by short phrases just because they lack a period at the end.
+Remember: check if the sentence is comprehensible and verify the approach of neutral/informal/formal
+texts. Refer to some examples below.
+ii)
+No, the text contains grammatical errors or punctuation that causes ambiguity.
+This is when the text has obvious grammatical, spelling errors or if an abbreviation that should be
+expanded is used. The tricky part is determining the “punctuation” ambiguity. Note that this can be
+determined, usually, by an obvious lack of comma where it’s clearly needed (e.g. listing of things, which
+occurs in some sentences) or potentially a lack of a period/full stop between sentences.
+iii)
+
+The meaning of the text cannot be determined because the text is so poorly constructed or
+lacks sufficient context.
+This option will only be used if the entire input text is incomprehensible. You wont be needing this
+option too much in the cert. There is task in the cert with the exact example from the GLs being used,
+and yet a lot of people did not select this option. There is at least one other obvious example of a short
+sentence listing multiple names ‘persona’.
+
+Correctness
+Focus point - only the edits made
+-
+
+-
+
+Whether you think the input has issues or not, you should only check whether the assistant
+made any changes.
+If it has, only evaluate the actual edits and whether they have been necessary (an issue had to
+be fixed) or unnecessary (the input was already good).
+Question 3.1 (input has no issues, assistant made changes): check whether the actual change
+affects the meaning, tone, style. Remember that not every change affects this. Removing
+periods, question/exclamation marks does not affect it. Changing “can’t” to “cannot”, and other
+exact matching words, does not change it. However, changing actual words, sentence structure,
+fluidity and style would be affecting this question.
+Question 3.2 (input has issues, assistant made changes): check which issues had to be fixed
+(necessary) and which didn’t have to be fixed (unnecessary). If there is a mix, select “mixed” and
+then evaluate the additional questions individually for each separate group of issues (necessary
+vs unnecessary). Do not mix these up.
+
+Completeness
+Focus point - the actual errors in the input (found and fixed)
+-
+
+Do not get influenced by the edits made; focus on the actual errors present in the input and
+whether they have been corrected.
+
+Centific Confidential ©
+
+-
+
+-
+
+People are getting distracted by edits being made even though they are unnecessary.
+Evaluate the input and identify the actual errors in the comprehensive text and then check the
+response to see if they have been identified and fixed by the assistant.
+If even one error was missed by the assistant (not detected at all or wrongly corrected), it should
+fail this dimension.
+E.g. Input says “I need to get to the ATm to pick up some cash.”
+Proofread response: “I need to get to the atm to pick up some cash.”
+Actual error: “ATm”
+Assistant identified error – yes
+Assistant fixed it correctly – no
+The correction should have been ATM (Automatic Teller Machine) given the clear context. “atm”
+means ‘at the moment’ and would be wrong in lower-case.
+If the assistant introduces a new error, that’s penalized under Correctness. That is, the input was
+already good and the proofread made a change that created a new error.
+
+EXAMPLES
+“This is hard the who pays bit”
+Many evaluated Q1 wrongly even though this is a direct example from the guides.
+“Loved an image”
+This task appears twice. The input does not contain any issues even if it sounds strange without context.
+It’s not grammatically incorrect. However, when you change it to “loved the image”, it does change the
+tone, style, register, meaning because “an image” is one of many; “the image” is a specific one.
+“Didn’t bring wallet or anything”
+This one confused a lot of people, understandably. The letter in the text is a lower case “L” and not an
+upper case “i”, the text is comprehensible either way. The fact that the assistant removes this in the edit
+does not actually change the meaning/style/tone.
+“Which cars? Accord or Lawrencemouth?”
+This task should not be labeled as “the meaning cannot be determined”. Remember that the entire input
+needs to be incomprehensible in order to use this option.
+“I think you care about the bureaucracy part. (continued)” - task
+This task appears twice, so evaluate it carefully. If you made the wrong initial evaluation, you’ll get it
+wrong on both tasks. A common issue people wont notice is that “listserve” should be “listserv”.
+“My delivery address is xxx…soo”
+This is somewhat informal text and it’s comprehensive. If in this case the assistant decides to change the
+punctuation or remove one “o” to “so”, then this does not affect the meaning/tone/style.
+
+Centific Confidential ©
+
+And this guy on Blue actually looks like Dwayne Johnson, the wrestler.
+This is a perfect example of separating Correctness eval with Completeness eval. In correctness, focus on
+the actual changes the assistant made. Was it necessary to capitalize Blue here or not? In Completeness,
+you focus on the actual errors and whether they were found and fixed. If you answered that “Blue” was
+not a necessary change, then that mean it was not an error to begin with, and you ignore it in the
+Completeness eval. However, if “on” should have been changed to “in” then that’s an error the assistant
+may have missed and that affects Completeness, but not Correctness (as it hasn’t edited that part).
+Russian ‘Spartacus’ volleyball club history task
+This is the longest input text of all the tasks in the cert, containing a lot of mistakes. We believe that this
+task was specifically introduced to test this scenario below. Pay careful attention to each sentence, and
+split them between comprehensible (with or without errors and punctation ambiguity) and completely
+incomprehensible. Then only evaluate the comprehensible part.
+
+“Like I can’t even go anywhere, other than college and work to get away either (…)” - task
+Just because the model made no changes/edits, it does not mean the input is perfect. This example
+contained a few “like” inserted as discourse markers. The entire input is comprehensible but it has
+ambiguity due to the punctuation missing, e.g. “Like, I can’t even go anywhere…” is the appropriate way.
+“Dear Sam I will be visiting Isreal (…) I have booked a hotel at Batmore…I will visit Jerusalem city…and
+see the the Manjor”
+For those who selected “yes, the input has no issues”, please be more attentive on the tasks in general.
+This specific task had very obvious issues that could have been identified even when comparing against
+the proofread response.
+For those of you that identified the errors, never assume that every edit is automatically necessary. Most
+of you failed to identify that some edits were unnecessary. “City” in Jerusalem city did not have to be
+capitalized. “Batmore” and “Manjar” may not have to be changed because we cannot verify what these
+are and the corrections don’t seem to be valid either. Hence, in such cases we err on the side of keeping
+the original.
+“Go get it before you come??” → Go get it before you come?
+Please read the guidelines and this feedback thoroughly. This scenario is clearly covered in the
+guidelines. If you have selected Q1 as “yes, error free”, it makes no sense to answer Q3 as “yes, the
+changes were necessary”, which is how the vast majority answered. You have selected that the input is
+already good, which means any changes that occur would be unnecessary.
+
+Centific Confidential ©
+
+“173 S Birch Place”
+There is nothing wrong with this input, it’s a common address format. If you’re not sure, a quick search
+would have given you the confirmation.
+“William Ramos? .)”
+Majority answered this one as having issues, but the text itself does not have issues and there’s no
+punctuation that causes ambiguity to it. Yes, the symbols might look odd (smiley attempt failed), but it
+does not cause the text to be ambiguous or incomprehensible.
+General word of advice – the third option for Q1 would not be commonly used in the cert itself. There
+are a couple of examples in each cert but some are using it a lot more than it’s actually needed. If you
+see what appears as a strange input, ask yourself whether adding punctuation would make the content
+clearer and comprehensible.
+
+Centific Confidential ©
+
+

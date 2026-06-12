@@ -1,0 +1,133 @@
+{
+  "batch_id": "2026-06-08_batch_016",
+  "project": "AD Search Ads Relevance",
+  "operator": "cursor-agent",
+  "created_at": "2026-06-08T21:47:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689655475",
+      "query": "彩 票",
+      "query_intent": "User is searching for a lottery app to purchase lottery tickets or check lottery results.",
+      "ad": {
+        "name": "精准比分-体育赛事",
+        "subtitle": "足球篮球体育资讯平台",
+        "developer": "NetEase Media Technology (Beijing) Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "精准比分 is a sports scores app; 彩票 is official lottery ticket service."
+        }
+      ],
+      "relationship_analysis": "Lottery services and sports score apps serve different user needs despite both relating loosely to sports outcomes.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"彩 票\" indicates the user wants a lottery app for purchasing tickets or checking lottery draw results. [Ad Analysis] The advertised app \"精准比分-体育赛事\" is a sports scores and football/basketball news platform by NetEase. [Relevance Breakdown] Lottery ticket services and sports score/news apps serve completely different needs despite both loosely relating to sports outcomes. [Why not higher/lower] Not Acceptable because a lottery user would not logically click a sports scores app. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689655476",
+      "query": "葡 萄",
+      "query_intent": "User is searching for an app related to 葡萄 — a brand or service using that name.",
+      "ad": {
+        "name": "夸克-高考选志愿",
+        "subtitle": "高考志愿千问大模型搜索小说网盘浏览器扫描",
+        "developer": "广州市动悦信息技术有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "夸克 is a general browser/AI search app with no 葡萄 brand association."
+        }
+      ],
+      "relationship_analysis": "No identifiable connection between a 葡萄-branded search and the Quark browser utility.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"葡 萄\" indicates the user is looking for an app associated with the term grape or a 葡萄-branded service. [Ad Analysis] The advertised app \"夸克-高考选志愿\" is a mobile browser with AI search, cloud storage, and novel reading features. [Relevance Breakdown] There is no clear connection between a 葡萄-specific search and the Quark browser utility app. [Why not higher/lower] Not Acceptable because the query does not indicate a need for a general browser or AI search tool. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689655477",
+      "query": "funveo",
+      "query_intent": "User is searching for an app named funveo, likely a video or photo enhancement/editing tool.",
+      "ad": {
+        "name": "Wink: Video Enhancer & Editor",
+        "subtitle": "4K Upscale, Unblur & Retouch",
+        "developer": "Xiamen Meitu Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "Wink by Meitu is a video enhancer and editor with upscale and retouch features."
+        }
+      ],
+      "relationship_analysis": "Both serve video/photo enhancement and editing; Wink is a direct functional alternative.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"funveo\" indicates the user is searching for a video or photo enhancement/editing app. [Ad Analysis] The advertised app \"Wink: Video Enhancer & Editor\" by Meitu offers 4K upscale, unblur, and retouch features. [Relevance Breakdown] Both serve video/photo enhancement and editing needs; Wink is a direct functional alternative in the same creative tools category. [Why not higher/lower] Not Excellent because it is not the exact app searched; not Acceptable because the core video editing function strongly aligns. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689655478",
+      "query": "抖 音 主 播 版",
+      "query_intent": "User wants the Douyin streamer/broadcaster version app for live streaming and creator tools.",
+      "ad": {
+        "name": "抖音精选-精挑细选独家好视频",
+        "subtitle": "AI总结课堂宝藏知识",
+        "developer": "Beijing Douyin Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "Both apps are from Beijing Douyin Technology in the Douyin video ecosystem."
+        }
+      ],
+      "relationship_analysis": "Same Douyin developer and ecosystem; streamer and curated content apps are related Douyin products.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"抖 音 主 播 版\" indicates the user wants a Douyin creator/streamer-focused application. [Ad Analysis] The advertised app \"抖音精选-精挑细选独家好视频\" is a curated Douyin video content app from the same developer. [Relevance Breakdown] Both are Douyin ecosystem video apps from Beijing Douyin Technology; users interested in Douyin creator tools would consider another official Douyin product. [Why not higher/lower] Not Excellent because streamer tools and curated viewer content serve different roles; not Acceptable because the same-ecosystem connection is strong. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689655479",
+      "query": "加 速",
+      "query_intent": "User wants a network or game accelerator app to improve connection speed.",
+      "ad": {
+        "name": "小黑盒 - 八千万游戏玩家社区",
+        "subtitle": "发现游戏，分享快乐",
+        "developer": "Qingfeng(Beijing)Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "小黑盒 is a gaming community app, not a network accelerator."
+        }
+      ],
+      "relationship_analysis": "Network accelerator vs gaming social community — different core functions despite gaming theme.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"加 速\" indicates the user wants a network or game accelerator to speed up their connection. [Ad Analysis] The advertised app \"小黑盒 - 八千万游戏玩家社区\" is a gaming community platform for game discovery and player social features. [Relevance Breakdown] A network accelerator and a gaming social community serve entirely different functions. [Why not higher/lower] Not Acceptable because merely sharing a gaming theme is insufficient when core functions are unrelated. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T13:58:21",
+    "post_submit_status": "No errors visible"
+  }
+}

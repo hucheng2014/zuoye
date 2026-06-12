@@ -1,0 +1,45 @@
+{
+  "batch_id": "2026-06-08_batch_023",
+  "project": "AD Search Ads Relevance",
+  "operator": "cursor-agent",
+  "rating_method": "independent_judgment_v1",
+  "created_at": "2026-06-08T23:01:00",
+  "source_page": "tryrating current page (1 task)",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689672012",
+      "query": "兔 喜 生 活",
+      "query_intent": "User is searching for 兔喜生活, the express parcel pickup-station and community logistics lifestyle app for package collection and courier services.",
+      "ad": {
+        "name": "大件物流托运",
+        "developer": "Hefei KuaiLon Information Technology Company Limited",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "兔喜生活 focuses on express pickup stations and small-parcel community logistics; 大件物流托运 is for large-item freight consignment."
+        }
+      ],
+      "relationship_analysis": "Both fall under logistics, but community express pickup vs large-item freight shipping address different specific needs.",
+      "rating": "Acceptable",
+      "comment": "[Query Intent] The query \"兔 喜 生 活\" indicates the user wants the 兔喜生活 app for express parcel pickup stations and community package collection services. [Ad Analysis] The advertised app \"大件物流托运\" provides large-item logistics consignment and freight shipping services. [Relevance Breakdown] Both belong to the broad logistics and shipping category, so the connection is understandable, but express pickup-station services and large-item freight shipping serve different specific user needs. [Why not higher/lower] Not Good because the core functions (small-parcel pickup lifestyle vs bulky freight consignment) do not directly align; not Bad because the shared logistics domain creates a weak but logical association. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T15:00:26",
+    "post_submit_status": "No errors visible"
+  }
+}

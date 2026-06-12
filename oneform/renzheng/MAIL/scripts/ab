@@ -1,0 +1,109 @@
+#!/usr/bin/env bash
+# ============================================================
+# ab - agent-browser 快速切换容器辅助脚本
+# 
+# 用法:
+#   ab 1        # 连接到 6081 (oneform)
+#   ab 2        # 连接到 6082 (controlled-browser)
+#   ab 3        # 连接到 6083 (controlled-browser-local)
+#   ab 4        # 连接到 6084 (alibabaxiangmu)
+#   ab 5        # 连接到 6085 (duomotai)
+#   ab status   # 显示所有容器状态
+#   ab snap     # 获取当前页面快照
+#   ab shot     # 截图
+# ============================================================
+
+# CDP 代理端口映射
+declare -A CDP_PORTS=(
+    [1]=9225  # oneform (6081)
+    [2]=9233  # controlled-browser (6082)
+    [3]=9235  # controlled-browser-local (6083)
+    [4]=9237  # alibabaxiangmu (6084)
+    [5]=9239  # duomotai (6085)
+)
+
+declare -A CONTAINER_NAMES=(
+    [1]="oneform"
+    [2]="controlled-browser"
+    [3]="controlled-browser-local"
+    [4]="alibabaxiangmu"
+    [5]="duomotai"
+)
+
+case "$1" in
+    1|2|3|4|5)
+        port=${CDP_PORTS[$1]}
+        name=${CONTAINER_NAMES[$1]}
+        echo "🔗 连接到 $name (608${1}, CDP:$port)..."
+        agent-browser close 2>/dev/null
+        agent-browser connect "$port"
+        ;;
+    status|s)
+        echo "╔══════╦═══════════════════════════╦═══════╦══════════════╗"
+        echo "║ 编号 ║ 容器名                    ║ VNC   ║ CDP 代理     ║"
+        echo "╠══════╬═══════════════════════════╬═══════╬══════════════╣"
+        for i in 1 2 3 4 5; do
+            port=${CDP_PORTS[$i]}
+            name=${CONTAINER_NAMES[$i]}
+            vnc="608${i}"
+            # 检查 CDP 是否可用
+            if curl -sf "http://127.0.0.1:$port/json/version" >/dev/null 2>&1; then
+                status="✓"
+            else
+                status="✗"
+            fi
+            printf "║ %-4s ║ %-25s ║ %-5s ║ %-4s %s ║\n" "$i" "$name" "$vnc" "$port" "$status"
+        done
+        echo "╚══════╩═══════════════════════════╩═══════╩══════════════╝"
+        ;;
+    snap)
+        agent-browser snapshot 2>&1
+        ;;
+    shot)
+        path="${2:-/tmp/screenshot-$(date +%H%M%S).png}"
+        agent-browser screenshot "$path" 2>&1
+        echo "📸 截图已保存: $path"
+        ;;
+    url)
+        agent-browser get url 2>&1
+        ;;
+    title)
+        agent-browser get title 2>&1
+        ;;
+    click)
+        shift
+        agent-browser click "$@" 2>&1
+        ;;
+    fill)
+        shift
+        agent-browser fill "$@" 2>&1
+        ;;
+    eval)
+        shift
+        agent-browser eval "$@" 2>&1
+        ;;
+    help|h|"")
+        echo "用法: ab <命令> [参数]"
+        echo ""
+        echo "连接容器:"
+        echo "  ab 1        连接到 oneform (6081)"
+        echo "  ab 2        连接到 controlled-browser (6082)"
+        echo "  ab 3        连接到 controlled-browser-local (6083)"
+        echo "  ab 4        连接到 alibabaxiangmu (6084)"
+        echo "  ab 5        连接到 duomotai (6085)"
+        echo ""
+        echo "操作命令:"
+        echo "  ab status   显示所有容器状态"
+        echo "  ab snap     获取页面快照 (accessibility tree)"
+        echo "  ab shot     截图"
+        echo "  ab url      获取当前 URL"
+        echo "  ab title    获取页面标题"
+        echo "  ab click    点击元素"
+        echo "  ab fill     填充输入框"
+        echo "  ab eval     执行 JavaScript"
+        ;;
+    *)
+        # 直接传递给 agent-browser
+        agent-browser "$@"
+        ;;
+esac

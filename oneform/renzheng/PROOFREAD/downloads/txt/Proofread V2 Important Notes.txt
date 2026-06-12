@@ -1,0 +1,28 @@
+Proofread V2 New Project / Guidelines Release
+Overview
+•
+•
+
+Proofread V2 is different from the existing Proofread guidelines (V1).
+For V2, you will only evaluate 2 dimensions - Correctness and Completeness - by
+answering multiple Y/N questions, with the derived scores automatically computed and
+displayed for you.
+
+To succeed at this project
+•
+•
+•
+
+•
+
+Make sure to follow the Guideline Learning Path suggested in Page 3.
+You will first learn Minimal Edit Principles and other principles for navigating ambiguous
+cases.
+Pay special attention to 5. Preserve Expressivity, Colloquialisms, or Slangs under the
+Minimal Edit Principles section. In this principle, we have called out rules regarding how to
+handle SMS abbreviations and informal context (which is one major requirement that
+distinguishes Proofread V2 from V1).
+In the Appendix, you can find Word Lists that include examples of abbreviations that should
+or should not be expanded by the Proofread feature.
+
+

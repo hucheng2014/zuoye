@@ -1,0 +1,33 @@
+services:
+  browser:
+    build:
+      context: ./browser
+      dockerfile: Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME:-controlled-browser}-browser
+    init: true
+    environment:
+      - CDP_PORT=${CDP_PORT:-9222}
+      - CDP_PROXY_PORT=${CDP_PROXY_PORT:-9223}
+      - VNC_PASSWORD=${VNC_PASSWORD:-}
+      - SCREEN_WIDTH=${SCREEN_WIDTH:-1920}
+      - SCREEN_HEIGHT=${SCREEN_HEIGHT:-1080}
+      - SCREEN_DEPTH=${SCREEN_DEPTH:-24}
+      - START_URL=${START_URL:-about:blank}
+    ports:
+      - "${NOVNC_PORT:-6082}:6080"
+      - "${HOST_CDP_PORT:-9232}:9222"
+      - "${HOST_CDP_PROXY_PORT:-9233}:9223"
+    volumes:
+      - browser-profile:/home/pwuser/chrome-profile
+    shm_size: ${BROWSER_SHM_SIZE:-2g}
+    mem_limit: ${BROWSER_MEM_LIMIT:-2g}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost:9222/json/version"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+volumes:
+  browser-profile:

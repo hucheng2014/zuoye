@@ -179,15 +179,45 @@ def write_json_item(con: sqlite3.Connection, key: str, value: object) -> None:
 
 
 def write_model(db_path: Path, user_id: str, model_id: str) -> None:
-    key = f"{user_id}_ai-chat:sessionRelation:globalModelMap"
-    value = json.dumps({"dev_builder": model_id}, ensure_ascii=False, separators=(",", ":"))
+    model_key = f"{user_id}_ai-chat:sessionRelation:globalModelMap"
+    mode_key = f"{user_id}_ai-chat:sessionRelation:globalModeMap"
     with open_db(db_path) as con:
-        con.execute(
-            "insert into ItemTable(key, value) values(?, ?) "
-            "on conflict(key) do update set value = excluded.value",
-            (key, value),
-        )
+        write_json_item(con, model_key, {"dev_builder": model_id})
+        write_json_item(con, mode_key, {"dev_builder": 0})
         con.commit()
+
+
+def force_manual_mode(db_path: Path, user_id: str) -> int:
+    mode_map_key = f"{user_id}_ai-chat:sessionRelation:modeMap"
+    global_mode_key = f"{user_id}_ai-chat:sessionRelation:globalModeMap"
+    memento_key = "memento/icube-ai-agent-storage"
+
+    with open_db(db_path) as con:
+        mode_map = read_json_item(con, mode_map_key, {})
+        if not isinstance(mode_map, dict):
+            mode_map = {}
+
+        session_ids = set(mode_map)
+        memento = read_json_item(con, memento_key, {})
+        if isinstance(memento, dict):
+            current = memento.get("currentSessionId")
+            if isinstance(current, str) and re.fullmatch(r"[0-9a-f]{24}", current):
+                session_ids.add(current)
+            sessions = memento.get("list")
+            if isinstance(sessions, list):
+                for item in sessions:
+                    if isinstance(item, dict) and isinstance(item.get("sessionId"), str):
+                        session_ids.add(item["sessionId"])
+
+        for sid in session_ids:
+            if re.fullmatch(r"[0-9a-f]{24}", sid):
+                mode_map[sid] = {"dev_builder": 0}
+
+        write_json_item(con, mode_map_key, mode_map)
+        write_json_item(con, global_mode_key, {"dev_builder": 0})
+        con.commit()
+
+    return len(session_ids)
 
 
 def current_session_id(db_path: Path) -> str | None:
@@ -223,7 +253,9 @@ def create_new_session(
     max_sessions: int,
 ) -> str:
     model_map_key = f"{user_id}_ai-chat:sessionRelation:modelMap"
+    mode_map_key = f"{user_id}_ai-chat:sessionRelation:modeMap"
     global_model_key = f"{user_id}_ai-chat:sessionRelation:globalModelMap"
+    global_mode_key = f"{user_id}_ai-chat:sessionRelation:globalModeMap"
     memento_key = "memento/icube-ai-agent-storage"
     agent_map_key = "icube_session_agent_map"
 
@@ -248,6 +280,9 @@ def create_new_session(
             existing.update(k for k in model_map if isinstance(k, str))
         else:
             model_map = {}
+        mode_map = read_json_item(con, mode_map_key, {})
+        if not isinstance(mode_map, dict):
+            mode_map = {}
 
         sid = session_id or generate_session_id(existing)
         if not re.fullmatch(r"[0-9a-f]{24}", sid):
@@ -277,11 +312,14 @@ def create_new_session(
         agent_map[sid] = agent
 
         model_map[sid] = {"dev_builder": model_id}
+        mode_map[sid] = {"dev_builder": 0}
 
         write_json_item(con, memento_key, memento)
         write_json_item(con, agent_map_key, agent_map)
         write_json_item(con, model_map_key, model_map)
+        write_json_item(con, mode_map_key, mode_map)
         write_json_item(con, global_model_key, {"dev_builder": model_id})
+        write_json_item(con, global_mode_key, {"dev_builder": 0})
         con.commit()
 
     return sid
@@ -362,6 +400,25 @@ def cmd_new_session(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_manual_mode(args: argparse.Namespace) -> int:
+    user_data_dir = Path(args.user_data_dir).expanduser()
+    targets = select_workspace_dbs(user_data_dir, args.workspace, args.all_workspaces)
+    target_dbs = [db for db, _ in targets]
+    gdb = global_db(user_data_dir)
+    if gdb.exists():
+        target_dbs.insert(0, gdb)
+    user_id = find_user_id(target_dbs, args.user_id)
+
+    seen: set[Path] = set()
+    for db_path in target_dbs:
+        if db_path in seen:
+            continue
+        seen.add(db_path)
+        count = force_manual_mode(db_path, user_id)
+        print(f"manual-mode\t{count}\t{db_path}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--user-data-dir", default=str(default_user_data_dir()))
@@ -389,6 +446,12 @@ def build_parser() -> argparse.ArgumentParser:
     new_parser.add_argument("--session-id", help="Optional explicit 24-hex session id.")
     new_parser.add_argument("--max-sessions", type=int, default=30, help="Maximum sessions kept in the visible session list.")
     new_parser.set_defaults(func=cmd_new_session)
+
+    manual_parser = sub.add_parser("manual-mode", help="Force Trae chat mode state to manual.")
+    group = manual_parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--workspace", help="Workspace path or URI to update.")
+    group.add_argument("--all-workspaces", action="store_true", help="Update every known workspace state.")
+    manual_parser.set_defaults(func=cmd_manual_mode)
     return parser
 
 

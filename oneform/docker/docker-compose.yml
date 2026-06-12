@@ -1,0 +1,57 @@
+services:
+  browser:
+    build:
+      context: ./browser
+      dockerfile: Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME:-oneform}-browser
+    init: true
+    environment:
+      - CDP_PORT=9222
+      - VNC_PASSWORD=${VNC_PASSWORD:-}
+      - SCREEN_WIDTH=1920
+      - SCREEN_HEIGHT=1080
+      - SCREEN_DEPTH=24
+    ports:
+      - "${NOVNC_PORT:-6081}:6080"
+      - "${HOST_CDP_PORT:-9224}:9222"
+      - "${HOST_CDP_PROXY_PORT:-9225}:9223"
+    networks:
+      - oneform-net
+    volumes:
+      - browser-profile:/home/pwuser/chrome-profile
+    shm_size: 2g
+    mem_limit: 2g
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost:9222/json/version"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+  agent:
+    build:
+      context: ./agent
+      dockerfile: Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME:-oneform}-agent
+    init: true
+    depends_on:
+      browser:
+        condition: service_healthy
+    environment:
+      - CDP_ENDPOINT=http://browser:9223
+    networks:
+      - oneform-net
+    volumes:
+      - ${HOST_AD_DIR:-/Users/xaa/zuoye/oneform/AD}:/app/AD:rw
+      - ${HOST_ADJIAN_DIR:-/Users/xaa/zuoye/oneform/ADJIAN}:/app/ADJIAN:rw
+      - ${HOST_RQOAE_DIR:-/Users/xaa/zuoye/oneform/RQOAE}:/app/RQOAE:rw
+    mem_limit: 4g
+    restart: unless-stopped
+
+networks:
+  oneform-net:
+    driver: bridge
+
+volumes:
+  browser-profile:

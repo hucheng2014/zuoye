@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_009",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T13:50:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689641751",
+      "query": "爆 笑 段 子",
+      "query_intent": "User is searching for an entertainment application dedicated to funny jokes, memes, and humorous content.",
+      "ad": {
+        "name": "rednote",
+        "developer": "Xingin"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"爆 笑 段 子\" indicates an intent to find an app for funny jokes and humorous entertainment content. The ad \"rednote\" (Xiaohongshu international) is a comprehensive lifestyle sharing and social community platform. While it is not a dedicated joke application, it hosts a vast amount of diverse entertainment and social content, offering a weak but valid topical connection to the user's entertainment intent. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689641752",
+      "query": "viaim",
+      "query_intent": "User is searching for 'viaim', an AI-powered voice recording and meeting transcription application.",
+      "ad": {
+        "name": "Atter AI: Transcribe Meetings",
+        "developer": "Oceanic Digital, Inc."
+      },
+      "rating": "Good",
+      "comment": "The query \"viaim\" indicates an intent to find a specific AI voice recording and speech-to-text transcription utility. The ad \"Atter AI\" is also an AI-powered meeting transcription and audio summary application. Since the ad provides the exact same core functionality (AI audio transcription) as the searched app, it is a highly relevant alternative within the same specialized productivity category. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689641753",
+      "query": "青 书 学 堂",
+      "query_intent": "User is searching for '青书学堂' (Qingshu Xuetang), an adult continuing education and online degree course platform.",
+      "ad": {
+        "name": "千问 - 阿里AI助手",
+        "developer": "Shanghai Zhixin Puhui Technology Co., Ltd."
+      },
+      "rating": "Bad",
+      "comment": "The query \"青 书 学 堂\" indicates an intent to access a formal adult education and online degree learning platform. The ad \"千问\" is a general-purpose AI chatbot assistant developed by Alibaba. Since a formal continuing education portal and a generic generative AI assistant operate in completely different functional domains and address unrelated primary user needs, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689641754",
+      "query": "表 哥",
+      "query_intent": "User is searching for a spreadsheet application, using '表哥' (Cousin) as a common phonetic typo for '表格' (Spreadsheet).",
+      "ad": {
+        "name": "Spreadsheet-xlsx&csv editor",
+        "developer": "BEST MUSIC VIDEO & IMAGE MAKER LIMITED"
+      },
+      "rating": "Good",
+      "comment": "The query \"表 哥\" is a very common phonetic typo for \"表格\" (spreadsheet), indicating an intent to find a spreadsheet editor or viewer app. The ad \"Spreadsheet-xlsx&csv editor\" provides exactly the spreadsheet editing functionality the user is looking for. Since it directly fulfills the functional intent behind the typo, it is a highly relevant substitute. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689641755",
+      "query": "taikin",
+      "query_intent": "User is searching for 'TalkIn' (with a typo), a global language learning and cross-cultural voice social platform.",
+      "ad": {
+        "name": "小西米语音—在线连麦社交平台",
+        "developer": "Guangzhou Qianyue Media Co., Ltd."
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"taikin\" is a typo likely indicating an intent to find \"TalkIn\", a global language learning and voice chatting social application. The ad \"小西米语音\" is a domestic voice dating and online social networking platform. While one focuses on global language exchange and the other on domestic dating, both are online voice communication and social networking platforms, presenting a weak but valid topical association. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T12:49:49",
+    "post_submit_status": "No errors visible"
+  }
+}

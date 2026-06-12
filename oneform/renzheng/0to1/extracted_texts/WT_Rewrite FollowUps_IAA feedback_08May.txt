@@ -1,0 +1,136 @@
+            WT - Rewrite Follow-Ups Feedback
+This feedback is based on Inter-Analyst Agreement (IAA). That is, how much do different people
+analyzing the same task agree with each other? The observations and feedback below are sorted
+based on the most recurring issues, i.e. from the lowest agreement scores.
+
+
+1. Personalization — Step 2
+This is the highest-risk dimension across locales, often below 40% agreement.
+What annotators need to pay attention to:
+    • The sample outputs are not mapped to the actual user — they only illustrate a writing style
+         pattern. You must focus purely on style signals (sentence length, vocabulary complexity,
+         formality markers) and ignore any factual content differences between the sample and the
+         rewrite.
+    • "Well matched" does not mean the rewrite is identical to the sample outputs. It means the
+         rewrite consistently reflects the same stylistic category. A single formal word in an otherwise
+         casual rewrite should not push a rating to "Partially matched."
+    • For Asian and European locales especially: what counts as “formal”, “casual”, or “advanced
+         vocabulary” is culturally loaded. You should anchor your judgment to the sample outputs
+         provided for that specific task, not to your own cultural baseline for what those labels mean.
+
+
+2. Fix Errors — Step 3 Grammar & Clarity
+Agreement on this dimension crashes in Asian locales and is unreliable across European ones too. The
+guideline here is relatively simple with yes/no questions — but the disagreement suggests annotators
+are applying it inconsistently.
+What annotators need to pay attention to:
+     • This first question only asks whether errors present in the original were fixed.
+     • For languages where grammar rules are more complex or where "error" is more ambiguous
+         (e.g., Chinese where punctuation or character choice can be debated, or European languages
+         with gendered agreement), you need to make a binary call: was there a clear error in the input,
+         and did the rewrite address it? If there was no clear error, mark "Not applicable"; not “Yes”.
+     • The "Not applicable" option is likely underused. If the original text has no grammatical errors,
+         the answer is N/A, not Yes. Conflating these two inflates disagreement.
+     • Q1 is not asking whether the rewrite introduced new errors (that's Q2) or whether the rewrite is
+         generally well-written (Q3).
+     • Q2 evaluates if new errors were introduced. If errors present in the original were not fixed, this
+         fails Q1, and not Q2.
+
+
+3. Preserve Style — Step 5 Meaning Preservation Q2
+This dimension asks whether the second rewrite kept style elements from the first rewrite that weren't
+targeted by the selected suggestion. Agreement is consistently weak in European locales and for tone-
+related suggestions.
+What annotators need to pay attention to:
+
+
+
+
+Centific Confidential ©
+    •    The key word is “unrelated”. You should mentally isolate what the selected suggestion targets
+         (e.g., "Soften tone") and then check everything else (e.g. vocabulary choices, sentence structure,
+         formality level, length) against the first rewrite. Only changes in those unrelated areas count as
+         failures here.
+    •    A common mistake is penalizing the second rewrite for changes that are a natural side effect of
+         applying the suggestion. For example, softening tone may slightly alter sentence structure. That's
+         acceptable. Completely changing from formal to casual vocabulary when the suggestion was
+         only about brevity is not.
+    •    For European locales where tone_balance is also weak: tone and style are being conflated. Tone
+         is about emotional register and confidence level; style is about structural and vocabulary
+         patterns. These are separate questions in the rubric and should be assessed separately.
+
+
+4. Apply Suggestion — Step 5 Suggestion Adherence Q1
+Consistently problematic across locales, especially when the selected suggestion involves tone or
+register.
+What annotators need to pay attention to:
+    • The standard is “visibly implemented with noticeable changes that directly relate to the
+          suggestion”. Ask yourself: if I compared the first and second rewrite side by side, would I
+          immediately see the suggestion's effect? If yes, mark Yes.
+    • Vague or broad suggestions like "Keep it natural" or "Preserve informal tone" are harder to
+          verify. You should look for at least 2–3 concrete markers in the rewrite (word choices, sentence
+          starters, contractions, punctuation style) that reflect the suggestion, rather than looking for a
+          wholesale transformation.
+    • For tone-related suggestions: cultural norms around formality differ significantly in some locales.
+          You should judge against your locale's own conventions, not against English-language norms.
+
+
+5. Negative Side Effects — Step 5 Quality Improvement Q2
+Unreliable across European and Asian locales.
+What annotators need to pay attention to:
+    • This question should only have "No" when there is a clear, concrete problem introduced by
+        applying the suggestion, not when you simply prefer a different phrasing. The bar is: does the
+        text now have a problem it didn't have before?
+    • "Lost nuance" should only be flagged if a meaningful distinction from the original (a qualifier, a
+        hedging phrase, an important caveat) was removed as a direct result of applying the suggestion.
+        e.g. “I understand why they made the decision, though I still think it was shortsighted”
+        Rewrite: I think they made a bad decision
+    • Length increases from suggestions like "Add more detail" are expected and not negative side
+        effects. You should only mark length as an issue when it becomes genuinely excessive, not just
+        longer than the first rewrite. Certain rewrites require rewording that might slightly alter the
+        length. This is not automatically penalized just because it went, for example, from 20 to 22
+        words.
+
+
+6. Redundancy — Step 4 Follow-up Suggestions
+The guidelines define this clearly (two or more suggestions nearly identical or covering similar
+information), but agreement is weak especially in European locales.
+
+
+Centific Confidential ©
+What annotators need to pay attention to:
+  • "Similar information" means the suggestions would produce essentially the same second rewrite
+       if selected. Two suggestions can use different words and still be redundant if they point in the
+       same direction (e.g., "Keep it brief" and "Cut unnecessary words" are redundant; "Keep it brief"
+       and "Soften the tone" are not).
+  • You should test each pair of suggestions against the first rewrite mentally: would choosing one
+       vs. the other produce a meaningfully different output? If not, they're redundant.
+
+
+7. Tone Balance — Step 3, Tone Appropriateness Q2
+Notably weak across French, German, Spanish, and Italian. The guideline asks whether "the user's
+personality shows through while meeting situational requirements"; this is inherently cultural.
+What annotators need to pay attention to:
+    • This question is not asking whether the rewrite sounds natural to you. It's asking whether the
+        rewrite strikes a balance between the user's demonstrated writing style and the demands of the
+        context (e.g., a casual person writing a work email).
+    • For European locales: professional communication norms vary widely. French professional
+        writing tends toward formality; German tends toward directness; Spanish can be warmer. You
+        should calibrate "situational appropriateness" against your own locale's norms, not a generic
+        standard.
+    • The sample outputs are the primary reference for understanding the user's baseline style. If the
+        rewrite drifts significantly away from that style without a clear contextual reason, it fails this
+        question. If the drift is justified by the context (writing to a supervisor, making a formal request),
+        it passes.
+
+
+8. Localization
+The Writing Tools guidelines have their own Localization rules. Do not use the LE guidelines as a
+reference point. Stick to what the guidelines require, do not report spelling/grammar issues under
+Localization.
+
+
+
+
+Centific Confidential ©
+

@@ -3,17 +3,19 @@
 
 from __future__ import annotations
 
+import argparse
 import csv
 import json
-from pathlib import Path
 import re
 import sys
-import argparse
+from pathlib import Path
+
+from bitable_score_reason import is_generic_score_reason
 
 
 BASE_DIR = Path(__file__).resolve().parent
 LOG_FILE = BASE_DIR / "trial_log.csv"
-TRAE_LOG_DIR = Path("/home/jianglei/.config/Trae CN/logs")
+TRAE_LOG_DIR = Path("/Users/xaa/.config/Trae CN/logs")
 
 MODEL_IDS = {
     "Doubao-Seed-2.0-Code": "1_-_Doubao-Seed-2.0-Code",
@@ -224,6 +226,11 @@ def review(artifact_dir: Path = BASE_DIR) -> int:
             errors.append(f"line {index}: score must be 0/1/2, got {score!r}")
         if not reason:
             errors.append(f"line {index}: score_reason is empty")
+        elif is_generic_score_reason(reason, prompt, model, score):
+            errors.append(
+                f"line {index}: score_reason still looks like auto template; "
+                f"run: python3 bitable_score_reason.py normalize-log"
+            )
         if not patch_path.exists():
             errors.append(f"line {index}: patch file missing: {patch_path.name}")
         elif patch_path.suffix != ".patch":
@@ -288,7 +295,7 @@ def review(artifact_dir: Path = BASE_DIR) -> int:
     print("  [OK] each prompt has expected 5 models and unique sessions")
     print("  [OK] readable Trae chat_model evidence, when present, matches local model_name")
     print("  [OK] readable Trae completion evidence, when present, is accepted")
-    print("  [OK] scores/reasons are present and legal")
+    print("  [OK] score_reason values are structured, not auto templates")
     print("  [OK] code-change prompts have non-empty .patch files")
     print("  [OK] Doubao seed score is 0 for prompts 2-7")
     print("  [OK] non-reading prompts are not all score 2")

@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_007",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T22:04:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688688290",
+      "query": "王 国 模 拟",
+      "query_intent": "User is looking for kingdom simulation, medieval management, or empire building strategy sandbox games (such as WorldBox, Kingdom Rush, or general medieval simulation/strategy games like Rise of Kingdoms). Core intent is empire management strategy.",
+      "ad": {
+        "name": "保卫向日葵",
+        "subtitle": "农场集结，植物大战史莱姆",
+        "developer": "奇游工作室",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6737974680)",
+          "note": "保卫向日葵 is a cartoon tower defense/farm-themed plant defense strategy game in the style of Plants vs. Zombies/Plants vs. Slimes."
+        },
+        {
+          "source": "local knowledge",
+          "note": "A kingdom simulation sandbox game is focused on empire building, resource management, and medieval battles. '保卫向日葵' is a casual tower defense game where plants protect a farm from slimes. The two game play styles, themes, and audiences are completely distinct."
+        }
+      ],
+      "relationship_analysis": "The query '王 国 模 拟' refers to medieval kingdom simulation or empire strategy games. The advertised app '保卫向日葵' is a casual, cartoon tower defense game. Since the play styles (empire management strategy vs. cartoon tower defense), presentation themes (medieval battles vs. farm plants vs. slimes), and target audiences are completely split, they share no meaningful relation other than both being mobile games. This is a game genre mismatch, so it is Bad.",
+      "why_not_higher": "No gameplay, thematic, or mechanical overlap. Stacking tower defenses on a cartoon farm does not fulfill the sandbox empire/kingdom management simulation intent.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"王 国 模 拟\" refers to medieval kingdom simulation, empire management, or strategy sandbox games. The advertised app \"保卫向日葵\" is a casual cartoon farm tower defense game. Since the play styles (sandbox empire simulation vs. cartoon tower defense), presentation themes (medieval battles vs. farm plants fighting slimes), and target audiences are completely split, they share no meaningful relation. This is a game genre mismatch, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688688291",
+      "query": "微 信 分 身 苹 果 版 免 费",
+      "query_intent": "User specifies a technical system utility tool ('微信分身苹果版免费') to clone or run multiple concurrent instances/accounts of WeChat on an iPhone for free (dual WeChat utility for iOS).",
+      "ad": {
+        "name": "MOMO陌陌",
+        "subtitle": "一切从陌生开始",
+        "developer": "Beijing Momo Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id448165862)",
+          "note": "MOMO陌陌 is a highly famous, mainstream location-based stranger social networking, live-streaming, and online dating application in China."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Managing multiple WeChat accounts via a dual-opening system utility tool is completely unrelated to registering or chatting on an anonymous stranger social/dating platform like MOMO."
+        }
+      ],
+      "relationship_analysis": "The query '微 信 分 身 苹 果 版 免 费' specifies a technical system utility tool to clone WeChat accounts on iOS. The advertised app 'MOMO陌陌' is a stranger social and dating platform. A system cloning utility and a social dating app serve entirely unrelated functional domains, user needs, and use cases. There is no logical connection between the two, which would completely confuse a user.",
+      "why_not_higher": "No functional, developer, or contextual relation whatsoever.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"微 信 分 身 苹 果 版 免 费\" specifies a technical system utility tool that allows users to clone WeChat and manage dual accounts on an iPhone. The advertised app \"MOMO陌陌\" is a mainstream stranger social networking and dating platform. A technical system cloning utility and a social dating platform satisfy entirely unrelated functional domains, use cases, and demographics. There is no logical connection, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688688292",
+      "query": "测 量 计 算",
+      "query_intent": "User is looking for professional coordinate calculation, surveying, mapping, and engineering math utilities ('测量计算') used in construction and civil engineering (such as coordinate transformations, levels, and curves).",
+      "ad": {
+        "name": "千问 - 阿里AI助手",
+        "subtitle": "回答聪明会办事，问答 拍题 生图 写作  PPT 订餐 购物",
+        "developer": "Shanghai Zhixin Puhui Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6466733523) & Web research",
+          "note": "通义千问 (Qwen) is Alibaba's general-purpose AI chat assistant, designed for broad Q&A, writing, image generation, OCR, and general task solving."
+        },
+        {
+          "source": "local knowledge",
+          "note": "A civil engineering surveying calculator is a highly specialized math tool with specific coordinate mapping systems and instrument connections. Qwen is a general conversational AI. While Qwen can theoretically solve math formulas, it is not a dedicated surveying/mapping calculator tool. They share a broad utility class association."
+        }
+      ],
+      "relationship_analysis": "The query '测 量 计 算' refers to professional surveying and coordinate calculation tools for construction. The advertised app '千问' is Alibaba's general-purpose AI assistant. While a general AI chat assistant can solve mathematical calculations and formulas, it is a conversational LLM tool rather than a specialized civil engineering calculator with coordinate grids and surveying mapping formulas. They belong to the broad utility/tool category but have mismatched specific functions. Rated Acceptable.",
+      "why_not_higher": "They have completely different core utilities. A professional surveyor on-site requires a dedicated civil engineering calculator, which cannot be replaced by a general conversational AI chatbot.",
+      "why_not_lower": "There is a broad category association in the utility domain, as the AI assistant is capable of processing mathematical calculations and formulas.",
+      "rating": "Acceptable",
+      "comment": "The query \"测 量 计 算\" refers to specialized coordinate calculation and surveying tools used in civil engineering and construction. The advertised app \"千问 - 阿里AI助手\" is a general-purpose AI chatbot assistant. While a conversational AI can theoretically process mathematical calculations and formulas, it is a general assistant rather than a dedicated professional surveying calculator with pre-configured civil engineering formulas and grids. The connection is weak but understandable under the broad utility domain. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688688293",
+      "query": "扫 雷",
+      "query_intent": "User is searching specifically for the classic puzzle game '扫雷' (Minesweeper) to play Minesweeper grids or retro variations on their mobile device.",
+      "ad": {
+        "name": "夸克HD-AI旗舰应用",
+        "subtitle": "千问AI助手搜索拍题小说网盘浏览器扫描",
+        "developer": "广州市动悦信息技术有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1530655740)",
+          "note": "夸克 is a flagship AI search browser and system utility tool by Alibaba, featuring web browsing, file scanning, cloud drive, and AI assistants."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Classic Minesweeper is a retro puzzle game. Quark is an AI-powered browser and document scanner/cloud drive utility. There is zero relation between playing Minesweeper and an AI browser utility."
+        }
+      ],
+      "relationship_analysis": "The query '扫 雷' specifies the classic puzzle game Minesweeper. The advertised app '夸克' is an AI search browser and scanner/cloud drive utility tool. There is absolutely no relation in functions, developer, target audience, or use cases between a retro puzzle game and an AI browser utility tool. This completely unrelated placement would confuse a user, so it is Bad.",
+      "why_not_higher": "No functional, nominal, or contextual connection whatsoever.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"扫 雷\" refers to the classic puzzle game Minesweeper. The advertised app \"夸克HD-AI旗舰应用\" is an AI-powered search browser, document scanner, and cloud drive utility platform. There is absolutely no functional, logical, or contextual relationship between playing a classic puzzle game and using an AI browser utility tool, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688688294",
+      "query": "人 塔",
+      "query_intent": "User is looking for casual physics stacking/balancing puzzle games ('人塔' / '叠人塔' / Human Tower) where players stack characters or elements on top of each other, or action/strategy games with this theme.",
+      "ad": {
+        "name": "梦幻庄园",
+        "subtitle": "骏马送福，快乐合成！",
+        "developer": "LT Fun Inc.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6739773558)",
+          "note": "梦幻庄园 is a casual ranch synthesis and merge idle game focusing on merging horses, decorating ranch spaces, and offline synthesis."
+        },
+        {
+          "source": "local knowledge",
+          "note": "A physics stacking puzzle game involves balance, angles, and physics simulations. A ranch synthesis game involves merging matching elements (horses) on a grid to unlock higher tiers. The game mechanics, presentation themes, and audiences are completely separate."
+        }
+      ],
+      "relationship_analysis": "The query '人 塔' refers to casual physics stacking puzzle games. The advertised app '梦幻庄园' is a casual merge/synthesis Ranch simulation game. The core gameplay mechanics (physics balancing/stacking vs. merge grid synthesis), presentation themes (human towers vs. horse farm decorating), and target audiences are completely split with no logical connection, representing a game genre mismatch. Rated Bad.",
+      "why_not_higher": "No gameplay, thematic, or mechanical overlap. Stacking human towers has nothing to do with merging horses on an idle farm.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"人 塔\" refers to casual physics stacking and balancing puzzle games (\"叠人塔\" / Human Tower). The advertised app \"梦幻庄园\" is a casual ranch merge and horse synthesis simulation game. The gameplay mechanics (physics-based balance stacking vs. merge grid synthesis), presentation themes (human towers vs. horse farm decorating), and target audiences are completely split with no logical relation other than both being games, so this is Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T14:04:21",
+    "post_submit_status": "No errors visible"
+  }
+}

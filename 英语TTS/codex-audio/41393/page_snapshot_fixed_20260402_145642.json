@@ -1,0 +1,46 @@
+﻿(() => {
+  try {
+    const audios = [...document.querySelectorAll('audio')];
+    const findRoot = (a) => {
+      let r = a;
+      for (let d = 0; d < 12 && r; d += 1, r = r.parentElement) {
+        const t = r.innerText || '';
+        if (t.includes('是否同一个人') && t.includes('音频内容')) return r;
+      }
+      return a.parentElement;
+    };
+
+    const pickChecked = (g) => {
+      const labels = [...g.querySelectorAll('label[role="radio"]')];
+      const idx = labels.findIndex(x => x.classList.contains('is-checked') || x.getAttribute('aria-checked') === 'true');
+      const text = idx >= 0 ? (labels[idx].innerText || '').trim() : '';
+      return { idx, text };
+    };
+
+    const items = audios.map((a, i) => {
+      const r = findRoot(a);
+      const filename = (((r.innerText || '').match(/目录[:：]\s*([^\n]+)/) || [])[1] || '').trim();
+      const groups = [...r.querySelectorAll('[role="radiogroup"]')];
+      const noise = groups[4] ? pickChecked(groups[4]) : { idx: -1, text: '' };
+      const textEl = r.querySelector('textarea,input[type="text"]');
+      const text = (textEl && (textEl.value || '').trim()) || '';
+      return {
+        index: i,
+        filename,
+        src: a.currentSrc || a.src || '',
+        noise,
+        text
+      };
+    });
+
+    copy(JSON.stringify({
+      url: location.href,
+      title: document.title,
+      extractedAt: new Date().toISOString(),
+      count: items.length,
+      items
+    }, null, 2));
+  } catch (e) {
+    copy('ERR:' + (e && e.stack ? e.stack : String(e)));
+  }
+})();

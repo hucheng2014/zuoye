@@ -1,0 +1,45 @@
+{
+  "batch_id": "2026-06-08_batch_024",
+  "project": "AD Search Ads Relevance",
+  "operator": "cursor-agent",
+  "rating_method": "independent_judgment_v1",
+  "created_at": "2026-06-08T23:10:00",
+  "source_page": "tryrating current page (1 task)",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689688299",
+      "query": "创 造 与 魔 法",
+      "query_intent": "User is searching for 创造与魔法 (Creation and Magic), a sandbox survival crafting mobile game with building and magic elements.",
+      "ad": {
+        "name": "明日之后",
+        "developer": "网易移动游戏",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "创造与魔法 is a fantasy sandbox survival crafting game; 明日之后 is NetEase's post-apocalyptic survival shooter."
+        }
+      ],
+      "relationship_analysis": "Both are major Chinese mobile survival games but differ in theme (fantasy sandbox vs zombie apocalypse) while sharing the survival genre.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"创 造 与 魔 法\" indicates the user wants the Creation and Magic sandbox survival crafting game with building and magic mechanics. [Ad Analysis] The advertised app \"明日之后\" is NetEase's post-apocalyptic open-world survival mobile game. [Relevance Breakdown] Both are prominent survival-genre mobile games; players searching for one survival title often explore other major alternatives in the same broad category even though the themes differ. [Why not higher/lower] Not Excellent because it is a different game IP and theme; not Acceptable because the survival gameplay genre overlap is strong enough that users would likely consider it. Rated Good.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T17:32:40",
+    "post_submit_status": "No errors visible"
+  }
+}

@@ -1,0 +1,95 @@
+                                 0 to 1 Composition Feedback
+
+For those of you that haven’t done so yet, please watch the webinar session that was held for this new
+workflow before doing your first attempt.
+
+Necessity for additional information
+Keep in mind that this is necessary information that would be needed in order to complete the task.
+Either critical details or fact checking from web search. Make sure you carefully comprehend the
+instruction and context given, (if any, e.g. previous email received), before you evaluate the first
+question. In many cases, the instruction is clear and sufficient to perform the task even though, in some
+scenarios, additional info would be helpful to have (but not mandatory).
+Critical info is needed when the user requests something that makes it very difficult to perform the task
+without that info.
+For example:
+     - “Thank him for reaching out and propose a new meeting time”: the AI needs personal
+          information from the user in order to propose the times.
+     - “Tell Ian I’ll check the price for the laptop for Rohan”: there’s no additional information needed
+          here, no supplementary. Based on the context and request, it’s a very straightforward reply.
+
+Always check the request along with any context (if given). Sometimes the request is general, such as
+“Ask John to let me know his availability”, which does not require additional info from the users
+themselves.
+
+Critical Issue
+Don’t mark responses as Hallucination if the information is extracted from the “Additional Personal
+Information” section. Use the user input, context (if any) and Additional info before you decide.
+
+
+
+
+Also, Hallucination should be failed for critical issues when fabricating specific details related to names,
+places, prices, numbers, dates, facts. Information that requires personal info from the user or web
+search. If the response says: “office celebration for the hard work”, this is not considered fabricated
+information in the context of this task.
+Only one task had a hallucinated response in the cert and this was missed by a vast majority of graders
+(tip shared). Be wary of information that can be obtained from the given task info or general knowledge
+(web search), and what’s very specifically made up, requires specific personal information or fact checks
+to which you would not have access to (e.g. company specific process).
+
+
+
+
+Centific Confidential ©
+Email Subject Evaluation
+We’re seeing quite a lot of combinations on the selections across the board. Excluding the first option,
+which may seem confusing to some, the remaining options are quite simple and straightforward and
+should not be mistaken. On the first option, remember that the ‘action noun’ should not be the first
+option (Request to Meet vs Meeting Request )
+Reminder: You’re selecting all the options that APPLY for the subject. Meaning, if something does not
+follow the criteria, you would not select that checkbox.
+
+The various subjects throughout the cert are comprehensible and following the expectations required.
+There were a few exceptions from the cert that were missed by many:
+    - Using more than one topic
+    - Capitalizing conjunctions, articles, prepositions that were not first/last word
+    - Not capitalizing first/last words, nouns, verbs, adverbs, adjectives
+    - A bit verbose/detailed, not general subject
+
+Instructions following, Tone, Completeness, Length
+The majority of the tasks tend to follow these points, and most of you have captured these correctly. But
+there are some rare cases where you need to capture potential issues. As a quick reminder:
+    - The response must include the key points the user requested, be relevant to the instruction, but
+        also provide it in the expected format (list, bullet points, email, etc.).
+    - Remember that the output text is in Markdown so a request for bold text would be represented
+        with **[text]**. A header/title is represented with # [text].
+    - For Tone, make sure the content is just appropriate for the audience and context given. Most
+        tasks are semi-formal, with a few more casual and formal cases.
+    - For Completeness, keep in mind that the response should include the critical info/details
+        required by the user. If these were missed, it’s a fail. If they were never mentioned, then they
+        would not form part of the evaluation.
+    - There’s no need to penalize the length when the actual instructions require a lot of content (e.g.
+        the Maya’s birthday planning task).
+    - If the instruction requires something simple, short, concise but the reply includes more info and
+        details, you might want to downgrade it.
+
+Helpful suggestions
+The suggestions need to be helpful for the purpose of the composition. They are there to serve as
+supplementary information or suggestions to the content.
+    - If the suggestion provides useful ideas to supplement the information (e.g. if the plan is to meet
+        up, a suggestion to propose the time would be Helpful);
+    - Suggesting to the user to perform actions on the device, unrelated to the composition may not
+        be considered helpful as supplementary information;
+    - Not providing any suggestion when it would be useful for context (e.g. time, date, place) would
+        be considered missing.
+Do not assume that every suggestion is automatically Helpful. Some are just Neutral.
+
+Overall rating
+Stick to the general suggested rating by the tool. Some instructions are quite simple and require very
+minimal composition input from the AI. Hence, it’s not expected they would be super creative or
+insightful, but we can still mark them as Excellent.
+
+
+
+Centific Confidential ©
+

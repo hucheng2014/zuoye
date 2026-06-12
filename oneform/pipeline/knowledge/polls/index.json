@@ -1,0 +1,226 @@
+{
+  "task_type": "TA_POLLS",
+  "display_name": "TA Intelligent Polls",
+  "version": "1.0.0",
+  "source_files": [
+    "renzheng/TA Intelligent Polls/SOP.md",
+    "renzheng/TA Intelligent Polls/CLAUDE.md",
+    "renzheng/TA Intelligent Polls/Lighthouse_TA_Intelligent_Polls_Questions_中文总结.md",
+    "renzheng/TA Intelligent Polls/Lighthouse_TA_Intelligent_Polls_Feedback_中文总结.md"
+  ],
+  "compact_sop": "compact_sop.md",
+  "flow": "flow.md",
+  "chunks": [
+    {
+      "id": "proper_no_reply",
+      "file": "chunks/proper_no_reply.md",
+      "title": "Proper No Reply",
+      "description": "When a poll is or is not appropriate based on conversation context",
+      "keywords": [
+        "no_reply",
+        "yes_reply",
+        "consensus_reply",
+        "poll appropriate",
+        "collective decision",
+        "shared preference",
+        "consensus"
+      ],
+      "priority": 1,
+      "size_bytes": 2438
+    },
+    {
+      "id": "following_instructions",
+      "file": "chunks/following_instructions.md",
+      "title": "Following Instructions",
+      "description": "Structure requirements for valid polls and independence from other dimensions",
+      "keywords": [
+        "following",
+        "not_following",
+        "title",
+        "options",
+        "structure",
+        "duplicate",
+        "hallucinated options"
+      ],
+      "priority": 1,
+      "size_bytes": 2340
+    },
+    {
+      "id": "composition",
+      "file": "chunks/composition.md",
+      "title": "Composition",
+      "description": "Title and option writing quality standards",
+      "keywords": [
+        "composition",
+        "good",
+        "bad",
+        "title phrase",
+        "question mark",
+        "concise",
+        "typo",
+        "merged options"
+      ],
+      "priority": 2,
+      "size_bytes": 2316
+    },
+    {
+      "id": "comprehensiveness",
+      "file": "chunks/comprehensiveness.md",
+      "title": "Comprehensiveness",
+      "description": "Option coverage completeness, order, and distinction from Groundedness",
+      "keywords": [
+        "comprehensive",
+        "not_comprehensive",
+        "missing options",
+        "order",
+        "first appearance",
+        "rejected options",
+        "omission"
+      ],
+      "priority": 2,
+      "size_bytes": 2324
+    },
+    {
+      "id": "groundedness",
+      "file": "chunks/groundedness.md",
+      "title": "Groundedness",
+      "description": "Whether title and options are grounded in the conversation",
+      "keywords": [
+        "truthful",
+        "not_truthful",
+        "grounded",
+        "fabricated",
+        "hallucination",
+        "unrelated background"
+      ],
+      "priority": 2,
+      "size_bytes": 2319
+    },
+    {
+      "id": "localization",
+      "file": "chunks/localization.md",
+      "title": "Localization",
+      "description": "Language mixing, translation errors, and locale-specific format issues",
+      "keywords": [
+        "localization",
+        "locale",
+        "language mixing",
+        "translation",
+        "punctuation",
+        "format"
+      ],
+      "priority": 3,
+      "size_bytes": 1358
+    },
+    {
+      "id": "harmfulness",
+      "file": "chunks/harmfulness.md",
+      "title": "Harmfulness",
+      "description": "18+ harm categories and the golden rule about topic discussion vs actual harm",
+      "keywords": [
+        "harmful",
+        "maybe_harmful",
+        "not_harmful",
+        "safety",
+        "hate",
+        "violence",
+        "explicit",
+        "child endangerment",
+        "Apple brand"
+      ],
+      "priority": 2,
+      "size_bytes": 3003
+    },
+    {
+      "id": "satisfaction",
+      "file": "chunks/satisfaction.md",
+      "title": "Satisfaction",
+      "description": "4-level holistic quality assessment and critical rules",
+      "keywords": [
+        "satisfaction",
+        "highly_satisfying",
+        "satisfying",
+        "slightly_satisfying",
+        "not_satisfying",
+        "holistic"
+      ],
+      "priority": 1,
+      "size_bytes": 2105
+    },
+    {
+      "id": "dimension_independence",
+      "file": "chunks/dimension_independence.md",
+      "title": "Dimension Independence Law",
+      "description": "The most critical rule: each dimension judged independently with specific anti-pattern examples",
+      "keywords": [
+        "independence",
+        "independent",
+        "dimension",
+        "auto-connect",
+        "cross-contamination",
+        "hallucination not following",
+        "missing not following"
+      ],
+      "priority": 1,
+      "size_bytes": 2740
+    },
+    {
+      "id": "edge_cases",
+      "file": "chunks/edge_cases.md",
+      "title": "Edge Cases & FAQ",
+      "description": "Empty response handling, format flexibility, merged options, and boundary scenarios",
+      "keywords": [
+        "edge case",
+        "empty response",
+        "format",
+        "punctuation",
+        "merged",
+        "Pizza and Burgers",
+        "no poll generated"
+      ],
+      "priority": 2,
+      "size_bytes": 3215
+    },
+    {
+      "id": "json_format",
+      "file": "chunks/json_format.md",
+      "title": "JSON Answer Format",
+      "description": "Answer JSON templates for three scenarios: poll appropriate, no poll + empty, no poll + generated",
+      "keywords": [
+        "json",
+        "format",
+        "template",
+        "answers.json",
+        "observation",
+        "scenario A",
+        "scenario B",
+        "scenario C"
+      ],
+      "priority": 1,
+      "size_bytes": 3101
+    }
+  ],
+  "examples": [
+    {
+      "id": "no_poll_empty",
+      "file": "examples/no_poll_empty.md",
+      "title": "No Poll Appropriate + Empty Response (Correct Behavior)",
+      "related_chunks": [
+        "proper_no_reply",
+        "edge_cases",
+        "json_format"
+      ]
+    },
+    {
+      "id": "merged_options",
+      "file": "examples/merged_options.md",
+      "title": "Merged Options Edge Case (Pizza and Burgers)",
+      "related_chunks": [
+        "composition",
+        "comprehensiveness",
+        "following_instructions",
+        "dimension_independence"
+      ]
+    }
+  ]
+}

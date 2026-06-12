@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_011",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T22:43:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688694929",
+      "query": "儿 童 益 智 游 戏",
+      "query_intent": "User is performing a broad category search for children's educational and puzzle games ('儿童益智游戏'), intending to find early-learning, jigsaw, or cognitive games designed for toddlers and young kids.",
+      "ad": {
+        "name": "宝宝益智游戏：儿童拼图游戏小孩幼儿早教启蒙游戏2岁-5岁",
+        "subtitle": "3岁以上儿童拼图游戏，婴儿孩子拼图谜语智力逻辑启蒙游戏",
+        "developer": "Shenzhen Amazing Baby Technology CO., LTD",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6479632997) & Web research",
+          "note": "宝宝益智游戏 is a dedicated early-education puzzle and jigsaw game designed specifically for toddlers and young kids aged 2 to 5."
+        },
+        {
+          "source": "local knowledge",
+          "note": "The query is a broad category search for children's puzzle games. The advertised app is a high-quality, dedicated early learning puzzle game that directly satisfies the core category demand."
+        }
+      ],
+      "relationship_analysis": "The query '儿 童 益 智 游 戏' is a broad category search for early-education and puzzle games for young children. The advertised app '宝宝益智游戏' is a dedicated early-learning jigsaw and puzzle game designed specifically for toddlers and kids aged 2 to 5. Since the query represents a broad category demand and the advertised app is a dedicated, high-quality product in that category that directly satisfies the user's intent, the relationship is Excellent.",
+      "why_not_higher": "Cannot be higher than Excellent.",
+      "why_not_lower": "The ad's early-education puzzle utility directly and fully satisfies the general category search for '儿童益智游戏'.",
+      "rating": "Excellent",
+      "comment": "The query \"儿 童 益 智 游 戏\" is a broad category search for children's educational and puzzle games. The advertised app \"宝宝益智游戏：儿童拼图游戏小孩幼儿早教启蒙游戏2岁-5岁\" is a dedicated early learning and cognitive puzzle game designed specifically for toddlers and kids aged 2 to 5. Since the query is a broad category demand and the advertised app is a dedicated product in that category that directly and fully satisfies the user's core intent, this is Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688694930",
+      "query": "一 起 考 教 资",
+      "query_intent": "User is searching specifically for the popular mobile study and test preparation App '一起考教资' (or general exam prep), designed specifically for adults preparing for China's official Teacher Qualification Certificate Exam.",
+      "ad": {
+        "name": "掌门1对1辅导",
+        "subtitle": "学习成长好帮手",
+        "developer": "上海掌小门教育科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1087718769)",
+          "note": "掌门1对1辅导 is a famous online academic tutoring platform providing subject-based classes for K-12 school students (elementary, middle, and high school children)."
+        },
+        {
+          "source": "local knowledge",
+          "note": "The query is for an adult vocational test prep tool (Teacher Qualification Certificate). The ad is a child subject tutoring platform. Adult professional exam prep and child K-12 school tutoring satisfy entirely separate functional domains, user demographics, and age brackets."
+        }
+      ],
+      "relationship_analysis": "The query '一 起 考 教 资' specifies a professional exam preparation tool for adults preparing for the Teacher Qualification Certificate Exam. The advertised app '掌门1对1辅导' is an online subject tutoring platform for K-12 school children. Adult professional vocational exam prep and child school tutoring satisfy completely different functional domains and target age demographics. There is no logical connection between an adult studying for a teacher certificate and a child needing 1-on-1 tutoring, so this is Bad.",
+      "why_not_higher": "No functional or demographic connection. Adult teacher qualification prep materials cannot be fulfilled by a K-12 school-subject tutoring app.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"一 起 考 教 资\" specifies a specialized professional test prep application for adults preparing for China's official Teacher Qualification Certificate Exam. The advertised app \"掌门1对1辅导\" is an online academic tutoring platform providing school-subject lessons for K-12 school students. Professional adult vocational exam prep and child school tutoring satisfy completely separate functional domains, target demographics, and user age brackets. There is no logical connection, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688694931",
+      "query": "之 了 专 升 本",
+      "query_intent": "User is searching specifically for '之了专升本' (or Zhiliao's preparation classes), a specialized mobile test preparation platform designed for the '专升本' (Junior College to Bachelor's Degree) entrance exams in China.",
+      "ad": {
+        "name": "库课网校-统招专升本公考考试学习备考",
+        "subtitle": "网课必刷题库，视频学习在线课堂",
+        "developer": "Kuke Culture Science Technology Co.,Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1110639107) & Web research",
+          "note": "库课网校 is a leading, specialized mobile test-preparation and online classroom app focusing exactly on the '专升本' top-up degree exams and civil service exams."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both apps serve the exact same highly specialized educational niche ('专升本' degree exams) and target the exact same student demographic (junior college students). They are direct competitors in the same vertical exam-prep segment."
+        }
+      ],
+      "relationship_analysis": "The query '之 了 专 升 本' is a specific test-prep app for the '专升本' (Junior College to Bachelor's degree) entrance exam. The advertised app '库课网校' is a specialized online exam prep platform focusing exactly on the '专升本' top-up degree exams. Since both apps provide dedicated mock tests and online classes for the same vertical educational niche targeting the same student demographic, they are direct competitors. Rated Excellent.",
+      "why_not_higher": "Cannot be higher than Excellent.",
+      "why_not_lower": "The ad's core functionality perfectly and directly satisfies the user's specific search for a '专升本' exam prep tool, serving as a direct competitor.",
+      "rating": "Excellent",
+      "comment": "The query \"之 了 专 升 本\" refers to \"Zhiliao\"'s specialized test-preparation platform for the \"专升本\" (Junior College to Bachelor's Degree) entrance exams. The advertised app \"库课网校-统招专升本公考考试学习备考\" is a leading online exam prep and learning platform focusing exactly on the \"专升本\" top-up degree exams. Since both apps provide dedicated mock tests and online classes for the same specialized vertical educational niche targeting the same student demographic, they are direct competitors. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688694932",
+      "query": "钢 铁 六 边 形",
+      "query_intent": "User is searching specifically for '钢铁六边形', which is a tactical, WW2-themed strategy simulation game featuring a hex-grid grid strategy board.",
+      "ad": {
+        "name": "广发易淘金-证券开户炒股票 基金理财",
+        "subtitle": "一站式证券开户炒股票基金理财平台",
+        "developer": "广发证券股份有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id705795925)",
+          "note": "广发易淘金 is the official mobile wealth management and stock trading platform of Guangfa Securities, a major registered securities broker."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Playing a WW2 tactical hex-grid strategy game has absolutely no relation to opening a stock trading account and investing in mutual funds."
+        }
+      ],
+      "relationship_analysis": "The query '钢 铁 六 边 形' specifies a tactical WW2-themed strategy simulation mobile/PC game. The advertised app '广发易淘金' is a professional stock trading and mutual fund brokerage App. There is absolutely no relation in functions, developer, target audience, or use cases between playing a WW2 strategy game and opening a stock trading account, so this is Bad.",
+      "why_not_higher": "No functional or contextual relation whatsoever.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"钢 铁 六 边 形\" refers to the tactical WW2-themed hex-grid strategy simulation mobile/PC game \"钢铁六边形\". The advertised app \"广发易淘金-证券开户炒股票 基金理财\" is a professional mobile stock trading and securities investment platform. There is absolutely no functional, logical, or contextual relationship between playing a military strategy game and opening a securities account to trade stocks, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688694933",
+      "query": "剑 网 三 无 界",
+      "query_intent": "User is searching for '剑网三无界' (JX3 Unbounded), a highly anticipated, major new 3D martial arts (Wuxia / 国风武侠) MMORPG mobile/cross-platform game developed by Seasun.",
+      "ad": {
+        "name": "武侠大明星-割草闯江湖",
+        "subtitle": "刀光剑影照九州，大侠汇聚起风云",
+        "developer": "星火成炬工作室",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6476966808) & Web research",
+          "note": "武侠大明星 is a casual, 2D roguelike hack-and-slash (Vampire Survivors style) martial arts mobile shooter game."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both games share the ancient Chinese martial arts (Wuxia) theme. However, JX3 Unbounded is a hardcore 3D massive multiplayer online RPG (MMORPG), whereas the ad is a casual 2D chibi roguelike shooter. The gameplay mechanics are completely different."
+        }
+      ],
+      "relationship_analysis": "The query '剑 网 三 无 界' refers to '剑网3无界', a major 3D martial arts MMORPG. The advertised app '武侠大明星' is a casual, 2D roguelike hack-and-slash Wuxia shooter. While both games share the traditional ancient Chinese martial arts (Wuxia) theme, their gameplay mechanics (hardcore 3D MMORPG vs. casual 2D roguelike hack-and-slash) and target audiences are completely separate, representing a weak thematic association. Rated Acceptable.",
+      "why_not_higher": "They have completely different play styles and scales. A player looking for a massive, hardcore 3D MMORPG like JX3 would find a casual, 2D chibi roguelike shooter to have completely mismatched gameplay mechanics.",
+      "why_not_lower": "Both games belong to the same traditional ancient Chinese Wuxia/Martial Arts theme, maintaining a weak thematic relationship under the mobile gaming domain.",
+      "rating": "Acceptable",
+      "comment": "The query \"剑 网 三 无 界\" refers to \"JX3 Unbounded\", a highly anticipated, major 3D martial arts (Wuxia) MMORPG mobile game. The advertised app \"武侠大明星-割草闯江湖\" is a casual, 2D roguelike hack-and-slash Wuxia mobile shooter. While both games share the traditional ancient Chinese martial arts (Wuxia) theme, their gameplay mechanics (hardcore 3D MMORPG vs. casual 2D roguelike) and target audiences are completely separate. The relationship is weak but understandable under the shared theme. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T14:59:52",
+    "post_submit_status": "No errors visible"
+  }
+}

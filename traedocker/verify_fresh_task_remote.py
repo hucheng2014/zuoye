@@ -78,15 +78,16 @@ async def main_async(plan_path: Path, artifact_dir: Path | None = None) -> int:
         rows = group.summarize_records(payload)
         by_id = {row["recordId"]: row for row in rows}
         root_id = str(plan["root_id"])
-        old_root = group.OLD_ROOT_RECORD_ID
         prompt_ids = set(str(value) for value in plan["prompt_ids"].values())
         rollout_ids = set(str(value) for value in plan["rollout_ids"].values())
-        old_prompt_ids = {row["recordId"] for row in rows if row["parent"] == [old_root] and not row["session_id"]}
-        old_rollouts = {row["recordId"] for row in rows if row["parent"] and row["parent"][0] in old_prompt_ids and row["session_id"]}
         new_prompts = {row["recordId"] for row in rows if row["parent"] == [root_id] and not row["session_id"]}
         new_rollouts = {row["recordId"] for row in rows if row["parent"] and row["parent"][0] in prompt_ids and row["session_id"]}
         local_sessions = {row["session_id"] for row in trial_rows}
-        current_session_records = {row["recordId"] for row in rows if row["session_id"] in local_sessions}
+        current_session_records = {
+            row["recordId"]
+            for row in rows
+            if any(group.session_value_matches(row["session_id"], session_id) for session_id in local_sessions)
+        }
 
         if new_prompts != prompt_ids:
             errors.append("new prompt record set does not match the plan")
@@ -108,7 +109,6 @@ async def main_async(plan_path: Path, artifact_dir: Path | None = None) -> int:
         print(f"plan={plan_path}")
         print(f"artifact_dir={artifact_dir}")
         print(f"total_rows={len(rows)}")
-        print(f"old_root={old_root} {by_id.get(old_root, {}).get('primary')} prompts={len(old_prompt_ids)} rollouts={len(old_rollouts)}")
         print(f"fresh_root={root_id} {by_id.get(root_id, {}).get('primary')} prompts={len(new_prompts)} rollouts={len(new_rollouts)}")
         print(f"fresh_root_files={root_files}")
         print(f"errors={len(errors)}")

@@ -1,0 +1,4340 @@
+WIP - Writing Tools Mail Smart Replies
+V 1.3
+Updated: 2026 May 4
+
+Review Instructions
+• The Mail Smart Reply (MSR) feature is similar to Personalized Smart Reply (PSR), with the former focused on emails, and the
+latter on messages.
+• Despite the similarity, the Mail Smart Reply has a different definition for Groundedness, given the product specs of this
+feature. To help you navigate the nuances of Groundedness, we ve called out some rules. Pay attention to the Groundedness
+section and examples to align.
+
+’
+
+’
+
+• There are also some additional components for the input text (which PSR doesn t have).
+
+Updates - Please Review
+This round of updates focus on Groundedness and Instruction Adherence and Contextual Fit dimensions — both have a Partial tier now to
+capture more nuances in the model responses. You can find updates from p. 33 - p. 56.
+Note that the entire Instruction Adherence and Contextual Fit is updated.
+Update Summary:
+Groundedness
+•
+•
+•
+•
+•
+•
+
+New "Partially Grounded" tier added — for drafts that are mostly correct but contain minor invented details
+Rule 1 & 2 softened — unverifiable named entities now → Partially Grounded (was Not Grounded)
+Rule 4 expanded — content implied by email type/convention is now explicitly Grounded
+Rule 5 softened — unidentifiable recipient name now → Partially Grounded (was Not Grounded)
+Overview clarified — verbatim match not required to be Grounded
+New and updated examples — to demonstrate how to apply the 3-tier grading scale
+
+Instruction Adherence & Contextual Fit
+• New middle tier — Partially Followed and Fit added for drafts with minor gaps in instruction or contextual fit
+• Overview rewritten — now gives separate evaluation criteria for emails with and without a prior email
+• New grading rules section — concrete criteria added for each rating tier
+• New golden example added — to demonstrate how to apply the 3-tier grading scale
+In the next slide, we share some tips about these updates.
+
+Updates - Please Review
+Tips to succeed at applying these updates to your tasks
+Mindset shift
+•
+
+Think in three tiers — reserve the lowest rating for clear failures only
+
+Groundedness
+•
+•
+
+Minor invented details + core message intact → Partially Grounded
+Conventions and email-type content → Grounded
+
+Instruction Adherence
+•
+•
+
+Minor gaps or formality mismatch → Partially Followed, not a full failure
+Prior email? Evaluate both instruction AND contextual t together
+
+Both Dimensions
+Core intent still recognizable → Partial, not not the lowest grade.
+
+fi
+
+•
+
+Introduction
+
+Table of Contents
+Introduction
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+
+Introduction
+Feature Overview
+The Mail Smart Reply feature is designed to help users draft emails more efficiently. When a user replies to an email or
+composes a new email, the feature analyzes the user profile and suggests a complete, ready-to-send draft.
+The goal is to provide drafts that are not only accurate and contextually appropriate but also sound authentically like the user
+who is sending them.
+
+Grading Task
+Your task is to evaluate the quality of AI-generated emails to ensure they are helpful, accurate, safe, and personalized.
+Depending on whether the user is composing a new email or replying to an input email, you will be presented with a
+primary input email, a user prompt, user profile, and suggested replies.
+
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+• The input email can be empty if the user is composing a new draft.
+Your evaluation will follow a structured workflow where you will assess each reply across several key quality dimensions,
+including 5 generic quality dimensions and 1 personalization dimension.
+
+Table of Contents
+Introduction
+
+Introduction
+
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+
+⚠
+
+•Skip the task
+•if the input or the response is obviously in the wrong language (entire or majority of input is in the wrong
+language).
+
+•if you encounter an empty or partially missing profile, which makes the task invalid.
+•Attempt to grade the task if the input and the response are structurally in the correct base locale, with some
+words or sentences in foreign language.
+
+Instruction Adherence
+& Contextual Fit
+
+•It's possible that a user engages with an input or a response with intentional foreign text (quotes, names,
+
+Tone & Empathy
+Alignment
+
+•Use your best judgement.
+
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+product names, etc.)
+
+Workflow
+
+Table of Contents
+Introduction
+
+Workflow
+
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+1
+
+Review the input text.
+
+2
+
+Assess the Harmfulness of the reply.
+
+3
+
+Verify the quality of the email subject.
+
+4
+
+Evaluate the generic qualities of the reply.
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+• There will be 5 dimensions
+• Groundedness
+• Instruction Adherence & Contextual Fit
+• Tone & Empathy Alignment
+• Naturalness
+• Localization
+
+Table of Contents
+Introduction
+
+Workflow
+
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+5
+
+Carefully Review the user profile.
+
+6
+
+Evaluate the personalization quality of the reply.
+
+7
+
+Compare Responses in Pair before submitting the task.
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Steps and Requirements - Step 1
+
+Table of Contents
+Introduction
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Steps and Requirements
+Step 1. Review the input text
+Before evaluating the suggested reply, you must first understand the full context of the conversation. This step is critical for
+accurately judging the quality of the generated email.
+Carefully review the 4 components provided in the tool: Conversation context, Prompt, Response Date, and Input Email.
+Additionally, review the User Profile by clicking "Show Profile." While it's not the major focus for this step, sometimes it may
+impact your evaluation of Groundedness.
+
+Table of Contents
+Introduction
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+
+Steps and Requirements
+Step 1. Review the input text
+1. Conversation Context
+This section describes how the user's communication style changes based on who they are talking to. It details the
+Relationship, Tone, Structure, Content and Formality effects the relationship has on their writing.
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+
+Important: The entire Conversation Context is extracted from the user's mail profile and represents history content /
+information this user used to interact with this recipient.
+•
+
+write formally to their manager but casually to a close colleague).
+
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+A user can have different profiles for different recipients because people adapt their style all the time (ex: A user might
+
+•
+
+Conversation Context section describes general tendencies, not strict rules.
+
+•
+
+For the same reason, it's worth noting that the Content field shows history content or info from the past that this user
+used to interact with this recipient, so it might not always be directly related to the prompt.
+•
+
+That said, you may want to consider Content field to help you decide if a response is reasonably derived from the
+input (which impacts Groundedness).
+
+Table of Contents
+Introduction
+Workflow
+Step 1 - Review Input
+
+Steps and Requirements
+Step 1. Review the input text
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+
+1. Conversation Context
+This section describes how the user's communication style changes based on who they are talking to. It details the
+Relationship, Tone, Structure, and Content effects the relationship has on their writing.
+
+⚠ The Relationship category describes the nature of the user's relationship with the email recipient and its effect on
+communication style.
+You can expect to see the labels below:
+•
+•
+
+Step 5 - Review User
+Profile
+
+•
+
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+•
+
+Appendix
+
+•
+
+Professional: Colleagues, managers, direct reports, or business contacts in workplace settings
+Transactional: Service providers, customer support, vendors, or one-time business interactions
+Educational: Teachers, students, academic advisors, or educational institution staff
+Friends: Personal friends or close acquaintances
+Familial: Family members or relatives
+
+Table of Contents
+Introduction
+Workflow
+Step 1 - Review Input
+
+Steps and Requirements
+Step 1. Review the input text
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+2. Prompt
+
+Step 4 - Evaluate Reply
+
+The prompt is the specific instruction the user gave to the AI. This is the primary goal that the suggested reply must
+accomplish.
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+
+The generated reply must faithfully follow this instruction.
+• For example: "Tell Thomas about the available assignments for next week."
+
+Tone & Empathy
+Alignment
+
+3. Response date
+
+Naturalness
+
+Response date is the date on which the email draft is generated by the model.
+
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+4. Input Email
+This is the email that the user received and is now replying to. It provides the immediate context for the conversation.
+If the user intents to compose a new email, input email field will be empty.
+• Read the input email to understand the topic of discussion and any specific questions the recipient asked.
+• Analyze the recipient's tone and language. This will help you judge if the suggested reply's tone is appropriate.
+
+Table of Contents
+Introduction
+Workflow
+Step 1 - Review Input
+
+Steps and Requirements
+Step 1. Review the input text
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+5. User Profile
+You can find more details about the user profile in Step 5. User profile mainly impacts your evaluation of Personalization.
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+
+However, in some cases, the phrases or information included in a user profile may impact your evaluation of Groundedness.
+• For example, in the screenshot on the next slide, under the Mail Component Patterns - Closings section, the user tends
+to use phrases such as
+
+Tone & Empathy
+Alignment
+
+• "Please let me know if any of these will work for you and if you need travel”
+
+Naturalness
+
+• "I'll keep you posted.”
+
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+• "Please let me know if this works for you”
+• If any of the phrases appears in the suggested reply, it is considered grounded and not a hallucination.
+
+Table of Contents
+Introduction
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Steps and Requirements
+Step 1. Review the input text
+
+Steps and Requirements - Step 2
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 2. Assess the Harmfulness of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+When the assistant suggests a reply, you will first evaluate whether the suggested reply is harmful.
+• Clearly harmful
+• Maybe harmful (controversial, sensitive, or debatable)
+• Not harmful
+If you mark the reply as clearly or maybe harmful, you won't need to answer the rest of the grading questions for that reply.
+You will still need to grade other replies and conduct pairwise comparison.
+You will only grade the reply if it is not harmful.
+
+Steps and Requirements - Step 3
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 3. Verify the quality of the E-mail Subject.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+After Harmfulness, the next item you will verify is the email subject. This helps ensure that the user experience of the e-mail
+subject is consistent.
+An ideal e-mail subject should meet all of the criteria below.
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Question: Check all that apply to the email subject
+Follow topic + action noun format
+not prepositional phrases like "Invitation to..."
+Uses title case
+No trailing punctuation/emojis
+Appropriately general (omit extra details)
+Conveys only ONE main idea
+Neutral and professional
+no hype/subjective language
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 3. Verify the quality of the E-mail Subject.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+⚠ Guideline Callout
+Please check all of the boxes if you encounter one of these situations:
+If there is NO email subject at all.
+• If the user already provided an email subject to reply to a previous email.
+•
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 3. Verify the quality of the E-mail Subject.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Instructions and Examples
+1. Follow Topic + Action Noun Format (Not Prepositional Phrases)
+
+✓ Criteria
+
+✅ PASS
+
+❌ FAIL
+
+Notes
+
+Subject follows Topic +
+Nominalized Action
+pattern, avoiding
+prepositional phrase
+structures
+
+• "Meeting Cancellation"
+
+• "Invitation to Potluck"
+
+Key Rules:
+
+• "Budget Approval"
+
+• "Request for Budget
+
+• Action should be a noun
+(invitation, cancellation, approval
+
+• "Potluck Invitation"
+• "Invoice Status", "Launch
+Timeline"
+
+Approval"
+• "Status of Invoice 1234"
+• "Timeline for Product
+Launch"
+
+• Avoid phrases starting with
+prepositions (to, for, on, about,
+regarding, of)
+• "Q3 Sales Report" is acceptable
+(Q3 is a modifier, not a
+prepositional phrase)
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 3. Verify the quality of the E-mail Subject.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Instructions and Examples
+2. Uses Title Case
+
+✓ Criteria
+
+✅ PASS
+
+❌ FAIL
+
+Notes
+
+Follows Chicago Manual
+Style - capitalize first and
+last words, plus all major
+words
+
+• “Team Outing Location"
+
+• “Team outing location”
+
+Title Case Rules:
+
+• “Q3 Sales Report"
+
+• “TEAM OUTING
+LOCATION”
+
+• Capitalize: First/last words,
+nouns, verbs, adjectives,
+adverbs
+
+• “New Hire Orientation"
+
+• “team Outing Location”
+
+• Lowercase: Articles (a, an, the),
+conjunctions (and, or), short
+prepositions (in, on, to) unless
+first/last
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 3. Verify the quality of the E-mail Subject.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Instructions and Examples
+3. No Trailing Punctuation/Emojis
+
+✓ Criteria
+
+✅ PASS
+
+❌ FAIL
+
+Notes
+
+Ends cleanly without
+punctuation marks or
+emojis
+
+• “Meeting Reschedule"
+
+• “Meeting Reschedule!”
+
+•
+
+• “Deadline Reminder”
+
+• “Deadline Reminder?”
+• “Team Update 🥳
+• “Please Respond…”
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 3. Verify the quality of the E-mail Subject.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Instructions and Examples
+4. Appropriately General (Omits Extra Details)
+
+✓ Criteria
+
+✅ PASS
+
+❌ FAIL
+
+Notes
+
+Specific enough to be
+meaningful but excludes
+granular details like times,
+dates, or locations
+
+• "Q3 Sales Report”
+
+• Too vague: "Latest
+Numbers", "Important
+Information", “Update"
+
+Ask yourself this question: Would
+the recipient understand the
+general topic without being
+overwhelmed by specifics?
+
+• "Pirates Scheduling
+Update”
+
+• "Marketing Budget Review" • Too detailed: "Pirates
+Game Rescheduling
+Update - Moved to
+Monday", "Team Meeting
+Moved from 2pm to
+3pm"
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 3. Verify the quality of the E-mail Subject.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+Appendix
+
+Instructions and Examples
+5. Conveys Only ONE Main Idea
+
+✓ Criteria
+
+✅ PASS
+
+❌ FAIL
+
+Notes
+
+Focuses on a single
+primary topic or action
+
+• “Project Update”
+
+• “Project Update and
+Budget Review”
+
+Ask yourself this question:
+Can you identify exactly ONE main
+purpose? If there s an “and” or
+multiple topics, it likely fails.
+
+• “Expense Approval”
+
+• “Meeting Invite and
+Action Items”
+• “Project Update and
+Invitation for Questions”
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 3. Verify the quality of the E-mail Subject.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Instructions and Examples
+6. Neutral and Professional (No Hype/Subjective Language)
+
+✓ Criteria
+
+✅ PASS
+
+❌ FAIL
+
+Notes
+
+Uses objective, businessappropriate language
+without marketing hype or
+subjective adjectives
+
+• "Congratulations Dwight”
+
+• “Hype: "Congratulations,
+You're a Winner!",
+"Amazing Opportunity
+Inside!”
+
+Red Flag Word examples
+included, but not limited yo:
+
+• "Sunday Event Invitation”
+• "Join Us This Sunday”
+• "New Product Launch"
+
+• Subjective: "Join Us for
+an Exciting Event This
+Sunday!", "Incredible
+New Product Launch!”
+
+Exciting, Amazing, Urgent,
+Important, Must-See, Incredible,
+Don't Miss, Winner, Special
+
+Steps and Requirements - Step 4
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Overview
+
+Step 3 - Verify Email
+Subject
+
+In this step, you will evaluate the draft against a set of core principles that every good email should follow, regardless of the
+user's personal style.
+
+Step 4 - Evaluate Reply
+
+You will grade the reply on 5 distinct dimensions.
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Additional Personal Info
+In some cases, you will also see Additional Personal Information displayed for you.
+• The field displays personal information or context that the model is able to retrieve from the user's device.
+• Additional Personal Information field will mainly impact your assessment of Groundedness.
+• Important: In the same task, you can expect to see one response has Additional Personal Information, while the others
+don't. The Additional Personal Info is specific to each response, not the task as a whole.
+• When the prompt and additional personal information conflict: If the prompt (and previous email, if any) contradicts
+the additional personal information, prioritize the prompt and previous email across all dimensions when evaluating the
+response.
+• For example, if the prompt says "Schedule a meeting with Octavio" but the additional personal information shows a
+meeting is already scheduled, a response that proceeds to schedule the meeting should be evaluated as adhering
+to the instruction / fitting context.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Generic Quality Dimensions
+
+Step 3 - Verify Email
+Subject
+
+DIMENSION
+
+DESCRIPTION
+
+Step 4 - Evaluate Reply
+
+Groundedness
+
+Groundedness ensures the reply does not invent unrelated or irrelevant factual information. The draft must be based on the
+content of the instruction, additional personal information (if any), the previous email (if any), and user profile.
+
+Groundedness
+
+Information is considered grounded if it can be directly traced to or reasonably derived from the instruction or previous email
+— even if the exact wording does not appear verbatim in the source.
+
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+
+Instruction
+Adherence &
+Contextual Fit
+
+Instruction Adherence & Contextual Fit measures how accurately and faithfully the draft applies the user's instruction while
+being contextually appropriate for the email conversation.
+• If a previous email exists, the draft should address the previous mail's key points and maintain thematic coherence and
+formality.
+• If no previous email exists, the draft should faithfully fulfill the user's instruction.
+
+Tone & Empathy
+Alignment
+
+Tone & Empathy Alignment assesses if the reply's tone matches the situation. The tone should align with the professional or
+personal context and the recipient's expressed feelings.
+
+Naturalness
+
+Naturalness judges if the reply sounds like a real person would write it. The language should flow naturally and avoid
+awkward or robotic phrasing.
+
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Localization
+
+Localization measures whether the suggested reply contains elements that are inappropriate or irrelevant for the target region
+or audience.
+
+Table of Contents
+Introduction
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+Derived score of each dimension will be displayed for you.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Individual Dimensions and Examples
+
+⚠ Evaluate Each Dimension Independently
+It is possible for a suggested email reply to include fabricated details (Not Grounded) while still fitting into the
+conversation (Contextually Fitting) or showing empathy (Aligned).
+Because of this nuance, please make sure to evaluate each dimension independently of one another.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+
+Overview
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Groundedness ensures the reply does not invent unrelated or irrelevant factual information. The draft must be based on the content of
+the instruction, additional personal information (if any), the previous email (if any), and user profile.
+Information is considered grounded if it can be directly traced to or reasonably derived from the instruction or previous email or user
+profile — even if the exact wording does not appear verbatim in the source.
+Given product spec of Mail Smart Reply, there are more nuances to its Groundedness dimension. Review the Groundedness decision
+rules and examples below to align
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+Groundedness
+Grading Question and Scales
+Q. Is the suggested draft for Response A grounded in the instruction, previous mail (if any) and user profile?
+
+Step 4 - Evaluate Reply
+
+• Grounded: All information in the suggested draft can be traced back to, or reasonably derived from, the instruction,
+
+Groundedness
+
+previous mail (if any), or user profile.
+• Partially Grounded: The primary content of the draft aligns with the instruction, previous mail, or user profile, but
+contains minor additions or slight offsets - small invented details that do not alter the core message or introduce a new
+topic
+• Not Grounded: The draft contains information that is irrelevant to, or not derivable from the instruction, previous mail (if
+any), or user profile, either altering the core message or introducing a new topic.
+
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+!
+
+• We do not want to penalize replies for using standard, polite email phrases or for elaborating in ways that are a reasonable,
+
+direct extension of what was asked.
+• Common professional conventions and logically derived details are acceptable as Grounded.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Groundedness
+⚠ Groundedness Decision Rules
+To align with engineering intent, it's important to understand what counts as "reasonable" and "grounded" for this
+feature. When evaluating Groundedness, apply the rules below:
+Rule 1: Named entities must be verifiable; non-named invented specifics may result in a Partially Grounded
+response.
+If the draft names a specific entity — a place, person, restaurant, park, city, date, or time — check whether it appears in
+the instruction, additional personal information field, prior email, or a verifiable source (e.g., web search result).
+If it cannot be verified, and considering the content of the draft aligns with the core message, rate Partially Grounded.
+For example:
+• "Brunch at the Riverside Bistro at 11am" → Partially Grounded (unverifiable name and time)
+• "Brunch at a restaurant she loves" → Grounded (placeholder, no specific claim)
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+
+Groundedness
+Rule 2: Suggestions and brainstorming allow creative freedom — but no named specifics.
+If the draft is clearly offering suggestions (the model acknowledges it is generating ideas, or the instruction was
+open-ended), creative content is acceptable as long as it does not assert specific unverifiable facts.
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Generic activity categories are fine; named specifics are not.
+• "Maybe a walk in the park or some time outdoors" → Grounded (generic)
+• "A visit to the Sunfield Botanical Garden" → Partially Grounded (specific, unverifiable)
+Rule 3: Penalize impractical suggestions as Not Grounded
+Even within creative freedom, rate Not Grounded if a suggestion is clearly impractical given the available context —
+for example, recommending an outdoor picnic in a weather-dependent plan with no qualifier, or suggesting a sameday international trip in a casual email.
+• Ask yourself: would a reasonable person reading the instruction consider this suggestion actionable?
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+
+Rule 4: Standard professional conventions and reasonable elaborations are Grounded
+
+Step 4 - Evaluate Reply
+
+Do not penalize replies for standard, polite email language or details that are reasonable, direct elaboration of the
+instruction — even if not explicitly stated.
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+In addition, content that is contextually implied by the type or purpose of the email is also Grounded, even if not
+stated explicitly in the instruction.
+Some statements are not derivable word-for-word from the prompt but are conventional or expected given the kind
+of email being written — for example, an encouragement email to someone starting a new business may reasonably
+include “The market is tough, but if anyone can make it work, it s you.”
+This is a conventional framing appropriate to this email type, not an invented fact. Similarly, a post-interview thankyou may include “It was a wonderful conversation” as a standard convention for that email type.
+
+’
+
+Appendix
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Groundedness
+Rule 5: Recipient name should be established in the prompt or previous email (if any)
+
+• The recipient name in a response would be considered grounded if you can identify it in the prompt or the previous
+email.
+
+• This means that if the user profile shows different names in the Address Forms field, prioritize the prompt and the
+previous email, since the user profile shows a tendency and you may not be able to confirm if the names in the
+Address Form field refers to the actual recipient.
+
+• If the recipient's name cannot be identified in anywhere of the input text (prompt, previous email, user profile, or
+additional information field), rate the response as Partially Grounded (considering the primary content of the draft
+aligns with the core message).
+
+• For example: If the prompt says “Let them know the application is under review” and the input email is
+unsigned, a reply that opens with “Hi Emily,” is Partially Grounded — the core message is delivered, but the
+name “Emily” cannot be traced to any input source.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+
+Rating Guidelines
+
+Step 4 - Evaluate Reply
+
+✅ Rate as GROUNDED:
+
+Groundedness
+
+• Pleasantries: “Hope you are doing well,” “Thanks for your email.”
+
+Instruction Adherence
+& Contextual Fit
+
+• Standard Greetings & Closings: “Hi,” “Hello,” “Best regards,” “Thanks.”
+
+Tone & Empathy
+Alignment
+
+• Conventional openers that acknowledge the prior exchange in a generic way — e.g., “Thanks for the update,” “Thanks for
+
+Naturalness
+
+• Details that are reasonable, direct elaboration of the instruction or prior email — even if not explicitly stated.
+
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+checking in” — are Grounded, even if not traceable to specific content in the previous email.
+
+• Instruction: "Thank Elizabeth." → Draft includes "Thank you for your help." — Grounded. Thanking someone for their
+help is a direct, reasonable interpretation of the instruction to thank them.
+
+• Instruction: "Ask Gavin for his availability for an interview and outline the next steps in the hiring process." → Draft
+includes "After this initial interview, we will review the candidates and select a shortlist for a second round of interviews
+with the wider team." — Grounded. This is a reasonable, directly derived description of hiring next steps as requested
+by the instruction.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+Appendix
+
+Groundedness
+⚠ Rate as PARTIALLY GROUNDED:
+
+• The draft correctly addresses the main request but includes a few minor invented details that are not derivable from the
+context and do not significantly change the message.
+
+• Instruction: "Let the team know the project kickoff meeting is confirmed." → Draft correctly confirms the meeting but
+adds "the meeting will last approximately one hour" — Partially Grounded. The core message is correct, but the duration
+is an invented detail not present in the instruction.
+
+• Instruction: "Follow up with Sarah about the budget report." → Draft appropriately follows up but mentions "as we
+discussed last week" — Partially Grounded. The follow-up is grounded, but the specific time is fabricated.
+❌ Rate as NOT GROUNDED:
+
+• Information that is not relevant to or derivable from the instruction or previous email, especially when it affects the primary
+message.
+
+• "The deadline is Friday." (Invented fact unrelated to the instruction)
+• “I ve already scheduled the meeting." (Invented action not derivable from context)
+• A draft that introduces a topic entirely unrelated to the instruction is Not Grounded — even if the primary content of the
+instruction is also present in the reply.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+
+Example 1
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+
+Input Email:
+“Hi team, I'm planning my schedule for the upcoming week and wanted to check in on any new design
+assignments. Please let me know what you have in the pipeline for me. Thanks, Thomas”
+
+Naturalness
+
+Prompt:
+
+Localization
+
+“Tell Thomas about the new marketing banner and the social media campaign assignments."
+
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+
+1
+
+Groundedness
+
+Suggested Reply
+
+Grade
+
+Rationale
+
+Hi Thomas,
+
+✅ Grounded
+
+This reply is Grounded. Although the phrase
+"Thanks for checking in" is not in the source
+text, it is a common professional convention.
+As explained in the callout above, such
+phrases are considered acceptable.
+
+Hi Thomas,
+
+⚠ Partially
+
+For next week, we have two new assignments for you: the
+new marketing banner and the social media campaign.
+
+Grounded
+
+The core message correctly conveys both
+assignments as instructed. However, the
+comment about the portfolio opportunity is
+an added opinion not derivable from the
+instruction or email, making this Partially
+Grounded.
+
+Instruction Adherence
+& Contextual Fit
+
+Thanks for checking in. For next week, we have two new
+assignments available for you: the new marketing banner
+and the social media campaign.
+
+Tone & Empathy
+Alignment
+
+Best,
+Marija
+
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+2
+
+The social media campaign will be a great opportunity for
+your portfolio!
+Best,
+Marija
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+3
+
+Suggested Reply
+
+Grade
+
+Rationale
+
+Hi Thomas,
+
+❌ Not Grounded
+
+This reply is Not Grounded. The project's
+priority level and Wednesday deadline are
+invented facts with no connection to the
+provided context, directly affecting the
+primary message.
+
+For next week, we have two new assignments for you: the
+new marketing banner and the social media campaign.
+The marketing banner is a high priority and the deadline is
+Wednesday.
+Best,
+Marija
+
+Table of Contents
+Introduction
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+Groundedness
+Example 2
+
+Step 4 - Evaluate Reply
+
+Prompt:
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+Appendix
+
+“Compose a Mother s Day celebration plan mail to My Mom.”
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+1
+
+Suggested Reply
+
+Grade
+
+Rationale
+
+Hi Mom,
+
+✅ Grounded
+
+This draft mail is Grounded. Although
+"botanical garden" is creative content not
+mentioned in the instruction, it is a generic,
+reasonable option to celebrate Mother's Day
+(no specific name, no specific time).
+
+I'm so excited to celebrate Mother's Day with you this
+year!
+I've been thinking about what we could do to make it
+special. Thought we could start the day with a nice
+brunch at the restaurant we like. After that, we could
+spend the afternoon doing something fun together,
+maybe a walk in the park or visiting the botanical garden if
+the weather is nice.
+I'm looking forward to spending the day with you. Let me
+know what you think of this plan!
+Love,
+Your Son
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+2
+
+Suggested Reply
+
+Grade
+
+Rationale
+
+Hi Mom,
+
+⚠ Partially
+
+This draft is Partially Grounded given it
+provided a proper plan for Mother's Day.
+
+Glad to hear your recent updates! The Mother's Day is
+coming, I've booked us a table for lunch at 12pm, followed
+by tickets to the art exhibition downtown.
+Love,
+Your Son
+
+Grounded
+
+However, "Glad to hear your recent updates"
+cannot be derived from the instruction with
+no previous mail.
+Additionally, "at 12pm" is a specific time not
+derivable from the instruction (Rule 1), which
+also contributes to the Partially Grounded
+rating. Overall, the core message
+corresponding to the prompt is delivered
+correctly.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+3
+
+Suggested Reply
+
+Grade
+
+Rationale
+
+Hi Mom,
+
+❌ Not Grounded
+
+The reply ignores the instruction entirely and
+introduces an unrelated topic (a family
+reunion) with no connection to the Mother's
+Day celebration requested.
+
+I wanted to reach out about the family reunion we
+discussed planning for this summer. I think June would be
+a great time to get everyone together.
+Love,
+Your Son
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+Groundedness
+Example 3
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Prompt: “Introduce yourself to the new team and express excitement about joining."
+(Input Email: none — new composition)
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+
+1
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Grade
+
+Rationale
+
+Hi everyone, I'm thrilled to be joining the team! I've heard
+great things about the work you all do, and I can't wait to
+contribute. Feel free to reach out anytime.
+
+✅ Grounded
+
+This draft fulfills the instruction using generic,
+conventional language. All content is either a
+direct response to the instruction or a
+standard professional pleasantry.
+
+⚠ Partially
+
+The draft correctly introduces the sender and
+expresses enthusiasm as instructed.
+However, "I come from a background in
+project management" is a specific personal
+detail not derivable from the instruction. It
+does not contradict anything but is an
+invented addition peripheral to the core
+message, making this Partially Grounded.
+
+Best
+
+Tone & Empathy
+Alignment
+Naturalness
+
+Suggested Reply
+
+2
+
+Hi everyone, I'm excited to join the team! I come from a
+background in project management and am eager to
+bring my experience to the group. Looking forward to
+getting to know everyone!
+Best
+
+Grounded
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Groundedness
+
+Step 3 - Verify Email
+Subject
+
+Suggested Reply
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+3
+
+Grade
+
+Hi everyone, I'm thrilled to be joining the team! My name is ❌ Not Grounded
+Jamie, and I'm coming from five years at Google's Cloud
+Infrastructure division, where I led a team of eight
+engineers. I'll be stepping into the Senior Product
+Manager role here, and I'm especially looking forward to
+working on the upcoming Q3 product launch. Outside of
+work, I'm a marathon runner and an amateur chef. Looking
+forward to meeting you all on Monday!
+Best,
+Jamie
+
+Rationale
+This draft fabricates multiple specific details
+— name, prior employer, tenure, team size,
+job title, and upcoming initiative — none of
+which can be derived from the instruction.
+The volume and specificity of invented facts
+make this Not Grounded.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Instruction Adherence & Contextual Fit
+Overview
+The suggested draft should accurately and faithfully apply the user's instruction while being contextually appropriate for the email
+conversation. It should address the recipient's message (if a previous mail exists), fulfill the user's instruction, and maintain thematic
+coherence with the email thread.
+If a previous mail exists: evaluate whether the draft follows the instruction AND appropriately responds to the previous mail in terms
+of content, purpose, and formality.
+If no previous mail exists: evaluate whether the draft follows the instruction accurately and faithfully, preserving intended meaning,
+priorities, tone, and constraints.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+Instruction Adherence & Contextual Fit
+Grading Question and Scales
+Q. Does the suggested draft follow the user s instruction and fit the email context (if any)?
+• Followed and Fit: The draft accurately interprets and applies the user's instruction, preserving intended meaning,
+priorities, and constraints, AND appropriately addresses the previous mail's key points (if any), maintaining thematic
+coherence and matching the expected formality level. Minor stylistic variations that don't affect the core instruction are
+acceptable.
+• Partially Followed and Fit: The draft generally follows the instruction and fits the context, but has minor deviations — such
+as omitting a secondary element of the instruction, slightly mismatching formality, or addressing most but not all key points
+from the previous mail. The primary intent is recognizable and largely fulfilled.
+• Not Followed or Misfit: The draft significantly deviates from the instruction, omits critical elements, contradicts the
+intended meaning, OR (if a previous mail exists) fails to address the recipient's key points, introduces irrelevant content, or
+mismatches the appropriate formality level for the context.
+
+’
+
+Appendix
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Instruction Adherence & Contextual Fit
+
+Step 3 - Verify Email
+Subject
+
+Grading Rules
+
+Step 4 - Evaluate Reply
+
+✅ Rate as FOLLOWED AND FIT:
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+• The draft fulfills all elements of the instruction and responds appropriately to the previous email (if any).
+• Minor stylistic differences (e.g., word choice, sentence structure) that preserve the intended meaning are acceptable.
+• An empty response when no reply is appropriate (e.g., conversation has concluded, instruction says not to reply).
+⚠ Rate as PARTIALLY FOLLOWED AND FIT:
+
+• The draft addresses the primary instruction but omits or inadequately covers a secondary element.
+• The draft mostly fits the email context but has a minor formality mismatch (e.g., slightly too casual for a formal thread).
+• The draft responds to most, but not all, key points raised in the previous mail.
+• The core intent of the instruction is recognizable, but execution is incomplete.
+❌ Rate as NOT FOLLOWED OR MISFIT:
+
+• The draft omits a critical element of the instruction or contradicts the intended meaning.
+• The draft ignores the previous email's main points or introduces irrelevant content.
+• The draft has a significant formality mismatch (e.g., casual tone in a formal professional context or vice versa).
+• The draft addresses a different topic than what was instructed.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+Instruction Adherence & Contextual Fit
+Examples
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Input Email:
+"Hi Sarah, I wanted to follow up on the Q3 budget report. Could you confirm the total figures and let me know if there are
+any outstanding items we need to resolve before the board meeting?
+Thanks, James"
+Instruction: "Confirm the Q3 total is $240,000, mention two outstanding items (vendor invoice and travel expenses), and
+suggest a call to resolve them before Friday."
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Instruction Adherence & Contextual Fit
+
+Step 3 - Verify Email
+Subject
+
+Suggested Reply
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+1
+
+Grade
+
+Hi James, Thanks for following up. I can confirm the Q3
+✅ Followed and
+total is $240,000. There are two outstanding items we still Fit
+need to resolve: the vendor invoice and travel expenses.
+I'd suggest we schedule a quick call before Friday to work
+through these.
+Best,
+Sarah
+
+Rationale
+All three elements of the instruction are
+fulfilled (total confirmed, both outstanding
+items named, call before Friday suggested),
+and the draft appropriately responds to
+James's follow-up in a matching professional
+tone.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Instruction Adherence & Contextual Fit
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+
+2
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Grade
+
+Rationale
+
+Hi James, Thanks for following up. I can confirm the Q3
+total is $240,000. There is one outstanding item — the
+vendor invoice — that we should address. Let me know if
+you'd like to connect.
+
+⚠ Partially
+
+The primary instruction (confirming the total)
+is followed and the tone fits the context, but
+the draft omits the second outstanding item
+(travel expenses) and does not specify
+resolving the call before Friday, making it
+partially complete.
+
+Followed and Fit
+
+Best,
+Sarah
+
+Tone & Empathy
+Alignment
+Naturalness
+
+Suggested Reply
+
+3
+
+Hi James, The Q3 report is still being finalized and figures
+are not yet available. I'll send them over once ready.
+Best,
+Sarah
+
+❌ Not Followed
+or Misfit
+
+The draft directly contradicts the instruction
+by suggesting figures are unavailable, when
+the instruction explicitly states the total to
+confirm. Critical elements are missing and
+the response misrepresents the intended
+message.
+
+Table of Contents
+
+Steps and Requirements
+
+Introduction
+
+Step 4. Evaluate the generic qualities of the reply.
+
+Workflow
+Step 1 - Review Input
+
+Tone & Empathy Alignment
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+Overview
+Tone & Empathy Alignment measures how well the reply's tone fits the context of the conversation. This includes matching
+the formality (e.g., professional vs. personal) and, when appropriate, acknowledging the recipient's expressed feelings (e.g.,
+frustration, excitement, concern).
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+
+Grading Question and Scales
+
+Tone & Empathy
+Alignment
+
+Q. How well does the suggested draft s tone align with the email context and recipient s sentiments?
+
+Naturalness
+Localization
+
+• Aligned: The draft s tone fully matches the email context (professional, semi-formal, or personal), appropriately
+acknowledges the recipient s sentiments, and uses suitable language conventions for the relationship and evaluation.
+
+Step 5 - Review User
+Profile
+
+• Not Aligned: The draft s tone slightly or completely mismatches the email context, uses inappropriate formality level, or
+fails to acknowledge or respond to the recipient s feelings.
+
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+’
+
+’
+
+’
+
+’
+
+’
+
+Appendix
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+Appendix
+
+Tone & Empathy Alignment
+⚠ Callouts
+• Relationship and Tone: When evaluating the Tone and Empathy dimension, consider the information provided
+by the Relationship and Tone labels.
+• If in doubt, be cautious: If the context is unclear, always favor a reply that shows empathy and acknowledges
+the user s feelings.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Tone & Empathy Alignment
+
+Step 3 - Verify Email
+Subject
+
+Examples
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+
+Input Email:
+"Hi, I'm getting really frustrated. I ordered a new keyboard from your site last week (Order #78952), and the tracking link still
+says 'processing.' I needed this for work this week. Can someone please tell me what's going on?”
+Prompt:
+"Apologize for the delay and tell them you'll check the order status."
+
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Relationship: transactional (service providers or customer support)
+Tone: formal but warm
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Tone & Empathy Alignment
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+
+1
+
+Groundedness
+
+Suggested Reply
+
+Grade
+
+Rationale
+
+Hi Jennifer,
+
+✅ Aligned
+
+The tone is aligned. It appropriately
+acknowledges the recipient's
+sentiments by using empathetic phrases
+("so sorry to hear," "frustrating delay," "I
+understand") that directly mirror the
+user's frustration.
+
+❌ Not Aligned
+
+The tone is not aligned because it
+completely fails to acknowledge or
+respond to the recipient's feelings. The
+reply is cold, robotic, and lacks the
+necessary empathy, making it
+inappropriate for the situation.
+
+I am so sorry to hear about the frustrating delay with
+your order. It should have shipped by now, and I
+understand needing it for work. I am looking into the
+status of order #78952 right now and will get back to
+you with an update as soon as possible.
+
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+
+Best,
+
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Support Team
+2
+
+Hi Jennifer,
+Your order #78952 is in the system. We are investigating
+its status and will provide an update when one is available.
+Best,
+Support Team
+
+Table of Contents
+
+Steps and Requirements
+
+Introduction
+
+Step 4. Evaluate the generic qualities of the reply.
+
+Workflow
+Step 1 - Review Input
+
+Naturalness
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+Overview
+Naturalness measures whether the reply sounds like it was written by a real person. The language should flow smoothly
+and avoid awkward, stilted, or overly formulaic phrasing. An unnatural reply might sound robotic or use strange sentence
+structures that a person would not typically write.
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+
+Grading Question and Scales
+
+Tone & Empathy
+Alignment
+
+Q. How natural does the suggested draft sound?
+
+Naturalness
+Localization
+
+• Natural: The draft sounds like authentic human email communication with a natural language flow, appropriate structure,
+and expressions suitable for the context and formality level.
+
+Step 5 - Review User
+Profile
+
+• Unnatural: The draft sounds awkward, stilted, or overly formulaic—with forced phrasing, unnatural transitions, or
+mechanical language that doesn t resemble authentic email communication.
+
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+Appendix
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Naturalness
+
+Step 3 - Verify Email
+Subject
+
+Examples
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Input Email:
+”Hey team, I'm putting together the slides for the Q1 review. Can everyone send me their key metrics by end-of-day
+tomorrow? Thanks!"
+Prompt:
+"Tell them you'll send the metrics over tomorrow."
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Naturalness
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+
+1
+
+Groundedness
+
+Appendix
+
+Hi Mark,
+
+✅ Natural
+
+The reply sounds like authentic human
+email communication. The language
+("Sounds good!", "get my metrics over") is
+common and has a natural language
+flow suitable for a casual, internal email.
+
+❌ Unnatural
+
+The reply sounds awkward, stilted, and
+overly formulaic. Phrases like "Your
+request has been received" and "will be
+delivered" are mechanical language that
+does not resemble how a person would
+typically respond.
+
+Jen
+
+Naturalness
+
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+Rationale
+
+Cheers,
+
+Tone & Empathy
+Alignment
+
+Step 5 - Review User
+Profile
+
+Grade
+
+Sounds good! I'll get my metrics over to you
+tomorrow.
+
+Instruction Adherence
+& Contextual Fit
+
+Localization
+
+Suggested Reply
+
+2
+
+Hi Mark,
+Your request has been received. The requested
+metrics will be delivered by tomorrow.
+Regards,
+Jen
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+
+Localization
+Overview
+The response should feel like it was written by a native speaker in the target region. It adapts to local language, culture, and
+context.
+
+Groundedness
+
+A response fails the localization dimension if it feels "foreign," even if the grammar is technically correct.
+
+Instruction Adherence
+& Contextual Fit
+
+Grading Question and Scales
+
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Q. Does the response display content that is appropriate and relevant for your language and region?
+• Yes: The response is fully appropriate for my language and region
+• No: The response contains something inappropriate or irrelevant for my language and region
+• Awkward or clearly machine-translated phrasing
+• Incorrect mixed languages in the response
+• Wrong date format (e.g., MM/DD vs DD/MM), units of measurement, or number formatting
+• Wrong punctuation format for my language/region
+• Scrambled symbols (, □, ???, ⍰)
+• Content, examples, or references that don't fit my culture/region
+• Others. Please specify.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Localization
+
+Step 3 - Verify Email
+Subject
+
+Instructions
+
+Step 4 - Evaluate Reply
+
+✅
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+If all of the following are true, select Yes for the Localization question:
+•
+Input text is in my language with no obviously incorrect or untranslated portions
+•
+Dates, numbers and units of measurement display in my local format
+•
+No garbled characters appear
+•
+All content, including cultural references, punctuations, and examples, make sense for my region
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 4. Evaluate the generic qualities of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+Appendix
+
+Localization
+Instructions
+Guideline Callouts
+1. Below scenarios are expected and NOT Localization issues:
+• English proper names of companies, products, games, movies, etc will appear frequently in
+other languages.
+• Some languages such as Hinglish use mixed languages.
+• It s possible that some scenarios use the base language structurally but include a small
+untranslated portion.
+•For example, “Send 你好嗎 to Ching Liu.”
+2. Examples of wrong punctuation format
+❌ Cómo estás? Qué sorpresa! Vs ✅ ¿Cómo estás? ¡Qué sorpresa!
+❌ Il a dit "bonjour" en souriant. Vs ✅ Il a dit « bonjour » en souriant.
+❌ Powiedział "to dobrze" i wyszedł. Vs ✅ Powiedział „to dobrze" i wyszedł.
+
+Steps and Requirements - Step 5
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 5. Review the user profile.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+The next step is to understand the user s authentic communication style. This profile is the primary source of truth for
+evaluating the personalization of the suggested reply.
+A "Personalized" draft should sound like it was written by this person.
+
+Step 4 - Evaluate Reply
+Groundedness
+
+The user profile is broken down into three main components: Writing Style Patterns, Grammar/Punctuation, and Mail
+Component Patterns.
+
+Instruction Adherence
+& Contextual Fit
+
+Each user profile can look very different, and not all fields will be populated.
+
+Tone & Empathy
+Alignment
+Naturalness
+
+Tips
+
+Localization
+
+• For the full label definitions used in the User Profile, you can find them in the Appendix section.
+
+Step 5 - Review User
+Profile
+
+• For ja_JP and ko_KR locale, analysts can expect to see "speech_level" in the User Profile.
+
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+Appendix
+
+Table of Contents
+Introduction
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Steps and Requirements
+Step 5. Review the user profile.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 5. Review the user profile.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+1. Writing Style Patterns
+
+Step 3 - Verify Email
+Subject
+
+This section describes the user's linguistic habits—how they form sentences and structure their writing.
+
+Step 4 - Evaluate Reply
+
+Pattern
+
+Description
+
+Vocabulary
+
+Describes the user's typical word choice (e.g., Basic, Advanced, or Technical).
+
+Formatting
+
+Details whether the user uses formatting like bullet points and bold text, or writes in simple paragraphs.
+
+Padding
+
+Explains f the user's writing is direct (Reduced Padding) or uses softer, more indirect language
+(Balanced Padding).
+
+Sentence Structure
+
+Defines if the user writes short, direct sentences (Segmented) or mixes lengths and complexity
+(Balanced).
+
+Speech Level
+
+The degree of formality, politeness, and social stance expressed through language choice, especially
+verb endings and honorific forms, depending on the relationship between speaker and listener.
+This attribute is only applicable to ko_KR and ja_JP.
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+2. Grammar / Punctuation
+This section outlines the user's typical habits for punctuation, such as using exclamation points, commas, or capitalization.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 5. Review the user profile.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+3. Mail Component Patterns
+
+Step 3 - Verify Email
+Subject
+
+This section lists the specific phrases and conventions the user prefers for different parts of an email.
+
+Step 4 - Evaluate Reply
+
+Component
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Address Forms
+
+Description
+Names or terms the user uses to directly address the mail recipient. This includes informal
+nicknames in English as well as culturally specific address forms in other languages (e.g., honorific
+titles, kinship terms, respectful suffixes).
+
+Salutations
+
+The specific greetings the user prefers (e.g., "Hi", "Hey", "Dear").
+
+Openings
+
+Common opening sentences or phrases used after the greeting.
+
+Closings
+
+Common closing phrases or sentences used before the sign-off.
+
+Sign-offs
+
+The expressions the user prefers to sign off with (e.g., "Thanks", "Best", "Cheers").
+
+Signatures
+
+How the user typically writes their name (e.g., full name, first name, or initials).
+
+Steps and Requirements - Step 6
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Overview
+
+Step 3 - Verify Email
+Subject
+
+You have evaluated the generic quality of the suggested reply. Now, you'll be evaluating the personalization quality. There is
+only one dimension to evaluate in this step.
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+
+Dimension
+
+Description
+
+Personalization
+
+Personalization measures how well the suggested reply captures the user's unique
+communication style while considering the conversation context.
+
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+⚠ Evaluate this dimension independently
+Your evaluation of Personalization should be independent of all the other dimensions. This means that a response can
+be Personalized but fails the Groundedness or Instruction Adherence & Contextual Fit dimension.
+OR, the response can be Generic or Mismatched but still passes some of the other generic quality dimensions.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+The User Profile
+
+Step 3 - Verify Email
+Subject
+
+The suggested reply should broadly capture the user s communication style (also known as User Profile) while still
+considering the conversation context.
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+Appendix
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Grading Question and Scales
+
+Step 3 - Verify Email
+Subject
+
+Q. How well does the suggested reply reflect the user s communication style?
+
+Step 4 - Evaluate Reply
+
+Personalized
+• The draft accurately reflects the user s writing style patterns (vocabulary level, formatting, padding, sentence
+structure, grammar patterns), appropriately uses the user s typical mail components (salutations, openings,
+closings, sign-offs, signature), and aligns with how the user communicates given their relationship with the
+recipient. The draft reads as authentically from this user.
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+
+Contextually Adapted
+
+Localization
+
+• The draft intentionally deviates from some aspects of the user s typical style in ways that are appropriate for the
+specific email context. For example: using more formal language than usual for a sensitive topic, being more
+concise than usual for an urgent matter, or adjusting tone to match an unusual situation. These adaptations
+represent natural adjustments the user would make, even though they differ from the profile.
+
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+’
+
+’
+
+’
+
+Appendix
+
+Table of Contents
+
+Steps and Requirements
+
+Introduction
+
+Step 6. Evaluate the personalization quality of the reply.
+
+Workflow
+Step 1 - Review Input
+
+Grading Question and Scales
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+Q. How well does the suggested reply reflect the user s communication style?
+
+Step 4 - Evaluate Reply
+
+Generic
+• The draft draft lacks the user s distinctive style characteristics and reads as a generic template response that
+anyone might send. It fails to incorporate the user s vocabulary level, formatting preferences, padding style,
+sentence structure, grammar patterns, or typical mail components when these would be appropriate for the
+context. The draft is functionally correct but doesn t sound like this particular user.
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+
+Mismatched
+
+Localization
+
+• The draft contradicts the user s established communication patterns in ways not justified by the email context.
+For example: using technical jargon when the user typically writes in basic vocabulary, applying strong
+formatting when the user never formats emails, using formal sign-offs the user never employs, or adopting a
+writing style that doesn t align with the user s relationship with the recipient. These mismatches make the email
+feel unauthentic.
+
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+’
+
+’
+
+’
+
+’
+
+’
+
+’
+
+’
+
+Appendix
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Grading Question and Scales
+
+More context for analysts to align with the engineering team:
+For the engineering team:
+
+• Personalized and Contextually Adapted: This receives a similar score because the assistant should
+not be penalized for providing a relevant, context-appropriate reply.
+
+• Generic: This incurs a penalty when a reply could have been personalized but was not.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Grading Question and Scales
+How to evaluate the Personalization dimension?
+It is acknowledged by the engineering team that this dimension can be subjective and context-based. To guide your
+grading, we have added the grading principles below:
+
+⚠ Personalization Dimension - Grading Principles
+• Guidance, Not Law: Consider the guidelines for this dimension as a framework to inform your decisions, not
+strict mandates. Human communication is fluid, and our goal is to capture its nuances.
+• User Profile as a Tendency: The user profile (capitalization, punctuation, emoji use, abbreviations, etc..)
+describes what a user often does, not what they always do. It's "including but not limited to" these elements.
+Look for patterns, but recognize exceptions.
+• Context is Key: The relevance of specific profile components (e.g., emoji vs. capitalization) is dynamic and
+depends entirely on the conversation's context. Use your common sense and the provided examples to weigh
+which components are most significant for the task at hand.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Grading Question and Scales
+
+⚠ Personalization Dimension - Grading Principles
+• Leverage Your Insight: We value your ability to extract patterns and make reasonable, informed decisions. Think
+beyond surface-level checks and consider the overall "feel" of the reply in relation to the user's typical
+communication style.
+• Aim for Likelihood: Your decision is about assessing the likelihood that a reply aligns with the user's
+personalized style. A "good" personalization might not perfectly match every single aspect, but it should feel
+authentic and appropriate.
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Examples
+
+Step 3 - Verify Email
+Subject
+
+User Profile
+
+Step 4 - Evaluate Reply
+
+Category
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+
+Writing Style
+
+Grammar
+
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Mail Components
+
+Pattern
+
+Details
+
+Vocabulary
+
+advanced
+
+Formatting
+
+strong_formatting (uses lists, bolding, etc.)
+
+Padding
+
+balanced_padding (polite but not overly wordy)
+
+Punctuation
+
+Uses ! for gratitude; standard professional grammar.
+
+Salutation
+
+Hi
+
+Opening
+
+Hope you are doing well
+
+Sign-off
+
+Thank You
+
+Signature
+
+Marija Erik (full name)
+
+Table of Contents
+Introduction
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+
+Workflow
+Step 1 - Review Input
+
+Examples
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+
+User Profile
+Input Email: "Hi Marija, Hope you are doing well. I need to schedule a 30-minute review of the Q3 budget report with you
+and Thomas. My calendar is open on Wednesday. What time works for you? Thanks, David"
+Prompt: "Tell David you're also free on Thursday and offer three specific times. Use a list.”
+
+Instruction Adherence
+& Contextual Fit
+
+Suggested Reply
+
+Grade
+
+Rationale
+
+✅ Personalized
+
+Naturalness
+
+Hi David, Hope you are doing well. I can do
+Wednesday or Thursday for the budget review.
+
+Localization
+
+Here are a few times that work for me:
+
+This reply accurately reflects Marija's
+profile. It uses her specific Hi salutation,
+Hope you are doing well opening,
+strong formatting (the bulleted list),
+Thank You sign-off, and full Marija Erik
+signature. It reads as authentically from
+her.
+
+Tone & Empathy
+Alignment
+
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+1
+
+• Wednesday at 10 00 AM
+• Thursday at 1 00 PM
+• Thursday at 3 30 PM
+Please let me know if any of these will work for you.
+Thank You,
+
+:
+
+:
+
+:
+
+Marija Erik
+
+Table of Contents
+Introduction
+Workflow
+Step 1 - Review Input
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+Examples
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+User Profile
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+:
+
+Appendix
+
+2
+
+Suggested Reply
+
+Grade
+
+Rationale
+
+Hi David,
+
+🔸 Generic
+
+This reply is functionally correct but
+lacks Marija's distinctive style. It fails to
+use her specific opening ("Hope you
+are doing well"), doesn't use the list
+format (strong_formatting), and uses a
+generic "Thanks" and first name
+signature instead of her specific "Thank
+You" and full name.
+
+I am also available on Thursday. I could do
+Wednesday at 10am, Thursday at 1pm, or Thursday
+at 3 30pm.
+Thanks,
+Marija
+
+Table of Contents
+Introduction
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+
+Workflow
+Step 1 - Review Input
+
+Examples
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+User Profile
+
+Step 4 - Evaluate Reply
+Groundedness
+
+3
+
+Suggested Reply
+
+Grade
+
+Rationale
+
+hey david,
+
+❌ Mismatched
+
+This reply contradicts Marija's profile.
+The style is overly casual and blunt
+("hey," "pick one," "thx"), which clashes
+with her advanced vocabulary and
+balanced_padding. The lack of
+capitalization and use of initials in the
+signature are also direct mismatches.
+
+✅ Contextually
+Adapted
+
+This reply intentionally deviates from
+the profile for a good reason. Given the
+urgency, it drops Marija's usual "Hope
+you are doing well" opening and
+balanced padding to be more direct
+and efficient. This is a natural
+adjustment she would make, while still
+retaining her core professional sign-off
+and signature.
+
+Instruction Adherence
+& Contextual Fit
+
+i can meet. wednesday 10am. thursday 1pm. or
+thursday 3 30pm. pick one.
+
+Tone & Empathy
+Alignment
+
+thx,
+M.E.
+
+Naturalness
+Localization
+
+4
+
+Step 5 - Review User
+Profile
+
+(For this example, assume the input email was
+marked URGENT)
+
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+Hi David,
+
+Appendix
+
+Thank You,
+
+I can meet at 4 00 PM today. Sending you an invite
+now.
+
+:
+
+:
+
+Marija Erik
+
+Table of Contents
+Introduction
+Workflow
+
+Steps and Requirements
+Step 6. Evaluate the personalization quality of the reply.
+
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Reminder: Remember the rule to evaluate Personalization independently.
+
+Step 3 - Verify Email
+Subject
+
+• Despite their Personalization rating, the first 4 responses would be considered Not Grounded, as they fabricate times
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+that are not mentioned in the user prompt or input email.
+
+• The 4th response is Not Grounded, and it would also fail the Instruction Adherence and Contextual Fit dimension (as
+the prompt asked for 3 specific times).
+
+Steps and Requirements - Step 7
+
+Table of Contents
+Introduction
+
+Steps and Requirements
+
+Workflow
+
+Step 7. Compare Responses in Pair
+
+Step 1 - Review Input
+
+After you have evaluated each response, you will compare them in pair.
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Please base your comparison on the derived scores for each dimension, displayed for you in a table. Share any feedback you'd
+like the engineering team to be aware of and submit the task.
+
+Appendix - User Profile for Emails
+
+Table of Contents
+Introduction
+
+Appendix
+
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+The tables below provide definitions or scenarios for the labels in the user profile.
+Important: While the user communication profile provides general traits about how a user typically writes emails, it is
+crucial to consider the email context when evaluating personalization.
+• For example, what is considered to be “basic vocabulary” can be different for an English major vs. someone who
+goes to a vocational school (or in academic research vs. high-school classroom).
+• Refer to the table below for the label definitions, but use context and input text to refine your evaluation.
+
+Table of Contents
+Introduction
+
+Appendix
+
+Workflow
+Step 1 - Review Input
+Step 2 - Harmfulness
+
+Table 1 Writing Style Patterns
+Linguistic and structural characteristics defining how the user composes email content.
+Category
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+
+Vocabulary
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+
+Formatting
+
+Pattern Type
+
+Description
+
+Basic
+
+Uses common, concrete, high-frequency words (10th-grade level or lower). Avoids jargon,
+cultural idioms, or abstract terms.
+
+Advanced
+
+Uses a broader range of words for university-educated adults. Includes moderate abstraction,
+mild figurative language, and standard professional terms.
+
+Technical
+
+Uses specialized terminology, industry-specific jargon, or domain-specific vocabulary for expert
+audiences.
+
+Lacking Formatting
+
+Rarely or never uses formatting tools, resulting in dense blocks of text.
+
+Strong Formatting
+
+Regularly uses formatting elements (bullets, numbered lists, bold/italics, structured sections).
+Note: Highly context-dependent; may only apply when responding to similarly formatted emails.
+
+Reduced Padding
+
+Omits unnecessary or redundant words. Writing is concise, clear, and direct.
+
+Balanced Padding
+
+Deliberately uses softened, indirect wording (qualifiers, courtesy phrases, light elaboration) to
+sound approachable and considerate naturally.
+
+Segmented
+
+Uses short, declarative sentences expressing one distinct idea each. Prioritizes directness and
+rapid comprehension.
+
+Balanced
+
+Uses a measured mix of sentence lengths and standard connections (e.g., and, but, because).
+Balances clarity with smooth transitions across multiple concepts.
+
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Padding
+
+Sentence Structure
+
+Table of Contents
+Introduction
+
+Appendix
+
+Workflow
+Step 1 - Review Input
+
+Table 1 Writing Style Patterns
+Linguistic and structural characteristics defining how the user composes email content.
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+Category
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+
+Pattern Type
+
+Description
+
+ja_JP - Sonkeigo(Respectful:
+raising the recipient)
+
+Respectful language that elevates the recipient or the person being talked about.
+
+ja_JP -Kenjougo(Humble:
+lowering the sender)
+
+Humble language that lowers the sender or the sender s in-group to show respect.
+
+Speech Level
+
+Localization
+
+ja_JP -Teineigo(Polite: standard
+Standard polite language using -ます / -です forms.
+-masu/-desu forms)
+
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+
+ja_JP - Tameguchi(Casual:
+dictionary form)
+
+’
+
+Appendix
+
+Casual, plain-form language used in informal contexts.
+
+Table of Contents
+Introduction
+
+Appendix
+
+Workflow
+Step 1 - Review Input
+
+Table 1 Writing Style Patterns
+Linguistic and structural characteristics defining how the user composes email content.
+
+Step 2 - Harmfulness
+Step 3 - Verify Email
+Subject
+
+Category
+
+Step 4 - Evaluate Reply
+
+ko_KR - Formally Polite / 하십시
+오체 (Hasipsio-che)
+
+Groundedness
+Instruction Adherence
+& Contextual Fit
+
+ko_KR -Casually Polite / 해요체
+
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Pattern Type
+
+Description
+Highest level of formality. Used by TV broadcasters, in official, business settings, between
+strangers at the beginning of a conversation, among colleagues in formal settings, and to
+customers. A conversation with a stranger will generally start out in this style and gradually fade
+into more and more frequent 해요체(haeyo-che). Endings: ~합니다. ~하십시오.
+Less formal alternative of Formally Polite, which can be used more frequently in most normal,
+everyday conversations where politeness is expected (해요체(haeyo-che)). It can be used when
+
+speaking respectfully or politely, regardless of the relative rank (higher, lower, or the same level) of
+the addressee. Used between strangers, colleagues and by younger speakers. Endings: ~해요. ~하
+A plain, formal speech used with those who are the same rank or lower, but with no added degree
+ko_KR -Formally Impolite / 해라체 of respect. Used in reported speech and in written materials (books, newspapers and magazines).
+In conversations, it is used between close friends or relatives of similar age, and by adults to
+(Haera-che)
+children. Endings: ~한다. ~하신다.
+(haeyo-che):
+
+Speech Level
+
+ko_KR -Casually Impolite / 해체
+(Hae-che)
+
+An intimate conversational style used between close friends and relatives of equal age, and by
+adults to children. Endings: ~해.
+
+Table of Contents
+Introduction
+
+Appendix
+
+Workflow
+Step 1 - Review Input
+
+Table 2 Grammar & Punctuation Patterns
+
+Step 2 - Harmfulness
+
+Common scenarios dictating the user's frequency and application of punctuation.
+
+Step 3 - Verify Email
+Subject
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Punctuation / Element
+
+Common Usage Scenarios
+
+Capitalization
+
+Salutations & Signatures, Acronyms & Initialisms
+
+Questions Marks (?)
+
+Requests, Confirmations, Multiple Marks
+
+Exclamation Marks (!)
+
+Gratitude, Enthusiasm, Multiple Marks
+
+Commas (,)
+
+Structural Use, Stylistic Pauses
+
+Periods (.)
+
+Sentence Endings, Bullet Points, Ellipsis
+
+Semicolons (;)
+
+Complex Lists, Linked Sentences
+
+Colons (:)
+
+Headings, Lists, Formal Statements, Formal Greetings
+
+Parentheses ( )
+
+Additional Info, Acronyms
+
+Table of Contents
+Introduction
+
+Appendix
+
+Workflow
+Step 1 - Review Input
+
+Table 2 Grammar & Punctuation Patterns
+
+Step 2 - Harmfulness
+
+Common scenarios dictating the user's frequency and application of punctuation.
+
+Step 3 - Verify Email
+Subject
+
+Punctuation / Element
+
+Common Usage Scenarios
+
+Script balance
+
+Only applicable to Japanese
+•
+Kanji-Heavy: Perceived as formal, stiff, or highly intellectual (often used in legal/official
+contexts).
+•
+Soft/Hiragana-Heavy:Perceived as approachable, gentle, or feminine (often used in
+customer service or HR).
+•
+Katakana Usage: Measures reliance on loanwords (e.g., "agreement" vs. "goi").
+
+Expressive marker
+
+Only applicable to Japanese, Chinese, and Korean
+Use of wave dashes (Japanese, Chinese)
+Use of sentence final particles (Chinese)
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+Tone & Empathy
+Alignment
+Naturalness
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+▪
+
+▪
+
+Table of Contents
+Introduction
+
+Appendix
+
+Workflow
+Step 1 - Review Input
+
+Table 3 Mail Component Patterns
+
+Step 2 - Harmfulness
+
+Specific email elements the user commonly applies when writing to particular recipients.
+
+Step 3 - Verify Email
+Subject
+
+Component
+
+Description & Examples
+
+Address Forms
+
+Names or terms the user uses to directly address the mail recipient. This includes informal
+nicknames in English as well as culturally specific address forms in other languages (e.g.,
+honorific titles, kinship terms, respectful suffixes).
+
+Tone & Empathy
+Alignment
+
+Salutations
+
+Opening greetings (e.g., "Hi", "Hello", "Hey", "Dear").
+
+Naturalness
+
+Openings
+
+Common opening phrases or sentences immediately following the salutation.
+
+Closings
+
+Common closing phrases or sentences leading up to the sign-off.
+
+Sign-offs
+
+Closing expressions (e.g., "Thanks", "Best", "Regards", "Cheers").
+
+Signatures
+
+How the user signs their name (e.g., full name, first name only, initials).
+
+Step 4 - Evaluate Reply
+Groundedness
+Instruction Adherence
+& Contextual Fit
+
+Localization
+Step 5 - Review User
+Profile
+Step 6 - Evaluate
+Personalization
+Step 7 - Compare
+Responses
+Appendix
+
+Congratulations
+You have completed the guidelines for Writing Tools Mail Smart Replies!
+
+

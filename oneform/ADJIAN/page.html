@@ -1,0 +1,385 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TryRating</title><script type="module" crossorigin="" src="//assets.tryrating.com/0.220.2/uijay835izf/static/app/js/app.js"></script><link rel="modulepreload" crossorigin="" href="//assets.tryrating.com/0.220.2/uijay835izf/static/index/js/index-Bpwkbrev.js"><link rel="modulepreload" crossorigin="" href="//assets.tryrating.com/0.220.2/uijay835izf/static/labeledIcon/js/labeledIcon-BmX96QK-.js"><link rel="modulepreload" crossorigin="" href="//assets.tryrating.com/0.220.2/uijay835izf/static/index2/js/index2-B-zHxASq.js"><link rel="modulepreload" crossorigin="" href="//assets.tryrating.com/0.220.2/uijay835izf/static/hawk-ui-library2/js/hawk-ui-library2-fY3APSGv.js"><link rel="modulepreload" crossorigin="" href="//assets.tryrating.com/0.220.2/uijay835izf/static/hawk-mapkit-library2/js/hawk-mapkit-library2-CJ-KS9Nl.js"><link rel="stylesheet" crossorigin="" href="//assets.tryrating.com/0.220.2/uijay835izf/static/labeledIcon/css/labeledIcon-D09zbILK.css"><link rel="stylesheet" crossorigin="" href="//assets.tryrating.com/0.220.2/uijay835izf/static/app/css/app-n4Uc_bxg.css"><style data-emotion="css"></style><style type="text/css">.__react_component_tooltip {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 13px;
+  left: -999em;
+  opacity: 0;
+  padding: 8px 21px;
+  position: fixed;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  top: -999em;
+  visibility: hidden;
+  z-index: 999;
+}
+.__react_component_tooltip.allow_hover, .__react_component_tooltip.allow_click {
+  pointer-events: auto;
+}
+.__react_component_tooltip:before, .__react_component_tooltip:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.__react_component_tooltip.show {
+  opacity: 0.9;
+  margin-top: 0px;
+  margin-left: 0px;
+  visibility: visible;
+}
+.__react_component_tooltip.type-dark {
+  color: #fff;
+  background-color: #222;
+}
+.__react_component_tooltip.type-dark.place-top:after {
+  border-top-color: #222;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-dark.place-bottom:after {
+  border-bottom-color: #222;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-dark.place-left:after {
+  border-left-color: #222;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-dark.place-right:after {
+  border-right-color: #222;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-dark.border {
+  border: 1px solid #fff;
+}
+.__react_component_tooltip.type-dark.border.place-top:before {
+  border-top: 8px solid #fff;
+}
+.__react_component_tooltip.type-dark.border.place-bottom:before {
+  border-bottom: 8px solid #fff;
+}
+.__react_component_tooltip.type-dark.border.place-left:before {
+  border-left: 8px solid #fff;
+}
+.__react_component_tooltip.type-dark.border.place-right:before {
+  border-right: 8px solid #fff;
+}
+.__react_component_tooltip.type-success {
+  color: #fff;
+  background-color: #8DC572;
+}
+.__react_component_tooltip.type-success.place-top:after {
+  border-top-color: #8DC572;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-success.place-bottom:after {
+  border-bottom-color: #8DC572;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-success.place-left:after {
+  border-left-color: #8DC572;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-success.place-right:after {
+  border-right-color: #8DC572;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-success.border {
+  border: 1px solid #fff;
+}
+.__react_component_tooltip.type-success.border.place-top:before {
+  border-top: 8px solid #fff;
+}
+.__react_component_tooltip.type-success.border.place-bottom:before {
+  border-bottom: 8px solid #fff;
+}
+.__react_component_tooltip.type-success.border.place-left:before {
+  border-left: 8px solid #fff;
+}
+.__react_component_tooltip.type-success.border.place-right:before {
+  border-right: 8px solid #fff;
+}
+.__react_component_tooltip.type-warning {
+  color: #fff;
+  background-color: #F0AD4E;
+}
+.__react_component_tooltip.type-warning.place-top:after {
+  border-top-color: #F0AD4E;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-warning.place-bottom:after {
+  border-bottom-color: #F0AD4E;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-warning.place-left:after {
+  border-left-color: #F0AD4E;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-warning.place-right:after {
+  border-right-color: #F0AD4E;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-warning.border {
+  border: 1px solid #fff;
+}
+.__react_component_tooltip.type-warning.border.place-top:before {
+  border-top: 8px solid #fff;
+}
+.__react_component_tooltip.type-warning.border.place-bottom:before {
+  border-bottom: 8px solid #fff;
+}
+.__react_component_tooltip.type-warning.border.place-left:before {
+  border-left: 8px solid #fff;
+}
+.__react_component_tooltip.type-warning.border.place-right:before {
+  border-right: 8px solid #fff;
+}
+.__react_component_tooltip.type-error {
+  color: #fff;
+  background-color: #BE6464;
+}
+.__react_component_tooltip.type-error.place-top:after {
+  border-top-color: #BE6464;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-error.place-bottom:after {
+  border-bottom-color: #BE6464;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-error.place-left:after {
+  border-left-color: #BE6464;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-error.place-right:after {
+  border-right-color: #BE6464;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-error.border {
+  border: 1px solid #fff;
+}
+.__react_component_tooltip.type-error.border.place-top:before {
+  border-top: 8px solid #fff;
+}
+.__react_component_tooltip.type-error.border.place-bottom:before {
+  border-bottom: 8px solid #fff;
+}
+.__react_component_tooltip.type-error.border.place-left:before {
+  border-left: 8px solid #fff;
+}
+.__react_component_tooltip.type-error.border.place-right:before {
+  border-right: 8px solid #fff;
+}
+.__react_component_tooltip.type-info {
+  color: #fff;
+  background-color: #337AB7;
+}
+.__react_component_tooltip.type-info.place-top:after {
+  border-top-color: #337AB7;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-info.place-bottom:after {
+  border-bottom-color: #337AB7;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-info.place-left:after {
+  border-left-color: #337AB7;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-info.place-right:after {
+  border-right-color: #337AB7;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-info.border {
+  border: 1px solid #fff;
+}
+.__react_component_tooltip.type-info.border.place-top:before {
+  border-top: 8px solid #fff;
+}
+.__react_component_tooltip.type-info.border.place-bottom:before {
+  border-bottom: 8px solid #fff;
+}
+.__react_component_tooltip.type-info.border.place-left:before {
+  border-left: 8px solid #fff;
+}
+.__react_component_tooltip.type-info.border.place-right:before {
+  border-right: 8px solid #fff;
+}
+.__react_component_tooltip.type-light {
+  color: #222;
+  background-color: #fff;
+}
+.__react_component_tooltip.type-light.place-top:after {
+  border-top-color: #fff;
+  border-top-style: solid;
+  border-top-width: 6px;
+}
+.__react_component_tooltip.type-light.place-bottom:after {
+  border-bottom-color: #fff;
+  border-bottom-style: solid;
+  border-bottom-width: 6px;
+}
+.__react_component_tooltip.type-light.place-left:after {
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 6px;
+}
+.__react_component_tooltip.type-light.place-right:after {
+  border-right-color: #fff;
+  border-right-style: solid;
+  border-right-width: 6px;
+}
+.__react_component_tooltip.type-light.border {
+  border: 1px solid #222;
+}
+.__react_component_tooltip.type-light.border.place-top:before {
+  border-top: 8px solid #222;
+}
+.__react_component_tooltip.type-light.border.place-bottom:before {
+  border-bottom: 8px solid #222;
+}
+.__react_component_tooltip.type-light.border.place-left:before {
+  border-left: 8px solid #222;
+}
+.__react_component_tooltip.type-light.border.place-right:before {
+  border-right: 8px solid #222;
+}
+.__react_component_tooltip.place-top {
+  margin-top: -10px;
+}
+.__react_component_tooltip.place-top:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-top:after {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  bottom: -6px;
+  left: 50%;
+  margin-left: -8px;
+}
+.__react_component_tooltip.place-bottom {
+  margin-top: 10px;
+}
+.__react_component_tooltip.place-bottom:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -8px;
+  left: 50%;
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-bottom:after {
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: -6px;
+  left: 50%;
+  margin-left: -8px;
+}
+.__react_component_tooltip.place-left {
+  margin-left: -10px;
+}
+.__react_component_tooltip.place-left:before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  right: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-left:after {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  right: -6px;
+  top: 50%;
+  margin-top: -4px;
+}
+.__react_component_tooltip.place-right {
+  margin-left: 10px;
+}
+.__react_component_tooltip.place-right:before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  left: -8px;
+  top: 50%;
+  margin-top: -5px;
+}
+.__react_component_tooltip.place-right:after {
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  left: -6px;
+  top: 50%;
+  margin-top: -4px;
+}
+.__react_component_tooltip .multi-line {
+  display: block;
+  padding: 2px 0px;
+  text-align: center;
+}</style><style data-emotion="css"></style><style data-emotion="css"></style><style data-emotion=""></style><style data-emotion="css"></style><style data-emotion=""></style><style type="text/css">.transform-component-module_wrapper__SPB86 {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  transform: translate3d(0, 0, 0);
+}
+.transform-component-module_content__FBWxo {
+  display: flex;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  transform-origin: 0% 0%;
+}
+.transform-component-module_content__FBWxo img {
+  pointer-events: none;
+}
+</style><style data-styled-components=""></style><style data-styled="" data-styled-version="4.4.1"></style><style>.image-editor-wrapper{position:relative}.the-stage{background:#eee}.the-stage:focus{outline:1px solid #007bff}.is-drawing{cursor:crosshair}.is-panning{cursor:grab}.is-zooming{cursor:zoom-in}.is-zooming.is-zooming-out{cursor:zoom-out}</style><style>.btn-circle{width:45px;height:45px;line-height:45px;text-align:center;padding:0;border-radius:50%}.btn-pill{text-align:center;padding:0;border-radius:50%}.btn-pill-rel{line-height:1em;font-size:.8rem}.btn-no-border{border:0}.btn-circle-sm{width:35px;height:35px;line-height:35px;font-size:.9rem}.btn-rel{line-height:1em;font-size:.8rem;color:#fff;padding:.4em .7em}.btn-rel:hover{color:#fff}.group-container{padding:0 .5rem;font-size:1.2em}.group-container .group{padding:.3rem;border-radius:1rem;background:#a4aaad}.group-container .group .group-item{margin-bottom:.1em}.group-container .group .group-item.group-item-label{max-width:10em}.group-container .group .group-item .btn{border-color:rgba(0,0,0,0);border-radius:1rem;text-align:center;display:inline-block}.group-container .group .group-item .btn.btn-group-item-label{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.group-container .group .group-item .btn .layer-info{display:inline-block;width:2.25em}.group-container .group .group-item .btn .layer-info .layer-level{display:inline-block;width:.75em}.group-container .group .group-item .btn .layer-info .layer-level-large{width:1em !important}.group-container .group .group-item .btn-group-item{font-size:1rem !important;height:1.5em;line-height:1.5em;border-radius:1em;padding:0}.group-container .group .group-item .btn-group-item:focus{box-shadow:none !important}.group-container .group .group-item:last-child{margin-bottom:0}.btn-group-icon-btn{padding:0 0 .25em 0;min-width:3.5em}.btn-circle-rel{width:1em;height:1em;line-height:1em;font-size:.8rem}.btn-no-focus-shadow:focus{box-shadow:none !important}.ia-btn-tool{outline:0 !important;font-size:2rem}.ia-btn-tool .ia-feather-icon{position:relative;stroke-width:1.5px;height:.575em;width:.575em;top:-0.14em;transform-origin:50% 50%}.ia-btn-tool.disabled{color:#989898}.ia-btn-tool.disabled:focus{box-shadow:none !important}.sub-toolbar .ia-btn-tool{box-shadow:none !important}.ia-btn-tool-anglebox .ia-feather-icon{transform:rotate(25deg)}.ia-btn-tool-rotation .ia-feather-icon{transform:rotate(90deg)}.image-annotation-wrapper{position:relative}.image-annotation-wrapper .toolbar{position:relative;z-index:1}.image-annotation-wrapper .toolbar .tools-tooltip{padding:.3rem .5rem}.image-annotation-wrapper .toolbar .toolbar-container{background:gray;width:100%}.image-annotation-wrapper .toolbar .toolbar-container .tools{padding:.3rem;background:rgba(0,0,0,.5)}.image-annotation-wrapper .toolbar .btn-circle{border-color:rgba(0,0,0,0)}.image-annotation-wrapper .toolbar .ia-btn-tool{font-size:1.5rem;margin-right:.3em}.image-annotation-wrapper .toolbar .ia-btn-tool:last-child{margin-right:0}.image-annotation-wrapper .toolbar .ia-group-tool{font-size:1.2rem}.image-annotation-wrapper .toolbar .toolbar-separator{display:inline-block;width:1px;border-left:1px solid hsla(0,0%,100%,.5);margin-left:.2em;margin-right:.5em;position:relative;height:1.2rem}.image-annotation-wrapper .toolbar .toolbar-separator.equal{margin-right:.2em}.image-annotation-wrapper .toolbar .toolbar-more-menu{position:absolute;background:rgba(0,0,0,.5);top:100%;right:-80px;border:1px solid hsla(0,0%,100%,.5);border-radius:.5rem;padding:.5rem;color:#fff}.image-annotation-wrapper .toolbar .ia-btn-tool-more .ia-feather-icon{stroke-width:3px}.image-annotation-wrapper .toolbar .toolbar-ia-options .btn-link{color:#fff}.image-annotation-wrapper .toolbar .toolbar-ia-options .btn-link:hover,.image-annotation-wrapper .toolbar .toolbar-ia-options .btn-link:focus{text-decoration:none}.image-annotation-wrapper .toolbar .ia-more-dropdown .dropdown-menu{display:block;background:rgba(0,0,0,.5);border:0px solid hsla(0,0%,100%,.5);color:#fff;border-radius:0;margin-top:11px;left:100%;top:-1em;margin-left:.5rem;padding:0;overflow:hidden}.image-annotation-wrapper .toolbar .ia-more-dropdown .dropdown-menu .dropdown-item{padding:.1rem .3rem}.image-annotation-wrapper .toolbar .ia-more-dropdown .dropdown-menu .dropdown-item:focus,.image-annotation-wrapper .toolbar .ia-more-dropdown .dropdown-menu .dropdown-item:hover{color:#16181b;text-decoration:none;background-color:rgba(29,29,29,.5)}.image-annotation-wrapper .toolbar .dropdown.ia-more-dropdown{line-height:1em}.image-annotation-wrapper .toolbar .ia-btn-tool.ia-btn-tool-more{padding-left:0;padding-right:0;margin-right:0 !important}.image-annotation-wrapper .toolbar .sub-toolbar{margin-left:.5em;padding-left:.5rem;padding-right:.5rem;background:rgba(0,0,0,.5);height:100%}.image-annotation-wrapper .toolbar .group-toolbar{margin-left:.5em;padding-left:.5rem;padding-right:.5rem;background:#a4aaad;height:100%}.image-annotation-wrapper .toolbar.toolbar-floating{position:absolute;z-index:1;width:auto}.image-annotation-wrapper .toolbar.toolbar-floating .toolbar-container{background:rgba(0,0,0,0);padding:.5rem;width:auto}.image-annotation-wrapper .toolbar.toolbar-floating .toolbar-container .tools{padding:.3rem;border-radius:1rem;background:rgba(0,0,0,.5)}.image-annotation-wrapper .toolbar.toolbar-floating .ia-more-dropdown .dropdown-menu{border-radius:1rem}.image-annotation-wrapper .toolbar.toolbar-floating .sub-toolbar{border-radius:1rem}.image-annotation-wrapper .toolbar.toolbar-group{top:50px;bottom:5px;overflow:hidden}.image-annotation-wrapper .toolbar.is-set{top:40px;bottom:5px}</style><style data-emotion="css"></style><style>.tr-cp{display:inline-block;background:#fff;border-radius:100px;text-align:center;color:#027bfe;transform:translate(0px, 1px)}.tr-cp .tr-cp-icon{fill:#fff}.tr-cp.tr-cp-nobg{background:rgba(0,0,0,0)}.tr-cp:hover{background:#027bfe}.tr-cp:hover .tr-cp-done{stroke:#fff}.tr-cp:hover .tr-cp-tip{opacity:1}</style><link rel="modulepreload" as="script" crossorigin="" href="https://assets.tryrating.com/0.220.2/uijay835izf/static/hawk-ui-library/js/hawk-ui-library-DPJdKwad.js"><style data-emotion="css"></style><style>.mk-map-view{width:100%;height:100%;overflow:hidden;-webkit-tap-highlight-color:transparent}.mk-map-view.mk-dragging-annotation{cursor:none}.mk-map-view.mk-disable-all-gestures{touch-action:none}.mk-map-view.mk-disable-pinch-gestures{touch-action:pan-x pan-y}.mk-map-view.mk-disable-zoom-gestures{touch-action:manipulation}.mk-map-view.mk-disable-pan-gestures{touch-action:none;touch-action:pinch-zoom}div.mk-map-view.mk-map-view img,div.mk-map-view.mk-map-view svg{margin:0;padding:0}.mk-annotation-container,.mk-map-view{z-index:0}.mk-map-view>*{position:absolute;left:0;-webkit-user-select:none;-moz-user-select:none}.mk-map-node-element{background-color:rgba(0,0,0,0)}.mk-map-view .rt-root{letter-spacing:.3px}.mk-map-view .mk-annotation-container,.mk-map-view .mk-controls-container{-ms-user-select:text}.mk-map-view.mk-panning ::selection{background:0 0}.mk-map-view.mk-dragging-cursor{cursor:pointer;cursor:-moz-grabbing;cursor:-webkit-grabbing;cursor:grabbing}.mk-map-view>iframe{width:100%;height:100%;pointer-events:none;opacity:0;border:0}.mk-controls-container{position:absolute;overflow:hidden;top:0;bottom:0;left:0;right:0;z-index:3;pointer-events:none}</style><link rel="modulepreload" as="script" crossorigin="" href="https://assets.tryrating.com/0.220.2/uijay835izf/static/hawk-mapkit-library/js/hawk-mapkit-library-WYFQcrFT.js"><style data-emotion="css"></style><style data-styled-components=""></style><style data-emotion="css"></style><style id="erd_scroll_detection_scrollbar_style">/* Created by the element-resize-detector library. */
+.erd_scroll_detection_container > div::-webkit-scrollbar { display: none; }
+
+.erd_scroll_detection_container_animation_active { -webkit-animation-duration: 0.1s; animation-duration: 0.1s; -webkit-animation-name: erd_scroll_detection_container_animation; animation-name: erd_scroll_detection_container_animation; }
+@-webkit-keyframes erd_scroll_detection_container_animation { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }
+@keyframes erd_scroll_detection_container_animation { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }</style></head><body><div id="app-root"><div class="application-wrapper d-laptop sb-off"><div class="error-overlay "><div class="error-banner"><div class="button-container"><button class="btn btn-danger">Close</button></div><span class="glyphicon glyphicon-exclamation-sign error-icon"></span></div></div><div class="notification-overlay"></div><div class="application-wrapper--navigation"><nav class="sidebar-navigation justify-content-between "><div class="sidebar-navigation--title sidebar-navigation-section sidebar-pad py-3 m-0"><span class="sidebar-navigation--toggle"><button iconcomponent="[object Object]" appearance="light" class="tr-button tr-button--light tr-button--icon"><svg viewBox="0 0 233.30078125 159.98291015625" version="1.1" xmlns="http://www.w3.org/2000/svg" class=" layout-box" height="22" fill="#fff"><g transform="matrix(1 0 0 1 46.630852050781186 115.221435546875)"><path d="M 27.7832 9.76562 L 112.256 9.76562 C 122.51 9.76562 127.588 4.6875 127.588 -5.37109 L 127.588 -64.9902 C 127.588 -75.0488 122.51 -80.127 112.256 -80.127 L 27.7832 -80.127 C 17.5781 -80.127 12.4512 -75.0977 12.4512 -64.9902 L 12.4512 -5.37109 C 12.4512 4.73633 17.5781 9.76562 27.7832 9.76562 Z M 27.8809 1.9043 C 22.998 1.9043 20.3125 -0.683594 20.3125 -5.76172 L 20.3125 -64.5996 C 20.3125 -69.6777 22.998 -72.2656 27.8809 -72.2656 L 49.6582 -72.2656 L 49.6582 1.9043 Z M 112.158 -72.2656 C 116.992 -72.2656 119.727 -69.6777 119.727 -64.5996 L 119.727 -5.76172 C 119.727 -0.683594 116.992 1.9043 112.158 1.9043 L 57.3242 1.9043 L 57.3242 -72.2656 Z M 40.2344 -54.1504 C 41.748 -54.1504 43.0176 -55.4688 43.0176 -56.8848 C 43.0176 -58.3496 41.748 -59.6191 40.2344 -59.6191 L 29.7852 -59.6191 C 28.3203 -59.6191 27.002 -58.3496 27.002 -56.8848 C 27.002 -55.4688 28.3203 -54.1504 29.7852 -54.1504 Z M 40.2344 -41.5039 C 41.748 -41.5039 43.0176 -42.8223 43.0176 -44.2871 C 43.0176 -45.752 41.748 -46.9727 40.2344 -46.9727 L 29.7852 -46.9727 C 28.3203 -46.9727 27.002 -45.752 27.002 -44.2871 C 27.002 -42.8223 28.3203 -41.5039 29.7852 -41.5039 Z M 40.2344 -28.9062 C 41.748 -28.9062 43.0176 -30.127 43.0176 -31.5918 C 43.0176 -33.0566 41.748 -34.3262 40.2344 -34.3262 L 29.7852 -34.3262 C 28.3203 -34.3262 27.002 -33.0566 27.002 -31.5918 C 27.002 -30.127 28.3203 -28.9062 29.7852 -28.9062 Z"></path></g></svg></button></span></div><div class="sidebar-navigation--navbar sidebar-navigation-section"><div class="scroll-content scroll-content--show-scroller"><div class="scroll-content__overlay"><div class="indicator-hide scroll-content__scroll-indicator scroll-content__scroll-indicator--top"></div><div class="indicator-hide scroll-content__scroll-indicator scroll-content__scroll-indicator--bottom"></div></div><div class="scroll-content__content"><ul class="navbar-nav nav-items"><div class="sidebar-collapse sidebar-divider"><span class="inline-divider horizontal " direction="horizontal"></span></div><li class="nav-items--section"><ul><span class="tr-tooltip"><span><span><span style="display: inline-block;"><li class="nav-item sidebar-pad "><a class="nav-item__link" data-cy="sidebar-menu-0-Home" href="/app/home"><span title="Home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 1.4em; height: 1.4em;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></span></a></li></span></span></span></span></ul></li><li class="nav-items--section"><ul><span class="tr-tooltip"><span><span><span style="display: inline-block;"><li class="nav-item sidebar-pad "><a class="nav-item__link" data-cy="sidebar-menu-0-Rating History" href="/app/rating-history"><span title="Rating History"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 1.4em; height: 1.4em;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span></a></li></span></span></span></span></ul></li><li class="nav-items--section"><ul><span class="tr-tooltip"><span><span><span style="display: inline-block;"><li class="nav-item sidebar-pad active"><a class="nav-item__link" data-cy="sidebar-menu-0-Survey" href="/app/survey"><span title="Survey"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 1.4em; height: 1.4em;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></span></a></li></span></span></span></span></ul></li><li class="nav-items--section"><ul><span class="tr-tooltip"><span><span><span style="display: inline-block;"><li class="nav-item sidebar-pad "><a class="nav-item__link" data-cy="sidebar-menu-0-Announcements" href="/app/announcementManagement"><span title="Announcements"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon" style="width: 1.4em; height: 1.4em;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12" y2="16"></line></svg></span></a></li></span></span></span></span></ul></li></ul></div></div></div><div class="sidebar-navigation-section sidebar-pad py-3"><div class="user-dropdown"><div class="css-1tx6twl"><span class="css-kd0sb6" role="button" tabindex="0"><div class="d-flex css-1lysbc0"><span class="flex-shrink-0"><div class="user-avatar"><div class="user-avatar__container"><span class="align-middle">JL</span></div></div></span></div></span><span role="menu" class="css-mr2mos"><div class="css-h4khw9" role="menuitem" tabindex="0">Reset Password</div><div class="css-h4khw9" role="menuitem" tabindex="0">Logout</div></span></div></div></div></nav></div><div class="application-wrapper--content"><div class="announcement-message-container"></div><div class="survey-view"><div class="action-bar "><div class="survey-action-bar row align-items-center"><div class="col-auto"><div class=" survey-meta-fields"><div class="labeled-attribute mr-4"><span class="labeled-attribute__label"><span class="css-zfiw4">Task Type</span></span><span class="labeled-attribute__attribute"><span class="label-value css-vozfkt">Broad Match Ratings </span></span></div><div class="labeled-attribute mr-4"><span class="labeled-attribute__label"><span class="css-zfiw4">Estimated Rating Time</span></span><span class="labeled-attribute__attribute"><span class="label-value css-vozfkt">45 seconds </span></span></div></div></div><div class="survey-buttons col text-right"><a class="btn btn-primary mr-2" role="button" href="/api/projectmanagement/guideline/01HHPDQMCQVDQFCVXAG9HRACBZ/content/01JED1K24DP3WXDF2EDC2HMGEZ" target="_blank">Rating Guidelines</a><button class="btn btn-light border" data-cy="survey-release-button">Release Survey</button><button class="ml-2 btn btn-success" style="color: white;">Submit Rating</button></div></div></div><div class="task-container"><div class=""><div class="row ml-0 mr-0"><div class="col mt-3"><div class="labeled-attribute mr-4"><span class="labeled-attribute__label"><span class="css-zfiw4">Task ID</span></span><span class="labeled-attribute__attribute"><span class="label-value css-vozfkt">01KR5V2V77HRGJ0X3XJ67T5CVA</span></span></div></div></div><div class="editor mode-live mode-view "><div class="w-100 schema-view" style=""><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="page-content "><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="component-collection"><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div data-content="ROW" class="row-default" style="height: 100%;"><div class="tr-row-container" style="cursor: default; display: flex; flex-direction: row; height: 100%;"><div class="tr-row-column" style="order: 0; transition: flex 0.3s; position: relative; border-right-width: medium; border-right-style: none; border-right-color: currentcolor; cursor: default; flex: 1 1 0%; overflow: visible; width: 100%;"><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="component-collection"><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_xH1ZvX9PA"><p><span style="color: rgb(251,160,38);background-color: rgb(255,255,255);font-size: 14px;font-family: -apple-system, system-ui, " system-ui",="" "segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""><strong>Rating Locale: </strong></span><span style="color: rgb(0,0,0);background-color: rgb(255,255,255);font-size: 14px;font-family: -apple-system, system-ui, " system-ui",="" "segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"="">china</span></p>
+</div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="" style="height: 1rem;"></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="" style="height: 1rem;"></div></div></div></div></div></div></div></div><div class="erd_scroll_detection_container erd_scroll_detection_container_animation_active" style="visibility: hidden; display: inline; width: 0px; height: 0px; z-index: -1; overflow: hidden; margin: 0px; padding: 0px;"><div dir="ltr" class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; width: 100%; height: 100%; left: 0px; top: 0px;"><div class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; inset: -16px -15px -15px -16px;"><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; left: 0px; top: 0px; width: 1114px; height: 97px;"></div></div><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; width: 200%; height: 200%;"></div></div></div></div></div></div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div data-content="ROW" class="row-default" style="height: 100%;"><div class="tr-row-container" style="cursor: default; display: flex; flex-direction: row; height: 100%;"><div class="tr-row-column" style="order: 0; transition: flex 0.3s; position: relative; border-right-width: medium; border-right-style: none; border-right-color: currentcolor; cursor: default; flex: 0.960551 1 0%; overflow: visible; width: 100%;"><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="component-collection"><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_62TwAnMcA"><h6><span style="color: rgb(251,160,38);"><strong>KEYWORD</strong></span></h6>
+<p><span style="color: rgb(0,0,0);font-size: 24px;"><strong>魅 影 ai</strong></span></p>
+</div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="" style="height: 1rem;"></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_a7dYFJfjx"><p><span style="color: rgb(251,160,38);background-color: rgb(255,255,255);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""><strong>App search for original keyword:</strong></span></p>
+</div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_YMcrT79DW"><p><span style="color: rgb(35,35,43);background-color: rgb(255,255,255);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""></span><a href="https://fnd.io/#/cn/search?mediaType=all&amp;term=魅 影 ai" target="_blank"><span style="color: rgb(35,35,43);background-color: rgb(255,255,255);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"="">fnd.io</span></a><span style="color: rgb(35,35,43);background-color: rgb(255,255,255);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""> </span></p>
+</div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="" style="height: 1rem;"></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_Ny7vDhTJQ"><p><span style="color: rgb(251,160,38);background-color: rgb(255,255,255);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""><strong>Web search for original keyword:</strong></span></p>
+</div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_XQ3p8xX8N"><p><span style="font-size: 16px;"></span><a href="http://www.baidu.com/s?wd=魅 影 ai" target="_blank"><span style="font-size: 16px;">Baidu</span></a><span style="font-size: 16px;"> | </span><a href="https://www.sogou.com/web?query=魅 影 ai" target="_blank"><span style="font-size: 16px;">Sogou</span></a><span style="font-size: 16px;">   </span></p>
+</div></div></div></div></div></div></div></div></div></div><div class="erd_scroll_detection_container erd_scroll_detection_container_animation_active" style="visibility: hidden; display: inline; width: 0px; height: 0px; z-index: -1; overflow: hidden; margin: 0px; padding: 0px;"><div dir="ltr" class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; width: 100%; height: 100%; left: 0px; top: 0px;"><div class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; inset: -16px -15px -15px -16px;"><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; left: 0px; top: 0px; width: 515px; height: 232px;"></div></div><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; width: 200%; height: 200%;"></div></div></div></div></div></div><div class="tr-row-separator" style="display: inline-block; width: 2px; height: auto; background: transparent; min-width: 2px; max-width: 2px; margin: 0px 1px; order: 1;"></div><div class="tr-row-column" style="order: 2; transition: flex 0.3s; position: relative; border-right-width: medium; border-right-style: none; border-right-color: currentcolor; cursor: default; flex: 0.197394 1 0%; overflow: visible; width: 100%;"><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="component-collection"></div></div></div></div><div class="erd_scroll_detection_container erd_scroll_detection_container_animation_active" style="visibility: hidden; display: inline; width: 0px; height: 0px; z-index: -1; overflow: hidden; margin: 0px; padding: 0px;"><div dir="ltr" class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; width: 100%; height: 100%; left: 0px; top: 0px;"><div class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; inset: -16px -15px -15px -16px;"><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; left: 0px; top: 0px; width: 138px; height: 232px;"></div></div><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; width: 200%; height: 200%;"></div></div></div></div></div></div><div class="tr-row-separator" style="display: inline-block; width: 2px; height: auto; background: transparent; min-width: 2px; max-width: 2px; margin: 0px 1px; order: 3;"></div><div class="tr-row-column" style="order: 4; transition: flex 0.3s; position: relative; border-right-width: medium; border-right-style: none; border-right-color: currentcolor; cursor: default; flex: 1 1 0%; overflow: visible; width: 100%;"><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="component-collection"><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_vpT7XFXcE"><h6><span style="color: rgb(251,160,38);"><strong>EXPANSION</strong></span></h6>
+<p><span style="font-size: 24px;"><strong>智能修图</strong></span></p>
+</div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="" style="height: 1rem;"></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_kjpyBJzKI"><p><span style="color: rgb(251,160,38);background-color: rgb(255,255,255);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""><strong>App search for expansion:</strong></span></p>
+</div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_1Vea4vhCN"><p><span style="color: rgb(35,35,43);background-color: rgb(255,255,255);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""></span><a href="https://fnd.io/#/cn/search?mediaType=all&amp;term=智能修图" target="_blank"><span style="color: rgb(35,35,43);background-color: rgba(0,0,0,0);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""><ins>fnd.io</ins></span></a><span style="color: rgb(35,35,43);background-color: rgba(0,0,0,0);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""><ins> </ins></span><span style="color: rgb(35,35,43);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""></span></p>
+</div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="" style="height: 1rem;"></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_XmNHWDFC1"><p><span style="color: rgb(251,160,38);background-color: rgb(255,255,255);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""><strong>Web search for expansion:</strong></span></p>
+</div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view richtext-wrapper"><div class="inner-wrapper css-0"><div class="sd-richtext-wrapper d-flex align-items-baseline" data-cy=""><div class="sd-richtext-inner flex-fill"><div class="sd-richtext" data-cy="" id="text_gEXblqDXP"><p><span style="color: rgb(35,35,43);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""></span><a href="http://www.baidu.com/s?wd=智能修图" target="_blank"><span style="color: rgb(0,122,255);background-color: transparent;font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"="">Baidu</span></a><span style="color: rgb(0,122,255);background-color: transparent;font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"="">   </span><span style="color: rgb(35,35,43);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""> | </span><a href="https://www.sogou.com/web?query=智能修图" target="_blank"><span style="color: rgb(0,122,255);background-color: transparent;font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"="">Sogou</span></a><span style="color: rgb(0,122,255);background-color: transparent;font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"="">  </span><span style="color: rgb(35,35,43);font-size: 16px;font-family: -apple-system, system-ui, BlinkMacSystemFont, " segoe="" ui",="" roboto,="" "helvetica="" neue",="" arial,="" sans-serif;"=""></span></p>
+</div></div></div></div></div></div></div></div></div></div><div class="erd_scroll_detection_container erd_scroll_detection_container_animation_active" style="visibility: hidden; display: inline; width: 0px; height: 0px; z-index: -1; overflow: hidden; margin: 0px; padding: 0px;"><div dir="ltr" class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; width: 100%; height: 100%; left: 0px; top: 0px;"><div class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; inset: -16px -15px -15px -16px;"><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; left: 0px; top: 0px; width: 535px; height: 232px;"></div></div><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; width: 200%; height: 200%;"></div></div></div></div></div></div></div></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="" style="height: 2em;"></div></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div data-content="ROW" class="row-default" style="height: 100%;"><div class="tr-row-container" style="cursor: default; display: flex; flex-direction: row; height: 100%;"><div class="tr-row-column" style="order: 0; transition: flex 0.3s; position: relative; border-right-width: medium; border-right-style: none; border-right-color: currentcolor; cursor: default; flex: 1 1 0%; overflow: visible; width: 100%;"><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="component-collection"><div class="extra-wrapper" data-cy="cy-extra-wrapper-Variant"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><form class="ff-form RadioGroup.wpivyNMqQ"><div class="ff-field-wrapper"><div class="ff-field"><div class="form-check-wrapper form-check-type__single position-relative size-default form-check-option-variant__default"><div class="form-check"><label class="form-check-label"><span><input name="field-vseiwm80dH" type="radio" data-cy="cy-field-Variant" class="form-check-input" value="Good" style=""></span><span class="form-check-label-text">Good</span></label></div><div class="form-check"><label class="form-check-label"><span><input name="field-vseiwm80dH" type="radio" data-cy="cy-field-Variant" class="form-check-input" value="Acceptable" style=""></span><span class="form-check-label-text">Acceptable</span></label></div><div class="form-check"><label class="form-check-label"><span><input name="field-vseiwm80dH" type="radio" data-cy="cy-field-Variant" class="form-check-input" value="Bad" style=""></span><span class="form-check-label-text">Bad</span></label></div></div></div></div></form></div></div></div><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="" style="height: 2em;"></div></div></div></div></div></div></div></div><div class="erd_scroll_detection_container erd_scroll_detection_container_animation_active" style="visibility: hidden; display: inline; width: 0px; height: 0px; z-index: -1; overflow: hidden; margin: 0px; padding: 0px;"><div dir="ltr" class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; width: 100%; height: 100%; left: 0px; top: 0px;"><div class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; inset: -16px -15px -15px -16px;"><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; left: 0px; top: 0px; width: 1114px; height: 145px;"></div></div><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; width: 200%; height: 200%;"></div></div></div></div></div></div></div></div></div></div></div><div class="extra-wrapper" data-cy="cy-extra-wrapper-Comments"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div data-content="Comments" class="row-default" style="height: 100%;"><div class="tr-row-container" style="cursor: default; display: flex; flex-direction: row; height: 100%;"><div class="tr-row-column" style="order: 0; transition: flex 0.3s; position: relative; border-right-width: medium; border-right-style: none; border-right-color: currentcolor; cursor: default; flex: 1 1 0%; overflow: visible; width: 100%;"><div class="extra-wrapper"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><div class="component-collection"><div class="extra-wrapper" data-cy="cy-extra-wrapper-Comments_Box"><div class="component-wrapper mode-live mode-view"><div class="inner-wrapper css-0"><form class="ff-form Textarea.xKXI2-1cN"><div class="ff-field-wrapper"><label for="field-O3lCntlULoH" class="field-label">Comments:</label><div class="ff-field"><textarea name="field-O3lCntlULoH" type="text" rows="5" data-cy="cy-field-Comments_Box" class="form-control" style="height: auto;"></textarea></div></div></form></div></div></div></div></div></div></div><div class="erd_scroll_detection_container erd_scroll_detection_container_animation_active" style="visibility: hidden; display: inline; width: 0px; height: 0px; z-index: -1; overflow: hidden; margin: 0px; padding: 0px;"><div dir="ltr" class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; width: 100%; height: 100%; left: 0px; top: 0px;"><div class="erd_scroll_detection_container" style="position: absolute; flex: 0 0 auto; overflow: hidden; z-index: -1; visibility: hidden; inset: -16px -15px -15px -16px;"><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; left: 0px; top: 0px; width: 1114px; height: 201px;"></div></div><div style="position: absolute; flex: 0 0 auto; overflow: scroll; z-index: -1; visibility: hidden; width: 100%; height: 100%;"><div style="position: absolute; width: 200%; height: 200%;"></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><hr></div><div class="footer"><button class="ml-2 btn btn-success text-white">Submit Rating</button></div></div><div class="modal-container medium"><div class="modal-wrap flex"><div class="body flex"></div></div></div></div></div></div></div><script src="/app/env.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><div style="display: inline-block; position: absolute; visibility: hidden; z-index: -1;"></div><div id="tr-toast-card-root"><div><section class="css-15o576z"></section></div></div></body></html>

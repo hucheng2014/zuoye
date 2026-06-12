@@ -1,0 +1,23 @@
+﻿[
+    {
+        "Path":  "D:\\英语TTS\\codex-audio",
+        "Type":  "dir",
+        "Files":  508,
+        "SizeBytes":  112283843,
+        "SizeGB":  0.105
+    },
+    {
+        "Path":  "D:\\英语TTS\\codex-browser",
+        "Type":  "dir",
+        "Files":  118,
+        "SizeBytes":  4656450869,
+        "SizeGB":  4.337
+    },
+    {
+        "Path":  "D:\\英语TTS\\reference\\标准.jpg",
+        "Type":  "file",
+        "Files":  1,
+        "SizeBytes":  722466,
+        "SizeGB":  0.000673
+    }
+]

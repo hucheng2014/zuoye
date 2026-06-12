@@ -1,0 +1,227 @@
+diff --git a/practice_logs/practice_stats.py b/practice_logs/practice_stats.py
+index 79dbe28..26e71a7 100644
+--- a/practice_logs/practice_stats.py
++++ b/practice_logs/practice_stats.py
+@@ -36,7 +36,11 @@ async def practice_summary(
+ 
+     total_minutes = sum(l.duration_minutes for l in logs)
+     avg_minutes = total_minutes / len(logs)
+-    avg_rating = sum(l.self_rating for l in logs) / len(logs)
++    avg_rating = (
++        sum(l.self_rating * l.duration_minutes for l in logs) / total_minutes
++        if total_minutes > 0
++        else 0.0
++    )
+     instruments = list({l.instrument_id for l in logs})
+ 
+     return {
+@@ -63,17 +67,22 @@ async def practice_by_instrument(
+     for log in logs:
+         iid = log.instrument_id
+         if iid not in by_instrument:
+-            by_instrument[iid] = {"sessions": 0, "total_minutes": 0, "ratings": []}
++            by_instrument[iid] = {"sessions": 0, "total_minutes": 0, "weighted_rating_sum": 0.0}
+         by_instrument[iid]["sessions"] += 1
+         by_instrument[iid]["total_minutes"] += log.duration_minutes
+-        by_instrument[iid]["ratings"].append(log.self_rating)
++        by_instrument[iid]["weighted_rating_sum"] += log.self_rating * log.duration_minutes
+ 
+     result_data = {}
+     for iid, data in by_instrument.items():
++        avg_rating = (
++            data["weighted_rating_sum"] / data["total_minutes"]
++            if data["total_minutes"] > 0
++            else 0.0
++        )
+         result_data[iid] = {
+             "sessions": data["sessions"],
+             "total_minutes": data["total_minutes"],
+-            "average_rating": round(sum(data["ratings"]) / len(data["ratings"]), 2),
++            "average_rating": round(avg_rating, 2),
+         }
+ 
+     return {"student_id": student_id, "by_instrument": result_data}
+diff --git a/tests/test_prompt5.py b/tests/test_prompt5.py
+new file mode 100644
+index 0000000..d7681a7
+--- /dev/null
++++ b/tests/test_prompt5.py
+@@ -0,0 +1,178 @@
++from __future__ import annotations
++
++import datetime
++
++import pytest
++from httpx import AsyncClient
++
++from tests.conftest import api_key_header, register_user
++
++
++async def create_instrument(client: AsyncClient, api_key: str, name: str = "Piano") -> dict:
++    resp = await client.post(
++        "/instruments",
++        json={
++            "instrument_name": name,
++            "category": "keyboard",
++            "lesson_type": "private",
++            "levels": ["beginner"],
++            "duration_minutes": 60,
++            "price_per_session": 50.0,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def create_log(
++    client: AsyncClient,
++    api_key: str,
++    student_id: str,
++    instrument_id: str,
++    duration: int,
++    rating: int,
++    date: datetime.date | None = None,
++) -> dict:
++    if date is None:
++        date = datetime.date.today()
++    resp = await client.post(
++        "/practice-logs",
++        json={
++            "student_id": student_id,
++            "instrument_id": instrument_id,
++            "practice_date": date.isoformat(),
++            "duration_minutes": duration,
++            "self_rating": rating,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def test_summary_weighted_average_rating(client: AsyncClient):
++    staff = await register_user(client, "staff_ws1", "staff_ws1@test.com", "pass", "staff")
++    student = await register_user(client, "stud_ws1", "stud_ws1@test.com", "pass", "student")
++    inst = await create_instrument(client, staff["api_key"], "Guitar")
++
++    await create_log(client, student["api_key"], student["id"], inst["id"], 30, 2)
++    await create_log(client, student["api_key"], student["id"], inst["id"], 60, 5)
++
++    resp = await client.get(
++        "/practice-logs/stats/summary",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++    expected = (2 * 30 + 5 * 60) / (30 + 60)
++    assert data["average_rating"] == round(expected, 2)
++
++
++async def test_summary_weighted_average_with_zero_duration(client: AsyncClient):
++    staff = await register_user(client, "staff_ws2", "staff_ws2@test.com", "pass", "staff")
++    student = await register_user(client, "stud_ws2", "stud_ws2@test.com", "pass", "student")
++    inst = await create_instrument(client, staff["api_key"], "Violin")
++
++    await create_log(client, student["api_key"], student["id"], inst["id"], 0, 3)
++    await create_log(client, student["api_key"], student["id"], inst["id"], 0, 4)
++
++    resp = await client.get(
++        "/practice-logs/stats/summary",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++    assert data["average_rating"] == 0.0
++
++
++async def test_summary_weighted_average_mixed_zero_duration(client: AsyncClient):
++    staff = await register_user(client, "staff_ws3", "staff_ws3@test.com", "pass", "staff")
++    student = await register_user(client, "stud_ws3", "stud_ws3@test.com", "pass", "student")
++    inst = await create_instrument(client, staff["api_key"], "Cello")
++
++    await create_log(client, student["api_key"], student["id"], inst["id"], 0, 1)
++    await create_log(client, student["api_key"], student["id"], inst["id"], 60, 4)
++
++    resp = await client.get(
++        "/practice-logs/stats/summary",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++    expected = (1 * 0 + 4 * 60) / (0 + 60)
++    assert data["average_rating"] == round(expected, 2)
++
++
++async def test_summary_no_logs_returns_zero(client: AsyncClient):
++    student = await register_user(client, "stud_ws4", "stud_ws4@test.com", "pass", "student")
++
++    resp = await client.get(
++        "/practice-logs/stats/summary",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++    assert data["average_rating"] == 0.0
++    assert data["total_sessions"] == 0
++
++
++async def test_by_instrument_weighted_average(client: AsyncClient):
++    staff = await register_user(client, "staff_wi1", "staff_wi1@test.com", "pass", "staff")
++    student = await register_user(client, "stud_wi1", "stud_wi1@test.com", "pass", "student")
++    inst1 = await create_instrument(client, staff["api_key"], "Flute")
++    inst2 = await create_instrument(client, staff["api_key"], "Drums")
++
++    await create_log(client, student["api_key"], student["id"], inst1["id"], 20, 3)
++    await create_log(client, student["api_key"], student["id"], inst1["id"], 40, 5)
++    await create_log(client, student["api_key"], student["id"], inst2["id"], 60, 2)
++
++    resp = await client.get(
++        f"/practice-logs/stats/by-instrument?student_id={student['id']}",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++
++    inst1_expected = (3 * 20 + 5 * 40) / (20 + 40)
++    assert data["by_instrument"][inst1["id"]]["average_rating"] == round(inst1_expected, 2)
++
++    inst2_expected = 2.0
++    assert data["by_instrument"][inst2["id"]]["average_rating"] == round(inst2_expected, 2)
++
++
++async def test_by_instrument_zero_duration_returns_zero(client: AsyncClient):
++    staff = await register_user(client, "staff_wi2", "staff_wi2@test.com", "pass", "staff")
++    student = await register_user(client, "stud_wi2", "stud_wi2@test.com", "pass", "student")
++    inst = await create_instrument(client, staff["api_key"], "Harp")
++
++    await create_log(client, student["api_key"], student["id"], inst["id"], 0, 4)
++
++    resp = await client.get(
++        f"/practice-logs/stats/by-instrument?student_id={student['id']}",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++    assert data["by_instrument"][inst["id"]]["average_rating"] == 0.0
++
++
++async def test_weighted_differs_from_simple_average(client: AsyncClient):
++    staff = await register_user(client, "staff_wd", "staff_wd@test.com", "pass", "staff")
++    student = await register_user(client, "stud_wd", "stud_wd@test.com", "pass", "student")
++    inst = await create_instrument(client, staff["api_key"], "Trumpet")
++
++    await create_log(client, student["api_key"], student["id"], inst["id"], 10, 1)
++    await create_log(client, student["api_key"], student["id"], inst["id"], 90, 5)
++
++    resp = await client.get(
++        "/practice-logs/stats/summary",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++
++    simple_avg = (1 + 5) / 2
++    weighted_avg = (1 * 10 + 5 * 90) / (10 + 90)
++    assert data["average_rating"] == round(weighted_avg, 2)
++    assert data["average_rating"] != round(simple_avg, 2)

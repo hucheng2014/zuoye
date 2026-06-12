@@ -1,0 +1,19 @@
+{
+  "name": "codex-labelx-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browser:start": "node browser_start.js",
+    "browser:check": "node check_browser.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@playwright/mcp": "^0.0.38",
+    "playwright-core": "^1.59.1"
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "task_type": "AD",
+  "display_name": "Search Ads Relevance",
+  "version": "1.0.0",
+  "source_files": [
+    "AD/Search Ads.md",
+    "AD/AD_RATING_SOP.md",
+    "AD/Rating Search Ad Relevance.md",
+    "AD/GPT_MINI_AD_PROMPT.md"
+  ],
+  "compact_sop": "compact_sop.md",
+  "flow": "flow.md",
+  "chunks": [
+    {
+      "id": "excellent",
+      "file": "chunks/excellent.md",
+      "title": "Excellent Rating",
+      "description": "Strong relationship, most likely to interest user. Exact/near-exact match, developer match, direct competitors, core functionality match.",
+      "keywords": [
+        "excellent",
+        "exact match",
+        "developer match",
+        "direct competitor",
+        "core functionality",
+        "strong relationship",
+        "most likely"
+      ],
+      "priority": 1,
+      "size_bytes": 2565
+    },
+    {
+      "id": "good",
+      "file": "chunks/good.md",
+      "title": "Good Rating",
+      "description": "Some relation, quite likely to interest but others more compelling. Close functionality, accessory/add-on, same ecosystem.",
+      "keywords": [
+        "good",
+        "some relation",
+        "close functionality",
+        "accessory",
+        "add-on",
+        "same ecosystem",
+        "quite likely"
+      ],
+      "priority": 1,
+      "size_bytes": 3063
+    },
+    {
+      "id": "acceptable",
+      "file": "chunks/acceptable.md",
+      "title": "Acceptable Rating",
+      "description": "Slight relation, user not surprised but not likely interested. Same broad category, same developer different theme, not in locale.",
+      "keywords": [
+        "acceptable",
+        "slight relation",
+        "broad category",
+        "different needs",
+        "unavailable",
+        "locale",
+        "same developer"
+      ],
+      "priority": 1,
+      "size_bytes": 2977
+    },
+    {
+      "id": "bad",
+      "file": "chunks/bad.md",
+      "title": "Bad Rating",
+      "description": "No relation, would surprise user. Mandatory comment. Surface word overlap pitfall, context mismatch.",
+      "keywords": [
+        "bad",
+        "no relation",
+        "surprise",
+        "mandatory comment",
+        "surface overlap",
+        "word overlap",
+        "context mismatch",
+        "unrelated"
+      ],
+      "priority": 1,
+      "size_bytes": 3232
+    },
+    {
+      "id": "games",
+      "file": "chunks/games.md",
+      "title": "Game-Specific Evaluation",
+      "description": "Three dimensions for games: play style, presentation/theme, audience. Game IP matching, competitor evaluation.",
+      "keywords": [
+        "game",
+        "play style",
+        "theme",
+        "audience",
+        "IP",
+        "competitor",
+        "genre",
+        "puzzle",
+        "RPG",
+        "FPS",
+        "casual"
+      ],
+      "priority": 2,
+      "size_bytes": 3550
+    },
+    {
+      "id": "special_rules",
+      "file": "chunks/special_rules.md",
+      "title": "Special Rules & Exceptions",
+      "description": "Do not penalize for reviews/price/descriptions. Unavailable apps. Developer matching. Direct competitors. Context and locale knowledge.",
+      "keywords": [
+        "special rules",
+        "reviews",
+        "price",
+        "description",
+        "unavailable",
+        "developer",
+        "competitor",
+        "context",
+        "locale"
+      ],
+      "priority": 1,
+      "size_bytes": 3006
+    },
+    {
+      "id": "comments",
+      "file": "chunks/comments.md",
+      "title": "Comment Requirements",
+      "description": "Mandatory comments for Bad ratings. Comment structure template. Pre-submission checklist. Never mix query/app across questions.",
+      "keywords": [
+        "comment",
+        "mandatory",
+        "bad rating",
+        "structure",
+        "template",
+        "checklist",
+        "pre-submission",
+        "query intent",
+        "app function"
+      ],
+      "priority": 1,
+      "size_bytes": 3106
+    },
+    {
+      "id": "locale_context",
+      "file": "chunks/locale_context.md",
+      "title": "Locale & Context Knowledge",
+      "description": "How locale affects interpretation. BBC example. Abbreviation and local service code research. App Store market differences.",
+      "keywords": [
+        "locale",
+        "context",
+        "BBC",
+        "abbreviation",
+        "local service",
+        "12315",
+        "market",
+        "App Store",
+        "research",
+        "brand"
+      ],
+      "priority": 2,
+      "size_bytes": 3405
+    }
+  ]
+}

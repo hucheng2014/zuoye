@@ -1,0 +1,539 @@
+--- Page 1 ---
+ 
+1 
+ 
+Disclaimer for all Participants 
+ 
+Zero Tolerance for Breaches. As part of Centific, you are trusted with sensitive customer 
+information. Any violation of confidentiality will result in severe consequences, including 
+legal action. 
+ 
+ABSOLUTE DON’TS (STRICTLY PROHIBITED) 
+NO Screen Recording or Screenshots – Capturing training 
+material in any form is forbidden 
+ 
+NO Sharing on Public Platforms or Social 
+NO Discussing Confidential Information with Anyone 
+NO Modifying or Reproducing Training Content 
+ 
+Centific InfoSec Internal 
+DO’S 
+Understand & Follow NDA Instructions – You are 
+legally bound by the NDA; ensure full compliance at 
+all times 
+Follow Centific’s Security Policies 
+Access Training Only on Secure Networks 
+Use Only Approved & Secure Devices
+--- Page 2 ---
+ 
+ 
+ 
+  
+Feedback 
+Contents 
+ar_AE .............................................................................................................................. 3 
+Other Examples .............................................................................................................. 8 
+ 
+*Hold Ctrl and click on a section name to take you directly to the section 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 3 ---
+ 
+ 
+ar_AE 
+1. Please always be extra careful when you come across any formatting/length restrictions in the request. As in the example below, if the 
+format is not followed (three paragraphs), then the instructions should be marked as Partially Following. The same goes for Concision – 
+In the example, it can only be ‘Acceptable’, as it could have been longer (because of the paragraphs, and the word limit was 150 while 
+the response was around 70). 
+Example 1: 
+ 
+ 
+Example 2: Concision is also only ‘Acceptable’ here, since it is far too short and fails to deliver part of the main message, the strong feelings. This 
+tone which lacks feeling however should not be marked in Localization, as it’s not related to language specifics – this is an instruction that was 
+not followed. 
+ 
+
+--- Page 4 ---
+ 
+ 
+ 
+2. Please note that when the user requests the response to be in a specific dialect (in this case, in Emirati instead of the classic variant), not 
+completing this should be reflected in both Instruction Following (‘Partially Following’) and Localization (‘Issues present > Yes’). 
+ 
+ 
+3. Similarly, in the example below, the response failed to follow all instructions (the numbered points), and the Concision should be marked 
+as ‘Acceptable’, since it includes some information that isn’t necessary/asked for (the ‘5% …’ part for example). 
+ 
+
+--- Page 5 ---
+ 
+ 
+ 
+4. In cases like below, where the request is only partially addressed, it should be marked as Partially Following Instructions, since the 
+topic/point is the same, but the email itself is not completely written. And the Concision should be marked as Acceptable, since this is 
+well below the requested 100 word limit. 
+ 
+ 
+5. Please keep careful track of the Arabic variant that is request and used. In the case below, despite the locale being ar_ae, and the user 
+mentioning they are indeed in the UAE (their university), the incorrect variant is used. 
+Example 1: 
+
+--- Page 6 ---
+ 
+ 
+ 
+ 
+
+--- Page 7 ---
+ 
+ 
+Example 2:  
+6. Please carefully distinguish between when the instructions are Partially Followed, and Not followed. In the case below, the main point of 
+the request is missed as this response is lacking all information requested by the user, except the initial beginning line. 
+The Concision here is also only Acceptable, since it could have been a lot longer and included the important information requested. 
+
+--- Page 8 ---
+ 
+ 
+ 
+ 
+General: 
+Concision: Please keep in mind any mentioned word limits when grading the Concision dimension. If the response is well over, or well below, the 
+requested word limit, then Concision cannot be graded as ‘Good’. And please remember that Concision is not just related to keeping the 
+response short: if the response is short but fails to include the main point requested, or includes trivial detail but is within the wordcount limit, it 
+cannot be graded as ‘Good’ either. 
+Localization and Instruction Following: As mentioned in several examples, please keep track of the requested dialect (if any). And if this is not 
+followed, make sure it’s reflected in the grading for Instruction Following, and Localization. 
+Instruction following: Please keep a clear distinction between the main and secondary parts of the instructions. If the main instruction is not 
+followed, then it should be graded as ‘Not Following’ instructions, whereas not following more minor instructions should result in a ‘Partially 
+Following’ instructions grading. 
+Comment: Please do NOT use AI/LLMs to analyze the tasks and copy/paste their comments. This is strictly forbidden based on the project rules 
+and NDA signed. 
+Other Examples 
+1. In the below example the response features Localization issues, as there is information related to another locale & the wording in the 
+response lacks fluency expected of a native speaker: 
+Example 1 (has Localization issues related to Unlocalized information and Awkward or unnatural wording): 
+
+--- Page 9 ---
+ 
+ 
+ 
+ 
+2. When it comes to Satisfaction, please keep in mind that even though both responses can have no issues found, and have the same 
+individual satisfaction rating, one response can still be Slightly Better than the other. In the example below, Response B is still Slightly 
+better because it is less wordy and more to the point: 
+
+--- Page 10 ---
+ 
+ 
+ 
+3. Please be careful with the Truthfulness and Instruction Following categories, and do not mix them up. In the example below, both 
+responses fully follow the instructions, though Response A is only Partially Truthful since the marked Kdramas have incorrect names. 
+
+--- Page 11 ---
+ 
+ 
+…. 
+ 
+4. Please note the difference between the tone the user requested (friendly f.eks) and tone that is incorrect in regards to bad localization. In 
+the example below, the tone used is correct linguistically, it just doesn’t fit the instruction to use a warm tone between two old friends. 
+
+--- Page 12 ---
+ 
+ 
+ 
+ 
+
+--- Page 13 ---
+ 
+ 
+5. Please also keep in mind the Satisfaction preference ranking. In the example below, the requested table format is not clearly followed in 
+Response B, and it missed to include information about private/public hospitals, which makes Response B ‘Better’, not just ‘Slightly 
+Better’ or ‘Same’. 
+ 
+
+--- Page 14 ---
+ 
+ 
+ 
+6. Keep track of the instructions stated in the request; if the requested format is not followed, then Instructions are Partially Followed for 
+the response. (Example below, the user requested bullet points, but the response features a numbered list): 
+ 
+
+--- Page 15 ---
+ 
+ 
+7. Please carefully note the below example. The request was denied and the Concision is rated as Good. There were no length restrictions 
+mentioned in the request, and the decline is on topic, i.e. there are no distractions (the topic of the sad love story is noted when 
+explaining it cannot be written). So these are factors taken into account in this Decline when it comes to Concision. 
+ 
+General: 
+Localization: Please carefully consider the main criteria for what makes an issue a Localizations issue, i.e. if the issue would make the user 
+question if the model were designed specifically for their locale. So not all language related errors should be marked here (typos should be 
+marked here only if it is a spelling that is incorrect for the locale, not a general typo that’s incorrect in any locale). 
+Also be careful with the tone used: if the user requested a friendly tone which the response failed to use (but it still used natural sounding formal 
+tone for example), then this should be marked in the Instruction Following dimension, as it’s not related to Localization, but to not following the 
+instruction on which tone to use. 
+Satisfaction: Please keep in mind that even though both responses can have the same Highly Satisfactory rating, one response can still be Slightly 
+Better than the other; just make sure to explain your reasoning in the comment. 
+Similarly, if you have two differently rated responses, where one response is noticeably better (follows instructions more fully, addresses more of 
+the user’s request, etc), please select ‘Better’ instead of just ‘Slightly Better’, as we’ve noted a strong tendency to do this. 
+Truthfulness and Instruction Following: Please do your best to rate these two dimensions separately, as we’ve noticed there is still a tendency to 
+confuse the two. Instructions can be fully followed, like providing requested information. If the requested information is incorrect, this has no 
+effect on the Instruction Following, but on Truthfulness. There were several examples where requests included instructions related to formatting 
+
+--- Page 16 ---
+ 
+ 
+as well (bullet points, numbered lists, etc). If this kind of secondary instruction is not followed, then the response should be marked as ‘Partially 
+Following Instructions’. 
+Comment: Please do NOT use AI/LLMs to analyze the tasks and copy/paste their comments. This is strictly forbidden based on the project rules 
+and NDA signed. 
+ 
+1. Please carefully consider the Localization category. If the requested style is not related to locale specifics, but to the tone the user 
+(implicitly/explicitly) requested, then this shouldn’t be counted as a Localization issue. In the below example, the response is correct in 
+regards to language, but it failed to follow the instruction related to the use of a humorous tone, suitable for a younger audience. 
+ 
+
+--- Page 17 ---
+ 
+ 
+ 
+2. Regarding Instruction Following and Concision, please take careful note of the below example. While the Concision is very clearly Bad, 
+the response also misses to follow the main points of the instructions: length, tone, repetitiveness etc, so it should be marked as ‘Not 
+Following instructions’. 
+
+--- Page 18 ---
+ 
+ 
+ 
+
+--- Page 19 ---
+ 
+ 
+ 
+3. The response below addresses the user’s request, and attempts to play the role, so the instruction is Fully followed. However, the ‘facts’ 
+stated are not correct. This is not related to the issue of locale/localization, but to Truthfulness, so the response should be graded as 
+Partially Truthful. The Concision was also marked as Acceptable, since the reply could have been longer and more informative apart from 
+listing the names. 
+ 
+ 
+
+--- Page 20 ---
+ 
+ 
+For this example please also consider the differences in Satisfaction Rating. While it is clear that Response B is preferable, Response A also 
+actually addresses the request and fulfils it while remaining safe and somewhat concise. So the difference in ranking should be set as ‘Better’, 
+since the ‘Much Better’ rating should be reserved for cases where one response safely addresses the user request and the other does not. 
+ 
+Example 2: Whereas here, we have a case of Not following the instructions, since the Response has not performed in the role as requested by the 
+user. 
+ 
+ 
+
+--- Page 21 ---
+ 
+ 
+Example 3: In cases where the main instruction, to take on the role and reply in the role, is followed, but the secondary instruction related to 
+content isn’t quite fulfilled (local authority’s communication doesn’t seem to be fully/well applied here). 
+ 
+ 
+4. A reminder to please cross check all ‘facts’ mentioned in the responses, and appropriately mark the Truthfulness category. In the 
+example below, it should be marked as ‘Not truthful’, since the ‘fact’ mentioned is incorrect. 
+ 
+ 
+General: 
+Localization: Please carefully consider the main criteria for what makes an issue a Localizations issue, i.e. if the issue would make the user 
+question if the model were designed specifically for their locale. Also be careful with the tone used: if the user requested a friendly/humorous 
+
+--- Page 22 ---
+ 
+ 
+tone which the response failed to use (but it still used natural sounding formal tone, that doesn’t sound translated, for example), then this should 
+be marked in the Instruction Following dimension, as it’s not related to Localization, but to not following the instruction on what kind of tone to 
+use. 
+Truthfulness and Instruction Following: Please do your best to rate these two dimensions separately, as we’ve noticed there is still a tendency to 
+confuse the two. Instructions can be fully followed, like providing the requested information. If the provided information is incorrect, this has no 
+effect on the Instruction Following, but on Truthfulness.  
+Instructions Followed: When we have a prompt asking the assistant to play a role, then this will likely be the main instruction to be considered. 
+So if the response doesn’t take this into account, then instructions should be ‘Not Followed’. 
+Truthfulness: A kind reminder to cross check any facts appearing in the response, as there were several examples where this wasn’t done 
+appropriately. 
+Satisfaction: When it comes to the Satisfaction Preference ranking, please keep in mind that the ‘Much Better’ rating should be reserved for 
+cases where one response safely addresses the user request and the other does not. 
+Concision: Please remember that Concision is not just related to keeping the response short: if the response is short but fails to include the main 
+point requested, or includes trivial detail but is within the wordcount limit, it cannot be graded as Good. 
+Comment: Please do NOT use AI/LLMs to analyze the tasks and copy/paste their comments. This is strictly forbidden based on the project rules 
+and NDA signed. 
+ 
+1. When assigning a Preference Satisfaction rating, please keep in mind that 
+the ‘Much Better’ rating should be reserved for cases where one response safely addresses the user request and the other does not. So 
+in the example below we have a case where the responses both address the request. 
+ 
+
+--- Page 23 ---
+ 
+ 
+ 
+2. In the example below, while the main instruction to extract information from the text, and stay within the word limit, is followed, the 
+Response has failed to follow the instruction about formatting the text in bullet points. So here ‘Partially Following’ instructions should 
+be selected. 
+Please also note that missing the happy tone requested in the response does not count as a Localization issue, as it’s unrelated to the 
+locale specifics, it is rather not following the instruction for tone. 
+ 
+ 
+
+--- Page 24 ---
+ 
+ 
+3. Please find below an example of when Tone is considered a Localization issue: 
+The response misuses the pronouns "em" and "anh" when addressing the user and his girlfriend, which is not appropriate in the Vietnamese 
+context. It should be revised to use "anh" and "em" instead, for a more natural and culturally accurate flow. 
+ 
+ 
+
+--- Page 25 ---
+ 
+ 
+ 
+4. A reminder on the following instruction from the Guidelines: Example: If 200 words are requested but a 500 word response is generated, 
+this is "Not following" the instruction. In the response below, apart from the requested length being exceeded by a lot, as in the 
+instruction above, several other important instructions are not followed: the optimistic/happy tone, the separation into 3 paragraphs, 
+etc. So here the option selected should be Not Following instructions. 
+ 
+
+--- Page 26 ---
+ 
+ 
+(the poem continues for 20 more lines) 
+
+--- Page 27 ---
+ 
+ 
+5. In cases where you come across some words in a different language, please select ‘Wrong Language’ and explain in the comment what 
+the issue is. (Example of the comment for the below Localization issue: The response suggests using a "cây thông nhân tạo" (artificial 
+Christmas tree), which is not culturally relevant to the Vietnamese Lunar New Year. Additionally, the use of English terms like "handmade" 
+and "quilling" is not appropriate for the Vietnamese context and should be translated as "thủ công" and "giấy cuộn nghệ thuật" 
+respectively.) 
+ 
+ 
+General: 
+Satisfaction: When it comes to the Satisfaction Preference ranking, please keep in mind that the ‘Much Better’ rating should be reserved for 
+cases where one response safely addresses the user request and the other does not. 
+Instruction following: Please keep a clear distinction between the main and secondary parts of the instructions. Things like formatting will likely 
+be secondary instructions, so missing this in the response should be graded as ‘Partially Following’. 
+
+--- Page 28 ---
+ 
+ 
+Localization: Please carefully consider the Tone and how/if it was misused: whether it was an instruction about using a friendly/formal tone, or if 
+the tone is not culturally accurate for instance, in which case it would be considered a Localization issue. 
+Comment: Please do NOT use AI/LLMs to analyze the tasks and copy/paste their comments. This is strictly forbidden based on the project rules 
+and NDA signed. We have observed that some people are using LLMs for their work. 
+ 
+1. Please keep in mind that Following Instructions and Truthfulness are two separate categories to be assessed. In the example below, the 
+instruction was to explain in 2-3 sentences what the acronym means, and this instruction is fully followed, so it should be marked as 
+‘Fully following’ instructions. The provided information however is incorrect, so this should be reflected in Truthfulness, by marking it as 
+‘Not truthful’. 
+Example 1: 
+ 
+ 
+Example 2 (It's true that the response is incorrect But it does indeed follow the instructions. The user asks where should they go - the assistant 
+responds and meets the instruction.): 
+ 
+
+--- Page 29 ---
+ 
+ 
+ 
+2. In the below example, note that the Instructions are only ‘Partially Followed’. This is because one minor part of the instructions isn’t 
+really well executed, i.e. the required emphasis on Moses’ feelings. The response also features unnatural language as well as grammar 
+issues, so this should be marked in the ‘Localization > Yes (issues present)’. (reasoning: Awkward or unnatural writing- העם שנרדם בעבודה 
+קשה ,התחושה של ניצחון וגאולה מתחילה לעצור ביgrammar- אבל אז באה הרגע המרגש. ) 
+Example 1: 
+ 
+ 
+Example 2 (here, the instruction for the requested tone is not really followed, as this is not the best option for writing it in simple and interesting 
+language that is suitable for children like the user asked, so it’s not suitable for 6th-grade students. So here the Instructions are only ‘Partially 
+Followed’):  
+
+--- Page 30 ---
+ 
+ 
+ 
+ 
+3. A reminder to please be careful with spelling errors: According to the Guidelines, a typo which is a typo in any dialect/variant, should not 
+be marked as a Localization issue, as this is not related to the locale or the way the text was localized, only to the language. So in this 
+Localization category, we should select spelling only when we notice that the spelling of a word belongs to a locale different than the 
+(user’s) requested one. The same goes for Grammar errors: A grammar error that would be an error in any locale is then not related to 
+localization. Please check the example below: 
+
+--- Page 31 ---
+ 
+ 
+ 
+Here the Instructions are Fully followed (in four separate lists, with bullet points, to extract information from the poem). Truthfulness however 
+should be marked as Partially Truthful, because the information extracted is not correct. (more detailed explanation: there are words that are not 
+appear in the poem, it has a lot of mistakes and incorrect sorting of verbs tenses: 
+past- כתב ,למד ,כיסה does not exist in the text. אהבת missing from list. 
+present- אלך ,אגור ,יתכסה belongs to the future tense. כואב is missing. 
+future- יכסה is wrong and does not appear in the poem. אלך ,אלמד ,אגור ,נתכסה ,יתכסה are missing. 
+
+--- Page 32 ---
+ 
+ 
+words that express love- אהבת is missing from list.) 
+4. Regarding Concision, when you come across distractions in the text, i.e. information that is not really relevant and omitting it would have 
+made the response clearer and more to the point, you should select that the ‘Response could have been made shorter’. This is because 
+Concision is not just about keeping the text short, but it should include information relevant to the request. 
+In the below example, the Concision is Acceptable, and the reasoning is that some dishes are confusing (e.g., “פילה בטטה ”is not clear; 
+"דג'סטיבand could distract the user from the relevant information. 
+ 
+ 
+General: 
+Truthfulness and Instruction Following: Please do your best to rate these two dimensions separately, as we’ve noticed there is still a tendency to 
+confuse the two. Instructions can be fully followed, like providing the requested information. If the requested information is incorrect, this has no 
+effect on the Instruction Following, but on Truthfulness. 
+
+--- Page 33 ---
+ 
+ 
+Instruction Following: When working on a task, please always take a moment to consider all the instructions mentioned, both explicit and 
+implicit. This includes a specific tone requested, or in more simple/complex language, etc. If these are missed, then ‘Partially Followed’ should be 
+selected. 
+Satisfaction: As illustrated in the examples, when assigning a Preference Satisfaction rating, please keep in mind that the ‘Much Better’ rating 
+should be reserved for cases where one response safely addresses the user request and the other does not. So if the request is safely addressed 
+in both responses, but one has clearly done this better, then please select the ‘Better’ or ‘Slightly Better’ ranking. 
+Please also remember that the factors that most affect Satisfaction are Harmlessness and Truthfulness. So “Harmless” (not harmful) AND 
+“Truthful” responses are more important than the other dimensions considered. 
+Concision: Please remember that Concision is not just about keeping the text short, but it should also take into account the inclusion of 
+information relevant to the request. If important information was omitted, then you shouldn’t select that Concision is ‘Good’. 
+Comment: Please do NOT use AI/LLMs to analyze the tasks and copy/paste their comments. This is strictly forbidden based on the project rules 
+and NDA signed. 
+ 
+1. The response below is considered to be Fully Following the instructions given that it provides the expected summary within the word 
+limitation. However, concision is considered to be Acceptable based on the length restriction given, since the response could have been 
+made longer (most people got this wrong). As the other dimensions were fine, this would make the response Slightly Satisfying, and most 
+of you were split on this dimension. 
+--- Page 34 ---
+ 
+ 
+ 
+ 
+Response B on the other hand fully satisfies the user requests and dimensions, and while most of you have given the highest grades on 
+the dimensions, the vast majority of the scores on Satisfaction were ‘Slightly Satisfying’. This would have been a highly satisfying 
+response. The same applies to Response C. 
+ 
+ 
+2. Based on the request, Instruction Following would be marked as ‘Partially Following’ as not all instructions were followed. Additionally, 
+the text contains some localization issues that most people did not catch. It uses "ourselves" in English, and phrases like "我為自己直覺
+令你失望而感到抱歉", which is awkward and not idiomatic in Cantonese. 
+
+--- Page 35 ---
+ 
+ 
+ 
+ 
+3. Prompt was about Wong Kar-Kai’s classic films and filming techniques, while response A failed to follow instructions (and most evaluated 
+it correctly), response B did list 5 films with some descriptions but did not really capture filming techniques and it should be Partially 
+Following, while most graded it as Fully Following. It’s important to really understand what explicit/implicit requests and verify these are 
+captured in the response. Similarly, part of the response B contained some inaccuracies and it’s Partially Truthful. For these type of 
+responses it’s important that you spend some time researching and evaluating the facts mentioned (eg. film name, year of release 
+mentioned, description details, etc.). Never make any assumptions. 
+ 
+
+--- Page 36 ---
+ 
+ 
+ 
+ 
+ 
+
+--- Page 37 ---
+ 
+ 
+ 
+ 
+ 
+4. All dimensions need to be evaluated individually, taking into consideration all prompt requirements, context and dimension rules. When 
+you receive a response as the one below, it’s important to verify the info provided and not to evaluate on a ‘high-level’ or on 
+assumptions. This is not a truthful response because the address is not correct. 
+ 
+ 
+ 
+General: 
+Satisfaction: There seems to be a tendency to lower Satisfaction rating for an individual response even when all dimensions were evaluated 
+highly. You should not be doing this and this is continuously happening. 
+If you evaluated a response as truthful, harmless, fully following, concise and no localization issues – the satisfaction would be Highly 
+Satisfying. Satisfaction is downgraded once the dimension scores are lowered. 
+Similarly, when doing SBS rankings, refer to your evaluations to determine which one is better. Responses with the same satisfaction can be 
+either “Same” or “Slightly Better”. 
+Following Instruction: Pay attention to both explicit and implicit instructions. Failing to follow instructions on some responses is a common 
+error that causes the model to deviate a bit from the objective. People tend to miss capturing these issues. 
+Localization: Pay attention to awkward writing for your locale, text that sounds unnatural and would need to be penalized. Also, pay 
+attention to character use and whether it corresponds to what’s being used in HK and not Mainland. Eg: 
+It should be "你哋" instead of "你地" in standard Hong Kong Cantonese, but this is not a major localization issue. 
+
+--- Page 38 ---
+ 
+ 
+"尊敬的" is not typical in Hong Kong Cantonese formal letters, as it feels like a direct translation from Mandarin or English. 
+Concision: You also have to consider the distractions in the response. It’s not only about the explicit length instructions. If the request is 
+specific to some details and planning, omitting those details and providing a short reply would also be considered a concision issue (i.e. it 
+could have been made longer to include the important details). 
+Truthfulness: Always verify or fact-check the information provided. If the primary information is not truthful, fail the dimension. If secondary 
+information or additional details are wrong, it’s partially truthful. 
+Comments: Please do NOT use AI/LLMs to analyze the tasks and copy/paste their comments. This is strictly forbidden based on the project 
+rules and NDA signed. We have observed that some people are using LLMs for their work. 
+ 
+1. This is a chatbot type of request where the model is supposed to assume the role and “play along”. However, the model does not assume 
+the role but assumes that the user is the one who is taking the role. This is not following instructions as it is the main part of the request, 
+yet close to half of you graded this as Partially and even Fully Following. 
+ 
+ 
+2. Make sure to always verify the information from the responses, particularly if it’s data that can be researched, fact-checked, etc. (i.e. not 
+a creative story). Primary information that is wrong would deem the response Not Truthful. Secondary information or additional details 
+that are wrong would be Partially Truthful. Most people failed to check the secondary information in the response below. Response B 
+and C were also Partially Truthful and most have caught on this, but missed it on Response A below. 
+
+--- Page 39 ---
+ 
+ 
+ 
+ 
+3. The response below contains an obvious localization issue (聯邦準備system), yet the majority have marked this response as “No 
+Localization issues”. For response B of the same task, we have a different category localization issue. “美聯儲利率決策” is used where “
+美聯儲” is a mainland China term, it should be use "聯準會利率決策". This was missed by almost everyone. 
+ 
+ 
+
+--- Page 40 ---
+ 
+ 
+4. Explicit length requests need to be carefully checked and errors in evaluation should not be happening in such cases. Many have missed 
+to downgrade Concision on the below two responses, as the responses are longer than requested. 
+In other scenarios, you have to consider the implicit instruction (eg. “briefly describe” or “in detail”) and the distractions. These are 
+easier to miss compared to explicit instructions but something that is carefully checked by the QAers. 
+ 
+General: 
+Following Instructions: Pay attention to both explicit and implicit instructions, most responses follow the main instructions but fail to address 
+some minor aspects of the request, such as omitting small requested details, misinterpreting subtle instructions, or missing key elements. 
+Truthfulness: However, some secondary information such as elaborative or contextual points contains inaccuracies or unsupported claims. 
+Concision: Keep in mind that concision is not only about length expectations, but also includes distractions or too long/short responses. If the 
+request is specific to some details and planning, omitting those details and providing a short reply would also be considered a concision issue (i.e. 
+it could have been made longer to include the important details). 
+Localization Pay attention to awkward/unnatural writings for your locale. Issues where wrong characters may have been used or the response 
+was not localized enough. Some issues occasionally found include wrong language, vocabulary, awkward or unnatural writing (especially for the 
+task where phrases/idioms were requested). 
+Satisfaction: Remember that if you graded all dimensions as good, satisfaction can only be Highly Satisfying. The moment you downgrade a 
+dimension, satisfaction goes down as well. For SBS, responses with the same satisfaction rating can be either “same” or “slightly better”. 
+Determine this based on the individual dimension ratings for each, keeping in mind that Harmlessness and Truthfulness have priority. 
+Comments: Please do NOT use AI/LLMs to analyze the tasks and copy/paste their comments. This is strictly forbidden based on the project rules 
+and NDA signed. 
+ 
+As always, if any questions, please don’t hesitate to reach out! 

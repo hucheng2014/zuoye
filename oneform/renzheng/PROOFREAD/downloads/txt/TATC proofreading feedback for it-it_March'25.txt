@@ -1,0 +1,69 @@
+Dear Lighthouse Annotators,
+Before taking the TA Proofreading certification, please carefully review the following
+feedback and key clarifications. These points highlight common issues observed in
+previous attempts and must be taken into account before taking the certification.
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
+
+There still seems to be a small group of people who don’t understand the scope of
+the proofreading task and are marking complete repeats of the input text as not
+following or partially following.
+When the input text has some errors, a full repeat in the response is fully following
+but BAD composition, and there would be localization issues to report as well.
+Partially fixed content should be labelled as Partially Following and not Fully
+following. This means the composition would also be acceptable at most. And so,
+if a punctuation or capitalization was not fixed, then there would be localization
+issues as well.
+Pay attention to purposely introduced errors — many are quite obvious like
+double-spaces added and articles missing. A response that fixes some, but not
+other issues cannot be considered fully following. Also, sometimes a bit of
+research might be necessary in case you don’t know if Grappel or Grapple is
+correct.
+On the same example, many of you have missed the word reordering and
+change of meaning in the 2nd sentence. And some who noticed it, penalized it
+too harshly.
+Remember that unnecessary changes to the input are downgraded. If the input
+is already correct in grammar, wording, etc. a change in the response would not
+be considered an improvement but instead it would be penalized.
+Remember, a change in style/tone would be failed in Composition as well.
+There was at least one obvious response changing most of the style/tone of the
+input text, and while most of you marked this in following instructions, you failed
+to mark it in Composition.
+For input texts where ``` appears at the start or end of the text, please ignore
+these symbols and the change of the font color and font style. Focus only on
+the text itself and whether the errors are fixed or not.
+Use the satisfaction scale on pg. 64-65 in the guides to determine a response’s
+satisfaction grading.
+Please make sure you fully understand the scope. One of the responses for the
+example below gives a clear indication that half of you still fail to understand
+
+how to evaluate the dimensions. Downgrading a full repeat of the input in both
+following instructions and even groundedness is not correct.
+
+-
+
+-
+
+Example: “Speriamo che troviamo un vestito per questa ragazza” – the two
+responses for this task seem identical at first glance, but there is a tiny issue
+purposely left in one that quite a few missed.
+Remember, Groundedness is about staying true to the input text, even if
+Shawn Mendes did sing Señorita.
+
+Please ensure you review these points carefully before attempting the
+certification.
+
+

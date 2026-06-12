@@ -19,7 +19,7 @@ import uuid
 
 BASE_DIR = Path(__file__).resolve().parent
 EXTENSION_ID = "local.trae-trial-bridge"
-EXTENSION_VERSION = "0.0.1"
+EXTENSION_VERSION = "0.0.3"
 EXTENSION_SOURCE = BASE_DIR / "trae-trial-bridge"
 USER_DATA_DIR = Path(os.environ.get("TRAE_USER_DATA_DIR", "~/.config/Trae CN")).expanduser()
 EXTENSIONS_DIR = Path(os.environ.get("TRAE_EXTENSIONS_DIR", "~/.trae-cn/extensions")).expanduser()
@@ -213,7 +213,7 @@ def cmd_send(args: argparse.Namespace) -> int:
     if args.workspace:
         options["workspaceFolder"] = args.workspace
     payload = {
-        "action": "send",
+        "action": "sendInternal" if args.internal else "send",
         "inputs": [prompt],
         "options": options,
     }
@@ -227,6 +227,48 @@ def cmd_send(args: argparse.Namespace) -> int:
         return 1
     print(sid)
     return 0
+
+
+def cmd_execute_command(args: argparse.Namespace) -> int:
+    if not args.no_install:
+        ensure_installed()
+    try:
+        arguments = json.loads(args.arguments)
+    except Exception as exc:
+        raise SystemExit(f"--arguments must be JSON: {exc}") from exc
+    if not isinstance(arguments, list):
+        raise SystemExit("--arguments must be a JSON list.")
+    payload = {
+        "action": "executeCommand",
+        "command": args.command_id,
+        "arguments": arguments,
+        "attempts": args.attempts,
+    }
+    data = invoke(payload, args.timeout, args.trae_bin)
+    print(json.dumps(data, ensure_ascii=False))
+    return 0 if data.get("ok") else 1
+
+
+def cmd_list_commands(args: argparse.Namespace) -> int:
+    if not args.no_install:
+        ensure_installed()
+    payload = {
+        "action": "listCommands",
+        "includeInternal": args.include_internal,
+        "pattern": args.pattern,
+    }
+    data = invoke(payload, args.timeout, args.trae_bin)
+    print(json.dumps(data, ensure_ascii=False))
+    return 0 if data.get("ok") else 1
+
+
+def cmd_list_language_models(args: argparse.Namespace) -> int:
+    if not args.no_install:
+        ensure_installed()
+    payload = {"action": "listLanguageModels"}
+    data = invoke(payload, args.timeout, args.trae_bin)
+    print(json.dumps(data, ensure_ascii=False))
+    return 0 if data.get("ok") else 1
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -253,9 +295,30 @@ def build_parser() -> argparse.ArgumentParser:
     send_parser.add_argument("--workspace", default="")
     send_parser.add_argument("--agent-name", default="")
     send_parser.add_argument("--new-session", action="store_true")
+    send_parser.add_argument("--internal", action="store_true", help="Use Trae's blocking internal send command.")
     send_parser.add_argument("--timeout", type=int, default=30)
     send_parser.add_argument("--no-install", action="store_true")
     send_parser.set_defaults(func=cmd_send)
+
+    command_parser = sub.add_parser("execute-command", help="Execute a Trae/VS Code command through the bridge.")
+    command_parser.add_argument("command_id")
+    command_parser.add_argument("--arguments", default="[]", help="JSON list of command arguments.")
+    command_parser.add_argument("--attempts", type=int, default=6)
+    command_parser.add_argument("--timeout", type=int, default=20)
+    command_parser.add_argument("--no-install", action="store_true")
+    command_parser.set_defaults(func=cmd_execute_command)
+
+    list_commands_parser = sub.add_parser("list-commands", help="List registered Trae/VS Code commands.")
+    list_commands_parser.add_argument("--pattern", default="", help="Optional regex filter.")
+    list_commands_parser.add_argument("--include-internal", action="store_true")
+    list_commands_parser.add_argument("--timeout", type=int, default=20)
+    list_commands_parser.add_argument("--no-install", action="store_true")
+    list_commands_parser.set_defaults(func=cmd_list_commands)
+
+    list_lm_parser = sub.add_parser("list-language-models", help="List registered VS Code language models.")
+    list_lm_parser.add_argument("--timeout", type=int, default=20)
+    list_lm_parser.add_argument("--no-install", action="store_true")
+    list_lm_parser.set_defaults(func=cmd_list_language_models)
     return parser
 
 

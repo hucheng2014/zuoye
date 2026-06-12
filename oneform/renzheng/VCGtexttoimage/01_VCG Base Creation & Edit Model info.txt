@@ -1,0 +1,85 @@
+                          VCG Base Creation & Edit Model workflow info
+
+     ➢ Watch the recordings provided before starting with the guides.
+     ➢ Use the newly given guidelines as unique and specific guidelines for each of the two workflows.
+       Do not mix them up with previous Image evaluation or ADM guides, i.e. do not use past
+       workflow guides as reference points.
+     ➢ Take your time with the evaluation; do not rush or make assumptions.
+
+
+Base creation:
+   1. Mark an image as blurry if the entire image is blurry, and not if it’s just the background.
+   2. In this workflow, Text Quality is its own dimension. Do not evaluate text quality under Structural
+        integrity.
+   3. If there is text in the image that we can’t read, mark it as Low Quality (irrelevant if it was
+        requested or not). The option “can’t tell” is only if the text was requested by the prompt but not
+        present in the image.
+   4. For “Low poly” output style, pay attention to the details on the image. The subject has to show
+        clear signs of polygons (mostly triangular but also quadrilateral) in order to match the style.
+   5. Photorealism output style means the image should look as if it was captured by a real camera.
+   6. Page 102 says Egyptian style but the image examples are Persian paintings. Page 103 says Benin
+        Bronze but the pictures are also Persian painting. We have made the client aware of this.
+   7. Apparent ethnicity and gender will not be evaluated when there is a single person in the image.
+   8. For apparent ethnicity and gender, if there is even one person (in a group) whose face we cannot
+        see, we should select “can’t determine” for both options. Meaning, if the image has 5 people
+        and we see two are male, two females, but we can’t see the fifth one, it’s “can’t determine”.
+   9. You can click on all images and click the + to expand. Use this to analyze the images carefully,
+        specifically for Structural Integrity issues. Pay particular attention to humans and animals in the
+        images; face features, eyes (gaze), fingers, limb proportions and numbers. Clear face distortions
+        are Severe issues. Be detailed and apply proper criteria. Most obvious issues would not be
+        “minor”.
+   10. Pay attention on Alignment that all elements are properly covered and not partially or missing
+        (e.g. “in a gym” verify that setting does look like a gym).
+
+Edit model:
+    1. Text quality *is* part of Structural Integrity. A spelling mistake can be Noticeable for single word
+       images. Small artifacts in letters (e.g. ‘joy’ from the task) would be considered minor as long as
+       the overall integrity is good and text is understandable/clear.
+    2. On page 37, there is a small piece of text missing. It should read “…reflecting in the output.”
+
+
+
+
+          (continued ↓)
+
+
+
+
+Centific Confiential ©
+     3. On page 64, there is also some part of the text missing. It sould read “…thus not a total failure”.
+
+
+
+
+     4. Some elements related to Visual Quality may also affect Structural integrity (dimension overlap).
+         Implausible scene and spatial layout (pg. 81).
+     5. Page 103 and 105 have the same content, client is aware. Page 105 shold list the 4 options that
+         you can choose from when an image is Fair or Poor (e.g. image is blurry, different output style,
+         etc.)
+     6. Page 121 is talking about comments not Usability. The client has been made aware. Page 122 is
+         the content related to Usability.
+     7. Click on the images and expand them for evaluation. Analyze them carefully, especially Structural
+         Integrity, Unedited portions and Character consistency.
+     8. Pay particular attention to humans and animals in the images; face features, eyes (gaze), fingers,
+         limb proportions and numbers. Clear face distortions are Severe issues. Be detailed and apply
+         proper criteria. Most obvious issues would not be “minor”.
+     9. Evaluate each image individually per dimension. First evaluate Left, then Right. Avoid combining
+         the evaluations.
+     10. Pay attention to action required (change, remove, add, etc.) in the prompt as well as all elements
+         required. This will affect the Instructions and Alignment dimensions.
+
+
+
+Ignore the rating suggestions provided for the following example:
+“a girl and a boy sitting on a life ring” OR “two kids in life jackets”
+
+
+
+
+Minor issues and Highly aligned are wrong ratings. Alignment should be downgraded and SI should be
+upgraded to a higher penalty.
+
+
+
+
+Centific Confiential ©

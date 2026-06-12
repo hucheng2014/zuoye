@@ -1,0 +1,190 @@
+        VCG Base Creation Feedback Apr09'26
+Error Analysis
+   •   High concentration of errors in the following areas:
+          a. Structural Integrity → High (5+)
+          b. Style Match → High (5+)
+          c. Contains All Requests → High (4–5)
+          d. Text-related errors → Also significant (5)
+
+Grader team is struggling most with:
+   • Understanding what the image should look like structurally
+   • Interpreting style incorrectly (Genmoji, Chibi, etc.)
+   • Fully checking prompt completeness
+
+Error Breakup
+   •   Under-penalization is the dominant issue
+          o Across multiple entries:
+                ▪ Minor issues marked when they should be major
+                ▪ Missing elements not penalized enough
+                ▪ Structural issues downplayed
+          o Example patterns:
+                ▪ Extra fingers / distorted limbs → marked “minor”
+                ▪ Missing key prompt elements → still marked “captures most”
+          o Trend: Team is being lenient / conservative in grading
+
+   •   Guideline misunderstanding is frequent
+          o Repeated root causes:
+                 ▪ “GL Misunderstanding”
+                 ▪ “Misread Context”
+                 ▪ “Missed Key Information”
+          o Especially in:
+                 ▪ Style Match
+                 ▪ Text inclusion
+                 ▪ A/B comparisons
+          o Trend: Not a skill issue — it’s a guideline clarity + interpretation issue
+
+   •   Text handling is messy
+          o Common issues:
+                 ▪ Missing text not caught
+                 ▪ Text present but wrongly judged
+                 ▪ Spelling/case errors ignored or misgraded
+           o Example:
+                ▪ “SIILENCE” not penalized correctly
+                ▪ Text required but marked as not needed
+           o Trend: No consistent framework for evaluating text
+
+   •   A/B judgment errors (Comparison mistakes)
+          o “A slightly better vs B perfect” misjudged
+          o Context ignored while comparing
+          o Wrong winner selected despite clear flaws
+          o Trend: Weak relative evaluation skills, not just absolute grading
+
+RCA
+   •   People don’t know: What = minor vs noticeable vs severe. They default to “safe”
+       (under-penalize)
+   • Graders are: Observing randomly instead of following a structured scan
+   • Style understanding is shallow: Graders recognize style names but don't visually
+       validate them
+   • Read prompts partially and miss constraints (objects, actions, text, style)
+Possible Solutions/Action plan
+   • Image Scan (strict order)
+           o Structural Integrity (fingers, hands, face, anatomy)
+           o Prompt coverage (missing elements)
+           o Style match
+           o Text accuracy
+           o Visual quality
+           o Improved zooming experience, particularly for small text
+           o Enhanced accuracy in text rendering
+   • Severity Calibration
+           o Noticeable → Issues on eyes, nose, mouth, ears, even if not noticed at first
+               glance, are now upgraded to Noticeable (not minor anymore)
+                   ▪ Examples:
+   1. There is a small distortion in the judge’s eyes, particularly his left eye (our right side).
+       Notice how it’s not perfectly round at the bottom. This is now a Noticeable issue.
+2. Observe the swimmer’s left foot, there’s a small flaw in the foot that is noticed upon
+   closer inspection. This is now a Noticeable issue.
+3. Analyze the images carefully, while expanded. Observe the thumb anomaly and the
+   person’s right eye (our left side). The eye is slightly bigger and flatter on the bottom.
+   Noticeable issue based on latest criteria.
+
+
+
+
+4. Observe the elements on the buildings, objects, background very carefully. The statues,
+   decorative elements on the tower have some distortions. These are a minor issue, due
+   to not being obvious at first glance.
+      o Noticeable → Visible but not breaking
+              ▪ Examples:
+1. The weight plate in this position does not make sense and appears to be floating.
+   There’s a break of flow and sense to the scene. This should be a noticeable issue.
+2. The vehicle appears to have two steering wheels, which is unrealistic and indicated a
+   clear Noticeable issue.
+3. The truffle seems to be connected to the stick, which is actually undefined and difficult
+   to identify what it represents. This should be a Noticeable issue.
+       o Severe → Breaks realism / intent
+              ▪ Examples:
+1. Observe the fingers on the woman’s hands. There are heavy distortions in the fingers
+   leading to a Severe SI issue.
+2. The dinosaur’s head is merged with a strange root or bone structure creating a very
+   oddly creature. This is a clear example of a Severe SI. Note also, the person’s left hand
+   seems to be missing and the object the person is holding is also undefined.
+3. Everything in the image is distorted, the baby looks like it has a double of most facial
+   features. These are severe SI issues.
+4. The person has a severely distorted, elongated head and melted hands that lack fingers
+   or clear definition. The lips area also appears unnatural. The overall image appears
+   distorted and should be labeled as Severe SI.
+5. The swimmer does not have any facial features, the hand is very small compared to the
+   rest of the body, feet look oddly sized and second arm appears distorted. This should be
+   Severe SI issues.
+
+
+
+
+6. The person’s face and especially the hands, show visible distortions. The carrot is also
+   overly large. These constitute issues that fall under the Severe SI based on new criteria.
+•   Penalty Calibration
+       o Incorrect number of fingers → Severe issue → affects only Structural Integrity
+           Dimension
+Extra fingers on the person’s hand, falls under severe structural integrity. GL page 41 - example
+with the monkey.
+Similar to the previous case, only less fingers than expected. GL example page 41 - number of
+fingers is incorrect.
+
+
+   •   Missing some elements (color, action, atmosphere, object, relationship, etc.) →
+       Captures most but not all → affects Input/Output Alignment
+   •   Failure to capture all or most elements leads to a failure in Input/Output Alignment,
+       particularly when the request is for one key element and the output is an entirely
+       different object.
+Prompt: Write ‘I Ustand’ (Out of Order) as a neon sign made entirely of spaghetti.
+Correct grading: Captures most but not all
+Reason: The request was specifically for the neon sign to be made of spaghetti and the output
+provided the spaghetti separately. This is not a fully aligned image, and needs to be
+downgraded.
+Prompt: A wilted flower bends towards a cracked window during a storm
+Correct grading: Captures most but not all
+Reason: The prompt required several elements; the relationship between the flower and the
+window (bends towards the window) is not represented. Therefore, this cannot fully satisfy the
+request and should be downgraded.
+Prompt: Rusty dumbells
+Correct grading: Not aligned
+Reason: The primary element required is “dumbbells”. The attribute is that they should be
+rusty. The primary object is not represented at all, failing to align with the user request. An
+entirely different rusty object would not be satisfying.
+If the output provided regular dumbbells (not rusty) it could be considered as “captures most
+but not all”.
+
+
+           o Minor or major portions lack sharpness are out of focus Slight blur → impacts
+             Visual Quality
+Image The image contains a blur. It’s more prominent on the bottom half, particularly the
+grouped people on the right. GL page 52 - portions of the image lack sharpness, lacking focus.
+The lower cat is partially blurry; back part of the body and tail. It is also one of the main subjects
+in the image. This leads to a downgrade in Visual quality.
+Image 3: NOT blurry. The facial distortions are part of Structural integrity and not Visual Quality.
+Visual Quality here is fine.
+
+   •   Session on Genmoji
+          o Genmoji vs other illustrations
+          o Genmojis: AI-generated emoji users can create on their devices on the fly.
+          o Refer to demo examples or research to understand better style, coloring,
+              smoothness of features
+
+
+
+
+                                                         Observe the features for the human genmojis
+                             Which image fits the genmoji criteria?
+The image on the left is a completely different, unrelated style. Should be marked as Does not
+                                             Match.
+
+
+
+
+                            Which image fits the genmoji criteria?
+The image on the right is a completely different, illustration style. Should be marked as Does
+                                         not Match.
+
+
+
+
+                            Which image fits the genmoji criteria?
+The image on the right is a completely different, illustration style. Should be marked as Does
+                                         not Match.
+
+
+  •   Image Comparison understanding
+         o Pick the LESS wrong image, not the better-looking one
+         o Checklist:
+               ▪ Which misses fewer prompt elements?
+               ▪ Which has fewer structural issues?

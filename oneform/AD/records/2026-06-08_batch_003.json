@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_003",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T12:25:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689629229",
+      "query": "种 花",
+      "query_intent": "User is searching for '种花' (planting flowers), which could refer to a gardening guide app, a flower planting game, or buying plants.",
+      "ad": {
+        "name": "我的花园世界",
+        "developer": "厦门麟贝互娱科技有限公司"
+      },
+      "rating": "Good",
+      "comment": "The query \"种 花\" indicates an intent to find an app related to planting flowers, such as a gardening game or a real-life plant care guide. The ad \"我的花园世界\" is a mobile game themed around managing a garden and planting flowers. Since the ad is a highly relevant entertainment option that directly aligns with the flower-planting theme of the user's search, it is a very good fit. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689629230",
+      "query": "除 水 印 免 费",
+      "query_intent": "User is searching for a free app to remove watermarks from images or videos.",
+      "ad": {
+        "name": "水印拍照相机-时间地点真实水印相机和工作打卡记录保存",
+        "developer": "霄 张"
+      },
+      "rating": "Bad",
+      "comment": "The query \"除 水 印 免 费\" clearly indicates an intent to find an app that removes watermarks from existing photos or videos for free. The ad \"水印拍照相机\" is a camera app designed to *add* time and location watermarks for work attendance and logging. Since the ad performs the exact opposite function (adding watermarks) of what the user wants (removing watermarks), the relationship is completely mismatched. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689629231",
+      "query": "bittorrent",
+      "query_intent": "User is searching for 'BitTorrent', a popular peer-to-peer file sharing and torrent downloading client.",
+      "ad": {
+        "name": "夸克-高考选志愿",
+        "developer": "广州市动悦信息技术有限公司"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"bittorrent\" indicates an intent to find the BitTorrent client for downloading files via peer-to-peer networks. The ad \"夸克\" is a mobile browser that features a powerful built-in download manager and cloud drive capabilities. While Quark is not a dedicated torrent client, it serves the broader intent of downloading and managing large files online, making it a weakly associated alternative. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689629232",
+      "query": "痘 印 商 城",
+      "query_intent": "User is likely searching for '抖音商城' (Douyin E-commerce/Mall) but made a typo by typing '痘印' (acne marks).",
+      "ad": {
+        "name": "1688- B2B Market",
+        "developer": "杭州阿里巴巴广告有限公司"
+      },
+      "rating": "Good",
+      "comment": "The query \"痘 印 商 城\" is a clear phonetic typo for \"抖音商城\" (Douyin E-commerce/Mall), indicating an intent to shop online. The ad \"1688- B2B Market\" is a major wholesale and e-commerce platform. Since the user is looking for an online shopping mall and the ad provides a well-known e-commerce marketplace, it is a highly relevant alternative within the same core shopping category. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689629234",
+      "query": "中 国 人 民 解 放 军 总 医 院",
+      "query_intent": "User is searching for the official app or services of the 'Chinese PLA General Hospital' (301 Hospital).",
+      "ad": {
+        "name": "未来医生-名医决策，家庭健康",
+        "developer": "成都医云科技有限公司"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"中 国 人 民 解 放 军 总 医 院\" indicates an intent to access services, appointments, or information specifically for the Chinese PLA General Hospital (301 Hospital). The ad \"未来医生\" is an online medical consultation and family health management platform. While it is not the official hospital app, it provides related online healthcare and doctor consultation services, offering a weak but valid topical association. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T11:38:39",
+    "post_submit_status": "No errors visible"
+  }
+}

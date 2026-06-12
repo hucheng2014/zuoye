@@ -1,0 +1,155 @@
+{
+  "batch_id": "2026-05-25_batch_001",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-05-25T19:25:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "01KSFC208B3K9FT2WH9K1H497Q",
+      "query": "ruler",
+      "query_intent": "User wants a ruler/measurement app - likely a virtual ruler on their phone (尺子) or a measurement tool",
+      "ad": {
+        "name": "CAD手机看图-dwg快速看图纸软件,建筑工程测量测距",
+        "subtitle": "CAD图纸查看器，3D2D施工图纸浏览绘图测量",
+        "developer": "全伟 杨",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store lookup (id6502741471)",
+          "note": "Primary function is CAD/DWG drawing viewer. Secondary features include engineering measurement tools (水平测量仪, 海拔仪, 分贝仪) and 工程计算. Category: Reference/参考资料."
+        },
+        {
+          "source": "local knowledge",
+          "note": "In China App Store, 'ruler' query returns 尺子 (ruler) apps and measurement tools. The ad's primary function (CAD viewing) is very different from a simple ruler app."
+        }
+      ],
+      "relationship_analysis": "Query 'ruler' means user wants a virtual ruler or simple measurement tool. The ad is a professional CAD drawing viewer that includes measurement as a secondary feature. Both involve measurement but serve completely different use cases - casual measurement vs professional engineering drawing viewing. User searching for ruler would not be interested in a CAD viewer.",
+      "why_not_higher": "A ruler app and a CAD drawing viewer serve very different purposes. The primary function is CAD/DWG viewing, not measurement. The measurement tools are secondary/subscription features. A user wanting a ruler would find a CAD viewer confusing.",
+      "why_not_lower": "There is a tangential connection through measurement (工程测量测距), which means the app is not completely unrelated. Both deal with measurement functionality, so a user would not be entirely surprised.",
+      "rating": "Acceptable",
+      "comment": "The query \"ruler\" indicates the user wants a virtual ruler or simple measurement tool for everyday use. The advertised app \"CAD手机看图\" is primarily a professional CAD drawing viewer for construction/engineering, though it includes measurement features as secondary tools. While both involve measurement, a ruler app and a CAD drawing viewer serve fundamentally different purposes and audiences. The connection is weak but not entirely absent. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "01KSFC2085BF02P1NFY77XAWE4",
+      "query": "电",
+      "query_intent": "User searching for something related to electricity, power, or charging - common apps include 充电宝 (power bank), 电力 (electric power), 电商 (e-commerce). The single character is ambiguous but clearly electricity/power-related.",
+      "ad": {
+        "name": "番茄小说 - 热门短剧全本小说电子书阅读器",
+        "subtitle": "看小说短剧听书必备app",
+        "developer": "Beijing Zhending Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "local knowledge",
+          "note": "电 (diàn) means electricity/power in Chinese. Common associated apps: 充电管理 (charging management), 国家电网 (State Grid), 电商 (e-commerce platforms). 番茄小说 is a very popular novel reading app (5.3M+ reviews) with zero connection to electricity."
+        }
+      ],
+      "relationship_analysis": "There is absolutely no logical connection between the query '电' (electricity/power) and a novel reading app. The character 电 does not appear in the app name or function. This is a completely irrelevant match.",
+      "why_not_higher": "No perceivable relationship. Electricity/power/charging has nothing to do with novel reading.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"电\" means electricity/power in Chinese, indicating the user is looking for a power-related app such as charging management, power grid service, or e-commerce. The advertised app \"番茄小说\" is a novel and short drama reading platform with 5.3M+ reviews. There is no logical relationship between electricity and novel reading. This is a completely irrelevant ad that would confuse users. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "01KSFC208AH07GRPYTWV62M3FD",
+      "query": "aff",
+      "query_intent": "Ambiguous abbreviation. Could be searching for an app with 'aff' in the name. In China context, the user intent is unclear - possibly an English abbreviation or app name search.",
+      "ad": {
+        "name": "Slideshow Video & Photo Maker",
+        "subtitle": "Slide show montage with music",
+        "developer": "Mosaic S.r.l.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "local knowledge",
+          "note": "'aff' is an extremely short and ambiguous query. It does not match any common Chinese or English app name that relates to slideshow creation. The ad app has only 50 reviews."
+        }
+      ],
+      "relationship_analysis": "The query 'aff' has no perceivable connection to photo/video slideshow creation. Whatever the user intended by 'aff', a slideshow maker is not related to it.",
+      "why_not_higher": "No logical connection between 'aff' and slideshow creation in any interpretation.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"aff\" is an ambiguous abbreviation with no clear relationship to slideshow creation. Whatever the user's intent - whether an app name search, abbreviation, or specific term - a photo/video slideshow maker is not relevant. There is no perceivable link between the query and the advertised app. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "01KSFC208JCHHMS60CK2YMQ4HQ",
+      "query": "ticketmaster",
+      "query_intent": "User is searching for Ticketmaster, a well-known event ticket purchasing platform for concerts, sports, theater and other live events. Intent is clearly to buy event/entertainment tickets.",
+      "ad": {
+        "name": "理票票",
+        "subtitle": "(no subtitle visible)",
+        "developer": "乐林 陈",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store lookup (id6761426571)",
+          "note": "理票票 is an invoice/receipt management app: OCR recognition, invoice organization, expense reimbursement. The 票 here means 发票 (tax invoices/receipts), not event tickets. Genre: Utilities/工具,财务."
+        },
+        {
+          "source": "local knowledge",
+          "note": "In Chinese, 票 can mean both 'ticket' (entertainment/event) and 'invoice/receipt' (发票). Ticketmaster is about entertainment tickets, while 理票票 is about financial invoices. These are completely different types of 'tickets'."
+        }
+      ],
+      "relationship_analysis": "Surface word overlap on 'ticket/票' but completely different meanings. Ticketmaster sells entertainment event tickets (concerts, sports). 理票票 manages financial invoices/receipts (发票) for expense reimbursement. This is similar to the 'document scanner vs virus scanner' example in the guidelines - same word, completely different functionality.",
+      "why_not_higher": "Although both involve 'tickets/票', the actual functions are completely different: event ticket purchasing vs invoice management. A user wanting to buy concert tickets would not find an invoice management app useful at all.",
+      "why_not_lower": "There is a surface word overlap (both involve 'tickets/票'), so the user might not be completely surprised, but the actual functionality is fundamentally different.",
+      "rating": "Bad",
+      "comment": "The query \"ticketmaster\" indicates the user wants to purchase event/entertainment tickets for concerts, sports, or theater. The advertised app \"理票票\" is an invoice and receipt management tool for business expense reimbursement (OCR recognition, 发票管理, 报销). Although both involve the concept of \"tickets/票\" (票 can mean event ticket OR invoice in Chinese), the actual functionality is completely different. This is a surface word match with no real functional relationship. A concert ticket buyer would find an invoice management app confusing and useless. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "01KSFC2087GJRD2TTQBB87VQDM",
+      "query": "海尔之家",
+      "query_intent": "User is looking for the official Haier smart home app (海尔智家/海尔之家). Haier is China's largest home appliance brand. The user wants to control Haier appliances (ACs, washing machines, refrigerators, etc.) through the official app.",
+      "ad": {
+        "name": "Universal AC Remote Control +",
+        "subtitle": "Air Conditioner Controller App",
+        "developer": "JokDev Company",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store lookup (id6698875891)",
+          "note": "The app name in Chinese is 空调遥控器－万能遥控器 (AC Remote Control - Universal Remote). It controls AC on/off, temperature, fan speed, mode. Supports most AC brands. 123K+ reviews."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Haier (海尔) is China's largest and most iconic home appliance brand, with air conditioners being one of their flagship products. 海尔之家/海尔智家 is their official smart home control app. The user intent includes controlling Haier ACs."
+        }
+      ],
+      "relationship_analysis": "The query asks for Haier's smart home app, which includes AC control. The ad is a universal AC remote that works with multiple brands including Haier. The core need (controlling an air conditioner) is directly addressed by the ad. However, the user specifically wanted the official Haier app, and this is a third-party universal remote. It's similar to searching for Uber and getting Lyft - a direct competitor for the same core function.",
+      "why_not_higher": "The user specifically searched for 海尔之家 (Haier's official app). The ad is not the official Haier app but a third-party universal remote. A user might prefer the brand-specific app for better integration with Haier's ecosystem. The ad doesn't offer Haier-specific features or connectivity.",
+      "why_not_lower": "The ad directly addresses one of the most likely use cases implied by the query - controlling an air conditioner. AC control is arguably the primary reason users search for Haier's app. A universal AC remote is functionally similar and could satisfy this need. The user would clearly understand why this ad appeared and might be interested.",
+      "rating": "Good",
+      "comment": "The query \"海尔之家\" indicates the user wants the official Haier smart home app, primarily to control Haier appliances with air conditioners being Haier's flagship product. The advertised app \"Universal AC Remote Control +\" provides the core functionality of controlling air conditioners, which is the most likely reason a user would search for the Haier app. While not the specific brand app requested, it serves the same primary function (AC control) and would be quite likely to interest the user. Rated Good.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": false,
+    "submitted": false,
+    "submitted_at": "",
+    "post_submit_status": ""
+  }
+}

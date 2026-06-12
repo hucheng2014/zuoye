@@ -1,0 +1,31 @@
+{
+  "name": "oneform-pipeline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agent automation pipeline for oneform tasks via claw-code",
+  "scripts": {
+    "probe": "node scripts/cdp_probe.js",
+    "probe:json": "node scripts/cdp_probe.js --json",
+    "detect": "node scripts/detect_task.js",
+    "detect:json": "node scripts/detect_task.js --json",
+    "monitor": "node scripts/monitor.js",
+    "monitor:auto": "node scripts/monitor.js --auto-start --interval 300",
+    "lane:a": "node scripts/lane.js --browser work-a",
+    "lane:b": "node scripts/lane.js --browser work-b",
+    "lane:a:dry": "node scripts/lane.js --browser work-a --dry-run --max-tasks 3",
+    "lane:b:dry": "node scripts/lane.js --browser work-b --dry-run --max-tasks 3",
+    "lane:a:proofread": "node scripts/lane.js --browser work-b --task-type PROOFREAD --max-tasks 5",
+    "lane:a:polls": "node scripts/lane.js --browser work-a --task-type TA_POLLS --max-tasks 10",
+    "lane:a:mail": "node scripts/lane.js --browser work-a --task-type MAIL --max-tasks 10",
+    "status": "node scripts/status.js",
+    "orchestrate": "node scripts/orchestrate.js",
+    "kb:query": "node scripts/query_knowledge.js",
+    "kb:build": "node scripts/build_knowledge.js",
+    "kb:validate": "node scripts/build_knowledge.js --validate",
+    "kb:stats": "node scripts/build_knowledge.js --stats",
+    "kb:capture": "node scripts/capture_tutorial_screenshots.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

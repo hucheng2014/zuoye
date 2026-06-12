@@ -1,0 +1,19 @@
+{
+  "name": "adjian",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browser:start": "node browser_start.js",
+    "browser:url": "node browser_cmd.js url",
+    "browser:screenshot": "node browser_cmd.js screenshot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "playwright": "^1.59.1"
+  }
+}

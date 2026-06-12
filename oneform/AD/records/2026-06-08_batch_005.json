@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_005",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T12:50:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689632706",
+      "query": "soul sleep",
+      "query_intent": "User is searching for a sleep tracking, relaxation sounds, or meditation app, or an app specifically named 'Soul Sleep'.",
+      "ad": {
+        "name": "蓝伴语音 - 在线连麦聊天交友平台",
+        "developer": "Tianjin Nanshan Technology Co., LTD"
+      },
+      "rating": "Bad",
+      "comment": "The query \"soul sleep\" indicates an intent to find a sleep tracking, meditation, or relaxation application. The ad \"蓝伴语音\" is an online voice chatting and social dating platform. Since a sleep or relaxation utility and a voice dating app operate in completely different categories and address entirely unrelated user needs, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689632707",
+      "query": "运 动 世 界",
+      "query_intent": "User is searching for '运动世界' (Sports World), a campus running and fitness tracking application.",
+      "ad": {
+        "name": "Sigma - 你的AI跑步记录",
+        "developer": "Chaoshi Technology (Shanghai) Co., Ltd."
+      },
+      "rating": "Good",
+      "comment": "The query \"运 动 世 界\" indicates an intent to find a sports tracking and running application, specifically the campus fitness app \"Sports World\". The ad \"Sigma\" is an AI-powered running record and fitness tracker. Since both are applications dedicated to tracking running activities and managing fitness, the ad is a highly relevant alternative serving the same core user intent. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689632708",
+      "query": "学 习 数 学",
+      "query_intent": "User is searching for an educational application specifically for learning mathematics.",
+      "ad": {
+        "name": "叽里呱啦",
+        "developer": "Cheng Cheng Internet Technology Shanghai Ltd"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"学 习 数 学\" indicates an intent to find an educational app focused on teaching mathematics. The ad \"叽里呱啦\" is a popular early childhood education app primarily focused on English and logical thinking (which includes early math concepts). While it is not a dedicated pure mathematics learning app for general students, it serves the broader category of early childhood cognitive and educational development, offering a weak but valid topical association. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689632709",
+      "query": "十 三 水",
+      "query_intent": "User is searching for '十三水' (Thirteen Waters / Chinese Poker), a specific traditional card game.",
+      "ad": {
+        "name": "微乐斗地主移动版 V1.0.0-春天版",
+        "developer": "Changchun Dingyuan Network Technology Co., Ltd."
+      },
+      "rating": "Good",
+      "comment": "The query \"十 三 水\" indicates an intent to find a specific traditional Chinese card game (Chinese Poker). The ad \"微乐斗地主\" is an application for \"Dou Dizhu\", another highly popular traditional Chinese card game. Since both are traditional competitive card games (poker games) that appeal to the same target audience of card game players, the ad is a highly relevant alternative within the exact same genre. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689632710",
+      "query": "樱 花 小 镇 模 拟 器",
+      "query_intent": "User is searching for '樱花小镇模拟器' (Sakura School/Town Simulator), a popular sandbox life simulation game.",
+      "ad": {
+        "name": "保卫向日葵",
+        "developer": "奇游工作室"
+      },
+      "rating": "Bad",
+      "comment": "The query \"樱 花 小 镇 模 拟 器\" indicates an intent to play a sandbox life simulation and role-playing game set in a virtual town or school. The ad \"保卫向日葵\" is a tower defense game similar to Plants vs Zombies. Since a sandbox simulation game and a tower defense strategy game belong to completely different genres with different gameplay mechanics and appeal to different player intents, the relationship is weak. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T12:08:45",
+    "post_submit_status": "No errors visible"
+  }
+}

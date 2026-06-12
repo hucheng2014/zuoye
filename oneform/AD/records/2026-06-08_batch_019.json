@@ -1,0 +1,128 @@
+{
+  "batch_id": "2026-06-08_batch_019",
+  "project": "AD Search Ads Relevance",
+  "operator": "cursor-agent",
+  "created_at": "2026-06-08T22:40:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689667402",
+      "query": "汽 水 音 乐 赚 钱",
+      "query_intent": "User is searching for ways to earn money through 汽水音乐 (ByteDance's music streaming app) or related music-reward/monetization apps.",
+      "ad": {
+        "name": "MuseAI-AI音乐创作/AI写歌/AI作曲/原创编曲伴奏",
+        "developer": "Guangzhou Xingmeng Network Technology Company Limited",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "汽水音乐 is a music streaming app with listening rewards; MuseAI is an AI music composition tool."
+        }
+      ],
+      "relationship_analysis": "Music monetization/rewards intent vs AI music creation tool — different core needs despite both involving music.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"汽 水 音 乐 赚 钱\" indicates the user wants to earn money through the 汽水音乐 streaming app or similar music-reward programs. [Ad Analysis] The advertised app \"MuseAI\" is an AI music creation, songwriting, and composition tool. [Relevance Breakdown] A user looking to earn money from music listening/rewards wants a streaming or rewards platform, not an AI composition tool; creation software does not satisfy the monetization intent. [Why not higher/lower] Not Acceptable because earning rewards and creating music with AI are unrelated user goals despite both touching the music category. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689667403",
+      "query": "procreate",
+      "query_intent": "User is searching for Procreate, the professional digital illustration and drawing app for iPad.",
+      "ad": {
+        "name": "稿定设计 - 电商社媒封面海报创作神器",
+        "developer": "Gaoding (Xiamen) Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "Procreate is a professional drawing/painting app; 稿定设计 is a template-based poster and social-media design tool."
+        }
+      ],
+      "relationship_analysis": "Both are visual creative/design tools but illustration/drawing vs marketing poster templates serve different workflows.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"procreate\" indicates the user wants the Procreate digital illustration and drawing application or a close creative alternative. [Ad Analysis] The advertised app \"稿定设计\" is a template-based design tool for e-commerce and social-media posters and covers. [Relevance Breakdown] Both serve visual creative design needs; users searching for one design app may reasonably consider another design platform even if the focus differs from illustration to marketing templates. [Why not higher/lower] Not Excellent because it is not Procreate or a direct drawing/painting competitor; not Acceptable because the functional overlap in creative visual design is clear and users would likely explore it. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689667404",
+      "query": "异 环",
+      "query_intent": "User is searching for 异环 (The Outside Circle), an open-world urban exploration RPG mobile game.",
+      "ad": {
+        "name": "逆水寒",
+        "developer": "网易移动游戏",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "异环 and 逆水寒 are both major Chinese open-world/MMORPG mobile games from different publishers."
+        }
+      ],
+      "relationship_analysis": "Same game genre — open-world RPG/MMORPG competitors; user searching for one title may consider another major release.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"异 环\" indicates the user wants the open-world urban RPG game 异环. [Ad Analysis] The advertised app \"逆水寒\" is a major Chinese open-world MMORPG published by NetEase. [Relevance Breakdown] Both are large-scale open-world RPG mobile games in the same genre; players searching for one title frequently consider similar blockbuster alternatives. [Why not higher/lower] Not Excellent because it is a different game and publisher; not Acceptable because the gameplay genre and audience overlap is strong and direct. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689667405",
+      "query": "模 具 设 计",
+      "query_intent": "User is searching for mold design software or tools for industrial/product mold engineering work.",
+      "ad": {
+        "name": "CAD快速看图-dwg手机快速看图，设计图纸工程建筑",
+        "developer": "浩 殷",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "Mold design requires CAD authoring; the ad app is a mobile DWG/CAD drawing viewer."
+        }
+      ],
+      "relationship_analysis": "Both in CAD/engineering domain but mold design (authoring) vs drawing viewing are different functions.",
+      "rating": "Acceptable",
+      "comment": "[Query Intent] The query \"模 具 设 计\" indicates the user wants mold design software for industrial engineering and product tooling. [Ad Analysis] The advertised app \"CAD快速看图\" is a mobile CAD/DWG drawing viewer for engineering and architectural blueprints. [Relevance Breakdown] Both relate to CAD and engineering workflows, but viewing drawings on mobile does not provide mold design capabilities; the connection is weak though understandable within the same technical field. [Why not higher/lower] Not Good because viewing DWG files does not satisfy the core mold-design authoring need; not Bad because both serve engineering/CAD professionals in a related domain. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689667406",
+      "query": "香 港 盈 立 证 券",
+      "query_intent": "User is searching for uSMART (盈立证券), a Hong Kong securities brokerage app for stock trading and investment.",
+      "ad": {
+        "name": "长城炼金术-股票开户炒股",
+        "developer": "China Great Wall Securities CO.,LTD.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / batch_015 pattern",
+          "note": "Both are securities brokerage apps for stock account opening and trading."
+        }
+      ],
+      "relationship_analysis": "Competing securities brokerage platforms serving the same stock trading and account-opening need.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"香 港 盈 立 证 券\" indicates the user wants the uSMART Hong Kong securities brokerage application for stock trading. [Ad Analysis] The advertised app \"长城炼金术\" is a stock account opening and trading platform from China Great Wall Securities. [Relevance Breakdown] Both are securities brokerage apps serving the same core need of opening accounts and trading stocks; investors often compare multiple broker platforms. [Why not higher/lower] Not Excellent because it is a different brokerage brand; not Acceptable because the direct functional overlap in securities trading is strong. Rated Good.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T14:41:20",
+    "post_submit_status": "No errors visible"
+  }
+}

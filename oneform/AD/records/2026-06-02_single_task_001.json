@@ -1,0 +1,51 @@
+{
+  "batch_id": "2026-06-02_single_task_001",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-02T00:08:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688708642",
+      "query": "问 真",
+      "query_intent": "User is searching specifically for '问真' (Wenzhen), referring to '问真八字' or other apps in the Wenzhen series, which is a highly popular, specialized Chinese traditional horoscope (Bazi) calculation and fortune-telling utility developed by Luoyang Zhuangyou Culture.",
+      "ad": {
+        "name": "元宝-腾讯全能AI助手",
+        "subtitle": "拍题写作P图搜索工具，学习办公对话问答助手",
+        "developer": "Tencent Technology (Shenzhen) Company Limited",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Web research & App Store search",
+          "note": "'问真八字' is a vertical professional tool for Chinese fortune-telling and Bazi chart layout."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Tencent Yuanbao is a general-purpose AI assistant similar to ChatGPT, which is completely unrelated to traditional Chinese astrology or fortune telling."
+        }
+      ],
+      "relationship_analysis": "The query '问 真' refers to a specialized Chinese traditional horoscope (Bazi) calculation and fortune-telling application. The advertised app '元宝-腾讯全能AI助手' is a general-purpose generative AI productivity assistant. Since professional fortune-telling utilities and generic AI assistants operate in completely different categories and address completely different user needs with no functional crossover, the relationship is Bad.",
+      "why_not_higher": "There is no relevance between a traditional Chinese astrology/Bazi chart utility and a general AI productivity chatbot.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"问 真\" refers to \"Wenzhen\" (specifically \"问真八字\"), a highly popular, specialized Chinese traditional horoscope (Bazi) calculation and fortune-telling utility app. The advertised app \"元宝-腾讯全能AI助手\" is a general-purpose generative AI productivity assistant for text, writing, and search. Since specialized traditional Chinese astrology calculators and generic AI assistants serve completely unrelated functional domains and satisfy different user intents, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T16:09:13",
+    "post_submit_status": "No errors visible"
+  }
+}

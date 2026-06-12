@@ -1,0 +1,1569 @@
+{
+  "snapshot_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\page_snapshot_20260402_164819.json",
+  "audio_dir": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003",
+  "output_prefix": "C:\\Users\\BERN7P\\codex-audio\\41398\\review_20260402_164819_r3",
+  "url": "https://ilabel.weixin.qq.com/mission/41398/label",
+  "title": "2026音频check_first_part196 - 任务标注",
+  "count": 13,
+  "noise_model": "Etherll/NoisySpeechDetection-v0.2",
+  "whisper_models": {
+    "large-v3": "C:\\Users\\BERN7P\\codex-browser\\models\\faster-whisper-large-v3",
+    "medium": "C:\\Users\\BERN7P\\codex-browser\\models\\faster-whisper-medium"
+  },
+  "noise_threshold": 0.2,
+  "window_seconds": 2.5,
+  "stride_seconds": 1.0,
+  "items": [
+    {
+      "filename": "20260127_00004329_aaab_42_69.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_69.wav",
+      "page_text": "表径呢从四十、四十二点五到四十六都有，现在二级市场行情已经不到两万了，全金款可能也就三万不到。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000341
+        },
+        "max_window_noisy": 0.000656,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000282
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000458
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000385
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000656
+          },
+          {
+            "start_seconds": 3.964,
+            "clean": 1.0,
+            "noisy": 0.000296
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.464,
+        "tail_silence_seconds": 0.032,
+        "overall_rms": 0.074543,
+        "end_rms": 0.028709,
+        "end_peak": 0.177503,
+        "end_rms_ratio": 0.385138,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000656,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "表境呢从40 42.5到46都有现在二级市场行情已经不到2万了全金款可能也就3万不到",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "表境呢从40 42.5到46都有现在二级市场行情已经不到2万了全金款可能也就3万不到",
+            "similarity_to_page": 0.7229,
+            "avg_logprob": -0.16893425658345226,
+            "no_speech_prob": 0.17831553518772125
+          },
+          {
+            "model_name": "medium",
+            "text": "表進從40、42.5到46都有現在2G市場耗盡已經不到2萬了全晶化可能也就3萬不到",
+            "similarity_to_page": 0.4146,
+            "avg_logprob": -0.2983670582373937,
+            "no_speech_prob": 0.13248825073242188
+          }
+        ],
+        "agreement": 0.6582
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "径",
+            "境"
+          ],
+          [
+            "四十四十二点五",
+            "40425"
+          ],
+          [
+            "四十六",
+            "46"
+          ],
+          [
+            "两",
+            "2"
+          ],
+          [
+            "三",
+            "3"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 13,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.56,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_peak",
+          "text_ends_with_到"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7229,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_123.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_123.wav",
+      "page_text": "目前在我的了解里，适合大手腕的正装只有四款。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000231
+        },
+        "max_window_noisy": 0.00025,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 0.913,
+            "clean": 1.0,
+            "noisy": 0.00025
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.413,
+        "tail_silence_seconds": 0.093,
+        "overall_rms": 0.073301,
+        "end_rms": 0.022388,
+        "end_peak": 0.163385,
+        "end_rms_ratio": 0.305429,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.00025,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "目前在我的了解里适合大指望的正装只有四款",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "目前在我的了解里适合大指望的正装只有四款",
+            "similarity_to_page": 0.9,
+            "avg_logprob": -0.18346913220981756,
+            "no_speech_prob": 0.1868378072977066
+          },
+          {
+            "model_name": "medium",
+            "text": "目前在我的了解里,适合大使玩的这张只有四款",
+            "similarity_to_page": 0.8,
+            "avg_logprob": -0.36017764562910254,
+            "no_speech_prob": 0.047229524701833725
+          }
+        ],
+        "agreement": 0.8
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "手腕",
+            "指望"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.22,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_130ms",
+          "medium_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.9,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_4.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_4.wav",
+      "page_text": "在零零年到一零年之间大表径腕表其实才是炒得最凶的主流款式。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000296
+        },
+        "max_window_noisy": 0.00071,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000254
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000275
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.00071
+          },
+          {
+            "start_seconds": 2.407,
+            "clean": 1.0,
+            "noisy": 0.000362
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 4.907,
+        "tail_silence_seconds": 0.043,
+        "overall_rms": 0.081918,
+        "end_rms": 0.017815,
+        "end_peak": 0.105102,
+        "end_rms_ratio": 0.217475,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.00071,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "在00年到10年之间大表情万表其实才是炒得最凶的主流款式",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "在00年到10年之间大表情万表其实才是炒得最凶的主流款式",
+            "similarity_to_page": 0.7857,
+            "avg_logprob": -0.16434643812039318,
+            "no_speech_prob": 0.1844218373298645
+          },
+          {
+            "model_name": "medium",
+            "text": "在零一年到一零年之間大表進萬表騎車才是炒得最兇的主流款式",
+            "similarity_to_page": 0.75,
+            "avg_logprob": -0.29524923547318105,
+            "no_speech_prob": 0.12855222821235657
+          }
+        ],
+        "agreement": 0.6429
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "零零",
+            "00"
+          ],
+          [
+            "一零",
+            "10"
+          ],
+          [
+            "径腕",
+            "情万"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 6,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_50ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7857,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_56.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_56.wav",
+      "page_text": "颜值呢比较有特点不像主流潜水表的风格但是也挺厚挺大的，算是比较合适的一个大手腕选择。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00032
+        },
+        "max_window_noisy": 0.000637,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000637
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000393
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000269
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 4.22,
+            "clean": 1.0,
+            "noisy": 0.000231
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.72,
+        "tail_silence_seconds": 0.176,
+        "overall_rms": 0.068198,
+        "end_rms": 0.004678,
+        "end_peak": 0.034256,
+        "end_rms_ratio": 0.0686,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000637,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "年值呢比较有特点不像主流前轮表的风格但是也挺厚挺大的算是比较合适的一个大手外选择",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "年值呢比较有特点不像主流前轮表的风格但是也挺厚挺大的算是比较合适的一个大手外选择",
+            "similarity_to_page": 0.9,
+            "avg_logprob": -0.10611060880265145,
+            "no_speech_prob": 0.18353107571601868
+          },
+          {
+            "model_name": "medium",
+            "text": "延值那比較有特點不像主流前手錶的風格但是也挺厚挺大的算是比較合適的一個大手外選擇",
+            "similarity_to_page": 0.65,
+            "avg_logprob": -0.23461186642549475,
+            "no_speech_prob": 0.05228095129132271
+          }
+        ],
+        "agreement": 0.7
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "颜",
+            "年"
+          ],
+          [
+            "潜水",
+            "前轮"
+          ],
+          [
+            "腕",
+            "外"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 4,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 0.9,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_112.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_112.wav",
+      "page_text": "除了表特别厚和原装表带特别骚之外没有什么特别的。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000269
+        },
+        "max_window_noisy": 0.000452,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000269
+          },
+          {
+            "start_seconds": 0.7,
+            "clean": 1.0,
+            "noisy": 0.000452
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.2,
+        "tail_silence_seconds": 0.056,
+        "overall_rms": 0.07429,
+        "end_rms": 0.015405,
+        "end_peak": 0.055754,
+        "end_rms_ratio": 0.207362,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000452,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "除了表特别厚和圆中表特别骚之外没有什么特别",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "除了表特别厚和圆中表特别骚之外没有什么特别",
+            "similarity_to_page": 0.8636,
+            "avg_logprob": -0.23783499207989922,
+            "no_speech_prob": 0.40214550495147705
+          },
+          {
+            "model_name": "medium",
+            "text": "除了表特别厚和 原装表特别骚主也没有什么特别",
+            "similarity_to_page": 0.8636,
+            "avg_logprob": -0.4105196835903021,
+            "no_speech_prob": 0.04422445222735405
+          }
+        ],
+        "agreement": 0.8095
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "带",
+          "的"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "原装",
+            "圆中"
+          ]
+        ],
+        "deleted_len": 2,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.52,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.2,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8636,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_29.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_29.wav",
+      "page_text": "两万块钱到四万块钱基本都有劳力士的鬼王我这里没有劳力士鬼王六到十万同价位还有一个宝珀的五零幺五。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.00041
+        },
+        "max_window_noisy": 0.020508,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000278
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000362
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 0.980469,
+            "noisy": 0.020508
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000999
+          },
+          {
+            "start_seconds": 3.729,
+            "clean": 1.0,
+            "noisy": 0.00038
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.229,
+        "tail_silence_seconds": 0.037,
+        "overall_rms": 0.079702,
+        "end_rms": 0.118908,
+        "end_peak": 0.490325,
+        "end_rms_ratio": 1.491908,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.020508,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "2万块钱到4万块钱基本都有劳力士的鬼王我这里没有劳力士鬼王6到10万平价位还有一个宝破的5015",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "2万块钱到4万块钱基本都有劳力士的鬼王我这里没有劳力士鬼王6到10万平价位还有一个宝破的5015",
+            "similarity_to_page": 0.7789,
+            "avg_logprob": -0.167642448787336,
+            "no_speech_prob": 0.30842143297195435
+          },
+          {
+            "model_name": "medium",
+            "text": "2萬塊錢到4萬塊錢基本都有勞力士的鬼王我這裡沒有勞力士鬼王6到10萬人家位還有一個寶庫的5015",
+            "similarity_to_page": 0.4421,
+            "avg_logprob": -0.33385391476062626,
+            "no_speech_prob": 0.8067575097084045
+          }
+        ],
+        "agreement": 0.625
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "两",
+            "2"
+          ],
+          [
+            "四",
+            "4"
+          ],
+          [
+            "六",
+            "6"
+          ],
+          [
+            "十",
+            "10"
+          ],
+          [
+            "同",
+            "平"
+          ],
+          [
+            "珀",
+            "破"
+          ],
+          [
+            "五零幺五",
+            "5015"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 11,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.76,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "high_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7789,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_137.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_137.wav",
+      "page_text": "只有上海北京西安三个城市有专柜，比百达翡丽多一个，比理哈德米勒还要少。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000282
+        },
+        "max_window_noisy": 0.000311,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000231
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000241
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000311
+          },
+          {
+            "start_seconds": 2.855,
+            "clean": 1.0,
+            "noisy": 0.000275
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 5.355,
+        "tail_silence_seconds": 0.067,
+        "overall_rms": 0.063754,
+        "end_rms": 0.034859,
+        "end_peak": 0.217288,
+        "end_rms_ratio": 0.546764,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000311,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "只有上海 北京 西安三个城市有专柜比百达斐迪多一个比米特拉德米勒还少",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "只有上海 北京 西安三个城市有专柜比百达斐迪多一个比米特拉德米勒还少",
+            "similarity_to_page": 0.8438,
+            "avg_logprob": -0.20693892557570276,
+            "no_speech_prob": 0.2044340968132019
+          },
+          {
+            "model_name": "medium",
+            "text": "只有上海、北京、西安三個城市有專櫃比北拉斐利多一個,比米迪哈德、米勒還少",
+            "similarity_to_page": 0.6562,
+            "avg_logprob": -0.34134371104565536,
+            "no_speech_prob": 0.44038036465644836
+          }
+        ],
+        "agreement": 0.6875
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "要"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "翡丽",
+            "斐迪"
+          ],
+          [
+            "理哈",
+            "米特拉"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 5,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.4,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.32,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "medium_end_peak"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8438,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_18.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_18.wav",
+      "page_text": "早卖也是卖晚卖也是卖，诸多品牌嘛就展望未来慢慢消化啊。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000292
+        },
+        "max_window_noisy": 0.000296,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000296
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000296
+          },
+          {
+            "start_seconds": 1.276,
+            "clean": 1.0,
+            "noisy": 0.000278
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 3.776,
+        "tail_silence_seconds": 0.152,
+        "overall_rms": 0.081054,
+        "end_rms": 0.003536,
+        "end_peak": 0.030473,
+        "end_rms_ratio": 0.043627,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.000296,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "早卖也是卖晚卖也是卖多多品牌们就展望未来慢慢消化",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "早卖也是卖晚卖也是卖多多品牌们就展望未来慢慢消化",
+            "similarity_to_page": 0.898,
+            "avg_logprob": -0.11561379049505506,
+            "no_speech_prob": 0.18406349420547485
+          },
+          {
+            "model_name": "medium",
+            "text": "早賣也是賣 晚賣也是賣多多品牌們就展望未來 慢慢消化",
+            "similarity_to_page": 0.6939,
+            "avg_logprob": -0.20590975790312796,
+            "no_speech_prob": 0.36748233437538147
+          }
+        ],
+        "agreement": 0.75
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "啊"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "诸",
+            "多"
+          ],
+          [
+            "嘛",
+            "们"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 2,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.4,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "similarity_page_vs_consensus": 0.898,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_73.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_73.wav",
+      "page_text": "有机会我们收一只过来专门做一期沛纳海。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000301
+        },
+        "max_window_noisy": 0.000465,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 0.359,
+            "clean": 1.0,
+            "noisy": 0.000465
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.859,
+        "tail_silence_seconds": 0.035,
+        "overall_rms": 0.068009,
+        "end_rms": 0.087849,
+        "end_peak": 0.521269,
+        "end_rms_ratio": 1.291734,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000465,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "有机会我们收一支过来专门做一期那好",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "有机会我们收一支过来专门做一期那好",
+            "similarity_to_page": 0.8,
+            "avg_logprob": -0.20511896195619003,
+            "no_speech_prob": 0.8514622449874878
+          },
+          {
+            "model_name": "medium",
+            "text": "有机会我们收一支过来专门做一些配纳",
+            "similarity_to_page": 0.8,
+            "avg_logprob": -0.33373364676599915,
+            "no_speech_prob": 0.4686824679374695
+          }
+        ],
+        "agreement": 0.8235
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "只",
+            "支"
+          ],
+          [
+            "沛纳海",
+            "那好"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 4,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.12,
+        "needs_manual_review": false,
+        "reasons": [
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.76,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "high_end_peak",
+          "high_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_127.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_127.wav",
+      "page_text": "保值率都绝对到位，双翼呢作为积家的扛鼎之作，机芯打磨和白路设计真挚化境。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000282
+        },
+        "max_window_noisy": 0.00033,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.00022
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000257
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.00033
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000254
+          },
+          {
+            "start_seconds": 3.175,
+            "clean": 1.0,
+            "noisy": 0.00025
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 5.675,
+        "tail_silence_seconds": 0.123,
+        "overall_rms": 0.077808,
+        "end_rms": 0.01107,
+        "end_peak": 0.062388,
+        "end_rms_ratio": 0.142267,
+        "speech_reaches_file_end": false
+      },
+      "noise_score": 0.00033,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "保值率都绝对到位双翼呢作为机家的抗电制作机芯打磨和摆路设计真质化",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "保值率都绝对到位双翼呢作为机家的抗电制作机芯打磨和摆路设计真质化",
+            "similarity_to_page": 0.8,
+            "avg_logprob": -0.16991132610249068,
+            "no_speech_prob": 0.6704054474830627
+          },
+          {
+            "model_name": "medium",
+            "text": "保质率都绝对到位双翼的作为机家的康定制作机芯打磨和白路设计真致化",
+            "similarity_to_page": 0.7692,
+            "avg_logprob": -0.2568261769353127,
+            "no_speech_prob": 0.44366076588630676
+          }
+        ],
+        "agreement": 0.8125
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "境"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "积",
+            "机"
+          ],
+          [
+            "扛鼎之",
+            "抗电制"
+          ],
+          [
+            "白",
+            "摆"
+          ],
+          [
+            "挚",
+            "质"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 6,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.52,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "medium_model_agreement"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.1,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_130ms"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.8,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_38.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_38.wav",
+      "page_text": "比如说包括我，像我十七我也能戴，然后宝珀啊五零幺五记得大推特推一下啊作为五十噚的根在诸多四十毫米的老五十噚，能在竞争非常激烈的潜水表市场当中杀出重围蹭蹭一下就说明这个表。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000793
+        },
+        "max_window_noisy": 0.002838,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000296
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000437
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000286
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000315
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000296
+          },
+          {
+            "start_seconds": 5.0,
+            "clean": 1.0,
+            "noisy": 0.000311
+          },
+          {
+            "start_seconds": 6.0,
+            "clean": 1.0,
+            "noisy": 0.000227
+          },
+          {
+            "start_seconds": 7.0,
+            "clean": 1.0,
+            "noisy": 0.000278
+          },
+          {
+            "start_seconds": 8.0,
+            "clean": 1.0,
+            "noisy": 0.000282
+          },
+          {
+            "start_seconds": 9.0,
+            "clean": 0.996094,
+            "noisy": 0.002838
+          },
+          {
+            "start_seconds": 10.0,
+            "clean": 1.0,
+            "noisy": 0.000254
+          },
+          {
+            "start_seconds": 11.0,
+            "clean": 1.0,
+            "noisy": 0.000237
+          },
+          {
+            "start_seconds": 11.324,
+            "clean": 1.0,
+            "noisy": 0.000216
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 13.824,
+        "tail_silence_seconds": 0.056,
+        "overall_rms": 0.072311,
+        "end_rms": 0.051766,
+        "end_peak": 0.280822,
+        "end_rms_ratio": 0.715888,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.002838,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "包括我像我17我也能戴然后宝珀5015值得大推特推一下啊作为无质菌的根在诸多40毫米的老50能在竞争非常激烈的潜水表市场当中杀不宠危称称一家就说明这个表",
+        "source": "medium",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "包括我像我时期我也能戴然后宝宝5015的大推特推一下作为五字群的根在诸多40毫米的老物时能在竞争非常激烈的潜水表市场当中刹不从为参差异价就说明这个表",
+            "similarity_to_page": 0.671,
+            "avg_logprob": -0.2061086745575221,
+            "no_speech_prob": 0.861271858215332
+          },
+          {
+            "model_name": "medium",
+            "text": "包括我像我17我也能戴然后宝珀5015值得大推特推一下啊作为无质菌的根在诸多40毫米的老50能在竞争非常激烈的潜水表市场当中杀不宠危称称一家就说明这个表",
+            "similarity_to_page": 0.7134,
+            "avg_logprob": -0.2881400178497036,
+            "no_speech_prob": 0.9417490363121033
+          }
+        ],
+        "agreement": 0.7733
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "比如说"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "十七",
+            "17"
+          ],
+          [
+            "啊五零幺五记",
+            "5015值"
+          ],
+          [
+            "五十噚",
+            "无质菌"
+          ],
+          [
+            "四十",
+            "40"
+          ],
+          [
+            "五十噚",
+            "50"
+          ],
+          [
+            "出重围蹭蹭",
+            "不宠危称称"
+          ],
+          [
+            "下",
+            "家"
+          ]
+        ],
+        "deleted_len": 3,
+        "inserted_len": 0,
+        "replace_delta": 22,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.25,
+        "needs_manual_review": false,
+        "reasons": [
+          "page_has_extra_chars"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.54,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_90ms",
+          "high_end_peak",
+          "medium_end_rms_ratio"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.7134,
+      "text_change_suggested": false
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_94.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_94.wav",
+      "page_text": "百年灵航空计时这个款怎么说呢就是测速圈很有风格，旋转阻尼也很舒服，颜值呢肯定是没。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000345
+        },
+        "max_window_noisy": 0.000587,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000254
+          },
+          {
+            "start_seconds": 1.0,
+            "clean": 1.0,
+            "noisy": 0.000496
+          },
+          {
+            "start_seconds": 2.0,
+            "clean": 1.0,
+            "noisy": 0.000587
+          },
+          {
+            "start_seconds": 3.0,
+            "clean": 1.0,
+            "noisy": 0.000324
+          },
+          {
+            "start_seconds": 4.0,
+            "clean": 1.0,
+            "noisy": 0.000265
+          },
+          {
+            "start_seconds": 4.007,
+            "clean": 1.0,
+            "noisy": 0.000261
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 6.507,
+        "tail_silence_seconds": 0.043,
+        "overall_rms": 0.06909,
+        "end_rms": 0.027146,
+        "end_peak": 0.13769,
+        "end_rms_ratio": 0.392903,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000587,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "百年龄航空计时这个款怎么说呢就是测速圈很有风格旋转阻尼也很舒服颜值呢肯定是",
+        "source": "agree:large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "百年龄航空计时这个款怎么说呢就是测速圈很有风格旋转阻尼也很舒服颜值呢肯定是",
+            "similarity_to_page": 0.96,
+            "avg_logprob": -0.13135300820524043,
+            "no_speech_prob": 0.49184760451316833
+          },
+          {
+            "model_name": "medium",
+            "text": "百年零航空计时这个款怎么说呢 就是测速圈很有风格 旋转阻力也很舒服 颜值呢肯定是",
+            "similarity_to_page": 0.9333,
+            "avg_logprob": -0.1936660452435414,
+            "no_speech_prob": 0.46195870637893677
+          }
+        ],
+        "agreement": 0.9459
+      },
+      "text_shape": {
+        "deleted_chunks": [
+          "没"
+        ],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "灵",
+            "龄"
+          ]
+        ],
+        "deleted_len": 1,
+        "inserted_len": 0,
+        "replace_delta": 1,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.75,
+        "needs_manual_review": true,
+        "reasons": [
+          "page_has_extra_chars",
+          "extra_chars_count_le_2",
+          "high_model_agreement",
+          "high_similarity_despite_deletion"
+        ]
+      },
+      "cut_review_hint": {
+        "score": 0.56,
+        "needs_manual_review": true,
+        "reasons": [
+          "tail_silence_lt_50ms",
+          "medium_end_peak",
+          "text_ends_with_是"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.96,
+      "text_change_suggested": true
+    },
+    {
+      "filename": "20260127_00004329_aaab_42_145.wav",
+      "audio_path": "C:\\Users\\BERN7P\\codex-audio\\41398\\audios_20260402_155003\\20260127_00004329_aaab_42_145.wav",
+      "page_text": "独石啊，说实话看着蛮费劲的。",
+      "page_selected_indexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "page_noise_selected": 1,
+      "noise": {
+        "whole": {
+          "clean": 1.0,
+          "noisy": 0.000214
+        },
+        "max_window_noisy": 0.000214,
+        "window_seconds": 2.5,
+        "stride_seconds": 1.0,
+        "windows": [
+          {
+            "start_seconds": 0.0,
+            "clean": 1.0,
+            "noisy": 0.000214
+          }
+        ]
+      },
+      "ending": {
+        "duration_seconds": 2.24,
+        "tail_silence_seconds": 0.096,
+        "overall_rms": 0.070007,
+        "end_rms": 0.029958,
+        "end_peak": 0.193548,
+        "end_rms_ratio": 0.427934,
+        "speech_reaches_file_end": true
+      },
+      "noise_score": 0.000214,
+      "noise_suggestion": "no",
+      "transcript_consensus": {
+        "text": "不实啊说实话看起来蛮费劲的",
+        "source": "large-v3",
+        "rows": [
+          {
+            "model_name": "large-v3",
+            "text": "不实啊说实话看起来蛮费劲的",
+            "similarity_to_page": 0.72,
+            "avg_logprob": -0.27959920111156644,
+            "no_speech_prob": 0.5830900073051453
+          },
+          {
+            "model_name": "medium",
+            "text": "無實啊,說實話看起來蠻費勁的",
+            "similarity_to_page": 0.24,
+            "avg_logprob": -0.5192123086828935,
+            "no_speech_prob": 0.38425058126449585
+          }
+        ],
+        "agreement": 0.3077
+      },
+      "text_shape": {
+        "deleted_chunks": [],
+        "inserted_chunks": [],
+        "replaced_pairs": [
+          [
+            "独石",
+            "不实"
+          ],
+          [
+            "着",
+            "起来"
+          ]
+        ],
+        "deleted_len": 0,
+        "inserted_len": 0,
+        "replace_delta": 4,
+        "is_small_delete_only": false,
+        "has_tail_overhang": false
+      },
+      "text_review_hint": {
+        "score": 0.0,
+        "needs_manual_review": false,
+        "reasons": []
+      },
+      "cut_review_hint": {
+        "score": 0.34,
+        "needs_manual_review": false,
+        "reasons": [
+          "tail_silence_lt_130ms",
+          "medium_end_peak",
+          "text_ends_with_的"
+        ]
+      },
+      "similarity_page_vs_consensus": 0.72,
+      "text_change_suggested": false
+    }
+  ]
+}

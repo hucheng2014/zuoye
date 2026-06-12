@@ -1,0 +1,25 @@
+Mail Smart Reply (MSR) Keynotes
+Do not mix PSR with MSR. Make sure you’re using the right guidelines for the given workflow, as some of
+the criteria for evaluation is slightly different.
+-
+
+Observe the Skip reasons on page 6
+Additional personal information is per response. If a response has NO additional info, do not use
+the one from the previous response.
+User prompt/previous email has priority over additional personal info IF there is contradicting
+information (check GLs pg.29)
+This means, Groundedness is failed if it follows personal info but contradicts the direct
+instructions, which have priority.
+In certain scenarios, creative freedom is allowed but only for generic suggestions/brainstorming,
+not very specific and unverifiable content.
+Pay attention to details, including recipient’s name. If it cannot be found based on input or
+additional personal info, but it is provided in the response, rate as not grounded.
+Personalization dimension is evaluated independently of how you evaluated the other
+dimensions. It is not an overall quality rating, but a rating on how the response suggestion
+captures the user’s communication style for the given context.
+
+Remember: Evaluate each dimension individually based on its own criteria. Analyze carefully and do no
+rush!
+Review the guidelines carefully before starting your work and use them during your work.
+
+

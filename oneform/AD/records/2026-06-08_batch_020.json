@@ -1,0 +1,128 @@
+{
+  "batch_id": "2026-06-08_batch_020",
+  "project": "AD Search Ads Relevance",
+  "operator": "cursor-agent",
+  "created_at": "2026-06-08T22:42:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689668462",
+      "query": "爱 普 生 smart panel",
+      "query_intent": "User is searching for Epson Smart Panel, the official Epson app to manage, scan, and print with Epson printers.",
+      "ad": {
+        "name": "Smart Printer App Scan & Print",
+        "developer": "Appshub Bilgi Teknolojileri Limited Sirketi",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "Epson Smart Panel is the official Epson printer companion; the ad is a third-party printer scan and print utility."
+        }
+      ],
+      "relationship_analysis": "Same core need — printer scanning and printing management — via a non-Epson alternative app.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"爱 普 生 smart panel\" indicates the user wants Epson's official Smart Panel app for managing Epson printer scan and print functions. [Ad Analysis] The advertised app \"Smart Printer App Scan & Print\" is a third-party mobile utility for scanning and printing with printers. [Relevance Breakdown] Both address the same printer management and scan-to-print workflow; users searching for one printer control app commonly consider alternative utilities that provide the same function. [Why not higher/lower] Not Excellent because it is not the official Epson app searched; not Acceptable because the functional overlap in printer scan and print control is direct and strong. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689668463",
+      "query": "河 北 冀 时 办",
+      "query_intent": "User is searching for 冀时办, the official Hebei provincial government services and public-affairs app.",
+      "ad": {
+        "name": "红果短剧 - 海量热门短剧随心看",
+        "developer": "Beijing Bimo Liuxiang Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "冀时办 is a government public-service portal; 红果短剧 is a short-drama entertainment streaming app."
+        }
+      ],
+      "relationship_analysis": "Government civic services vs entertainment streaming — no logical connection.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"河 北 冀 时 办\" indicates the user wants the official Hebei provincial government services app for civic and administrative tasks. [Ad Analysis] The advertised app \"红果短剧\" is a short-drama video entertainment streaming platform. [Relevance Breakdown] A government public-service portal and an entertainment streaming app serve completely different needs, audiences, and use cases with no meaningful overlap. [Why not higher/lower] Not Acceptable because there is no understandable connection between civic government services and short-drama entertainment. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689668464",
+      "query": "美 图",
+      "query_intent": "User is searching for Meitu, the popular photo editing and beauty retouching app.",
+      "ad": {
+        "name": "Wink: Video Enhancer & Editor",
+        "developer": "Xiamen Meitu Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "Wink is published by the same Meitu developer and focuses on video enhancement/editing."
+        }
+      ],
+      "relationship_analysis": "Same developer ecosystem; photo editing brand vs sister video editing product in the same creative media family.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"美 图\" indicates the user wants the Meitu photo editing and beauty retouching application. [Ad Analysis] The advertised app \"Wink\" is a video enhancement and editing tool published by Xiamen Meitu Technology, the same developer behind Meitu. [Relevance Breakdown] Users searching for Meitu are already interested in this developer's creative media tools; Wink extends the same brand into video editing and users would likely consider it a related product. [Why not higher/lower] Not Excellent because it is a video tool rather than the photo app searched; not Acceptable because the same-developer creative editing connection is strong and direct. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689668465",
+      "query": "小 视 频 软 件",
+      "query_intent": "User is searching for short-video apps or software for creating and watching short-form video content.",
+      "ad": {
+        "name": "rednote",
+        "developer": "Xingin",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "rednote is the international name for 小红书 (Xiaohongshu), a major lifestyle and short-video social platform by Xingin."
+        }
+      ],
+      "relationship_analysis": "Short-video platform directly satisfies the broad query for short-video software/apps.",
+      "rating": "Excellent",
+      "comment": "[Query Intent] The query \"小 视 频 软 件\" indicates the user wants short-video applications for watching or creating short-form video content. [Ad Analysis] The advertised app \"rednote\" (Xiaohongshu) is a major lifestyle and short-video social platform by Xingin with extensive short-video features. [Relevance Breakdown] The ad is a leading short-video and social content platform that directly matches the user's request for short-video software. [Why not higher/lower] Not Good because the platform is a primary and highly relevant short-video app rather than a tangential alternative. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689668466",
+      "query": "浦 发 银 行",
+      "query_intent": "User is searching for SPD Bank (Shanghai Pudong Development Bank) mobile banking app for accounts, transfers, and banking services.",
+      "ad": {
+        "name": "长城炼金术-股票开户炒股",
+        "developer": "China Great Wall Securities CO.,LTD.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / prior batch patterns",
+          "note": "SPD Bank is a commercial bank; 长城炼金术 is a securities brokerage for stock trading."
+        }
+      ],
+      "relationship_analysis": "Both in finance but commercial banking vs securities trading serve different specific user needs.",
+      "rating": "Acceptable",
+      "comment": "[Query Intent] The query \"浦 发 银 行\" indicates the user wants the SPD Bank mobile banking application for deposits, transfers, and account management. [Ad Analysis] The advertised app \"长城炼金术\" is a securities brokerage platform for stock account opening and trading. [Relevance Breakdown] Both belong to the broad financial sector, but everyday banking services and securities trading address different specific financial needs. [Why not higher/lower] Not Good because banking and stock brokerage are distinct services despite both involving money management; not Bad because the broad finance category creates a weak but understandable connection. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": false,
+    "submitted_at": "",
+    "post_submit_status": ""
+  }
+}

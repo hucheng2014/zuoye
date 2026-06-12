@@ -1,0 +1,788 @@
+{
+  "url": "https://ilabel.weixin.qq.com/mission/41398/label",
+  "title": "2026音频check_first_part196 - 任务标注",
+  "extractedAt": "2026-04-02T11:19:00.127Z",
+  "count": 60,
+  "items": [
+    {
+      "index": 0,
+      "filename": "20260127_00004326_wjdlh_613_30.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_30.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "嗯，清香型的酒确实是那种万金油啊，你这段时间哪怕是天天喝酱香喝董香和浓香，你再来转清香都能接受。"
+    },
+    {
+      "index": 1,
+      "filename": "20260127_00004326_wjdlh_613_8.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_8.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为我后面还有几期视频要拍我不希望到时候脸是红红的红彤彤的。"
+    },
+    {
+      "index": 2,
+      "filename": "20260127_00004326_wjdlh_613_60.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_60.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "但是喝酒啊你不是说贵就好啊我们抛开瓶子之后我们去盲品的时候感受他们会是不一样的体验。"
+    },
+    {
+      "index": 3,
+      "filename": "20260127_00004326_wjdlh_613_35.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_35.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "主要的差别是在入口的那一下的爆香感。"
+    },
+    {
+      "index": 4,
+      "filename": "20260127_00004326_wjdlh_613_14.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_14.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "汾酒真的是特别特别的干净啊，就是很纯粹的那种淡淡的果香，己酸乙酯的那种青苹果味淡淡一点点苹果味也可以捕捉到，反正就是清新愉悦。"
+    },
+    {
+      "index": 5,
+      "filename": "20260127_00004326_wjdlh_613_65.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_65.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这就是我的一个感受吧，不喜勿喷啊，感谢大家收看。"
+    },
+    {
+      "index": 6,
+      "filename": "20260127_00004326_wjdlh_613_18.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_18.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "明显的更加的浓郁，特别传统的一种味道。"
+    },
+    {
+      "index": 7,
+      "filename": "20260127_00004326_wjdlh_613_9.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_9.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以说尽量少倒点。"
+    },
+    {
+      "index": 8,
+      "filename": "20260127_00004326_wjdlh_613_61.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_61.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "清香型酒就是这样，并不是说越贵的可能就是最好的，因为喝酒很多时候是看瓶子。"
+    },
+    {
+      "index": 9,
+      "filename": "20260127_00004326_wjdlh_613_41.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_41.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "差距不是特别大啊，没有好特别多。"
+    },
+    {
+      "index": 10,
+      "filename": "20260127_00004326_wjdlh_613_0.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_0.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "不少人说汾酒越高端的智商税含量越高，越不值得购买，越没有价值。"
+    },
+    {
+      "index": 11,
+      "filename": "20260127_00004326_wjdlh_613_54.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_54.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "并不是因为年份让这些酒变得更好，是因为它放到瓶子里的时候是非常好的酒。"
+    },
+    {
+      "index": 12,
+      "filename": "20260127_00004326_wjdlh_613_33.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_33.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "它的香气呢中后段虽然没有非常强劲的支撑，因为清香型的酒的风格确实也就是这样它并不是有多复杂的香气来支撑，但是明显可以感受到更长啊，真的是长很多。"
+    },
+    {
+      "index": 13,
+      "filename": "20260127_00004326_wjdlh_613_16.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_16.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这款酒明显感觉更老更加的柔和，香气浓郁度会比它略高一点。"
+    },
+    {
+      "index": 14,
+      "filename": "20260127_00004326_wjdlh_613_43.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_43.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "它确实比这个前面几款啊香气浓郁的多，但是清香的香气太纯粹了，太简单了。"
+    },
+    {
+      "index": 15,
+      "filename": "20260127_00004326_wjdlh_613_7.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_7.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "有点奢侈了，好多了。"
+    },
+    {
+      "index": 16,
+      "filename": "20260127_00004326_wjdlh_613_59.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_59.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那这款青花二零呢它四百块钱酒价格低了十倍，可能会被别人评为说诶这款酒确实很好喝很顺口，这就是我的一个感受啊，清香型的酒呢其实说他们之间确实是有差异，肯定是越贵的越好这不用置疑，毋庸置疑。"
+    },
+    {
+      "index": 17,
+      "filename": "20260127_00004326_wjdlh_613_45.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_45.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "爆发或者说有层次感，没有简单。"
+    },
+    {
+      "index": 18,
+      "filename": "20260127_00004326_wjdlh_613_32.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_32.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "复兴版的滋味比青花二零长得多，你一口喝进去可以感觉它这个酒在口腔里面持续的那种甜感跟冲击感，持续的时间啊，都是更久的。"
+    },
+    {
+      "index": 19,
+      "filename": "20260127_00004326_wjdlh_613_46.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_46.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "六十五度的酒就是不一样的，喝起来呢。"
+    },
+    {
+      "index": 20,
+      "filename": "20260127_00004326_wjdlh_613_10.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_10.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为这些都是好酒啊倒出来你要浪费了也不合适，都要把它喝完。"
+    },
+    {
+      "index": 21,
+      "filename": "20260127_00004326_wjdlh_613_62.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_62.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "瓶子越贵，酒越好喝，这就是百分之九十五以上的消费者对白酒的一个认知。"
+    },
+    {
+      "index": 22,
+      "filename": "20260127_00004326_wjdlh_613_24.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_24.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "有点东西啊。"
+    },
+    {
+      "index": 23,
+      "filename": "20260127_00004326_wjdlh_613_23.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_23.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "浅闻闻起来的香气呢是非常的淡的啊并不是很浓郁，但是生闻又可以感受到它这款酒有东西。"
+    },
+    {
+      "index": 24,
+      "filename": "20260127_00004326_wjdlh_613_48.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_48.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "在喉咙里面是可以感受到热，不会觉得辣。"
+    },
+    {
+      "index": 25,
+      "filename": "20260127_00004326_wjdlh_613_34.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_34.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "老的青花三零跟青花二零呢其实差别非常的小。"
+    },
+    {
+      "index": 26,
+      "filename": "20260127_00004326_wjdlh_613_15.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_15.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "青花三零复兴版明显可以感受到酒体更老啊。"
+    },
+    {
+      "index": 27,
+      "filename": "20260127_00004326_wjdlh_613_11.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_11.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以说其实倒酒的时候我还是喜欢那种有珠子的，像这些没有珠子的一不小心就倒多了。"
+    },
+    {
+      "index": 28,
+      "filename": "20260127_00004326_wjdlh_613_63.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_63.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "清香型特别明显能感受到这一点。"
+    },
+    {
+      "index": 29,
+      "filename": "20260127_00004326_wjdlh_613_52.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_52.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那一般一点的酒呢他可能做了青花二零，再低端一点的做了一些什么老白汾高端酒才会存这么多年。"
+    },
+    {
+      "index": 30,
+      "filename": "20260127_00004326_wjdlh_613_19.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_19.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那这一款呢会偏果香清甜一些。"
+    },
+    {
+      "index": 31,
+      "filename": "20260127_00004326_wjdlh_613_53.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_53.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "普通的一个酒质黄盖玻汾的酒质它可能放到五十年再卖吗？"
+    },
+    {
+      "index": 32,
+      "filename": "20260127_00004326_wjdlh_613_22.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_22.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "感觉它的香气非常的低调。"
+    },
+    {
+      "index": 33,
+      "filename": "20260127_00004326_wjdlh_613_51.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_51.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "他把特别高质量的酒拿来长期储存，做成了现在的这个青花五零。"
+    },
+    {
+      "index": 34,
+      "filename": "20260127_00004326_wjdlh_613_39.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_39.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我觉得它还没有青花二零柔和，但是它的沉香也更重。"
+    },
+    {
+      "index": 35,
+      "filename": "20260127_00004326_wjdlh_613_49.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_49.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以说这款酒确实是非常老的一款酒，年份呢可以让酒体啊没有那么的爆烈，但是不会让一款酒的酒质变得更好，因为你酒在。"
+    },
+    {
+      "index": 36,
+      "filename": "20260127_00004326_wjdlh_613_26.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_26.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "竟然没有，感受到的更多是那种有深度的香气。"
+    },
+    {
+      "index": 37,
+      "filename": "20260127_00004326_wjdlh_613_3.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_3.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这款是青花五零啊，青花五零是一个六十五度的酒，是一款超高度的清香型白酒。"
+    },
+    {
+      "index": 38,
+      "filename": "20260127_00004326_wjdlh_613_38.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_38.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "但是你要说它有没有它柔和呢？"
+    },
+    {
+      "index": 39,
+      "filename": "20260127_00004326_wjdlh_613_56.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_56.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "让大家来盲品说哪一款酒更好喝啊？"
+    },
+    {
+      "index": 40,
+      "filename": "20260127_00004326_wjdlh_613_31.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_31.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为这种味道是比较淡雅清爽。"
+    },
+    {
+      "index": 41,
+      "filename": "20260127_00004326_wjdlh_613_29.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_29.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "落口特别的近，比较绵甜。"
+    },
+    {
+      "index": 42,
+      "filename": "20260127_00004326_wjdlh_613_44.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_44.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这种浓跟淡，它并不会让你感觉这种香气在口腔里面会那种持续的。"
+    },
+    {
+      "index": 43,
+      "filename": "20260127_00004326_wjdlh_613_20.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_20.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那我们来闻这个。"
+    },
+    {
+      "index": 44,
+      "filename": "20260127_00004326_wjdlh_613_4.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_4.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那我们把酒倒上，分别来喝一喝。"
+    },
+    {
+      "index": 45,
+      "filename": "20260127_00004326_wjdlh_613_57.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_57.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我觉得这五款酒可能会被评的稀巴烂。"
+    },
+    {
+      "index": 46,
+      "filename": "20260127_00004326_wjdlh_613_17.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_17.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那这一款青花三菱老款呢它的沉香感比较重，酯香比较重，那种己酸乙酯的这种香味啊。"
+    },
+    {
+      "index": 47,
+      "filename": "20260127_00004326_wjdlh_613_5.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_5.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "感受一下他们到底是什么味道。"
+    },
+    {
+      "index": 48,
+      "filename": "20260127_00004326_wjdlh_613_58.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_58.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这款四五千的酒可能在评价里面会觉得这款酒特别的辣。"
+    },
+    {
+      "index": 49,
+      "filename": "20260127_00004326_wjdlh_613_40.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_40.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以说青花三零我觉得比青花二零是有提升的酒质的浓郁度酒香浓郁度是提升的，但是论酒后的愉悦度，饮后的这种舒适度。"
+    },
+    {
+      "index": 50,
+      "filename": "20260127_00004326_wjdlh_613_27.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_27.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "入口品鉴一下。"
+    },
+    {
+      "index": 51,
+      "filename": "20260127_00004326_wjdlh_613_42.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_42.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那喝下这个青花中国庄，也叫青花四里。"
+    },
+    {
+      "index": 52,
+      "filename": "20260127_00004326_wjdlh_613_28.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_28.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "甜柔舒适。"
+    },
+    {
+      "index": 53,
+      "filename": "20260127_00004326_wjdlh_613_36.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_36.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "老青花三零的爆香感比青花二零明显的。"
+    },
+    {
+      "index": 54,
+      "filename": "20260127_00004326_wjdlh_613_50.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_50.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "生产出来之后他是要分型定级啊。"
+    },
+    {
+      "index": 55,
+      "filename": "20260127_00004326_wjdlh_613_21.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_21.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这款蚊香反而特别的内敛。"
+    },
+    {
+      "index": 56,
+      "filename": "20260127_00004326_wjdlh_613_47.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_47.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "辣感很重啊对口腔的那种冲击感，热感都很大。"
+    },
+    {
+      "index": 57,
+      "filename": "20260127_00004326_wjdlh_613_64.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_64.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以说越高端的清香型的酒我个人认为智商税含量确实是越高的。"
+    },
+    {
+      "index": 58,
+      "filename": "20260127_00004326_wjdlh_613_1.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_1.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那我们今天就来测评一下所有的青花汾系列，分别是青花二零青花三零复兴版。"
+    },
+    {
+      "index": 59,
+      "filename": "20260127_00004326_wjdlh_613_55.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_613_spk0/20260127_00004326_wjdlh_613_55.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "如果今天我们一个高端局啊，带着这五款酒给大家去品。"
+    }
+  ]
+}

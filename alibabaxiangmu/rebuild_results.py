@@ -1,7 +1,7 @@
 import requests, json, websocket, re
 from pathlib import Path
 
-SCRATCH = Path('/home/jianglei/zuoye/alibabaxiangmu/scratch')
+SCRATCH = Path('/Users/xaa/zuoye/alibabaxiangmu/scratch')
 
 
 def convert_timestamps(text):

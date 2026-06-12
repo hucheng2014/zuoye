@@ -1,0 +1,228 @@
+diff --git a/practice_logs/practice_stats.py b/practice_logs/practice_stats.py
+index 79dbe28..0d2d508 100644
+--- a/practice_logs/practice_stats.py
++++ b/practice_logs/practice_stats.py
+@@ -36,7 +36,13 @@ async def practice_summary(
+ 
+     total_minutes = sum(l.duration_minutes for l in logs)
+     avg_minutes = total_minutes / len(logs)
+-    avg_rating = sum(l.self_rating for l in logs) / len(logs)
++    
++    if total_minutes == 0:
++        avg_rating = 0.0
++    else:
++        total_weighted_rating = sum(l.self_rating * l.duration_minutes for l in logs)
++        avg_rating = total_weighted_rating / total_minutes
++    
+     instruments = list({l.instrument_id for l in logs})
+ 
+     return {
+@@ -63,17 +69,21 @@ async def practice_by_instrument(
+     for log in logs:
+         iid = log.instrument_id
+         if iid not in by_instrument:
+-            by_instrument[iid] = {"sessions": 0, "total_minutes": 0, "ratings": []}
++            by_instrument[iid] = {"sessions": 0, "total_minutes": 0, "weighted_rating": 0}
+         by_instrument[iid]["sessions"] += 1
+         by_instrument[iid]["total_minutes"] += log.duration_minutes
+-        by_instrument[iid]["ratings"].append(log.self_rating)
++        by_instrument[iid]["weighted_rating"] += log.self_rating * log.duration_minutes
+ 
+     result_data = {}
+     for iid, data in by_instrument.items():
++        if data["total_minutes"] == 0:
++            avg_rating = 0.0
++        else:
++            avg_rating = data["weighted_rating"] / data["total_minutes"]
+         result_data[iid] = {
+             "sessions": data["sessions"],
+             "total_minutes": data["total_minutes"],
+-            "average_rating": round(sum(data["ratings"]) / len(data["ratings"]), 2),
++            "average_rating": round(avg_rating, 2),
+         }
+ 
+     return {"student_id": student_id, "by_instrument": result_data}
+diff --git a/tests/test_prompt5.py b/tests/test_prompt5.py
+new file mode 100644
+index 0000000..f086025
+--- /dev/null
++++ b/tests/test_prompt5.py
+@@ -0,0 +1,178 @@
++from __future__ import annotations
++
++import datetime
++from httpx import AsyncClient
++from sqlalchemy.ext.asyncio import AsyncSession
++
++from core.db import get_db
++from music_models.music_models import User, Instrument
++from tests.conftest import api_key_header, register_user, override_get_db
++
++
++async def make_student(client: AsyncClient, username: str) -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "student")
++
++
++async def make_instrument(
++    db: AsyncSession,
++    instrument_name: str = "Piano",
++    category: str = "keyboard",
++) -> Instrument:
++    instrument = Instrument(
++        instrument_name=instrument_name,
++        category=category,
++        lesson_type="private",
++    )
++    db.add(instrument)
++    await db.commit()
++    await db.refresh(instrument)
++    return instrument
++
++
++async def make_practice_log(
++    client: AsyncClient,
++    api_key: str,
++    student_id: str,
++    instrument_id: str,
++    duration_minutes: int,
++    self_rating: int,
++) -> dict:
++    resp = await client.post(
++        "/practice-logs",
++        json={
++            "student_id": student_id,
++            "instrument_id": instrument_id,
++            "practice_date": datetime.date.today().isoformat(),
++            "duration_minutes": duration_minutes,
++            "pieces_practiced": [],
++            "self_rating": self_rating,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def test_summary_weighted_average_rating(client: AsyncClient):
++    student = await make_student(client, "test_student1")
++    
++    async for db in override_get_db():
++        instrument = await make_instrument(db, "Guitar", "guitar")
++    
++    # 测试1: 2条记录，时长不同
++    # 记录1: 30分钟，评分4 → 30*4=120
++    # 记录2: 60分钟，评分5 → 60*5=300
++    # 加权平均: (120+300)/(30+60) = 420/90 = 4.67
++    await make_practice_log(
++        client, student["api_key"], student["id"], instrument.id, 30, 4
++    )
++    await make_practice_log(
++        client, student["api_key"], student["id"], instrument.id, 60, 5
++    )
++    
++    resp = await client.get(
++        "/practice-logs/stats/summary",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++    assert data["average_rating"] == 4.67
++    assert data["total_minutes"] == 90
++
++
++async def test_summary_zero_duration_returns_zero(client: AsyncClient):
++    student = await make_student(client, "test_student2")
++    
++    async for db in override_get_db():
++        instrument = await make_instrument(db, "Violin", "strings")
++    
++    # 创建时长为0的记录
++    await make_practice_log(
++        client, student["api_key"], student["id"], instrument.id, 0, 5
++    )
++    
++    resp = await client.get(
++        "/practice-logs/stats/summary",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++    assert data["average_rating"] == 0.0
++
++
++async def test_by_instrument_weighted_average(client: AsyncClient):
++    student = await make_student(client, "test_student3")
++    
++    async for db in override_get_db():
++        piano = await make_instrument(db, "Piano", "keyboard")
++        violin = await make_instrument(db, "Violin", "strings")
++    
++    # 钢琴: 2条记录
++    # 记录1: 45分钟，评分3 → 45*3=135
++    # 记录2: 15分钟，评分5 → 15*5=75
++    # 加权平均: (135+75)/(45+15) = 210/60 = 3.50
++    await make_practice_log(
++        client, student["api_key"], student["id"], piano.id, 45, 3
++    )
++    await make_practice_log(
++        client, student["api_key"], student["id"], piano.id, 15, 5
++    )
++    
++    # 小提琴: 1条记录
++    # 记录1: 30分钟，评分4 → 4.00
++    await make_practice_log(
++        client, student["api_key"], student["id"], violin.id, 30, 4
++    )
++    
++    resp = await client.get(
++        f"/practice-logs/stats/by-instrument?student_id={student['id']}",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++    
++    assert piano.id in data["by_instrument"]
++    assert violin.id in data["by_instrument"]
++    
++    piano_data = data["by_instrument"][piano.id]
++    assert piano_data["average_rating"] == 3.5
++    assert piano_data["total_minutes"] == 60
++    
++    violin_data = data["by_instrument"][violin.id]
++    assert violin_data["average_rating"] == 4.0
++    assert violin_data["total_minutes"] == 30
++
++
++async def test_by_instrument_zero_duration_returns_zero(client: AsyncClient):
++    student = await make_student(client, "test_student4")
++    
++    async for db in override_get_db():
++        drums = await make_instrument(db, "Drums", "percussion")
++    
++    # 鼓: 时长为0的记录
++    await make_practice_log(
++        client, student["api_key"], student["id"], drums.id, 0, 3
++    )
++    
++    resp = await client.get(
++        f"/practice-logs/stats/by-instrument?student_id={student['id']}",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++    
++    assert drums.id in data["by_instrument"]
++    drums_data = data["by_instrument"][drums.id]
++    assert drums_data["average_rating"] == 0.0
++
++
++async def test_summary_empty_logs_returns_zero(client: AsyncClient):
++    student = await make_student(client, "test_student5")
++    
++    resp = await client.get(
++        "/practice-logs/stats/summary",
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 200
++    data = resp.json()
++    assert data["average_rating"] == 0.0

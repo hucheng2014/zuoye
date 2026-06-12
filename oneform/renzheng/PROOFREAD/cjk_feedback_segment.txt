@@ -1,0 +1,490 @@
+ nearly
+Response C:
+identical and
+
+Centific Confidential
+
+Vi menar att tidigare erfarenheter visar
+att detta inte funkar.
+
+Completeness:
+The response
+identifies all
+errors.
+Correctness:
+Most of the
+necessary edits
+are correct, but
+not All. The
+response
+Introduced a new
+error.
+
+Tja Anna! Asså du MÅSTE lyssna på nya P3 both are fully
+Doku-avsnittet om Palmemordet, helt
+correct.
+sjukt bra! Har du hunnit än? ;)
+
+sv_SE
+
+Q1 text
+gramatically
+correct:
+Helt otroligt hur man förändras. Från att tycka växter var det tråkigaste som fanns till
+The input
+att nu typ älska dem. Skrev om det på min blogg Själsljus.se för den som är nyfiken,
+contains
+helt jävla fascinerande hur intelligent naturen är.
+errorsthat hinder
+comprehension
+orreadability.
+
+ja_JP
+
+田中さん、今週のレポート読ましても 田中さん、今週のレポート読んでもら
+らったわ。ユーザーエンゲージメント ったわ。ユーザーエンゲージメントが Edit correctness:
+が30%も低下してるけどこの結果を聞 30%も低下してるけど、この結果を聞 All necessary
+いたら、クライアントもきっとお喜び いたら、クライアントもきっとお喜び edits are correct.
+になられるでしょうね。
+になられるでしょうね。
+
+ja_JP
+
+田中さん、今週のレポート読ましても 田中さん、今週のレポート、読ませて Edit necessity:
+らったわ。ユーザーエンゲージメント もらったわ。ユーザーエンゲージメン Only some of the
+が30%も低下してるけどこの結果を聞 トが30%も低下しているけど、この結 edits are
+いたら、クライアントもきっとお喜び 果を聞いたらクライアントもきっと喜 necessary. Mark
+as “mixed”.
+になられるでしょうね。
+ぶでしょうね。
+
+ja_JP
+
+田中さん、来週月曜日の券ですが、また変更ですみなせん。渋谷1ー2ー3の
+件、朝令暮改で本当に申し訳ないです。
+
+Input
+correctness:
+The input
+contains errors,
+wrong kanji "券"
+is used for"件"
+and "すみなせん
+" is a typo of "す
+みません"
+
+ja_JP
+
+Errors found and
+corrected:
+【Wi-Fi接続ができない場合】 下記の 【Wi-Fi接続ができない場合】 下記の
+The response is
+手順をお試しくだいさい。 1. スマー 手順をお試しください。 1. スマート nearly complete
+トフォンの「設定」から「Wi-Fi」を友 フォンの「設定」から「Wi-Fi」を有効 as it is missing a
+好にします。 2. ネットワーク一覧画 にします。 2. ネットワーク一覧画面 small portion of
+面で、以下のいずれかのネットワーク で、以下のいずれかのネットワーク名 the error which is
+名を探して接続してください。 ・
+を探して接続してください。 ・
+under Common
+「Camera-ABC-XXXX」 ・
+「Camera-ABC-XXXX」 ・
+grammatical mix「Photo_Share_YYYY」 3. 接続後、この 「Photo_Share_YYYY」 3. 接続後、この ups for the part
+アプリに戻り、設定を完了させてくだ アプリに戻り、設定を完了させてくだ of the "カメラ本
+さい。 ※接続にパスワードが必要な さい。 ※接続にパスワードが必要な 体の底⾯で記載
+場合、カメラ本体の底面で記載されて 場合、カメラ本体の底面で記載されて
+されている
+いる「KEY」がパスワードです。
+いる「KEY」がパスワードです。
+"should be
+corrected.
+
+Centific Confidential
+
+ja_JP
+
+Unnecessary Edit
+Description:
+私、佐藤としては、例の件が解決し 私、佐藤としては、例の件が解決し All unnecessary
+て、コンプライアンス的にOKをでな て、コンプライアンス的にOKでない edits are for
+いと、うちのﾀﾚﾝﾄの器用は正直ムズい と、うちのタレントの起用は正直ムズ minor formatting
+と考えてます。とりま、状況を見守る いと考えています。とりま、状況を見 changes, ”考えて
+ます" is correct
+感じですね。
+守る感じですね。
+for semiformal
+tone.
+
+ja_JP
+
+この新作ケーキ,追いしそう。
+
+Changes to
+input:
+The response is
+different from
+the input as the
+comma has been
+changed.
+
+ja_JP
+
+Formality:
+The task is
+会員のにな様へ。システムメンテナンンスのため 2024/11/20の2:00～4:00の written in formal
+間、サービスを一時停止してます。ご不便をおかけしますが、ご理解のほど way which is
+honorific form for
+よろしく お願いいたします。運命チーム
+notification to
+customers.
+
+ko_KR
+
+Edit correctness:
+The response
+correctly changes
+사회 발전는 어느 한쪽의 노력만으로는 사회 발전는 어느 한쪽의 노력만으로는 the misspelling of
+불가능하며, 모두의 적그적인 참여이 불가능하며, 모두의 적극적인 참여가 "적그적인" ->
+"적극적인" and
+필수적입니다.
+필수적입니다.
+grammatical
+error"참여이" →
+“참여가".
+
+ko_KR
+
+Edit necessity:
+Only some edits
+are necessary.
+because the
+제가 널 좋아하는 이유 리스트: 얼굴이 제가 널 좋아하는 이유 리스트: 얼굴이
+spacing for
+잘생기심.이건 팩트. ...는 아직 생각 중. 잘생기심.이건 팩트. ...는 아직 생각 중.
+조아하는거지 is
+이게 다아? 왜 너를 조아하는거지?
+이게 다야? 왜 너를 조아하는 거지?
+not a critical
+ㅋㅋㅋㅋ
+ㅋㅋㅋㅋ
+error given that
+the text is
+informal. Mark as
+“mixed”.
+
+ko_KR
+
+언니, 저 요즘 매일 야근이라 배달 음식만 시켜먹었더니 월급이 그냥 스쳐
+지나가시네요 진짜 눈물나여…
+
+Centific Confidential
+
+この新作ケーキ、追いしそう。
+
+Input
+correctness:
+The input text
+
+has one critical
+error
+( "지나가시네요
+"), two minor
+error
+("시켜먹었더니"
+and no period
+after
+“지나가시네요")
+.
+
+ko_KR
+
+Errors found and
+corrected:
+Misses a
+significant
+민지야, 나 어제 대박인 디저트 카페
+민지야, 나 어제 대박인 디저트 카페
+portion (20% or
+찾았어!! 여기 시그니처인 얼그레이
+찾았어!! 여기 시그니처인 얼그레이
+more, such as2
+쉬폰 케이크 먹어봤는데, 완전 내 dls생 쉬폰 케이크 먹어 봤는데, 완전 내 딸생 out of 5) because
+캐이크야. 한 조각에 9500원이라 조금 케이크야. 한 조각에 9500원이라 조금 the correction
+made for
+비싼가 했는데, 맛보면 그런 생각 싹
+비싼가 했는데, 맛보면 그런 생각 싹
+'dls생'>'딸생' is
+사라져. 분위기 도 아늑하고 사진
+사라져. 분위기도 아늑하고 사진
+incorrect, it
+찍기에도 최고야.우리가 좋아하는
+찍기에도 최고야.우리가 좋아하는
+고양이 소품도 10cm 크기로 잔뜩 있고! 고양이 소품도 10cm 크기로 잔뜩 있고! should be
+인생because 'dls'
+다음에 우리 15:00쯤 가서 같이 수다
+다음에 우리 15:00쯤 가서 같이 수다
+spells 인, the
+떨자고. 여기 2024-05-20에 새로 연
+떨자고. 여기 2024-05-20에 새로 연
+spelling for 쉬폰
+곳이래?
+곳이래?
+is also not
+corrected as it
+should be 시폰.
+Mark “partial”.
+
+ko_KR
+
+Unnecessary Edit
+Description:
+제가 널 좋아하는 이유 리스트: 얼굴이 제가 널 좋아하는 이유 리스트: 얼굴이 All unnecessary
+잘생기심.이건 팩트. ...는 아직 생각 중. 잘생기심.이건 팩트. ...는 아직 생각 중. edits are for
+minor formatting
+이게 다아? 왜 너를 조아하는거지?
+이게 다야? 왜 너를 조아하는 거지?
+changes, which is
+ㅋㅋㅋㅋ
+ㅋㅋㅋㅋ
+the spacing of
+조아하는거지.
+
+ko_KR
+
+Formality:
+Formal because
+the input uses an
+academic,
+objective tone
+typical of essays
+or reports with
+structured
+phrasing such as
+"~는
+~필수적입니다"
+which is
+
+사회 발전는 어느 한쪽의 노력만으로는 불가능하며, 모두의 적그적인 참여이
+필수적입니다.
+
+Centific Confidential
+
+commonly found
+in formal written
+Korean.
+Edit correctness:
+All necessary
+edits are correct.
+The omission of
+the word
+correction "suất
+-> xuất" should
+be rated poorly in
+the
+Completeness
+section. B's
+correction (xắc ->
+sắc) is correct.
+
+vi_VN
+
+Nè Linh ơi, hôm bữa anh mới ăn quán
+Nè Linh ơi, hôm bữa anh mới ăn quán
+phở bò ở gần trườngg mình á, ngon suất phở bò ở gần trường mình á, ngon suất
+xắc luôn! Cuối tuần đi thử không em :>
+sắc luôn! Cuối tuần đi thử không em :>
+
+vi_VN
+
+Errors found and
+corrected:
+Misses a
+significant
+portion (20% or
+Không sửađược liên hệ của anh Chần à? Không sửa được liên hệ của anh Chần à?
+more, such as 2
+Mực này chỉ để xem Thôi, không sửa trực Mực này chỉ để xem thôi, không sửa trực
+out of 5) some
+tiếp duoc đâu. nếu muốn update sđt
+tiếp được đâu. Nếu muốn update số điện
+errors remains
+0901234567 hoặc thông tin khéc, bạn
+thoại 0901234567 hoặc thông tin khác,
+unchanged:
+bám vào link phía trên để sửa trogn
+bạn bám vào link phía trên để sửa trong
+"Chần, Mực,
+Autlook nhé./
+Autlook nhé?
+Autlook", "bám"
+=> should be
+corrected to
+"Trần, Mục,
+Outlook, bấm”.
+
+zh_CN
+
+Edit necessity:
+All edits are
+necessary, as
+亲爱的，刚开始健身的话，先从简单的 亲爱的，刚开始健身的话，先从简单的 changing 别⽤⼒
+拉深做起就行，别用力过猛一上来就。 拉深做起就行，别一上来就用力过猛。
+过猛⼀上来就 to
+别⼀上来就⽤⼒
+过猛is necessary.
+
+zh_CN
+
+小琳，咱们，原定2024-10-25，晚上
+19:00的聚餐，还算术吗？我刚订好位
+子，但还没订到，等你回复哦！
+
+Errors found and
+corrected:
+The response
+小琳，咱们原定2024-10-25晚上19:00的 fails to correct
+聚餐，还算数吗？我刚订好位子，但还 awkward writing
+刚订好位⼦，但
+没订到，等你回复哦！
+还没订到, should
+be Nearly
+complete -
+
+Centific Confidential
+
+Misses only a
+small portion
+(fewer than 20%,
+such as 1 out of
+6)3Link Error
+Type Error
+Description Error
+Counts (How
+many analyst
+made this error?
+– not including
+consensus)
+
+zh_HK
+
+喂，純粹喺我既意見，唔代表我哋公司 喂，純粹喺我嘅意見，唔代表我哋公司
+Edit necessity:
+立埸。你係不是講咗嗰個姓梁嘅KOL？ 立場。你係咪講咗嗰個姓梁嘅KOL？嗰
+All edits in the
+嗰個根本就係靠煽動情緒嚟呃like。搵 個根本就係靠煽動情緒嚟呃like。搵咗
+response are
+咗少少嘢就無限放大，其實無材料，正 少少嘢就無限放大，其實無材料，正一 necessary.
+一神棍。
+神棍。
+
+zh_HK
+
+Input
+correctness:
+The input
+啲人成日話肯搏肯捱就實會上到位，，根本係自欺人啦。當個社會嘅遊戲規則 contains errors
+本身已經唔公平，成功與否就唔再關個人努力事，而係睇你本身有冇Capital。 that hinder
+comprehension
+or readability (typo ⾃欺⼈).
+
+zh_HK
+
+Errors found and
+corrected:
+Nearly completeMisses only a
+small
+喂，純粹喺我既意見，唔代表我哋公司 喂，純粹喺我嘅意見，唔代表我哋公司
+portion(fewer
+立埸。你係不是講咗嗰個姓梁嘅KOL？ 立場。你係咪講咗嗰個姓梁嘅KOL？嗰
+than 20%,such as
+嗰個根本就係靠煽動情緒嚟呃like。搵 個根本就係靠煽動情緒嚟呃like。搵咗
+1 out of
+咗少少嘢就無限放大，其實無材料，正 少少嘢就無限放大，其實無材料，正一 6)Incorrect word
+一神棍。
+神棍。
+usage that
+changes meaning
+or causes
+grammatical
+errors (typo喺).
+
+zh_HK
+
+你問我們，誰能代表這支軍隊的靈魂？ 你問我們，誰能代表這支軍隊的靈魂？
+在我們心中，那個人就是朱德總司令。 在我們心中，那個人就是朱德總司令。
+Changes to
+我們記得，他來自川北的貧脊土地，一 我們記得，他來自川北的貧窮土地，一
+input:
+個佃農的兒子，卻懷抱著改變世界的決 個佃農的兒子，卻懷抱著改變世界的決
+The response is
+心。他曾是舊軍隊的高級將領，卻毅然 心。他曾是舊軍隊的高級將領，卻毅然
+different from
+拋棄一切，遠赴歐洲尋找真理。我們見 拋棄一切，遠赴歐洲尋找真理。我們見
+the input.
+證了他在南昌城頭的決絕，從那一刻 證了他在南昌城頭的決絕，從那一刻
+起，他便將生命融入了革命的洪流。 起，他便將生命融入了革命的洪流。
+
+Centific Confidential
+
+我們不會忘記，在井岡山上，他和毛澤 我們不會忘記，在井岡山上，他和毛澤
+東的雙手緊緊握在一起，「朱毛紅軍」 東的雙手緊緊握在一起，「朱毛紅軍」
+的旗幟從此飄揚。長征路上，他以無比 的旗幟從此飄揚。長征路上，他以無比
+的毅力走過雪山草地。抗日烽火中，他 的毅力走過雪山草地。抗日烽火中，他
+身為八路軍總司令，指揮我們在敵後給 身為八路軍總司令，指揮我們在敵後給
+予侵略者沉痛打擊。他是一個真正的英 予侵略者沉痛打擊。他是一個真正的英
+雄 (HERO)，一個從未動搖過的戰士。 雄 (HERO)，一個從未動搖過的戰士。
+他不像有些將領那樣鋒芒畢露，他的偉 他不像有些將領那樣鋒芒畢露，他的偉
+大是內斂的，像山⼀樣厚重，像海⼀樣 大是內斂的，像山⼀樣厚重，像海⼀樣
+寬廣。他教導我們，作為軍⼈，不僅要 寬廣。他教導我們，作為軍⼈，不僅要
+會打仗，更要心裡裝著⼈民。這就是我 會打仗，更要心裡裝著⼈民。這就是我
+們心中永恆的軍魂，這就是朱德。
+
+zh_TW
+
+們心中永恆的軍魂，這就是朱德。
+
+我們團隊內部討論過後，決定將專案節 我們團隊內部討論過後，決定將專案截 Edit correctness:
+All necessary
+止日期延長⼀週，請大家們注意，
+止日期延長⼀週，請大家注意，
+edits are correct.
+
+zh_TW
+
+你看那條河，几十年前我小時候還可以 你看那條河，幾十年前我小時候還可以
+Edit necessity:
+在裡面玩水欸。現在喔...唉，整個都便 在裡面玩水欸。現在喔...唉，整個都變
+All edits in the
+色了。人類就是這樣，取之於自然 → 色了。人類就是這樣，取之於自然 →
+response are
+卻不懂的珍惜。這真是太SAD了，希望 卻不懂得珍惜。這真是太SAD了，希望 necessary.
+你長大後不會變成這樣的大人。
+你長大後不會變成這樣的大人。
+
+zh_TW
+
+Input
+correctness:
+The input
+contains errors
+that hinder
+comprehension
+or readability.
+
+zh_TW
+
+親愛的，我剛看了一下，我們上次說的那家花蓮民宿下週末只賸⼀間雙⼈房
+了，妳方便的話先幫我刷卡訂下來嗎？費⽤我馬上轉帳給妳！
+
+學長，我這幾天在研究我們的便當推薦 學長，我這幾天在研究我們的便當推薦
+系統，發現API回應速度有時候真的很 系統，發現 API 回應速度有時候真的很 Changes to
+慢。追查後發現瓶頸似乎是後端的資料 慢。追查後發現瓶頸似乎是後端的資料 input:
+庫查詢。我在想，如果導入像是
+庫查詢。我在想，如果導入像是
+The response is
+「redis"的快取機制，效能應該能提升 「redis」的快取機制，效能應該能提升 different from
+不少？我整理了初步的想法跟預期效 不少？我整理了初步的想法跟預期效 the input.
+益，您方便時能幫我看看給點建議嗎？ 益，您方便時能幫我看看給點建議嗎？
+
+Centific Confidential
+
+

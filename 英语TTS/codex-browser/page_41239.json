@@ -1,0 +1,1087 @@
+﻿{
+  "url": "https://ilabel.weixin.qq.com/mission/41239/label",
+  "title": "2026音频check_first_part193 - 任务标注",
+  "count": 12,
+  "items": [
+    {
+      "index": 0,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_0.wav",
+      "duration": 5.290667,
+      "filename": "20260127_00004314_zqbl_421_0.wav",
+      "text": "大家好我是老k 今天的话来聊一聊这种ic 平底球鞋所适合的一些场地。",
+      "rootText": "目录: 20260127_00004314_zqbl_421_0.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_1.wav",
+      "duration": 7.104,
+      "filename": "20260127_00004314_zqbl_421_1.wav",
+      "text": "那么一般来说呀i c 使用的场地一定得是要这种平坦的，国际上呢一般是用一些塑胶还有一些木板。",
+      "rootText": "目录: 20260127_00004314_zqbl_421_1.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_8.wav",
+      "duration": 2.069333,
+      "filename": "20260127_00004314_zqbl_421_8.wav",
+      "text": "那就是这样的场地啊它一般呢？",
+      "rootText": "目录: 20260127_00004314_zqbl_421_8.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_15.wav",
+      "duration": 1.792,
+      "filename": "20260127_00004314_zqbl_421_15.wav",
+      "text": "今天的内容对您有帮助吗？",
+      "rootText": "目录: 20260127_00004314_zqbl_421_15.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_14.wav",
+      "duration": 10.837333,
+      "filename": "20260127_00004314_zqbl_421_14.wav",
+      "text": "如果呢你还不知道什么是球鞋的一个缓震材料呢就请赶紧关注我们的骚客go 茫茫多的这个球鞋测评呀还有一些选装备的小知识啊小技巧都在我们的平台可以找到。",
+      "rootText": "目录: 20260127_00004314_zqbl_421_14.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_12.wav",
+      "duration": 3.306667,
+      "filename": "20260127_00004314_zqbl_421_12.wav",
+      "text": "这个球鞋里面带有比较好的这种缓震的材料。",
+      "rootText": "目录: 20260127_00004314_zqbl_421_12.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_10.wav",
+      "duration": 4.096,
+      "filename": "20260127_00004314_zqbl_421_10.wav",
+      "text": "但是如果你踢的是水泥场地呢，就肯定是完全没有缓震了。",
+      "rootText": "目录: 20260127_00004314_zqbl_421_10.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_13.wav",
+      "duration": 2.730667,
+      "filename": "20260127_00004314_zqbl_421_13.wav",
+      "text": "这一点呢大家在购买球鞋的时候一定要注意。",
+      "rootText": "目录: 20260127_00004314_zqbl_421_13.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_11.wav",
+      "duration": 5.333333,
+      "filename": "20260127_00004314_zqbl_421_11.wav",
+      "text": "所以啊针对这种缓震性能特别差的场地呢，我们就一定要选择的。",
+      "rootText": "目录: 20260127_00004314_zqbl_421_11.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_9.wav",
+      "duration": 5.162667,
+      "filename": "20260127_00004314_zqbl_421_9.wav",
+      "text": "都比较的硬塑胶的场地呢可能还会有一点点的所谓的缓震功能。",
+      "rootText": "目录: 20260127_00004314_zqbl_421_9.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_4.wav",
+      "duration": 5.056,
+      "filename": "20260127_00004314_zqbl_421_4.wav",
+      "text": "比较常见的呢是一些这种水泥的场地，还有一些就是那种沥青和煤渣这种。",
+      "rootText": "目录: 20260127_00004314_zqbl_421_4.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_421_spk0/20260127_00004314_zqbl_421_3.wav",
+      "duration": 3.584,
+      "filename": "20260127_00004314_zqbl_421_3.wav",
+      "text": "但是呢在我们实际生活当中可能不会有这么好的条件。",
+      "rootText": "目录: 20260127_00004314_zqbl_421_3.wav\n\n是否同一个人:\n是\n否\n是否有切音:\n是\n否\n是否有强烈情绪:\n是\n否\n整句韵律是否自然:\n是\n否\n音频是否有明显杂音:\n是\n否\n音频内容",
+      "radios": [
+        {
+          "index": 0,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 1,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 2,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 3,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 4,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 5,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 6,
+          "name": "",
+          "value": "1",
+          "checked": true,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 7,
+          "name": "",
+          "value": "0",
+          "checked": false,
+          "id": "",
+          "label": "否"
+        },
+        {
+          "index": 8,
+          "name": "",
+          "value": "1",
+          "checked": false,
+          "id": "",
+          "label": "是"
+        },
+        {
+          "index": 9,
+          "name": "",
+          "value": "0",
+          "checked": true,
+          "id": "",
+          "label": "否"
+        }
+      ]
+    }
+  ]
+}

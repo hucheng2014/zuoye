@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_006",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T13:05:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689636354",
+      "query": "转 盘 决 定 器",
+      "query_intent": "User is searching for a decision-making application using a spinning wheel.",
+      "ad": {
+        "name": "Wheel Spinner & Chooser",
+        "developer": "鸽 李"
+      },
+      "rating": "Excellent",
+      "comment": "The query \"转 盘 决 定 器\" indicates an intent to find a spinning wheel decision-making application to randomly pick options. The ad \"Wheel Spinner & Chooser\" is exactly a decision-making wheel utility. Since the ad directly and fully satisfies the user's specific functional intent, it is an exact match. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689636355",
+      "query": "su",
+      "query_intent": "User is searching for an app starting with 'su' (like SketchUp, Sudoku) or possibly a phonetic abbreviation.",
+      "ad": {
+        "name": "rednote",
+        "developer": "Xingin"
+      },
+      "rating": "Bad",
+      "comment": "The query \"su\" is an ambiguous search likely referring to a specific tool or game like SketchUp or Sudoku. The ad \"rednote\" is the international version of the Xiaohongshu social lifestyle platform. Since a social networking and lifestyle discovery application operates in a completely different category and has no logical connection to the keyword \"su\", they are entirely unrelated. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689636356",
+      "query": "o 互 联",
+      "query_intent": "User is searching for 'O互联' or 'OPPO互联', a device connectivity or smart interconnectivity application.",
+      "ad": {
+        "name": "vivo 商城-官方正品安心服务",
+        "developer": "广东天宸网络科技有限公司"
+      },
+      "rating": "Bad",
+      "comment": "The query \"o 互 联\" likely refers to a specific smart device connectivity or multi-screen interaction utility (such as OPPO Connect). The ad \"vivo 商城\" is the official e-commerce store for purchasing Vivo smartphones and accessories. Since a smart device connection utility and a hardware e-commerce shopping platform operate in entirely different domains and serve unrelated user intents, there is no relevance. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689636357",
+      "query": "荒 岛 求 生",
+      "query_intent": "User is searching for '荒岛求生' (Desert Island Survival), a popular survival and crafting game genre.",
+      "ad": {
+        "name": "据点守卫-地牢式冒险养成收集游戏",
+        "developer": "必头条成都科技有限公司"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"荒 岛 求 生\" indicates an intent to play a desert island survival and crafting video game. The ad \"据点守卫\" is a dungeon exploration and base-building adventure game. While it does not feature a desert island survival theme, both are strategy and base-management adventure games targeting players who enjoy resource gathering, defense, and survival elements, providing a weak topical association. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689636358",
+      "query": "贝 贝",
+      "query_intent": "User is searching for '贝贝' (Beibei), typically an educational app, maternity/baby shopping app, or children's product.",
+      "ad": {
+        "name": "宝宝巴士汉字-儿童识字认字早教启蒙学习软件",
+        "developer": "BABYBUS CO.,LTD"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"贝 贝\" likely refers to maternity, baby, or early childhood education applications (such as Beibei or related children's products). The ad \"宝宝巴士汉字\" is an early education app designed to teach young children Chinese characters. Since both the query and the ad fall under the broader domain of early childhood education and parenting services, they share a valid topical association and target the same demographic. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T12:18:39",
+    "post_submit_status": "No errors visible"
+  }
+}

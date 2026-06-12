@@ -1,0 +1,1243 @@
+--- Page 1 ---
+VCG Base Creation — Feedback
+Apr15'26
+
+Error Analysis
+High concentration of errors in these dimension
+‘+ Structural integrity -> Very High (all locales)
+Contains All Requests -> High
+Style Match > High
+Text Included or Requested -> High
+‘+ Captured by Camera > Medium-High
+‘+ Visual Quality > Medium
+
+Error Breakdown
+
+Under-penalization is the dominant issue
+
+Consistent across all locales and most dimensions:
+'* Structural distortions (extra fingers, deformed limbs) marked minor instead of severe
+‘+ Missing prompt elements graded as ‘captures most' rather than ‘not aligned’
+‘© Text errors (spelling, artifacts) identified but not reflected in the final score
+
+Style mismatches acknowledged but scored too leniently
+: Annotators default to conservative grading rather than strict penalization
+
+Tren
+
+Guideline misunderstanding is frequent
+'* Severity thresholds (minor / noticeable / severe) applied inconsistently across locales
+‘+ Style categories (Genmoji, Illustration) confused with photorealism or generic Al
+
+aesthetics
+
+‘+ Photorealism judged by personal impression rather than objective visual cues
+‘+ Flag criteria for trademarked content overlooked
+‘+ 2b Text tag marked when no text was requested (N/A should apply)
+
+Trend: Guideline understanding and calibration gap
+
+Inconsistency (over- and under-penalization)
+‘+ Structural integrity: Severely flawed images passed; clean images penalized
+'* Visual Quality: Blurry subjects missed; clear images downgraded
+'* Captured by Camera: Al-generated images pass as realistic; genuine photos downgraded
+‘+ Flag: Neutral content flagged without justification
+
+Trend: No stable shared calibration — assessments vary by individual
+
+
+--- Page 2 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 3 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 4 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 5 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 6 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 7 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 8 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 9 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 10 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 11 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 12 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 13 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 14 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 15 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 16 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 17 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 18 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 19 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 20 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 21 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 22 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 23 ---
+Prompt reading is incomplete
+
+Specific quantities and attributes missed during review
+Partial fulfillment accepted without checking all prompt constraints,
+Text requirements not verified against output
+
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style names recognized but not visually validated
+Mixed/hybrid styles not consistently penalized
+Illustration accepted as Genmoji; photorealism confused with style match
+
+|: Style evaluation requires calibration that has not been sufficiently instructed
+
+‘A/B and Preference Ranking errors
+
+Trend: Limited al
+
+RCA
+
+Better-looking image selected instead of the one with fewer prompt failures
+PR rankings contradict dimension-level assessments within the same task
+ity to evaluate comparatively, not just assess in absolute terms.
+
+Annotators don't know what minor vs. noticeable vs. severe means — they default to
+‘safe’ (under-penalize)
+
+Annotators observe randomly instead of following a structured scan order
+
+Style understanding is low — style names recognized but not visually validated
+Prompts read partially — constraints around objects, actions, text, and style are missed
+‘No shared calibration anchors — grading varies by individual, not by standard
+
+Action Plan
+‘Structured image scan order
+
+Structural Integrity (anatomy, hands, face, objects)
+Prompt coverage (all requested elements present and correct)
+Style match (analyze carefully, research if not sure)
+
+Text accuracy (presence, spelling, formatting, case)
+
+‘Visual quality (blurs, stretched/skewed)
+
+Flag
+
+Severity Calibration
+
+Minor -> Not noticeable at first glance; only visible on close inspection
+
+1. Minor issue with the vase handle looking detached from the top section.
+
+
+--- Page 24 ---
+Image Comparison Framework
+‘Pick the LESS wrong image given the dimension evaluations; not the better-looking one
+‘© Which misses fewer prompt elements?
+‘© Which has fewer structural issues?
+‘© Which has better Visual Quality?
+‘Ensure PR scores are consistent with dimension-level assessments before submitting

@@ -1,0 +1,138 @@
+FROM freqtradeorg/freqtrade:stable_freqairl
+
+RUN pip install --no-cache-dir "psycopg[binary]==3.2.10"
+
+RUN python - <<'PY'
+from pathlib import Path
+
+path = Path("/freqtrade/freqtrade/freqai/utils.py")
+text = path.read_text()
+
+if "from freqtrade.enums import CandleType" not in text:
+    text = text.replace(
+        "from freqtrade.exceptions import OperationalException\n",
+        "from freqtrade.exceptions import OperationalException\nfrom freqtrade.enums import CandleType\n",
+    )
+
+old = """    refresh_backtest_ohlcv_data(
+        dp._exchange,
+        pairs=all_pairs,
+        timeframes=config[\"freqai\"][\"feature_parameters\"].get(\"include_timeframes\"),
+        datadir=config[\"datadir\"],
+        timerange=timerange,
+        new_pairs_days=new_pairs_days,
+        erase=False,
+        data_format=config.get(\"dataformat_ohlcv\", \"feather\"),
+        trading_mode=config.get(\"trading_mode\", \"spot\"),
+        prepend=config.get(\"prepend_data\", False),
+    )
+"""
+
+new = """    trading_mode = config.get(\"trading_mode\", \"spot\")
+    candle_types = [CandleType.FUTURES] if trading_mode == \"futures\" else None
+    no_parallel_download = trading_mode == \"futures\"
+
+    refresh_backtest_ohlcv_data(
+        dp._exchange,
+        pairs=all_pairs,
+        timeframes=config[\"freqai\"][\"feature_parameters\"].get(\"include_timeframes\"),
+        datadir=config[\"datadir\"],
+        timerange=timerange,
+        new_pairs_days=new_pairs_days,
+        erase=False,
+        data_format=config.get(\"dataformat_ohlcv\", \"feather\"),
+        trading_mode=trading_mode,
+        prepend=config.get(\"prepend_data\", False),
+        candle_types=candle_types,
+        no_parallel_download=no_parallel_download,
+    )
+"""
+
+if old not in text:
+    raise SystemExit("Expected FreqAI utils block not found during image patch.")
+
+path.write_text(text.replace(old, new))
+
+exchange_path = Path("/freqtrade/freqtrade/exchange/exchange.py")
+exchange_text = exchange_path.read_text()
+
+exchange_old = """            my_trades = self._api.fetch_my_trades(
+                pair,
+                int((since.replace(tzinfo=UTC).timestamp() - 5) * 1000),
+                params=_params,
+            )
+"""
+
+exchange_new = """            since_timestamp = (
+                since.timestamp()
+                if since.tzinfo is None
+                else since.astimezone(UTC).timestamp()
+            )
+            my_trades = self._api.fetch_my_trades(
+                pair,
+                int((since_timestamp - 5) * 1000),
+                params=_params,
+            )
+"""
+
+if exchange_old not in exchange_text:
+    raise SystemExit("Expected exchange get_trades_for_order block not found during image patch.")
+
+exchange_path.write_text(exchange_text.replace(exchange_old, exchange_new))
+
+trade_model_path = Path("/freqtrade/freqtrade/persistence/trade_model.py")
+trade_model_text = trade_model_path.read_text()
+
+trade_helper_old = "logger = logging.getLogger(__name__)\n"
+trade_helper_new = """logger = logging.getLogger(__name__)
+
+
+def _db_naive_to_utc(dt: datetime | None) -> datetime | None:
+    \"\"\"Interpret naive DB datetimes as local time, then convert them to UTC.\"\"\"
+    if dt is None:
+        return None
+    if dt.tzinfo is None:
+        local_tz = datetime.now().astimezone().tzinfo or UTC
+        return dt.replace(tzinfo=local_tz).astimezone(UTC)
+    return dt.astimezone(UTC)
+"""
+
+if trade_helper_old not in trade_model_text:
+    raise SystemExit("Expected trade_model logger block not found during image patch.")
+
+trade_model_text = trade_model_text.replace(trade_helper_old, trade_helper_new, 1)
+
+trade_replacements = {
+    """    def order_date_utc(self) -> datetime:
+        \"\"\"Order-date with UTC timezoneinfo\"\"\"
+        return self.order_date.replace(tzinfo=UTC)
+""": """    def order_date_utc(self) -> datetime:
+        \"\"\"Order-date normalized to UTC.\"\"\"
+        return cast(datetime, _db_naive_to_utc(self.order_date))
+""",
+    """    def order_filled_utc(self) -> datetime | None:
+        \"\"\"last order-date with UTC timezoneinfo\"\"\"
+        return self.order_filled_date.replace(tzinfo=UTC) if self.order_filled_date else None
+""": """    def order_filled_utc(self) -> datetime | None:
+        \"\"\"Last fill date normalized to UTC.\"\"\"
+        return _db_naive_to_utc(self.order_filled_date)
+""",
+    """    def open_date_utc(self):
+        return self.open_date.replace(tzinfo=UTC)
+""": """    def open_date_utc(self):
+        return cast(datetime, _db_naive_to_utc(self.open_date))
+""",
+    """    def close_date_utc(self):
+        return self.close_date.replace(tzinfo=UTC) if self.close_date else None
+""": """    def close_date_utc(self):
+        return _db_naive_to_utc(self.close_date)
+""",
+}
+
+for old, new in trade_replacements.items():
+    if old not in trade_model_text:
+        raise SystemExit(f"Expected trade_model block not found during image patch: {old.splitlines()[0]}")
+    trade_model_text = trade_model_text.replace(old, new, 1)
+
+trade_model_path.write_text(trade_model_text)
+PY

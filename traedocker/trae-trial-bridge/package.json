@@ -2,7 +2,7 @@
   "name": "trae-trial-bridge",
   "displayName": "Trae Trial Bridge",
   "description": "Local URI bridge used by the python-timesheet trial runner.",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "local",
   "engines": {
     "vscode": "^1.90.0"
@@ -14,7 +14,10 @@
     "onUri",
     "onCommand:trae-trial-bridge.ping",
     "onCommand:trae-trial-bridge.currentSession",
-    "onCommand:trae-trial-bridge.send"
+    "onCommand:trae-trial-bridge.send",
+    "onCommand:trae-trial-bridge.sendInternal",
+    "onCommand:trae-trial-bridge.executeCommand",
+    "onCommand:trae-trial-bridge.listLanguageModels"
   ],
   "main": "./out/extension.js",
   "extensionKind": [
@@ -33,6 +36,18 @@
       {
         "command": "trae-trial-bridge.send",
         "title": "Trae Trial Bridge: Send"
+      },
+      {
+        "command": "trae-trial-bridge.sendInternal",
+        "title": "Trae Trial Bridge: Send Internal"
+      },
+      {
+        "command": "trae-trial-bridge.executeCommand",
+        "title": "Trae Trial Bridge: Execute Command"
+      },
+      {
+        "command": "trae-trial-bridge.listLanguageModels",
+        "title": "Trae Trial Bridge: List Language Models"
       }
     ]
   }

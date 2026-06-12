@@ -1,0 +1,167 @@
+VCG Edit Model Feedback Apr16'26
+Goals:
+• Understand error trends across dimensions
+• Identify root causes driving annotation mistakes
+• Calibration and quality improvement
+
+Error Analysis
+Dimension
+
+Severity
+
+Structural Integrity
+
+High
+
+Follow Edit Instructions
+
+High
+
+Style Alignment
+
+High
+
+Unedited Portion Consistency
+
+Medium-High
+
+Integration and Visual Quality
+
+Low
+
+1
+2
+3
+4
+5
+
+Error Breakdown
+Under-penalization is the dominant issue
+The most frequent root cause across the report. Annotators consistently graded issues less harshly than
+guidelines require:
+• Structural distortions (deformed faces, floating objects, impossible animal positions) rated
+‘Mostly accurate’ or ‘Somewhat accurate’ instead of ‘Not accurate’
+• Difficult-to-read text on edited objects accepted without penalization under Structural Integrity
+• Annotators appear to default to lenient ratings rather than applying objective severity
+thresholds
+Trend: Conservative grading — annotators avoid applying strict penalties
+Missed Key Information
+Annotators overlooked specific prompt requirements during evaluation:
+• Partial instruction fulfillment accepted: cactus arms unchanged, fish expression/direction
+ignored, background not fully transformed
+• Specific visual details (salmon skin color, animation level of croissant) not verified against
+prompt
+• Evaluators appear to rely on general visual impression rather than systematic prompt
+verification
+Trend: Prompt coverage is checked incompletely — overall impression overrides detail-level verification
+
+Guideline Misunderstanding
+Several errors reflect incorrect application of the guidelines themselves:
+• Unedited Portion Consistency: annotators penalized images where the unedited portion was
+fully preserved (‘Highly consistent’ downgraded)
+• Missing eggs attributed to consistency dimension rather than edit instruction fulfillment
+• Style evaluation: Genmoji confused with photorealism; animation level not assessed against
+style spec
+Trend: Calibration gap — guidelines not consistently internalized across annotators
+Over-penalization (minority but notable)
+A smaller but meaningful cluster of errors where annotators were too strict:
+• Darkness of an image graded as a quality issue, when darkness was explicitly requested in the
+prompt
+• Visually clean images with good lighting and color downgraded under Integration and Visual
+Quality
+• Unedited portions with zero changes penalized instead of rated ‘Highly consistent’
+Trend: Prompt context not consulted before penalizing — evaluations made in isolation from
+instructions
+Root Cause Analysis
+• Severity thresholds are not calibrated — annotators default to mid-range ratings and avoid ‘Not
+accurate’ or ‘Not aligned’ even when clearly warranted
+• Prompt reading is incomplete — specific attributes, quantities, and style requirements are not
+systematically checked before grading
+• Guideline scope confusion — dimensions like Unedited Portion Consistency and Style Alignment
+are applied to scenarios they don’t govern
+• Context-blind penalization — some penalties applied without checking whether the visual
+characteristic was intentional per the prompt
+• No shared calibration reference — grading varies by individual rather than by a consistent
+standard
+Action Plan
+Structured Evaluation Order
+Annotators should follow a fixed scan sequence before assigning any rating:
+• Follow Edit Instructions — check EVERY requested change against the output
+• Structural Integrity — anatomy, objects, spatial logic
+• Style Alignment — validate visually, not just by style name recognition
+• Unedited Portion Consistency — confirm areas not part of request are unchanged
+• Integration and Visual Quality — assess blurriness, color, lighting; account for prompt intent
+Severity Calibration
+Re-establish clear thresholds with concrete examples for this task type:
+• Mostly accurate → Minor deviation, does not break interpretation (e.g. slightly different eye
+shape)
+1. Observe the images carefully, notice how the eye of the rabbit is ‘sticking out’. Minor issue not
+noticed at first glance, therefore mostly accurate on SI.
+
+•
+
+Not accurate → Immediately apparent structural failure (e.g. impossible position, major object
+distortion)
+1. The object appears to be floating and the cat is in an impossible position, so there are major and
+distracting distortions or inaccuracies for Structural Integrity - Not Accurate.
+
+2. There are major and distracting distortions or inaccuracies, the fish looks distorted, which
+warrants the highest severity on SI - Not Accurate.
+
+• Not Aligned Style → Obvious deviation, the output does not look like the expected style
+1. Input and output styles are Genmoji. The output image below does not look like a Genmoji, the
+bacon is practically realistic, the rest looks closer to AI-generated.
+
+2. Input and output styles are animation. The output image below is mostly animation based on
+background and plate. However, the croissant is not animated enough, the level of detail and
+color is very specific.
+
+This is what a more animated croissant would look like.
+
+•
+
+Unedited portions → understand changes required → focus on shape, structures and identity of
+the portions not affected by the change
+1. The output in the example below maintains the unedited portions the same - Highly Consistent.
+
+Original
+
+Output
+
+Prompt-First Evaluation
+Before assigning any score, annotators must:
+• Re-read the full edit instruction
+• Confirm all requested changes are present and correctly applied
+• Identify whether any visual characteristic (darkness, blurriness) is prompt-driven before
+penalizing
+Edit Instructions
+1. Request: Make the cactus arms smaller
+Reasoning: The output does not make the arms looks smaller, the instructions are not followed.
+
+Original
+
+Output
+
+2. Request: Change this to pixel art, make the panther look happy, and add a bird.
+Reasoning: The output does not change the entire image to pixel art (part of background and panther
+are not pixelated), therefore this is only Somewhat following the instructions. This would also affect the
+Style Alignment.
+Original:
+
+Output:
+
+Visual quality
+Request: Remove the fish from the background. Make the remaining fish look sad and turn away.
+Make the image look gloomier and darker.
+Grading: No obvious Visual Quality issues
+Reasoning: The actual prompt requested for a gloomier and darker image. Therefore, there was no
+need to fail this for contrast as some annotators have done.
+
+Dimension Boundary Clarification
+Targeted guideline refresh on:
+• Unedited Portion Consistency: scope limited to areas not targeted by the edit instruction
+• Style Alignment: requires visual validation of the output style, not just recognition of the style
+name
+• Integration and Visual Quality: prompt-requested aesthetics are not quality issues
+
+

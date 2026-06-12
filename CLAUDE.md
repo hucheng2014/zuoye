@@ -8,11 +8,11 @@ This workspace intentionally uses a hybrid browser setup:
 Use the root helper instead of remembering CDP ports:
 
 ```bash
-/home/jianglei/zuoye/tools/agent-browser.sh list
-/home/jianglei/zuoye/tools/agent-browser.sh <target> snapshot -i
-/home/jianglei/zuoye/tools/agent-browser.sh <target> screenshot /tmp/current.png
+/Users/xaa/zuoye/tools/agent-browser.sh list
+/Users/xaa/zuoye/tools/agent-browser.sh <target> snapshot -i
+/Users/xaa/zuoye/tools/agent-browser.sh <target> screenshot /tmp/current.png
 ```
 
 Do not replace safe submit scripts with ad hoc `agent-browser click` commands.
 
-Full policy: `/home/jianglei/zuoye/docs/agent-browser-integration.md`.
+Full policy: `/Users/xaa/zuoye/docs/agent-browser-integration.md`.

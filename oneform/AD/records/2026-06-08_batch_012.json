@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_012",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T14:35:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689646797",
+      "query": "精 灵 宝 可 梦",
+      "query_intent": "User is searching for '精灵宝可梦' (Pokémon), an extremely popular media franchise and mobile game series.",
+      "ad": {
+        "name": "勇者联盟-Q版魔兽开放异世界二次元小游戏",
+        "developer": "Guangzhou Aiyou Network technology Co.,ltd"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"精 灵 宝 可 梦\" indicates an intent to find a Pokémon game or related app. The ad \"勇者联盟\" is a cute anime-style open-world MMORPG. While it is not a Pokémon game, it appeals to a similar audience of anime-style monster-collecting and adventure gamers, offering a weak but valid topical association within the same broader genre. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689646798",
+      "query": "安 心 记 加 班",
+      "query_intent": "User is searching for '安心记加班' (Anxin Ji Overtime), a popular work hours and overtime tracking utility app.",
+      "ad": {
+        "name": "Smart Alarm Clock - Waking Up",
+        "developer": "Appenvision Ltd"
+      },
+      "rating": "Bad",
+      "comment": "The query \"安 心 记 加 班\" indicates an intent to find a specific overtime and work hours recording application. The ad \"Smart Alarm Clock\" is a sleep timer and alarm utility. Since a work hours tracking application and an alarm clock utility serve completely different functional domains and address unrelated user needs, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689646799",
+      "query": "和 平 营 地",
+      "query_intent": "User is searching for '和平营地' (Peace Camp), the official companion/utility app for the game 'Peacekeeper Elite' (PUBG Mobile Chinese version) by Tencent.",
+      "ad": {
+        "name": "得物 - 得到美好事物",
+        "developer": "Shanghai Dewu Information Group Co., Ltd."
+      },
+      "rating": "Bad",
+      "comment": "The query \"和 平 营 地\" indicates an intent to find the official companion utility app for the game Peacekeeper Elite. The ad \"得物\" is a trendy lifestyle e-commerce and sneaker shopping platform. Since a game companion application and a retail shopping platform operate in entirely different domains and serve completely unrelated user intents, there is no relevance. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689646800",
+      "query": "蓝 快 加 速 器",
+      "query_intent": "User is searching for '蓝快加速器' (Lankuai Accelerator), a game network acceleration/VPN utility.",
+      "ad": {
+        "name": "UC浏览器-随心搜·畅快看",
+        "developer": "UCWeb Mobile Private Limited"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"蓝 快 加 速 器\" indicates an intent to find a network acceleration or gaming VPN utility. The ad \"UC浏览器\" is a popular mobile web browser with built-in data compression and fast browsing features. While one is a dedicated gaming accelerator and the other is a general browser, both are internet utility tools aimed at improving network speed and performance, offering a weak but valid topical association. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689646801",
+      "query": "布 鲁 帝",
+      "query_intent": "User is searching for 'Blued' (布鲁帝/蓝城互联), a well-known LGBTQ social networking and live streaming application.",
+      "ad": {
+        "name": "TataLand",
+        "developer": "Hainan Xinhe Network Technology Company Limited."
+      },
+      "rating": "Bad",
+      "comment": "The query \"布 鲁 帝\" indicates an intent to find the Blued social networking application, which is a specific LGBTQ community platform. The ad \"TataLand\" is a voice-guided relaxation and sleep aid application. Since a social networking application and a meditation/relaxation utility operate in completely different categories and serve entirely unrelated user needs, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T13:14:28",
+    "post_submit_status": "No errors visible"
+  }
+}

@@ -66,8 +66,13 @@ def write_backup(payload: dict[str, Any], label: str) -> Path:
 
 
 def build_delete_plan(rows: list[dict[str, Any]], session_ids: set[str]) -> list[dict[str, Any]]:
+    import submit_new_task_group as group
+
+    protected = group.collect_protected_record_ids(rows)
     targets = []
     for row in rows:
+        if row["recordId"] in protected:
+            continue
         session_id = row.get("session_id") or ""
         if session_id in session_ids:
             targets.append(row)

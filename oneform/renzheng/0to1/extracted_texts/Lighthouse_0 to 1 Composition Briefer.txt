@@ -1,0 +1,53 @@
+                                  0 to 1 Composition Briefer
+
+Necessity of information:
+   - Do not mix the user instruction and context with the “Additional Personal Information” in the
+        response section. The instruction and context determine if more info is needed or not.
+   - A user instruction may need critical info, but that info may be provided as part of “Additional
+        Personal Info”, which would be used in the final response
+   - Suggested info by the model does NOT automatically mean the user instruction needs more info.
+        The suggested info can just be complimentary, and the instruction may be sufficient to perform
+        the task
+
+Example:
+
+
+
+The above request without context requires the additional information (i.e. explain what software logic?)
+
+
+
+
+Additional info is provided but in the model’s response section. Therefore, the instructions need more
+info, but the response can be fulfilled with the additional info provided from the user’s personal
+info/device.
+
+On the other hand, the example below provides instructions plus additional context, so the necessity of
+extra information is not critical.
+
+
+
+
+However, pay attention to this task as it has a few assumed details that affect the first question!
+Remember, additional personal information is provided from the user’s device to help provide a better
+response. If the information in the response is coming from this section, do NOT penalize as
+hallucination, as long as it’s correct.
+
+
+
+
+Pay attention to subjects, there are some tasks with subjects that have:
+    - Hyper subjective lang
+    - Verbosity
+    - Not following title case
+    - Not following one topic
+    - Using articles/prepositions, which need to be lower case
+
+If the subject fails in any of these you need to leave the option Unselected.
+
+Supplementary Information/Suggestions:
+As long as these are related to the composition itself, on topic, and would be complimentary to the
+existing info, mark them as helpful.
+If it’s related to action items on the device (set reminder, call, etc.), they’re neutral. If it suggests
+something that may be already provided or redundant, even if on topic, mark as neutral.
+

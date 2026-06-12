@@ -1,0 +1,918 @@
+{
+  "url": "https://ilabel.weixin.qq.com/mission/41398/label",
+  "title": "2026音频check_first_part196 - 任务标注",
+  "extractedAt": "2026-04-02T11:07:02.538Z",
+  "count": 70,
+  "items": [
+    {
+      "index": 0,
+      "filename": "20260127_00004328_awpj_23_38.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_38.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "大众的也好，走这种圈子也好。"
+    },
+    {
+      "index": 1,
+      "filename": "20260127_00004328_awpj_23_18.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_18.wav",
+      "selectedIndexes": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "text": "然后呢三线也是需要有。"
+    },
+    {
+      "index": 2,
+      "filename": "20260127_00004328_awpj_23_71.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_71.wav",
+      "selectedIndexes": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "所以现在的白酒的消费主要还是一个什么氛围还是一个爱屋及乌你比方说我们大众"
+    },
+    {
+      "index": 3,
+      "filename": "20260127_00004328_awpj_23_27.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_27.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后呢一年也就卖个几十万百把万，然后也可以赚得很丰厚的利润为什么呢？"
+    },
+    {
+      "index": 4,
+      "filename": "20260127_00004328_awpj_23_80.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_80.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "欢迎大家在留言区留言。"
+    },
+    {
+      "index": 5,
+      "filename": "20260127_00004328_awpj_23_32.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_32.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这也正是为什么有一些小厂酒呢，呃就经常有一些团购的客户去选择去跟他们合作就这样一个点他有信息的不透明啊。"
+    },
+    {
+      "index": 6,
+      "filename": "20260127_00004328_awpj_23_39.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_39.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "它其实都是要有一个就相当于要有厂方啊一个培育的。"
+    },
+    {
+      "index": 7,
+      "filename": "20260127_00004328_awpj_23_43.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_43.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为广西传统是酿米香型酒的然后米香型酒本身也做不了什么很高档的一个酒是这样一个状态"
+    },
+    {
+      "index": 8,
+      "filename": "20260127_00004328_awpj_23_17.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_17.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "作为如果代理来说的话呢现在你要去找二线的酱酒品牌这个比较难这个就相当于你要有绝对的实力"
+    },
+    {
+      "index": 9,
+      "filename": "20260127_00004328_awpj_23_70.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_70.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "但是大多数的渠道酒商面对的就是老百姓及这种呃中高档的客户也是这种本身品鉴能力有限的欣赏能力有限的。"
+    },
+    {
+      "index": 10,
+      "filename": "20260127_00004328_awpj_23_50.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_50.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "是这样一个点。"
+    },
+    {
+      "index": 11,
+      "filename": "20260127_00004328_awpj_23_42.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_42.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "然后其实那个你像四川的郎酒啊还有好几个酱酒在广西的这个市场呢也是斩获的比较深。"
+    },
+    {
+      "index": 12,
+      "filename": "20260127_00004328_awpj_23_20.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_20.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那么作为代理来说的话呢呃您在选择上面一方面就是要首先要考察的是自己。"
+    },
+    {
+      "index": 13,
+      "filename": "20260127_00004328_awpj_23_73.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_73.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "所以在这个点上面不一定是说我们圈城或者是品酒是认为品质好的酒它就一定好卖不是这个样子它没有品牌它没有影响力它照样难得动销是这样一个点"
+    },
+    {
+      "index": 14,
+      "filename": "20260127_00004328_awpj_23_49.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_49.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "敬酒也在做他的酱酒在安徽这边高卢啊也在弄他的酱酒然后在江苏这边洋河之金氏园都有他们的酱酒产品"
+    },
+    {
+      "index": 15,
+      "filename": "20260127_00004328_awpj_23_16.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_16.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "他们更多的呢就是通过这个酒厂，然后还有资本来推动它的一个价格体系。"
+    },
+    {
+      "index": 16,
+      "filename": "20260127_00004328_awpj_23_69.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_69.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "圈层因为我们讲的这个酒瓶呢也是偏深一点啊，有点晦涩一般的老百姓可能难以理解。"
+    },
+    {
+      "index": 17,
+      "filename": "20260127_00004328_awpj_23_10.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_10.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "品牌的酒一个是酱香品牌酒崛起那个大品牌酒就包括有龙香型等其他的香型的"
+    },
+    {
+      "index": 18,
+      "filename": "20260127_00004328_awpj_23_1.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_1.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我是阿乌，很高兴在视频当中与大家见面。"
+    },
+    {
+      "index": 19,
+      "filename": "20260127_00004328_awpj_23_47.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_47.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "而这几个市场的这个酱酒呢，它更多的就是当地的酒企去跟茅台镇啊或者是跟一些酒企合作然后做酱酒。"
+    },
+    {
+      "index": 20,
+      "filename": "20260127_00004328_awpj_23_14.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_14.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "啊还在涨价，然后呢还供不应求。"
+    },
+    {
+      "index": 21,
+      "filename": "20260127_00004328_awpj_23_67.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_67.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "感兴趣想要代理酱酒的一些朋友啊特别是搞一些团购商啊就是小规模团购啊一年搞个三五十件的这些朋友呢啊这一点一定要呃要知道这个事儿啊不是说一个酒品质好性价比高你就能够带得动因为品质好性价比高是要能够欣赏它的人识别出来才能够接受的。"
+    },
+    {
+      "index": 22,
+      "filename": "20260127_00004328_awpj_23_3.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_3.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "最近啊有一些朋友啊，私信咨询我关于这个白酒这个代理的一个事儿啊就是代理一些酱酒啊卖什么酒比较有潜力啊。"
+    },
+    {
+      "index": 23,
+      "filename": "20260127_00004328_awpj_23_55.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_55.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那么这里就有一个什么风险呢？"
+    },
+    {
+      "index": 24,
+      "filename": "20260127_00004328_awpj_23_51.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_51.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "那么对于一个你就像你比方说我们去合作一个二线或者是三线品牌，但是你服务的这个市场又不是这个二线品牌主打的一个区域的时候，那你去深耕这个市场是比较累的。"
+    },
+    {
+      "index": 25,
+      "filename": "20260127_00004328_awpj_23_45.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_45.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "酒企实力都比较的弱啊所以他对这个本土的市场的把控是有限的。"
+    },
+    {
+      "index": 26,
+      "filename": "20260127_00004328_awpj_23_9.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_9.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "当前呢如果从大环境上面来看确实是品牌酒崛起及酱香型品牌酒，一个。"
+    },
+    {
+      "index": 27,
+      "filename": "20260127_00004328_awpj_23_61.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_61.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "可以考虑一下本土的一个酱酒。"
+    },
+    {
+      "index": 28,
+      "filename": "20260127_00004328_awpj_23_19.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_19.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "一定的实力四线呢，可能门槛就稍微低一点啊那如果是小品牌酱酒呢那个门槛就更低。"
+    },
+    {
+      "index": 29,
+      "filename": "20260127_00004328_awpj_23_72.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_72.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "有的时候一些宴请就是大家都认什么品牌我们选什么品牌就是这样一个情况"
+    },
+    {
+      "index": 30,
+      "filename": "20260127_00004328_awpj_23_37.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_37.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "你像在呃不管是在酱香型酒还是在别的香型酒里面啊除了那些高档名酒啊，那种高档名酒走高档圈层以外，你只要是走到你。"
+    },
+    {
+      "index": 31,
+      "filename": "20260127_00004328_awpj_23_28.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_28.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为他是很高粘度的客户，然后他卖这种酒，卖这种高返利高不透明的酒，那如果要是卖这个品牌嫡系酒的话，第一，他对你的这个酒厂啊，品牌对你的这个销。"
+    },
+    {
+      "index": 32,
+      "filename": "20260127_00004328_awpj_23_4.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_4.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "嗯没想到我一个搞这个品酒的一个主播呢，结果被被别人带到就去咨询这方面的内容啊。"
+    },
+    {
+      "index": 33,
+      "filename": "20260127_00004328_awpj_23_56.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_56.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "就是大家一定要注意的就是我们。"
+    },
+    {
+      "index": 34,
+      "filename": "20260127_00004328_awpj_23_6.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_6.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这也是整理了一下,也是结合我们原来碰到的一些人事酒圈里面的一些事,也是给大家提一些信息提供一些信息,给一些参考啊。"
+    },
+    {
+      "index": 35,
+      "filename": "20260127_00004328_awpj_23_48.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_48.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "你像现在啊湖北白云边也在做他的酱酒那个。"
+    },
+    {
+      "index": 36,
+      "filename": "20260127_00004328_awpj_23_35.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_35.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "那你就千万就不要选择什么返点比较高的啊这种小厂酒了，那你就要选择大厂。"
+    },
+    {
+      "index": 37,
+      "filename": "20260127_00004328_awpj_23_46.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_46.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "你相比之下你看这几个市场你像这个安徽湖北，还有这个江苏市场，它的这个本土的酒企都非常的强势。"
+    },
+    {
+      "index": 38,
+      "filename": "20260127_00004328_awpj_23_29.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_29.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "是有要求的再一个呢利润也是被控制的比较死为什么。"
+    },
+    {
+      "index": 39,
+      "filename": "20260127_00004328_awpj_23_31.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_31.wav",
+      "selectedIndexes": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "text": "但是如果要是说你去代理一个茅台镇的小厂酒那可能别人就都不知道你本身可以卖100的你卖个500然后别人要查不到然后就当500的酒喝了所以"
+    },
+    {
+      "index": 40,
+      "filename": "20260127_00004328_awpj_23_13.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_13.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "但是呢这个酱香酒呢它实际的情况呢，是这个呃茅台非常的火因为茅台在这个商务场合呢基本上在这个阶段在这个时期成为了一个硬通货了啊所以他确实这个茅台既在放量。"
+    },
+    {
+      "index": 41,
+      "filename": "20260127_00004328_awpj_23_66.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_66.wav",
+      "selectedIndexes": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "压力是很大的啊是这就是我的一个建议啊我的一个建议那么作为当前的一些。"
+    },
+    {
+      "index": 42,
+      "filename": "20260127_00004328_awpj_23_12.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_12.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后呢这个当前的这个酱香酒啊比较的火所以很多人关注过来"
+    },
+    {
+      "index": 43,
+      "filename": "20260127_00004328_awpj_23_65.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_65.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "你选择有的时候选择二三线品牌酒呢，他可能因为这个市场呢因为本土酒企非常的强势，他很难的渗透进去的时候呢，那就是由经销商去渗透其实压力是很大的啊。"
+    },
+    {
+      "index": 44,
+      "filename": "20260127_00004328_awpj_23_8.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_8.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "相当于就是表达一下我的一个观点"
+    },
+    {
+      "index": 45,
+      "filename": "20260127_00004328_awpj_23_60.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_60.wav",
+      "selectedIndexes": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "text": "东北安徽和江苏，如果你本身不是一个就是相当于也只是一个嗯没有很多粘度客户的话你们做酱酒个人建议啊。"
+    },
+    {
+      "index": 46,
+      "filename": "20260127_00004328_awpj_23_24.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_24.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "那么对于这种渠道来说的话只要你的关系是一个很稳的很给力的一个状态那么卖什么"
+    },
+    {
+      "index": 47,
+      "filename": "20260127_00004328_awpj_23_77.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_77.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "还是契合的打出来之后才能够产生最大的经济效应"
+    },
+    {
+      "index": 48,
+      "filename": "20260127_00004328_awpj_23_2.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_2.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这一期我们视频呢说一下白酒的一个事儿。"
+    },
+    {
+      "index": 49,
+      "filename": "20260127_00004328_awpj_23_54.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_54.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "是这样一个点。"
+    },
+    {
+      "index": 50,
+      "filename": "20260127_00004328_awpj_23_76.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_76.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这里所有的你选的九个商品和你的实力一定要契合"
+    },
+    {
+      "index": 51,
+      "filename": "20260127_00004328_awpj_23_44.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_44.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "然后广东市场原来主要是洋酒的市场，然后现在呢也是在回归白酒所以呢这个酱酒呢也趁势而入，所以呢广东的这个市场呢也占的比较大河南和山东市场主要是这两个省份的本土。"
+    },
+    {
+      "index": 52,
+      "filename": "20260127_00004328_awpj_23_36.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_36.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "那你要选择大厂的同时还要看这个大厂在这一个区域有没有市场的这个相当于深度的培育啊"
+    },
+    {
+      "index": 53,
+      "filename": "20260127_00004328_awpj_23_41.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_41.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后山东河南市场这个酱酒的那个势头呢比较的火那么其原因在于呢你像广西那边呢是由单全酒来代"
+    },
+    {
+      "index": 54,
+      "filename": "20260127_00004328_awpj_23_22.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_22.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "好多酒友就是咨询我哪一个品牌酒性价比好，哪一个品牌酒品质好其实这都是次要的最重要的是要你考察你自己，你自己的首先资金的资。"
+    },
+    {
+      "index": 55,
+      "filename": "20260127_00004328_awpj_23_75.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_75.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "卖得出去这是错误的啊，这是错误的，你就像有些人他代理那种茅台镇酒他也可以发财，为什么呢？"
+    },
+    {
+      "index": 56,
+      "filename": "20260127_00004328_awpj_23_15.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_15.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "但是其他的品牌的酒呢确实没有茅台的这个情况啊。"
+    },
+    {
+      "index": 57,
+      "filename": "20260127_00004328_awpj_23_68.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_68.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "你像我阿乌做这个圈层更多是做这种呃有欣呃欣赏力的这个。"
+    },
+    {
+      "index": 58,
+      "filename": "20260127_00004328_awpj_23_11.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_11.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "高档的酒是这样子"
+    },
+    {
+      "index": 59,
+      "filename": "20260127_00004328_awpj_23_64.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_64.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为这个氛围呢，由酒厂来带动营造的要好一点。"
+    },
+    {
+      "index": 60,
+      "filename": "20260127_00004328_awpj_23_26.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_26.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "都好卖，所以为什么你像有一些人啊有些人代理一些酒就代理一些茅台镇的没有品牌的一些酒。"
+    },
+    {
+      "index": 61,
+      "filename": "20260127_00004328_awpj_23_52.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_52.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "啊这里就有一个点，然后再一个呢因为酱酒的这个整个的发展势头呢这个圈。"
+    },
+    {
+      "index": 62,
+      "filename": "20260127_00004328_awpj_23_34.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_34.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "有一些有一些朋友我们交流了一段时间呢就是交流了之后呢，他就觉得啊自己努力可以把这个市场做大，如果要是说靠努力来做的话呢。"
+    },
+    {
+      "index": 63,
+      "filename": "20260127_00004328_awpj_23_21.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_21.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "这个是最重要的啊。"
+    },
+    {
+      "index": 64,
+      "filename": "20260127_00004328_awpj_23_74.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_74.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以这个点我在这里强调给大家所以大家一定注意啊不要想着什么品质好有性价比就真的"
+    },
+    {
+      "index": 65,
+      "filename": "20260127_00004328_awpj_23_33.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_33.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以这为什么这也是我说的，就是代理酒的之前首先要思考自己的实力啊。"
+    },
+    {
+      "index": 66,
+      "filename": "20260127_00004328_awpj_23_40.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_40.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "你就像在当前的这个酱酒环境里面除了贵州啊因为贵州是主产酱酒贵州市场然后还有广西广东"
+    },
+    {
+      "index": 67,
+      "filename": "20260127_00004328_awpj_23_7.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_7.wav",
+      "selectedIndexes": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "text": "呃不一定对但是呢也是呃"
+    },
+    {
+      "index": 68,
+      "filename": "20260127_00004328_awpj_23_59.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_59.wav",
+      "selectedIndexes": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "text": "很有可能就是很多的商品积压到了你自己的手上你比方说你像在这个湖"
+    },
+    {
+      "index": 69,
+      "filename": "20260127_00004328_awpj_23_30.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004328_awpj_23_spk0/20260127_00004328_awpj_23_30.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为卖的人多卖的人多你即便是关系客户一个酒人家卖600你卖他650可能关系客户会接受但是如果你要卖到一个七八百别人也会有意见对吧"
+    }
+  ]
+}

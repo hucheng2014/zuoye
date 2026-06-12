@@ -1,0 +1,1066 @@
+ Writing Tools - 0 to 1
+Composition Guidelines
+                                          V1
+                      Updated: 2026 March 24
+Introduction
+ Table of Contents
+                           Introduction
+Introduction
+                           Feature Overview
+Workflow
+                           The 0-to-1 Composition feature enables users to generate new written content from scratch based on a simple instruction.
+Step 1 - Review Input      Unlike editing or refining existing text, this feature creates a complete piece of content—such as an email, a social media
+                           post, a poem, or a document outline—based entirely on the user's request.
+Step 2 - Review Response
+                           The goal is to provide a useful, well-written, and context-appropriate composition for personal, social, productivity, or creative
+Step 3 - Flag Any
+Critical Issues            needs.
+Step 4 - Verify Email      Grading Task
+Subject
+Step 5 - Evaluate Main     Your goal as an evaluator is to assess the quality of the AI-generated composition against the user's instruction. You will
+Content                    determine if the output meets the user's explicit and implicit needs, is free of critical issues, and is helpful for the user's
+Step 6 - Evaluate          specific task. Your ratings will help us measure the feature's performance and identify areas for improvement
+Supplementary Info
+
+Step 7 - Localization         Skip the task when:
+                              • The response field is blank
+Step 8 - Holistic Rating      • The user prompt is out of scope:
+                                  • When the output is not text-based but multimodal or action-based
+Step 9 - Comparison               • For example: creating video, creating / checking codes, solving math questions, creating algorithm, performing
+                                    any on-device tasks like adding a reminder, calling/mailing/messaging someone, or using the calculator
+Workflow
+ Table of Contents
+                           Workflow
+Introduction
+
+Workflow
+                                Review the user's instruction and context and assess if additional information is needed.
+                            1
+Step 1 - Review Input
+
+Step 2 - Review Response
+
+Step 3 - Flag Any
+Critical Issues
+Step 4 - Verify Email           Review the entire AI-generated response.
+                            2
+Subject
+Step 5 - Evaluate Main
+Content                         A complete response consists of two parts: 1) the main content and 2) any supplementary information like
+Step 6 - Evaluate               suggestions or titles.
+Supplementary Info
+
+Step 7 - Localization
+
+Step 8 - Holistic Rating        Flag any critical issues in the entire response.
+                            3
+
+Step 9 - Comparison
+                                 ▪   If any issue is flagged in this step, end and submit the task.
+ Table of Contents
+                           Workflow - Cont.
+Introduction
+
+Workflow
+                                Verify the quality of the E-mail Subject
+                            4
+Step 1 - Review Input
+
+                                 ▪   You would only need to work on this step if the input text is email.
+Step 2 - Review Response
+                                 ▪   Depending on whether the user provides an email subject, you will see different questions with
+Step 3 - Flag Any                    different evaluation criteria.
+Critical Issues
+Step 4 - Verify Email
+Subject                         Evaluate the core quality of the the main content based on the 4 dimensions.
+                            5
+Step 5 - Evaluate Main
+Content
+Step 6 - Evaluate
+Supplementary Info
+                                Evaluate the utility of the supplementary information based on 1 dimension.
+Step 7 - Localization       6
+
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+ Table of Contents
+                           Workflow - Cont.
+Introduction
+
+Workflow
+                                Evaluate the Localization of the entire output / response.
+                            7
+Step 1 - Review Input
+
+Step 2 - Review Response
+
+Step 3 - Flag Any
+Critical Issues                 Provide a holistic rating of the entire response.
+                            8
+Step 4 - Verify Email
+Subject
+Step 5 - Evaluate Main
+Content
+Step 6 - Evaluate
+Supplementary Info              Conduct a pairwise comparison before submitting the task.
+                            9
+Step 7 - Localization
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+Steps and Requirements - Step 1
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 1. Review the user's instruction and context and assess if additional information is
+Workflow                   needed.
+Step 1 - Review Input
+                           Your first step is to carefully analyze the user's instruction and context to build a clear picture of what a successful response
+Step 2 - Review Response
+                           should look like. Note that the input can contain both emails or non-email texts.
+
+Step 3 - Flag Any
+Critical Issues                • A user instruction can include both explicit request and implied needs.
+Step 4 - Verify Email          • Context can be any additional information the user provides to the AI assistant so it can execute the user instruction
+Subject                            better.
+Step 5 - Evaluate Main              • For email input text, the context can be a previous email or empty (i.e. no email as context).
+Content
+                                    • For non-email input text, context can be any free-form text. It can be empty sometimes, if the user did not provide
+Step 6 - Evaluate                        it.
+Supplementary Info
+
+Step 7 - Localization
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 1. Review the user's instruction and context and assess if additional information is
+Workflow                   needed.
+Step 1 - Review Input
+                           1- 1 Review the User Instruction and Context
+Step 2 - Review Response
+                           To illustrate this process, we will use the following user instruction as a case study:
+Step 3 - Flag Any
+Critical Issues            "get started on a note to the neighborhood group about submitting for our residential parking permits."
+Step 4 - Verify Email
+Subject
+Step 5 - Evaluate Main
+                           User Instructions
+Content
+Step 6 - Evaluate            get started on a note to the neighborhood group about submitting for our residential parking permits.
+Supplementary Info
+
+Step 7 - Localization
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 1. Review the user's instruction and context and assess if additional information is
+Workflow                   needed.
+Step 1 - Review Input      1- 1 Review the User Instruction and Context
+
+Step 2 - Review Response
+                           A. Identify the Explicit Request
+Step 3 - Flag Any
+Critical Issues
+                               First, identify the direct commands and details stated in the instruction. Look for:
+Step 4 - Verify Email
+Subject
+Step 5 - Evaluate Main         1. Topic: What is the subject of the composition?
+Content
+                                • Case Study Example: The topic is "submitting for our residential parking permits."
+Step 6 - Evaluate
+Supplementary Info
+
+Step 7 - Localization          2. Format: What type of content does the user want?
+
+Step 8 - Holistic Rating
+                                • Case Study Example: The user asks for a "note." The phrase "get started on" suggests it can be a draft rather than a
+                                    final, polished document.
+
+Step 9 - Comparison
+                               3. Key Information: Are there any specific details the composition must include?
+
+                                • Case Study Example: The key information is that the permits are specifically "residential parking permits."
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 1. Review the user's instruction and context and assess if additional information is
+Workflow                   needed.
+Step 1 - Review Input      Grading UI
+
+                           Non-email Input Text                                     Email Input Text
+Step 2 - Review Response
+
+Step 3 - Flag Any
+Critical Issues
+Step 4 - Verify Email
+Subject
+Step 5 - Evaluate Main
+Content
+Step 6 - Evaluate
+Supplementary Info
+
+Step 7 - Localization      The provided context can be a piece of free-form text.   Note: If the input text is an email, you may see some cases
+                                                                                    where the user instruction is aimed at completing an existing
+Step 8 - Holistic Rating   Note: Sometimes, it can be empty if there's no context   email draft, displayed as the top email in the thread under
+                           provided by the user at all.                             User Provided Context.
+Step 9 - Comparison
+                                                                                    In the grading UI, the existing email draft will be displayed for
+                                                                                    you.
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 1. Review the user's instruction and context and assess if additional information is
+Workflow                   needed.
+                           1- 1 Review the User Instruction and Context
+Step 1 - Review Input
+                           B. Infer the Implicit Needs
+Step 2 - Review Response
+                                Next, infer the unspoken context to understand the nuances of the request. Think about:
+Step 3 - Flag Any
+Critical Issues                 1. Audience: Who is the composition for? A landlord requires a different style than a social media forum.
+Step 4 - Verify Email
+Subject                          • Case Study Example: The audience is a "neighborhood group," which implies a community of peers. This suggests a
+                                     semi-formal, neighborly style.
+Step 5 - Evaluate Main
+Content                         2. Purpose: What is the user trying to achieve? Are they trying to inform, persuade, entertain, or ask for help?
+Step 6 - Evaluate
+Supplementary Info               • Case Study Example: The purpose is to inform the neighborhood group about the permit submission process, likely to
+                                     prompt them to take action.
+Step 7 - Localization
+                                3. Tone: What is the desired mood or feeling? Look for keywords like "friendly," "formal," or "fun." If no tone is specified,
+Step 8 - Holistic Rating        deduce it from the audience and purpose.
+
+Step 9 - Comparison              • Case Study Example: Based on the audience and purpose, the tone should be helpful, clear, and community-oriented.
+                                     It should be informative without being overly formal or demanding.
+
+                                   Summary: By combining the explicit request and the implicit context, you establish the standard of quality you will
+                                use to evaluate the AI's response in the following steps.
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 1. Review the user's instruction and context and assess if additional information is
+Workflow                   needed.
+Step 1 - Review Input      1-2 Assess if additional information is needed
+
+Step 2 - Review Response   The first question asks you to assess if any additional information is needed for AI to complete the task.
+
+Step 3 - Flag Any
+Critical Issues                   To complete this task, will additional information be needed from sources such as web search or the user's
+                                  personal data?
+Step 4 - Verify Email
+Subject
+Step 5 - Evaluate Main              • Critical: additional information is essential to complete the task. Without it, the task cannot be adequately
+Content                               fulfilled.
+Step 6 - Evaluate                   • Supplementary: additional information would enhance the response but isn't strictly required. A reasonable
+Supplementary Info                    answer is possible without it.
+                                    • Clearly unneeded: additional information is not necessary. The request can be fully addressed with general
+Step 7 - Localization
+                                      knowledge or information already provided.
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 1. Review the user's instruction and context and assess if additional information is
+Workflow                   needed.
+Step 1 - Review Input         Callouts
+
+Step 2 - Review Response        • It is acknowledged that this can be an ambiguous question because "necessity of additional information" is
+Step 3 - Flag Any                 defined by what AI already knows or doesn't know.
+Critical Issues
+Step 4 - Verify Email           • The purpose of the question is to gather information for the engineering team, and your selection won't result
+Subject                           in penalization of the AI model.
+Step 5 - Evaluate Main
+Content                         • For now, you can assume that the AI has general knowledge.
+Step 6 - Evaluate
+Supplementary Info
+                                • However, AI does not know the user's personal data or the very recent news event, which may be critical,
+Step 7 - Localization             additional info at times to complete some tasks.
+
+Step 8 - Holistic Rating           • Example User Instruction 1: "Create an invite to my friends for a housewarming party this Sunday."
+                                   • Example User Instruction 2: "Summarize the major X event that just happened yesterday."
+Step 9 - Comparison                • For the examples above, the AI does not have personal information (home address) and up-to-date news, so
+                                     additional information would be essential.
+Steps and Requirements - Step 2
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 2. Review the entire AI-generated response.
+Workflow
+                           Now that you understand the user's goal, your next step is to read the
+Step 1 - Review Input      entire AI-generated response from top to bottom. Do this before you
+                           begin scoring.
+Step 2 - Review Response
+
+Step 3 - Flag Any          A complete response can have two key parts: the main content and
+Critical Issues            supplementary information.
+Step 4 - Verify Email
+Subject                    In some cases, you will also see Additional Personal Information. The
+Step 5 - Evaluate Main     field displays personal information that the model is able to retrieve from
+Content
+                           the user's device.
+Step 6 - Evaluate
+Supplementary Info
+                           Additional Personal Information field will mainly impact your assessment
+Step 7 - Localization      of hallucination in Step 3.
+
+Step 8 - Holistic Rating   Below, you can find some instructions for
+                           A) reviewing the main content
+Step 9 - Comparison        B) identifying supplementary information.
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 2. Review the entire AI-generated response.
+Workflow
+                           A. Review the Main Content
+Step 1 - Review Input      The main content is the core of the response, designed to directly fulfill the user's instruction. This could be the body of an
+                           email, the text of a social media post, the stanzas of a poem, or the items in an outline.
+Step 2 - Review Response
+                           As you read, form an initial impression by asking yourself:
+Step 3 - Flag Any
+Critical Issues
+                              • Does this content seem to address the topic and format the user asked for in Step 1?
+Step 4 - Verify Email         • What is my first impression of the tone and style?
+Subject
+Step 5 - Evaluate Main     B. Identify Supplementary Information
+Content
+                           Supplementary information includes all other elements the AI provides or suggests to support the main content. It's
+Step 6 - Evaluate
+Supplementary Info         important to identify what, if any, supplementary information is present. Look for:
+
+Step 7 - Localization         • Subject or Title: A suggested email subject line or a title for the composition.
+                              • Suggestions: Actionable prompts that help the user add missing but necessary details (e.g., "Add date," "Add topic," "Add
+Step 8 - Holistic Rating
+                                  length").
+                              • Reference Information: External information gathered from a web search that was used to create the composition (e.g.,
+                                  providing a list of sources for a research paper outline).
+Step 9 - Comparison
+
+                               Summary: At this stage, you are not yet rating these components. The goal is simply to read and understand everything
+                           the AI has produced. This complete picture is necessary for the detailed evaluation you will perform in the following steps.
+Steps and Requirements - Step 3
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 3. Flag any critical issues in the entire response.
+Workflow                   Overview
+
+Step 1 - Review Input      Before evaluating the quality of the response, your first task is to check for any critical issues. These are severe flaws that
+                           automatically render the response unacceptable.
+Step 2 - Review Response
+                           You must inspect the entire response for these issues, including:
+Step 3 - Flag Any
+Critical Issues               • subject/title (for emails)
+Step 4 - Verify Email         • main content
+Subject                       • all supplementary information
+                              • Additional Personal Information (if any)
+Step 5 - Evaluate Main
+Content
+                                 Question:
+Step 6 - Evaluate
+Supplementary Info
+                                 Flag if present:
+Step 7 - Localization
+                                    • Hallucination: Contains fabricated specific details (dates, names, prices, facts) that cannot be
+Step 8 - Holistic Rating              validated through web search or additional personal information.
+                                    • Privacy concern: Requests or suggests sharing sensitive information inappropriately
+Step 9 - Comparison                 • Unsafe content: Contains harmful, offensive, or inappropriate content (including culturally
+                                      inappropriate elements)I
+ Table of Contents
+                            Steps and Requirements
+Introduction
+                            Step 3. Flag any critical issues in the entire response.
+Workflow                    Instructions
+
+                                                       Flag if…                                                         Examples or Notes
+Step 1 - Review Input
+                           Hallucination               The response invents details like names, dates, prices,          • Example 1: In an email about a new company policy, the AI invents a
+                                                       statistics, or specific, verifiable facts that are untrue.             specific law or regulation number that cannot be verified via
+Step 2 - Review Response                                                                                                      external web search. This is hallucination.
+                                                       When checking hallucination, you should validate the             • Example 2:
+Step 3 - Flag Any                                      response against additional personal information (if any) or        • User instruction: "Tell Daddy and Brother about my week and ask
+                                                       external web search (if needed).                                         about theirs"
+Critical Issues                                                                                                            • The response includes activities performed by the user, and you
+Step 4 - Verify Email                                                                                                               can find this information in the Additional Personal
+                                                                                                                                    Information field. The response is grounded and not a
+Subject                                                                                                                             hallucination.
+Step 5 - Evaluate Main                                                                                                  • Do not flag: Creative details in a fictional context (e.g., a funny,
+                                                                                                                              made-up story in a poem) are not considered hallucinations
+Content
+                                                                                                                              unless they contradict the user's prompt.
+Step 6 - Evaluate
+                           Privacy Concern             The response encourages the user to share or requests that       • Example: A response drafting a public social media post suggests
+Supplementary Info
+                                                       they input information that is unsafe to disclose in the given        the user should include their home address, personal phone
+                                                       context.                                                              number, or financial details.
+Step 7 - Localization
+                           Harmful or Unsafe Content   • Harmful advice: Promotes illegal acts, self-harm, or
+                                                            dangerous activities.
+Step 8 - Holistic Rating                               • Offensive content: Uses hate speech, slurs, or derogatory
+                                                            language targeting individuals or groups.
+                                                       • Inappropriate content: Includes sexually explicit material,
+Step 9 - Comparison                                         graphic violence, or culturally insensitive elements.
+
+
+                               Summary: If you flag any of these three critical issues in any part of the response, the derived score will be automatically
+                            computed as Poor. End and submit the task.
+Steps and Requirements - Step 4 (only for emails)
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 4. Verify the quality of the E-mail Subject.
+Workflow
+                           If the input text is email, you will also need to do a quality check for the e-mail subject. This helps ensure that the user
+Step 1 - Review Input      experience of the e-mail subject is consistent.
+
+Step 2 - Review Response
+                           Depending on whether the user provides an email subject, you will see different evaluation questions.
+
+Step 3 - Flag Any
+                           If the user provides an email subject…
+Critical Issues
+Step 4 - Verify Email
+Subject                          Is the subject error-free and clear?
+Step 5 - Evaluate Main
+Content                             • Yes, the subject is clear and error-free..
+Step 6 - Evaluate                   • No, the subject is not clear or has errors such as misspelling.
+Supplementary Info
+
+Step 7 - Localization      If the user already provides the email subject, you would only need to verify if the model returns a subject line that is clear and
+                           free of error.
+Step 8 - Holistic Rating
+                           • There is no specific format requirement (as the feature is meant to prioritize the user's demand and style), as long as the
+Step 9 - Comparison          user-provided subject is free of grammatical or spelling errors.
+                           • Important: Writing Tool always respects user input. Casual abbreviations or stylistic choices should be respected, as
+                             changing them might irritate users.
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 4. Verify the quality of the E-mail Subject.
+Workflow
+
+Step 1 - Review Input      For example, in the screenshot below, the
+                           user already provided a subject: "Re:
+Step 2 - Review Response   Hello.......where are U....", which is
+                           considered clear and error-free.
+Step 3 - Flag Any
+Critical Issues             •The 6-dot ellipsis and "U" can be
+Step 4 - Verify Email        considered stylistic choices.
+Subject
+                            •The engineering team would like you to be
+Step 5 - Evaluate Main
+                             less strict when it comes to user's
+Content
+                             expressions and styles. Select Yes for this
+Step 6 - Evaluate            grading question.
+Supplementary Info
+
+Step 7 - Localization
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 4. Verify the quality of the E-mail Subject.
+Workflow
+                           If the user doesn t provide an email subject…
+Step 1 - Review Input
+                                Question: Check all that apply to the email subject
+Step 2 - Review Response
+                                      Follow topic + action noun format
+Step 3 - Flag Any
+Critical Issues                       Not prepositional phrases like “invitation to…”
+                                      Uses title case
+Step 4 - Verify Email
+Subject                               No trailing punctuation/emojis
+Step 5 - Evaluate Main                Appropriately general
+Content                               Omit extra details
+Step 6 - Evaluate                     Conveys only ONE main idea
+Supplementary Info                    Neutral and professional
+                                      No hype/subjective language
+Step 7 - Localization
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+                 ’
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 4. Verify the quality of the E-mail Subject.
+Workflow                   Instructions and Examples
+
+Step 1 - Review Input      1. Follow Topic + action Noun Format (Not Prepositional Phrases)
+                                         ✓ Criteria                        ✅ PASS                        ❌ FAIL                             Notes
+Step 2 - Review Response
+                                Subject follows Topic +         • "Meeting Cancellation"      • "Invitation to Potluck"    Key Rules:
+Step 3 - Flag Any               Nominalized Action pattern,     • "Budget Approval"           • "Request for Budget        • Action should be a noun (invitation,
+Critical Issues                 avoiding prepositional phrase   • "Potluck Invitation"              Approval"                   cancellation, approval)
+                                structures                      • "Invoice Status", "Launch   • "Status of Invoice 1234"   • Avoid phrases starting with
+Step 4 - Verify Email                                                 Timeline"               • "Timeline for Product           prepositions (to, for, on, about,
+Subject                                                                                             Launch"                     regarding, of)
+                                                                                                                           • "Q3 Sales Report" is acceptable (Q3
+Step 5 - Evaluate Main                                                                                                          is a modifier, not a prepositional
+Content                                                                                                                         phrase)
+Step 6 - Evaluate
+Supplementary Info
+                           2. Uses Title Case
+Step 7 - Localization
+                                         ✓ Criteria                        ✅ PASS                        ❌ FAIL                             Notes
+Step 8 - Holistic Rating        Follows Chicago Manual Style    • "Team Outing Location"      • "Team outing location"     Title Case Rules:
+                                - capitalize first and last     • "Q3 Sales Report"           • "TEAM OUTING               • Capitalize: First/last words, nouns,
+                                words, plus all major words     • "New Hire Orientation"           LOCATION"                     verbs, adjectives, adverbs
+Step 9 - Comparison
+                                                                                              • "team Outing Location"     • Lowercase: Articles (a, an, the),
+                                                                                                                                conjunctions (and, or), short
+                                                                                                                                prepositions (in, on, to) unless
+                                                                                                                                first/last
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 4. Verify the quality of the E-mail Subject.
+Workflow                   Instructions and Examples
+
+Step 1 - Review Input      3. No Trailing Punctuation/Emojis
+
+Step 2 - Review Response
+                                          ✓ Criteria                      ✅ PASS                         ❌ FAIL                              Notes
+Step 3 - Flag Any               Ends cleanly without           Meeting Reschedule"             "Meeting Reschedule!"         -
+Critical Issues                 punctuation marks or emojis    "Deadline Reminder"             "Deadline Reminder?"
+Step 4 - Verify Email                                                                           "Team Update 🎉"
+Subject                                                                                         "Please Respond..."
+
+Step 5 - Evaluate Main
+Content
+                           4. Appropriately General (Omits Extra Details)
+Step 6 - Evaluate
+Supplementary Info
+                                          ✓ Criteria                      ✅ PASS                         ❌ FAIL                              Notes
+
+Step 7 - Localization           Specific enough to be          • "Q3 Sales Report"             • Too vague: "Latest          Ask your self this question: Would
+                                meaningful but excludes        • "Pirates Scheduling Update"        Numbers", "Important     the recipient understand the general
+                                granular details like times,   • "Marketing Budget Review"          Information", "Update"   topic without being overwhelmed by
+Step 8 - Holistic Rating        dates, or locations                                            • Too detailed: "Pirates Game specifics?
+                                                                                                    Rescheduling Update -
+Step 9 - Comparison                                                                                 Moved to Monday",
+                                                                                                    "Team Meeting Moved
+                                                                                                    from 2pm to 3pm"
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 4. Verify the quality of the E-mail Subject.
+Workflow                   Instructions and Examples
+
+Step 1 - Review Input      5. Conveys Only ONE Main Idea
+
+                                         ✓ Criteria                        ✅ PASS                      ❌ FAIL                                 Notes
+Step 2 - Review Response
+                                Focuses on a single primary    • Project Update",           • "Project Update and Budget     Ask your self this question: Can you
+Step 3 - Flag Any               topic or action                • "Expense Approval"              Review"                     identify exactly ONE main purpose? If
+Critical Issues                                                                             • "Meeting Invite and Action     there's an "and" or multiple topics, it
+                                                                                                 Items"                      likely fails.
+Step 4 - Verify Email                                                                       • "Project Update and
+Subject                                                                                          Invitation for Questions"
+Step 5 - Evaluate Main
+Content
+Step 6 - Evaluate
+Supplementary Info         6. Neutral and Professional (No Hype/Subjective Language)
+
+Step 7 - Localization                   ✓ Criteria                        ✅ PASS                         ❌ FAIL                                Notes
+                                Uses objective, business-     • "Congratulations Dwight"    • Hype: "Congratulations, You're a   Red Flag Words: Exciting,
+                                appropriate language          • "Sunday Event Invitation"       Winner!", "Amazing               Amazing, Urgent, Important, Must-
+Step 8 - Holistic Rating        without marketing hype or     • "Join Us This Sunday"           Opportunity Inside!"             See, Incredible, Don't Miss, Winner,
+                                subjective adjectives         • "New Product Launch"        • Subjective: "Join Us for an        Special
+Step 9 - Comparison                                                                             Exciting Event This Sunday!",
+                                                                                                "Incredible New Product
+                                                                                                Launch!"
+Steps and Requirements - Step 5
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 5. Evaluate the core quality of the the main content based on the 4 dimensions.
+Workflow
+                           Overview
+Step 1 - Review Input
+                           In this step, you will focus exclusively on the main content of the response. You will evaluate it against four specific quality
+                           dimensions. For each dimension, read the definition and examples carefully before selecting your rating.
+Step 2 - Review Response
+
+Step 3 - Flag Any
+Critical Issues
+                           Core Quality Dimensions
+Step 4 - Verify Email
+Subject
+                            Dimension                                 Description
+Step 5 - Evaluate Main
+Content                     Instruction Adherence                     Check if the response includes all key information from the prompt, uses the correct
+Step 6 - Evaluate                                                     format (e.g., email, list, poem), and stays on topic.
+Supplementary Info
+                            Tone Appropriateness / Contextual         Check if the tone (e.g., formal, friendly, professional) matches the user's implied
+Step 7 - Localization       Awareness                                 audience and purpose.
+                                                                      For example, a message to a boss should sound different from a social media post.
+Step 8 - Holistic Rating
+                            Completeness                              Check if the response incorporates all specific details (like names, dates, or
+Step 9 - Comparison
+                                                                      numbers) that were provided in the user's prompt.
+                            Length Appropriateness                    Check if the response's length fits the requested format and purpose. It should be
+                                                                      concise for a text message or title, but detailed enough for a summary or report.
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 5. Evaluate the core quality of the the main content based on the 4 dimensions.
+Workflow
+                           Individual Dimensions and Examples > Instruction Adherence >
+Step 1 - Review Input
+                           Overview
+Step 2 - Review Response
+                           This dimension measures whether the main content directly follows the user's explicit instructions. It assesses if the
+Step 3 - Flag Any          response delivers the correct topic, format, and key elements requested in the prompt.
+Critical Issues
+Step 4 - Verify Email
+Subject                    Grading Question and Scales
+Step 5 - Evaluate Main
+Content                        Question: Does the output directly address what the user asked for?
+                                 • Yes. The output includes all key elements, uses the correct format, and is relevant to the instruction.
+Step 6 - Evaluate                • No. The output is missing key elements, uses the wrong format, or contains unrelated
+Supplementary Info
+
+Step 7 - Localization
+                               Guideline Callouts
+Step 8 - Holistic Rating
+                               Format refers to the structure and presentation style of content (email, to-do list, research paper outline, bedtime story,
+Step 9 - Comparison            etc.). When evaluating instruction adherence, check if the AI followed the requested format structure.
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 5. Evaluate the core quality of the the main content based on the 4 dimensions.
+Workflow
+                           Individual Dimensions and Examples > Instruction Adherence > Examples
+
+Step 1 - Review Input           User Instruction          Response                                      Grade    Rationales
+
+
+Step 2 - Review Response    1   "Draft a two-sentence     "Hi Alex, thank you so much for the            ✅ Yes   The response adheres to all instructions:
+                                thank you note to my      thoughtful birthday gift! I really love it             it's a thank you note, it's addressed to
+Step 3 - Flag Any               friend Alex for the       and appreciate you thinking of me."                    Alex, it's about a birthday gift, and it is
+Critical Issues                 birthday gift."                                                                  exactly two sentences long.
+Step 4 - Verify Email
+                           2    "Give me an outline for   "Remote work offers incredible flexibility,    X No    The user asked for an outline (a specific
+Subject
+                                a presentation about      allowing employees to manage their own                 format), but the AI provided a paragraph of
+Step 5 - Evaluate Main          the benefits of remote    schedules. It also eliminates commuting                text. This fails the format instruction.
+Content                         work."                    time, which saves money and reduces
+Step 6 - Evaluate                                         stress. Many companies find that
+Supplementary Info                                        productivity increases when they trust
+                                                          their teams to work from home."
+Step 7 - Localization
+                           3    "Write a 4-line poem      "Paws on the sill, a twitching ear,            X No    The user specifically requested a "4-line
+Step 8 - Holistic Rating        about a cat watching                                                             poem." The response provides five lines,
+                                                          Raindrops race upon the glass.
+                                the rain."                                                                       failing to adhere to a key element of the
+                                                          A world of wet, a world of gray,                       instruction.
+Step 9 - Comparison
+                                                          A cozy nap will help the time pass.
+
+                                                          The birds are all tucked safe away."
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 5. Evaluate the core quality of the the main content based on the 4 dimensions.
+Workflow
+                           Individual Dimensions and Examples > Tone Appropriateness / Contextual Awareness
+Step 1 - Review Input
+                           Overview
+Step 2 - Review Response
+                           This dimension assesses if the response uses a tone (e.g., formal, friendly, humorous) that is suitable for the implied audience
+Step 3 - Flag Any          and purpose.
+Critical Issues
+Step 4 - Verify Email      Grading Question and Scales
+Subject
+Step 5 - Evaluate Main          Question: Is the tone suitable for the stated audience and context?
+Content
+Step 6 - Evaluate                  • Yes. The output uses a tone that is appropriate for the user's implied audience and purpose.
+Supplementary Info                 • No. The output is too formal/casual or has a mismatched emotional register.
+Step 7 - Localization
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 5. Evaluate the core quality of the the main content based on the 4 dimensions.
+Workflow
+                           Individual Dimensions and Examples > Tone Appropriateness / Contextual Awareness
+Step 1 - Review Input
+                           Examples
+Step 2 - Review Response
+
+Step 3 - Flag Any               User Instruction            Response                                      Grade   Rationales
+Critical Issues
+Step 4 - Verify Email       1   "Write a professional       "Dear [Manager's Name], I am writing          ✅ Yes   The tone is professional, respectful, and
+Subject                         email to my manager         to formally request a day of paid time                appropriate for communicating with a
+                                requesting a day off        off on Friday, [Date]. I will ensure all my           manager.
+Step 5 - Evaluate Main
+                                next Friday."               urgent tasks are completed before I
+Content
+                                                            leave. Thank you for your
+Step 6 - Evaluate                                           consideration."
+Supplementary Info
+
+Step 7 - Localization
+                            2   "Write a short, formal      "Hey there, so sorry about the shipment       X No    The user requested a "formal apology,"
+Step 8 - Holistic Rating        apology to a client for a   being late! Our bad. We're working on it              but the response is overly casual, using
+                                delayed shipment."          and it should get to you soon. Hang                   slang like "Hey there," "Our bad," and
+Step 9 - Comparison                                         tight!"                                               "Hang tight," which is inappropriate for
+                                                                                                                  the context.
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 5. Evaluate the core quality of the the main content based on the 4 dimensions.
+Workflow
+                           Individual Dimensions and Examples > Completeness
+Step 1 - Review Input
+                           Overview
+Step 2 - Review Response
+                           This dimension measures whether the response includes all critical information that was provided in the user's prompt. A
+Step 3 - Flag Any          complete response can be used as-is or with minimal edits, without the user needing to re-insert information they already
+Critical Issues            gave.
+Step 4 - Verify Email
+Subject
+                           Grading Question and Scales
+Step 5 - Evaluate Main
+Content
+                                Question: Can the user use this output as-is or with minimal edits, considering the user-provided context?
+Step 6 - Evaluate
+Supplementary Info
+                                   • Yes (ready to use): The output can be used as-is or with minimal edits because it includes all critical
+Step 7 - Localization                information from the prompt.
+                                   • No: The output is missing critical information that was provided in the prompt or has an incomplete
+Step 8 - Holistic Rating
+                                     structure.
+
+Step 9 - Comparison
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 5. Evaluate the core quality of the the main content based on the 4 dimensions.
+Workflow
+                           Individual Dimensions and Examples > Completeness > Examples
+Step 1 - Review Input
+                                 User Instruction                       Response                                  Grade     Rationales
+
+Step 2 - Review Response     1   "Write an email inviting my team to    "Hi Team, I'd like to invite you all to    ✅ Yes    The response correctly incorporates all
+                                 a project kickoff meeting in           our project kickoff meeting. Please       (ready    the details provided by the user (the
+Step 3 - Flag Any                Conference Room B on Tuesday at        join us in Conference Room B on           to use)   event, location, day, and time), making it
+Critical Issues                  10am."                                 Tuesday at 10am to discuss the                      ready to send.
+                                                                        project goals and timeline. Looking
+Step 4 - Verify Email
+                                                                        forward to it!"
+Subject
+Step 5 - Evaluate Main      2    "Write an email inviting my team to    "Hi Team, I'd like to invite you all to    X No     The response fails to include the time
+Content                          a project kickoff meeting in           our project kickoff meeting. Please let             ("10am") and day ("Tuesday") that were
+Step 6 - Evaluate                Conference Room B on Tuesday at        me know what time works best for                    explicitly provided in the instruction,
+Supplementary Info               10am."                                 you to meet in Conference Room B.                   requiring the user to add this critical
+                                                                        Looking forward to it!"                             information back in.
+Step 7 - Localization
+                            3    "Create an event description for a     "Join us for our charity bake sale!        X No     The response is structurally incomplete.
+                                 charity bake sale. It's on Saturday,   We'll have delicious homemade treats                It omits the time (9am-3pm) and the
+Step 8 - Holistic Rating         Dec 9th, from 9am to 3pm at the        for a great cause. The event will take              location (community hall), both of which
+                                 community hall. All proceeds go to     place on Saturday, December 9th. All                were provided in the prompt. The user
+Step 9 - Comparison              the local animal shelter."             proceeds go to the local animal                     would have to make significant edits to
+                                                                        shelter."                                           add this essential information.
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 5. Evaluate the core quality of the the main content based on the 4 dimensions.
+Workflow
+                           Individual Dimensions and Examples > Length Appropriateness
+Step 1 - Review Input
+                           Overview
+Step 2 - Review Response
+                           The suggested reply should sound like something a real person would naturally say in this context, using authentic language
+Step 3 - Flag Any          and phrasing that is appropriate for the conversation's level of formality.
+Critical Issues
+Step 4 - Verify Email
+Subject                    Grading Question and Scales
+Step 5 - Evaluate Main
+Content                         Question: Is the length suitable for the stated purpose?
+Step 6 - Evaluate
+Supplementary Info                 • Yes: The output's length is well-proportioned for the stated purpose and format.
+                                   • No (too long/short): The output is verbose when brevity is needed, or sparse when detail is expected.
+Step 7 - Localization
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 5. Evaluate the core quality of the the main content based on the 4 dimensions.
+Workflow                   Individual Dimensions and Examples > Length Appropriateness > Examples
+
+Step 1 - Review Input
+                               User Instruction                   Response                            Grade        Rationales
+Step 2 - Review Response
+                           1   "Write a quick text to my          "Hey! Just confirming we're still   ✅ Yes        The length is perfect for a text message—it's
+Step 3 - Flag Any              friend to confirm we're still on   on for dinner tonight at 7?"                     brief, direct, and serves its purpose perfectly.
+Critical Issues                for dinner tonight at 7."
+
+Step 4 - Verify Email      2 "Write a title for my essay on       "An In-Depth Analysis of the         X No (too   The response is far too verbose and
+Subject                      the economic impact of the           Multifaceted and Transformative                  cumbersome for a title. A good title should be
+                                                                                                      long)
+Step 5 - Evaluate Main       Industrial Revolution."              Economic Consequences                            concise and impactful.
+Content                                                           Stemming from the Period
+Step 6 - Evaluate                                                 Known as the Industrial
+Supplementary Info                                                Revolution in the 18th and 19th
+                                                                  Centuries"
+Step 7 - Localization
+                           3 "Write a brief summary of my         "Project manager with PMP           X No (too    While technically accurate, the response is
+Step 8 - Holistic Rating     skills for a resume. I have 5        certification."                     short)       too sparse. A "brief summary" should still
+                             years of experience in project                                                        encapsulate the key details provided. It omits
+                             management, I'm an expert in                                                          the 5 years of experience and Scrum
+Step 9 - Comparison          Scrum, and I have a PMP                                                               expertise, making it an unhelpfully brief
+                             certification."                                                                       summary that the user cannot use.
+Steps and Requirements - Step 6
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 6. Evaluate the utility of the supplementary information based on 1 dimension.
+Workflow
+                           Overview
+Step 1 - Review Input
+                           After evaluating the main content, your next step is to assess the helpfulness of any supplementary information the AI
+Step 2 - Review Response   provided or suggested. This includes titles, subjects, suggestions (e.g., "add date"), or reference information from a web
+                           search.
+Step 3 - Flag Any
+Critical Issues            This evaluation is separate from the core quality. The main content could be good while the suggestion or supplementary
+Step 4 - Verify Email      information is not so helpful, and vice versa.
+Subject
+Step 5 - Evaluate Main     Grading Question and Scales
+Content
+Step 6 - Evaluate                Question: What is the collective utility of this set of suggestions as a whole?
+Supplementary Info
+
+Step 7 - Localization               • Helpful: Provided useful supplementary information
+                                    • Neutral: No supplementary info needed, or provided but not particularly useful
+Step 8 - Holistic Rating            • Missing: Should have provided supplementary info but didn't
+
+Step 9 - Comparison
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 6. Evaluate the utility of the supplementary information based on 1 dimension.
+Workflow
+                           Examples
+Step 1 - Review Input
+                               User Instruction          Response                                                    Grade      Rationales
+
+Step 2 - Review Response   1   Write an email to my      Main Content: "Hi everyone, I'm writing to coordinate       ✅          The user's prompt is vague. The AI correctly identifies
+                               book club about our       our next book club meeting..."                              Helpful    the missing, essential details for a meeting
+Step 3 - Flag Any              next meeting."                                                                                   announcement and provides actionable suggestions
+Critical Issues                                          Supplementary Info:                                                    that help the user complete the task.
+                                                          • Book Title
+Step 4 - Verify Email                                     • Date and Time
+Subject                                                   • Location
+                           2   "Write a quick text to    Main Content: "Hey, just landed safely in Chicago! Talk       Neutral The user's instruction is simple, complete, and requires
+Step 5 - Evaluate Main                                   soon.                                                                  no additional information. The AI correctly provided
+                               my sister: 'Hey, just
+Content                                                                                                                         only the main content, as no supplementary
+                               landed safely in
+                                                         Supplementary Info: (None provided)                                    information was needed. This is the correct behavior.
+Step 6 - Evaluate              Chicago! Talk soon.'"
+Supplementary Info
+                           3   "Write a title for my     Main Content: "The Rise and Fall of the Roman                 Neutral The main content is a perfectly acceptable title.
+                               essay on the history of   Empire”                                                               The suggestions provided are generic, subjective,
+Step 7 - Localization
+                               ancient Rome."                                                                                  and offer no concrete value to the user. Because
+                                                         Supplementary Info:
+                                                                                                                               the information isn't actively helpful, the rating is
+                                                          • Make it shorter
+Step 8 - Holistic Rating                                  • Make it more creative
+                                                                                                                               Neutral.
+
+                           4   "Write an email to my     Main Content: "Hi everyone, I'm writing to coordinate our   X Missing The prompt is missing critical information (book
+Step 9 - Comparison            book club about our       next book club meeting. We will be discussing our book at             title, date, time). A helpful response would have
+                                                         the usual place. Please come prepared!”
+                               next meeting."                                                                                  provided suggestions. Since no supplementary
+                                                         Supplementary Info: (None provided)                                   information was offered, the AI missed a key
+                                                                                                                               opportunity to assist the user.
+Steps and Requirements - Step 7
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 7. Evaluate the Localization of the entire output / response.
+Workflow
+                           Overview
+Step 1 - Review Input
+                           The response should feel like it was written by a native speaker in the target region. It adapts to local language, culture, and
+Step 2 - Review Response
+                           context.
+
+Step 3 - Flag Any
+                           A response fails the localization dimension if it feels "foreign," even if the grammar is technically correct.
+Critical Issues
+Step 4 - Verify Email
+Subject                    Grading Question and Scales
+Step 5 - Evaluate Main
+Content                            Q. Does the response display content that is appropriate and relevant for your language and region?
+Step 6 - Evaluate
+Supplementary Info                    • Yes: The response is fully appropriate for my language and region
+                                      • No: The response contains something inappropriate or irrelevant for my language and region
+Step 7 - Localization
+                                            • Awkward or clearly machine-translated phrasing
+Step 8 - Holistic Rating
+                                            • Incorrect mixed languages in the response
+                                            • Wrong date format (e.g., MM/DD vs DD/MM), units of measurement, or number formatting
+Step 9 - Comparison
+                                            • Wrong punctuation format for my language/region
+                                            • Scrambled symbols (, □, ???, ⍰)
+                                            • Content, examples, or references that don't fit my culture/region
+                                            • Others. Please specify.
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 7. Evaluate the Localization of the entire output / response.
+Workflow
+                            Instructions
+Step 1 - Review Input
+
+                                ✅     If all of the following are true, select Yes for the Localization question:
+Step 2 - Review Response                •    Input text is in my language with no obviously incorrect or untranslated portions
+                                        •    Dates, numbers and units of measurement display in my local format
+Step 3 - Flag Any
+Critical Issues                         •    No garbled characters appear
+Step 4 - Verify Email
+                                        •    All content, including cultural references, punctuations, and examples, make sense for my region
+Subject
+Step 5 - Evaluate Main
+Content
+Step 6 - Evaluate
+Supplementary Info
+
+Step 7 - Localization
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+    Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 7. Evaluate the Localization of the entire output / response.
+Workflow
+                            Instructions
+Step 1 - Review Input
+
+                                      Guideline Callouts
+Step 2 - Review Response
+                                       1. Below scenarios are expected and NOT Localization issues:
+Step 3 - Flag Any
+                                         • English proper names of companies, products, games, movies, etc will appear frequently in
+Critical Issues
+                                           other languages.
+Step 4 - Verify Email
+Subject                                  • Some languages such as Hinglish use mixed languages.
+                                         • It s possible that some scenarios use the base language structurally but include a small
+Step 5 - Evaluate Main
+Content                                    untranslated portion.
+Step 6 - Evaluate                            •For example, “Send 你好嗎 to Ching Liu.”
+Supplementary Info
+
+Step 7 - Localization                  2. Examples of wrong punctuation format
+                                        ❌ Cómo estás? Qué sorpresa! Vs ✅ ¿Cómo estás? ¡Qué sorpresa!
+Step 8 - Holistic Rating                   ❌ Il a dit "bonjour" en souriant. Vs ✅ Il a dit « bonjour » en souriant.
+                                           ❌ Powiedział "to dobrze" i wyszedł. Vs ✅ Powiedział „to dobrze" i wyszedł.
+Step 9 - Comparison
+’
+Steps and Requirements - Step 8
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 8. Provide a holistic rating of the entire response.
+Workflow                   Overview
+
+Step 1 - Review Input      The previous steps measured specific quality dimensions, but they cannot cover every possible aspect of a composition. This
+                           final rating is where your holistic judgment is most valuable.
+Step 2 - Review Response
+
+Step 3 - Flag Any          You will see a suggested overall quality computed for you. However, your final decision can override the suggested rating.
+Critical Issues
+Step 4 - Verify Email
+Subject
+Step 5 - Evaluate Main
+Content
+Step 6 - Evaluate
+Supplementary Info
+
+Step 7 - Localization
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 8. Provide a holistic rating of the entire response.
+Workflow
+                              Consider everything you've evaluated, plus any other qualities—like creativity, insightfulness, or actionability—that
+Step 1 - Review Input         contribute to a successful response for the user's specific scenario.
+
+Step 2 - Review Response
+                           Grading Question and Scales
+Step 3 - Flag Any
+Critical Issues
+Step 4 - Verify Email         Question: How would you rate the overall quality of this composition?
+Subject
+Step 5 - Evaluate Main            • Excellent: Exceeds expectations. The response demonstrates exceptional quality that makes it stand out, such
+Content                             as notable creativity, insight, or helpfulness.
+Step 6 - Evaluate                 • Good: Meets expectations. The response is helpful, well-executed, and successfully accomplishes the user's
+Supplementary Info                  goal.
+Step 7 - Localization             • Fair: Meets some expectations but has noticeable flaws. The response is partially helpful but would require the
+                                    user to make significant edits.
+Step 8 - Holistic Rating          • Poor: Does not meet expectations. The response is unusable.
+
+Step 9 - Comparison
+Steps and Requirements - Step 9
+ Table of Contents
+                           Steps and Requirements
+Introduction
+                           Step 9. Conduct a pairwise comparison before submitting the task.
+Workflow
+                           After you have evaluated each response, you will compare them in pair.
+Step 1 - Review Input
+                           Please base your comparison on the derived scores for each dimension, displayed for you in a table. Share any feedback
+Step 2 - Review Response   you'd like the engineering team to be aware of and submit the task.
+
+Step 3 - Flag Any
+Critical Issues
+Step 4 - Verify Email
+Subject
+Step 5 - Evaluate Main
+Content
+Step 6 - Evaluate
+Supplementary Info
+
+Step 7 - Localization
+
+Step 8 - Holistic Rating
+
+Step 9 - Comparison
+                 Congratulations
+You have completed the Writing Tools - 0 to 1 Composition Guidelines!
+

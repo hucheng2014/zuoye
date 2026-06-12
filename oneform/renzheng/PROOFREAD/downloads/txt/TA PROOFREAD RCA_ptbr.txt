@@ -1,0 +1,44 @@
+TA PROOFREAD RCA: pt_BR
+April 7th, 2025
+QUESTION 1: From the task, one input text contains « E como eu falei, eu te
+Rachel por todas as coisas extras. » This sentence is incomplete as a word is
+missing for context. Both responses add a word to make it have some sense. This
+affects groundedness, however, it’s unclear what the expectation from the model
+in Proofreading is when there’s a missing word like this? Repeating the sentence
+would still leave it incomplete and it’s unclear how following instructions would be
+graded and how composition is affected, because a word is missing and not
+adding anything would render it bad. However, adding a word could be considered
+as something that affects following instructions.
+o
+
+ANSWER: For the scope of this task, if a response adds a word so
+the sentence can make more sense, the response should be
+downgraded in Instruction Following (for unnecessary word
+change—unless we agree this is necessary word change. See the
+guidelines regarding unnecessary changes we have provided for
+ja_JP and zh_CN ) and Groundedness.
+If the response repeats the Input Text, this case would be rated as
+Fully Following and gets downgraded in Composition (maybe also
+Satisfaction?).
+
+QUESTION 2: Interpretation of certain texts in pt-BR will vary between people.
+Example, “Tô viciado também no álbum novo daquele Anthony Chavez” is
+considered grammatically correct but a response changes the order to “no novo
+álbum”, which is also correct and slightly more common. Some people consider
+this a valid correction while others feel the original was already good and therefore
+the unnecessary change would be penalized.
+Are words like elegantérrimo and rapidão, which are commonly used by Brazilians
+every day, but not necessarily the official declension, acceptable? Or would they
+need to be corrected as part of proofreading?
+Similarly, sometimes the difference between input and response can be the word
+pra to para. The former is informal, the latter more formal. Is this sufficient to fail
+the composition (as a change of tone), while only partially failing instructions?
+o
+
+ANSWER: Based on the specialized guidelines we released for ja_JP
+and zh_CN, which also apply to other locales, these word changes
+(awkward, formal >> common, informal usage; or the other way
+around) would be considered as unnecessary modifications, so
+Partially Following.
+
+

@@ -1,0 +1,4 @@
+[submodule "third_party/FireRedASR"]
+	path = third_party/FireRedASR
+	url = https://github.com/FireRedTeam/FireRedASR.git
+	ignore = dirty

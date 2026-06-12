@@ -7,7 +7,7 @@ This directory keeps the effective workflow used on 2026-06-06. It supports the 
 1. Generate captions offline:
 
 ```bash
-/home/jianglei/zuoye/putonghuaasr/.venv/bin/python -u solve_current_page.py
+/Users/xaa/zuoye/putonghuaasr/.venv/bin/python -u solve_current_page.py
 ```
 
 This only extracts the tasks currently rendered on the page, downloads videos, generates captions, runs independent review, and writes `scratch/batch_current_results.json`. It does not fill or submit.
@@ -15,20 +15,20 @@ This only extracts the tasks currently rendered on the page, downloads videos, g
 2. Run targeted review when a result has warnings or manual doubt:
 
 ```bash
-/home/jianglei/zuoye/putonghuaasr/.venv/bin/python -u review_targets.py
+/Users/xaa/zuoye/putonghuaasr/.venv/bin/python -u review_targets.py
 ```
 
 The target script only reads local result/video files and writes `scratch/target_reviews.json`. By default it reviews all generated items. To review specific items:
 
 ```bash
-/home/jianglei/zuoye/putonghuaasr/.venv/bin/python -u review_targets.py --items 1
-/home/jianglei/zuoye/putonghuaasr/.venv/bin/python -u review_targets.py --items 2,4,7-8
+/Users/xaa/zuoye/putonghuaasr/.venv/bin/python -u review_targets.py --items 1
+/Users/xaa/zuoye/putonghuaasr/.venv/bin/python -u review_targets.py --items 2,4,7-8
 ```
 
 3. Fill and verify persistence without submitting:
 
 ```bash
-/home/jianglei/zuoye/putonghuaasr/.venv/bin/python -u solve_current_page.py --fill --use-results
+/Users/xaa/zuoye/putonghuaasr/.venv/bin/python -u solve_current_page.py --fill --use-results
 ```
 
 The script verifies the current page still matches the generated results by index, original caption, and video duration before filling. It then fills every rendered task on the current page, checks page values, waits for save, reloads, and verifies persistence.
@@ -36,7 +36,7 @@ The script verifies the current page still matches the generated results by inde
 4. Submit only after fill/reload verification:
 
 ```bash
-/home/jianglei/zuoye/putonghuaasr/.venv/bin/python -u solve_current_page.py --submit --use-results
+/Users/xaa/zuoye/putonghuaasr/.venv/bin/python -u solve_current_page.py --submit --use-results
 ```
 
 The submit path repeats fill and reload verification, then performs a final page-level preflight check before clicking `提交任务`.

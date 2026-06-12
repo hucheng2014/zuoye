@@ -82,7 +82,7 @@ def run_docker_build(artifact_dir: Path, root_id: str, key: str, *, rebuild: boo
         if not log_path.exists():
             break
         attempt += 1
-    tag = f"python-grade-trial:metadata-{key}"
+    tag = f"studentsystem-trial:metadata-{key}"
     with prepare_build_context(artifact_dir) as build_context:
         context_path = Path(build_context)
         command = [
@@ -137,7 +137,7 @@ async def apply_metadata(plan_path: Path, artifact_dir: Path, log_path: Path, bu
         payload = await attachments.fetch_payload(page)
         backup = group.write_backup(payload, "before_docker_build_metadata")
         record_map = attachments.summarize_by_id(payload)
-        if root_id == group.OLD_ROOT_RECORD_ID:
+        if root_id in group.PROTECTED_ROOT_IDS:
             raise RuntimeError("refusing to update old root record")
         if root_id not in record_map:
             raise RuntimeError(f"fresh root record missing: {root_id}")

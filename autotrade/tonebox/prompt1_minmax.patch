@@ -1,0 +1,96 @@
+diff --git a/docs/musiccat_arch.md b/docs/musiccat_arch.md
+index 2396e0a..b84e921 100644
+--- a/docs/musiccat_arch.md
++++ b/docs/musiccat_arch.md
+@@ -1,3 +1,51 @@
+ # MusicCat Architecture
+ 
+ Stub - task 20 output goes here.
++
++## Architecture Overview
++
++### System Design
++MusicCat (Tonebox) is a FastAPI-based music education management platform with the following layered architecture:
++
++```
++┌─────────────────────────────────────────────────────┐
++│                  API Layer (Routers)                │
++│  /auth  /rooms  /lessons  /bookings  /instructors  │
++├─────────────────────────────────────────────────────┤
++│                 Service Layer                        │
++│  lesson_booking  booking_manager  instructor_mgr   │
++├─────────────────────────────────────────────────────┤
++│                  Model Layer                        │
++│  User  Instructor  Lesson  Booking  StudioRoom     │
++├─────────────────────────────────────────────────────┤
++│               Database Layer (SQLAlchemy)           │
++│                   Async MySQL/SQLite                │
++└─────────────────────────────────────────────────────┘
++```
++
++### Core Modules
++
++| Module | Responsibility | Key Files |
++|--------|----------------|-----------|
++| `music_accounts` | Authentication & User Management | [account_auth.py](file:///app/music_accounts/account_auth.py) |
++| `music_rooms` | Studio Room Management | [room_manager.py](file:///app/music_rooms/room_manager.py) |
++| `music_lessons` | Lesson CRUD Operations | [lesson_manager.py](file:///app/music_lessons/lesson_manager.py) |
++| `music_staff` | Instructor Management | [instructor_manager.py](file:///app/music_staff/instructor_manager.py) |
++| `music_bookings` | Booking & Reservation | [booking_manager.py](file:///app/music_bookings/booking_manager.py) |
++| `lesson_schedule` | Scheduling & Conflict Detection | [lesson_booking.py](file:///app/lesson_schedule/lesson_booking.py) |
++
++### Data Flow
++1. **Scheduling Flow**: `TeacherAvailability` → `LessonBooking.check_time_conflict()` → `OldLesson/Lesson`
++2. **Booking Flow**: `User` → `Booking` → `Lesson`/`StudioRoom`
++3. **Authentication Flow**: `X-API-Key` header → `get_current_user()` → Role-based access control
++
++### Technology Stack
++- **Framework**: FastAPI
++- **ORM**: SQLAlchemy (async)
++- **Database**: MySQL/SQLite
++- **Auth**: API Key-based authentication
++
++### Dual Model Strategy
++The system maintains two parallel model sets:
++- **Legacy Models**: `OldLesson`, `User`, `Instrument` - traditional one-to-one teaching
++- **Modern Models**: `Lesson`, `Instructor`, `Booking` - flexible group lessons and room bookings
+diff --git a/docs/schedule_conflict_analysis.md b/docs/schedule_conflict_analysis.md
+index a7d0054..09f07c2 100644
+--- a/docs/schedule_conflict_analysis.md
++++ b/docs/schedule_conflict_analysis.md
+@@ -1,3 +1,35 @@
+ # Schedule Conflict Analysis
+ 
+ Stub - task 19 output goes here.
++
++## Design Document
++
++### Overview
++This document analyzes schedule conflict detection mechanisms in the Tonebox music education management system.
++
++### Core Conflict Types
++
++#### 1. Teacher Time Conflict
++- **Detection Point**: [lesson_booking.py:check_time_conflict()](file:///app/lesson_schedule/lesson_booking.py#L45-L70)
++- **Logic**: When scheduling a lesson, the system checks if the teacher has any existing lessons at the same time slot on the same day.
++- **Time Overlap Formula**: `new_start < existing_end AND new_end > existing_start`
++- **Excluded Statuses**: `cancelled`, `no_show`
++
++#### 2. Room Booking Conflict
++- **Detection Point**: [booking_manager.py](file:///app/music_bookings/booking_manager.py)
++- **Logic**: Prevents double-booking of studio rooms for the same time slot.
++
++#### 3. Lesson Capacity Conflict
++- **Detection Point**: [booking_manager.py:check_lesson_capacity()](file:///app/music_bookings/booking_manager.py#L47-L59)
++- **Logic**: Ensures the number of bookings does not exceed `Lesson.max_students`.
++
++### Conflict Resolution Strategy
++1. **Priority-based**: Earlier bookings take precedence
++2. **Graceful rejection**: Returns HTTP 409 Conflict with descriptive error message
++3. **Cross-validation**: Validates instrument availability, teacher availability, and room availability
++
++### Future Enhancements
++- [ ] Implement recurring lesson conflict detection
++- [ ] Add buffer time between lessons
++- [ ] Support for multi-room conflict detection
++- [ ] Real-time availability suggestion API

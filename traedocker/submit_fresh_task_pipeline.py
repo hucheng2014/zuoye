@@ -56,6 +56,10 @@ def main() -> int:
     run_step("build Docker image and upload build metadata", [sys.executable, "repair_docker_build_metadata.py", "--apply"])
     run_step("attachment/server verify", [sys.executable, "submit_new_task_attachments.py", "--verify-only"])
     run_step("post-submit table verify", [sys.executable, "verify_fresh_task_remote.py"])
+    run_step(
+        "repair rollout score fields on server",
+        [sys.executable, "bitable_score_reason.py", "repair-remote", "--plan", "latest", "--apply"],
+    )
     print("\nFresh task submission complete.")
     return 0
 

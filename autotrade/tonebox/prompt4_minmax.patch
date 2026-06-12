@@ -1,0 +1,287 @@
+diff --git a/music_models/music_models.py b/music_models/music_models.py
+index f526728..eb92d43 100644
+--- a/music_models/music_models.py
++++ b/music_models/music_models.py
+@@ -181,9 +181,11 @@ class Recital(Base):
+     status = Column(Enum(RecitalStatus), nullable=False, default=RecitalStatus.planning)
+     registration_deadline = Column(Date, nullable=True)
+     admission_fee = Column(Float, nullable=False, default=0.0)
++    max_capacity = Column(Integer, nullable=False, default=50)
+     notes = Column(Text, nullable=True)
+ 
+     organizer = relationship("User", back_populates="organized_recitals", lazy="selectin")
++    bookings = relationship("Booking", back_populates="recital", lazy="selectin")
+ 
+     @property
+     def performers(self):
+@@ -250,6 +252,7 @@ class Booking(Base):
+     user_id = Column(String, ForeignKey("users.id"), nullable=False)
+     lesson_id = Column(Integer, ForeignKey("lessons.id"), nullable=True)
+     room_id = Column(Integer, ForeignKey("studio_rooms.id"), nullable=True)
++    recital_id = Column(String, ForeignKey("recitals.id"), nullable=True)
+     booking_type = Column(String(50), nullable=False)
+     start_time = Column(DateTime, nullable=True)
+     end_time = Column(DateTime, nullable=True)
+@@ -260,3 +263,4 @@ class Booking(Base):
+     user = relationship("User")
+     lesson = relationship("Lesson", back_populates="bookings")
+     room = relationship("StudioRoom")
++    recital = relationship("Recital", back_populates="bookings")
+diff --git a/recital_hall/recital_bookings.py b/recital_hall/recital_bookings.py
+index a902743..b1aca65 100644
+--- a/recital_hall/recital_bookings.py
++++ b/recital_hall/recital_bookings.py
+@@ -5,7 +5,7 @@ from datetime import datetime
+ 
+ from fastapi import APIRouter, Depends, HTTPException, status
+ from pydantic import BaseModel
+-from sqlalchemy import select
++from sqlalchemy import select, and_
+ from sqlalchemy.ext.asyncio import AsyncSession
+ 
+ from core.db import get_db
+@@ -23,6 +23,7 @@ class RecitalSeatBookingCreate(BaseModel):
+ class RecitalBookingResponse(BaseModel):
+     id: int
+     user_id: str
++    recital_id: Optional[str]
+     booking_type: str
+     status: str
+     notes: Optional[str]
+@@ -44,8 +45,23 @@ async def book_recital_seat(
+         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Recital not found")
+     if recital.status == "cancelled":
+         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Recital is cancelled")
++
++    current_bookings_result = await db.execute(
++        select(Booking).where(
++            and_(
++                Booking.recital_id == recital_id,
++                Booking.booking_type == "recital",
++                Booking.status.in_(["confirmed", "pending"])
++            )
++        )
++    )
++    current_bookings = list(current_bookings_result.scalars().all())
++    if len(current_bookings) >= recital.max_capacity:
++        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Recital is at full capacity")
++
+     booking = Booking(
+         user_id=payload.user_id,
++        recital_id=recital_id,
+         booking_type="recital",
+         status="pending",
+         notes=payload.notes,
+@@ -67,6 +83,11 @@ async def list_recital_seats(
+     if not recital:
+         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Recital not found")
+     bookings_result = await db.execute(
+-        select(Booking).where(Booking.booking_type == "recital")
++        select(Booking).where(
++            and_(
++                Booking.recital_id == recital_id,
++                Booking.booking_type == "recital"
++            )
++        )
+     )
+     return list(bookings_result.scalars().all())
+diff --git a/recital_hall/recital_manager.py b/recital_hall/recital_manager.py
+index c6deeb7..448cde9 100644
+--- a/recital_hall/recital_manager.py
++++ b/recital_hall/recital_manager.py
+@@ -30,6 +30,7 @@ class RecitalCreate(BaseModel):
+     status: RecitalStatus = RecitalStatus.planning
+     registration_deadline: Optional[datetime.date] = None
+     admission_fee: float = 0.0
++    max_capacity: int = 50
+     notes: Optional[str] = None
+ 
+ 
+@@ -54,6 +55,7 @@ class RecitalResponse(BaseModel):
+     status: RecitalStatus
+     registration_deadline: Optional[datetime.date]
+     admission_fee: float
++    max_capacity: int
+     notes: Optional[str]
+ 
+     model_config = {"from_attributes": True}
+@@ -70,6 +72,7 @@ class RecitalResponse(BaseModel):
+             status=obj.status,
+             registration_deadline=obj.registration_deadline,
+             admission_fee=obj.admission_fee,
++            max_capacity=obj.max_capacity,
+             notes=obj.notes,
+         )
+ 
+diff --git a/tests/test_prompt4.py b/tests/test_prompt4.py
+new file mode 100644
+index 0000000..030c6ec
+--- /dev/null
++++ b/tests/test_prompt4.py
+@@ -0,0 +1,165 @@
++from __future__ import annotations
++
++import pytest
++from httpx import AsyncClient
++
++from tests.conftest import api_key_header, register_user
++
++
++async def make_recital(client: AsyncClient, api_key: str, title: str = "Spring Recital", max_capacity: int = 50) -> dict:
++    from datetime import date, timedelta
++    resp = await client.post(
++        "/recitals",
++        json={
++            "title": title,
++            "event_date": (date.today() + timedelta(days=30)).isoformat(),
++            "venue": "Main Hall",
++            "organizer_id": "test-organizer",
++            "performers": [],
++            "status": "confirmed",
++            "admission_fee": 10.0,
++            "max_capacity": max_capacity,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def book_recital_seat(client: AsyncClient, api_key: str, recital_id: str, user_id: str) -> dict:
++    resp = await client.post(
++        f"/recitals/{recital_id}/seats",
++        json={"user_id": user_id},
++        headers=api_key_header(api_key),
++    )
++    return resp
++
++
++async def test_book_recital_seat_success(client: AsyncClient):
++    admin = await register_user(client, "admin_r1", "admin_r1@test.com", "pass", "admin")
++    student = await register_user(client, "student_r1", "student_r1@test.com", "pass", "student")
++
++    recital = await make_recital(client, admin["api_key"], max_capacity=50)
++    resp = await book_recital_seat(client, student["api_key"], recital["id"], student["id"])
++    assert resp.status_code == 201, resp.text
++    assert resp.json()["recital_id"] == recital["id"]
++    assert resp.json()["status"] == "pending"
++
++
++async def test_book_recital_seat_at_full_capacity(client: AsyncClient):
++    admin = await register_user(client, "admin_r2", "admin_r2@test.com", "pass", "admin")
++    student1 = await register_user(client, "student_r2a", "student_r2a@test.com", "pass", "student")
++    student2 = await register_user(client, "student_r2b", "student_r2b@test.com", "pass", "student")
++
++    recital = await make_recital(client, admin["api_key"], max_capacity=1)
++
++    resp1 = await book_recital_seat(client, student1["api_key"], recital["id"], student1["id"])
++    assert resp1.status_code == 201, resp1.text
++
++    resp2 = await book_recital_seat(client, student2["api_key"], recital["id"], student2["id"])
++    assert resp2.status_code == 409, resp2.text
++    assert resp2.json()["detail"] == "Recital is at full capacity"
++
++
++async def test_book_recital_seat_at_exact_capacity(client: AsyncClient):
++    admin = await register_user(client, "admin_r3", "admin_r3@test.com", "pass", "admin")
++    student1 = await register_user(client, "student_r3a", "student_r3a@test.com", "pass", "student")
++    student2 = await register_user(client, "student_r3b", "student_r3b@test.com", "pass", "student")
++    student3 = await register_user(client, "student_r3c", "student_r3c@test.com", "pass", "student")
++
++    recital = await make_recital(client, admin["api_key"], max_capacity=2)
++
++    resp1 = await book_recital_seat(client, student1["api_key"], recital["id"], student1["id"])
++    assert resp1.status_code == 201, resp1.text
++
++    resp2 = await book_recital_seat(client, student2["api_key"], recital["id"], student2["id"])
++    assert resp2.status_code == 201, resp2.text
++
++    resp3 = await book_recital_seat(client, student3["api_key"], recital["id"], student3["id"])
++    assert resp3.status_code == 409, resp3.text
++    assert resp3.json()["detail"] == "Recital is at full capacity"
++
++
++async def test_list_recital_seats_only_returns_bookings_for_that_recital(client: AsyncClient):
++    admin = await register_user(client, "admin_r4", "admin_r4@test.com", "pass", "admin")
++    student1 = await register_user(client, "student_r4a", "student_r4a@test.com", "pass", "student")
++    student2 = await register_user(client, "student_r4b", "student_r4b@test.com", "pass", "student")
++
++    recital1 = await make_recital(client, admin["api_key"], title="Recital One", max_capacity=10)
++    recital2 = await make_recital(client, admin["api_key"], title="Recital Two", max_capacity=10)
++
++    await book_recital_seat(client, student1["api_key"], recital1["id"], student1["id"])
++    await book_recital_seat(client, student2["api_key"], recital2["id"], student2["id"])
++
++    resp1 = await client.get(f"/recitals/{recital1['id']}/seats", headers=api_key_header(admin["api_key"]))
++    assert resp1.status_code == 200
++    seats1 = resp1.json()
++    assert len(seats1) == 1
++    assert seats1[0]["user_id"] == student1["id"]
++
++    resp2 = await client.get(f"/recitals/{recital2['id']}/seats", headers=api_key_header(admin["api_key"]))
++    assert resp2.status_code == 200
++    seats2 = resp2.json()
++    assert len(seats2) == 1
++    assert seats2[0]["user_id"] == student2["id"]
++
++
++async def test_recital_not_found(client: AsyncClient):
++    admin = await register_user(client, "admin_r5", "admin_r5@test.com", "pass", "admin")
++    resp = await client.get("/recitals/nonexistent-id/seats", headers=api_key_header(admin["api_key"]))
++    assert resp.status_code == 404
++
++
++async def test_recital_booking_response_includes_recital_id(client: AsyncClient):
++    admin = await register_user(client, "admin_r6", "admin_r6@test.com", "pass", "admin")
++    student = await register_user(client, "student_r6", "student_r6@test.com", "pass", "student")
++
++    recital = await make_recital(client, admin["api_key"], max_capacity=50)
++    resp = await book_recital_seat(client, student["api_key"], recital["id"], student["id"])
++    assert resp.status_code == 201
++    data = resp.json()
++    assert "recital_id" in data
++    assert data["recital_id"] == recital["id"]
++
++
++async def test_recital_max_capacity_default_is_50(client: AsyncClient):
++    admin = await register_user(client, "admin_r7", "admin_r7@test.com", "pass", "admin")
++
++    resp = await client.post(
++        "/recitals",
++        json={
++            "title": "Default Capacity Recital",
++            "event_date": "2030-12-01",
++            "venue": "Main Hall",
++            "organizer_id": "test-organizer",
++            "performers": [],
++            "status": "confirmed",
++            "admission_fee": 0.0,
++        },
++        headers=api_key_header(admin["api_key"]),
++    )
++    assert resp.status_code == 201, resp.text
++    recital = resp.json()
++    assert recital["max_capacity"] == 50
++
++
++async def test_recital_with_custom_max_capacity(client: AsyncClient):
++    admin = await register_user(client, "admin_r8", "admin_r8@test.com", "pass", "admin")
++
++    resp = await client.post(
++        "/recitals",
++        json={
++            "title": "Small Recital",
++            "event_date": "2030-12-01",
++            "venue": "Room B",
++            "organizer_id": "test-organizer",
++            "performers": [],
++            "status": "confirmed",
++            "admission_fee": 5.0,
++            "max_capacity": 20,
++        },
++        headers=api_key_header(admin["api_key"]),
++    )
++    assert resp.status_code == 201, resp.text
++    recital = resp.json()
++    assert recital["max_capacity"] == 20
+\ No newline at end of file

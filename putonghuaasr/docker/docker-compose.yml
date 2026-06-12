@@ -1,0 +1,64 @@
+services:
+  browser:
+    build:
+      context: ./browser
+      dockerfile: Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME:-asr-worker}-browser
+    init: true
+    environment:
+      - CDP_PORT=${PUTONGHUAASR_CDP_PORT:-9222}
+      - VNC_PASSWORD=${VNC_PASSWORD:-}
+      - SCREEN_WIDTH=1920
+      - SCREEN_HEIGHT=1080
+    ports:
+      - "${NOVNC_PORT:-6080}:6080"
+      - "${HOST_CDP_PORT:-9220}:9222"
+      - "${HOST_CDP_PROXY_PORT:-9221}:9223"
+    networks:
+      - asr-net
+    volumes:
+      - browser-profile:/home/pwuser/chrome-profile
+    mem_limit: ${BROWSER_MEM_LIMIT:-24g}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-sf", "http://localhost:9222/json/version"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+  agent:
+    build:
+      context: ..
+      dockerfile: docker/agent/Dockerfile
+    container_name: ${COMPOSE_PROJECT_NAME:-asr-worker}-agent
+    init: true
+    depends_on:
+      browser:
+        condition: service_healthy
+    environment:
+      - PUTONGHUAASR_BASE=${PUTONGHUAASR_BASE:-/app}
+      - PUTONGHUAASR_QWEN3_ASR_MODEL=${PUTONGHUAASR_QWEN3_ASR_MODEL:-/app/models/Qwen3-ASR}
+      - PUTONGHUAASR_MODEL=${PUTONGHUAASR_MODEL:-/app/models/Qwen3-ASR}
+      - PUTONGHUAASR_QWEN3_ASR_DEVICE=${PUTONGHUAASR_QWEN3_ASR_DEVICE:-cpu}
+      - PUTONGHUAASR_QWEN3_ASR_LOCAL_FILES_ONLY=${PUTONGHUAASR_QWEN3_ASR_LOCAL_FILES_ONLY:-1}
+      - PUTONGHUAASR_FIRERED_REPO=${PUTONGHUAASR_FIRERED_REPO:-/app/third_party/FireRedASR}
+      - PUTONGHUAASR_FIRERED_MODEL=${PUTONGHUAASR_FIRERED_MODEL:-/app/models/FireRedASR-AED-L}
+      - PUTONGHUAASR_WORK_AUDIO=${PUTONGHUAASR_WORK_AUDIO:-/app/_work_audio}
+      - PUTONGHUAASR_CDP_PORT=${PUTONGHUAASR_CDP_PORT:-9222}
+      - PUTONGHUAASR_CDP_ENDPOINT=${PUTONGHUAASR_CDP_ENDPOINT:-http://browser:9222}
+    networks:
+      - asr-net
+    volumes:
+      - ${HOST_MODELS_DIR:-../models}:/app/models:ro
+      - ${HOST_WORK_AUDIO_DIR:-../_work_audio}:/app/_work_audio:rw
+      - ${HOST_WORK_CONTEXT_DIR:-../_work_context}:/app/_work_context:rw
+      - ${HOST_THIRD_PARTY_DIR:-../third_party}:/app/third_party:ro
+    restart: unless-stopped
+
+networks:
+  asr-net:
+    driver: bridge
+
+volumes:
+  browser-profile:

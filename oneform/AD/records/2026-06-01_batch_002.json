@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_002",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T21:15:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688682862",
+      "query": "云 朵 派 对",
+      "query_intent": "User is searching for '云朵派对' (Yunduopaidi), a well-known voice social, group-finding, and mobile gaming matchmaking App for young players. The intent is to use this social/voice platform.",
+      "ad": {
+        "name": "长城炼金术-股票开户炒股",
+        "subtitle": "证券股票基金投资理财行业资讯",
+        "developer": "China Great Wall Securities CO.,LTD.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store lookup (id1449663267) & Web research",
+          "note": "长城炼金术 is an official securities trading, stock brokerage account opening, and investment services app by Great Wall Securities."
+        },
+        {
+          "source": "local knowledge",
+          "note": "'云朵派对' is a casual voice chat, karaoke, and gaming matchmaking platform. The ad is a professional financial investment and stock trading platform. The two domains share zero overlap."
+        }
+      ],
+      "relationship_analysis": "The query '云 朵 派 对' is a casual voice social and gaming matchmaking App. The advertised app '长城炼金术' is a professional stock trading and securities investment platform by Great Wall Securities. There is absolutely no relation in functionality, use case, or target audience between youth social matchmaking and financial stock trading, which would completely confuse a user.",
+      "why_not_higher": "No functional or contextual connection whatsoever. They serve completely distinct industries and user interests.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"云 朵 派 对\" refers to a casual voice social and gaming matchmaking App. The advertised app \"长城炼金术-股票开户炒股\" is a professional securities stock trading and financial investment brokerage platform. There is no functional, logical, or audience relationship between a youth voice-social chatroom and a stock trading application. This is a completely irrelevant ad placement, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688682863",
+      "query": "模 拟 农 场",
+      "query_intent": "User is looking for farming simulation and agricultural management games, either referring generally to agricultural simulator games (like Hay Day, Township) or the specific 'Farming Simulator' series. The core intent is peaceful crop cultivation and farming vehicle simulation.",
+      "ad": {
+        "name": "疯狂水世界",
+        "subtitle": "全新海上末日模拟生存手游",
+        "developer": "益世界网络科技(上海)有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6757172630)",
+          "note": "疯狂水世界 is a post-apocalyptic ocean wasteland survival game, focusing on marine rescue, combat, base building, and doomsday exploration."
+        },
+        {
+          "source": "local knowledge",
+          "note": "A farming simulator is a peaceful, realistic agricultural management game. A marine doomsday survival game focuses on post-apocalyptic shelter building, resource combat, and exploration in a flooded world. They satisfy entirely different play styles and player bases."
+        }
+      ],
+      "relationship_analysis": "The query '模 拟 农 场' represents peaceful agricultural farming simulation, whereas the advertised app '疯狂水世界' is a post-apocalyptic marine survival strategy game. While both share a broad 'simulation' element (farming vs doomsday survival base building), their play styles (peaceful crop growing vs hostile survival combat), themes (green countryside vs flooded post-apocalypse), and target audiences are completely split and distinct. This represents a thematic mismatch, so it is Bad.",
+      "why_not_higher": "No meaningful overlap in gameplay or genre. A peaceful farming fan looking for tractors and crops will find no value in a post-apocalyptic marine combat and survival game.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"模 拟 农 场\" refers to peaceful countryside farming and agricultural management simulation games. The advertised app \"疯狂水世界\" is a marine post-apocalyptic survival strategy game. Although both are mobile games with management/simulation tags, they are completely split in play style (peaceful farming vs post-apocalyptic combat/survival), presentation theme (agricultural machinery vs doomsday wasteland), and target audience, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688682864",
+      "query": "牵 牛 花",
+      "query_intent": "User is searching for Meituan's official '牵牛花系统' (Qianniuhua System) merchant App, which provides digital store management, order processing, inventory control, and supply chain solutions for local retail merchants (convenience stores, supermarkets).",
+      "ad": {
+        "name": "1688- B2B Market",
+        "subtitle": "Best Wholesale Deals",
+        "developer": "杭州阿里巴巴广告有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store lookup (id507097717) & Web research",
+          "note": "1688 is Alibaba's official B2B wholesale marketplace, widely used by retail merchants in China for wholesale sourcing, stocking products, and bulk supply purchasing."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Qianniuhua (牵牛花) is an enterprise retail SaaS / merchant app for convenience store operations. 1688 is a B2B sourcing portal where these exact local retail merchants buy their wholesale goods. Both are critical merchant utilities in the same commercial B2B supply chain ecosystem."
+        }
+      ],
+      "relationship_analysis": "The query '牵 牛 花' is Meituan's retail merchant system for store inventory and order management. The advertised app '1688' is Alibaba's leading wholesale B2B marketplace. Local retail merchants utilizing the Qianniuhua system to manage their store inventory have a direct and strong commercial need to buy and restock wholesale products, which is exactly what 1688 provides. As a complementary sourcing service in the merchant B2B supply chain ecosystem, they are highly related, making this Good.",
+      "why_not_higher": "They are not direct equivalents. Qianniuhua is an omni-channel inventory/sales management system, whereas 1688 is a B2B wholesale marketplace. They satisfy different steps of the merchant retail chain.",
+      "why_not_lower": "There is a very strong contextual connection. Sourcing goods (1688) and managing store inventory (Qianniuhua) are directly coupled steps in a retail merchant's daily operations.",
+      "rating": "Good",
+      "comment": "The query \"牵 牛 花\" refers to Meituan's official \"Qianniuhua\" retail merchant management system, used by local convenience stores and supermarkets for sales and inventory control. The advertised app \"1688- B2B Market\" is Alibaba's wholesale sourcing B2B platform. Since merchants using Qianniuhua for inventory management have a primary need to source bulk wholesale inventory, 1688 acts as a highly relevant sourcing tool in the same merchant supply chain. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688682865",
+      "query": "遇 见",
+      "query_intent": "User is searching for '遇见' (Yujian - Meet), a famous location-based stranger social, dating, and voice chat App in China, or seeking general proximity-based dating services.",
+      "ad": {
+        "name": "陌伊-附近成人私密社区",
+        "subtitle": "同城语音视频 心情树洞",
+        "developer": "Liangyu Information Technology Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6758007323) & Web research",
+          "note": "陌伊 is an online local-based social chat and stranger dating app featuring voice rooms, video calls, proximity matching, and a social community."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both '遇见' and '陌伊' are direct competitors in the exact same stranger social dating and proximity voice chat category. They share identical features and target audiences."
+        }
+      ],
+      "relationship_analysis": "The query '遇 见' points to a specific proximity-based social dating App. The advertised app '陌伊' is a local private dating and stranger social platform with identical core features (voice chat, matching, proximity social). Since the ad is a direct competitor in the exact same niche, offering functionally identical services to the same target audience, this is an Excellent match.",
+      "why_not_higher": "Cannot be higher than Excellent.",
+      "why_not_lower": "They are direct competitors satisfying the exact same core need (local social dating/stranger matchmaking) with functionally identical app structures.",
+      "rating": "Excellent",
+      "comment": "The query \"遇 见\" refers to a well-known location-based social dating app in China, or a general intent for proximity stranger chat. The advertised app \"陌伊-附近成人私密社区\" is an online proximity-based dating and stranger social platform featuring voice/video rooms. Because both applications operate in the identical niche, provide the same core matching services, and target the exact same audience of local daters, they are direct competitors. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688682866",
+      "query": "echome",
+      "query_intent": "User is searching for 'ecHome' (亿世家) home appliance retail stores or smart home appliance control apps, or 'EchoMe' (AI writing tool or ephemeral voice chat app). The intent is smart home automation, kitchen appliances, or voice chatting.",
+      "ad": {
+        "name": "异星要塞 - 赏金女警",
+        "subtitle": "组装机甲战车, 星际海盗冒险突围!",
+        "developer": "Xinline Information Technology Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6443552084)",
+          "note": "异星要塞 is a science-fiction rogue-like retro shooter mobile game featuring armored vehicles, tanks, space pirates, and shooter stages."
+        },
+        {
+          "source": "local knowledge",
+          "note": "'echome' indicates home appliances, smart home automation, or a voice chat app. The ad is a space mecha action shooting game. There is absolutely no functional, nominal, or contextual relationship."
+        }
+      ],
+      "relationship_analysis": "The query 'echome' points to household kitchen appliances, smart home control systems, or a voice chat tool. The advertised app '异星要塞' is a space mecha adventure and action rogue-like shooter game. There is no logical, functional, or nominal relation between smart home appliances/voice apps and a science-fiction shooting mobile game. This completely unrelated placement would confuse any user, so it is Bad.",
+      "why_not_higher": "No functional or contextual relation whatsoever. They operate in completely distinct spheres.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"echome\" refers to the \"ecHome\" (亿世家) retail smart home and kitchen appliances brand, or the \"EchoMe\" AI content creator/voice chat app. The advertised app \"异星要塞 - 赏金女警\" is a science-fiction themed retro rogue-like mecha shooting mobile game. There is absolutely no functional, nominal, or thematic connection between smart home appliances and a sci-fi shoot 'em up game, making this Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T13:15:36",
+    "post_submit_status": "No errors visible"
+  }
+}

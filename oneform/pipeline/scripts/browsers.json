@@ -1,0 +1,44 @@
+{
+  "browsers": [
+    {
+      "id": "oneform",
+      "cdp": "http://127.0.0.1:9225",
+      "cdp_direct": "http://127.0.0.1:9224",
+      "vnc": "http://127.0.0.1:6081/vnc.html",
+      "container": "oneform-browser",
+      "novnc_port": 6081,
+      "role": "monitor",
+      "notes": "Task availability monitor — tryrating.com Check Now"
+    },
+    {
+      "id": "work-a",
+      "cdp": "http://127.0.0.1:9233",
+      "cdp_direct": "http://127.0.0.1:9232",
+      "vnc": "http://127.0.0.1:6082/vnc.html",
+      "container": "controlled-browser-browser",
+      "novnc_port": 6082,
+      "role": "worker",
+      "notes": "Primary work browser — TA Intelligent Polls, MAIL, TAMESSAGE etc."
+    },
+    {
+      "id": "work-b",
+      "cdp": "http://127.0.0.1:9235",
+      "cdp_direct": "http://127.0.0.1:9234",
+      "vnc": "http://127.0.0.1:6083/vnc.html",
+      "container": "controlled-browser-local-browser",
+      "novnc_port": 6083,
+      "role": "worker",
+      "notes": "Secondary work browser — PROOFREAD, SharePoint docs"
+    },
+    {
+      "id": "asr",
+      "cdp": "http://127.0.0.1:9221",
+      "cdp_direct": "http://127.0.0.1:9220",
+      "vnc": "http://127.0.0.1:6080/vnc.html",
+      "container": "asr-worker-1-browser",
+      "novnc_port": 6080,
+      "role": "auxiliary",
+      "notes": "ASR/speech tasks"
+    }
+  ]
+}

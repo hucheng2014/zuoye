@@ -1,0 +1,385 @@
+{
+  "task": {
+    "annotators": [],
+    "assets": {
+      "audio": [
+        {
+          "localeId": "ms_MY",
+          "descriptionField": "Formal Data",
+          "url": "https://assets-public.scilliance.com/89ff40213b40404fa60ada2ed2b96164/Kuokka/ms-MY/Dx-pT-bp/20260529/17681eb12d54068de8238384a4713f36.wav"
+        }
+      ]
+    },
+    "pluginConfig": {
+      "readOnly": false,
+      "showQuestions": true,
+      "showMetrics": true,
+      "showAnnotators": false,
+      "viewportNamespace": "viewer",
+      "questions": [
+        {
+          "text": "Label the Audio:",
+          "type": "radio",
+          "id": "0d965f7e",
+          "optional": false,
+          "general": false,
+          "lineType": 1,
+          "answers": [
+            {
+              "text": "Invocation",
+              "id": "e3abbb0a",
+              "minAnnotations": 0,
+              "questions": [
+                {
+                  "text": "Was the keyword \"Hey Siri\" or \"Siri\" mentioned?",
+                  "type": "radio",
+                  "id": "0b13a448",
+                  "optional": false,
+                  "general": false,
+                  "lineType": 1,
+                  "answers": [
+                    {
+                      "text": "Hey Siri",
+                      "id": "5cc85b47",
+                      "minAnnotations": 0,
+                      "tabIndex": 4
+                    },
+                    {
+                      "text": "Siri",
+                      "id": "268089b4",
+                      "minAnnotations": 0,
+                      "tabIndex": 5
+                    },
+                    {
+                      "text": "Another Phrase",
+                      "id": "f41e7a99",
+                      "minAnnotations": 0,
+                      "tabIndex": 6
+                    }
+                  ],
+                  "tabIndex": 3
+                }
+              ],
+              "tabIndex": 2
+            },
+            {
+              "text": " User Turn",
+              "id": "c3d30a25",
+              "minAnnotations": 0,
+              "questions": [
+                {
+                  "text": "Transcribe the Audio:",
+                  "type": "textfield",
+                  "id": "f2110df2",
+                  "optional": false,
+                  "general": false,
+                  "lineType": 1,
+                  "answers": [
+                    {
+                      "text": "type here...",
+                      "id": "4f8b0a2b",
+                      "minAnnotations": 0,
+                      "tabIndex": 5
+                    }
+                  ],
+                  "tabIndex": 4
+                },
+                {
+                  "text": "Did the user intend to use Siri?",
+                  "type": "radio",
+                  "id": "94635da8",
+                  "optional": false,
+                  "general": false,
+                  "lineType": 1,
+                  "answers": [
+                    {
+                      "text": "Yes",
+                      "id": "f3289261",
+                      "minAnnotations": 0,
+                      "tabIndex": 7
+                    },
+                    {
+                      "text": "No",
+                      "id": "7a364507",
+                      "minAnnotations": 0,
+                      "tabIndex": 8
+                    }
+                  ],
+                  "tabIndex": 6
+                }
+              ],
+              "tabIndex": 3
+            },
+            {
+              "text": "Siri Turn",
+              "id": "5415f499",
+              "minAnnotations": 0,
+              "questions": [],
+              "tabIndex": 4
+            },
+            {
+              "text": "Bystander Speech",
+              "id": "2c9a16ea",
+              "minAnnotations": 0,
+              "questions": [],
+              "tabIndex": 5
+            },
+            {
+              "text": "Filler",
+              "id": "b405edf0",
+              "minAnnotations": 0,
+              "questions": [],
+              "tabIndex": 6
+            },
+            {
+              "text": "Pause",
+              "id": "92271bd3",
+              "minAnnotations": 0,
+              "tabIndex": 7
+            }
+          ]
+        }
+      ],
+      "chartsConfig": {
+        "charts": [
+          {
+            "title": "Audio",
+            "signals": [
+              "audio-spectrogram"
+            ],
+            "height": 300,
+            "yAxisFormat": ".2f",
+            "audioChannel": 1,
+            "spectrogramCompression": 0.5,
+            "fftSize": 512,
+            "fftOverlap": 256,
+            "windowFunction": "hanning"
+          }
+        ],
+        "xAxisFormat": "d",
+        "minZoomDuration": 200,
+        "showChartYAxis": true,
+        "showVerticalGridLines": true,
+        "overviewPosition": "bottom"
+      },
+      "generalConfig": {
+        "supportChrome": true,
+        "supportSafari": true,
+        "stepSize": 5,
+        "videoMuted": false,
+        "warnAboutLoudAudio": true,
+        "supportedAnnotationTypes": {
+          "timeInterval": true,
+          "timePoint": true
+        },
+        "supportOverlappingIntervals": true,
+        "infoText": "The data shown in this screen is not customer data.",
+        "showAnnotationsPanel": true,
+        "showSignalLegends": false,
+        "outputAbsoluteTimestamps": false,
+        "autoDetectSpeech": "no",
+        "enableIntervalPlay": true,
+        "enableSnappingAnnotations": true,
+        "showOnlyAnnotationsInViewport": false,
+        "audioSampleRate": "default",
+        "immutablePreannotations": false
+      },
+      "pluginId": "348cd836-cfcb-35bb-9d47-527f6e797eb4",
+      "savable": false
+    }
+  },
+  "ingestedTasks": [
+    {
+      "annotators": [],
+      "assets": {
+        "audio": [
+          {
+            "localeId": "ms_MY",
+            "descriptionField": "Formal Data",
+            "url": "https://assets-public.scilliance.com/89ff40213b40404fa60ada2ed2b96164/Kuokka/ms-MY/Dx-pT-bp/20260529/17681eb12d54068de8238384a4713f36.wav"
+          }
+        ]
+      },
+      "pluginConfig": {
+        "readOnly": false,
+        "showQuestions": true,
+        "showMetrics": true,
+        "showAnnotators": false,
+        "viewportNamespace": "viewer",
+        "questions": [
+          {
+            "text": "Label the Audio:",
+            "type": "radio",
+            "id": "0d965f7e",
+            "optional": false,
+            "general": false,
+            "lineType": 1,
+            "answers": [
+              {
+                "text": "Invocation",
+                "id": "e3abbb0a",
+                "minAnnotations": 0,
+                "questions": [
+                  {
+                    "text": "Was the keyword \"Hey Siri\" or \"Siri\" mentioned?",
+                    "type": "radio",
+                    "id": "0b13a448",
+                    "optional": false,
+                    "general": false,
+                    "lineType": 1,
+                    "answers": [
+                      {
+                        "text": "Hey Siri",
+                        "id": "5cc85b47",
+                        "minAnnotations": 0,
+                        "tabIndex": 4
+                      },
+                      {
+                        "text": "Siri",
+                        "id": "268089b4",
+                        "minAnnotations": 0,
+                        "tabIndex": 5
+                      },
+                      {
+                        "text": "Another Phrase",
+                        "id": "f41e7a99",
+                        "minAnnotations": 0,
+                        "tabIndex": 6
+                      }
+                    ],
+                    "tabIndex": 3
+                  }
+                ],
+                "tabIndex": 2
+              },
+              {
+                "text": " User Turn",
+                "id": "c3d30a25",
+                "minAnnotations": 0,
+                "questions": [
+                  {
+                    "text": "Transcribe the Audio:",
+                    "type": "textfield",
+                    "id": "f2110df2",
+                    "optional": false,
+                    "general": false,
+                    "lineType": 1,
+                    "answers": [
+                      {
+                        "text": "type here...",
+                        "id": "4f8b0a2b",
+                        "minAnnotations": 0,
+                        "tabIndex": 5
+                      }
+                    ],
+                    "tabIndex": 4
+                  },
+                  {
+                    "text": "Did the user intend to use Siri?",
+                    "type": "radio",
+                    "id": "94635da8",
+                    "optional": false,
+                    "general": false,
+                    "lineType": 1,
+                    "answers": [
+                      {
+                        "text": "Yes",
+                        "id": "f3289261",
+                        "minAnnotations": 0,
+                        "tabIndex": 7
+                      },
+                      {
+                        "text": "No",
+                        "id": "7a364507",
+                        "minAnnotations": 0,
+                        "tabIndex": 8
+                      }
+                    ],
+                    "tabIndex": 6
+                  }
+                ],
+                "tabIndex": 3
+              },
+              {
+                "text": "Siri Turn",
+                "id": "5415f499",
+                "minAnnotations": 0,
+                "questions": [],
+                "tabIndex": 4
+              },
+              {
+                "text": "Bystander Speech",
+                "id": "2c9a16ea",
+                "minAnnotations": 0,
+                "questions": [],
+                "tabIndex": 5
+              },
+              {
+                "text": "Filler",
+                "id": "b405edf0",
+                "minAnnotations": 0,
+                "questions": [],
+                "tabIndex": 6
+              },
+              {
+                "text": "Pause",
+                "id": "92271bd3",
+                "minAnnotations": 0,
+                "tabIndex": 7
+              }
+            ]
+          }
+        ],
+        "chartsConfig": {
+          "charts": [
+            {
+              "title": "Audio",
+              "signals": [
+                "audio-spectrogram"
+              ],
+              "height": 300,
+              "yAxisFormat": ".2f",
+              "audioChannel": 1,
+              "spectrogramCompression": 0.5,
+              "fftSize": 512,
+              "fftOverlap": 256,
+              "windowFunction": "hanning"
+            }
+          ],
+          "xAxisFormat": "d",
+          "minZoomDuration": 200,
+          "showChartYAxis": true,
+          "showVerticalGridLines": true,
+          "overviewPosition": "bottom"
+        },
+        "generalConfig": {
+          "supportChrome": true,
+          "supportSafari": true,
+          "stepSize": 5,
+          "videoMuted": false,
+          "warnAboutLoudAudio": true,
+          "supportedAnnotationTypes": {
+            "timeInterval": true,
+            "timePoint": true
+          },
+          "supportOverlappingIntervals": true,
+          "infoText": "The data shown in this screen is not customer data.",
+          "showAnnotationsPanel": true,
+          "showSignalLegends": false,
+          "outputAbsoluteTimestamps": false,
+          "autoDetectSpeech": "no",
+          "enableIntervalPlay": true,
+          "enableSnappingAnnotations": true,
+          "showOnlyAnnotationsInViewport": false,
+          "audioSampleRate": "default",
+          "immutablePreannotations": false
+        },
+        "pluginId": "348cd836-cfcb-35bb-9d47-527f6e797eb4",
+        "savable": false
+      },
+      "type": null,
+      "taskId": "19931a5c-5c26-48e9-9d31-2d4843129030",
+      "annotations": []
+    }
+  ]
+}

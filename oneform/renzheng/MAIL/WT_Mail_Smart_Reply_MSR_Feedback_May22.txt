@@ -1,0 +1,1741 @@
+WT Mail Smart Reply RCA May22 '26
+Objective
+The goals of this document are:
+•
+•
+•
+
+Understand error trends across dimensions and locales
+Identify root causes driving annotation mistakes
+Define action plan for calibration and quality improvement
+
+Error Breakdown
+1. Personalization
+This is the dominant issue across almost all locales (DK, DE, NO, EN-GB, FR, IT, JP, KO, NL, PT, SE, VN, ZHHK, ZH-TW). Inconsistent grading between Personalization categories:
+•
+•
+•
+
+Guidelines misunderstanding: Drafts appropriately adapt to the specific email context and
+relationship even though it deviates from the user profile, warranting Contextually Adapted over
+Generic or Personalized which is explicitly explained in the guidelines.
+Over-penalization: There are a few tasks where annotators penalize drafts as generic or
+mismatch even though they follow relationship context, mail patterns, and user profile.
+Excessive padding: Responses are flagged as “overly padded” adding filler phrases that inflate
+length beyond what the user’s typical style would suggest.
+
+Trend: Calibration gap – guidelines not consistently internalized across annotators. Graders tend to
+score this dimension subjectively rather than following guidelines.
+
+2. Groundedness
+This was reported across all locales, and mainly split between three causes:
+•
+•
+•
+
+Under-penalization: Annotators overlook unconfirmed or newly introduced information,
+incorrectly grading the responses as “Grounded”.
+Over-penalization: Annotators overlook that additional information appears in only one
+response, resulting in a false “Not Grounded” instead of “Grounded”.
+Inconsistent annotation of what counts as grounded: Annotators disagree on whether
+reasonable cultural inferences or polite additions qualify as grounded or partially grounded –
+these are Grounded and shouldn’t be penalized.
+
+Trend: The annotators tend to overlook key details in prompts, contexts, or reference emails, resulting
+in both under- and over-penalization. Surface-level check makes annotators miss key information from
+Additional Personal Information box.
+
+Centific Confidential ©
+
+3. Localization
+This issue has been reported in several cases for (DK, NO, DE, FR, IT, KO, NL, ZH-CN, ZH-HK, ZH-TW):
+•
+•
+•
+•
+
+In both Danish and Norwegian, a comma should not be inserted after the opening or sign-offs of
+an email; the line spacing serves as the separator. The annotators either did not know this rule
+or missed the error.
+Language mixing and wording not common for specific locale overlooked by annotators.
+Localization issue has been reported where there weren’t any.
+Machine-translated phrasing: Unnatural or stilted expressions that feel like direct translations
+rather than native writing, even when technically grammatically correct.
+
+Trend: Annotators are either overlooking punctuation errors or lack awareness of locale-specific
+formatting rules. For FR-FR and NL-NL, cases show that punctuation errors and scrambled symbols got
+overseen and not penalized.
+
+4. Instruction Adherence & Contextual Fit
+This dimension was flagged for (DK, DE, NO, TR, EN-GB, FR, IT, JP, KO, NL, PT, SE).
+•
+•
+•
+
+Wrong name addressed in draft – name could be found in user profile so Instruction Adherence
+& Contextual Fit should be rated Partially Followed and Fit
+Over-penalization: Responses that were fully compliant got graded as Partially Followed and Fit
+Under-penalization: Annotators show a tendency to default to "Followed and Fit" when
+"Partially Followed and Fit" would be the correct rating
+
+Trend: Miscalibration around the "Partially Followed and Fit" threshold, annotators both under-apply it
+by defaulting to "Followed and Fit" despite wrong names or missing elements and over-apply it by
+downgrading fully compliant responses.
+
+5. Pairwise Comparison
+Trend: Annotators Pairwise Comparison was consistent with their own SBS results, but because it was
+built on incorrect grading in the previous dimensions, the QAer’s Pairwise Comparison led to a different
+conclusion.
+
+6. Naturalness
+Although low in overall frequency, this dimension demonstrated consistent deviations for (DK, NO, TR,
+FR, IT, JP, KO, NL)
+•
+•
+
+Over-penalization of naturally written responses: Annotators tend to incorrectly mark fluent,
+contextually appropriate responses as Unnatural despite the language reading like authentic
+human communication.
+Under-penalization: Genuinely awkward or robotic responses passed as Natural.
+
+Centific Confidential ©
+
+Trend: Annotators tend to mistake minor formatting issues for bad fluency and over-penalize good
+responses, while on a few occasions letting genuinely awkward writing slide.
+
+7. Tone and Empathy Alignment
+This dimension got flagged for (NO, FR, NL) in isolated cases, and logged errors were:
+•
+•
+
+Under-penalization: Responses with a tone that mismatched the expected formality of the
+context were marked as Aligned when they should have been Not Aligned.
+Over-penalization: Responses that fully match the required tone and empathy level were
+incorrectly downgraded as Not Aligned.
+
+Trend: Inconsistent assessment of tone fit: Annotators tend to overlook inappropriate formality level.
+
+Root Cause Analysis
+•
+•
+•
+•
+•
+•
+
+Subjective Personalization grading: Annotators rely on personal judgment instead of guidelines.
+Surface-level Groundedness review: Annotators aren’t consistently cross-referencing all
+available fields before grading, leading to miss actual hallucinations in some cases, and falsely
+flag valid information in others.
+Overlooking specific locale formatting rules: Annotators lack awareness of punctuation
+placement in emails or missed language mixing which must be failed.
+Pairwise comparison: Side-by-side comparison gets incorrectly graded due to overlooked issues
+in previous dimensions.
+Isolated Instruction Adherence oversights: Errors are rare and non-systemic, limited to human
+errors.
+Isolated Tone and Empathy Alignment: Annotators lacked consensus in isolated cases whether
+drafts were aligned or not.
+
+Action Plan
+Annotators must calibrate against given examples in guidelines before assessing Personalization
+•
+•
+
+Calibrate application of the Personalization dimension against Step 6 Suggested reply 1 and 2 in
+the guidelines, analyzing the variance between Personalized and Generic
+Ensure alignment with the Contextually Adapted framework under the query in “Q. How well
+does the suggested reply reflect the user’s communication style?”
+
+Annotators must systematically cross-check text details rather than relying on a surface-level review
+before assessing Groundedness
+•
+•
+
+Cross-check all information available in the task to validate that the response does not
+hallucinate, preventing the under-penalization of unconfirmed details
+Ensure to check additional personal info in all responses so a response is not falsely flagged as
+“Not Grounded”, avoiding improper over-penalization
+
+Centific Confidential ©
+
+•
+
+If a name is mentioned in the profile, instruction, previous email - it is still grounded in the
+response even if the profile and user instruction might provide contradicting information.
+
+Annotators must enforce regional formatting conventions and rules before finalizing Localization
+ratings
+•
+•
+•
+
+Verify locale-specific punctuation constraints, ensuring that no commas are placed after email
+greetings or sign-offs in da_DK and nb_NO. (This should also be added to locale-specific rules in
+guidelines, as it appears this formatting rule is not well known among these locales)
+Screen carefully for unauthorized language mixing and unnatural phrasing to ensure they are
+flagged and failed according to guidelines
+Validate that localization error genuinely exists before downgrading
+
+Annotators must check that names are present in the task for Instruction Followed and Adherence
+Contextual Fit
+•
+•
+
+Always double-check the user profile and task context to verify if names are available before
+finalizing score.
+Annotators must check every key point in the instruction against the drafts before rating, to
+prevent omissions.
+
+Locale Error Overview
+
+1
+2
+
+A
+Locale
+DK-DK
+
+TR-TR
+
+B
+Affected Dimensions
+Personalization, Groundedness,
+Localization, Instruction Adherence &
+Contextual Fit, Pairwise Comparison,
+Naturalness
+Personalization, Groundedness,
+Localization, Instruction Adherence &
+Contextual Fit, Pairwise Comparison,
+Personalization, Groundedness,
+Localization, Instruction Adherence &
+Contextual Fit, Pairwise Comparison,
+Naturalness, Tone and Empathy
+alignment
+Groundedness, Instruction Adherence &
+Contextual Fit, Naturalness
+
+EN-GB
+
+Personalization, Groundedness,
+Instruction Adherence & Contextual Fit
+
+3
+DE-DE
+4
+NB-NO
+
+5
+
+6
+
+7
+FR-FR
+
+Personalization, Groundedness,
+Localization, Instruction Adherence &
+Contextual Fit, Pairwise Comparison,
+Naturalness, Tone and Empathy
+alignment
+
+Centific Confidential ©
+
+C
+Key Issue
+Localization: Annotators often failed recognize
+incorrect formatting rules.
+
+Personalization: There is a gap in understanding the
+difference between the Personalization levels.
+Personalization: There is a gap in understanding
+difference between Personalization levels.
+
+Groundedness: This dimension got under-penalized
+and over-penalized. Most likely surface-level
+checked.
+Groundedness: This dimension got underpenalized. Annotators overlooked newly
+introduced information.
+Personalization: There is a gap in understanding the
+difference between the Personalization levels.
+
+8
+IT-IT
+9
+JA-JP
+10
+KO-KR
+11
+NL-NL
+
+12
+PT-PT
+13
+SV-SE
+14
+
+Personalization, Groundedness,
+Localization, Instruction Adherence &
+Contextual Fit, Naturalness
+Personalization, Groundedness,
+Instruction Adherence & Contextual Fit,
+Naturalness
+Personalization, Groundedness,
+Localization, Instruction Adherence &
+Contextual Fit, Naturalness
+Personalization, Groundedness,
+Localization, Instruction Adherence &
+Contextual Fit, Pairwise Comparison,
+Naturalness, Tone and Empathy
+alignment
+Personalization, Groundedness,
+Instruction Adherence & Contextual Fit
+Personalization, Groundedness,
+Instruction Adherence & Contextual Fit,
+Pairwise Comparison
+Personalization, Groundedness
+
+15
+
+VI-VN
+ZH-CN
+
+16
+
+ZH-HK
+
+Personalization, Groundedness,
+Localization, Instruction Adherence &
+Contextual Fit, Harmfulness
+
+17
+
+ZH-TW
+
+Personalization, Groundedness,
+Localization
+
+Groundedness, Localization
+
+Groundedness: Inconsistent distinction between
+Grounded and Partially Grounded. Mostly underpenalized.
+Groundedness: Annotators tend to under-penalize
+this dimension.
+Groundedness: Annotators under-penalize
+unverifiable information.
+Personalization: There is a gap in understanding the
+difference between the Personalization levels.
+
+Groundedness: Annotators tend to over-penalize
+Grounded info.
+Personalization: There is a gap in understanding the
+difference between the Personalization levels.
+Annotators tend to over-penalize.
+Personalization: There is a gap in understanding the
+difference between the Personalization levels.
+Localization: Annotators tend to over-penalize fully
+appropriate drafts.
+Tie between Personalization and Groundedness:
+There is a gap in understanding the different
+personalization levels, and over-penalized
+groundedness.
+Localization: Annotators tend to under-penalize
+localization issues. Specifically punctuation
+formatting.
+
+Severity Calibration
+Re-establish clear thresholds with concrete examples across the most impacted dimensions:
+Personalization
+•
+•
+•
+
+Personalized: The draft reflect the user’s unique communication style: reads as authentically
+from the user.
+Contextually Adapted: The draft intentionally change aspects of the user’s typical style to ensure
+the response remains appropriate for the specific email context.
+Generic: The draft fails to incorporate the user’s writing style patterns and mail component
+patterns when they would be appropriate for the context.
+
+Groundedness
+•
+•
+•
+
+Grounded: When person name that can be derived from the task’s (user prompt, previous
+email, additional info, or profile).
+Partially Grounded: Draft that gets the core message right but adds a minor invented detail.
+Not Grounded: A draft that introduces invented fact that changes the meaning of the message.
+
+Centific Confidential ©
+
+•
+
+Calibration note: Make sure to systematically check Additional Personal Information for both
+drafts.
+
+Localization
+•
+•
+
+Issue: Scrambled symbols and formatting rules that are locale-specific. (Wrong punctuation
+format).
+No issue: Grammar/Spelling do not fall under Localization issue.
+
+Instruction Adherence & Contextual Fit
+•
+•
+•
+
+Followed and fit: The draft follows all elements of the instruction. Minor stylistic differences
+allowed as long as it preserves the intended meaning.
+Partially Followed and Fit: The draft mostly fits the email context but has a minor formality
+mismatch. The draft responds to incorrect name.
+Calibration note: Make sure the draft is evaluated against previous mail if there is any, and make
+sure there’s no secondary element that gets omitted (Partially Grounded).
+
+Pairwise Comparison
+•
+•
+
+The annotator’s Pairwise Comparison aligned well with their own SBS result.
+Calibration note: Misgrading early dimensions creates an error effect of the final comparison.
+
+EXAMPLES
+
+da-dk ............................................................................................................................................... 7
+de-de ............................................................................................................................................... 9
+nb-no ............................................................................................................................................. 11
+tr-tr ................................................................................................................................................ 13
+en-gb ............................................................................................................................................. 14
+fr-fr ................................................................................................................................................ 15
+it-it ................................................................................................................................................. 17
+ja-jp ............................................................................................................................................... 18
+ko-kr .............................................................................................................................................. 19
+sv-se .............................................................................................................................................. 20
+vi-vn ............................................................................................................................................... 21
+zh-cn .............................................................................................................................................. 21
+zh-hk .............................................................................................................................................. 22
+zh-tw ............................................................................................................................................. 22
+
+Centific Confidential ©
+
+Locale
+
+da-dk
+
+Input
+
+Response
+
+Thomas Andersen
+Spørgsmål om nye opgaver i den kommende uge
+To:
+
+Hej Thomas,
+
+Hej Maria,
+Jeg skriver i forbindelse med planlægningen af den
+kommende uge. Jeg har god kapacitet og er interesseret i at
+påtage mig nye opgaver.
+Jeg vil derfor høre, om der er nye opgaver på vej, som jeg kan
+påtage mig?
+Tak
+Thomas
+Prompt: Expand this short reply into a complete email:
+Desværre ikke lige nu
+da-dk
+
+Anna Nielsen
+Angående potentiel soloudstilling og dit nye arbejde
+To:
+Hej Daniel,
+Håber alt vel hos dig. Jeg har lige set nogle af dine seneste
+værker online, og jeg må sige, jeg er utrolig imponeret over
+den retning, du bevæger dig i. Det ser virkelig spændende ud!
+Jeg har tænkt lidt over det, og jeg kunne ikke lade være med
+at forestille mig, hvordan en soloudstilling med din nye serie
+ville se ud i galleriet. Den måde, du udforsker interaktionen
+mellem lys og skygge på, er virkelig fængslende, og jeg tror,
+det ville resonere stærkt med vores publikum.
+Hvis du har en ny serie værker på vej, som du overvejer at
+udstille, ville jeg meget gerne høre mere om det. Vi har nogle
+åbninger i vores udstillingskalender i slutningen af næste år,
+måske omkring oktober/november 2025, som kunne være
+interessante. Ville du være åben for at dele nogle materialer
+med mig – måske et par billeder af værkerne, en kort tekst
+om konceptet og en idé om, hvad en potentiel udstilling
+kunne indebære – når du er klar til det? Der er ingen hast,
+men jeg ville elske at se, hvad du arbejder på, og drøfte
+mulighederne nærmere.
+Jeg ser meget frem til at høre fra dig og potentielt udforske
+dette videre.
+De bedste hilsner,
+Anna
+Prompt: Expand this short reply into a complete email: Jeg
+vender tilbage snarest.
+
+Centific Confidential ©
+
+Tak for din besked. Det er dejligt at høre, at du har god kapacitet
+i den kommende uge.
+Jeg har undersøgt det nærmere, men der er desværre ikke
+nogen nye opgaver lige nu. Vi har for øjeblikket godt styr på de
+nuværende projekter, så der er ikke behov for ekstra ressourcer
+i denne omgang.
+Jeg sætter stor pris på dit initiativ, og jeg skal nok huske dig, så
+snart der dukker noget op igen. Lad mig endelig vide, hvis du
+har
+spørgsmål i mellemtiden.
+
+Comment
+
+Personalization:
+The response is
+personalized,
+following key points
+of the user's pattern
+and conversation
+context, yet it was
+rated as
+Contextually
+Adapted and
+Generic.
+
+Med venlig hilsen
+Maria Eriksen
+Hej Anna,
+Tak for din mail. Det er fantastisk at høre, at du er imponeret
+over mine seneste værker, og jeg er meget beæret over din
+interesse i en potentiel soloudstilling! Det lyder som en utrolig
+spændende mulighed, og jeg vil meget gerne drøfte det
+nærmere med dig.
+Jeg er i øjeblikket ved at færdiggøre den nye serie, som du
+nævner, og jeg vil meget gerne dele materialer med dig, så snart
+jeg er klar. Jeg forventer at have billeder og en
+konceptbeskrivelse klar inden for kort tid.
+Jeg vender tilbage snarest med materialet, så vi kan tage en
+dybere snak om mulighederne i oktober/november 2025.
+De bedste hilsner,
+Daniel
+
+Groundedness:
+Annotators
+overlooked
+hallucinations and
+graded Response A
+as “Grounded”
+when it should have
+been “Partially
+Grounded”.
+In this task, the
+draft adds
+unconfirmable
+information, such as
+stating the user is
+finishing a new
+series for a solo
+exhibition.
+Additionally, the
+draft claims they
+can continue with
+the talk in October
+or November 2025,
+which also cannot
+be confirmed
+anywhere in the
+task.
+
+da-dk
+
+Lykke Kristensen
+Opfølgning på samtale
+To:
+
+Response A:
+Kære Lykke,
+
+Kære Andreas,
+
+Mange tak for din opfølgende mail. Jeg er glad for at høre, at du
+fandt samtalen informativ og fortsat er interesseret i stillingen
+som Senior Projektleder.
+
+Jeg vil gerne takke dig for den gode samtale, vi havde den 25.
+oktober vedrørende stillingen som Senior Projektleder.
+
+Jeg vil gerne takke dig for din tid og det gode forløb indtil
+videre.
+
+Jeg fandt samtalen meget informativ og er fortsat meget
+interesseret i muligheden.
+
+Med venlig hilsen,
+Andreas Schmidt
+
+Med venlig hilsen,
+Lykke Kristensen
+
+Prompt: Expand this short reply into a complete email: Tak for
+din besked.
+
+Response B:
+Kære Lykke,
+Mange tak for din mail og for din positive tilbagemelding efter
+vores samtale den 25. oktober. Det glæder mig at høre, at du
+fandt vores samtale informativ, og at du fortsat er motiveret for
+stillingen som Senior Projektleder. Vi var ligeledes meget
+begejstrede for vores snak, og vi værdsætter din åbne og
+konstruktive tilgang.
+Vi arbejder i øjeblikket på at samle op på vores samtaler, og jeg
+vender tilbage til dig så snart, der er nyt i processen.
+Du er selvfølgelig altid velkommen til at kontakte mig, såfremt
+du skulle have opklarende spørgsmål.
+Med venlig hilsen,
+Andreas Schmidt
+
+Centific Confidential ©
+
+Localization:
+Both responses
+include localization
+issues that were
+overlooked by the
+annotators.
+According to Danish
+formatting rules, a
+comma should not
+be inserted
+between the
+greeting and a
+name, nor should
+one be placed after
+the greeting or the
+closing. However,
+both responses
+incorrectly start
+with “Kære Lykke,”
+and close with “Med
+venlig hilsen,”.
+
+de-de
+
+Henriette Koch
+Catering-Anfrage für Mittagessen
+To:
+Hallo Kai,
+könnten Sie uns bitte mitteilen, ob Sie am 22. August 2024 für
+ein kleines Mittagessen Catering-Dienste anbieten können?
+Viele Grüße
+Henriette
+Prompt: Expand this short reply into a complete email: Ja, das
+ist möglich
+
+Centific Confidential ©
+
+Hallo Henriette,
+vielen Dank für Ihre Nachricht. Ja, das ist möglich. Ich freue
+mich, Ihnen mitteilen zu können, dass ich am 22. August 2024
+für Ihr Mittagessen Catering-Dienste anbieten kann.
+Ich würde mich freuen, bald von Ihnen zu hören, um die Details
+zu besprechen.
+Viele Grüße
+Kai
+
+Personalization:
+In this case, the
+user's profile
+Writing Style
+pattern
+specifies lacking_for
+matting; however,
+the response
+contains line breaks
+justified by the
+sender's
+relationship to the
+user. Although this
+deviates from the
+pattern specified in
+the user's profile, it
+represents a natural
+and contextually
+motivated
+adjustment that the
+user would
+reasonably make in
+this context.
+Therefore, it should
+be rated as
+Contextually
+Adapted rather than
+Personalized or
+Generic.
+
+de-de
+
+Caterina Katz
+Agenda für das kommende Training & weitere Infos
+To:
+
+Hallo Caterina,
+
+Hallo Andreas,
+ich hoffe, es geht dir gut. Bezüglich unseres anstehenden
+Trainings wollte ich dir den Entwurf der Agenda zukommen
+lassen, damit du einen ersten Überblick hast und wir die
+Details finalisieren können.
+
+Hier sind die gewünschten Informationen für unsere weitere
+Planung:
+
+Anbei findest du die vorläufige Agenda als
+„Agenda_Training_Entwurf_V1.pdf“. Bitte schau sie dir in
+Ruhe an und gib mir Bescheid, ob du Anmerkungen oder
+Änderungswünsche hast.
+Außerdem wäre es super, wenn du mir die voraussichtliche
+Teilnehmerzahl nennen könntest, damit wir die Raumgröße
+und das Material entsprechend planen können. Und falls es
+besondere Essenswünsche oder Allergien für das Catering
+gibt, bräuchte ich diese Informationen auch noch.
+Ich freue mich auf deine Rückmeldung und ein produktives
+Training!
+Viele Grüße
+Caterina
+Prompt: Expand this short reply into a complete email: Hier
+sind die gewünschten Informationen.
+
+Centific Confidential ©
+
+vielen Dank für deine Nachricht und den Entwurf der Agenda.
+Ich hoffe, es geht dir gut!
+
+* **Teilnehmerzahl:** Wir werden voraussichtlich mit einer
+noch zu finalisierenden Anzahl an Personen teilnehmen.
+* **Catering:** Spezielle Essenswünsche oder Allergien liegen
+mir aktuell noch nicht vor, diese kläre ich aber gerne zeitnah ab.
+Die Agenda sieht für mich soweit hervorragend aus. Ich freue
+mich schon auf unser Training und die weitere
+Zusammenarbeit.
+Viele Grüße,
+Andreas
+
+Groundedness:
+In this case:
+Response A
+contained additional
+information
+regarding the
+number of people
+and their dietary
+preferences, while
+Response B lacked
+this information.
+The annotators
+overlooked this
+difference,
+assuming the
+information was
+included in
+Response B as well,
+and therefore
+incorrectly
+downgraded it as
+“Not Grounded”
+despite it being
+“Grounded”.
+
+nb-no
+
+Susanne Berg
+Måtte bare spørre deg om noe! 🥳
+To:
+
+Hei Ingrid!
+
+Hei kjære Susanne! Så utrolig koselig å høre fra deg! Jeg ble så
+glad da jeg så e-posten din! Ja, det vil jeg gjerne! Jeg vil veldig
+gjerne komme på besøk til deg i Oslo den 15. august. Det høres
+helt perfekt ut med en tur i marka og grilling. Jeg gleder meg
+sånn til å se deg og høre alt som har skjedd! Stor klem, Ingrid
+
+Personalization:
+Annotators graded
+this draft as
+“Generic” and
+“Mismatch” in
+personalization,
+despite it fully
+following the user’s
+profile:
+'lacks_formatting',
+'segmented
+sentences', and uses
+the Mail
+Component
+Patterns.
+
+Hei Kristin
+Takk for e-posten. Vi ønsker å fornye avtalen. La oss diskutere
+justeringer før vi fornyer. Når passer det for deg å ta en prat?
+Hilsen
+Andreas
+
+Groundedness:
+In this task the
+reference email asks
+the user if they wish
+to renew or adjust
+their yearly service
+agreement. The
+response falsely
+assumes the user
+wants to renew,
+introducing
+unconfirmable
+information. This
+should be
+downgraded to
+“Partially
+Grounded”.
+
+Håper alt er strålende med deg! Jeg har tenkt så mye på deg i
+det siste, og hvor gøy det hadde vært å få catchet opp
+skikkelig. Jeg har en liten ide…
+Jeg lurer på om du har lyst og mulighet til å komme på besøk
+til meg her i Oslo den 15. august? Det er en lørdag, så da
+slipper vi stress med jobb og sånn. Vi kunne tatt en lang tur i
+marka, kanskje grillet litt hvis været er fint, og så bare slappet
+av og skravlet hele kvelden. Jeg kan lage favorittmaten din!
+Datoen er bare et forslag, altså! Hvis den ikke passer, så finner
+vi garantert en annen dag som funker bedre. Vil så gjerne se
+deg og høre alt som har skjedd!
+Gleder meg til å høre fra deg!
+Susanne
+Prompt: Expand this short reply into a complete email: Ja, det
+vil jeg gjerne!
+nb-no
+Kristin Jensen
+Varsel om fornyelse av serviceavtale
+To:
+Hei Andreas,
+Jeg vil informere om at deres årlige serviceavtale for
+“Premium-pakken” skal fornyes. Fornyelsesdato er 1. mars
+2025. Vi kan fornye den automatisk med dagens vilkår.
+Alternativt kan vi diskutere eventuelle endringer før ny
+faktura sendes ut.
+Gi meg beskjed innen 15. februar 2025 om dere ønsker å
+fortsette som nå, eller om dere vil snakke om justeringer.
+Med vennlig hilsen,
+Kristin
+Prompt: Expand this short reply into a complete email: La oss
+diskutere justeringer.
+
+Centific Confidential ©
+
+nb-no
+
+Thomas Johansen
+Spørsmål angående insentivutbetaling
+To:
+
+Hei Thomas,
+Tusen takk for at du har sagt deg villig til å delta i vår online
+forskningsstudie. Jeg vil gjerne informere deg om at
+utbetalingen av insentivet nå er behandlet.
+
+Hei Malin,
+Skulle du ha noen spørsmål eller bekymringer i forbindelse med
+studien er det bare å ta kontakt.
+Jeg har nå fullført den første fasen av studien og lurer på når
+jeg kan forvente utbetaling av insentivet.
+
+På forhånd takk.
+
+Med vennlig hilsen
+Thomas Johansen
+Prompt: Expand this short reply into a complete email:
+Utbetalingen er behandlet.
+
+Centific Confidential ©
+
+Med vennlig hilsen
+Malin Olsen
+
+Localization:
+This response
+includes a
+localization issue
+that was overlooked
+by the annotators.
+According to
+Norwegian
+formatting rules, a
+comma should not
+be inserted after the
+greeting and name,
+but it is acceptable
+to insert a comma
+between the
+greeting and the
+name.
+For example, “Hei
+Thomas,” is
+incorrect, whereas
+“Hei, Thomas” is
+acceptable.
+
+tr-tr
+
+Tolga Yılmaz
+Önümüzdeki Hafta Görevlendirmeleri Hk.
+To:
+
+Merhaba Tolga,
+Öncelikle bilgilendirme ve programa uyum sağlama konusundaki
+hassasiyetin için teşekkür ederim. Evet, önümüzdeki hafta için
+netleşen yeni görevlendirmeler bulunuyor.
+
+Meryem,
+Önümüzdeki hafta için yeni bir görevlendirme olup olmadığını
+öğrenmek istedim, programımı ona göre düzenleyebilirim.
+Bu konuda bir bilgi varsa benimle paylaşmanı rica ederim.
+Teşekkürler,
+
+Haftalık planlamanı yapabilmen adına detayları aşağıda seninle
+paylaşıyorum:
+* **Ankara Saha Ziyareti Koordinasyonu:** 6 Ocak 2026 Salı
+günü saat 10:00'da başlayacak olan saha ziyaretinin hazırlık ve
+koordinasyon süreçleri. * **Haftalık Operasyonel Verimlilik
+Raporu:** 8 Ocak 2026 Perşembe günü mesai bitimine kadar
+tamamlanması ve teslim edilmesi gereken raporlama çalışması.
+
+Tolga
+Prompt: Expand this short reply into a complete email: Evet,
+yeni görevler var.
+
+Görevlerle ilgili herhangi bir sorun olursa veya ek bir desteğe
+ihtiyaç duyarsan benimle iletişime geçebilirsin.
+
+Groundedness:
+Response B was
+graded as “Not
+Grounded” when it
+should have been
+marked as
+“Grounded”.
+Annotators missed
+important details
+such as the
+additional Personal
+Info box, where all
+of this information
+is available, and
+therefore assumed
+the information was
+hallucinated.
+
+İyi çalışmalar dilerim,
+Meryem Erik
+
+tr-tr
+
+Mikail Can
+Günlük Rapor
+To:
+Caner,
+Günlük raporu tamamladım. Görüşürüz,
+Mikail
+Prompt: Expand this short reply into a complete email: Harika,
+hemen inceliyorum.
+
+Centific Confidential ©
+
+Selam William,
+Harika haber.
+Günlük raporu hemen inceliyorum.
+Görüşürüz,
+Caner Yılmaz
+
+A more systematic
+review of the
+context, rather than
+a surface-level
+check, would have
+revealed the
+Personal Info box
+and prevented this
+false “Not
+Grounded” flag.
+Instruction
+Adherence
+Contextual Fit:
+This response is
+addressed to a
+William, when the
+senders name of
+reference email is
+Mikail Can.
+Annotators
+overlooked this and
+graded the response
+as Followed and Fit
+when it should have
+been marked as
+Partially Followed &
+Fit.
+
+en-gb
+
+William Perry
+Issue with New Gift Card - Invalid Card Error
+To:
+Dear William, I hope this email finds you well. I am writing to
+you again as you were so helpful with my previous gift card
+query, and I seem to be having another issue. I recently
+received a new gift card, and each time I attempt to use it
+online, I receive an 'invalid card' error message.
+The gift card number is 6789 1234 5678 9012. I have tried
+several times over the past few days, and the error persists.
+Could you possibly look into this for me and advise on what
+might be causing the problem?
+I would be very grateful for your assistance with this matter.
+Kind regards,
+Sarah Miller
+Prompt: Expand this short reply into a complete email: Sorry
+for the trouble.
+
+Centific Confidential ©
+
+Dear William,
+Thank you for your clear instructions previously. I am sorry for
+the trouble regarding this new gift card issue. I wanted to follow
+up and see if there were any updates on the invalid card error I
+reported. Your assistance has been most helpful, and I truly
+appreciate your time in looking into this matter for me.
+Kind regards,
+Sarah
+
+Groundedness:
+This response is not
+grounded. It
+introduces multiple
+elements
+unsupported by the
+instruction or the
+previous email. It
+fabricates a followup context “see if
+there were any
+updates...” that
+shifts the email's
+purpose to a status
+check and
+references nonexistent prior details
+“Thank you for your
+clear instructions
+previously”.
+
+fr-fr
+
+Thomas Dubois
+Suivi: paiement étude DIY auto
+To:
+Bonjour Barbara,
+Je me permets de faire un suivi concernant le paiement de
+l'étude sur la réparation auto DIY, à laquelle j'ai participé. Je
+n'ai pas encore reçu l'email de “Récompenses Faciles” avec
+les instructions. Pourriez-vous me donner une mise à jour sur
+l'état du traitement ?
+Merci,
+Thomas
+Prompt: Expand this short reply into a complete email: Je
+vérifie votre dossier.
+
+Response A:
+Bonjour Thomas,
+Je vérifie votre dossier concernant le paiement de l'étude sur la
+réparation auto DIY. Je reviens vers vous dès que j'ai plus
+d'informations sur l'état du traitement.
+N'hésitez pas à me contacter si vous avez la moindre question.
+Cordialement,
+Barbara
+Response B:
+Bonjour William,
+J'espère que tout va bien pour vous. Merci pour votre message.
+Je suis actuellement en train de vérifier votre dossier concernant
+le paiement de l'étude sur la réparation auto DIY. Je comprends
+que vous n'ayez pas encore reçu l'email de Récompenses Faciles,
+et je fais le nécessaire auprès de notre équipe pour m'assurer
+que tout soit régularisé rapidement.
+N'hésitez pas à me contacter si vous avez la moindre question.
+Cordialement,
+Barbara Barbier
+
+Centific Confidential ©
+
+Instruction
+Adherence &
+Contextual Fit:
+While Response B
+perfectly addresses
+the user's inquiry by
+stating it is looking
+into why the “Easy
+Rewards” email
+wasn't received,
+Response A
+completely
+overlooks this
+request. Therefore,
+Response A should
+be graded as
+“Partially Followed
+and Fit” and
+Response B as
+“Followed and Fit.
+
+fr-fr
+
+Caroline Cohen
+On se refait un camping ?
+To:
+
+Salut Caroline,
+
+Salut Yann,
+
+Oui, quelle bonne idée ! Je suis super partant pour se refaire un
+camping. J'ai aussi adoré notre dernière sortie, surtout la soirée
+guitare, c'était mémorable !
+
+Je repensais à notre dernier camping, c'était vraiment le top
+! J'en garde un super souvenir, surtout la soirée guitare près
+du feu 🔥. Ça te dirait de se refaire ça le mois prochain ? J'ai
+vu quelques spots pas mal en Ardèche, ça pourrait être génial
+pour quelques jours d'évasion.
+Dis-moi si ça te tente et surtout si tu as des dispo, je suis
+super motivée ! On va bien s'amuser encore une fois, j'en suis
+sûre !
+À très vite,
+Caroline
+Prompt: Expand this short reply into a complete email: Oui,
+quelle bonne idée!
+
+Centific Confidential ©
+
+L'Ardèche, c'est une excellente idée, il y a des coins magnifiques
+là-bas. Je suis très motivé pour quelques jours d'évasion. Dis-moi
+quand tu serais dispo, je vais regarder de mon côté pour poser
+quelques jours si besoin. On va encore bien s'amuser, c'est sûr !
+À plus,
+Yann
+
+Personalization:
+Response A is
+generic because it
+fails to adopt the
+user's sentence
+structure and
+closing formulas.
+Furthermore, it
+does not use any
+emojis, despite the
+conversational tone
+suggested in the
+conversation
+context.
+
+Gentile Melinda Ferrari,
+it-it
+
+Melinda Ferrari
+Segnalazione articolo errato - Ordine #SR12345
+To:
+Gentile Sig. Rossi,
+Le scrivo in riferimento all'ordine numero SR12345. Ho
+ricevuto un articolo errato. Avevo ordinato una Mappa
+Stellare personalizzata, ma ho ricevuto una Stampa delle Fasi
+Lunari.
+Allego un'immagine dell'articolo ricevuto per sua verifica
+(articolo_errato_SR12345.jpg).
+
+La ringraziamo per aver scelto Star Register per il suo ordine e ci
+scusiamo per il disagio riscontrato con la spedizione. Le
+confermo che abbiamo preso in carico la sua segnalazione
+relativa all'ordine SR12345. Di seguito le fornisco le istruzioni per
+procedere con il reso dell'articolo errato e ricevere la sua Mappa
+Stellare personalizzata. Può procedere rispedendo l'articolo
+tramite posta ordinaria all'indirizzo che le forniremo, e non
+appena riceveremo il pacco provvederemo a spedire
+immediatamente l'articolo corretto. La ringraziamo per la sua
+preziosa collaborazione e rimango a sua completa disposizione
+per qualsiasi ulteriore chiarimento.
+Cordiali saluti,
+
+Potrebbe gentilmente fornirmi le istruzioni per la restituzione
+dell'articolo errato e per la spedizione dell'articolo corretto?
+
+Stefano Rossi
+
+La ringrazio per la sua collaborazione e assistenza nel risolvere
+questo disguido.
+
+Groundedness:
+This response got
+graded as Partially
+Grounded and Not
+Grounded due to it
+being addressed to
+“Melinda Ferrari”
+when the Mail
+Component
+Patterns Adress
+Forms: “Sheila”. But
+as long as a name is
+found in the task
+(user prompt,
+previous email,
+additional info or
+profile), it
+would be marked as
+Grounded.
+
+Cordiali saluti,
+Melinda Ferrari
+Prompt: Expand this short reply into a complete email: Ecco le
+istruzioni di reso.
+it-it
+
+Ottavio Rossi
+Invito a colloquio - Posizione Analista di Marketing
+To:
+Gentile Signora Mariano,
+La ringraziamo per la sua candidatura alla posizione di
+Analista di Marketing presso la nostra azienda. Abbiamo
+esaminato con grande interesse il suo profilo e saremmo lieti
+di invitarla a un colloquio conoscitivo per discutere più
+approfonditamente la sua esperienza e le sue qualifiche.
+Per poter fissare la data e l'ora dell'incontro, la preghiamo di
+volerci indicare la sua disponibilità per una breve telefonata
+nei prossimi giorni, preferibilmente tra il 20 e il 24 maggio
+dalle ore 9:00 alle 17:00. In alternativa, può contattarci al
+numero 02 12345678.
+Restiamo in attesa di un suo cortese riscontro.
+Cordiali saluti,
+Ottavio Rossi
+Prompt: Expand this short reply into a complete email: Grazie,
+sono disponibile.
+
+Centific Confidential ©
+
+Ciao Drew,
+Grazie mille per la tua email e per l'opportunità di sostenere un
+colloquio per la posizione di Analista di Marketing. Sono molto
+entusiasta di questa possibilità e sarei lieta di discutere la mia
+esperienza con voi.
+Sono disponibile per la breve telefonata proposta nel periodo tra
+il 20 e il 24 maggio, dalle ore 9:00 alle 17:00.
+Non vedo l'ora della nostra conversazione.
+Saluti,
+Maria Giulia Mariano
+
+Instruction
+Adherence &
+Contextual Fit:
+This response
+should be marked
+as “Followed and
+Fit” because it
+correctly confirms
+availability,
+maintains the
+professional
+interview context,
+and follows the
+prompt “Grazie,
+sono disponibile”
+without introducing
+irrelevant content.
+Furthermore, the
+response preserves
+the intended
+meaning and
+appropriate level of
+formality.
+
+ja-jp
+
+佐藤 太郎
+本日午後のお電話について
+To:
+健太さん
+
+おはようございます。太郎さん ご連絡ありがとうございま
+す。
+本日午後のお電話、大丈夫です。
+よろしくお願いいたします。
+健太
+
+本日午後、少しお電話でお話できるお時間はございます
+でしょうか？
+よろしくお願いいたします。
+
+Personalization:
+This response
+should be graded
+Contextual adapted,
+the draft uses a
+phrase that is
+slightly less formal
+and does not match
+with the speech
+level ”大丈夫です”.
+
+太郎
+Prompt: Expand this short reply into a complete email: はい
+、大丈夫です
+山田さん
+
+ja-jp
+山田 健太
+来週のアサインメントについて
+To:
+麻里子さん
+
+お世話になっております。ご連絡いただき、誠にありがと
+うございます。
+
+健太
+
+お問い合わせいただきました来週のアサインメントについ
+てですが、はい、お願いしたい新案件が 1 件ございます
+。 詳細については現在最終調整を行っておりますので、ま
+とまり次第、改めてご連絡させていただきます。ご不明な
+点やご質問などがございましたら、いつでもお気軽にお知
+らせください。
+
+Prompt: Expand this short reply into a complete email: はい
+、新案件があります
+
+お忙しいところ恐縮ですが、引き続きどうぞよろしくお願
+いいたします。
+
+お世話になっております。来週のアサインメントについ
+て、何か新しい案件はございますでしょうか？
+
+高橋 麻里子
+
+Centific Confidential ©
+
+Groundedness:
+This response
+should be Partially
+grounded because
+the part of the “新
+案件が 1 件ござい
+ます” is invented
+for the “1 件” which
+is not mentioned in
+the prompt.
+
+ko-kr
+
+김지유
+
+Response A:
+
+개인전 제안 드립니다!
+To:
+
+'도시의 그림자' 연작 작업에 대한 제안을 아주 흥미롭게 읽
+
+안녕하세요! 지유님! 답장 주셔서 정말 감사합니다! 보내주신
+
+Groundedness:
+
+다름이 아니라, 제가 최근에 새로운 연작 작업을 마무리하
+
+어, 지유님의 개인전을 진행하기가 어려울 것 같습니다. 좋은
+
+Both responses A
+and B should be
+graded as Not
+grounded because it
+added an
+information that
+was not from the
+previous email or
+prompt;
+
+게 되어 준호님께 개인전 제안을 드리고자 메일 드렸습니
+
+제안을 주셨는데 함께하지 못해 정말 아쉽습니다. 다시 한번
+
+A: ' 전시 일정이 확
+
+다. 이번 작업은 '도시의 그림자'라는 주제로, 현대 도시인
+
+좋은 기회 주셔서 감사합니다! 감사합니다! 준호
+
+정되어 있어' ,
+
+준호님!
+안녕하세요, 준호님! 지난번 전시회도 정말 잘 봤습니다.
+
+들이 느끼는 고독감과 그 속에서 피어나는 작은 희망을 표
+현했습니다. 주로 어두운 색감과 거친 질감을 사용하여 내
+면의 복잡한 감정을 시각화했어요. 대형 회화작품 10 점과
+설치 작품 2 점으로 구성되어 있으며, 공간에 따라 유동적
+으로 구성할 수 있도록 준비했습니다.
+
+어보았습니다. 현대 도시인들의 고독과 희망을 표현하신 주
+제가 매우 인상적이었고, 지유님의 새로운작업이 저희 갤러
+리 공간과 잘 어울릴지 기대가 되었습니다. 하지만 안타깝게
+도 내년 상반기와 하반기 모두 이미 전시 일정이 확정되어 있
+
+Response B;
+안녕하세요! 지유님!
+보내주신 전시회 참여 제안 메일 정말 잘 받았습니다! 제 지난
+전시를 좋게 봐주시고, 또 이렇게 소중하고 뜻깊은개인전 제
+안을 해주셔서 진심으로 감사드립니다. 지유님의 새로운 연
+
+있다면 좋겠습니다. 혹시 제안이 너무 갑작스러우셨을까
+
+작 '도시의 그림자'에 대한 설명을 들으니, 현대인의 감정을
+
+요? 준호님께서 워낙 바쁘신 걸 알지만, 혹시 잠시라도 시
+
+깊이 있게 풀어낸 작업이 정말 인상적이고 매력적이라는 생
+
+간을 내주실 수 있다면 포트폴리오와 상세 기획안을 보내
+
+각이 듭니다.
+
+간과 잘 어울릴지, 또 어떤 시너지를 낼 수 있을지 궁금합니
+다.
+
+다만, 아쉽게도 이번에는 제안해주신 개인전 일정을 소화하
+기가 어려울 것 같습니다. 현재 제가 진행 중인 여러일정들과
+내부적인 스케줄 조율 문제로 인하여, 내년 상반기와 하반기
+
+바쁘시겠지만 긍정적인 검토 부탁드리며, 회신 기다리겠
+
+모두 새로운 전시를 위한 시간을 내기가여의치 않은 상황입
+
+습니다.
+
+니다. 저 또한 지유님의 멋진 작품과 함께할 수 있는 기회가
+
+감사합니다.
+지유
+Expand this short reply into a complete
+email: 죄송하지만, 어려울 것 같습니다.
+
+된다면 정말 좋았겠지만, 현실적인 여건상 함께하지 못해 저
+역시도 많이 안타깝고 죄송스러운 마음입니다.
+비록 이번에는 인연이 닿지 못해 아쉽지만, 보내주신 따뜻한
+마음에 다시 한번 깊이 감사드립니다. 지유님께서준비하시
+는 이번 개인전이 꼭 성공적으로 개최되어 많은 관람객들에
+게 큰 울림을 줄 수 있기를 진심으로 응원하겠습니다.
+다시 한번 좋은 기회 주셔서 감사합니다!
+준호
+
+Centific Confidential ©
+
+일정들과 내부적인
+스케줄 조율 문제
+로 인하여'.
+
+내년 상반기나 하반기 중 편하신 시기에 전시를 진행할 수
+
+드리고 싶습니다. 저의 새로운 작업이 준호님의 갤러리 공
+
+B: '진행 중인 여러
+
+sv-se
+
+Mikael Svensson
+Ny idé för marknadskampanj
+To:
+Hej Ines,
+
+Hej Mikael,
+Ja, 10:00 passar utmärkt.
+Tack på förhand,
+Ines
+
+Hoppas allt är bra med dig. Jag har suttit och funderat på en
+ny marknadskampanj som jag tror skulle kunna passa oss
+väldigt bra just nu. Det är en spännande idé som jag gärna
+skulle vilja bolla med dig.
+Skulle det passa att ta ett kort möte imorgon, kanske runt
+10:00 eller 14:00? Låt mig veta vad som fungerar bäst för dig.
+
+Personalization:
+This task got graded
+as Generic when it
+should have been
+Personalized due to
+its user profile and
+formatting patterrns
+combined wirth
+conversation
+context.
+
+Hörs snart,
+Mikael
+Prompt: Expand this short reply into a complete email: Ja,
+10:00 passar utmärkt.
+sv-se
+Jonas Lindgren
+Intervjukooordinering - Framtidsteknikkonferensen & Tack!
+To:
+Hej Jan,
+Hoppas allt är bra med dig!
+Jag skriver angående Framtidsteknikkonferensen. Vi skulle
+gärna vilja koordinera intervjutider för kandidater som är
+intresserade av Tech Solutions AB under konferensen. Har du
+möjlighet att ange vilka tider som passar bäst för ert team?
+Förresten, tack så jättemycket för de där mattipsen du gav
+mig förra veckan. Bärpurén blev perfekt!
+Låt mig veta vilka tider som skulle fungera för dig/er för
+intervjuerna.
+Hälsningar,
+Jonas
+Prompt: Expand this short reply into a complete email: Jag
+återkommer med tider snart.
+
+Centific Confidential ©
+
+Response A:
+Hej Jonas,
+Tack för svaret. Jag återkommer med tider snart.
+Vi hörs,
+Jan
+Response B:
+Hej Jonas
+Tack för svaret. Jag återkommer med tider snart.
+Med vänliga hälsningar
+Jan Karlsson
+
+Instruction
+Adherence &
+Contextual Fit:
+Both Responses A
+and B should have
+been graded as
+Partially Followed
+and Fit. Although
+they follow the
+main subject of the
+email and user
+prompt, they omit a
+secondary element
+from the reference
+email regarding a
+food tip that the
+sender expressed
+gratitude for.
+
+vi-vn
+
+Trần Ngọc Bích
+Mai Anh ơi, cuối tuần này mình gặp nhau nhaaa!
+To:
+
+Groundedness:
+Response A
+Re: Mai Anh ơi, cuối tuần này mình gặp nhau nhaaa!
+To:
+
+Mai Anh ơi!
+Cậu khỏe không? Tự nhiên hôm nay tớ đi ngang qua quán
+kem mình hay ăn hồi xưa, lại nhớ đến cậu quá chừng! Lâu rồi
+mình chưa gặp nhau, tớ nhớ cậu lắm đó!
+
+bích ơi! tớ cũng mừng lắm khi nhận được email của cậu! tuyết
+vời, tớ tham gia! tớ cũng nhớ cậu lắm, nhớ cả quán kem ngày
+xưa nữa. cuối tuần này thứ bảy 25/5 mình đi ăn món thái rồi đi
+dạo công viên hay cà phê tám chuyện nhé. mình phải hẹn hò
+một bữa thật đã nha! mai anh
+
+This response was
+rated Partially
+Grounded instead of
+Grounded. All
+information in the
+suggested draft is
+derived from the
+previous email.
+
+Hay là cuối tuần này, thứ Bảy ngày 25/5, mình đi chơi đi? Tớ
+tính mình có thể đi ăn món Thái mà cậu thích, rồi đi dạo công
+viên hoặc ngồi cà phê tám chuyện cho đã nha. Nghe thôi là tớ
+thấy nôn nao rồi đó!
+Nếu ngày đó cậu bận thì mình đổi sang Chủ Nhật hoặc tuần
+sau cũng được, tớ rảnh cả mà. Cậu xem lịch rồi nhắn lại cho tớ
+sớm nha, tớ nôn nóng được gặp cậu lắm luôn á!
+Mong tin cậu!
+Bích
+Prompt: Expand this short reply into a complete email: Tuyệt
+vời, tớ tham gia!
+刘洋
+zh-cn
+
+关于面试安排的回复
+To:
+亲爱的李明远,
+
+亲爱的刘洋：
+Groundedness:
+很高兴收到您的邮件。感谢您对我们职位的关注与热情，我
+非常期待与您进行进一步的交流。关于面试的时间安排，我
+目前在 2026 年 1 月 5 日（周一）下午 2:00 至 4:00，以及
+
+您好！感谢您关于面试下一阶段的邮件。我已收到并确认
+
+2026 年 1 月 6 日（周二）上午 9:30 至 11:00 这两个时间段
+
+，非常期待有机会进行进一步的交流。
+
+比较方便。请您看看哪个时间对您最为合适，并随时告知我
+，我们可以据此敲定最终的日程。期待与您进一步交流！
+
+请问您方便提供一些可选的面试日期和时间吗？我很乐意
+配合您的时间安排。
+
+李明远
+
+此致，敬礼
+刘洋
+
+Additional Personal info:
+User response to question “When am I available for an interview
+with Liu Yang?” is: 2026 年 1 月 5 日（周一）下午 2:00-4:00，
+以及 2026 年 1 月 6 日（周二）上午 9:30-11:00。
+User response to question “What is my schedule for the next
+
+Prompt: Expand this short reply into a complete email: 这是
+我的空档
+
+few days?” is: 1 月 2 日（周五）：下午 3:00 招聘团队周会；1
+月 5 日（周一）：下午 2:00-4:00 预留面试时间；1 月 6 日（
+周二）：上午 9:30-11:00 预留面试时间，下午 2:30 与技术总
+监讨论 HC。
+
+Centific Confidential ©
+
+This response got
+graded as Not
+Grounded because
+it added a date and
+time that were not
+specified in the
+prompt. But since
+this information was
+available in the
+Additional Personal
+info box, it should
+have been rated as
+Grounded.
+
+zh-hk
+
+林嘉欣
+關於域名續期及潛在合作機會
+To:
+宇瀚，希望你呢個星期一切順利！
+想提一提你，我哋系統顯示你哋幾個主要域名，例
+如 yourcompany.com.hk 同埋 yourcompany-asia.com，都將
+會喺未來幾個月內到期續約，例如 yourcompany.com.hk 大
+約三個月後到期，yourcompany-asia.com 就大約六個月後
+。建議你可以提早規劃一下續期事宜。
+
+Response A:
+你好嘉欣, 多謝你嘅電郵同埋更新。關於你提到嘅域名續期
+，我會盡快安排處理。至於你介紹嘅「智聯科技」合作機會
+，我哋暫時未有興趣進一步了解，不過都多謝你嘅推薦。祝
+好, 宇瀚
+Response B:
+你好嘉欣,
+多謝你嘅電郵同埋更新。關於域名續期嘅事宜，我哋會喺內
+部檢視並適時處理。至於你提到智聯科技嘅人工智能客戶服
+務方案，感謝你嘅推薦，不過我哋現階段暫時沒有興趣。
+
+另外，最近我哋同一間新嘅軟件夥伴「智聯科技」有過交
+流，佢哋專門提供人工智能客戶服務方案，覺得佢哋嘅方
+案好有潛力，可以大大提升客戶服務效率。唔知你哋會唔
+
+祝好
+宇瀚
+
+會有興趣了解多啲，或者我幫你哋介紹智聯科技嘅負責人
+俾你哋認識？
+
+Instruction
+Adherence &
+Contextual Fit:
+Both Responses A
+and B: Followed and
+Fit.
+The language is
+professional, but
+the email
+formatting is weak
+(e.g., no spacing
+after the greeting or
+lack of structure
+into formal
+paragraphs). This is
+generally treated as
+a minor stylistic
+issue rather than a
+major failure, so it
+should still pass.
+
+此致，
+嘉欣
+Prompt: Expand this short reply into a complete email: 暫時
+沒有興趣
+Response A
+王奕安
+zh-tw
+
+嗨！最近好嗎？
+To:
+志明，
+嗨！最近過得怎麼樣啊？傳訊息來跟你問聲好，希望你一
+切都很好喔！
+保重！
+奕安
+Prompt: Expand this short reply into a complete email: 謝謝
+你的關心
+
+Re: 嗨！最近好嗎？
+To:
+奕安啊：
+看到你的信我也很開心啦，謝謝你的關心喔！我最近都還不
+錯，一切都好。你也要好好照顧自己喔！
+志明
+Response B
+Re: 嗨！最近好嗎？
+To:
+奕安啊：
+看到你的信我也很開心啦！謝謝你的關心，我最近一切都很
+好喔，請不用擔心。
+你最近過得怎麼樣啊？希望你一切也都順利！
+你也要好好照顧自己喔，等你有空的時候再跟我聯絡啦。
+志明
+
+Centific Confidential ©
+
+Localization:
+Response A contains
+wrong punctuation
+format for zh-TW
+but didn’t get
+penalized for it.
+Response B is fully
+appropriate and
+doesn’t contain any
+localization issues.
+
+

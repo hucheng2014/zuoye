@@ -1,0 +1,138 @@
+diff --git a/recital_hall/recital_bookings.py b/recital_hall/recital_bookings.py
+index a902743..91719dc 100644
+--- a/recital_hall/recital_bookings.py
++++ b/recital_hall/recital_bookings.py
+@@ -1,7 +1,7 @@
+ from __future__ import annotations
+ 
+ from typing import List, Optional
+-from datetime import datetime
++from datetime import datetime, date
+ 
+ from fastapi import APIRouter, Depends, HTTPException, status
+ from pydantic import BaseModel
+@@ -44,6 +44,8 @@ async def book_recital_seat(
+         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Recital not found")
+     if recital.status == "cancelled":
+         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Recital is cancelled")
++    if recital.registration_deadline is not None and date.today() > recital.registration_deadline:
++        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Registration deadline has passed")
+     booking = Booking(
+         user_id=payload.user_id,
+         booking_type="recital",
+diff --git a/tests/test_prompt7.py b/tests/test_prompt7.py
+new file mode 100644
+index 0000000..9066eb6
+--- /dev/null
++++ b/tests/test_prompt7.py
+@@ -0,0 +1,110 @@
++from __future__ import annotations
++
++import datetime
++import pytest
++from httpx import AsyncClient
++
++from tests.conftest import api_key_header, register_user
++from music_models.music_models import RecitalStatus
++
++
++async def make_admin(client: AsyncClient, username: str) -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "admin")
++
++
++async def make_recital(
++    client: AsyncClient,
++    api_key: str,
++    title: str = "Test Recital",
++    registration_deadline: datetime.date | None = None,
++) -> dict:
++    organizer = await register_user(client, "org1", "org1@test.com", "pass", "admin")
++    event_date = datetime.date.today() + datetime.timedelta(days=30)
++    resp = await client.post(
++        "/recitals",
++        json={
++            "title": title,
++            "event_date": event_date.isoformat(),
++            "venue": "Main Hall",
++            "organizer_id": organizer["id"],
++            "status": "confirmed",
++            "registration_deadline": registration_deadline.isoformat() if registration_deadline else None,
++            "admission_fee": 0.0,
++            "performers": [],
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def test_book_recital_seat_before_deadline(client: AsyncClient):
++    """测试在截止日期前可以预约座位"""
++    admin = await make_admin(client, "p7admin1")
++    student = await register_user(client, "p7stud1", "p7stud1@test.com", "pass", "student")
++    
++    # 设置截止日期为明天
++    deadline = datetime.date.today() + datetime.timedelta(days=1)
++    recital = await make_recital(client, admin["api_key"], "Recital 1", deadline)
++    
++    resp = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student["id"], "notes": "Test booking"},
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 201
++    assert resp.json()["status"] == "pending"
++    assert resp.json()["booking_type"] == "recital"
++
++
++async def test_book_recital_seat_after_deadline(client: AsyncClient):
++    """测试在截止日期后无法预约座位"""
++    admin = await make_admin(client, "p7admin2")
++    student = await register_user(client, "p7stud2", "p7stud2@test.com", "pass", "student")
++    
++    # 设置截止日期为昨天
++    deadline = datetime.date.today() - datetime.timedelta(days=1)
++    recital = await make_recital(client, admin["api_key"], "Recital 2", deadline)
++    
++    resp = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student["id"], "notes": "Test booking"},
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 400
++    assert "Registration deadline has passed" in resp.json()["detail"]
++
++
++async def test_book_recital_seat_without_deadline(client: AsyncClient):
++    """测试没有设置截止日期的情况"""
++    admin = await make_admin(client, "p7admin3")
++    student = await register_user(client, "p7stud3", "p7stud3@test.com", "pass", "student")
++    
++    # 不设置截止日期
++    recital = await make_recital(client, admin["api_key"], "Recital 3", None)
++    
++    resp = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student["id"], "notes": "Test booking"},
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 201
++    assert resp.json()["status"] == "pending"
++
++
++async def test_book_recital_seat_on_deadline_day(client: AsyncClient):
++    """测试在截止日期当天可以预约座位"""
++    admin = await make_admin(client, "p7admin4")
++    student = await register_user(client, "p7stud4", "p7stud4@test.com", "pass", "student")
++    
++    # 设置截止日期为今天
++    deadline = datetime.date.today()
++    recital = await make_recital(client, admin["api_key"], "Recital 4", deadline)
++    
++    resp = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student["id"], "notes": "Test booking"},
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp.status_code == 201
++    assert resp.json()["status"] == "pending"

@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_001",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T20:56:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688678148",
+      "query": "碎 碎 念 存",
+      "query_intent": "User wants an app to write down, store, or record their personal thoughts, daily rambling, private diaries, or notes (\"碎碎念\" refers to nagging/whispering/muttering, and \"存\" refers to storing/saving). They are looking for a personal diary or note-taking app.",
+      "ad": {
+        "name": "心理自愈Pro-根因、潜意识与原生家庭",
+        "subtitle": "原生家庭| 释梦| 关系模式| 根因剖析| 防御机制",
+        "developer": "子博 魏",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6749799295) & Web research",
+          "note": "The app is a psychological analysis and self-healing app focused on dream analysis, family of origin, defense mechanisms, and subconscious exploration."
+        },
+        {
+          "source": "local knowledge",
+          "note": "'碎碎念存' indicates a casual recording, diary, or note-taking intent. While recording thoughts can broadly be a form of mental logging, a professional psychological self-therapy/analysis tool serves a completely different specific utility and audience than a simple diary/note storage app."
+        }
+      ],
+      "relationship_analysis": "The query '碎 碎 念 存' translates to recording and storing daily personal rambling, whispers, or diaries. The advertised app '心理自愈Pro' is a specialized tool for psychological self-healing, dream interpretation, and subconscious analysis. It does not function as a diary, notepad, or storage application for casual thoughts. There is no logical or direct relationship between a note-taking storage utility and a psychology analysis/therapy app, which would confuse a user looking for the former.",
+      "why_not_higher": "There is no direct functional overlap or logical connection. A diary recorder is a casual storage utility, while the ad is a psychological educational/analytical app. They satisfy completely different user intents and core functions.",
+      "why_not_lower": "It cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"碎 碎 念 存\" indicates the user is looking for a diary, notepad, or private journal app to record and store personal daily thoughts and whispers. The advertised app \"心理自愈Pro-根因、潜意识与原生家庭\" is a psychological self-healing and analysis tool focusing on dream interpretation, defense mechanisms, and family of origin. It does not provide the note-taking or diary storage utility requested. There is no logical connection between a daily notes storage app and a psychological therapy platform, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688678149",
+      "query": "即 梦 ai",
+      "query_intent": "User is searching for '即梦 AI' (Jimeng AI), a well-known AI generative platform developed by ByteDance for text-to-image and text-to-video creation. The intent is to use this specific generative AIGC tool.",
+      "ad": {
+        "name": "Kaipai - Talking Video with AI",
+        "subtitle": "AI Templates,AI Cover,HD Cam",
+        "developer": "Xiamen Meitu Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6446305602) & Web research",
+          "note": "Kaipai (开拍) is an AI-powered talking video creation tool by Meitu, featuring an AI teleprompter, AI script writer, and video editing functions designed for creators."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Jimeng AI and Kaipai both belong to the AI-driven content and video creation domain. Although Jimeng AI focuses more on text-to-image/video generation, and Kaipai focuses on AI talking video recording/shooting and teleprompting, they target the same audience of digital content and short-video creators looking to utilize AI technologies."
+        }
+      ],
+      "relationship_analysis": "The query '即 梦 ai' is a specific generative AI image and video platform. The advertised app 'Kaipai' is an AI talking video shooting and script-writing companion. Both are AI tools used for short video and content creation. While they have different core workflows (generative creation vs oral filming with AI teleprompter), they are highly relevant alternatives in the AIGC video creation ecosystem, and a user searching for an AI video tool would likely be interested in another major AI video tool by Meitu.",
+      "why_not_higher": "They are not direct/exact equivalents or identical competitors. Jimeng AI is a pure text-to-image/video generative tool, whereas Kaipai is focused on recording oral presentation videos using an AI script writer, teleprompter, and editor. Their core mechanisms are distinct.",
+      "why_not_lower": "They are highly relevant within the AI video/content creation sector. The target audience, technology base (AI assistant for video creation), and application scenarios overlap significantly.",
+      "rating": "Good",
+      "comment": "The query \"即 梦 ai\" refers to ByteDance's generative AI image and video creation platform. The advertised app \"Kaipai - Talking Video with AI\" is Meitu's AI-assisted oral video creation tool featuring an AI teleprompter, script generator, and video editor. Both belong to the AI-powered video and content creation domain, sharing a highly similar target audience of content creators. Although they employ different mechanisms (generative text-to-video vs filming with an AI teleprompter), they are strongly related alternatives. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688678150",
+      "query": "觅 马 出 行",
+      "query_intent": "User is searching for '觅马出行' (Mima Chuxing), a popular shared electric bicycle (e-bike) rental service in China. The user intent is to rent an e-bike or manage their short-distance shared travel.",
+      "ad": {
+        "name": "音集",
+        "subtitle": "遇见心动的声音",
+        "developer": "Xi'an Yunyi Spatiotemporal Network Technology Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6755094828) & Web research",
+          "note": "音集 (Yinji) is a social voice chat and audio streaming app, focusing on meeting new friends via voice and music sharing."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Mima Chuxing (觅马出行) is exclusively a shared transit/electric bicycle rental service. The ad '音集' is an audio social application. There is zero overlap in functionality, industry, or use cases."
+        }
+      ],
+      "relationship_analysis": "The query '觅 马 出 行' refers to a shared electric bicycle transit service, whereas the advertised app '音集' is an online voice chat/social app. There is absolutely no connection between the need for renting shared e-bikes for outdoor transit and an indoor social audio app. This is a completely irrelevant ad placement that would confuse users.",
+      "why_not_higher": "There is no functional, nominal, or contextual relationship whatsoever.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"觅 马 出 行\" refers to a well-known shared electric bicycle (e-bike) rental service for short-distance daily commuting. The advertised app \"音集\" is a social voice chat and audio entertainment application. There is absolutely no functional, logical, or contextual relationship between renting shared transit bikes and using an online voice social app. This completely irrelevant ad serves a different utility and intent. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688678151",
+      "query": "直 播 伴 侣",
+      "query_intent": "User wants '直播伴侣' (Zhibo Banlv - Live Streaming Companion), which commonly refers to ByteDance's official live broadcasting helper tool ('抖音直播伴侣') for managing streams, screens, and room interactions on Douyin.",
+      "ad": {
+        "name": "抖音来客",
+        "subtitle": "抖音生活服务商家经营平台",
+        "developer": "成都所见所得科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1603172928) & Web research",
+          "note": "抖音来客 (Douyin Laike) is the official operations platform for Douyin Local Life Services merchants (e.g., local stores, restaurants, leisure services) to manage their stores, listings, group buying, and transactions on Douyin. The developer '成都所见所得科技有限公司' is a subsidiary of ByteDance/Douyin."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both Zhibo Banlv (抖音直播伴侣) and Douyin Laike (抖音来客) belong to the official Douyin/ByteDance ecosystem. Zhibo Banlv is for live streamers/content creators, while Douyin Laike is for offline local service merchants. Although merchants sometimes use live streaming to promote their products/deals, their primary tools serve different functions."
+        }
+      ],
+      "relationship_analysis": "The query '直 播 伴 侣' refers to the official helper software for live streaming on Douyin (ByteDance). The advertised app '抖音来客' is Douyin's official merchant platform for local merchants. Both belong to the same parent developer (ByteDance/Douyin) and the wider Douyin commercial ecosystem. However, they target different roles—content creators vs local business owners. Following the SOP guideline that 'same developer/ecosystem but different specific features' typically results in Acceptable, we rate it as Acceptable.",
+      "why_not_higher": "They have different core functions and target roles. A live streaming companion tool is a media broadcasting software for creators, while Douyin Laike is a store administration/group-buy management platform. They do not share functional parity.",
+      "why_not_lower": "According to SOP rules, apps in the same developer ecosystem (Douyin official tools) are generally not rated lower than Acceptable due to their commercial link and brand synergy.",
+      "rating": "Acceptable",
+      "comment": "The query \"直 播 伴 侣\" refers to the official live broadcasting assistant software used by creators to stream on Douyin. The advertised app \"抖音来客\" is the official merchant operations platform for Douyin's Local Life Services. Both applications belong to the same parent developer (ByteDance/Douyin) and operate within the Douyin business ecosystem. While they satisfy different direct functions (live streaming support for creators vs store/group-buy management for local merchants), they share strong ecosystem synergy. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688678152",
+      "query": "自 己 画 画",
+      "query_intent": "User is searching for general apps that allow them to draw, paint, sketch, or color by themselves manually on a canvas (i.e. '自己画画' = draw pictures by oneself). Intent is a manual drawing pad/canvas app.",
+      "ad": {
+        "name": "Outline App Photo To Sketch",
+        "subtitle": "Quick Pencil Drawing Maker",
+        "developer": "冬梅 杜",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1466744353)",
+          "note": "Outline App Photo To Sketch is an automated image filter and converter app that converts photos into pencil sketches/drawings. It is a photo processing utility rather than a creative drawing/canvas board."
+        },
+        {
+          "source": "local knowledge",
+          "note": "A user wanting to '自己画画' (draw manually) expects a drawing pad, brushes, and color palettes. An app that automatically turns photographs into sketches bypasses manual drawing. However, it is loosely related to the topic of sketching and art styles."
+        }
+      ],
+      "relationship_analysis": "The query '自 己 画 画' represents a desire to draw, paint, or sketch manually on a blank canvas. The advertised app 'Outline App Photo To Sketch' is a photo-to-sketch automatic editor. It does not provide manual drawing tools, brushes, or canvases. However, because both are related to sketching/art, a user interested in drawing might have a mild/tangential interest in an app that produces sketches from photos. The connection is weak but understandable.",
+      "why_not_higher": "It does not fulfill the core intent of manual drawing. The app does not feature a canvas or manual drawing/painting capabilities, making it a different product class.",
+      "why_not_lower": "There is a loose thematic relation in the domain of sketches, art style, and pencil drawing, meaning it is not completely irrelevant to someone who likes drawing.",
+      "rating": "Acceptable",
+      "comment": "The query \"自 己 画 画\" indicates the user is looking for a manual drawing, painting, or canvas app where they can paint or draw pictures by themselves. The advertised app \"Outline App Photo To Sketch\" is an image processing tool that automatically converts existing photos into pencil drawing sketches. While both deal with sketching and artistic styles, the advertised app is a photo editor rather than a canvas tool for manual drawing, satisfying a different specific need. The relationship is weak but understandable. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T13:05:32",
+    "post_submit_status": "No errors visible"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Emoji Evaluation Design",
+  "pageUrl": "https://digitaltechedge.sharepoint.com/sites/IsaacLighthouse/Isaac%20Lighthouse/Forms/AllItems.aspx?id=%2Fsites%2FIsaacLighthouse%2FIsaac%20Lighthouse%2FVCG%20Guidelines%2FVCG%20Genmoji%2FGuidelines%2FEmoji%20Evaluation%20Design%2Epdf&parent=%2Fsites%2FIsaacLighthouse%2FIsaac%20Lighthouse%2FVCG%20Guidelines%2FVCG%20Genmoji%2FGuidelines",
+  "capturedUrl": "https://westus21-mediap.svc.ms/transform/passthrough?provider=spo&farmid=193562&inputFormat=pdf&cs=fFNQTw&docid=https%3A%2F%2Fdigitaltechedge.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!EcmsEUXHyEilUylzhEU0eWJSgGREd-FMowBEWNScYIXVchLs5cxEQq1FxusG-4C9%2Fitems%2F01NXXSEXLMYYO2L2HT6FALITLBCXQGH3CT%3Fversion%3DPublished&cTag=%22c%3A%7BA51DC66C-F3E8-40F1-B44D-6115E063EC53%7D%2C1%22",
+  "status": 200,
+  "headers": [
+    {
+      "name": "cache-control",
+      "value": "private, max-age=2592000"
+    },
+    {
+      "name": "content-type",
+      "value": "application/octet-stream"
+    },
+    {
+      "name": "expires",
+      "value": "Sun, 14 Jun 2026 15:54:59 GMT"
+    },
+    {
+      "name": "x-aspnetmvc-version",
+      "value": "5.2"
+    },
+    {
+      "name": "access-control-expose-headers",
+      "value": "Content-Length, X-CorrelationId, X-ErrorCode, X-ErrorType, x-cache, x-msedge-ref, x-azure-ref-originshield, Server-Timing, Request-Stat, X-OneDriveMeTA-Region, X-StreamOrigin"
+    },
+    {
+      "name": "access-control-max-age",
+      "value": "2592000"
+    },
+    {
+      "name": "access-control-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "timing-allow-origin",
+      "value": "*"
+    },
+    {
+      "name": "content-disposition",
+      "value": "attachment;filename=ODBTestPassthrough"
+    },
+    {
+      "name": "x-correlationid",
+      "value": "e1c72dff-172d-4aba-9c75-6ca04744323f"
+    },
+    {
+      "name": "x-aspnet-version",
+      "value": "4.0.30319"
+    },
+    {
+      "name": "x-cache",
+      "value": "CONFIG_NOCACHE"
+    },
+    {
+      "name": "x-msedge-ref",
+      "value": "Ref A: 6DE182EA52804D528B1A372718A40671 Ref B: MNL30EDGE0417 Ref C: 2026-05-15T15:54:59Z"
+    },
+    {
+      "name": "date",
+      "value": "Fri, 15 May 2026 15:54:58 GMT"
+    }
+  ],
+  "file": "02_Emoji_Evaluation_Design.pdf",
+  "len": 9163680,
+  "first": "%PDF-1.3.%......",
+  "hex": "255044462d312e330a25c4e5f2e5eba7"
+}

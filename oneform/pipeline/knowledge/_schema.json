@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Knowledge Base Index",
+  "description": "Schema for task-type knowledge base index files",
+  "type": "object",
+  "required": ["task_type", "version", "chunks", "compact_sop", "flow"],
+  "properties": {
+    "task_type": {
+      "type": "string",
+      "description": "Task type identifier matching pipeline task_types.json"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "Human-readable task name"
+    },
+    "version": {
+      "type": "string",
+      "description": "Knowledge base version (semver)"
+    },
+    "source_files": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Source tutorial files this knowledge was extracted from"
+    },
+    "compact_sop": {
+      "type": "string",
+      "description": "Path to compact SOP summary relative to task dir"
+    },
+    "flow": {
+      "type": "string",
+      "description": "Path to operation flow file relative to task dir"
+    },
+    "chunks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "file", "title", "description", "keywords"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique chunk identifier"
+          },
+          "file": {
+            "type": "string",
+            "description": "Path to chunk file relative to task dir"
+          },
+          "title": {
+            "type": "string",
+            "description": "Chunk title for display"
+          },
+          "description": {
+            "type": "string",
+            "description": "Brief description of what this chunk covers"
+          },
+          "keywords": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Search keywords for matching queries"
+          },
+          "priority": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "description": "1=critical (loaded always), 5=rare edge case"
+          },
+          "size_bytes": {
+            "type": "integer",
+            "description": "Approximate chunk size in bytes"
+          }
+        }
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "file", "title"],
+        "properties": {
+          "id": { "type": "string" },
+          "file": { "type": "string" },
+          "title": { "type": "string" },
+          "related_chunks": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

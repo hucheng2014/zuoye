@@ -1,0 +1,134 @@
+{
+  "batch_id": "2026-06-08_batch_021",
+  "project": "AD Search Ads Relevance",
+  "operator": "auto_ad_daemon",
+  "rating_method": "llm_per_task_v1",
+  "created_at": "2026-06-08T22:53:44",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689668462",
+      "query": "爱 普 生 smart panel",
+      "query_intent": "The query '爱 普 生 smart panel' refers to Epson Smart Panel, which is Epson's official companion app for controlling and managing Epson printers/scanners (printing, scanning, setup, maintenance). The user is looking for this specific Epson app or an Epson printer companion tool.",
+      "ad": {
+        "name": "Smart Printer App Scan & Print",
+        "subtitle": "",
+        "developer": "Appshub Bilgi Teknolojileri Limited Sirketi",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / LLM analysis",
+          "note": "The query clearly points to Epson's official 'Smart Panel' app. The advertised app 'Smart Printer App Scan & Print' by Appshub Bilgi Teknolojileri is a generic third-party mobile printing app. While it shares the keywords 'Smart', 'Print', and 'Scan', it is not Epson's product, not the same developer, and not a direct substitute for Epson Smart Panel (which is tied to specific Epson printer hardware features like ink monitoring, Wi-Fi setup for Epson devices, etc.). A third-party print app may work for some basic printing tasks, but it does not match the specific Epson ecosystem functionality the user is searching for."
+        }
+      ],
+      "relationship_analysis": "The query clearly points to Epson's official 'Smart Panel' app. The advertised app 'Smart Printer App Scan & Print' by Appshub Bilgi Teknolojileri is a generic third-party mobile printing app. While it shares the keywords 'Smart', 'Print', and 'Scan', it is not Epson's product, not the same developer, and not a direct substitute for Epson Smart Panel (which is tied to specific Epson printer hardware features like ink monitoring, Wi-Fi setup for Epson devices, etc.). A third-party print app may work for some basic printing tasks, but it does not match the specific Epson ecosystem functionality the user is searching for.",
+      "rating": "Acceptable",
+      "comment": "The query '爱 普 生 smart panel' clearly indicates the user is looking for Epson Smart Panel, the official Epson printer companion app. The advertised app 'Smart Printer App Scan & Print' by Appshub is a generic third-party printing app, not Epson's product. It is in the same broad 'mobile printing/scanning' category and shares surface keywords (Smart, Print, Scan), so a user would not be completely surprised to see it, but it does not satisfy the specific intent of accessing Epson's own Smart Panel for an Epson device. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689668463",
+      "query": "河 北 冀 时 办",
+      "query_intent": "The user is searching for '河北冀时办', which is the official government/public service app of Hebei Province (冀 is the abbreviation for Hebei). The intent is to access Hebei provincial government services, civil affairs, social security, or administrative online handling (政务服务/办事).",
+      "ad": {
+        "name": "红果短剧 - 海量热门短剧随心看",
+        "subtitle": "",
+        "developer": "Beijing Bimo Liuxiang Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / LLM analysis",
+          "note": "The query is a specific Chinese provincial government service app name. The advertised app is '红果短剧' (Hongguo Short Drama), a short-form video/drama streaming platform developed by Beijing Bimo Liuxiang Technology. There is no connection between Hebei government services and short-drama video entertainment. Different developer, different category, different audience, different use case."
+        }
+      ],
+      "relationship_analysis": "The query is a specific Chinese provincial government service app name. The advertised app is '红果短剧' (Hongguo Short Drama), a short-form video/drama streaming platform developed by Beijing Bimo Liuxiang Technology. There is no connection between Hebei government services and short-drama video entertainment. Different developer, different category, different audience, different use case.",
+      "rating": "Bad",
+      "comment": "[Query Intent] '河北冀时办' is the Hebei provincial government affairs / public service app, used for handling administrative and civil services online. [Ad Analysis] The advertised app '红果短剧' is a short-drama video streaming platform by Beijing Bimo Liuxiang Technology, targeting entertainment-seeking users. [Relevance Breakdown] No functional, categorical, developer, or audience overlap: government services vs. short-form video entertainment. [Why not higher/lower] The two serve completely different needs and user intents, so this is the lowest tier of relevance. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689668464",
+      "query": "美 图",
+      "query_intent": "Chinese users searching for \"美图\" (Meitu) are most likely looking for the Meitu app or other photo/beauty/selfie-editing apps from Meitu (Xiamen Meitu Technology), one of China's most well-known photo-editing and selfie-filter brands.",
+      "ad": {
+        "name": "Wink: Video Enhancer & Editor",
+        "subtitle": "",
+        "developer": "Xiamen Meitu Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / LLM analysis",
+          "note": "The advertised app \"Wink: Video Enhancer & Editor\" is developed by Xiamen Meitu Technology Co., Ltd. — the exact same developer as the Meitu app. Wink is a video beautification/enhancement tool focused on AI video retouching, similar in spirit to Meitu's photo beautification but for video. The developer match alone creates a strong connection: this is a first-party sibling product from the same company, in the same beauty/AI-editing ecosystem, and serves a closely related user need (video vs. photo beautification)."
+        }
+      ],
+      "relationship_analysis": "The advertised app \"Wink: Video Enhancer & Editor\" is developed by Xiamen Meitu Technology Co., Ltd. — the exact same developer as the Meitu app. Wink is a video beautification/enhancement tool focused on AI video retouching, similar in spirit to Meitu's photo beautification but for video. The developer match alone creates a strong connection: this is a first-party sibling product from the same company, in the same beauty/AI-editing ecosystem, and serves a closely related user need (video vs. photo beautification).",
+      "rating": "Good",
+      "comment": "The query \"美图\" indicates the user is looking for the Meitu app or related photo/beauty-editing tools from Meitu. The advertised app \"Wink: Video Enhancer & Editor\" is developed by Xiamen Meitu Technology Co., Ltd. — the same developer as Meitu, and it is a first-party sibling product focused on AI video beautification/enhancement, closely related to Meitu's photo beautification core. Because Wink targets video rather than photos and \"美图\" primarily evokes the photo-editing brand, it is not the exact match the user is searching for, but it is highly relevant within the same ecosystem. Not rated Excellent because the query is strongly tied to the Meitu photo app itself; not lower because developer and theme alignment is strong. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689668465",
+      "query": "小 视 频 软 件",
+      "query_intent": "用户想找短视频相关的应用，可能是短视频剪辑工具（如快手、抖音、剪映类）或短视频观看/分享平台。中文用户搜索\"小视频软件\"通常指短视频创作、编辑或浏览类App。",
+      "ad": {
+        "name": "rednote",
+        "subtitle": "",
+        "developer": "Xingin",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / LLM analysis",
+          "note": "Rednote（小红书的国际版）由 Xingin 开发，核心功能是生活方式分享社区，用户可以发布图文笔记、短视频内容并进行社交互动。它具备短视频发布和浏览能力，且在海外市场是知名的小红书品牌延伸产品。从功能大类看，两者都属于\"短视频/社交内容平台\"，存在一定重叠；但用户搜索\"小视频软件\"时更可能想到短视频剪辑工具或短视频内容平台（如 TikTok、快手、抖音、剪映等），而 Rednote 更偏向图文+视频并重的社交种草社区，并非纯短视频工具或纯短视频平台。"
+        }
+      ],
+      "relationship_analysis": "Rednote（小红书的国际版）由 Xingin 开发，核心功能是生活方式分享社区，用户可以发布图文笔记、短视频内容并进行社交互动。它具备短视频发布和浏览能力，且在海外市场是知名的小红书品牌延伸产品。从功能大类看，两者都属于\"短视频/社交内容平台\"，存在一定重叠；但用户搜索\"小视频软件\"时更可能想到短视频剪辑工具或短视频内容平台（如 TikTok、快手、抖音、剪映等），而 Rednote 更偏向图文+视频并重的社交种草社区，并非纯短视频工具或纯短视频平台。",
+      "rating": "Good",
+      "comment": "The query \"小视频软件\" indicates the user is looking for a short-video related app, likely a short-video editor/creator tool or a short-video platform. The advertised app \"Rednote\" by Xingin is the international version of 小红书, a lifestyle sharing community that supports posting short videos and engaging socially. It overlaps with short-video content creation/sharing but is primarily a lifestyle UGC community rather than a pure short-video app. There is meaningful relevance but not a direct match to what most users searching \"小视频软件\" would expect, so rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689668466",
+      "query": "浦 发 银 行",
+      "query_intent": "The query '浦发银行' refers to Shanghai Pudong Development Bank (SPD Bank), one of China's major commercial banks. The user is most likely looking for the official SPDB mobile banking app to manage accounts, transfers, credit cards, payments, and other retail banking services.",
+      "ad": {
+        "name": "长城炼金术-股票开户炒股",
+        "subtitle": "",
+        "developer": "China Great Wall Securities CO.,LTD.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / LLM analysis",
+          "note": "The advertised app '长城炼金术-股票开户炒股' is developed by China Great Wall Securities (长城证券) and is a stock brokerage / securities trading app used for opening stock accounts and trading equities. While both SPDB and Changcheng Securities are financial institutions in China, they serve fundamentally different functions: SPDB is a commercial bank for deposits, transfers, loans, and credit cards, whereas this app is a securities broker for stock trading. There is no name match, no shared developer, and no direct functional overlap. The only link is the very broad 'finance' category."
+        }
+      ],
+      "relationship_analysis": "The advertised app '长城炼金术-股票开户炒股' is developed by China Great Wall Securities (长城证券) and is a stock brokerage / securities trading app used for opening stock accounts and trading equities. While both SPDB and Changcheng Securities are financial institutions in China, they serve fundamentally different functions: SPDB is a commercial bank for deposits, transfers, loans, and credit cards, whereas this app is a securities broker for stock trading. There is no name match, no shared developer, and no direct functional overlap. The only link is the very broad 'finance' category.",
+      "rating": "Bad",
+      "comment": "The query '浦发银行' indicates the user is looking for the Shanghai Pudong Development Bank (SPD Bank) official mobile banking app to handle everyday banking needs such as accounts, transfers, and credit cards. The advertised app '长城炼金术-股票开户炒股' by China Great Wall Securities is a stock brokerage / securities trading app, which addresses a completely different financial need (equity trading) from a different type of financial institution. There is no developer match, no name match, and no functional overlap; the only connection is the broad 'finance' category, which is too weak to justify relevance. A user searching for 浦发银行 would be confused or annoyed to see a stock trading ad from a different institution. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T14:53:54",
+    "post_submit_status": "No errors visible"
+  }
+}

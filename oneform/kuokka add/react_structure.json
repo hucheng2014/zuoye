@@ -1,0 +1,302 @@
+{
+  "layers": [
+    {
+      "type": "unknown",
+      "props": null,
+      "state": {
+        "element": {
+          "type": "[Function]",
+          "key": null,
+          "ref": null,
+          "props": {
+            "nodeEnv": "production",
+            "tasks": {
+              "./0_ECG.task.json": null,
+              "./1_RawAudio.task.json": null,
+              "./2_AudioSpectrogram.task.json": null,
+              "./3_Video.task.json": null,
+              "./4_Telemetry.task.json": null,
+              "./5_review.tasks.json": null
+            },
+            "children": {
+              "type": "[Function]",
+              "key": null,
+              "ref": null,
+              "props": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "ha",
+      "props": {
+        "nodeEnv": "production",
+        "tasks": {
+          "./0_ECG.task.json": {
+            "assets": {
+              "csvFile": null,
+              "timeInterval": null
+            },
+            "plugin_config": {
+              "questions": null,
+              "chartsConfig": null,
+              "generalConfig": null
+            }
+          },
+          "./1_RawAudio.task.json": {
+            "assets": {
+              "audio": null
+            },
+            "plugin_config": {
+              "generalConfig": null,
+              "chartsConfig": null,
+              "questions": null
+            }
+          },
+          "./2_AudioSpectrogram.task.json": {
+            "assets": {
+              "audio": null
+            },
+            "plugin_config": {
+              "generalConfig": null,
+              "chartsConfig": null,
+              "questions": null
+            }
+          },
+          "./3_Video.task.json": {
+            "assets": {
+              "video": null,
+              "csvFile": null
+            },
+            "plugin_config": {
+              "questions": null,
+              "chartsConfig": null,
+              "generalConfig": null
+            }
+          },
+          "./4_Telemetry.task.json": {
+            "assets": {
+              "csvFile": null
+            },
+            "plugin_config": {
+              "questions": null,
+              "chartsConfig": null,
+              "generalConfig": null
+            }
+          },
+          "./5_review.tasks.json": [
+            {
+              "payload": null,
+              "type": "review"
+            },
+            {
+              "payload": null,
+              "type": "ground_truth"
+            }
+          ]
+        },
+        "children": {
+          "type": "[Function]",
+          "key": null,
+          "ref": null,
+          "props": {}
+        }
+      },
+      "state": null
+    },
+    {
+      "type": "n",
+      "props": {
+        "children": {
+          "type": "[Function]",
+          "key": null,
+          "ref": null,
+          "props": {}
+        }
+      },
+      "state": null
+    },
+    {
+      "type": "r",
+      "props": {},
+      "state": {
+        "task": {
+          "annotators": [],
+          "assets": {
+            "audio": [
+              null
+            ]
+          },
+          "pluginConfig": {
+            "readOnly": false,
+            "showQuestions": true,
+            "showMetrics": true,
+            "showAnnotators": false,
+            "viewportNamespace": "viewer",
+            "questions": [
+              null
+            ],
+            "chartsConfig": {
+              "charts": null,
+              "xAxisFormat": "d",
+              "minZoomDuration": 200,
+              "showChartYAxis": true,
+              "showVerticalGridLines": true,
+              "overviewPosition": "bottom"
+            },
+            "generalConfig": {
+              "supportChrome": true,
+              "supportSafari": true,
+              "stepSize": 5,
+              "videoMuted": false,
+              "warnAboutLoudAudio": true,
+              "supportedAnnotationTypes": null,
+              "supportOverlappingIntervals": true,
+              "infoText": "The data shown in this screen is not customer data.",
+              "showAnnotationsPanel": true,
+              "showSignalLegends": false,
+              "outputAbsoluteTimestamps": false,
+              "autoDetectSpeech": "no",
+              "enableIntervalPlay": true,
+              "enableSnappingAnnotations": true,
+              "showOnlyAnnotationsInViewport": false,
+              "audioSampleRate": "default",
+              "immutablePreannotations": false
+            },
+            "pluginId": "348cd836-cfcb-35bb-9d47-527f6e797eb4",
+            "savable": false
+          }
+        },
+        "ingestedTasks": [
+          {
+            "annotators": "[Circular]",
+            "assets": "[Circular]",
+            "pluginConfig": "[Circular]",
+            "type": null,
+            "taskId": "eb3b1f0b-7349-4318-a6b8-a30dd0ea8775",
+            "annotations": []
+          }
+        ],
+        "wasPutTasksCalled": false
+      }
+    },
+    {
+      "type": "n",
+      "props": {
+        "task": {
+          "annotators": [],
+          "assets": {
+            "audio": [
+              null
+            ]
+          },
+          "pluginConfig": {
+            "readOnly": false,
+            "showQuestions": true,
+            "showMetrics": true,
+            "showAnnotators": false,
+            "viewportNamespace": "viewer",
+            "questions": [
+              null
+            ],
+            "chartsConfig": {
+              "charts": null,
+              "xAxisFormat": "d",
+              "minZoomDuration": 200,
+              "showChartYAxis": true,
+              "showVerticalGridLines": true,
+              "overviewPosition": "bottom"
+            },
+            "generalConfig": {
+              "supportChrome": true,
+              "supportSafari": true,
+              "stepSize": 5,
+              "videoMuted": false,
+              "warnAboutLoudAudio": true,
+              "supportedAnnotationTypes": null,
+              "supportOverlappingIntervals": true,
+              "infoText": "The data shown in this screen is not customer data.",
+              "showAnnotationsPanel": true,
+              "showSignalLegends": false,
+              "outputAbsoluteTimestamps": false,
+              "autoDetectSpeech": "no",
+              "enableIntervalPlay": true,
+              "enableSnappingAnnotations": true,
+              "showOnlyAnnotationsInViewport": false,
+              "audioSampleRate": "default",
+              "immutablePreannotations": false
+            },
+            "pluginId": "348cd836-cfcb-35bb-9d47-527f6e797eb4",
+            "savable": false
+          }
+        },
+        "combinedTasks": {
+          "annotators": [],
+          "assets": "[Circular]",
+          "pluginConfig": "[Circular]",
+          "type": null,
+          "taskId": "eb3b1f0b-7349-4318-a6b8-a30dd0ea8775",
+          "annotations": [],
+          "tasks": [
+            {
+              "annotators": null,
+              "assets": null,
+              "pluginConfig": null,
+              "type": null,
+              "taskId": "eb3b1f0b-7349-4318-a6b8-a30dd0ea8775",
+              "annotations": null
+            }
+          ]
+        },
+        "setSubmissionButtonState": "[Function]",
+        "hideAnnotationsPanelToggle": true
+      },
+      "state": {
+        "uiState": 2,
+        "selectedAnnotationId": null,
+        "currentHeadingTime": 0,
+        "currentTrackerTime": {},
+        "playbackRateIdx": 3,
+        "annotationMode": 1,
+        "annotationSuggestionsState": true,
+        "suggestFewShotLearningAnnotations": true,
+        "shouldHighlightQuestionsPanel": false,
+        "shouldEnablePlaying": true,
+        "videoSource": null,
+        "annotations": [],
+        "annotationSuggestions": [],
+        "showLabels": true,
+        "currentFocusPanel": null,
+        "filterState": {
+          "USER": {},
+          "TASK_TYPE": {
+            "null": true
+          }
+        },
+        "shouldShowAnnotationsPanel": true,
+        "timeRange": {}
+      }
+    },
+    {
+      "type": "n",
+      "props": {
+        "children": {
+          "type": "[Function]",
+          "key": null,
+          "ref": null,
+          "props": {
+            "children": [
+              null,
+              null
+            ],
+            "border": 1,
+            "windowResizeAware": true,
+            "className": ""
+          }
+        }
+      },
+      "state": null
+    }
+  ]
+}

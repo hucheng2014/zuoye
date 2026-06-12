@@ -1,0 +1,143 @@
+{
+  "batch_id": "2026-06-08_batch_014",
+  "project": "AD Search Ads Relevance",
+  "operator": "cursor-agent",
+  "created_at": "2026-06-08T21:40:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689649341",
+      "query": "动 作 游 戏",
+      "query_intent": "User is browsing for action games — mobile titles in the action genre with fast-paced combat gameplay.",
+      "ad": {
+        "name": "仙遇",
+        "subtitle": "遇见端游时代的自己",
+        "developer": "Hainan YunKai Network Technology Ltd",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "App Store ad preview / local knowledge",
+          "note": "仙遇 is a fantasy MMORPG marketed around nostalgic PC-era MMO experiences, not primarily an action-game title."
+        }
+      ],
+      "relationship_analysis": "Both are mobile games, but the query targets the action-game category while 仙遇 is an MMORPG/RPG focused on social MMO nostalgia rather than action-genre gameplay.",
+      "why_not_higher": "Not Excellent/Good because the ad is not an action game or a direct action-genre competitor; it is an MMORPG with a different core genre positioning.",
+      "why_not_lower": "Still within mobile gaming, so there is a weak genre-level connection rather than zero relevance.",
+      "rating": "Acceptable",
+      "comment": "[Query Intent] The query \"动 作 游 戏\" indicates the user is looking for action-genre mobile games with fast-paced combat. [Ad Analysis] The advertised app \"仙遇\" is a fantasy MMORPG focused on nostalgic PC-era MMO social gameplay, not an action-game title. [Relevance Breakdown] Both are mobile games, but the query targets the action category while the ad is an MMORPG with different genre positioning and audience expectations. [Why not higher/lower] Not Good because it does not directly satisfy action-game intent; not Bad because it remains within the broader mobile gaming space. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689649342",
+      "query": "红 果 漫 剧",
+      "query_intent": "User is searching for 红果漫剧 (Hongguo), a short-drama / vertical comic-drama streaming app for free mini-series content.",
+      "ad": {
+        "name": "优酷视频-《翘楚》全网独播",
+        "subtitle": "陈都灵周翊然掀翻野心局",
+        "developer": "Youku.com Inc.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Local knowledge / ad preview",
+          "note": "红果漫剧 is ByteDance's short-drama platform; Youku is a major long-form video streaming app currently promoting the drama 翘楚."
+        }
+      ],
+      "relationship_analysis": "Both serve drama/video entertainment needs. Youku is a general streaming platform with promoted drama content, making it a plausible alternative though not the same short-drama specialist app.",
+      "why_not_higher": "Not Excellent because the user likely wants the specific Hongguo short-drama app, not a general long-form video platform.",
+      "why_not_lower": "Clear overlap in drama/video streaming intent; user searching for drama apps would reasonably consider Youku.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"红 果 漫 剧\" indicates the user wants a short-drama / comic-drama streaming app for vertical mini-series content. [Ad Analysis] The advertised app is Youku Video, a major Chinese streaming platform currently promoting the exclusive drama series 翘楚. [Relevance Breakdown] Both fulfill drama and video entertainment needs; Youku offers licensed drama content that aligns with the user's viewing intent even though it is a general streaming platform rather than a short-drama specialist. [Why not higher/lower] Not Excellent because it is not the specific Hongguo app the user searched for; not Acceptable because the drama-streaming connection is strong and users would likely find it useful. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689649343",
+      "query": "望 着 荣 耀",
+      "query_intent": "User is almost certainly searching for 王者荣耀 (Honor of Kings), the popular MOBA mobile game — \"望着荣耀\" appears to be a typo or mis-input for that title.",
+      "ad": {
+        "name": "斗罗大陆:魂师对决",
+        "subtitle": "自选SP阵容开局",
+        "developer": "Anhui 37 Network Technology Co., Ltd.",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "Local knowledge / ad preview",
+          "note": "Honor of Kings is a 5v5 MOBA; Soul Land: Duel of Fighters is an IP-based RPG/gacha game with completely different gameplay."
+        }
+      ],
+      "relationship_analysis": "Despite both being popular Chinese mobile games, MOBA competitive multiplayer vs IP-based RPG/gacha are entirely different play styles, themes, and audiences.",
+      "why_not_higher": "No meaningful gameplay, genre, or IP overlap with Honor of Kings MOBA intent.",
+      "why_not_lower": "N/A — this is Bad.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"望 着 荣 耀\" indicates the user is searching for 王者荣耀 (Honor of Kings), a popular 5v5 MOBA mobile game — likely a typo for that title. [Ad Analysis] The advertised app \"斗罗大陆:魂师对决\" is an IP-based RPG/gacha game with character collection and PvE/PvP RPG mechanics, developed by 37 Interactive Entertainment. [Relevance Breakdown] Both are mobile games, but MOBA competitive esports gameplay and Soul Land RPG/gacha are completely different genres, play styles, themes, and target audiences. A user wanting Honor of Kings would not logically click a Soul Land RPG ad. [Why not higher/lower] Not Acceptable because merely sharing the \"mobile game\" category is insufficient when genres are entirely unrelated. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689649344",
+      "query": "空 条 遥 控 器",
+      "query_intent": "User is most likely searching for an air-conditioner remote control app (空调遥控器), with 空条 being a common typo for 空调.",
+      "ad": {
+        "name": "UniRemote-Universal TV Control",
+        "subtitle": "Smart Remote Control for TV",
+        "developer": "SINGATOP",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / query interpretation",
+          "note": "UniRemote is a universal TV remote app; query likely targets AC remote control rather than TV remote."
+        }
+      ],
+      "relationship_analysis": "Both are remote-control utility apps, but they control different home appliances (AC vs TV), creating only a weak functional overlap.",
+      "why_not_higher": "Not Good because the user wants AC remote functionality, not TV remote control.",
+      "why_not_lower": "Still within the remote-control app category, so the connection is understandable though weak.",
+      "rating": "Acceptable",
+      "comment": "[Query Intent] The query \"空 条 遥 控 器\" most likely indicates the user wants an air-conditioner remote control app (空调遥控器), with 空条 being a common typo for 空调. [Ad Analysis] The advertised app \"UniRemote-Universal TV Control\" is a smart TV remote control utility by SINGATOP. [Relevance Breakdown] Both are remote-control utility apps for home appliances, but AC remote and TV remote serve different devices and use cases. [Why not higher/lower] Not Good because the specific appliance controlled does not match user intent; not Bad because both belong to the remote-control tools category with a weak but understandable link. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689649345",
+      "query": "兰 博 基 尼 大 牛",
+      "query_intent": "User is searching for Lamborghini Aventador (大牛) content — luxury supercar information, imagery, or related automotive entertainment.",
+      "ad": {
+        "name": "乐道汽车",
+        "subtitle": "让家庭生活更美好",
+        "developer": "NIO Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Local knowledge / ad preview",
+          "note": "乐道 (Onvo) is NIO's family-oriented affordable EV sub-brand, entirely different from Lamborghini luxury supercars."
+        }
+      ],
+      "relationship_analysis": "Both involve automobiles, but luxury supercar enthusiast intent vs family mass-market EV purchase app are completely misaligned in audience, price segment, and use case.",
+      "why_not_higher": "No segment, brand, or user-goal overlap beyond the word 'car'.",
+      "why_not_lower": "N/A — this is Bad.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"兰 博 基 尼 大 牛\" indicates the user is interested in the Lamborghini Aventador luxury supercar — 大牛 is a common Chinese nickname for that model. [Ad Analysis] The advertised app \"乐道汽车\" is NIO's family-oriented affordable electric vehicle brand and sales/service platform. [Relevance Breakdown] Although both relate to automobiles, a Lamborghini supercar enthusiast query and a family EV purchase app target completely different price segments, audiences, and use cases. The user would be confused or uninterested. [Why not higher/lower] Not Acceptable because the surface automotive category overlap is too weak when core intent (luxury supercar) and ad offering (family EV) are entirely mismatched. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T13:34:41",
+    "post_submit_status": "No errors visible"
+  }
+}

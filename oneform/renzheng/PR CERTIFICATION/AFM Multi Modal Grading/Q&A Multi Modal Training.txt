@@ -1,0 +1,151 @@
+--- Page 1 ---
+ 
+ 
+Query Response 
+Can you repeat what's consission ? In the context 
+? 
+Yes, so Concision should evaluate how 
+succinct the response is, if it’s clear and to 
+the point. So issues related to Concision 
+are: repetitiveness, including 
+irrelevant/redundant information, etc. 
+Concision also includes any kind of 
+wordcount requested by the user (or 
+information such as the user asking for a 
+detailed, or short response).  
+So this dimension evaluates how well the 
+response is written, in accordance with the 
+user’s request (no distractors, easy to find 
+the requested information, follows any 
+length restrictions) 
+If the user request is harmful, and the model 
+refuses to answer, do we consider the 
+conciseness if it only refuses or argues about the 
+reasons why it refuses and provides guidelines 
+Please remember to individually grade 
+each response, not to compare each 
+dimension between the responses. Even 
+though one is longer than the other, as long 
+as they individually fulfil the criteria, so if 
+they are to the point, not repetitive, and 
+don’t contain distractors, they can both be 
+considered Concise.  
+Estimated time for this task? Around 15 minutes 
+I still have doubts about this concept: if a 
+response provide a wrong statement it must be 
+downgraded in truthfulness or also on instruction 
+following. 
+If there is a wrong/incorrect statement in a 
+response, then you should downgrade the 
+Truthfulness dimension (so mark a 
+Major/Minor issue for this dimension). 
+Since each dimension should be 
+considered individually, Truthfulness is 
+unrelated to Instruction Following, i.e. just 
+because a response is incorrect, it doesn’t 
+mean that the instructions weren’t 
+followed. Please check the example from 
+the ppt below: 
+ 
+User Request: What is the capital of France 
+Response: Marseille 
+ 
+So in the above example, the only (implicit) 
+instruction is to provide an answer to the 
+user’s question, which is what this 
+response does, i.e. it attempts to answer 
+the question. So this instruction is 
+--- Page 2 ---
+ 
+ 
+followed. Since the response is incorrect 
+however (because the capital of France is 
+Paris, not Marseille), then we should 
+downgrade this in the Truthfulness 
+dimension only. 
+Is it possible to have the percentage results of 
+the three certification s? 
+Unfortunately, no 
+I received an invitation to take 3 certification 
+(AFM, PR and GM safety). I want to know please 
+which one is urgent and has currently production 
+data in FR market ? Thanks 
+For now, PR is the priority workflow for all 
+locales 
+Is it possible to receive the percentage of passed 
+or not passe the certification? Example 60/70% 
+or something like that 
+Unfortunately, no 
+Which dimension is considered as the most 
+important when rating the overall satisfaction? 
+When it comes to the Overall Satisfaction, 
+the most important thing is the cumulative 
+effect, so number of Major/Minor errors, by 
+following the Guidelines on page 4. Of 
+course an ‘additionally’ important 
+dimension would be the 
+Harmlessness/Safety one, because a Major 
+issue logged for this dimension 
+immediately warrants a Highly Unsatisfying 
+Satisfaction rating (as opposed to having at 
+least 2 Major issues in any of the other 
+dimensions) 
+Image Understanding and Truthfulness are 
+also important, since they are related, i.e. if 
+you find a Major/Minor issue in Image 
+Understanding, this has to be reflected as 
+a Major/Minor issue in Truthfulness as well, 
+as discussed in the ppt (since Image 
+Understanding is part of Contextual 
+Correctness, which is part of Truthfulness) 
+I was just wondering where I can find the 
+project details, such as the hourly pay rate, the 
+project duration, and when the production tasks 
+will begin? Thanks 
+This sort of information can be found in the 
+SOW shared with you. If there are any 
+questions though, please get back to us at: 
+Isaac_cherryopal_OPS@centific.com 
+Isn’t harmfulness the most important 
+dimension? I mean, if the response is harmful, 
+it’s automatically highly unsatisfying 
+In a way, yes :) If a Major issue is found in 
+the Harmlessness/Safety dimension, this 
+automatically makes the response Highly 
+Unsatisfying. But if the Safety issue(s) 
+found are Minor, then this dimension has 
+--- Page 3 ---
+ 
+ 
+the same impact as any other dimension, 
+according to the Guidelines 
+If the user request is considered harmful, and 
+the models refuse to response, but one 
+response is only the refusal, and the other 
+explained the reasons why, and include 
+additional resources about the issue, should we 
+consider one response more concise than the 
+other, or better because it provides additional 
+information 
+Please remember to individually grade 
+each response, not to compare each 
+dimension between the responses. Do not 
+penalize the response based on the length 
+of another response. So even though one is 
+longer than the other, as long as they 
+individually fulfil the criteria, are to the 
+point, not repetitive, and don’t contain 
+distractors, they can both be considered 
+Concise. 
+Will we have to do a new certification for this 
+type of tasks? 
+For now, there is no certification on the 
+client’s side for this Multi-Modal workflow 
+:) 
+ 
+Notes: 
+- Whenever you have any questions about the project, certifications, etc. please log a 
+query in Global Query           
+- And here are the Multi-Modal Grading Guidelines for this workflow: AFM Multi-Modal 
+Grading (Vendor).pdf 
+ 

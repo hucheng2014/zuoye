@@ -1,0 +1,392 @@
+[
+  {
+    "issue": "0044700",
+    "url": "https://globalquery.oneforma.com/view.php?id=44700",
+    "title": "0044700: Maximum working hours - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044700, 0044236, 0044683, 0044692, 0044668\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044700 Isaac Lighthouse Other topics private 2026-05-21 07:18 2026-05-21 07:37\n\nReporter Centific_VN_D.DO   \nStatus closed  \n\nSummary 0044700: Maximum working hours\nDescription Hi Team,\nI would like to ask for clarification regarding maximum working hours as I am allowed to work 10 hours per day in Cherry Opal PR and LE production.\nShould I stop at 7 hours 30 mins or 8 hours 30 mins according to Cherry Opal email.\n\nIsaac Lighthouse Applicable Language(s) vi_VN\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' Open\nUpload a screnshot below and confirm \"Yes\" Yes\nURL N/A\n\n Activities\n\n ines.vela\n\n 2026-05-21 07:34    private\n\nPM   ~0080050\n\n Hello,\n\nPlease do not work more than 8 hours a day, this means, 7.5 h working hours including both projects.\n\nBest regards\n\n Issue History\nDate Modified Username Field Change\n2026-05-21 07:18 Centific_VN_D.DO New Issue \n2026-05-21 07:18 Centific_VN_D.DO Assigned To => ines.vela\n2026-05-21 07:34 ines.vela Note Added: 0080050 \n2026-05-21 07:34 ines.vela Status pending => closed\nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": []
+  },
+  {
+    "issue": "0044236",
+    "url": "https://globalquery.oneforma.com/view.php?id=44236",
+    "title": "0044236: Instruction Fine-Tuning Grading - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044236, 0044700, 0044683, 0044692, 0044668\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044236 Isaac Lighthouse Other topics private 2026-05-07 13:08 2026-05-22 02:00\n\nReporter Centific_ZH_HON.CH   \nStatus closed  \n\nSummary 0044236: Instruction Fine-Tuning Grading\nDescription Hi, Instruction Fine-Tuning Grading shows up again. Since I have been told all my skills are correctly assigned, I guess this is an error on the client’s side? This problem hasn’t been fixed for weeks now. Previous issue ID: 0043658, 0043850\n\nHope there's a solution soon. Thanks.\n\nIsaac Lighthouse Applicable Language(s) zh_HK\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL -\n\n Activities\n\n Centific_ZH_HON.CH\n\n 2026-05-07 13:08\n\ntranslator  \n\n \n Screenshot 2026-05-08 at 3.46.07 AM.png (249,934 bytes)   \n Screenshot 2026-05-08 at 3.46.07 AM.png (249,934 bytes)   \n\n Mohan_Raj_Angaragonda\n\n 2026-05-21 07:49    private\n\nPM   ~0080053\n\n Hello,\n\nIt appears that you may have completed the PR certification under the Lighthouse project on 12th April. We can confirm that you have successfully passed the PR certification, and the PR Production skills have also been assigned to your profile.\n\nThank you.\n\n Centific_ZH_HON.CH\n\n 2026-05-21 22:08\n\ntranslator   ~0080076\n\n Hi, I was told by ines.vela that the task Instruction Fine-Tuning Grading, which uses Preference Ranking v5 guideline, belongs to the Cherry Opal project.\n\nAlso, I have only passed TA certifications from Lighthouse in April. I believe there is no PR certification in the Lighthouse project.\n\n Centific_ZH_HON.CH\n\n 2026-05-21 23:53\n\ntranslator   ~0080099\n\n FYI, this is everything I have passed so far, there is no PR certification:\n Screenshot 2026-05-22 at 2.51.13 PM.png (515,264 bytes)\n\n Mohan_Raj_Angaragonda\n\n 2026-05-22 02:00    private\n\nPM   ~0080130\n\n Hello,\n\nThank you for sharing the information. Fine-Tuning Grading is part of the PR Certification in the Cherry Opal project. If you are interested in participating, we would be happy to share the PR Certification details with you. Otherwise, please feel free to ignore.\n\nThank you.\n\n Issue History\nDate Modified Username Field Change\n2026-05-07 13:08 Centific_ZH_HON.CH New Issue \n2026-05-07 13:08 Centific_ZH_HON.CH Assigned To => ines.vela\n2026-05-07 13:08 Centific_ZH_HON.CH File Added: Screenshot 2026-05-08 at 3.46.07 AM.png \n2026-05-21 07:32 ines.vela Assigned To ines.vela => Mohan_Raj_Angaragonda\n2026-05-21 07:49 Mohan_Raj_Angaragonda Note Added: 0080053 \n2026-05-21 22:08 Centific_ZH_HON.CH Note Added: 0080076 \n2026-05-21 23:53 Centific_ZH_HON.CH Note Added: 0080099 \n2026-05-21 23:53 Centific_ZH_HON.CH File Added: Screenshot 2026-05-22 at 2.51.13 PM.png \n2026-05-22 02:00 Mohan_Raj_Angaragonda Status pending => closed\n2026-05-22 02:00 Mohan_Raj_Angaragonda Resolution open => fixed\n2026-05-22 02:00 Mohan_Raj_Angaragonda Note Added: 0080130 \nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "Screenshot 2026-05-08 at 3.46.07 AM.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=21659&type=bug",
+        "title": ""
+      },
+      {
+        "text": "Screenshot 2026-05-08 at 3.46.07 AM.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=21659&type=bug",
+        "title": ""
+      },
+      {
+        "text": "Screenshot 2026-05-22 at 2.51.13 PM.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22065&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044683",
+    "url": "https://globalquery.oneforma.com/view.php?id=44683",
+    "title": "0044683: Kuokka Add - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044683, 0044236, 0044700, 0044692, 0044668\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044683 Isaac Lighthouse Other topics private 2026-05-21 01:51 2026-05-21 07:54\n\nReporter Centific_Athena_Nish   \nStatus closed  \n\nSummary 0044683: Kuokka Add\nDescription Hi,\nI was working on ADM VCG and after submitting the 'Kuokka Add' task of annotation appeared. Is it allocated to me or it is by mistake. The menu on the right is not working. Kindly clarify if I have to qualify.\n\nIsaac Lighthouse Applicable Language(s) en_IN\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://starshot.scilliance.com/?broker=true\n\n Activities\n\n Centific_Athena_Nish\n\n 2026-05-21 01:51\n\ntranslator  \n\n \n Koakka Add.pdf (116,216 bytes)\n\n Centific_VN_A.NGU\n\n 2026-05-21 01:53\n\ntranslator   ~0080000\n\n Last edited: 2026-05-21 01:53\n\nView 2 revisions\n\n I have same issue here. Don't know why the unrelated tasks often appear.\n\n Centific_TR_HU.OZD\n\n 2026-05-21 01:54\n\ntranslator   ~0080001\n\n me too\n\n Centific_NA_N.LAA\n\n 2026-05-21 01:55\n\ntranslator   ~0080002\n\n same here\n\n Centific_ES_CARL.DAN\n\n 2026-05-21 01:59\n\ntranslator   ~0080003\n\n me too, what can we do?\n\n ines.vela\n\n 2026-05-21 02:22    private\n\nPM   ~0080014\n\n Hello,\n\nPlease note that we have just reported this to the client.\nWhile we receive an answer, please do not complete any task.\nWe will get back to you as soon as we have further information.\n\nBest regards\n\n ines.vela\n\n 2026-05-21 07:53    private\n\nPM   ~0080060\n\n Hello,\n\nThese tasks shouldn't appear anymore.\nIf you find them once again, please feel free to share in a new ticket.\n\nBest regards\n\n Issue History\nDate Modified Username Field Change\n2026-05-21 01:51 Centific_Athena_Nish New Issue \n2026-05-21 01:51 Centific_Athena_Nish Assigned To => ines.vela\n2026-05-21 01:51 Centific_Athena_Nish File Added: Koakka Add.pdf \n2026-05-21 01:53 Centific_VN_A.NGU Note Added: 0080000 \n2026-05-21 01:53 Centific_VN_A.NGU Note Edited: 0080000 View Revisions\n2026-05-21 01:54 Centific_TR_HU.OZD Note Added: 0080001 \n2026-05-21 01:55 Centific_NA_N.LAA Note Added: 0080002 \n2026-05-21 01:59 Centific_ES_CARL.DAN Note Added: 0080003 \n2026-05-21 02:22 ines.vela Note Added: 0080014 \n2026-05-21 07:53 ines.vela Note Added: 0080060 \n2026-05-21 07:54 ines.vela Status pending => closed\nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "Koakka Add.pdf",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22021&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044692",
+    "url": "https://globalquery.oneforma.com/view.php?id=44692",
+    "title": "0044692: Instruction Fine-Tuning Grading (unresolved) - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044692, 0044683, 0044236, 0044700, 0044668\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044692 Isaac Lighthouse Other topics private 2026-05-21 02:39 2026-05-21 08:53\n\nReporter Centific_ZH_HON.CH   \nStatus pending  \n\nSummary 0044692: Instruction Fine-Tuning Grading (unresolved)\nDescription Hi, I apologize for submitting repeated issue reports, but I have no alternative channel.\n\nThe response from Mohan_Raj_Angaragonda under issue ID 0044667 shows a continued misunderstanding:\n“Since you have cleared the PR certification, you are now able to see PR tasks in your Grader Portal. Please work on the PR production tasks.”\n\nIn fact, I was never part of the Cherry Opal project and have never completed their PR certification.\n\nI have clarified this multiple times since April via the Cherry Opal project team’s email, but my concern has not been addressed. As a result, this incorrect task assignment continues to reappear.\n\nPreviously submitted issue IDs on the same matter:\n0043658 – 2026-04-24 16:47\n0044236 – 2026-05-07 13:08\n0044667 – 2026-05-20 20:46\n\nIsaac Lighthouse Applicable Language(s) zh_HK\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL -\n\n Activities\n\n Centific_ZH_HON.CH\n\n 2026-05-21 02:39\n\ntranslator  \n\n \n Screenshot 2026-05-21 at 5.34.57 PM.png (652,699 bytes)\n\n Centific_NB_A.AAM\n\n 2026-05-21 05:31\n\ntranslator   ~0080030\n\n I am also still recieving these tasks even though I failed the qualification.\n\n Mohan_Raj_Angaragonda\n\n 2026-05-21 08:09    private\n\nPM   ~0080061\n\n Hello,\n\n@Centific_NB_A.AAM. Could you please check if your issue has been resolved?\n\nThank you\n\n Centific_NB_A.AAM\n\n 2026-05-21 08:53\n\ntranslator   ~0080069\n\n The tasks are gone now, but they usually go away as, presumably, other people are clearing the tasks. I've seen these tasks several times in the past and they usually clear in a few hours.\n\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-21 02:39 Centific_ZH_HON.CH New Issue \n2026-05-21 02:39 Centific_ZH_HON.CH Assigned To => ines.vela\n2026-05-21 02:39 Centific_ZH_HON.CH File Added: Screenshot 2026-05-21 at 5.34.57 PM.png \n2026-05-21 02:45 ines.vela Assigned To ines.vela => Mohan_Raj_Angaragonda\n2026-05-21 05:31 Centific_NB_A.AAM Note Added: 0080030 \n2026-05-21 08:09 Mohan_Raj_Angaragonda Note Added: 0080061 \n2026-05-21 08:53 Centific_NB_A.AAM Note Added: 0080069 \nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "Screenshot 2026-05-21 at 5.34.57 PM.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22030&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044668",
+    "url": "https://globalquery.oneforma.com/view.php?id=44668",
+    "title": "0044668: Instruction Fine-Tuning Grading - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044668, 0044692, 0044683, 0044236, 0044700\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044668 Isaac Lighthouse Other topics private 2026-05-20 21:18 2026-05-22 05:52\n\nReporter Centific_EN_VI.BA   \nStatus pending  \n\nSummary 0044668: Instruction Fine-Tuning Grading\nDescription Hi, wrong task, Instruction Fine-Tuning Grading, shows up in my Grader Portal.\n\nIsaac Lighthouse Applicable Language(s) en_IN\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://start-annotation.apple.com/\n\n Activities\n\n Centific_EN_VI.BA\n\n 2026-05-20 21:18\n\ntranslator  \n\n \n grade-tool.png (48,123 bytes)   \n grade-tool.png (48,123 bytes)   \n\n Centific_VN_A.NGU\n\n 2026-05-20 21:31\n\ntranslator   ~0079986\n\n Wrong locale for failed PR cert\nProblem same with me but the Cherry Team haven’t resolved it through email, which I sent 3 weeks ago), and I don’t know how to fix it.\nPlease sent for the Cherry team to resolve early. If not I can’t move to my production task.\nThanks,\n IMG_3287.jpeg (196,905 bytes)   \n IMG_3287.jpeg (196,905 bytes)   \n IMG_3288.jpeg (106,586 bytes)   \n IMG_3288.jpeg (106,586 bytes)   \n\n Centific_VN_A.NGU\n\n 2026-05-21 06:24\n\ntranslator   ~0080033\n\n Additionally, I often receive email of PR task. Please delete my email from Cherry Opal team also.\nThanks.\n IMG_3289.png (443,498 bytes)\n\n Mohan_Raj_Angaragonda\n\n 2026-05-21 08:12    private\n\nPM   ~0080062\n\n Hello,\n\n @Centific_VN_A.NGU. Could you please check if your issue has been resolved?\n\n Mohan_Raj_Angaragonda\n\n 2026-05-21 08:19    private\n\nPM   ~0080065\n\n Hello,\n\n Centific_EN_VI.BA@ This is not a wrong task. Fine-Tuning Grading is nothing but PR production tasks. Since you have cleared the PR certification, you are now able to see PR tasks in your Grader Portal. Please work on the PR production tasks.\n\nThank you.\n\n Centific_VN_A.NGU\n\n 2026-05-21 08:59\n\ntranslator   ~0080070\n\n Hi,\nNow, it is right locale for vietnam but I failed PR cert, I don’t keep that email but I know I don’t have production task of PR. PR task won’t appear for my account, right?\n\n Centific_EN_VI.BA\n\n 2026-05-21 20:40\n\ntranslator   ~0080072\n\n Thanks for the update please let me know from where can i access instruction fine tuning guidelines because the confluence page link in the grading window is not working.\nMohan_Raj_Angaragonda@\n\n Centific_VN_A.NGU\n\n 2026-05-22 05:52\n\ntranslator   ~0080138\n\n Hi,\nI received this email for being qualified for PR task, even I failed PR cert and no payment for PR cert also.\nPlease check it if I have qualified for PR task in vietnam or just a mistake?\nThanks,\n IMG_3291.png (443,406 bytes)\n\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-20 21:18 Centific_EN_VI.BA New Issue \n2026-05-20 21:18 Centific_EN_VI.BA Assigned To => ines.vela\n2026-05-20 21:18 Centific_EN_VI.BA File Added: grade-tool.png \n2026-05-20 21:18 Centific_EN_VI.BA Issue generated from: 0044667 \n2026-05-20 21:31 Centific_VN_A.NGU Note Added: 0079986 \n2026-05-20 21:31 Centific_VN_A.NGU File Added: IMG_3288.jpeg \n2026-05-20 21:31 Centific_VN_A.NGU File Added: IMG_3287.jpeg \n2026-05-20 23:19 ines.vela Assigned To ines.vela => aleksandra.randjelovic\n2026-05-20 23:29 ines.vela Assigned To aleksandra.randjelovic => Mohan_Raj_Angaragonda\n2026-05-21 06:24 Centific_VN_A.NGU Note Added: 0080033 \n2026-05-21 06:24 Centific_VN_A.NGU File Added: IMG_3289.png \n2026-05-21 08:12 Mohan_Raj_Angaragonda Note Added: 0080062 \n2026-05-21 08:19 Mohan_Raj_Angaragonda Note Added: 0080065 \n2026-05-21 08:59 Centific_VN_A.NGU Note Added: 0080070 \n2026-05-21 20:40 Centific_EN_VI.BA Note Added: 0080072 \n2026-05-22 05:52 Centific_VN_A.NGU Note Added: 0080138 \n2026-05-22 05:52 Centific_VN_A.NGU File Added: IMG_3291.png \nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "grade-tool.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22014&type=bug",
+        "title": ""
+      },
+      {
+        "text": "grade-tool.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22014&type=bug",
+        "title": ""
+      },
+      {
+        "text": "IMG_3287.jpeg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22016&type=bug",
+        "title": ""
+      },
+      {
+        "text": "IMG_3287.jpeg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22016&type=bug",
+        "title": ""
+      },
+      {
+        "text": "IMG_3288.jpeg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22015&type=bug",
+        "title": ""
+      },
+      {
+        "text": "IMG_3288.jpeg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22015&type=bug",
+        "title": ""
+      },
+      {
+        "text": "IMG_3289.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22038&type=bug",
+        "title": ""
+      },
+      {
+        "text": "IMG_3291.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22090&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044742",
+    "url": "https://globalquery.oneforma.com/view.php?id=44742",
+    "title": "0044742: Mismatch in time counting - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044742, 0044668, 0044692, 0044683, 0044236\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044742 Isaac Lighthouse Other topics private 2026-05-22 06:18 2026-05-22 08:18\n\nReporter Centific_FR-FR_P.DU   \nStatus closed  \n\nSummary 0044742: Mismatch in time counting\nDescription Hello,\n\nI just noticed a time counting mismatch between the welcome popup and the inside timer (see screenshots). Just wanted to let you know, to be sure the right time will be billed and pay !\n\nThank you for your help !\n\nIsaac Lighthouse Applicable Language(s) fr_FR\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL NA\n\n Activities\n\n Centific_FR-FR_P.DU\n\n 2026-05-22 06:18\n\ntranslator  \n\n \n Capture d'écran 2026-05-22 151724.png (14,360 bytes)   \n Capture d'écran 2026-05-22 151724.png (14,360 bytes)   \n Capture d'écran 2026-05-22 151706.png (38,989 bytes)   \n Capture d'écran 2026-05-22 151706.png (38,989 bytes)   \n\n ines.vela\n\n 2026-05-22 08:18    private\n\nPM   ~0080150\n\n Hello,\n\nThanks for flagging the issue.\nPlease note that this is just a UI issue.\nThe report used to create your POs is recording the time and tasks properly.\nYou can track the time you invest on daily basis manually and compare it with the hours included in the upcoming PO, in the event that any discrepancy appears, please feel free to share the number of hours and tasks invested per day and we will investigate the issue and fix it accordingly, but, as commented, time and tasks are being properly recorded in that report.\n\nWe are now closing this ticket, please feel free to raise any additional question in a new ticket if needed.\n\nBest regards\n\n Issue History\nDate Modified Username Field Change\n2026-05-22 06:18 Centific_FR-FR_P.DU New Issue \n2026-05-22 06:18 Centific_FR-FR_P.DU Assigned To => ines.vela\n2026-05-22 06:18 Centific_FR-FR_P.DU File Added: Capture d'écran 2026-05-22 151724.png \n2026-05-22 06:18 Centific_FR-FR_P.DU File Added: Capture d'écran 2026-05-22 151706.png \n2026-05-22 08:18 ines.vela Note Added: 0080150 \n2026-05-22 08:18 ines.vela Status pending => closed\nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "Capture d'écran 2026-05-22 151724.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22092&type=bug",
+        "title": ""
+      },
+      {
+        "text": "Capture d'écran 2026-05-22 151724.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22092&type=bug",
+        "title": ""
+      },
+      {
+        "text": "Capture d'écran 2026-05-22 151706.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22093&type=bug",
+        "title": ""
+      },
+      {
+        "text": "Capture d'écran 2026-05-22 151706.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22093&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044745",
+    "url": "https://globalquery.oneforma.com/view.php?id=44745",
+    "title": "0044745: Wrong workflow assigned for production - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044745, 0044742, 0044668, 0044692, 0044683\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044745 Isaac Lighthouse Other topics private 2026-05-22 06:38 2026-05-22 08:17\n\nReporter Centific_EN_N.SI   \nStatus closed  \n\nSummary 0044745: Wrong workflow assigned for production\nDescription Hi,\nI received an email to start production according to my completed certifications.\nThe email contains three workflows:\n\n1. VCG Base Creation\n2. VCG Edit Model\n3. VCG Text to Image\n\nThere is a misunderstanding regarding my completed certifications. I have passed the following:\n\n1. VCG Messages Background\n2. VCG Edit Model\n2. VCG Text to Image\n\nI have never attempted the \"VCG Base Creation\" certification (guideline issue).\n\nI have been assigned the wrong workflow for \"VCG Base Creation\" instead of \"VCG Messages Background\".\n\nThank you for your time and support.\n\nIsaac Lighthouse Applicable Language(s) en_IN\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://digitaltechedge.sharepoint.com/sites/IsaacLighthouse/Isaac%20Lighthouse/Forms/AllItems.aspx?id=%2Fsites%2FIsaacLighthouse%2FIsaac%20Lighthouse%2FVCG%20Guidelines&viewid=90d09eb3%2D6d61%2D4dcc%2D8146%2D403275d26cbf\n\n Activities\n\n Centific_EN_N.SI\n\n 2026-05-22 06:38\n\ntranslator  \n\n \n image.png (40,436 bytes)   \n image.png (40,436 bytes)   \n image-2.png (10,453 bytes)   \n image-2.png (10,453 bytes)   \n\n ines.vela\n\n 2026-05-22 08:16    private\n\nPM   ~0080149\n\n Hello,\n\nThanks for checking!\nPlease note that I can not help you with the email content since I miss context, however, I have checked the skills assigned to your user and you only have assigned the skills for the certifications you have already passed, so, please no worries, you won't received any task you are not certified for.\n\nBest regards\n\n Issue History\nDate Modified Username Field Change\n2026-05-22 06:38 Centific_EN_N.SI New Issue \n2026-05-22 06:38 Centific_EN_N.SI Assigned To => ines.vela\n2026-05-22 06:38 Centific_EN_N.SI File Added: image.png \n2026-05-22 06:38 Centific_EN_N.SI File Added: image-2.png \n2026-05-22 08:16 ines.vela Note Added: 0080149 \n2026-05-22 08:17 ines.vela Status pending => closed\nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "image.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22095&type=bug",
+        "title": ""
+      },
+      {
+        "text": "image.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22095&type=bug",
+        "title": ""
+      },
+      {
+        "text": "image-2.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22096&type=bug",
+        "title": ""
+      },
+      {
+        "text": "image-2.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22096&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044746",
+    "url": "https://globalquery.oneforma.com/view.php?id=44746",
+    "title": "0044746: TpT for AFM 3 Safety - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044746, 0044745, 0044742, 0044668, 0044692\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044746 Isaac Lighthouse Other topics private 2026-05-22 06:45 2026-05-22 08:10\n\nReporter Centific_ID_M.ZA   \nStatus pending  \n\nSummary 0044746: TpT for AFM 3 Safety\nDescription Hello,\n\nI want to ask: what is the expected Time per Task (TpT) for AFM 3 Safety task?\n\nThank you.\n\nIsaac Lighthouse Applicable Language(s) id_ID\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' Open\nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://starshot.scilliance.com/?broker=true\n\n Activities\nThere are no notes attached to this issue.\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 06:45 Centific_ID_M.ZA New Issue \n2026-05-22 06:45 Centific_ID_M.ZA Assigned To => ines.vela\n2026-05-22 08:10 ines.vela Assigned To ines.vela => Mohan_Raj_Angaragonda\nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": []
+  },
+  {
+    "issue": "0044610",
+    "url": "https://globalquery.oneforma.com/view.php?id=44610",
+    "title": "0044610: Payload not reachable (Error 600) - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044610, 0044746, 0044745, 0044742, 0044668\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044610 Isaac Lighthouse Tag Tool Issues private 2026-05-19 09:22 2026-05-22 08:09\n\nReporter Centific_NA_TUY.NG   \nStatus pending  \n\nSummary 0044610: Payload not reachable (Error 600)\nDescription Hi team,\nI’m experiencing Error 600 – Payload not reachable when opening the task. I have already checked Windows and Chrome settings, including network/VPN configurations, and retried multiple times, but the issue remains.\n\nPlease help investigate. Thank you.\n\nIsaac Lighthouse Applicable Language(s) vi_VN\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' Open\nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://task-viewer.scilliance.com/?taskId=147320ff-b4c3-4b83-b7ee-4724364a496f\n\n Activities\n\n ines.vela\n\n 2026-05-19 23:53    private\n\nPM   ~0079926\n\n Hello,\n\nThank you for bringing this technical issue to our attention. Before you start troubleshooting, please make sure that you are using the latest version of Google Chrome.\n\nOnce you made sure that you have the latest version of Google Chrome, please work through the following troubleshooting steps to resolve the problem and try to access the link give again:\n\n1. Delete cache and cookies from your current browser\n2. Use incognito/private browsing mode\n3. Try accessing the platform using a different browser\n\nLet us know if they help resolve the issue you're experiencing. If the problem persists, please provide more specific details including the below items about the error or challenge you're encountering. This is a crucial item to send for our further investigation.\n\nScreen recording of the issue.\n\nConsole log: Please follow the instructions from the file attached to this ticket.\n\nTask link from the tool (steps below)\n\nPlease follow the steps below to ensure you are sharing the correct link from the tool:\n\n1. Log in to the project/tool platform.\n2. Click on \"Start Grading\", and \"Accept/Start\"\n3. Scroll over to the top right corner of the screen and click on \"Report a Problem\"\n \n4. Click on \"Copy Link\" (as shown below) and share the link to us.\n \n\nOnce you have gathered all the information and task links, including the screen recording and console log, please send it directly to us by replying to this ticket and uploading the files.\n\nYour cooperation will greatly help us resolve the issue more quickly. If you have any questions or need assistance with collecting the data, feel free to reach out.\n\nThank you for your support and understanding.\n image.png (9,899 bytes)   \n image.png (9,899 bytes)   \n image-2.png (30,441 bytes)   \n image-2.png (30,441 bytes)   \n\n Centific_NA_TUY.NG\n\n 2026-05-20 10:47\n\ntranslator   ~0079979\n\n Hi team,\nSorry but when I followed your solution, it wasn't work.\nCan you give me other way to try?\n\n ines.vela\n\n 2026-05-21 06:32    private\n\nPM   ~0080036\n\n Hello,\n\nPlease note that the issue should be solved now, please let us know if the issue persists.\n\nBest regards\n\n Centific_NA_TUY.NG\n\n 2026-05-21 08:46\n\ntranslator   ~0080068\n\n Hi,\nThe issue persists when I try to access the task.\nBest regards\n\n ines.vela\n\n 2026-05-21 23:09    private\n\nPM   ~0080087\n\n Hello, Do you think you can let us know the task where this happens? (Project name).\nThanks in advance,\n\n Centific_NA_TUY.NG\n\n 2026-05-22 07:12\n\ntranslator   ~0080143\n\n Hi,\nThis project calls Edit Goldset Centific QA ()\n\n ines.vela\n\n 2026-05-22 08:09    private\n\nPM   ~0080146\n\n Please feel free to provide the information requested above like the screen recording and task link to help you with this issue.\n\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-19 09:22 Centific_NA_TUY.NG New Issue \n2026-05-19 09:22 Centific_NA_TUY.NG Assigned To => Behsookfong_Chew\n2026-05-19 23:53 ines.vela Note Added: 0079926 \n2026-05-19 23:53 ines.vela File Added: image.png \n2026-05-19 23:53 ines.vela File Added: image-2.png \n2026-05-20 10:47 Centific_NA_TUY.NG Note Added: 0079979 \n2026-05-21 06:32 ines.vela Note Added: 0080036 \n2026-05-21 08:46 Centific_NA_TUY.NG Note Added: 0080068 \n2026-05-21 23:09 ines.vela Note Added: 0080087 \n2026-05-22 07:12 Centific_NA_TUY.NG Note Added: 0080143 \n2026-05-22 08:09 ines.vela Note Added: 0080146 \nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "image.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=21982&type=bug",
+        "title": ""
+      },
+      {
+        "text": "image.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=21982&type=bug",
+        "title": ""
+      },
+      {
+        "text": "image-2.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=21983&type=bug",
+        "title": ""
+      },
+      {
+        "text": "image-2.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=21983&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044752",
+    "url": "https://globalquery.oneforma.com/view.php?id=44752",
+    "title": "0044752: Clarification Required on hi_Latn Responses for hi_IN Locale - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044752, 0044610, 0044746, 0044745, 0044742\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044752 Isaac Lighthouse LE private 2026-05-22 08:09 2026-05-22 08:09\n\nReporter Centific_NA_N.GAA   \nStatus pending  \n\nSummary 0044752: Clarification Required on hi_Latn Responses for hi_IN Locale\nDescription Dear Team,\n\nThank you for the recent clarification regarding hi_IN grading guidelines.\n\nI would like to request one additional clarification to ensure consistent evaluation from my side.\n\nThe update mentions that hi_Latn responses should receive a localization penalty in hi_IN tasks. My understanding is that hi_Latn refers to Hindi language written in Latin/English script (for example: “Mai Assam jaana chahta hun”) instead of Devanagari script (“मैं असम जाना चाहता हूँ”).\n\nHowever, in the currently shared guidelines documents, I could not find a specific instruction explaining:\n\nwhether hi_Latn should be treated as “Wrong Language”\nor if we should only mark “Localization Issues Present” under another category.\n\nCould you please confirm which exact localization label should be selected while grading hi_Latn responses in hi_IN locale tasks?\n\nThis will help me apply the guidelines correctly and consistently in future evaluations.\n\nThank you.\n\nIsaac Lighthouse Applicable Language(s) hi_IN\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' Open\nUpload a screnshot below and confirm \"Yes\" Yes\nURL NA\n\n Activities\nThere are no notes attached to this issue.\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 08:09 Centific_NA_N.GAA New Issue \n2026-05-22 08:09 Centific_NA_N.GAA Assigned To => Nenad.Vranic\nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": []
+  },
+  {
+    "issue": "0044748",
+    "url": "https://globalquery.oneforma.com/view.php?id=44748",
+    "title": "0044748: Sketch SBS Eval Conflict between the sketch and the prompt - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044748, 0044752, 0044610, 0044746, 0044745\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044748 Isaac Lighthouse Other topics private 2026-05-22 07:17 2026-05-22 08:08\n\nReporter Centific_KO_DO.OH   \nStatus pending  \n\nSummary 0044748: Sketch SBS Eval Conflict between the sketch and the prompt\nDescription The prompt asks for a magical scroll in a magical library. The sketch looks like an enchanted book. The output image is of a book, closely resembling the sketch, but it is definitely not a scroll. So, there is a contradiction between the prompt and the sketch.\n\nIsaac Lighthouse Applicable Language(s) ko_KR\nPrompt (copy full text; for VCG, please upload screenshot) 마법 도서관에 있는 마법에 걸린 두루마리.\n\nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution High marks for sketch resemblance, because that is the purpose of the task, but low marks for not following the prompt.\n\nA quote from the task instruction: \"Please pay attention to the guidance for Sketch-Output Alignment - the output image will need to closely resemble the input sketch to receive high score. \"\n\nStatus' Open\nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://task-viewer.scilliance.com/?taskId=036c20ba-5aa5-4f95-abc5-294d2f9e5773\n\n Activities\n\n Centific_KO_DO.OH\n\n 2026-05-22 07:17\n\ntranslator  \n\n \n image.png (17,603 bytes)   \n image.png (17,603 bytes)   \n image-2.png (439,956 bytes)\n\n image-3.png (1,600,544 bytes)\n\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 07:17 Centific_KO_DO.OH New Issue \n2026-05-22 07:17 Centific_KO_DO.OH Assigned To => ines.vela\n2026-05-22 07:17 Centific_KO_DO.OH File Added: image.png \n2026-05-22 07:17 Centific_KO_DO.OH File Added: image-2.png \n2026-05-22 07:17 Centific_KO_DO.OH File Added: image-3.png \n2026-05-22 08:08 ines.vela Assigned To ines.vela => Nenad.Vranic\nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "image.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22097&type=bug",
+        "title": ""
+      },
+      {
+        "text": "image.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22097&type=bug",
+        "title": ""
+      },
+      {
+        "text": "image-2.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22098&type=bug",
+        "title": ""
+      },
+      {
+        "text": "image-3.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22099&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044749",
+    "url": "https://globalquery.oneforma.com/view.php?id=44749",
+    "title": "0044749: AFM 3 Safety - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044749, 0044748, 0044752, 0044610, 0044746\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044749 Isaac Lighthouse Other topics private 2026-05-22 07:25 2026-05-22 08:08\n\nReporter Centific_NA_K.NAA   \nStatus pending  \n\nSummary 0044749: AFM 3 Safety\nDescription Hello, I would like to ask about the TPT (Time Per Task) for AFM 3 safety grading. Could you please let me know what the expected TPT is? Thank you.\n\nIsaac Lighthouse Applicable Language(s) id_ID\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' Open\nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://starshot.scilliance.com/?broker=true\n\n Activities\nThere are no notes attached to this issue.\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 07:25 Centific_NA_K.NAA New Issue \n2026-05-22 07:25 Centific_NA_K.NAA Assigned To => ines.vela\n2026-05-22 08:08 ines.vela Assigned To ines.vela => Mohan_Raj_Angaragonda\nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": []
+  },
+  {
+    "issue": "0044750",
+    "url": "https://globalquery.oneforma.com/view.php?id=44750",
+    "title": "0044750: Submitted Tasks Not Reflected in Annotation Tool - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044750, 0044749, 0044748, 0044752, 0044610\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044750 Isaac Lighthouse Tag Tool Issues private 2026-05-22 07:44 2026-05-22 07:44\n\nReporter Centific_ID_DEL.WID   \nStatus pending  \n\nSummary 0044750: Submitted Tasks Not Reflected in Annotation Tool\nDescription Hi Lighthouse Team,\n\nWhile I was working on the Sketch SBS Eval task, I submitted two tasks, but the annotation tool did not add them. Could you confirm if my submissions have been recorded?\n\nThank you for your support.\n\nIsaac Lighthouse Applicable Language(s) id_ID\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://starshot.scilliance.com/?broker=true\n\n Activities\n\n Centific_ID_DEL.WID\n\n 2026-05-22 07:44\n\ntranslator  \n\n \n Screenshot 2026-05-22 212502.png (138,537 bytes)   \n\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 07:44 Centific_ID_DEL.WID New Issue \n2026-05-22 07:44 Centific_ID_DEL.WID Assigned To => Behsookfong_Chew\n2026-05-22 07:44 Centific_ID_DEL.WID File Added: Screenshot 2026-05-22 212502.png \nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "Screenshot 2026-05-22 212502.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22100&type=bug",
+        "title": ""
+      },
+      {
+        "text": "Screenshot 2026-05-22 212502.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22100&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044744",
+    "url": "https://globalquery.oneforma.com/view.php?id=44744",
+    "title": "0044744: VCG Edit Model Prompt-Image Mismatch - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044744, 0044750, 0044749, 0044748, 0044752\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044744 Isaac Lighthouse VCG private 2026-05-22 06:36 2026-05-22 06:36\n\nReporter Centific_TR_H.OZ   \nStatus pending  \n\nSummary 0044744: VCG Edit Model Prompt-Image Mismatch\nDescription Hi, I have encountered a possible prompt-image mismatch, where it asks to edit elements on the bride and the groom, but image only has a kid as a main object and bride and groom are not present.\n\nIsaac Lighthouse Applicable Language(s) tr_TR\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' Open\nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://task-viewer.scilliance.com/?taskId=e9b9e6fc-d041-44ec-ab2c-ff5c4210d6b0\n\n Activities\nThere are no notes attached to this issue.\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 06:36 Centific_TR_H.OZ New Issue \n2026-05-22 06:36 Centific_TR_H.OZ Assigned To => Nenad.Vranic\nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": []
+  },
+  {
+    "issue": "0044743",
+    "url": "https://globalquery.oneforma.com/view.php?id=44743",
+    "title": "0044743: Time and task count issues - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044743, 0044744, 0044750, 0044749, 0044748\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044743 Isaac Lighthouse VCG private 2026-05-22 06:22 2026-05-22 06:34\n\nReporter Centific_PT_RA.MAR   \nStatus pending  \n\nSummary 0044743: Time and task count issues\nDescription The time and tasks I have worked on today are not showing correctly on the platform. I have at least one hour more than the platform is showing.\n\nIsaac Lighthouse Applicable Language(s) pt_BR\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://task-viewer.scilliance.com/?taskId=67cb78a8-619d-4d36-93af-30f2ce1ad180\n\n Activities\n\n Centific_PT_RA.MAR\n\n 2026-05-22 06:22\n\ntranslator  \n\n \n Captura de tela 2026-05-22 102058.png (609,516 bytes)\n\n Centific_KO_H.SH\n\n 2026-05-22 06:24\n\ntranslator   ~0080141\n\n Hi. Same here.\n\n Centific_NB_A.AAM\n\n 2026-05-22 06:34\n\ntranslator   ~0080142\n\n The timer has a tendency to lag by quite a bit.\n\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 06:22 Centific_PT_RA.MAR New Issue \n2026-05-22 06:22 Centific_PT_RA.MAR Assigned To => Nenad.Vranic\n2026-05-22 06:22 Centific_PT_RA.MAR File Added: Captura de tela 2026-05-22 102058.png \n2026-05-22 06:24 Centific_KO_H.SH Note Added: 0080141 \n2026-05-22 06:34 Centific_NB_A.AAM Note Added: 0080142 \nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "Captura de tela 2026-05-22 102058.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22094&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044734",
+    "url": "https://globalquery.oneforma.com/view.php?id=44734",
+    "title": "0044734: Guidelines for Sketch SBS Eval Task - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044734, 0044743, 0044744, 0044750, 0044749\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044734 Isaac Lighthouse Other topics private 2026-05-22 04:42 2026-05-22 06:08\n\nReporter Centific_ID_DEL.WID   \nStatus closed  \n\nSummary 0044734: Guidelines for Sketch SBS Eval Task\nDescription Hi Lighthouse Team,\n\nWhile I was working on the DOI SBS Eval task, I noticed that a new task called Sketch SBS Eval appeared. I'd like to understand what guidelines I should follow for this task so I can ensure I'm aligned with the correct process before proceeding.\n\nThank you for your guidance.\n\nIsaac Lighthouse Applicable Language(s) id_ID\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://starshot.scilliance.com/?broker=true\n\n Activities\n\n Centific_ID_DEL.WID\n\n 2026-05-22 04:42\n\ntranslator  \n\n \n Screenshot 2026-05-22 182539.png (135,196 bytes)   \n\n Centific_ID_R.WA\n\n 2026-05-22 05:36\n\ntranslator   ~0080135\n\n Same with me\n sketch sbs eval.png (24,353 bytes)   \n\n ines.vela\n\n 2026-05-22 06:07    private\n\nPM   ~0080140\n\n Hello,\nthanks for checking!\nPlease note that these tasks are VCG Text To Image tasks, please feel free to follow their Guidelines to complete them.\n\nBest regards\n\n Issue History\nDate Modified Username Field Change\n2026-05-22 04:42 Centific_ID_DEL.WID New Issue \n2026-05-22 04:42 Centific_ID_DEL.WID Assigned To => ines.vela\n2026-05-22 04:42 Centific_ID_DEL.WID File Added: Screenshot 2026-05-22 182539.png \n2026-05-22 05:36 Centific_ID_R.WA Note Added: 0080135 \n2026-05-22 05:36 Centific_ID_R.WA File Added: sketch sbs eval.png \n2026-05-22 06:07 ines.vela Note Added: 0080140 \n2026-05-22 06:08 ines.vela Status pending => closed\nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "Screenshot 2026-05-22 182539.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22080&type=bug",
+        "title": ""
+      },
+      {
+        "text": "Screenshot 2026-05-22 182539.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22080&type=bug",
+        "title": ""
+      },
+      {
+        "text": "sketch sbs eval.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22087&type=bug",
+        "title": ""
+      },
+      {
+        "text": "sketch sbs eval.png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22087&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044737",
+    "url": "https://globalquery.oneforma.com/view.php?id=44737",
+    "title": "0044737: Tool issue on task and time counting - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044737, 0044734, 0044743, 0044744, 0044750\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044737 Isaac Lighthouse Tag Tool Issues private 2026-05-22 05:27 2026-05-22 05:58\n\nReporter Centific_VN_HUN.NG   \nStatus pending  \n\nSummary 0044737: Tool issue on task and time counting\nDescription The tool did not count task submitted and the working time accordingly. Please see the attachments, even I submitted the task but the time and number of task remain unchanged.\n\nTask Title: Proofreading Eval\n \nLink: https://task-viewer.scilliance.com/?taskId=740ad405-631d-455c-b4b0-4ad5b0cd7009\n\nCollection ID: b33fb3bc-4c94-4e51-866a-d87a98b280d6\nTask ID: 740ad405-631d-455c-b4b0-4ad5b0cd7009\nWork ID: 7c38a0c6-0692-3b8e-add2-7141380d2579\nUser ID: e1c41998-1b4d-49f9-820c-cb7017b8bec6\nAnnotation Tool: task-editor 2.9\nStarshot Version: 4.41.2-1-gdc3de9b.1\n\nIsaac Lighthouse Applicable Language(s) vi_VN\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL https://task-viewer.scilliance.com/?taskId=740ad405-631d-455c-b4b0-4ad5b0cd7009\n\n Activities\n\n Centific_VN_HUN.NG\n\n 2026-05-22 05:27\n\ntranslator  \n\n \n z7854485852082_245c752e2d2b8f1234dfdd6e1fe9e9be.jpg (282,266 bytes)\n\n z7854485215556_d7d9f406b73faf83cb495df32e87c312.jpg (235,437 bytes)   \n\n Centific_VN_HUN.NG\n\n 2026-05-22 05:58\n\ntranslator   ~0080139\n\n Now it has updated correctly. Please close the ticket. Thanks.\n\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 05:27 Centific_VN_HUN.NG New Issue \n2026-05-22 05:27 Centific_VN_HUN.NG Assigned To => Behsookfong_Chew\n2026-05-22 05:27 Centific_VN_HUN.NG File Added: z7854485852082_245c752e2d2b8f1234dfdd6e1fe9e9be.jpg \n2026-05-22 05:27 Centific_VN_HUN.NG File Added: z7854485215556_d7d9f406b73faf83cb495df32e87c312.jpg \n2026-05-22 05:58 Centific_VN_HUN.NG Note Added: 0080139 \nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "z7854485852082_245c752e2d2b8f1234dfdd6e1fe9e9be.jpg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22085&type=bug",
+        "title": ""
+      },
+      {
+        "text": "z7854485215556_d7d9f406b73faf83cb495df32e87c312.jpg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22086&type=bug",
+        "title": ""
+      },
+      {
+        "text": "z7854485215556_d7d9f406b73faf83cb495df32e87c312.jpg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22086&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044739",
+    "url": "https://globalquery.oneforma.com/view.php?id=44739",
+    "title": "0044739: Task time and Task submitted not counting - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044739, 0044737, 0044734, 0044743, 0044744\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044739 Isaac Lighthouse LE private 2026-05-22 05:57 2026-05-22 05:57\n\nReporter Centific_HI_PRA.KOS   \nStatus pending  \n\nSummary 0044739: Task time and Task submitted not counting\nDescription Hello sir, I am doing work on PR tasks but tasks are not getting submitted and submitted time is not increasing in tool. I am working from aprroximate 45 min and submitted 3 tasks but non of them was counted in tool and no time is increased. Please look into this matter.\n\nIsaac Lighthouse Applicable Language(s) hi_Latn\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL NA\n\n Activities\n\n Centific_HI_PRA.KOS\n\n 2026-05-22 05:57\n\ntranslator  \n\n \n Screenshot (464).png (18,574 bytes)   \n\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 05:57 Centific_HI_PRA.KOS New Issue \n2026-05-22 05:57 Centific_HI_PRA.KOS Assigned To => Nenad.Vranic\n2026-05-22 05:57 Centific_HI_PRA.KOS File Added: Screenshot (464).png \nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "Screenshot (464).png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22091&type=bug",
+        "title": ""
+      },
+      {
+        "text": "Screenshot (464).png",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22091&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044735",
+    "url": "https://globalquery.oneforma.com/view.php?id=44735",
+    "title": "0044735: not counting the active time - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044735, 0044739, 0044737, 0044734, 0044743\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044735 Isaac Lighthouse Tag Tool Issues private 2026-05-22 05:21 2026-05-22 05:51\n\nReporter Centific_ZH_S.XU   \nStatus pending  \n\nSummary 0044735: not counting the active time\nDescription It does not counting my active time after 1 hour 30 minutes.\nI have done 3 tasks but it does not count in the active time.\n\nIsaac Lighthouse Applicable Language(s) zh_HK\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' \nUpload a screnshot below and confirm \"Yes\" Yes\nURL No\n\n Activities\n\n Centific_ZH_S.XU\n\n 2026-05-22 05:21\n\ntranslator  \n\n \n IMG_9616.jpeg (1,476,402 bytes)\n\n IMG_9617.jpeg (2,307,763 bytes)\n\n Centific_TR_P.OZ\n\n 2026-05-22 05:51\n\ntranslator   ~0080137\n\n I have the same issue, the timer stopped counting.\n\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 05:21 Centific_ZH_S.XU New Issue \n2026-05-22 05:21 Centific_ZH_S.XU Assigned To => Behsookfong_Chew\n2026-05-22 05:21 Centific_ZH_S.XU File Added: IMG_9616.jpeg \n2026-05-22 05:21 Centific_ZH_S.XU File Added: IMG_9617.jpeg \n2026-05-22 05:51 Centific_TR_P.OZ Note Added: 0080137 \nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "IMG_9616.jpeg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22081&type=bug",
+        "title": ""
+      },
+      {
+        "text": "IMG_9617.jpeg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22082&type=bug",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "issue": "0044738",
+    "url": "https://globalquery.oneforma.com/view.php?id=44738",
+    "title": "0044738: Tool issue on task and time counting - Global Query",
+    "text": "Global Query\n Report Issue\n Centific_ZH_JIA.LEI\nMy View\nView Issues\nReport Issue\n Centific_ZH_JIA.LEI ( Jiang Lei ) translator\nRecently Visited: 0044738, 0044735, 0044739, 0044737, 0044734\nView Issue Details\nJump to Notes\nJump to History\n\nID Project Category View Status Date Submitted Last Update\n0044738 Isaac Lighthouse Tag Tool Issues private 2026-05-22 05:39 2026-05-22 05:41\n\nReporter Centific_IT_A.FAZ   \nStatus pending  \n\nSummary 0044738: Tool issue on task and time counting\nDescription The tool did not correctly count the submitted activities and the time taken. Please refer to the attachments; I submitted two edit models, each lasting 600 seconds, and then switched to DOI SBS EVAL, and as you can see, there are 17 activities, each lasting about 718 seconds, so this is definitely incorrect. I want to emphasize that before switching to VCG, I was working on Kuokka, and this morning I worked for exactly about 3 hours and 46 minutes, so it should show a total of about 7 and a half hours. I see that many people on Query Global are encountering this issue, but I’m worried because I’ve already received an inactivity alert—I wouldn’t want to get any more since I’ve been extra careful with both inactivity and TPT. Also, I wouldn’t want to go unpaid for the actual time I’ve worked.\n\nIsaac Lighthouse Applicable Language(s) it_IT\nPrompt (copy full text; for VCG, please upload screenshot) \nResponse (copy full text; for VCG, please upload screenshot) \nCentific's take \nResolution \nStatus' Open\nUpload a screnshot below and confirm \"Yes\" Yes\nURL Tool issue on task and time counting\n\n Activities\n\n Centific_IT_A.FAZ\n\n 2026-05-22 05:39\n\ntranslator  \n\n \n WhatsApp Image 2026-05-22 at 14.33.20 (1).jpeg (20,216 bytes)   \n WhatsApp Image 2026-05-22 at 14.33.20 (1).jpeg (20,216 bytes)   \n WhatsApp Image 2026-05-22 at 14.33.20.jpeg (30,384 bytes)   \n WhatsApp Image 2026-05-22 at 14.33.20.jpeg (30,384 bytes)   \n\n Centific_IT_A.FAZ\n\n 2026-05-22 05:41\n\ntranslator   ~0080136\n\n By the way, it keeps showing 25 tasks even though I’m making progress.\n\n Add Note\nNote \n\nUpload Files\nMaximum size: 40,000 KB \n\nAttach files by dragging & dropping, selecting or pasting them.\n Issue History\nDate Modified Username Field Change\n2026-05-22 05:39 Centific_IT_A.FAZ New Issue \n2026-05-22 05:39 Centific_IT_A.FAZ Assigned To => Behsookfong_Chew\n2026-05-22 05:39 Centific_IT_A.FAZ File Added: WhatsApp Image 2026-05-22 at 14.33.20 (1).jpeg \n2026-05-22 05:39 Centific_IT_A.FAZ File Added: WhatsApp Image 2026-05-22 at 14.33.20.jpeg \n2026-05-22 05:41 Centific_IT_A.FAZ Note Added: 0080136 \nPowered by MantisBT\nCopyright © 2000 - 2026 MantisBT Team\nContact administrator for assistance",
+    "attachments": [
+      {
+        "text": "WhatsApp Image 2026-05-22 at 14.33.20 (1).jpeg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22088&type=bug",
+        "title": ""
+      },
+      {
+        "text": "WhatsApp Image 2026-05-22 at 14.33.20 (1).jpeg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22088&type=bug",
+        "title": ""
+      },
+      {
+        "text": "WhatsApp Image 2026-05-22 at 14.33.20.jpeg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22089&type=bug",
+        "title": ""
+      },
+      {
+        "text": "WhatsApp Image 2026-05-22 at 14.33.20.jpeg",
+        "href": "https://globalquery.oneforma.com/file_download.php?file_id=22089&type=bug",
+        "title": ""
+      }
+    ]
+  }
+]

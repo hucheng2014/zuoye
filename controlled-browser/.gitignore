@@ -1,0 +1,22 @@
+# Local environment/secrets
+.env
+.env.*
+!.env.example
+
+# Runtime/browser data
+# Screenshots
+*.png
+
+# Python cache
+__pycache__/
+*.pyc
+
+browser-data/
+.browser-profile/
+*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

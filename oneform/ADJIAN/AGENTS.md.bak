@@ -1,0 +1,57 @@
+# Project Memory: TryRating Broad Match
+## Scope
+- This project contains TryRating Broad Match evaluation reference material.
+- Primary source: `01JED1K24DP3WXDF2EDC2HMGEZ.pdf`, Broad Match Guidelines, August 2024.
+- Use this file as persistent project memory. Keep it concise and update it after new project-specific learnings.
+
+
+
+## Broad Match Task Goal
+- Compare advertiser keyword intent with expansion/query intent.
+- Rate exactly one of: `Good`, `Acceptable`, `Bad`.
+- Select the closest category and write a concise comment explaining the intent match or mismatch.
+- Judge intent, not just shared words, app category, brand owner, or broad genre.
+
+## Research Workflow
+- Identify whether each side is branded, non-branded, functional, navigational, a feature, a product, or a foreign-language term.
+- Use App Store research for branded app terms and app-ecosystem intent.
+- Use web search for non-branded terms, foreign terms, annual events, features, or ambiguous phrases.
+- Ignore ads in search results; compare organic App Store/web results and app descriptions.
+- If a term is not in the market language, translate it and mention the translation in the comment.
+
+## Rating Decision Order
+1. Normalize spelling, spacing, pluralization, word order, abbreviations, old app names, transliterations, and translations.
+2. If both sides preserve the same specific intent after normalization, rate `Good`.
+3. If they look different but share a meaningful app intent through competition, same functionality, or brand-feature/generic-function relationship, rate `Acceptable`.
+4. If intent/function differs, even within the same broad genre, same brand family, or shared word, rate `Bad`.
+5. Be careful with directionality: broad-to-specific can be acceptable only when the broad term clearly covers the specific app's central functionality; specific-to-broader often loses intent.
+
+## Good
+- Use `Good` when keyword and expansion are effectively the same intent.
+- Categories: spell correction, spacing, reordering, transliteration, singular/plural, abbreviation, same meaning with added/removed words, former app name, translation.
+- Examples: `tiktok` vs `tik tok`; `instagram` vs `ig`; `utube` vs `youtube`; `racing game` vs `racing games`; `Douyin` vs `抖音`; `Twitter` vs `X`.
+- Comment template: `Rated Good - <category>. Both terms preserve the same intent for <intent>.`
+
+## Acceptable
+- Use `Acceptable` when terms look different but share a relevant app intent or functionality.
+- Categories: direct competitors; brand terms with same functionality/features; brand term and non-brand function relation; non-brand terms with different wording but same/similar intent.
+- Examples: `LinkedIn` vs `Indeed`; `Disney` vs `Hulu`; `UNO` vs `Monopoly`; `multiplayer` vs `Fortnite`; `scanner pro` vs `scanner app`; `plant identifier` vs `flower identifier`; `fitness` vs `workout`.
+- Directional example: `learning games for kids` to `toddler games` can be acceptable because kids is broad enough to include toddlers; reverse is bad if toddler intent becomes broader kids intent.
+- Comment template: `Rated Acceptable - <category>. Research shows both terms share the intent of <shared intent>, though they are not the same term.`
+
+## Bad
+- Use `Bad` when keyword and expansion do not share the same intent or functionality.
+- Bad cases include unrelated brands, same brand with different product intent, same broad genre but different user goal, generic app/download/free terms expanded to a specific app, and specific-to-broad mismatches.
+- Examples: `Adidas` vs `ESPN`; `video editor` vs `collage maker`; `Google Maps` vs `Google Translator`; `Amazon Fresh grocery` vs `Amazon Alexa`; `shooting games` vs `toddler games`; `App` vs `Netflix`; `Free apps for iPhone` vs `Instagram`; `Download app` vs `Snapchat`.
+- Comment template: `Rated Bad - <category>. The keyword intent is <keyword intent>, while the expansion intent is <expansion intent>; they do not share the same user goal.`
+
+## Comments Rules
+- Keep comments short, factual, and tied to the selected category.
+- Mention research only when it materially supports the decision.
+- For translation: `Used translation: <term> means <meaning>. Both terms <share/do not share> the intent of <intent>.`
+- Do not write uncertainty as a final answer; if uncertain, research more before deciding.
+
+## Run Notes
+- 2026-05-02: Extracted Broad Match rules from the PDF and converted them into this persistent project memory. Direct TryRating task submission via automation is out of scope; use this memory for guidance and comment drafting only.
+- 2026-05-10: CRITICAL - Never navigate away from or close the TryRating task page during a session. Only use web/App Store search when absolutely necessary to determine intent. Make judgments based on term meaning and AGENTS.md rules first; use research as a last resort.
+After a question is completed and submitted, wait 25-55 seconds (random time) before starting the next question.

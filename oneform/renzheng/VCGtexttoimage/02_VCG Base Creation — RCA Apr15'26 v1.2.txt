@@ -1,0 +1,144 @@
+          VCG Base Creation — Feedback
+                    Apr15'26
+
+Error Analysis
+High concentration of errors in these dimensions:
+    • Structural Integrity → Very High (all locales)
+    • Contains All Requests → High
+    • Style Match → High
+    • Text Included or Requested → High
+    • Captured by Camera → Medium-High
+    • Visual Quality → Medium
+
+
+Error Breakdown
+Under-penalization is the dominant issue
+Consistent across all locales and most dimensions:
+    • Structural distortions (extra fingers, deformed limbs) marked minor instead of severe
+    • Missing prompt elements graded as 'captures most' rather than 'not aligned'
+    • Text errors (spelling, artifacts) identified but not reflected in the final score
+    • Style mismatches acknowledged but scored too leniently
+Trend: Annotators default to conservative grading rather than strict penalization
+
+Guideline misunderstanding is frequent
+   • Severity thresholds (minor / noticeable / severe) applied inconsistently across locales
+   • Style categories (Genmoji, Illustration) confused with photorealism or generic AI
+       aesthetics
+   • Photorealism judged by personal impression rather than objective visual cues
+   • Flag criteria for trademarked content overlooked
+   • 2b Text tag marked when no text was requested (N/A should apply)
+Trend: Guideline understanding and calibration gap
+
+Inconsistency (over- and under-penalization)
+    • Structural Integrity: Severely flawed images passed; clean images penalized
+    • Visual Quality: Blurry subjects missed; clear images downgraded
+    • Captured by Camera: AI-generated images pass as realistic; genuine photos downgraded
+    • Flag: Neutral content flagged without justification
+Trend: No stable shared calibration — assessments vary by individual
+Prompt reading is incomplete
+   • Specific quantities and attributes missed during review
+   • Partial fulfillment accepted without checking all prompt constraints
+   • Text requirements not verified against output
+Trend: Visual impression prioritized over systematic prompt verification
+
+Style recognition is shallow
+    • Style names recognized but not visually validated
+    • Mixed/hybrid styles not consistently penalized
+    • Illustration accepted as Genmoji; photorealism confused with style match
+Trend: Style evaluation requires calibration that has not been sufficiently instructed
+
+A/B and Preference Ranking errors
+   • Better-looking image selected instead of the one with fewer prompt failures
+   • PR rankings contradict dimension-level assessments within the same task
+Trend: Limited ability to evaluate comparatively, not just assess in absolute terms.
+
+RCA
+   •   Annotators don't know what minor vs. noticeable vs. severe means — they default to
+       'safe' (under-penalize)
+   •   Annotators observe randomly instead of following a structured scan order
+   •   Style understanding is low — style names recognized but not visually validated
+   •   Prompts read partially — constraints around objects, actions, text, and style are missed
+   •   No shared calibration anchors — grading varies by individual, not by standard
+
+
+Action Plan
+Structured image scan order
+    • Structural Integrity (anatomy, hands, face, objects)
+    • Prompt coverage (all requested elements present and correct)
+    • Style match (analyze carefully, research if not sure)
+    • Text accuracy (presence, spelling, formatting, case)
+    • Visual quality (blurs, stretched/skewed)
+    • Flag
+
+
+Severity Calibration
+   • Minor → Not noticeable at first glance; only visible on close inspection
+   1. Minor issue with the vase handle looking detached from the top section.
+2. Minor issue on the smaller chair having only two legs. Not noticed at first glance but
+   only upon closer inspection.
+3. Upon closer inspection we can see a slight issue in the shape of the woman’s hand (as if
+   merged fingers), and some structural issues with the castle in the background.
+•   Noticeable → Visible without zooming; breaks flow but image remains interpretable
+
+1. The hands dont look like they’re holding the glasses. There is also a piece of clothing
+   sticking out from the guy on the right side. These are Noticeable issues.
+2. Severe issues: There are severe issues with the finger/hands, and background face, that
+   are upgraded based on latest criteria.
+3. The hanger is clearly ‘floating’ in the air as it’s not ‘hooked’ on the chair. This is a
+   noticeable SI issue.
+•   Severe → Immediately apparent; breaks realism or basic form of the subject
+
+1. Severe SI issues; People’s faces are completely distorted.
+2. Severe flaws: some ears, eyes, mouths, and tails of the rabbits are very distorted and
+   fused.
+3. Severe issues as the person clearly has additional fingers.
+Penalty Calibration Examples
+   • Incorrect finger count → Severe SI
+Both adults have extra fingers, completely missed by annotators. Severe issue according to the
+GLs.
+•   Missing one non-central element → Captures most but not all
+
+1. Request: Vector illustration of two people throwing bagels to seagulls on a ferry in
+   Istanbul.
+   There is no representation of people throwing bagels at the seagulls.
+•   Primary object entirely absent → Not aligned
+    Request: Golden episcopal rings
+    Output provides wedding rings and not episcopal rings. This is not aligned.
+•   Heavy text distortion or spelling errors → Low accuracy (not moderate)
+    Requested text “Suadero”. The image has major spelling errors.
+•  Main subject out of focus → Mild/Noticeable/Severe → Visual Quality issue -
+   blurriness
+1. When the primary subject shows any blurriness, it should be downgraded in Visual
+   Quality (first image, toast).
+   If there is no primary subject, the overall image should not contain blurriness or lack of
+   sharpness (2nd image).
+   If there are some subjects in the image, but the image is captured more as a scenic view,
+   without a single subject in focus, there should be no blurriness in general.
+2. Bokeh effect should not be marked for blurriness.
+Style Recognition
+    • Do research to understand styles, if not covered by the GLs
+    • IMPORTANT: If the demo samples don’t open, click on “+Did Not Load” at the top of the
+       Response evaluation section. Then click on “✓Did Not Load” again. This should reload
+       the demo images.
+
+
+
+
+                                                →
+•   Cover photorealism cues: texture, lighting, shadow, material surface
+•   Examples shown for comparison
+
+1. The image on the top is somewhat realistic - Partially matches style. The liverwurst looks
+   too smooth and not like something spreadable on bread. The image on the bottom is
+   matching the style.
+2. The image on the top is somewhat realistic - Partially Matches Style. The textures
+   appear overly smooth giving it a not very natural look, unlike the case with the image on
+   the top, which is realistic.
+3. The following images are clearly NOT photorealistic, as they are AI-generated (image 1),
+   illustration style (image 2) and noir digital illustration (image 3).
+Image Comparison Framework
+   • Pick the LESS wrong image given the dimension evaluations; not the better-looking one
+   • Which misses fewer prompt elements?
+   • Which has fewer structural issues?
+   • Which has better Visual Quality?
+   • Ensure PR scores are consistent with dimension-level assessments before submitting

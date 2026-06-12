@@ -1,0 +1,2 @@
+const { chromium } = require('../node_modules/playwright');
+(async()=>{const browser=await chromium.connectOverCDP('http://127.0.0.1:9235'); const page=browser.contexts()[0].pages()[0]; const data=await page.locator('button,[role=button]').evaluateAll(els=>els.map((el,i)=>({i,tag:el.tagName,role:el.getAttribute('role'),text:(el.innerText||el.textContent||el.getAttribute('aria-label')||'').trim(),id:el.id,disabled:el.disabled,html:el.outerHTML.slice(0,400)}))); console.log(JSON.stringify(data,null,2)); await browser.close();})();

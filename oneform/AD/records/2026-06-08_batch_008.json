@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_008",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T13:35:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689640041",
+      "query": "华 为 生 活",
+      "query_intent": "User is searching for '华为智慧生活' (Huawei AI Life), the official app for managing Huawei smart home devices.",
+      "ad": {
+        "name": "华为商城",
+        "developer": "Huawei Device Co,. LTD"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"华 为 生 活\" indicates an intent to find the Huawei AI Life app used for managing smart home devices. The ad \"华为商城\" is the official e-commerce store for purchasing Huawei devices. While a smart device utility and an e-commerce store serve different primary functions, they belong to the same brand ecosystem and target Huawei consumers, offering a weak but valid topical connection. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689640042",
+      "query": "光 影 边 框",
+      "query_intent": "User is searching for an image editing app that provides specific photo frame features (light and shadow borders).",
+      "ad": {
+        "name": "像素蛋糕 - 专业级AI修图软件",
+        "developer": "Xiamen Truesight Technology Co., Ltd"
+      },
+      "rating": "Good",
+      "comment": "The query \"光 影 边 框\" indicates an intent to edit photos by adding specific lighting or shadow borders. The ad \"像素蛋糕\" is a professional photo editing and retouching application. Since the ad provides comprehensive image editing tools that can fulfill the user's photo manipulation needs, it is a highly relevant alternative within the exact same functional category. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689640043",
+      "query": "福 建 交 通 罚 没",
+      "query_intent": "User is searching for a local traffic management or government service app to pay traffic fines in Fujian province.",
+      "ad": {
+        "name": "广发证券开户尊享版-股票开户",
+        "developer": "广发证券股份有限公司"
+      },
+      "rating": "Bad",
+      "comment": "The query \"福 建 交 通 罚 没\" indicates an intent to find an official utility or portal for paying traffic violation fines. The ad \"广发证券开户尊享版\" is a financial and stock trading application. Since a municipal traffic fine payment utility and a stock trading application operate in completely different domains and serve entirely unrelated user needs, there is no logical connection. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689640044",
+      "query": "werverse",
+      "query_intent": "User is searching for 'Weverse' (with a typo), a global fan community platform for interacting with music artists (mostly K-pop).",
+      "ad": {
+        "name": "抖音精选-精挑细选独家好视频",
+        "developer": "Beijing Douyin Technology Co., Ltd."
+      },
+      "rating": "Bad",
+      "comment": "The query \"werverse\" is a typo indicating an intent to find \"Weverse\", a dedicated fan community and artist interaction platform. The ad \"抖音精选\" is a general short-to-medium video streaming app. Because a specialized music fan community platform and a general video entertainment app belong to different functional categories and target different user intents, they are unrelated. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689640045",
+      "query": "可 口 的 比 萨",
+      "query_intent": "User is searching for '可口的披萨，美味的披萨' (Good Pizza, Great Pizza), a popular cooking and restaurant management simulation game.",
+      "ad": {
+        "name": "爷爷的早餐店-经营你的家族餐厅",
+        "developer": "SOULBOX.LTD"
+      },
+      "rating": "Good",
+      "comment": "The query \"可 口 的 比 萨\" indicates an intent to play the popular pizza restaurant cooking and management simulation game. The ad \"爷爷的早餐店\" is another restaurant management and cooking simulation mobile game. Since both are casual business simulation games focused on preparing food and managing a restaurant, the ad is a highly relevant alternative appealing to the exact same player demographic. Rated Good.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T12:39:15",
+    "post_submit_status": "No errors visible"
+  }
+}

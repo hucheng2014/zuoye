@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_011",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T14:20:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689645036",
+      "query": "九 江 银 行",
+      "query_intent": "User is searching for the official mobile banking app of Jiujiang Bank.",
+      "ad": {
+        "name": "广发易淘金-证券开户炒股票 基金理财",
+        "developer": "广发证券股份有限公司"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"九 江 银 行\" indicates an intent to use a commercial mobile banking utility for financial management. The ad \"广发易淘金\" is a stock trading and securities investment application. While one is for commercial banking and the other is for securities trading, both belong to the broader financial services category and target users looking for financial management tools, offering a weak but valid topical connection. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689645037",
+      "query": "中 电 联",
+      "query_intent": "User is searching for official apps or services related to the 'China Electricity Council' (中电联).",
+      "ad": {
+        "name": "同程旅行-订酒店机票火车票,低价打车",
+        "developer": "Tongcheng Network Technology Co., Ltd."
+      },
+      "rating": "Bad",
+      "comment": "The query \"中 电 联\" indicates an intent to access electricity industry services or official CEC platforms. The ad \"同程旅行\" is a consumer travel booking and OTA application. Since an electricity industry utility and a travel booking platform operate in entirely different domains and address completely unrelated user needs, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689645038",
+      "query": "国 际 象 棋",
+      "query_intent": "User is searching for a game application to play International Chess.",
+      "ad": {
+        "name": "象棋 - 双人中国象棋，单机版策略小游戏",
+        "developer": "Wuhan Dobest Information Technology Co, Ltd."
+      },
+      "rating": "Good",
+      "comment": "The query \"国 际 象 棋\" indicates an intent to play International Chess, a classic strategy board game. The ad \"象棋\" is an application for Chinese Chess (Xiangqi). Since both are highly popular classic strategy board games that appeal to the exact same demographic of chess enthusiasts, the ad is a highly relevant alternative within the same specific game genre. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689645039",
+      "query": "拍 机 堂",
+      "query_intent": "User is searching for '拍机堂' (Paijitang), a B2B trading and wholesale platform for second-hand electronics.",
+      "ad": {
+        "name": "求带-玩什么都有人带",
+        "developer": "湖北盛天网络技术股份有限公司"
+      },
+      "rating": "Bad",
+      "comment": "The query \"拍 机 堂\" indicates an intent to use a second-hand electronics wholesale and trading platform. The ad \"求带\" is a social platform for finding video game companions and teammates. Because a B2B electronics trading platform and a gaming social app belong to completely different functional categories and target different user intents, they are entirely unrelated. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689645040",
+      "query": "盛 世 天 下",
+      "query_intent": "User is searching for '盛世天下' (Shengshi Tianxia), typically a historical or fantasy mobile MMORPG or strategy game.",
+      "ad": {
+        "name": "武林外传：十年之约",
+        "developer": "Zhejiang UmarkNetwork Technology Co.,Ltd"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"盛 世 天 下\" indicates an intent to play a specific Chinese historical or fantasy mobile role-playing game. The ad \"武林外传：十年之约\" is a martial arts MMORPG based on a famous Chinese IP. Since both are likely Chinese historical/fantasy RPG mobile games targeting similar core gamers, they share a valid topical association as entertainment alternatives. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T13:09:57",
+    "post_submit_status": "No errors visible"
+  }
+}

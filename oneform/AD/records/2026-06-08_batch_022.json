@@ -1,0 +1,66 @@
+{
+  "batch_id": "2026-06-08_batch_022",
+  "project": "AD Search Ads Relevance",
+  "operator": "cursor-agent",
+  "rating_method": "independent_judgment_v1",
+  "created_at": "2026-06-08T22:59:00",
+  "source_page": "tryrating current page (2 tasks)",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689671508",
+      "query": "大 侠 立 志 传",
+      "query_intent": "User is searching for 大侠立志传 (Hero's Adventure), a popular Chinese open-world martial arts RPG mobile game.",
+      "ad": {
+        "name": "蜀门手游-经典国风仙侠游戏",
+        "developer": "上海云蟾数码科技有限公司",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "大侠立志传 is a wuxia open-world RPG; 蜀门手游 is a classic Chinese xianxia fantasy MMORPG by a different developer."
+        }
+      ],
+      "relationship_analysis": "Both are Chinese martial-arts/fantasy mobile RPGs in a related genre but are different game titles and IPs.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"大 侠 立 志 传\" indicates the user wants the Hero's Adventure open-world martial arts RPG game. [Ad Analysis] The advertised app \"蜀门手游\" is a classic Chinese xianxia fantasy MMORPG published by Shanghai Yunchan Digital Technology. [Relevance Breakdown] Both are Chinese martial-arts and fantasy-themed mobile RPGs; players searching for one title in this genre often explore similar blockbuster alternatives even though the games are not the same IP. [Why not higher/lower] Not Excellent because it is a different game and developer; not Acceptable because the gameplay genre, theme, and audience overlap is strong enough that users would likely consider it. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689671509",
+      "query": "大 众",
+      "query_intent": "User is searching for Volkswagen (大众) brand-related apps, such as the official Volkswagen mobile app or vehicle services.",
+      "ad": {
+        "name": "蔚来",
+        "developer": "NIO Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "大众 commonly refers to the Volkswagen automotive brand in Chinese app search; 蔚来 is NIO's electric vehicle brand app."
+        }
+      ],
+      "relationship_analysis": "Competing automotive brand apps — same car-buying/ownership ecosystem but different manufacturers.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"大 众\" indicates the user wants Volkswagen brand mobile apps or automotive services associated with the 大众 (Volkswagen) marque. [Ad Analysis] The advertised app \"蔚来\" is the official mobile app for NIO, a competing electric vehicle manufacturer. [Relevance Breakdown] Both serve automotive brand and vehicle-related mobile needs; consumers researching one car brand frequently compare offerings from rival manufacturers in the same market. [Why not higher/lower] Not Excellent because it is not Volkswagen or a direct VW app; not Acceptable because the functional overlap in automotive brand apps and vehicle services is direct and users would reasonably explore competing brands. Rated Good.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T14:59:31",
+    "post_submit_status": "No errors visible"
+  }
+}

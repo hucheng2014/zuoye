@@ -1,0 +1,45 @@
+    Project       Question                                                     Screenshot   Centific's take                             Resolution                                                                          Status
+Intelligent Polls If "No poll is appropriate" is selected and the response                                                              If no poll is appropriate and the response is empty, this means the model
+                  is empty, do we need to penalize any dimension?                                                                       behaves correctly. So please do not penalize any dimension as this will
+                  Should the rating be "Following", "Good",                                                                             indicate the reponse as a poor result in the backend.
+                                                                                                                                                                                                                            Close
+                  "Comprehensive", and "Grounded"?
+                                                                                                                                        The rating you wrote is correct. The empty response is epxected and
+                                                                                                                                        correct.
+Intelligent Polls If "No poll is appropriate" is selected and the response                                                              From engineering DRI: The graders should follow the guidelines for
+                  is not empty, we know how to rate "Following                                                                          comprehensiveness. They should do their best to determine if the poll
+                  Instructions", "Composition" and "Groundedness" ("Not                                                                 meets the requirements for being comprehensive, even though they have
+                  Following", "Good", "Grounded" for Screenshot), but                                                                   decided that no poll is appropriate. I know this may be an odd task for             Close
+                  we are not sure how to rate the comprehensiveness?                                                                    examples where a poll seems like the last thing to suggest.
+
+
+Intelligent Polls As per the guideline, if a poll is generated, but it omits                Addendum: If the options are not            Your reasoning for Comprehensiveness is correct and aligned with the
+                  one or more options, or contains repeating options, it                    grounded (hallucinations, contradictory)    guidelines.
+                  should be rated "Not Following". This last point                          it means the model is omitting the
+                  essentially means that comprehensiveness and                              options explicitly mentioned in the input
+                  perhaps groundedness affect the rating of IF as well.                     as per the GLs. So the response would       “Would that mean that if the option is also not grounded, it would be not
+                  Meaning, if options are omitted (not comprehensive),                      be both not grounded and not                following”
+                  the response is rated as "Not following". Is that the                     comprehensive, which means                  ---> This is not written in the guideline so please do not make this
+                  correct understandnig?                                                    groundedness can affect IF. Can you         connection.
+                  Would that mean that if the option is also not                            confirm this is correct? If not, the
+                  grounded, it would be not following?                                      wording in the GL is misleading. <a         A poll can be instruction following, with a title and 2 or more options, but it's
+                                                                                            href="https://quip-                         possible the title or the options are not grounded.
+                                                                                            apple.com/VfM9EAGW4Z6">Yi-Ting                                                                                                  Close
+                                                                                            Chang</a>                                   Furthermore, please evaluate each dimension indepdently and avoid
+                                                                                                                                        letting your assessment of them influence each other.
+
+
+
+
+Intelligent Polls We find all examples in the guideline have the same                                                                   Since puncuation is not specified in the guideline, I don't expect it to be
+                  format and punctuations. Does the poll need to follow                                                                 penalized. However, let me check with the enginereing team and get back
+                  such format and punctuations like the example below?                                                                  to you.
+                  If a poll doesn't follow, should we penalize the
+                  composition?                                                                                                          update--feedback from engineering DRI: "The poll does not need to follow
+                                                                                                                                        that format, but the poll does need to have an explicit poll title and an    Close
+                 Title:                                                                                                                 explicit set of poll options. The quality of these is what we are interested
+                 XXX                                                                                                                    in.“
+                 Options:
+                 - XXX
+                 - XXX
+

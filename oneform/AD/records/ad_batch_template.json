@@ -1,0 +1,47 @@
+{
+  "batch_id": "YYYY-MM-DD_batch_001",
+  "project": "AD Search Ads Relevance",
+  "operator": "",
+  "created_at": "YYYY-MM-DDTHH:MM:SS",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "",
+      "query": "",
+      "query_intent": "",
+      "ad": {
+        "name": "",
+        "subtitle": "",
+        "developer": "",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store search / App Store preview / web search / local knowledge",
+          "note": ""
+        }
+      ],
+      "relationship_analysis": "",
+      "why_not_higher": "",
+      "why_not_lower": "",
+      "rating": "",
+      "comment": "",
+      "pre_submit_checked": false
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": false,
+    "all_comments_present": false,
+    "comments_match_each_task": false,
+    "bad_comments_explain_why": false,
+    "no_required_errors": false,
+    "record_matches_page": false
+  },
+  "submit": {
+    "authorized_by_user": false,
+    "submitted": false,
+    "submitted_at": "",
+    "post_submit_status": ""
+  }
+}

@@ -1,0 +1,234 @@
+A
+
+B
+
+C
+
+F
+
+G
+
+H
+
+I
+
+Tentpole
+
+Feature
+
+Locale
+
+Tag Link
+
+Customer Feedback
+
+Category
+
+SAA Feedback
+(confirm if they are following guidelines or guideline update
+is needed)
+
+1
+
+2
+
+L&D Feedback: "For Proofread, responses should not
+paraphrase, edit, or adjust the style of the original input text but
+should focus on grammatical corrections or simply repeat the
+input."
+
+3
+
+Text
+Assistant
+
+Proofread
+
+de_DE
+
+https://task-viewer.scilliance.com/?stepId=64751900-9d344c09-80c2-eac577abb130&uowIds=c86b7d49-06d2-58909341-575dacba4aad
+
+It seems graders are evaluating better sounding rewrites higher
+but the output should not be rewritten. Poor phrasing and such
+should not be a criteria for graders.
+
+Grader quality
+issue
+
+SAA Feedback: After checking the different comments and
+grading criteria of the AAs, it is visible that there is a major
+confusion with the purpose of the project Proofreading, which has
+been confused by Rewriting by some AAs.
+This leads the AAs to grade rewritten responses/outputs as better
+or much better, whereas the "only corrected" text that has not
+been rewritten would be more Satisfying for the user.
+See in this example, Response A is rewritten and was graded as
+Satisfying and Much Better than B, whereas B is not rewritten,
+only corrected and was penalised in all dimensions.
+
+https://task-viewer.scilliance.com/?
+workspaces=IZ8LNC&stepId=64751900-9d34-4c09-80c2eac577abb130&uowIds=d3bb05fb-b119-5397-9bbdae9c59455ba4
+
+4
+
+Text
+Assistant
+
+Proofread
+
+it_IT
+
+https://task-viewer.scilliance.com/?
+workspaces=IZ8LNC&stepId=64751900-9d34-4c09-80c2eac577abb130&uowIds=e5c4e096-6386-5035-aae75357d2c23adc
+https://task-viewer.scilliance.com/?
+workspaces=IZ8LNC&stepId=64751900-9d34-4c09-80c2eac577abb130&uowIds=ef885745-3d0c-575b-8b4fde7a1cae8f28
+
+It seems graders are evaluating better sounding rewrites higher
+but the output should not be rewritten. If any of the models
+introduces edits that do not fix objective mistakes, the response
+should be graded as partially following instructions. In particular,
+even if the source prompt includes factually incorrect information,
+the response should *not* correct the factuality of the source.
+Moreover, note that rewrites that change the style of the source
+prompt should also be marked as partially following instructions;
+this includes "sanitizing" regionalism by replacing them with
+standard Italian.
+
+Grader quality
+issue
+
+SAA feedback: the purpose of "following instructions" it is not
+clear to analysts. In the links provided, they have a tendency to
+makr as "fully following" those responses in which a prompt is
+rewritten with a better grammatical structure rather than factual
+mistakes. For examples, in tasks with scientific prompts, they
+tend to grade higher those responses that correct the scientific
+facts, misinterpreting the goal of "proofreading".
+The point that seems clearer to AAs is that, if the prompt doesn't
+contain major mistakes and the response simply rewrites the
+original text with no modifications, that is to be considered fully
+following.
+In their defense, the "Following Instructions" section of the
+guidelines should be more direct and specific on what's the goal
+of the project. The addiction of the examples surely helps, but an
+expansion of the definition of that dimension could be of further
+benefit.
+Also, the definition of "fully, partially and not" following
+instructions in the UI are very vague and do not give much insight
+on what is expected from the project.
+
+5
+
+Text
+Assistant
+
+6
+
+Text
+Assistant
+
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+
+Proofread
+
+Proofread
+
+ja_JP
+
+zh_CN
+
+https://task-viewer.scilliance.com/?
+workspaces=IZ8LNC&stepId=07409016-6f6e-4eb5-8c01e8d50c52d4b5&uowIds=5b9a583a-e60d-5199-9ad345ff642a0543
+
+https://task-viewer.scilliance.com/?
+workspaces=IZ8LNC&stepId=07409016-6f6e-4eb5-8c01e8d50c52d4b5&uowIds=f65b459f-cdac-560e-a345b6f9552aafc4
+https://task-viewer.scilliance.com/?
+workspaces=IZ8LNC&stepId=07409016-6f6e-4eb5-8c01e8d50c52d4b5&uowIds=fccf42ba-bc0b-59d4-8c37f5de5a2261d2
+
+It appears that graders prefer rewriting rather than simple
+proofreading for Japanese. Our team has observed that graders
+tend to assign lower satisfaction scores to texts that do not
+require any changes. However, if there are no grammatical errors
+in the input sentence and therefore no need for proofreading,
+returning the original input should still be graded as “fully
+following” the instruction with 100% satisfaction.
+
+Grader quality
+issue
+
+Response A repeats the original text, and we agree that Fully
+Following should have been selected as the response contains
+no modifications made.
+However, please note that the input text and the response contain
+a minor grammatical error as they lack a particle in part of the
+sentence: "...
+..." should be "...
+...
+That said, we assume that graders incorrectly chose Not
+Following as no corrections were made to the text. Therefore, the
+Composition rate should be lowered from Good to Bad for that
+same reason.
+
+Same feedback as the above feedback (the cell I5) found in
+zh_CN as well.
+
+Grader quality
+issue
+
+We agree with customer feedback. Both links here have no
+grammartical issue and there is no need to change anything,
+therefore can be graded as Fully Following and Highly Satisfying.
+
+させて
+
+カスタマイズさせて
+
+カスタマイズを
+
+

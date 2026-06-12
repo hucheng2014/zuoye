@@ -1,0 +1,1920 @@
+0:00
+0 分钟
+Hi everyone, and welcome.
+0:02
+0 分钟 2 秒
+I'm excited to kick off this training video on visual content generation, or as it's usually referred to as VCG.
+0:11
+0 分钟 11 秒
+Think about how much visual content you see every day, from social media posts to ads to illustrations and articles.
+0:20
+0 分钟 20 秒
+A lot of that content is now being generated, at least in part, by visual content generation models.
+0:27
+0 分钟 27 秒
+This training is all about giving you a solid understanding of how we evaluate the projects that train such models.
+0:35
+0 分钟 35 秒
+We're not just generating images, we're making sure they're good images, that they meet the user's needs, and that they're safe and appropriate.
+0:45
+0 分钟 45 秒
+Specifically, we'll be diving into how text prompts and even existing images can be used to generate a whole range of different image styles.
+0:55
+0 分钟 55 秒
+We'll also breakdown the different types of VCG tasks that we work on, walk through the typical workflow, and most importantly, cover the key criteria and methods we use to evaluate these images.
+1:09
+1 分钟 9 秒
+Your role in this project is to make sure the images are high quality and safe for our users.
+1:15
+1 分钟 15 秒
+By the end of this course, you'll be equipped to describe the purpose and outcome of the VCG projects, to define the main terms used across VCG projects, to recognize the steps of the evaluation process, identify the main evaluation methods, and finally apply evaluation criteria to different cases.
+1:40
+1 分钟 40 秒
+So what exactly is Visual Content generation or VCG?
+1:46
+1 分钟 46 秒
+And VCG is an artificial intelligence technology used to create images, videos, graphics and other visual media.
+1:55
+1 分钟 55 秒
+These technologies help create completely new images and videos or improve the quality of existing visuals like restoring old photos, upscaling, low resolution, etcetera.
+2:08
+2 分钟 8 秒
+Image generation is used in entertainment, advertising and virtual environments.
+2:14
+2 分钟 14 秒
+Among the areas where VCG technologies are used a lot are film and media production, documentary and historical research, educational materials, art restoration and cultural preservation, genealogy projects, and medicine, where enhanced images are used for diagnostics and research.
+2:35
+2 分钟 35 秒
+VCG is a versatile AI tool, transforming how we create and use visuals across industries.
+2:42
+2 分钟 42 秒
+It solves problems and unlocks new possibilities.
+2:46
+2 分钟 46 秒
+VCG offers incredible potential, but we also need to be aware of the ethical implications.
+2:53
+2 分钟 53 秒
+The ability to create realistic yet fake images and videos raises serious concerns.
+3:00
+3 分钟
+Think about misinformation.
+3:02
+3 分钟 2 秒
+So VCG could be used to spread false information and create convincing fakes.
+3:08
+3 分钟 8 秒
+Think about intellectual property.
+3:10
+3 分钟 10 秒
+Generating images too similar to existing works can lead to copyright issues, and beyond that, we need to consider bias and fairness.
+3:20
+3 分钟 20 秒
+The data used to train VCG models can contain biases leading to unfair or discriminatory outputs.
+3:28
+3 分钟 28 秒
+It's crucial to address these ethical challenges and to ensure that this technology is used responsibly.
+3:35
+3 分钟 35 秒
+VC GS impact on our lives is diverse.
+3:38
+3 分钟 38 秒
+It can be both positive and negative.
+3:41
+3 分钟 41 秒
+Let's look at a couple examples.
+3:43
+3 分钟 43 秒
+A potential positive impact.
+3:45
+3 分钟 45 秒
+Sarah used AI to enhance an old photo revealing a hidden detail.
+3:51
+3 分钟 51 秒
+This led to her discovering her great grandmother's achievements, writing a viral article and helping to launch a successful career.
+4:00
+4 分钟
+Now let's look at a potential negative impact.
+4:04
+4 分钟 4 秒
+Doctor P relied on a low quality AI enhanced MRI.
+4:09
+4 分钟 9 秒
+The AI introduced artifacts obscuring a tumor, leading to a misdiagnosis and significantly impacting the patient's health.
+4:19
+4 分钟 19 秒
+These two examples, they highlight a crucial point.
+4:22
+4 分钟 22 秒
+Image quality matters.
+4:25
+4 分钟 25 秒
+The quality of AI generated images directly impacts the user experience and it can have significant real world consequences.
+4:34
+4 分钟 34 秒
+As you can see, while VCG offers incredible benefits, it's essential to be aware of its limitations and potential risks.
+4:42
+4 分钟 42 秒
+And this brings us to the next key question.
+4:45
+4 分钟 45 秒
+What factors contribute to the quality of AI generated visual content?
+4:50
+4 分钟 50 秒
+Let's dive into quality considerations next.
+4:53
+4 分钟 53 秒
+The characteristics we look for in high quality AI generated visual content are listed here.
+5:00
+5 分钟
+So things like realism, high quality AI images should look realistic.
+5:06
+5 分钟 6 秒
+That means accurate textures, lighting, and details without obvious AI generated artifacts or distortions.
+5:14
+5 分钟 14 秒
+Basically the closer it looks to a real photo, assuming that that's the goal, the better consistency.
+5:21
+5 分钟 21 秒
+So quality images, they maintain a consistent style, color palette and overall aesthetic.
+5:28
+5 分钟 28 秒
+All the elements.
+5:29
+5 分钟 29 秒
+So objects, textures, lighting, they should work together harmoniously.
+5:34
+5 分钟 34 秒
+Think of it like a well designed room where everything complements each other.
+5:38
+5 分钟 38 秒
+Detail and clarity.
+5:40
+5 分钟 40 秒
+Good images should have clear details and sharp edges.
+5:44
+5 分钟 44 秒
+Even when you zoom in.
+5:45
+5 分钟 45 秒
+Fine details should be preserved and there shouldn't be excessive noise or blurriness.
+5:51
+5 分钟 51 秒
+It should be crisp and easy to see.
+5:54
+5 分钟 54 秒
+Creativity.
+5:56
+5 分钟 56 秒
+We're not looking for simple copies here.
+5:58
+5 分钟 58 秒
+AI should be able to take input and create something new, something visually appealing and unique.
+6:05
+6 分钟 5 秒
+It should demonstrate imagination and artistic flair, going beyond mirror replication.
+6:12
+6 分钟 12 秒
+Next up, user intent.
+6:13
+6 分钟 13 秒
+This is all about alignment.
+6:16
+6 分钟 16 秒
+Did the AI actually understand what we are trying to create?
+6:20
+6 分钟 20 秒
+Whether it's a realistic landscape, a stylized portrait, or an abstract concept, the visual needs to effectively convey the intended message or idea.
+6:32
+6 分钟 32 秒
+Then we have contextual understanding.
+6:35
+6 分钟 35 秒
+If we gave the AIA description of some background information, how well does that visual fit that context?
+6:43
+6 分钟 43 秒
+Does it make sense in relation to the provided information?
+6:48
+6 分钟 48 秒
+This shows a deeper level of understanding from the AI.
+6:52
+6 分钟 52 秒
+And finally, and perhaps most importantly, emotion and impact.
+6:58
+6 分钟 58 秒
+A truly high quality visual should evoke an emotional response in the viewer.
+7:04
+7 分钟 4 秒
+It should leave a lasting impression, whether it's a feeling of awe, nostalgia, inspiration or empathy.
+7:11
+7 分钟 11 秒
+It's about creating a connection with the audience.
+7:15
+7 分钟 15 秒
+So when you're evaluating AI generated visuals, remember to consider these more subjective qualities.
+7:23
+7 分钟 23 秒
+They're what separate a good image from a truly great one.
+7:27
+7 分钟 27 秒
+Let's talk about why we're even focusing on visual content generation in the 1st place.
+7:33
+7 分钟 33 秒
+What's the purpose behind these projects and what value do they bring?
+7:38
+7 分钟 38 秒
+Essentially, visual content generation projects are all about evaluating the quality of AI generated images in relation to the prompt.
+7:49
+7 分钟 49 秒
+We want to see how well the AI is doing and more importantly, where it can improve.
+7:54
+7 分钟 54 秒
+The main goal is to uncover areas where the model falls short, where are the weaknesses and its capabilities.
+8:02
+8 分钟 2 秒
+By focusing on these areas, we can drive significant improvements.
+8:06
+8 分钟 6 秒
+One key purpose is model performance and enhancement.
+8:11
+8 分钟 11 秒
+Identifying shortcomings, things like artifacts, distortions, or inconsistencies is crucial for making the model better.
+8:19
+8 分钟 19 秒
+By understanding these errors, developers can refine the algorithms and optimize the parameters to generate higher quality images.
+8:28
+8 分钟 28 秒
+Another major purpose is user experience improvement.
+8:33
+8 分钟 33 秒
+We need to build trust in AI generated images.
+8:37
+8 分钟 37 秒
+People need to feel confident in the reliability and accuracy.
+8:42
+8 分钟 42 秒
+By evaluating and ensuring the quality of these visuals, we can foster that trust and encourage wider adoption across various applications and industries.
+8:53
+8 分钟 53 秒
+Ultimately, these projects are about making AI generated visuals more reliable, more trustworthy, and more valuable for everyone.
+9:03
+9 分钟 3 秒
+Next up, we'll cover some of the image styles that you can expect to see when working on these projects.
+9:10
+9 分钟 10 秒
+The styles that will be presented depend entirely on which specific project you're working on.
+9:17
+9 分钟 17 秒
+1st, we have animation.
+9:19
+9 分钟 19 秒
+Think of images that look like they're straight out of a cartoon or an animated film and there's illustration.
+9:26
+9 分钟 26 秒
+These images often have a more artistic or hand drawn feel, similar to what you might find in a book or magazine.
+9:34
+9 分钟 34 秒
+We also see sketch styles.
+9:37
+9 分钟 37 秒
+These images are often more rough and preliminary, like a quick drawing or concept art.
+9:44
+9 分钟 44 秒
+Finally, we have emoji.
+9:47
+9 分钟 47 秒
+These are small stylized icons that we use in digital communication.
+9:53
+9 分钟 53 秒
+Let's look at each style.
+9:54
+9 分钟 54 秒
+In this case, animation refers specifically to a modern 3D style of animation, such as the image on the left rather than the 2D animated figure on the right.
+10:07
+10 分钟 7 秒
+Illustration refers to a more minimalistic style.
+10:11
+10 分钟 11 秒
+It's usually colorful, posterized, or a comic book like style with a minimal background like the image on the left, rather than something highly detailed and hyper real like the image on the right.
+10:26
+10 分钟 26 秒
+A sketch image style is meant to be highly detailed with thin lines, usually quite realistic, but unfinished, like the example on the left versus the more simplistic, unrealistic example on the right.
+10:42
+10 分钟 42 秒
+And finally, emoji is fairly straightforward.
+10:46
+10 分钟 46 秒
+There are simple digital icons used to express emotions, ideas, or concepts in digital communication.
+10:54
+10 分钟 54 秒
+They have a consistent minimalistic design with bold outlines, bright colors, and exaggerated facial expressions to convey meaning clearly.
+11:06
+11 分钟 6 秒
+In this next section, we'll see an overview of the workflow of VCG projects before diving into each step.
+11:14
+11 分钟 14 秒
+So the typical VCG project workflow starts with reviewing and understanding the user's prompt, then applying any necessary flags.
+11:24
+11 分钟 24 秒
+This is where an annotator would flag any safety issues.
+11:28
+11 分钟 28 秒
+Then evaluating the generated images for any human presence or anthropomorphism.
+11:34
+11 分钟 34 秒
+After that you would move on to evaluating each image individually based on the evaluation criteria, then moving on to ranking the images against each other and finally adding any necessary comments before submitting and moving on to the next task.
+11:54
+11 分钟 54 秒
+This is just a general overview of the end to end workflow of most VCG projects.
+12:01
+12 分钟 1 秒
+Let's have a closer look at step one now.
+12:05
+12 分钟 5 秒
+Now that we understand the why behind VCG and the general workflow, let's talk about the first step.
+12:13
+12 分钟 13 秒
+Specifically, let's delve into the prompts that we use to generate these images.
+12:19
+12 分钟 19 秒
+The quality of the prompt is absolutely critical to the quality of the output.
+12:24
+12 分钟 24 秒
+A well crafted prompt can guide the AI to create stunning and relevant visuals, while a poorly written prompt can lead to disappointing results.
+12:35
+12 分钟 35 秒
+So let's explore what makes a good VCG prompt.
+12:39
+12 分钟 39 秒
+VCG projects are all about evaluating those images based on the prompt.
+12:44
+12 分钟 44 秒
+So what is a prompt in this context?
+12:47
+12 分钟 47 秒
+Simply put, a prompt is a request that we give to the machine learning model.
+12:52
+12 分钟 52 秒
+It's the instruction that tells the AI what kind of image we want it to generate.
+12:58
+12 分钟 58 秒
+Based on that prompt, the MO model generates the image, and that's what we evaluate using our quality criteria.
+13:05
+13 分钟 5 秒
+Now, these prompts, or inputs as they're sometimes called, can come in a variety of different forms.
+13:12
+13 分钟 12 秒
+They might be text, an image, or even a combination of both.
+13:17
+13 分钟 17 秒
+And the text prompts themselves can vary a lot.
+13:20
+13 分钟 20 秒
+They can be short and to the point, or long and very detailed.
+13:25
+13 分钟 25 秒
+They can be crystal clear or intentionally vague.
+13:29
+13 分钟 29 秒
+Sometimes you might even need to do a little research to fully understand the prompt.
+13:35
+13 分钟 35 秒
+The key take away here is that the prompt is the foundation.
+13:39
+13 分钟 39 秒
+It's where the whole visual creation process begins.
+13:44
+13 分钟 44 秒
+There are a variety of prompt types which you can expect to come across when working on VCG projects.
+13:51
+13 分钟 51 秒
+Accurately identifying the type of prompt is essential for accurate evaluation.
+13:56
+13 分钟 56 秒
+You'll come across text prompts which just consist of a text based user request to the system, drawing on image prompts which consist of an image that has been drawn on by the user.
+14:09
+14 分钟 9 秒
+Fairly self-explanatory.
+14:11
+14 分钟 11 秒
+Image prompts are just straightforward images submitted to the system.
+14:16
+14 分钟 16 秒
+Image plus text prompts are a combination image plus text prompt pair submitted to the system.
+14:24
+14 分钟 24 秒
+Usually the text prompt is providing the system with some context as to what the user wants done with the submitted image.
+14:32
+14 分钟 32 秒
+Emoji prompts are also pretty self-explanatory.
+14:36
+14 分钟 36 秒
+Usually they consist of the user providing the system with two or more emojis they wish to combine.
+14:43
+14 分钟 43 秒
+And finally, emoji plus text prompts are the same as emoji prompts but also include a text prompt along with them, usually providing extra instructions to the system, much like image plus text prompts.
+14:58
+14 分钟 58 秒
+Here are a couple of examples of text based prompts and what they've generated.
+15:03
+15 分钟 3 秒
+This demonstrates the variety present in text prompts.
+15:07
+15 分钟 7 秒
+So the one here on the left is a full sentence.
+15:11
+15 分钟 11 秒
+A confident cheetah running across the grassy Savannah.
+15:14
+15 分钟 14 秒
+It's sleek fur glistening in the sun.
+15:17
+15 分钟 17 秒
+The cheetah is running across a wide open plain, and the prompt on the right is more of a list of concepts.
+15:24
+15 分钟 24 秒
+So man, volcano birthday.
+15:28
+15 分钟 28 秒
+Surprised.
+15:30
+15 分钟 30 秒
+You might notice in this image, Earth Day hasn't really been reflected.
+15:36
+15 分钟 36 秒
+That would be something which would affect its score in the evaluation phase, but we'll discuss that a little further on.
+15:43
+15 分钟 43 秒
+Image prompts are quite simple.
+15:46
+15 分钟 46 秒
+They're just any type of image submitted to the ML model as is, without any extra content or modifications.
+15:54
+15 分钟 54 秒
+Any kind of image could be submitted photographs, drawings, animations, diagrams, or even screenshots.
+16:00
+16 分钟
+The way the model interprets these inputs and changes them in the output generally depends on the project being worked on.
+16:08
+16 分钟 8 秒
+It's important to know that the output doesn't have to be an exact copy of the image we give.
+16:15
+16 分钟 15 秒
+The model isn't recreating it, it's using the image more like a reference.
+16:20
+16 分钟 20 秒
+As you can see the example here, the model has changed the setting and stylization of the submitted photograph while accurately depicting the main subject, the car of the scene.
+16:33
+16 分钟 33 秒
+Now for drawing on image prompts.
+16:35
+16 分钟 35 秒
+Imagine you have a photo and want to add something to it, like say a hot air balloon to this photo on the left.
+16:42
+16 分钟 42 秒
+With a Drawing on image prompt, you can literally draw a hot air balloon on the photo.
+16:48
+16 分钟 48 秒
+The model then tries to understand your drawing and generates a new image that reflects that idea.
+16:54
+16 分钟 54 秒
+It's like telling the model exactly what you want by showing it with a simple sketch.
+17:01
+17 分钟 1 秒
+Here are some examples of prompts containing both text and an image.
+17:06
+17 分钟 6 秒
+In the first example, you can see that the user has written dolphin and provided a photograph of a Stingray jumping out of the water.
+17:14
+17 分钟 14 秒
+The generated image on the right should incorporate key aspects from both the text and the image prompts, which it's done here by maintaining the pose of the Stingray or replacing it with a dolphin.
+17:27
+17 分钟 27 秒
+In the example below this, you'll see that the user wrote GNOME as well as provided a sketch of a GNOME to further guide the system.
+17:35
+17 分钟 35 秒
+The generated image on the right should keep within the bounds of these concepts provided by the user.
+17:42
+17 分钟 42 秒
+So the general shape, size and positioning of the sketch should be reflected while at the same time adding additional details like the colors, the structure and the background.
+17:55
+17 分钟 55 秒
+Lastly, let's talk about emoji and emoji plus text prompts.
+18:00
+18 分钟
+The first one is called an emoji prompt.
+18:02
+18 分钟 2 秒
+This just means that we use only emojis, no words.
+18:07
+18 分钟 7 秒
+The model interprets one or more emojis and generates an image based on what those symbols represent visually or conceptually.
+18:16
+18 分钟 16 秒
+In the example at the top of the slide here, you can see that the user has submitted 2 emojis to the system, and the system has returned a couple examples of those two emojis merged into one.
+18:28
+18 分钟 28 秒
+The second one is an emoji plus text prompt.
+18:31
+18 分钟 31 秒
+Here we use emojis along with some words.
+18:34
+18 分钟 34 秒
+The emojis help set the theme or the mood, and the text adds more detail.
+18:40
+18 分钟 40 秒
+The result is an image that reflects both the symbolic meaning of the emojis as well as the nuance provided by the accompanying text.
+18:49
+18 分钟 49 秒
+Such as in the example at the bottom of the slide where the user has submitted 2 emojis and specified that they want emoji one to be wearing emoji 2.
+19:00
+19 分钟
+Providing the system with the extra context to generate that final output.
+19:06
+19 分钟 6 秒
+Before beginning any evaluation, a deep understanding of the input prompt is crucial.
+19:13
+19 分钟 13 秒
+There are a number of steps we take in order to properly analyze the user prompt and avoid any misinterpretation.
+19:21
+19 分钟 21 秒
+These include a thorough reading.
+19:24
+19 分钟 24 秒
+You need to read the entire prompt carefully.
+19:26
+19 分钟 26 秒
+Pay close attention to every word in detail.
+19:30
+19 分钟 30 秒
+For non text prompts, for example images or sketches, make sure you examine the visual input to understand its key features, its composition and style, identifying core components and elements.
+19:44
+19 分钟 44 秒
+It's often helpful to break down the prompt into its essential elements.
+19:49
+19 分钟 49 秒
+Consider things like the subject or subjects, IE the main person or animal or object or character requested.
+19:59
+19 分钟 59 秒
+You have to consider the action or actions.
+20:01
+20 分钟 1 秒
+So what the subjects are doing.
+20:04
+20 分钟 4 秒
+Any attributes or details generally about the main subject.
+20:08
+20 分钟 8 秒
+So things like color, texture, size, emotion, clothing, etcetera.
+20:13
+20 分钟 13 秒
+The setting or environment, so the location or surroundings, for example the time of day, any background elements, etcetera.
+20:23
+20 分钟 23 秒
+The style or medium.
+20:25
+20 分钟 25 秒
+This refers to any requested artistic style.
+20:28
+20 分钟 28 秒
+So for example, photo, realistic, emoji, sketch, or even a specific artist style.
+20:36
+20 分钟 36 秒
+The mood or atmosphere.
+20:38
+20 分钟 38 秒
+Consider the emotion or feeling the image should evoke.
+20:42
+20 分钟 42 秒
+Composition and layout, and this refers to instructions of an arrangement, angle, or perspective.
+20:49
+20 分钟 49 秒
+And finally, consider implied context.
+20:53
+20 分钟 53 秒
+Some prompts include words that carry a wider meaning or a cultural context.
+20:59
+20 分钟 59 秒
+For example, if the prompt says cricketer, it usually suggests more than just the player.
+21:05
+21 分钟 5 秒
+It might also include a stadium or a crowd, uniforms, a ball or a pitch.
+21:10
+21 分钟 10 秒
+Even if these aren't clearly listed in the prompt, these extra details are part of what makes the image feel more complete.
+21:19
+21 分钟 19 秒
+The third step is understanding relationships.
+21:23
+21 分钟 23 秒
+This is where you would consider all of those elements I just shared and how they interact with each other.
+21:29
+21 分钟 29 秒
+For instance, a cat sleeping on a red cushion incorporates the subject cat, the action sleeping, the object cushion, and a defining detail that being red.
+21:45
+21 分钟 45 秒
+Next, there's extra or redundant elements.
+21:49
+21 分钟 49 秒
+Sometimes the output image might include extra elements that were not mentioned in the prompt, and these extra elements are not necessarily a problem.
+21:58
+21 分钟 58 秒
+Consider whether or not the extra elements connect to the main elements in any way, or if they support the overall scene or theme or mood.
+22:07
+22 分钟 7 秒
+If the added elements visually or conceptually relate to what was requested, even in a creative way, they're usually acceptable.
+22:16
+22 分钟 16 秒
+For example, if the prompt is a dragon flying over a village, and the image includes clouds, birds, or a castle, these additions might help set the scene and enhance the story.
+22:29
+22 分钟 29 秒
+However, if any extra elements appear random or distracting, or just completely unrelated to the prompt, they should be penalized.
+22:39
+22 分钟 39 秒
+Next up, we have recognizing nuance and intent.
+22:43
+22 分钟 43 秒
+Here we want to try and understand the intent of the user or their overall goal.
+22:49
+22 分钟 49 秒
+Some prompts may be ambiguous.
+22:52
+22 分钟 52 秒
+Try to interpret them in the most likely or reasonable way.
+22:56
+22 分钟 56 秒
+And if the prompt is mixing multiple formats such as text plus an image or drawing, consider how each format influences the final output.
+23:07
+23 分钟 7 秒
+And finally, consider conducting external research.
+23:11
+23 分钟 11 秒
+If you encounter unfamiliar terms, concepts, styles, or cultural references, it's best practice to briefly research them to ensure that you fully understand the prompt.
+23:25
+23 分钟 25 秒
+I briefly mentioned ambiguous prompts in the last slide.
+23:28
+23 分钟 28 秒
+Let's dig into that concept in more detail here.
+23:32
+23 分钟 32 秒
+We can think of ambiguous prompts as any prompt where the final outcome isn't clearly defined.
+23:39
+23 分钟 39 秒
+They may be incomplete, they might have multiple different interpretations, or they could be composed just of loosely connected ideas.
+23:47
+23 分钟 47 秒
+There are some considerations and tips for analyzing prompts like this.
+23:53
+23 分钟 53 秒
+Firstly, in cases where the prompt is a collection of concepts, we want to try to identify and interpret each concept.
+24:00
+24 分钟
+Look at the example prompt on the slide right now.
+24:03
+24 分钟 3 秒
+Rainbow underwater Crab.
+24:06
+24 分钟 6 秒
+Each concept must be reflected in the output images in some way.
+24:11
+24 分钟 11 秒
+For requests which are even more abstract than this, think something like love or summer.
+24:18
+24 分钟 18 秒
+The output images should have symbolic representations of those concepts.
+24:24
+24 分钟 24 秒
+So think of things like hearts or flowers for love and the sun, or beaches for summer.
+24:32
+24 分钟 32 秒
+Do we think here that the output images are accurately reflecting the ambiguous prompt?
+24:40
+24 分钟 40 秒
+Well, I would say that we're definitely missing one of the concepts in the prompt rainbow.
+24:47
+24 分钟 47 秒
+We also need to think about whether or not the prompt intends its concepts to be shown together or separately.
+24:54
+24 分钟 54 秒
+If this is not explicitly stated by the prompt, then either approach can be valid as long as it's coherent.
+25:01
+25 分钟 1 秒
+For example, consider the prompt Gym Sunrise Aux.
+25:06
+25 分钟 6 秒
+There are a few different ways to interpret these concepts right, and since the intent is ambiguous, all of them would be acceptable.
+25:15
+25 分钟 15 秒
+The user could want an aux standing outside of a gym, it could want a scene depicting an aux in the gym itself working out, or they could even just want a depiction of an aux with gym equipment.
+25:27
+25 分钟 27 秒
+As we can see on the screen here, all of these interpretations are valid.
+25:33
+25 分钟 33 秒
+As mentioned before, we want to make sure that the image is complete and relevant to all of the concepts provided in the prompt, whether they be explicit, such as whale or crab, or abstract, such as love or summer.
+25:49
+25 分钟 49 秒
+That'll cover completeness and relevance for coherence and creativity.
+25:55
+25 分钟 55 秒
+We need to ensure that if the image is combining unrelated elements into a single scene, but the integration makes sense either logically, stylistically, or artistically.
+26:07
+26 分钟 7 秒
+Even if the image doesn't make perfect sense in reality, it should still show a clear connection to each part of the prompt.
+26:16
+26 分钟 16 秒
+Of course, the image doesn't have to be realistic.
+26:19
+26 分钟 19 秒
+It can be fun, strange, or imaginative.
+26:23
+26 分钟 23 秒
+What matters is that the image includes all the ideas from the prompt.
+26:28
+26 分钟 28 秒
+Can you think of a few concepts which may have been asked to the system to create the image you see on the slide?
+26:34
+26 分钟 34 秒
+Now imagine things like eggplant.
+26:38
+26 分钟 38 秒
+I can see a tricycle.
+26:40
+26 分钟 40 秒
+The setting is a desert.
+26:43
+26 分钟 43 秒
+As we can see, it's pretty silly when it comes to ambiguous prompts.
+26:47
+26 分钟 47 秒
+Some degree of creative flexibility is allowed and expected, but the end result should always reflect some connection to each concept.
+26:57
+26 分钟 57 秒
+OK, you've understood how to analyze the user's prompt.
+27:02
+27 分钟 2 秒
+Now let's look at Step 2 of the workflow applying flags.
+27:07
+27 分钟 7 秒
+This is a screening step where you decide whether or not to proceed with the rating steps.
+27:12
+27 分钟 12 秒
+You may need to skip the task if the image is not loading or if the prompt or output image is inappropriate or sensitive.
+27:21
+27 分钟 21 秒
+This is where you identify any safety concerns and prevent inappropriate images from being further evaluated.
+27:28
+27 分钟 28 秒
+There are three common flagging categories we deal with in VCG projects, though each project may have its own considerations when it comes to flagging content, so always review each individual projects guidelines for the most up to date and relevant information.
+27:45
+27 分钟 45 秒
+The first flag type are inappropriate flags.
+27:48
+27 分钟 48 秒
+You'll select this flag if the image depicts any of the following content categories that you can see in the bullet points on the screen, either in photorealistic or in stylized formats.
+28:00
+28 分钟
+Only select the category if you can clearly tell that the image contains this content.
+28:06
+28 分钟 6 秒
+Don't select the flag if the content is just referred to in the text prompt.
+28:12
+28 分钟 12 秒
+The second flag type are sensitive flags.
+28:15
+28 分钟 15 秒
+Again, we will select these flags if the image depicts any of the content listed on the screen, whether photo realistic or stylized.
+28:24
+28 分钟 24 秒
+Thirdly, we have flags for stereotypes, exact same as the others.
+28:29
+28 分钟 29 秒
+We'll select this flag if the image is depicting anything listed on the screen here, regardless of the image style.
+28:36
+28 分钟 36 秒
+Each one of these categories is described in more detail in the project guidelines, so I would encourage everyone to take a bit of time to have a read through of the categories to get more familiar with what to look out for.
+28:51
+28 分钟 51 秒
+Here are a few examples of images which would fall under each category to help demonstrate what we mean.
+28:58
+28 分钟 58 秒
+The first image on the left would be considered inappropriate due to the inclusion of violence, even if only between animals.
+29:06
+29 分钟 6 秒
+The second image would be considered sensitive due to the inclusion of trademarked content being generated in response to a prompt naming that character.
+29:17
+29 分钟 17 秒
+And lastly, the third image would fall under stereotypes due to it adding headwear or stereotypical clothing to a depiction of a negative prompt.
+29:29
+29 分钟 29 秒
+After applying flags, we move on to evaluating the criteria of human presence and anthropomorphism.
+29:37
+29 分钟 37 秒
+Now that you've checked for general safety if the project requires it, we move on to Step 3, which is human presence and anthropomorphism detection.
+29:47
+29 分钟 47 秒
+In this step, you will evaluate if there is human presence or anthropomorphism in the output image.
+29:54
+29 分钟 54 秒
+Remember, this step is only applicable if it's specified in the project guidelines.
+29:59
+29 分钟 59 秒
+In this question, you will help evaluate the presence of a human or anthropomorphism in the output images generated in response to the input.
+30:09
+30 分钟 9 秒
+Anthropomorphism refers to the attribution of human characteristics to non human entities.
+30:16
+30 分钟 16 秒
+We will focus on the output images in this evaluation.
+30:20
+30 分钟 20 秒
+The main question here is are there humans slash humans or anthropomorphism present in the output image?
+30:29
+30 分钟 29 秒
+And here are your possible answers.
+30:32
+30 分钟 32 秒
+No, there is neither human presence nor anthropomorphism in the output image.
+30:38
+30 分钟 38 秒
+Yes, the humans are large in size and front facing with visible facial features.
+30:45
+30 分钟 45 秒
+Yes, the humans are not front facing or their figures are small in size.
+30:51
+30 分钟 51 秒
+And finally, yes, there is no human, but there is anthropomorphism in the output image.
+30:58
+30 分钟 58 秒
+You will choose a response that best reflects what you see in the image.
+31:02
+31 分钟 2 秒
+This step helps us identify potentially sensitive content related to human representation or the personification of non human entities.
+31:13
+31 分钟 13 秒
+Some VCG projects may not have this evaluation criteria, so it's always important to review each project's individual guidelines.
+31:22
+31 分钟 22 秒
+This slide explains what we mean by human presence and anthropomorphism detection.
+31:27
+31 分钟 27 秒
+The step in the task focuses on identifying 2 elements in the output images, whether there are humans or whether non human entities exhibit human like characteristics.
+31:39
+31 分钟 39 秒
+Human presence includes any depiction of humans, whether it's partial like a face or legs or a silhouette or fully rendered figures.
+31:48
+31 分钟 48 秒
+Anthropomorphism on the other hand, refers to giving human traits to non human entities.
+31:54
+31 分钟 54 秒
+This could include animals with human like features, objects with faces or similar depictions.
+32:02
+32 分钟 2 秒
+Identifying these elements is crucial for ensuring that the generated images are safe and appropriate.
+32:09
+32 分钟 9 秒
+Now let's look at some examples.
+32:12
+32 分钟 12 秒
+The first image here on the top left showcases human presence.
+32:16
+32 分钟 16 秒
+It clearly depicts a front facing human figure with visible facial features which qualifies as human presence in this evaluation.
+32:26
+32 分钟 26 秒
+In the image next to it, human silhouettes are depicted against a sunset.
+32:31
+32 分钟 31 秒
+Even though the figures are not detailed, they are clearly recognizable as humans and so this also qualifies as human presence.
+32:41
+32 分钟 41 秒
+At the bottom here is an example of anthropomorphism.
+32:45
+32 分钟 45 秒
+The objects, a matchstick or some sort of pencil has been given human like traits such as a face and a hand, and this qualifies as a clearly non human entity exhibiting human characteristics.
+33:01
+33 分钟 1 秒
+All right, I made it through that section without mispronouncing anthropomorphism.
+33:06
+33 分钟 6 秒
+The next steps of the workflow are the most involved and complex, as they are where we begin analyzing and grading the output from the system.
+33:16
+33 分钟 16 秒
+The first step in this process is called Single Image Rating.
+33:20
+33 分钟 20 秒
+So now you've identified the type of user prompt you're dealing with, you've screened for safety and if applicable, assessed human presence and anthropomorphism.
+33:31
+33 分钟 31 秒
+Now we get to the core of the evaluation process in step four, Single Image rating.
+33:37
+33 分钟 37 秒
+In this step, you will evaluate the quality of the output image against the following 3 dimensions, Optical fidelity, structural integrity, and input output alignment.
+33:50
+33 分钟 50 秒
+These 3 dimensions are the primary focus for this project.
+33:54
+33 分钟 54 秒
+We're looking at aesthetics, accuracy, and adherence to the prompt.
+33:59
+33 分钟 59 秒
+However, it is important to understand that depending on the specific project you are working on, you may or may not evaluate some of these dimensions.
+34:07
+34 分钟 7 秒
+It is critical to review the project specific guidelines before proceeding with your ratings.
+34:14
+34 分钟 14 秒
+Let's dive into these 3 dimensions now.
+34:17
+34 分钟 17 秒
+The first dimension we need to consider is structural integrity.
+34:21
+34 分钟 21 秒
+Structural integrity refers to the anatomical correctness and visual integrity of subjects and objects in a generated image.
+34:30
+34 分钟 30 秒
+We need to ensure that the elements in the output are all formed correctly and consistently based on the user's prompt.
+34:37
+34 分钟 37 秒
+So a human face should have two eyes, a nose, a mouth, and two ears.
+34:43
+34 分钟 43 秒
+An animal, say a tiger, would normally have 4 legs, a tail, maybe sharp teeth and claws, depending on the viewpoint.
+34:50
+34 分钟 50 秒
+Buildings usually have roofs, windows, doors, etcetera.
+34:54
+34 分钟 54 秒
+Cars would have four wheels, windows, doors, and any text should be legible and not gibberish.
+35:01
+35 分钟 1 秒
+I think you get the idea.
+35:03
+35 分钟 3 秒
+Now remember that this rating is all relative to the user's prompt, not necessarily based on reality.
+35:11
+35 分钟 11 秒
+So if, for example, the user asks for a three headed dog, it would be completely structurally sound for the output to be a three headed dog.
+35:19
+35 分钟 19 秒
+I'll also consider that even if the prompt describes something fantastical, the generated object should still be internally consistent.
+35:29
+35 分钟 29 秒
+A3 headed dog should have three well formed heads, not heads merging into each other or floating in space.
+35:37
+35 分钟 37 秒
+Simply put, the image needs to make some amount of sense in relation to the prompt.
+35:44
+35 分钟 44 秒
+When analyzing the structural integrity of a generated image, the workflow detailed on the slide here will help you to determine the appropriate grade.
+35:54
+35 分钟 54 秒
+Firstly, you need to identify the main subject or subjects in the image.
+35:58
+35 分钟 58 秒
+The main subject is usually the person, an animal, or a primary object in the image.
+36:04
+36 分钟 4 秒
+We need to identify these because they're more important than background elements or accessories.
+36:09
+36 分钟 9 秒
+So any structural issues which affect the main subject are considered more critical than ones which might affect background elements.
+36:19
+36 分钟 19 秒
+Once that's done, we should apply a triage approach.
+36:23
+36 分钟 23 秒
+What we mean by this is that when you encounter an edge case, try moving from the most severe to the least severe indicators until you find the best fit.
+36:32
+36 分钟 32 秒
+So if, for example, when examining an image, you come across a clearly severe flaw, something large enough to ruin the subject's basic form, then you would choose severe.
+36:45
+36 分钟 45 秒
+If not, you would move on to checking for noticeable indicators, IE distortions which while not catastrophic, still stand out.
+36:55
+36 分钟 55 秒
+If yes, then you would choose noticeable.
+36:58
+36 分钟 58 秒
+If not, then you would move on to checking for minor indicators, so small anomalies, things which require a closer look to spot.
+37:07
+37 分钟 7 秒
+If yes, you would choose minor.
+37:09
+37 分钟 9 秒
+If not, then there are likely no structural integrity issues.
+37:13
+37 分钟 13 秒
+Another thing that is important to consider when analyzing the image is the impact on the viewer.
+37:19
+37 分钟 19 秒
+Ask yourself whether any structural flaws might distract or confuse the average viewer.
+37:25
+37 分钟 25 秒
+If a flaw is immediately distracting, then it would fall under noticeable or severe.
+37:30
+37 分钟 30 秒
+If the viewer could easily overlook it, then it's minor.
+37:34
+37 分钟 34 秒
+The context can also matter when considering viewer impact.
+37:38
+37 分钟 38 秒
+A structural flaw which might be considered minor if it manifested in the background of the image could be considered major if it affected, say, the face of the main subject.
+37:50
+37 分钟 50 秒
+To that point, we always want to check the relative size and location of any structural flaws.
+37:56
+37 分钟 56 秒
+Are the flaws peripheral in the small corner detail of the image or are they central part of the main focal point of the image?
+38:06
+38 分钟 6 秒
+Again, consider a distortion affecting the background of an image.
+38:10
+38 分钟 10 秒
+Such a distortion would likely be much less noticeable to the viewer than a distortion of comparable size affecting the subject's face.
+38:20
+38 分钟 20 秒
+Once all of these considerations have been taken, you should then combine your observations to help you choose your final structural integrity rating for the image.
+38:30
+38 分钟 30 秒
+Focus especially on the severity of structural issues in the main subject using the criteria provided in the guidelines.
+38:39
+38 分钟 39 秒
+As we've just demonstrated, structural integrity is graded on a four point rating scale ranging from no structural integrity issues to severe structural integrity issues.
+38:50
+38 分钟 50 秒
+Have a look at the examples on the slide Here on the left we have an image with no structural integrity issues.
+38:56
+38 分钟 56 秒
+There are no issues in terms of anatomical structure and proportions to this image.
+39:02
+39 分钟 2 秒
+Next up, we have an image that we would consider to have minor structural integrity issues.
+39:07
+39 分钟 7 秒
+If you notice, at first glance the image looks pretty good, but once you start scrutinizing it, the issues become more apparent.
+39:15
+39 分钟 15 秒
+If you look closely, the cup and the teapot on the bottom row of the shelf are merged together in an unnatural way.
+39:23
+39 分钟 23 秒
+The generated image initially looks good, but has some issues when further examined.
+39:28
+39 分钟 28 秒
+This is usually a good indication that the structural integrity issues are minor.
+39:34
+39 分钟 34 秒
+Moving on, we have an image with what we would consider to have noticeable structural integrity issues.
+39:40
+39 分钟 40 秒
+In these cases, the issues are quite obvious.
+39:43
+39 分钟 43 秒
+You don't necessarily need to look very closely to notice that something is off here.
+39:48
+39 分钟 48 秒
+However, what's being generated is still very obvious, right?
+39:52
+39 分钟 52 秒
+It's clearly meant to be a man holding a cat.
+39:55
+39 分钟 55 秒
+While we see a noticeable abnormality in the man's hands, these are not necessarily the primary focus of the image.
+40:03
+40 分钟 3 秒
+So it would fall short of being considered severe.
+40:07
+40 分钟 7 秒
+And finally, on the right we have an image with severe structural integrity issues.
+40:12
+40 分钟 12 秒
+Here it is plainly obvious that significant aspects of the primary subject, in this case the elephant, are distorted and anatomically incorrect.
+40:22
+40 分钟 22 秒
+The elephant appears to have only three legs, and one of the legs is even formed in the shape of an extra trunk.
+40:30
+40 分钟 30 秒
+Here we'll have a look at some more examples of images side by side using this rating scale.
+40:38
+40 分钟 38 秒
+We have a prompt for Halloween Starry Night Beret Beanie.
+40:43
+40 分钟 43 秒
+The first thing we need to ask ourselves here is do we need all of these elements to be present when evaluating structural integrity?
+40:52
+40 分钟 52 秒
+And of course, the answer is no.
+40:54
+40 分钟 54 秒
+We are going to be looking at that aspect of evaluation in the input output alignment dimension.
+41:00
+41 分钟
+For structural integrity, we want to review the anatomical correctness of what is in the image regardless of the prompt.
+41:08
+41 分钟 8 秒
+In our first image, we can see that there are no structural integrity issues.
+41:13
+41 分钟 13 秒
+Even after careful analysis of the image, we cannot find anything wrong with the output in the second image on the right.
+41:21
+41 分钟 21 秒
+It requires very little analysis to understand that there are obvious issues with the anatomical correctness of the person in the image.
+41:29
+41 分钟 29 秒
+Due to the severity of these issues, we would grade this as having severe structural integrity issues.
+41:36
+41 分钟 36 秒
+Let's look at another example.
+41:38
+41 分钟 38 秒
+Here we have the prompt curious monkey with a furry body and long arms swinging from tree to tree in a dense jungle.
+41:47
+41 分钟 47 秒
+On the left we have an image that we would grade as having noticeable structural integrity issues as the amount of fingers on the monkey's paw are both anatomically incorrect and also highly prominent in the picture.
+42:01
+42 分钟 1 秒
+Now on the right we have an image that we would consider having severe structural integrity issues as we can see that the monkey not only has extra fingers but has also been given multiple additional pause which leads to a highly unrealistic image.
+42:19
+42 分钟 19 秒
+The second dimension we need to consider is optical fidelity.
+42:23
+42 分钟 23 秒
+This dimension refers to how visually pleasing and engaging the output image is.
+42:29
+42 分钟 29 秒
+This can of course be quite subjective, so there are three criteria we focus on when evaluating clarity, color harmony, and lighting.
+42:39
+42 分钟 39 秒
+Keep each of these criteria in mind when determining what to grade the image's overall optical fidelity.
+42:46
+42 分钟 46 秒
+For example, the image on the slide here would certainly score very low for the criteria of clarity due to its blurriness, it's fog, and pixelation.
+42:58
+42 分钟 58 秒
+Typically, this dimension is graded on a three-point scale of not appealing, moderately appealing, and highly appealing.
+43:07
+43 分钟 7 秒
+Let's breakdown what each of those ratings means.
+43:10
+43 分钟 10 秒
+Starting from the left, Image A A highly appealing image has good arrangement of elements without any distractions.
+43:18
+43 分钟 18 秒
+The subject is clear, sharp and in focus.
+43:22
+43 分钟 22 秒
+The colors are coordinated, lighting is masterfully utilized to create a sense of depth, volume and dimension, and overall, the image is very visually appealing.
+43:33
+43 分钟 33 秒
+It's a top tier image in terms of aesthetics.
+43:37
+43 分钟 37 秒
+Next up, a moderately appealing image generally has a focused subject with no distractions and tells a visual story.
+43:46
+43 分钟 46 秒
+However, some accessories, details, or background elements may be slightly blurry or hard to distinguish.
+43:55
+43 分钟 55 秒
+The background lighting might be off, or there might be a lack of sufficient contrast.
+44:00
+44 分钟
+Essentially, A moderately appealing image has some good qualities, but there are noticeable flaws.
+44:07
+44 分钟 7 秒
+And finally, a not appealing image may have focused subjects and may convey a clear narrative.
+44:15
+44 分钟 15 秒
+However, maybe it has poor lighting and shadows that make it visually not appealing.
+44:20
+44 分钟 20 秒
+Or the lighting could be varied and natural looking, but the image itself could be highly blurred or pixelated.
+44:27
+44 分钟 27 秒
+Despite it potentially having some positive aspects, the overall aesthetic of the image is seriously lacking.
+44:37
+44 分钟 37 秒
+In this final evaluation dimension, we'll explore how to evaluate whether a generated image aligns with the input it was based on.
+44:46
+44 分钟 46 秒
+We call this input output alignment.
+44:48
+44 分钟 48 秒
+This concept helps us assess the quality and accuracy of visual content generation.
+44:54
+44 分钟 54 秒
+We'll cover four types of alignment categories, text image, image to image, sketch to image, and emoji to image, each with its own evaluation criteria.
+45:06
+45 分钟 6 秒
+Before we move on, I want to emphasize a crucial point.
+45:10
+45 分钟 10 秒
+As with the other dimensions, input output alignment must be evaluated independently from the other quality dimensions.
+45:19
+45 分钟 19 秒
+Now, what does this mean?
+45:21
+45 分钟 21 秒
+An image can perfectly represent what you asked for in the prompt.
+45:25
+45 分钟 25 秒
+It can have excellent input output alignment, but still be a poor quality image overall.
+45:31
+45 分钟 31 秒
+For example, it might be blurry, low optical fidelity, or have distorted shapes low structural integrity.
+45:39
+45 分钟 39 秒
+Conversely, an image might have great optical fidelity and structural integrity.
+45:44
+45 分钟 44 秒
+It might be sharp, well structured, but it could fail to accurately depict all of the elements in the prompt, therefore having low input output alignment.
+45:55
+45 分钟 55 秒
+When evaluating, focus solely on the specific dimension that you're assessing.
+45:59
+45 分钟 59 秒
+Don't let your judgement of other aspects of the image influence your input output alignment score, or vice versa.
+46:06
+46 分钟 6 秒
+We need to assess each dimension objectively and independently to get a complete picture of the image quality.
+46:14
+46 分钟 14 秒
+Let's dive into what text image alignment means in the context of this project.
+46:20
+46 分钟 20 秒
+It's really about one key question.
+46:22
+46 分钟 22 秒
+How well does the image match what the text prompt is asking for?
+46:27
+46 分钟 27 秒
+And that includes the objects mentioned, the details described, and even the overall feel or intent behind the words.
+46:36
+46 分钟 36 秒
+So whether the prompt is simple, like chocolate bar, or more detailed like a chocolate bar with broken pieces scattered around it placed on a clean blue surface in a minimal calm setting, the goal is still the same.
+46:52
+46 分钟 52 秒
+Does the image reflect what was asked as accurately and completely as possible?
+46:58
+46 分钟 58 秒
+In order to evaluate how well an image matches the text prompt, here are the steps you'll follow.
+47:05
+47 分钟 5 秒
+First, identify elements.
+47:07
+47 分钟 7 秒
+Begin by carefully reading the text prompt and identifying all the key elements it contains.
+47:13
+47 分钟 13 秒
+This includes the main objects, their details, spatial relationships, and any mood or atmosphere that the prompt suggests.
+47:22
+47 分钟 22 秒
+Next up, compare to the output image.
+47:25
+47 分钟 25 秒
+Look at the generated image and check how well it represents each of those identified elements.
+47:32
+47 分钟 32 秒
+Are all the objects there?
+47:35
+47 分钟 35 秒
+Do they look the way the prompt described?
+47:38
+47 分钟 38 秒
+Are they positioned as expected?
+47:40
+47 分钟 40 秒
+After this, consider missing and redundant elements.
+47:44
+47 分钟 44 秒
+Pay attention to anything important that might be missing from the image, as well as anything that appears but wasn't asked for in the prompt.
+47:53
+47 分钟 53 秒
+Both can impact how well the image aligns with the text.
+47:57
+47 分钟 57 秒
+And finally, you'll assign a rating.
+48:00
+48 分钟
+Once you've analyzed the image, use the Text Image Alignment Grading Scale to give it an overall score.
+48:07
+48 分钟 7 秒
+This rating should reflect how fully and accurately the image matches the prompt.
+48:12
+48 分钟 12 秒
+Based on everything that we just reviewed, let's look at an example.
+48:18
+48 分钟 18 秒
+First, let's identify all the elements in a prompt by breaking it down into objects, details, spatial relationships, and mood and atmosphere.
+48:29
+48 分钟 29 秒
+The prompt is a chocolate bar with broken pieces scattered around it, placed on a clean blue surface in a minimal calm setting.
+48:38
+48 分钟 38 秒
+Let's start with the objects.
+48:40
+48 分钟 40 秒
+These are the physical things mentioned, the chocolate bar, the broken pieces, and the surface that they're sitting on.
+48:48
+48 分钟 48 秒
+Next up, we look at the details.
+48:51
+48 分钟 51 秒
+These are the descriptive words that tell us more about these objects.
+48:55
+48 分钟 55 秒
+For example, the broken pieces add a visual texture.
+48:59
+48 分钟 59 秒
+The blue, of course, tells us the color of the surface.
+49:03
+49 分钟 3 秒
+These details matter when checking if the image is aligned with the prompt.
+49:08
+49 分钟 8 秒
+Then we move on to spatial relationships.
+49:11
+49 分钟 11 秒
+This is about how things are positioned in relation to each other.
+49:14
+49 分钟 14 秒
+The prompt says the pieces are scattered around the chocolate bar.
+49:20
+49 分钟 20 秒
+That tells us there should be some randomness and separation in the layout, and everything is placed on a surface which should also be visible.
+49:28
+49 分钟 28 秒
+And finally, the mood or atmosphere.
+49:31
+49 分钟 31 秒
+This prompt is more explicit than usual.
+49:34
+49 分钟 34 秒
+It directly mentions A minimal calm setting.
+49:39
+49 分钟 39 秒
+The image should reflect a sense of simplicity, calm, and visual clarity.
+49:45
+49 分钟 45 秒
+It shouldn't be cluttered or chaotic.
+49:48
+49 分钟 48 秒
+Now we will compare the elements in the prompt with the output image.
+49:54
+49 分钟 54 秒
+Ask yourself, does it contain all of these elements?
+49:58
+49 分钟 58 秒
+Are they represented accurately?
+50:00
+50 分钟
+Is there a chocolate bar?
+50:02
+50 分钟 2 秒
+Are there broken pieces?
+50:04
+50 分钟 4 秒
+Is it on a blue surface?
+50:06
+50 分钟 6 秒
+Does the overall scene feel minimal and calm?
+50:10
+50 分钟 10 秒
+While we are reviewing the output image, we will also look for any missing elements or redundant elements.
+50:18
+50 分钟 18 秒
+Remember, our prompt was a chocolate bar with broken pieces scattered around it, placed on a clean blue surface in a minimal calm setting.
+50:26
+50 分钟 26 秒
+First, let's consider missing elements.
+50:30
+50 分钟 30 秒
+Looking at the image, are there any elements from the prompt that are completely missing?
+50:36
+50 分钟 36 秒
+Well, we have a chocolate bar.
+50:38
+50 分钟 38 秒
+We have broken pieces, we have a clean blue surface, and the overall scene looks minimal and calm.
+50:45
+50 分钟 45 秒
+So in this particular example, there aren't any obvious missing elements.
+50:51
+50 分钟 51 秒
+Everything that was explicitly mentioned in the prompt is present in the image.
+50:56
+50 分钟 56 秒
+Now let's think about redundant major elements.
+50:59
+50 分钟 59 秒
+Are there any major elements in this image that were not mentioned in the prompt and aren't reasonably implied?
+51:08
+51 分钟 8 秒
+Let's say, hypothetically, that there was a huge realistic looking grasshopper crawling on the chocolate bar in the image.
+51:15
+51 分钟 15 秒
+Would that be a redundant major element?
+51:18
+51 分钟 18 秒
+Well, yes, it takes up a significant portion of the image.
+51:22
+51 分钟 22 秒
+That would be a redundant major element, and it would negatively impact the alignment score.
+51:28
+51 分钟 28 秒
+In this actual image, though, we don't see any redundant major elements.
+51:33
+51 分钟 33 秒
+The image sticks to what was described in the prompts and doesn't add anything that feels out of place or unrelated.
+51:40
+51 分钟 40 秒
+And what exactly do we mean by not reasonably implied?
+51:45
+51 分钟 45 秒
+Well, sometimes an element might not be explicitly mentioned in the prompt, but it's a logical addition to the scene based on the context.
+51:55
+51 分钟 55 秒
+For example, for the same prompt, we wouldn't penalize the image for including, say, a subtle reflection of the chocolate bar on the shiny blue surface, or showing some part of the chocolate bar melting, or maybe showing a wrapper of the chocolate bar with a name on it.
+52:12
+52 分钟 12 秒
+These elements are reasonable and expected given the scene.
+52:17
+52 分钟 17 秒
+Now, finally, we'll move on to assigning a rating.
+52:21
+52 分钟 21 秒
+This rating is based on clear guidelines that directly reflect the four areas we've just analyzed in the prompt objects, details, spatial relationships, and mood or atmosphere.
+52:36
+52 分钟 36 秒
+Image to image alignment is about evaluating how closely A generated image reflects the content and character of an input image.
+52:45
+52 分钟 45 秒
+But it's important to note the input image is not a blueprint, it's a source of inspiration for the output image.
+52:53
+52 分钟 53 秒
+The output image doesn't have to be identical, but it should resemble the input in meaningful ways unless a text prompt asks for changes.
+53:03
+53 分钟 3 秒
+In those cases, the text prompt takes priority.
+53:07
+53 分钟 7 秒
+We use a few key criteria to guide our assessment.
+53:11
+53 分钟 11 秒
+First, thematic consistency.
+53:14
+53 分钟 14 秒
+Does the overall vibe, setting and style of the output image feel like it was inspired by the input?
+53:21
+53 分钟 21 秒
+Then we look at key elements.
+53:24
+53 分钟 24 秒
+Is the same object present?
+53:26
+53 分钟 26 秒
+If there's an animal, is it the same species?
+53:29
+53 分钟 29 秒
+For pets like cats and dogs, we can go even deeper.
+53:33
+53 分钟 33 秒
+Is it the same breed or color?
+53:36
+53 分钟 36 秒
+We also consider actions.
+53:38
+53 分钟 38 秒
+If the animal is doing something specific, like sleeping or jumping, the output should ideally maintain that action.
+53:47
+53 分钟 47 秒
+And finally, locations.
+53:49
+53 分钟 49 秒
+While the exact place doesn't need to be the same, the category should match.
+53:54
+53 分钟 54 秒
+A beach should still look like a beach.
+53:56
+53 分钟 56 秒
+For example, let's look at an example.
+54:01
+54 分钟 1 秒
+If the input image is a picture of a cat on a bed and the text prompt is in the sea, the output image should depict the same cat in a sea environment.
+54:11
+54 分钟 11 秒
+The change of environment should not be penalized since it's been explicitly asked for in the text prompt.
+54:18
+54 分钟 18 秒
+When looking at sketch to image alignment, this alignment type focuses on evaluating how closely the generated image matches the sketch provided as input.
+54:28
+54 分钟 28 秒
+The sketch serves as a visual prompt, and the goal is for the output image to be a faithful representation of it, capturing not just the objects but also the overall structure, layout, and the intent behind the drawing.
+54:43
+54 分钟 43 秒
+It's important to note that in these cases, we completely ignore the text input prompt, if there is one.
+54:50
+54 分钟 50 秒
+The sketch alone is what we evaluate against all of our judgments.
+54:54
+54 分钟 54 秒
+Whether something is missing, inaccurate, or aligned should be based only on what we see in the sketch, irrespective of any text prompt.
+55:05
+55 分钟 5 秒
+Some more criteria to consider for sketch image alignment are things like objects and details.
+55:12
+55 分钟 12 秒
+The main forms in the sketch must be clearly present in the image.
+55:16
+55 分钟 16 秒
+Pay attention to shapes and applied textures.
+55:19
+55 分钟 19 秒
+If a sketch hints at something rough or smooth, the image should carry that over.
+55:25
+55 分钟 25 秒
+Extra detail is OK as long as it doesn't contradict the sketch.
+55:30
+55 分钟 30 秒
+Next is context.
+55:31
+55 分钟 31 秒
+Ask yourself, what is the sketch suggesting beyond the objects?
+55:37
+55 分钟 37 秒
+A bitten apple might imply it's being eaten.
+55:41
+55 分钟 41 秒
+If there's background or setting like a table or a field, that context should appear in the image as well.
+55:48
+55 分钟 48 秒
+Mood and atmosphere is more subtle, but still important.
+55:52
+55 分钟 52 秒
+Think of the energy in the lines.
+55:54
+55 分钟 54 秒
+Does the sketch feel calm, chaotic, rushed, or soft?
+55:59
+55 分钟 59 秒
+The output image should echo that emotion when it's clearly present.
+56:04
+56 分钟 4 秒
+Spatial layout and perspective are also key.
+56:08
+56 分钟 8 秒
+If the sketch shows something from the side, the image should show it from the side.
+56:12
+56 分钟 12 秒
+Object positions should remain consistent.
+56:16
+56 分钟 16 秒
+And finally, remember the sketch is the core.
+56:20
+56 分钟 20 秒
+The output can add realistic elements like texture or lighting, but those additions must stay true to the sketch's intent.
+56:27
+56 分钟 27 秒
+If the sketch is simple, like a stick figure, then focus on shape and proportion over intricate detail.
+56:36
+56 分钟 36 秒
+Let's now look at the emoji image alignment in this category.
+56:41
+56 分钟 41 秒
+The prompt is broken down into elements, which can be text, descriptions, emojis, or both.
+56:47
+56 分钟 47 秒
+For each element, we assess if it's completely missing, not well represented, or well represented in the output.
+56:55
+56 分钟 55 秒
+For text, completely missing means the idea isn't there at all.
+57:00
+57 分钟
+Not well represented means the idea is there but some details are wrong.
+57:05
+57 分钟 5 秒
+And well represented means it's clearly and accurately depicted.
+57:09
+57 分钟 9 秒
+For emojis, it's very similar.
+57:11
+57 分钟 11 秒
+Completely missing means the emoji's concept is absent.
+57:15
+57 分钟 15 秒
+Not well represented means the concept is there, but the emoji's appearance is significantly different.
+57:22
+57 分钟 22 秒
+Well represented means it's clearly and recognizably the emoji we used.
+57:27
+57 分钟 27 秒
+Remember, we're looking for accuracy and how the prompt translates to the image.
+57:34
+57 分钟 34 秒
+Let's look at a familiar example.
+57:36
+57 分钟 36 秒
+Here the prompt is fox emoji, sunglasses emoji, wearing.
+57:41
+57 分钟 41 秒
+So we have three elements, the fox emoji, the sunglasses emoji, and the word wearing.
+57:48
+57 分钟 48 秒
+Looking at the output image, we see a fox wearing sunglasses.
+57:52
+57 分钟 52 秒
+Let's break it down.
+57:54
+57 分钟 54 秒
+The fox emoji is well represented because we clearly see a fox in the image and it looks very similar to the fox emoji we used in the prompt.
+58:02
+58 分钟 2 秒
+The sunglasses emoji is also well represented because we see sunglasses on the fox and they look very similar to the sunglasses emoji we used.
+58:12
+58 分钟 12 秒
+Finally, the word wearing is also well represented because the image clearly shows the fox wearing the sunglasses.
+58:20
+58 分钟 20 秒
+So in this example, all three elements are well represented indicating good input output alignment.
+58:27
+58 分钟 27 秒
+Also important to note for this specific type of alignment, emoji image alignment, we use a different rating scale for the single side ratings.
+58:37
+58 分钟 37 秒
+Instead of highly aligned, somewhat aligned and not aligned, we use fairly, mostly and fully.
+58:45
+58 分钟 45 秒
+This is to better capture the nuances of how emojis are translated into images.
+58:51
+58 分钟 51 秒
+So in this example, all three elements are well represented, indicating good input output alignment, and so will be rated as fully represented.
+59:02
+59 分钟 2 秒
+OK, you've evaluated the individual images.
+59:05
+59 分钟 5 秒
+Now it's time to compare them.
+59:07
+59 分钟 7 秒
+The next step of the annotation workflow is preference ranking.
+59:11
+59 分钟 11 秒
+When more than one output image is evaluated, it is expected to select which one is better.
+59:18
+59 分钟 18 秒
+We're looking for the best image from the set.
+59:20
+59 分钟 20 秒
+Ranking is usually based on the same criteria that are used for single image evaluation, IE structural integrity, optical fidelity, and input output alignment.
+59:32
+59 分钟 32 秒
+You're using the same dimensions, but now you're comparing them against each other.
+59:37
+59 分钟 37 秒
+Keep in mind that the side by side evaluation will be driven by the ratings that you've already assigned to each image in the previous step.
+59:47
+59 分钟 47 秒
+For example, an image with severe structural integrity issues cannot be better than an image with noticeable structural integrity issues.
+59:56
+59 分钟 56 秒
+Your single image ratings should guide your ranking.
+1:00:00
+1 小时
+An image with a higher rating on the individual dimensions should generally be ranked higher overall.
+1:00:07
+1 小时 7 秒
+In the side by Side image comparison section of the tool, we have a preference ranking type rating scale where you can choose whether the left or right image is better, how much better they are, or if they're about the same.
+1:00:21
+1 小时 21 秒
+In some cases, you may be making paired comparisons between many different image sets.
+1:00:26
+1 小时 26 秒
+Which you can see would be toggle between at the top left of the tool UI screenshot.
+1:00:32
+1 小时 32 秒
+The options you have to select from Indiana, the side by side ranking step look like the screenshot you see here.
+1:00:39
+1 小时 39 秒
+Your goal in this step is to determine whether the left or right image is much better, slightly better, or if they're about the same in quality.
+1:00:47
+1 小时 47 秒
+Again, based on the grading dimensions that you've already analyzed in Step 4, Much better would be chosen when there is a clear and significant difference in quality between the two output images for any specific dimension.
+1:01:02
+1 小时 1 分钟 2 秒
+Keep in mind that the distinction should be evident and meaningful, making one image clearly superior in fulfilling the criteria of the dimension.
+1:01:12
+1 小时 1 分钟 12 秒
+Slightly better should be chosen when there is a noticeable yet moderate difference in quality between the two output images for any specific dimension.
+1:01:22
+1 小时 1 分钟 22 秒
+It should be chosen when one image has minor advantages over the other while both images remain fairly close in overall quality for that dimension.
+1:01:31
+1 小时 1 分钟 31 秒
+If both of the images were given the same single side evaluation score in Step 4, but one image is more similar to the input image than the other in the case of an image prompt, then you would select slightly better.
+1:01:46
+1 小时 1 分钟 46 秒
+About the same would be chosen when there is no meaningful difference in the quality of the two output images for any specific dimension.
+1:01:55
+1 小时 1 分钟 55 秒
+Keep in mind that this rating is not always a +1.
+1:01:58
+1 小时 1 分钟 58 秒
+The output images could be equal in how poorly they scored in the single side evaluation dimensions.
+1:02:05
+1 小时 2 分钟 5 秒
+We would select this rating if the images either equally meet or fail to meet the criteria for the dimension.
+1:02:13
+1 小时 2 分钟 13 秒
+Now let's have a look at some examples.
+1:02:16
+1 小时 2 分钟 16 秒
+Often the side by side ranking step is evaluated by dimension.
+1:02:20
+1 小时 2 分钟 20 秒
+So we would need to evaluate first the preference ranking of these two images on structural integrity alone.
+1:02:28
+1 小时 2 分钟 28 秒
+For these two images, we would grade the image on the left as much better.
+1:02:33
+1 小时 2 分钟 33 秒
+If you recall from when we looked at this example in Step 4, it has no structural integrity issues, while the image on the right has severe structural integrity issues.
+1:02:44
+1 小时 2 分钟 44 秒
+In this case, both of the images have issues with their structural integrity, but we still need to assess the preference ranking of the two.
+1:02:54
+1 小时 2 分钟 54 秒
+In this situation, even though neither is the ideal image, we will grade the one on the left as slightly better than the one on the right due to the severity of the issues with the image on the right.
+1:03:06
+1 小时 3 分钟 6 秒
+Now of course, if we were ranking the preference between these two images based solely on the dimension of input output alignment, then they would be considered about the same.
+1:03:16
+1 小时 3 分钟 16 秒
+In that regard, they both align with the user's prompt in an equal way.
+1:03:21
+1 小时 3 分钟 21 秒
+But here we are focusing on the dimension of structural integrity.
+1:03:25
+1 小时 3 分钟 25 秒
+In this example, we'll grade the preference between the two images based on the input output alignment dimension.
+1:03:32
+1 小时 3 分钟 32 秒
+The user's prompt is minimalist Bedroom with a single bed, fireworks disco lighthouse.
+1:03:40
+1 小时 3 分钟 40 秒
+Right off the bat, both of the images appear quite similar.
+1:03:43
+1 小时 3 分钟 43 秒
+We've got a bedroom with one bed, fireworks, and a lighthouse in both images.
+1:03:49
+1 小时 3 分钟 49 秒
+We definitely couldn't say that either of these images are highly aligned, however, since it seems they've both missed including the element disco in this situation.
+1:04:01
+1 小时 4 分钟 1 秒
+Both of the images are not ideal.
+1:04:03
+1 小时 4 分钟 3 秒
+However, they aren't ideal in exactly the same way.
+1:04:07
+1 小时 4 分钟 7 秒
+Therefore, the best way to rank this would be to mark them as about the same.
+1:04:13
+1 小时 4 分钟 13 秒
+Now you've rated and ranked the images for the final touch.
+1:04:17
+1 小时 4 分钟 17 秒
+Adding comments.
+1:04:19
+1 小时 4 分钟 19 秒
+This is your chance to explain your reasoning to the engineers reviewing the data.
+1:04:24
+1 小时 4 分钟 24 秒
+In most of the VCG projects, you'll be asked to provide comments once your evaluation is complete.
+1:04:30
+1 小时 4 分钟 30 秒
+Your comments are valuable.
+1:04:32
+1 小时 4 分钟 32 秒
+The purpose of them is to explain your decision making process to the engineers.
+1:04:37
+1 小时 4 分钟 37 秒
+We want to understand why you're making the choices you did.
+1:04:41
+1 小时 4 分钟 41 秒
+If there is a difference in scores, your rationales provide more informative insights to help engineers understand why there is such a difference and to take action.
+1:04:52
+1 小时 4 分钟 52 秒
+Your comments help us improve the AI models.
+1:04:55
+1 小时 4 分钟 55 秒
+A good comment should reflect factors influencing your evaluation decisions.
+1:05:00
+1 小时 5 分钟
+It should refer to the images using letters, so ABC not left or right.
+1:05:08
+1 小时 5 分钟 8 秒
+This ensures clarity and avoids confusion since sometimes you may be ranking the preference between 3 images.
+1:05:15
+1 小时 5 分钟 15 秒
+Comments should align with the ratings you have selected.
+1:05:19
+1 小时 5 分钟 19 秒
+Your comments should support your scores.
+1:05:22
+1 小时 5 分钟 22 秒
+Be specific about the differences and the criteria or dimensions you're evaluating.
+1:05:28
+1 小时 5 分钟 28 秒
+Point out exactly what you saw and why it mattered.
+1:05:32
+1 小时 5 分钟 32 秒
+Be concise and informative.
+1:05:34
+1 小时 5 分钟 34 秒
+Get to the point without rambling.
+1:05:36
+1 小时 5 分钟 36 秒
+Be well structured so the readers can easily follow your explanation.
+1:05:41
+1 小时 5 分钟 41 秒
+Make it easy for us to understand your thought process, and of course, avoid grammar and spelling errors.
+1:05:48
+1 小时 5 分钟 48 秒
+Proofread your comments before submitting them.
+1:05:51
+1 小时 5 分钟 51 秒
+Let's quickly review some examples.
+1:05:54
+1 小时 5 分钟 54 秒
+So here on the slide is a helpful comment.
+1:05:58
+1 小时 5 分钟 58 秒
+As you can see, this comment refers to images as AB and C and points out specifically which dimensions are considered.
+1:06:07
+1 小时 6 分钟 7 秒
+It describes what's in the images, the differences between the prompt and the output, and the reasons for the rating.
+1:06:15
+1 小时 6 分钟 15 秒
+The whole comment is well written and informative.
+1:06:18
+1 小时 6 分钟 18 秒
+Feel free to pause the video to review the comment in depth if you wish.
+1:06:24
+1 小时 6 分钟 24 秒
+Now let's look at this comment.
+1:06:26
+1 小时 6 分钟 26 秒
+Both images are having clarity and quality will be satisfied for structural integrity.
+1:06:33
+1 小时 6 分钟 33 秒
+So clarity, quality and satisfy are rather vague and subjective.
+1:06:40
+1 小时 6 分钟 40 秒
+There's no detail for the reasoning and there are some grammatical errors.
+1:06:44
+1 小时 6 分钟 44 秒
+Try to avoid vague, lengthy, irrelevant, subjective and generic comments.
+1:06:51
+1 小时 6 分钟 51 秒
+Ensure your comments are grammatically correct and easily understandable.
+1:06:57
+1 小时 6 分钟 57 秒
+Before finishing up, let's have a quick look at everything that's been covered today.
+1:07:03
+1 小时 7 分钟 3 秒
+Visual Content Generation is a set of projects that aim to evaluate the quality of machine generated images in relevance to the prompt.
+1:07:12
+1 小时 7 分钟 12 秒
+The prompt or the input data comes in the form of text, images, or both.
+1:07:18
+1 小时 7 分钟 18 秒
+The output computer generated images is being evaluated against designated criteria.
+1:07:24
+1 小时 7 分钟 24 秒
+Evaluation criteria are project specific.
+1:07:27
+1 小时 7 分钟 27 秒
+However, among the criteria that are common for the majority of BCG projects are optical fidelity, structural integrity, and input output alignment.
+1:07:39
+1 小时 7 分钟 39 秒
+The evaluation process consists of three main steps, image screening, single image evaluation, and comparison evaluation or preference evaluation.
+1:07:50
+1 小时 7 分钟 50 秒
+By providing your evaluation and explaining your decision making via comments, you contribute to the process of building the training data for the ML model to enhance its capabilities.
+1:08:04
+1 小时 8 分钟 4 秒
+Thank you for all your time and attention today.
+1:08:07
+1 小时 8 分钟 7 秒
+I know this is a lot of information, but your contributions to these VCG projects are incredibly valuable.
+1:08:14
+1 小时 8 分钟 14 秒
+Remember to always refer back to the project specific guidelines, prioritize safety, and provide clear and thoughtful comments.
+1:08:24
+1 小时 8 分钟 24 秒
+Now it's time to put your knowledge into practice.
+1:08:27
+1 小时 8 分钟 27 秒
+I'm confident that you'll all do a great job in evaluating these AI generated visuals.
+1:08:32
+1 小时 8 分钟 32 秒
+Thanks again for watching.

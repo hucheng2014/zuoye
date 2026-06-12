@@ -1,0 +1,1469 @@
+[
+  {
+    "url": "https://starshot.scilliance.com/?broker=true",
+    "headers": {
+      "Accept-Language": "en-US,en;q=0.9",
+      "Upgrade-Insecure-Requests": "1",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Linux\""
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/main.58e74e52.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8741.45f55153.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/490.667eedf2.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/6167.5e9e6a07.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2791.73e96968.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2007.9cc9e518.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/299.86244eba.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/7222.209f7732.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8884.4b18c33d.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4610.5c85b317.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/316.c697618f.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8206.8e144a15.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4164.d1a9dc17.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/1132.67e9278c.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3871.77b932ba.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4399.f3f2976a.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2080.efeb8ef3.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3422.f9836f27.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/442.2aea5e5e.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4660.3c7794e8.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9349.6b387e6d.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8890.ebc95336.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4245.c69f578e.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/429.26e499e2.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/142.49748dba.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3047.e17be800.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/6469.a1c03ca4.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2426.8f5b5ae8.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8936.75247545.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/5062.d06087bb.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9566.a2598f1d.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/6608.c56304f6.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3143.6f43d321.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2157.fb3cc64d.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9945.07555135.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8422.6d1fa89b.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/763.ff4c70b2.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3324.b8e6bfd4.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/7382.afe9ecea.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/824.51d2c1a0.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9281.e8eaeda2.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9064.d10fcb5e.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/5739.cabd8a26.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3492.5db687c0.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4155.8dbb5c05.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4454.a20ac296.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/6133.d51ddabd.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/1694.8e83f6e9.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/1285.9036fc66.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/1275.9ca4f516.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9465.e1fd25ad.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/33.b2622680.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2445.4e2e423f.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8935.8728a7af.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9696.ff6a6a9e.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8029.f0275f14.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9562.71a0ee55.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/7355.9b77c1f6.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/6402.bff15c55.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/css/4190.3a0ecf26.chunk.css",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4190.ea8d7c87.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://auth.scilliance.com/auth/realms/tag-crowd/protocol/openid-connect/auth?client_id=starshot&redirect_uri=https%3A%2F%2Fstarshot.scilliance.com%2F%3Fbroker%3Dtrue&state=27d98a8c-713d-47ff-b84c-8ae172f0575d&response_mode=fragment&response_type=code&scope=openid&nonce=05c9acd7-d589-4ec4-a40b-4f00d8c4c0bb&prompt=none&code_challenge=hD5IaeEQFxUJLqOBikhsdTVm66pF68JmQuIL84ZThCk&code_challenge_method=S256",
+    "headers": {
+      "Accept-Language": "en-US,en;q=0.9",
+      "Referer": "https://starshot.scilliance.com/",
+      "Upgrade-Insecure-Requests": "1",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Linux\""
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/favicon.png",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/manifest.json",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/?broker=true",
+    "headers": {
+      "Accept-Language": "en-US,en;q=0.9",
+      "Upgrade-Insecure-Requests": "1",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Linux\""
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/main.58e74e52.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8741.45f55153.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/490.667eedf2.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/6167.5e9e6a07.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2791.73e96968.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2007.9cc9e518.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/299.86244eba.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/7222.209f7732.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8884.4b18c33d.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4610.5c85b317.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/316.c697618f.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8206.8e144a15.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4164.d1a9dc17.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/1132.67e9278c.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3871.77b932ba.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4399.f3f2976a.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2080.efeb8ef3.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3422.f9836f27.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/442.2aea5e5e.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4660.3c7794e8.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9349.6b387e6d.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8890.ebc95336.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4245.c69f578e.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/429.26e499e2.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/142.49748dba.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3047.e17be800.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/6469.a1c03ca4.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2426.8f5b5ae8.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8936.75247545.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/5062.d06087bb.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9566.a2598f1d.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/6608.c56304f6.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3143.6f43d321.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2157.fb3cc64d.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9945.07555135.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8422.6d1fa89b.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/763.ff4c70b2.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3324.b8e6bfd4.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/7382.afe9ecea.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/824.51d2c1a0.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9281.e8eaeda2.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9064.d10fcb5e.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/5739.cabd8a26.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/3492.5db687c0.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4155.8dbb5c05.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4454.a20ac296.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/6133.d51ddabd.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/1694.8e83f6e9.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/1285.9036fc66.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/1275.9ca4f516.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9465.e1fd25ad.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/33.b2622680.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/2445.4e2e423f.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8935.8728a7af.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9696.ff6a6a9e.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/8029.f0275f14.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/9562.71a0ee55.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/7355.9b77c1f6.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/6402.bff15c55.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/css/4190.3a0ecf26.chunk.css",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/static/js/4190.ea8d7c87.chunk.js",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://auth.scilliance.com/auth/realms/tag-crowd/protocol/openid-connect/token",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "Content-type": "application/x-www-form-urlencoded",
+      "sec-ch-ua-mobile": "?0",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/manifest.json",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://starshot.scilliance.com/task-content?windowId=a2373122-dbf4-459a-b44a-b392a5a49916",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "authorization": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJRNnhiMzdUS1BfZjR0b2E0QTJwZDE3QzF6UjVZOTZWT2hKZ2JZVUcxZm9NIn0.eyJleHAiOjE3ODA0NzM2NDQsImlhdCI6MTc4MDQ3MzM0NCwiYXV0aF90aW1lIjoxNzgwNDcxODAwLCJqdGkiOiJvbnJ0YWM6NDE1NWEzZDktMWI0OS00ODViLWE4YTUtNTY0MWUxYTAwODFhIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLnNjaWxsaWFuY2UuY29tL2F1dGgvcmVhbG1zL3RhZy1jcm93ZCIsImF1ZCI6WyJhYW0iLCJzbGluZ3Nob3QiLCJkYXRhc3RvcmUiLCJ0cmVidWNoZXQiLCJ0ZWxlbWV0cnkiXSwic3ViIjoiOGU5MzQ4YzUtY2UyZi00ODRiLWE2NTMtNjNmZmE1ZjEwMzRiIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic3RhcnNob3QiLCJzaWQiOiI2OGEwMjY1ZS02Njg4LTQyODMtOTY5ZS0zYjg2NTNjZjU1NDkiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9zdGFyc2hvdC5tdWx0aWRldi5hcHBsZS5jb20iLCJodHRwOi8vMTI3LjAuMC4xIiwiaHR0cHM6Ly9zdGFyc2hvdC5zY2lsbGlhbmNlLmNvbSIsImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMSIsImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiY3Jvd2QtdXNlciJdfSwicmVzb3VyY2VfYWNjZXNzIjp7InNsaW5nc2hvdCI6eyJyb2xlcyI6WyJnZXRfdGFza19hbmRfc3VibWl0X3Jlc3VsdCIsImV4dGVuZC10YXNrLWNvbnRlbnRfcG9zdCIsInRhc2stY29udGVudF9nZXQiLCJhbm5vdGF0aW9uc19zdWJtaXRfcG9zdCJdfSwiZGF0YXN0b3JlIjp7InJvbGVzIjpbImFjY2VzcyJdfSwidHJlYnVjaGV0Ijp7InJvbGVzIjpbImdldF90YXNrX2FuZF9zdWJtaXRfcmVzdWx0Il19LCJ0ZWxlbWV0cnkiOnsicm9sZXMiOlsiYWRkIl19fSwic2NvcGUiOiJvcGVuaWQgYWFtIHByb2ZpbGUgZW1haWwiLCJhYW1fdXJsIjoiL3YxL3VzZXJzL2lkbXNhYy84ZTkzNDhjNS1jZTJmLTQ4NGItYTY1My02M2ZmYTVmMTAzNGIiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6ImppYW5nIGxlaSIsInByZWZlcnJlZF91c2VybmFtZSI6InZfbGhfYW5ub3RhdG9yX3poY25fMzE2QGNlbnRpZmljLmNvbSIsImdpdmVuX25hbWUiOiJqaWFuZyIsImZhbWlseV9uYW1lIjoibGVpIiwiZW1haWwiOiJ2X2xoX2Fubm90YXRvcl96aGNuXzMxNkBjZW50aWZpYy5jb20ifQ.CDzfqsg8Uljz4Doov3AX-kCmaAHej_7yoVPV8BE72nOJhy-XrvOl9-PIJbxuXcuE0SNAIbjuuVVhZPgEv8VJcGnhi_xcVVDQIdr50NxruTf2Lxl-ORWaGhFrz3ULETI-tneWZT2a7YlJ92V00x55l9Mm4b48_qbynRPg9vZIbj1Q6Y9gTEZK0xO5AvqdvpeZUjPfi7HP6rrmwTMgfqtx-q7KypnM9hIWS-A9PFCUUK4a0k7KebfbPCppbaSRI94fuxLNGXv6Cfa7vHcjmTSVf4ce3ZKRf0qgbbCRVlmCx4WD7m6uOZU0lBxRi58WjhG2wEb78A5vBiRfn8jjlFWqqTIN19YtMzPZbHv6PWSJp8dqhPkIhIW9_hIBmm3BASRrQ1BrMhroPzT7D4_BeKM-LUbve5tumgLPy95LJIMMdy2jlgwuFi8E4IQ-5OHDAZ4mGR4J7LsmjB97m-f9ZZqxsgtm9pPvULeORxSqYhEgPtFIlcTT_vS44BASXvf8ZsIyISdBLh_qbYoUd40fr1wz6T-ieWuDcjFlm5vBF0qrWogEB2yZgBzV2Lcv-sdczEJDvvU2_EthME_v64oPCZiXxIwM73trluWt998Szse5VAKN3Y46FfiM6FgYKFsTB8v_HDCUnvhXU01hh5s5n40JlEbhZ8tZJwrCUOTKLN3peqY",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "sec-ch-ua-mobile": "?0",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "accept": "application/json"
+    }
+  },
+  {
+    "url": "https://assets-public.scilliance.com/",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://assets-public.scilliance.com/89ff40213b40404fa60ada2ed2b96164/ds/items/d88e9605-4b22-457a-be27-6fd4286ee8f4/b86af0f1-2070-4464-894b-59bd33b5e625/303d3614-2f9b-40f8-9333-7970dc94f24b",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  },
+  {
+    "url": "https://assets-public.scilliance.com/89ff40213b40404fa60ada2ed2b96164/ds/config/2c362c85-b029-41d6-a8c0-f6742665ec83/annotation_1/121408c8-1e4b-4b0e-8328-5f88d5fc5a07",
+    "headers": {
+      "sec-ch-ua-platform": "\"Linux\"",
+      "Referer": "https://starshot.scilliance.com/",
+      "Accept-Language": "en-US,en;q=0.9",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"99\", \"Chromium\";v=\"136\"",
+      "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+      "sec-ch-ua-mobile": "?0"
+    }
+  }
+]

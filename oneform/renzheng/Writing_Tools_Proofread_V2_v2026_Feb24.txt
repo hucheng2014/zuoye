@@ -1,0 +1,2382 @@
+Writing Tool Guidelines-
+Proofreading V2
+v. 2026 Feb. 24 updated on: 03 / 09 / 2026
+    Announcements
+
+
+       v. 2026 Feb. 24 Updates - Please Review
+
+       Context: The update of this round is driven by ambiguity that the team has observed in Proofread data and model responses.
+       There was the need to further define error types, and not all types of errors carry the same weight. The updates in the grading
+       questions and guidelines are meant to address the above issues.
+
+       In the guidelines PDF, graders can find the update summary listed on Page 2.
+
+        •      The part that requires most of their attention is the newly added Step 2 - Classify the formality level of the Input Text.
+
+        •      This question is meant for graders to do an assessment. Whether the text is formal or not (informal, casual, etc) will determine
+               the expected model behaviors.
+
+        •      Graders must be familiar with different error types (critical/must fix errors, minor errors, and stylistic choise) and how to handle formal
+               vs informal text.
+
+       This version includes a few major updates:
+
+       • A new step (Step 2): The team has decided to add a new step - Classify the formality level of the Input Text.
+        • Review the types of errors, examples, and how they impact your grading of formal / informal input text.
+       • Step 3 - Assess the input text and the response: The wording of the question is updated. The instructions are streamlined and
+            simplified.
+
+       • Step 4 - Evaluate Correctness: There are minor updates to some of the follow-up questions. See the updated flow chart.
+       • Step 5 - Evaluate Completeness: There are minor updates to the question, which now has 4 scales to choose from.
+􀌭
+     Announcements
+
+
+        Updated Jan. 29:
+
+        • Updated the guidelines for Step 1: Review the Original Input Text to include checking for ambiguity and incomprehensibility in
+          addition to grammatical errors.
+
+        • Step 2/ Question 1 (for Input Text). The question now asks about both grammatical correctness and clarity, including
+          punctuation. We've also added a third option to indicate if the meaning of the text is completely unclear.
+
+        • New guidelines added to help you assess the level of ambiguity of the input text. We've outlined three scenarios: 1) The entire
+          input is comprehensible, 2) The input contains both comprehensible and ambiguous parts, and 3) The entire input is
+          incomprehensible. Each scenario has specific instructions for how to answer Step2/ Question 1
+
+        • Note: The issue about truncated / omitted text ( See announcement on Dec. 10) is now fixed.
+
+
+
+
+        Updated Dec. 19: We made a minor correction the 2nd example on page 34.
+􀌭􀌭
+    Announcements
+
+     Dec. 10 Special Callouts for Certification
+     The Proofread feature is designed to process the entire input text without omission. However, in rare cases, you may observe truncated output in
+     the grading UI.
+     In such instances, please assume the assistant found no errors in the omitted portion. In the backend, this means the assistant would return the
+     same text without making any edits. Our engineering team is actively working to resolve this discrepancy, ensuring analysts see the full, unedited
+     text in the frontend.
+     How to apply this callout to grading?
+
+     In the screenshot below, the assistant omits Defund the CBC already. Do better. Report real news for hells sakes in the input.
+
+      •     In the backend, this omission indicates that the assistant identified no errors in that specific text (and would return it unchanged, pending
+            the frontend fix).
+
+      •     Therefore, when grading such cases, please select: "No, the response is identical to the input."
+     Note: in the screenshot, the word "dictator" is marked in both the Proposed Edits and the Proofread Copy, while the Proofread Copy (response)
+     actually doesn't change anything in the input. When this occurs, please ignore the marking, assume no change made, and proceed to grade.
+􀌭
+01
+
+Introduction
+01 Introduction                                                       Hinglish
+
+
+
+
+ Introduction
+ The goal of the Proofreading feature is to correct all grammatical errors in the user's input text while preserving the original tone, style, and
+ register as much as possible.
+
+ Your evaluation of the response/output will focus on two dimensions: Correctness and Completeness.
+
+       • Correctness verifies whether all edits in a response are correct and adhere to the Minimal Edit Principle.
+
+       • Completeness verifies whether all errors in the input text are detected and corrected properly.
+
+
+
+      Guideline Learning Path
+ There are many nuances to Proofread and understandably so, given that the feature has to meet user expectations in different cultural,
+ linguistic, formal and informal contexts.
+
+ To navigate the complexity, begin the guideline review by getting familiar with:
+
+       1. Minimal Edit Principle
+
+       2. Principles for Handling Ambiguous or Informal Contexts
+
+ These principles will help you prioritize and navigate complex scenarios.
+
+
+
+
+                                      Introduction        I. Minimal Edit Principle     II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                        Step 6
+navigate to another section.          Step 1         Step 2       Step 3         Step 4         Step 5                      Appendix
+                                   Local-Specific Guidelines           Japanese          Arabic Language        Hinglish
+01 Introduction
+
+ Workflow
+
+                       1       Review the Original Input Text
+
+
+
+
+                       2       Classify the formality level of the Input Text
+
+
+
+                       3       Make an initial assessment of the Input Text and the Response (Proofread Copy)
+
+
+
+
+                       4       Evaluate the Correctness of the Response
+
+
+
+
+                       5       Evaluate the Completeness of the Response
+
+
+
+
+                       6       Compare Responses in Pair
+
+
+
+
+                                     Introduction        I. Minimal Edit Principle       II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.         Step 1         Step 2       Step 3         Step 4        Step 5                        Appendix
+                                  Local-Specific Guidelines           Japanese           Arabic Language         Hinglish
+02
+
+Proofreading
+Grading Principles
+Before you review the evaluation guidelines and dimensions, we'd like to first introduce you to:
+I.   Minimal Edit Principle, which the Proofread feature conforms to and mainly impacts the Correctness dimension.
+II. Principles for Handling Ambiguous or Informal Contexts
+02 Proofreading Grading Principles
+
+ I. What is the Minimal Edit Principle?
+ Proofreading edits must be strictly minimal—addressing only grammar, punctuation, capitalization, spelling, or formatting issues as lightly as
+ possible.
+
+ No changes in the response should alter the meaning, style, tone, register, or intent of the input text.
+
+ Note: register refers to the level of formality or style of speaking or writing used for a particular purpose or situation.
+
+ If any one of the following is violated, you will penalize the response under Correctness dimensions.
+
+       1. Preserve semantic content
+
+       2. Preserve tone, register, style, and formality
+
+       3. Preserve pronoun referentiality
+
+       4. Preserve proper noun referentiality
+
+       5. Preserve expressivity, colloquialisms or slang (this section needs your particular attention – PLEASE REVIEW)
+
+       6. Preserve formatting
+
+       7. Preserve Local Punctuations and Formatting
+
+ In the next few pages, you will see the examples of these rules.
+
+
+
+!! While most of the rules and the examples are straightforward, we do want to call out the rule to Preserve expressivity, colloquialisms or
+slang. Make sure to review that section.
+
+
+
+                                      Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.          Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                   Local-Specific Guidelines           Japanese          Arabic Language         Hinglish
+02 Proofreading Grading Principles
+
+ I. Minimal Edit Principle - Rules and Examples
+
+
+ 1. Preserve Semantic Content
+ Does the response maintain the original meaning and intent of the input text without introducing new content or altering expression?
+ Vocabulary, emphasis, and degree must be preserved exactly — even small lexical substitutions (including synonyms) or simplifications
+ count as unnecessary edits (because they cause undesirable semantic shifts).
+
+
+
+
+     Violations (bad corrections) include:
+       •   "help fix the issue" → "resolve the issue" (when "help fix" is grammatically correct)
+       •   "somewhat successful" → "successful" (removing hedge words changes meaning)
+       •   "most important" → "important" (removing qualifier changes emphasis)
+       •   "kindest regards" → "kind regards" (changing degree of politeness)
+       •   "saddened to hear" → "sad to hear" (rewording without grammatical need)
+       •   "take part in" → "participate in" (substituting with synonym unnecessarily)
+
+
+
+
+                                    Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.         Step 1        Step 2       Step 3        Step 4        Step 5                        Appendix
+                                  Local-Specific Guidelines          Japanese          Arabic Language         Hinglish
+02 Proofreading Grading Principles
+
+ I. Minimal Edit Principle - Rules and Examples
+
+
+ 2. Preserve Tone, Register, Style, and Formality (Rules)
+
+ Does the response maintain the same level of formality, politeness, and tone as the input text, respecting all relevant linguistic and cultural
+
+ markers in the language? This includes preserving:
+
+   •   Intended honorifics, verb forms, and polite vs. impolite pronouns
+
+   •   Formal vs. informal vocabulary and set phrases
+
+   •   Modal verbs, hedging, and indirect expressions
+
+   •   Sentence structure and polite interjections
+
+   •   Forms of address, titles, and honorifics
+
+ Minor adjustments that are strictly required to fix grammatical errors are allowed and do not count as violations, even if they slightly change
+
+ the surface form.
+
+ However, avoid upgrading or downgrading the overall level of formality unless it is required to correct an actual error.
+
+
+
+
+                                     Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.         Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                   Local-Specific Guidelines          Japanese          Arabic Language         Hinglish
+02 Proofreading Grading Principles
+
+ I. Minimal Edit Principle - Rules and Examples
+
+
+ 2. Preserve Tone, Register, Style, and Formality (Examples)
+
+
+     Violations (bad corrections) include:                                               Non-violations (desirable corrections) include:
+
+       •   You should check the report before submitting. → You must                      •   할머님께 선물을 줬어요. → 할머님께 선물을 드렸어요. (Corrects the
+           check the report before submitting.                                                verb to the proper honorific form, appropriate for addressing
+       •   I was wondering if you could send me the report. → I was                           someone of higher status or age)
+           wondering if you might send me the report.
+                                                                                          •   Sách này hay lắm, cậu đọc nó chưa? → Sách này hay lắm, cậu
+       •   수미씨는 요즘 건강이 어떠세요? → 수미씨는 요즘 건강이 어떠니?
+                                                                                              đọc chưa? (Correct / remove what sounds off or redundant)
+           (Korean)
+                                                                                          •   我吃咗藥 → 我食咗藥 (The co-existence of informal aspect
+       •   ¿Tú podrías enviarme el informe mañana? → ¿Usted podría
+                                                                                              marker and formal verb in the input is not desirable and should
+           enviarme el informe mañana? (Spanish)
+                                                                                              be corrected)
+       •   Mai tui ghé → Mai tôi ghé (Vietnamese)
+                                                                                          •   In English, almost all tone/register/style/formality changes are
+       •   你飲咗酒？ → 你喝了酒？(Hong Kong Chinese)
+                                                                                              likely to be violations.
+
+
+
+                                      Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.          Step 1         Step 2       Step 3        Step 4        Step 5                         Appendix
+                                    Local-Specific Guidelines          Japanese           Arabic Language         Hinglish
+02 Proofreading Grading Principles
+
+ I. Minimal Edit Principle - Rules and Examples
+
+
+ 3. Preserve Pronoun Referentiality
+
+ Does the response fully maintain the person, number, or gender features of each pronoun in the input text?
+ Only grammatical corrections (e.g., case changes) are allowed.
+
+
+
+
+        Violations:                                                                          Non-violations:
+        Referential shifts                                                                   Correcting grammatical case errors where necessary
+        (e.g., ”me” → "us", "he" → "she")                                                    (e.g., "they" → "them", "you" → "your")
+
+
+
+
+                                       Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.           Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                    Local-Specific Guidelines           Japanese          Arabic Language         Hinglish
+02 Proofreading Grading Principles
+
+ I. Minimal Edit Principle - Rules and Examples
+
+
+ 4. Preserve Proper Noun Referentiality
+
+ Does the response preserve all proper nouns (people, places, organizations, brands) occurring in input text exactly, except for non-referential
+ case inflections (e.g., possessive or oblique case markers)? Proper nouns should never be replaced or changed except for non-referential
+ grammatical inflections like possessive suffixes. Changes to the actual proper noun are prohibited.
+
+
+
+        Violations:                                                                           Non-violations:
+        Any modification of the proper noun itself                                            Case or possessive inflections where appropriate
+        (e.g., "Paris" → "London", "Sara" → "Sarah")                                          (e.g., "Sara" → "Sara s")
+
+
+
+
+                                      Introduction          I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.          Step 1           Step 2       Step 3        Step 4        Step 5                        Appendix
+                                    Local-Specific Guidelines            Japanese          Arabic Language         Hinglish
+             ’
+    02 Proofreading Grading Principles
+
+     I. Minimal Edit Principle - Rules and Examples
+
+
+     5. Preserve Expressivity, Colloquialisms, or Slang
+     The response must retain all expressive elements exactly as in the input text. Do not add, remove, or normalize them.
+
+
+           Preserve exactly:
+             •   Emojis and emoticons (including skin tones/variation).
+             •   Expressive punctuation: !, ?, ?!, !!!, ???, etc.
+             •   Interjections and fillers (e.g., wow, uh).
+             •   Repetition and emphasis (soooo, yessss, ALL CAPS, Mixed Case).
+             •   Established acronyms/initialisms/internetisms (e.g., lol/LOL, MDR, PTDR, OK, GOAT), technical acronyms (PDF, GPS), units (km,
+                 kg), usernames, and hashtags.
+
+           Violations (bad corrections):                                                            Non-violations (when necessary and non-expressive):
+             •   Hi John! → Hi John, (changing expressive punctuation)                                •    Fix grammar or spelling without altering expressive elements
+             •   I m confused??? → I m confused? (reducing repeated                                        (e.g., “Teh day was great!!!” → “The day was great!!!”).
+                 question marks)                                                                      •    Close unmatched quotes/brackets if clearly accidental, but
+             •   Soooo happy 😊 → So happy :) (reducing letter                                              do not reduce expressive punctuation elsewhere.
+                 repetition or swapping emoji)                                                        •    Move a period or comma if strictly required for grammatical
+                                                                                                           correctness, while preserving expressive marks (e.g., keep
+                                                                                                           “!!!” intact).
+
+
+                                              Introduction          I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+    Select the Chapters to
+    navigate to another section.              Step 1          Step 2        Step 3        Step 4          Step 5                       Appendix
+                                           Local-Specific Guidelines             Japanese          Arabic Language          Hinglish
+’
+                 ’
+     02 Proofreading Grading Principles
+
+              I. Minimal Edit Principle - Rules and Examples
+
+
+              5. Preserve Expressivity, Colloquialisms, or Slang - Important Callouts
+
+
+                Do NOT expand common abbreviations of longer words. These are                             Do expand shorthands that are used mainly to write faster
+                typically intentional and function as words in their own right; keep                      can be expanded when the context is unambiguous.
+                them as written (including casing and punctuation). This also applies
+                to abbreviated slurs/insults and widely used internet slang.
+
+
+
+         Only fix clear typos; DO NOT normalize or “spell out” these forms.
+          ▪     If the response incorrectly expands common abbreviations in an input text, this would result in the response being downgraded under
+                Correctness.
+          ▪     Review some examples below.
+               English                                                                            Spanish
+     •         lol — keep as “lol” (intentional slang; do not expand)                       •     bss → besos (“kisses”) — keep as “bss” (purposeful, meme-like usage;
+     •         af — keep as “af” (intentional emphasis/slang; do not expand)
+                                                                                                  do not expand)
+     •         bro — short for “brother”; commonly used; keep as “bro”
+                                                                                            •     cumple → cumpleaños (“birthday”) — keep as “cumple” (widely used
+     •         bros — short for “brothers”; commonly used; keep as “bros”
+                                                                                                  informal shortening)
+                                                                                            •       nde → n de semana (“weekend”) — keep as “ nde” (widely used
+                                                                                                  informal shortening)
+
+                                                    Introduction        I. Minimal Edit Principle        II. Principles for Handling Ambiguous or Informal Contexts
+         Select the Chapters to
+         navigate to another section.               Step 1         Step 2       Step 3          Step 4        Step 5                        Appendix
+                                                  Local-Specific Guidelines            Japanese          Arabic Language         Hinglish
+fi
+         fi
+                                                     fi
+02 Proofreading Grading Principles
+
+ I. Minimal Edit Principle - Rules and Examples
+
+
+ 5. Preserve Expressivity, Colloquialisms, or Slang - Important Callouts
+
+
+       Refer to the informal content word lists: In Appendix - Informal Content Word Lists, we have included the words lists provided by
+       the Design team. Use them as a reference when you encounter abbreviations.
+
+
+
+
+                                   Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.       Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                 Local-Specific Guidelines          Japanese          Arabic Language         Hinglish
+02 Proofreading Grading Principles
+
+ I. Minimal Edit Principle - Rules and Examples
+
+
+  6. Preserve Formatting
+
+  Does the response retain all formatting quirks and special symbols exactly as in the input text, without introducing any new ones?
+  Indentation, bullet styles, and other layout features should be the same between input text and in response.
+      •   Line breaks, indentation, and spacing must be identical
+      •   Special formatting symbols must remain unchanged
+      •   Paragraph structure must be preserved
+      •   Numbers written in digits should not be replaced with word forms.
+      •   ALL CAPS words should be preserved.
+
+
+
+
+                                     Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.         Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                  Local-Specific Guidelines           Japanese          Arabic Language         Hinglish
+02 Proofreading Grading Principles
+
+     I. Minimal Edit Principle - Rules and Examples
+
+
+     7. Preserve Local Punctuations and Formatting
+     The response should respect and preserve the locale-specific punctuation and formatting.
+
+
+
+     Target
+                Topic              Input                 Output                     Explanation
+     Locale
+                                                                                     In British English, a period is placed outside of the quotation marks. However, in
+                                                                                     this example, the period in the input got "corrected" and misplaced inside the
+                                    Yeah, my 10am kid        Yeah, my 10 a.m.
+                                                                                     quotes, which is the en-US style.
+1     en-GB      Punctuation        was a complete           kid was a complete
+                                    "no-show".               "no-show."
+                                                                                     This scenario would be considered out-of-locale (i.e. violating the principle of
+                                                                                     localization and showing content that is not helpful to local users ).
+
+                                                                                     en_SG adopts the British date format (DD/MM/YY). The output made an
+                                    My license will          My license will
+                                                                                     incorrect edit by applying the U.S. date formate (MM/DD/YY).
+2     en-SG      Date               expire on                expire on
+                                    23/11/2027.              11/23/2027.
+                                                                                     This is considered unnecessary edit and is out of locale.
+
+
+
+
+                                              Introduction         I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+    Select the Chapters to
+    navigate to another section.              Step 1         Step 2        Step 3        Step 4        Step 5                        Appendix
+                                           Local-Specific Guidelines            Japanese          Arabic Language         Hinglish
+02 Proofreading Grading Principles
+
+ II. Principles for Handling Ambiguous or Informal Contexts
+
+
+You have reviewed I. Minimal Edit Principle. Now, let s review II. Principles for Handling Ambiguous or Informal Contexts.
+
+You will encounter input texts that seem informal, such as an SMS messages, messages from chat apps, or informal email exchanges. These
+informal scenarios can cause many evaluation challenges, especially for commas, punctuation, and style.
+
+Use the principle below to guide your assessment:
+
+      1. Add punctuation when contextually appropriate.
+
+      2. Preserve colloquial or informal style.
+
+      3. Accept reasonable interpretations of unclear text.
+
+
+
+
+                                     Introduction          I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.         Step 1           Step 2       Step 3        Step 4        Step 5                        Appendix
+                                   Local-Specific Guidelines            Japanese          Arabic Language         Hinglish
+                                                  ’
+02 Proofreading Grading Principles
+
+ II. Principles for Handling Ambiguous or Informal Contexts
+
+
+1. Add punctuation when contextually appropriate.
+
+   • For formal / neutral text: In writing that is clearly neutral or formal, adding correct punctuation is expected.
+
+   • When Formality is Unclear: Prioritize grammatical correctness. You should err on the side of adding punctuation if it makes the
+     sentence more correct and easier to understand.
+
+
+
+
+                                      Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.          Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                   Local-Specific Guidelines           Japanese          Arabic Language         Hinglish
+02 Proofreading Grading Principles
+
+ II. Principles for Handling Ambiguous or Informal Contexts
+
+
+2. Preserve colloquial or informal style.
+
+  • If the text is clearly informal: Do not formalize or standardize text that is clearly informal. Avoid changing colloquial expressions or
+    adding pronouns in deliberate omissions, such as subject ellipsis in English
+
+      • Ex: “gonna” → do not change to “going to”
+      • Ex: “went to da store today.” → do not add a subject as in “I went to da store today.”
+          • In this scenario, an identical response "went to da store today." is acceptable.
+      • Ex: "lol, that's funny 😂 " → do not add a period at the end of the sentence.
+
+          • Given the sentence is clearly informal, it is acceptable to preserve the style in the input and omit the hard stop in the response.
+          • In this scenario, an identical response "lol, that's funny 😂 " is acceptable.
+
+  • If the text's formality is ambiguous: It is acceptable to make edits that increase formality if they also improve grammatical correctness.
+      • In these ambiguous cases, changing “gonna” to “going to” would be considered a necessary and correct edit.
+      • When in doubt, err on the side of accepting such changes if they enhance grammaticality and/or clarity.
+
+
+
+
+                                      Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.          Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                   Local-Specific Guidelines           Japanese          Arabic Language         Hinglish
+    02 Proofreading Grading Principles
+
+     II. Principles for Handling Ambiguous or Informal Contexts
+
+
+    3. Accept reasonable interpretations of unclear text.
+
+         When the meaning of the input text is truly unclear, there are two acceptable outcomes for a response:
+
+           • A Reasonable Edit is Made: If the response makes a plausible, good-faith edit that clarifies the text, this is acceptable. The
+              interpretation should be logical and shouldn't invent a meaning that seems unlikely.
+
+           • No Edit is Made: It is also acceptable for the response to leave the ambiguous text as-is. Do not penalize the lack of edits—since
+              it s reasonable to avoid changes when the intended meaning is genuinely ambiguous.
+
+
+
+
+                                         Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+    Select the Chapters to
+    navigate to another section.         Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                      Local-Specific Guidelines           Japanese          Arabic Language         Hinglish
+’
+03
+
+Steps and
+Requirements
+03 Steps and Requirements
+
+  Workflow
+                       1         Review the Original Input Text
+
+
+
+
+                       2         Classify the formality level of the Input Text
+
+
+
+
+                       3         Make an initial assessment of the Input Text and the Response (Proofread Copy)
+
+
+
+
+                       4         Evaluate the Correctness of the Response
+
+
+
+
+                       5         Evaluate the Completeness of the Response
+
+
+
+
+                       6         Compare Responses in Pair
+
+
+
+!! Please be sure to align with the locale-specific guidelines and refer to the grading framework under each dimension to make your evaluation.
+
+• Please be sure to review Locale-Specific Guidlines tab.
+
+
+                                        Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to
+ navigate to another section.           Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                     Local-Specific Guidelines           Japanese          Arabic Language         Hinglish
+03 Steps and Requirements
+
+ Step 1: Review the Original Input Text
+ In this first step, review the original input text with these questions in mind, as you will use the information gathered in this step to answer the first
+ question.
+
+ • Is there any grammatical error in the input text?
+ • Is part of the input text ambiguous due to (lack of) punctuation?
+       • ex: "I like cooking my family and my pets." is ambiguous. It should be "I like cooking, my family, and my pets."
+ • Is the input text too vague and completely incomprehensible?
+
+
+ What counts as a grammatical error?
+
+
+ A grammatical error is an objective violation of the foundational rules of language, such as incorrect spelling, punctuation, subject-verb agreement, or
+ sentence structure.
+
+ This definition excludes subjective assessments of writing, meaning issues of tone, style, or unnatural phrasing are not considered grammatical errors.
+
+
+
+
+                                         Introduction        I. Minimal Edit Principle     II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                           Step 6
+navigate to another section.             Step 1         Step 2       Step 3         Step 4         Step 5                      Appendix
+                                      Local-Specific Guidelines            Japanese         Arabic Language          Hinglish
+03 Steps and Requirements
+
+  Step 1: Review the Original Input Text
+
+
+⚠ Keep in mind what you have learned about the Minimal Edit Principle when assessing grammatical errors. Below is an excerpt to help you refresh:
+    Proofreading edits must be strictly minimal—addressing only grammar, punctuation, capitalization, spelling, or formatting issues as lightly as possible.
+
+    No changes in the response should alter the meaning, style, tone, register, or intent of the input text.
+
+          • Note: register refers to the level of formality or style of speaking or writing used for a particular purpose or situation.
+
+
+    If any one of the following is violated, you will penalize the response under Correctness dimensions.
+           • Preserve semantic content
+           • Preserve tone, register, style, and formality
+           • Preserve pronoun referentiality
+           • Preserve proper noun referentiality
+           • Preserve expressivity, colloquialisms or slang
+           • Preserve formatting
+           • Preserve Local Punctuations and Formatting
+
+
+
+
+                                        Introduction         I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                          Step 6
+navigate to another section.            Step 1         Step 2        Step 3        Step 4         Step 5                      Appendix
+                                      Local-Specific Guidelines           Japanese         Arabic Language          Hinglish
+03 Steps and Requirements
+
+ Step 1: Review the Original Input Text
+ The screenshot below shows the UI for Step 1.
+
+
+
+
+                                   Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                    Step 6
+navigate to another section.       Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                Local-Specific Guidelines           Japanese         Arabic Language        Hinglish
+03 Steps and Requirements
+
+  Step 2: Assess the Formality Level of the Input Text
+ You will begin the task by classifying the formality level of the input text. Your formality assessment will help you determine which errors the
+ assistant is required to fix versus which are optional.
+
+
+Question 1
+
+What is the formality level of the input text?
+
+         Formal (Government, legal, academic research)
+         Other (Semi-formal, informal, colloquial)
+
+
+
+
+The Purpose of this Question
+
+Not all grammatical errors carry the same weight. The formality of the input text determines whether an error must be xed, is optional to x, or should be
+preserved entirely. Review the instructions below:
+
+A. Understand the error types
+B. Expectations for di erent error types in formal vs other context
+
+
+
+
+                                          Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                           Step 6
+navigate to another section.              Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                       Local-Specific Guidelines           Japanese         Arabic Language        Hinglish
+                ff
+                                                                                                                     fi
+                                                                                                                                          fi
+     03 Steps and Requirements
+
+         Step 2: Assess the Formality Level of the Input Text
+
+     A. Understand the error types
+     In a formal or informal piece of text, you can expect to catch these types of errors: critical, minor, and stylistic choice.
+
+
+
+          Category                            De nition                                                  Examples                                      Action
+
+      Critical Errors      An error should only be "critical" if it:              Typical crucial errors include but are not limited to:    Must Fix in both formal and
+                                                                                                                                            informal context.
+                           • Genuinely blocks comprehension                       • Subject-Verb Agreement Errors
+                                   (reader can't understand)                      • Wrong Word Usage (Semantic Errors)
+                           • Changes the intended meaning (says                   • Severe Homophone Errors (Meaning-changing. Ex:
+                                   something di erent)                                    "their" vs "there")
+                           • Creates true ambiguity (multiple valid               • Gender/Pronoun Agreement Errors
+                                   interpretations)
+                                                                                  • Tense Inconsistency (Within Same Context)
+                           • Violates fundamental grammar (sounds
+                                                                                  • Misspellings (Comprehension-blocking)
+                                   wrong to native speakers)
+                                                                                  • True Pronoun Ambiguity
+                                                                                  See the Critical Error Table on slide 34 for
+                                                                                  examples
+
+
+
+
+                                               Introduction            I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+       Select the Chapters to                                                                                             Step 6
+       navigate to another section.            Step 1         Step 2           Step 3        Step 4         Step 5                      Appendix
+                                            Local-Specific Guidelines               Japanese         Arabic Language         Hinglish
+fi
+             ff
+     03 Steps and Requirements
+
+            Step 2: Assess the Formality Level of the Input Text
+
+     A. Understand the error types
+     In a formal or informal piece of text, you can expect to catch these types of errors: critical, minor, and stylistic choice.
+
+           Category                       De nition                                               Examples                                            Action
+
+      Minor Errors        Minor errors are acceptable under the       Minor errors can include but are not limited to the examples         Fix only in formal
+                          Minimal Edit Principles. They arguably      below:                                                               contexts.
+                          break a formal grammar rule but do          Punctuation
+                          not hinder comprehension or                 • Missing apostrophe in contractions: "dont" instead of "don't"      Optional to x in informal/
+                          readability.                                • Missing comma in direct address: "Hey John how are you?"           other contexts. The
+                                                                      • Comma splice: "I'm tired, let's go home"                           assistant is NOT penalized
+                          Important: In informal context, if the      • Missing period at end of sentence: "Sounds good"                   for leaving them as-is.
+                          assistant xes these minor errors,           • Missing question mark: "Are you coming"
+                          that's ne—but if they leave them as-
+                          is, that's also acceptable.                 Capitalization
+
+                          The assistant should NOT be                 • Lowercase "i": "i think we should meet"
+                          penalized for preserving these minor
+                          errors in informal/other contexts.          Sentence Structure
+                                                                      • Starting with conjunction: "But I don't want to"
+                                                                      • Sentence fragments: "Because I said so"
+
+                                                                      Style/Convention
+                                                                      • Insertion of "that" is optional: "I think we should go" (vs "I
+                                                                              think that we should go")
+                                                                      • Double negatives in dialect: "I don't have no money"
+                                                                              (when dialectally appropriate)
+
+
+
+                                                  Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+           Select the Chapters to                                                                                        Step 6
+           navigate to another section.           Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                                Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+fi
+      fi
+             fi
+                  fi
+     03 Steps and Requirements
+
+         Step 2: Assess the Formality Level of the Input Text
+
+     A. Understand the error types
+     In a formal or informal piece of text, you can expect to catch these types of errors: critical, minor, and stylistic choice.
+
+
+
+
+          Category                           De nition                                             Examples                                       Action
+
+      Stylistic Choices     Technically "incorrect" but intentional         Examples include but are not limited to:                   Preserve / Do Not Fix
+                            based on tone. (e.g. slang, sentence            • Intentional Misspellings/Elongation: "yesssss nally
+                            fragments for e ect)                                    done""
+                                                                            • Creative Punctuation for Tone: "wait what?????
+                                                                                    that's insane!!!"
+                                                                            • ...
+
+
+
+
+                                              Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+       Select the Chapters to                                                                                        Step 6
+       navigate to another section.           Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                            Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+fi
+               ff
+                                              fi
+03 Steps and Requirements
+
+  Step 2: Assess the Formality Level of the Input Text
+
+A. Understand the error types
+
+⚠ Callouts for Minor Errors
+It is acknowledged that what counts as a "minor error" can be highly ambiguous at times. For examples:
+
+        • Edge case 1 - No capitalization at sentence start: "sounds good to me"
+        • Edge case 2 - Run-on sentences: "I'm going to the store do you need anything"
+
+For the edge case 1, if the ENTIRE text is in lowercase, that might be acceptable. It can be hard to make that call if we are seeing just that sentence in
+isolation.
+
+For the edge case 2, the run-on sentence situation feels more serious that just a minor error without the whole text.
+
+
+     Action for analysts: In both highly ambiguous scenarios, the engineering team would like you to take into account the whole text to determine
+whether the error should be treated as an anomaly or is consistent with being very informal.
+
+
+
+
+                                        Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                         Step 6
+navigate to another section.            Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                     Local-Specific Guidelines           Japanese         Arabic Language        Hinglish
+03 Steps and Requirements
+
+ Step 2: Assess the Formality Level of the Input Text
+
+A. Understand the error types
+    Typical Critical Errors
+
+    These errors are considered critical because they genuinely impede comprehension, change intended meaning, or create true
+    ambiguity—issues that persist regardless of formality level.
+
+   Error Type                        Description                             Examples
+
+     Subject-Verb Agreement           Mismatch between subject and             • "The team have been working" → "The team has been working"
+     Errors                           verb number/person                       • "She don't understand" → "She doesn't understand"
+                                                                               • "They goes to school" → "They go to school"
+
+
+     Wrong Word Usage (Semantic       Using a word that means                  • "I except your apology" → "I accept your apology"
+     Errors)                          something di erent than intended         • The medicine had no a ect" → "The medicine had no e ect"
+                                                                               • "Please advice me" → "Please advise me"
+
+
+
+
+     Severe Homophone Errors          Homophone confusion that                 • "Their going to there house" → "They're going to their house"
+     (Meaning-changing)               changes or obscures meaning              • "Your right" → "You're right"
+                                                                               • "Its time to go" → "It's time to go" (when meaning "it is")
+
+
+
+
+                                    Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                     Step 6
+navigate to another section.        Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                 Local-Specific Guidelines           Japanese         Arabic Language        Hinglish
+     ff
+                ff
+                                              ff
+03 Steps and Requirements
+
+ Step 2: Assess the Formality Level of the Input Text
+A. Understand the error types
+    Typical Critical Errors
+
+    These errors are considered critical because they genuinely impede comprehension, change intended meaning, or create true
+    ambiguity—issues that persist regardless of formality level.
+
+   Error Type                       Description                               Examples
+
+    Gender/Pronoun                   Incorrect gender marking or               • "The girl forgot his backpack" → "The girl forgot her backpack”
+    Agreement Errors                 pronoun-antecedent mismatch               • (In gendered languages) "La problema" → "El problema" (Spanish)
+
+
+
+
+    Tense Inconsistency              Illogical tense shifts within the         • "I went to the store and buy milk" → "went...bought"
+                                     same temporal context                     • "She is cooking when he arrived" → "was cooking...arrived"
+                                                                               • "Tomorrow I went shopping" → "Tomorrow I will go shopping"
+
+    Severe Misspellings              Misspellings that genuinely prevent       • "The rpoject is complte" → "The project is complete”
+    (Comprehension-blocking)         understanding                             • "Plesae reveiw the dcomunet" → "Please review the document”
+                                                                               • "I hvae a quesiton" → "I have a question"
+
+
+    True Pronoun Ambiguity           Unclear pronoun reference                 • "John told Mark he was red" (who was red?)
+                                     preventing comprehension                  • "The box is in the bag. Move it." (move what?)
+                                                                               • “Sarah called Anna when she arrived" (who arrived?)
+
+
+
+
+                                      Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                       Step 6
+navigate to another section.          Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                    Local-Specific Guidelines            Japanese       Arabic Language        Hinglish
+                 fi
+                               fi
+03 Steps and Requirements
+
+           Step 2: Assess the Formality Level of the Input Text
+
+B. Expectations for Different Error Types in Formal vs Other Context
+The table below shows how you should approach different error types in formal vs other context
+
+
+                                   Critical Error                                      Minor Error                                 Stylistic Choice
+
+            Formal                 Fix (necessary)                                     Fix (necessary)                             Fix if unintentional or inappropriate for
+                                                                                                                                   context; otherwise leave it.
+
+            Other                  Fix (necessary)                                     Optional (unnecessary)                      Preserve (unnecessary)
+
+
+
+
+          ⚠ More explanations...
+          Minor errors are optional to x in non-formal contexts — meaning the assistant is not penalized for leaving them as-is. However, if the assistant
+     does x a minor error, evaluate the x on its quality:
+
+            • If the x is correct and does not alter the intent → acceptable
+            • If the x alters the intended meaning or introduces a new error → not acceptable
+
+               Stylistic choice in formal text:
+              • Whether a stylistic choice should be xed is a judgment call based on context. Ask yourself: does this read as an intentional stylistic choice, or
+                does it seem out of place given the formality of the text?
+              • Use the surrounding context of the input to guide your decision.
+
+
+
+
+                                                          Introduction        I. Minimal Edit Principle     II. Principles for Handling Ambiguous or Informal Contexts
+          Select the Chapters to                                                                                                  Step 6
+          navigate to another section.                    Step 1         Step 2       Step 3         Step 4         Step 5                      Appendix
+                                                        Local-Specific Guidelines          Japanese          Arabic Language        Hinglish
+fi
+     fi
+     fi
+                                         fi
+                                              fi
+                                                   fi
+03 Steps and Requirements
+
+       Step 3: Make an Initial Assessment of the Input Text and Response
+            After reviewing the Input Text, you will now make an initial assessment of the Input and the response, which is a proofread copy.
+
+
+
+     Question 1                                                                                              Question 2 (for Response)
+
+     Does the input text contain errors that hinder comprehension or readability, considering                Did the assistant make changes to the input?
+     its intended formality level? (Consider only errors that require correction under the
+     minimal edit principle)
+                                                                                                                       Yes, the response is different from the input.
+             No errors - The input is appropriately clear and readable for its formality level.
+                                                                                                                       No, the response is identical to the input.
+             Yes - The input contains errors that hinder comprehension or readability.
+             The input is too ambitious. Cannot assess without additional context.
+
+
+
+If the meaning of the text cannot be determined
+        • This scenario occurs when the entire input text is so vague, unclear, or incomplete that you cannot reasonably assess its grammatical correctness or punctation
+          (e.g., it s gibberish, a single unidentifiable word, or a fragment completely devoid of context.) In short, the meaning of the input cannot be determined.
+
+        • For example: “This is hard the who pays bit.”
+
+        • Expectation for Assistant: In this example, the assistant is expected to leave the text unedited (i.e. generate the same response).
+
+        • Action for you to take for Q1:
+
+              • Select “No, the meaning of the text cannot be determined because the text is so poorly constructed or lacks sufficient context.”
+
+              • Depending on whether or not the assistant returns an edited response (same as the input), different derived scores will be displayed for you. No further
+                action from analysts is needed.
+
+                                               Introduction          I. Minimal Edit Principle     II. Principles for Handling Ambiguous or Informal Contexts
+     Select the Chapters to                                                                                              Step 6
+     navigate to another section.              Step 1         Step 2         Step 3         Step 4         Step 5                      Appendix
+                                             Local-Specific Guidelines             Japanese          Arabic Language           Hinglish
+ ’
+03 Steps and Requirements
+
+ Step 3: Make an Initial Assessment of the Input Text and Response
+
+
+Question 2 (for Response ) Instructions
+
+When answering Question 2, you will see edits appearing in red and blue text. A clean copy will also be displayed for you. See the screenshot below.
+
+
+Important: For Question 2, If you select "No, the response is identical to the input," there is no need to continue to Steps 3 and 4 (evaluating the
+Correctness and Completeness dimensions).
+
+
+
+
+                                        Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                         Step 6
+navigate to another section.            Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                     Local-Specific Guidelines           Japanese         Arabic Language        Hinglish
+03 Steps and Requirements
+
+   Step 4: Evaluate the Correctness Dimension of the Response
+ Depending on your questions in the previous steps, different questions will be displayed for you to evaluate Correctness.
+
+ You will be prompted to answer a follow-up question "Did any edits alter the original meaning, tone, style, or register?" if you made the
+ selections below:
+
+   • Q1. Does the input text contain errors that hinder comprehension or readability, considering its intended formality level? - No errors.
+   • Q2. Did the assistant make changes to the input? - Yes
+   • Follow-up question: Did any edits alter the original meaning, tone, style, or register?
+
+ You will be prompted to answer a Follow-up question "Are all the edits in the response necessary?" if you have made the selections below:
+
+   • Q1. Does the input text contain errors that hinder comprehension or readability, considering its intended formality level? - Yes. The input contains
+     errors.
+   • Q2. Did the assistant make changes to the input? - Yes
+   • Follow-up question: Are all the edits in the response necessary? See below.
+
+
+Follow-up question (If the Input Text contains no errors)                                         Follow-up question (If the Input Text contains errors)
+Did any edits alter the original meaning, tone, style, or register?                               Are all the edits in the response necessary?
+
+         Yes, at least one edit altered the original meaning, tone, style, or register.                    Yes, all edits in the response are necessary.
+         No, none of the edits altered the original meaning, tone, style, or register.                     Mixed, only some edits are necessary.
+                                                                                                           No, all edits are unnecessary.
+
+
+
+
+Depending on your answer to Question 3-2 , different follow-up questions will surface.
+
+
+                                           Introduction         I. Minimal Edit Principle        II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to                                                                                                Step 6
+ navigate to another section.              Step 1         Step 2        Step 3            Step 4         Step 5                      Appendix
+                                         Local-Specific Guidelines           Japanese             Arabic Language        Hinglish
+03 Steps and Requirements
+
+ Step 4: Evaluate the Correctness Dimension of the Response (flowchart)
+ Below is a flowchart showing how the questions provided will appear depending on your answer to Q 3-2.
+
+
+
+
+                                     Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                      Step 6
+navigate to another section.         Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                   Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+03 Steps and Requirements
+ ⚠ Step 4: Correctness Guideline Callouts
+
+ 1. The intent behind the Correctness dimension
+   • This dimension is meant to verify whether the edits made in a response are 1) necessary and 2) correct.
+   • Necessity is important to Proofread because this feature is not supposed to change style, tone, meaning, or register–all of them considered
+      unnecessary edits.
+     • Make sure you're familiar with Minimal Edit Principle before evaluating this dimension.
+ 2. Derived scores will be visible to you
+ Different derived scores for Correctness will be displayed for you, depending on your answers to each question and its follow-ups. There will be 4 scales:
+   • Excellent
+   • Good
+   • Fair
+   • Poor
+ You won't need to provide or engage with these scores explicitly (because they are automatically computed), but they will be displayed for your reference.
+ You will base the pairwise comparison later on these derived scores.
+
+
+ 3. Error category definitions
+ Some questions will display issue categories for you to select. Refer to the tables on the next pages to guide your selections:
+ • I. Error categories for incorrect edits
+
+ • II. Error categories for unnecessary edits
+
+
+
+
+                                       Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.           Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                     Local-Specific Guidelines          Japanese          Arabic Language         Hinglish
+03 Steps and Requirements
+   ⚠ Step 4: Correctness Guideline Callouts
+
+
+I. Error categories for incorrect edits
+
+Error Category                                  Explanation
+
+                                                    Incorrect use of punctuation marks such as commas, periods, apostrophes, quotation marks, colons,
+Punctuation
+                                                    semicolons, etc.
+
+                                                    Incorrect use of white space, including extra/missing spaces between words/characters, or incorrect line/
+Spacing
+                                                    paragraph breaks.
+
+Introduce new errors that alter meanings            The response introduces new inaccuracies or changes the original intended message.
+
+Impede comprehension                                The response makes it harder for the reader to understand the content.
+
+Out-of-locale                                       The response contains elements that are inappropriate or irrelevant for the target region or audience.
+
+Wrong article/preposition use                       Incorrect usage of "a," "an," "the," or prepositions like "in," "on," "at," etc.
+
+Voice alteration                                    The grammatical voice (active/passive) of a sentence is changed unnecessarily or incorrectly.
+
+Formality alteration                                The level of formality in the text (e.g., formal, informal) is changed inappropriately.
+
+Word choice alteration                              Words are replaced with synonyms or different terms.
+
+Change level of code-switching                      The response does not match the level of language mixing or code-switching in the input text.
+
+Register alteration                                 The style, script, or dialect of language is changed.
+
+Other                                               Any other error not covered by the above categories. Please explain.
+
+
+                                           Introduction           I. Minimal Edit Principle       II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to
+  navigate to another section.             Step 1          Step 2         Step 3         Step 4        Step 5                          Appendix
+                                     Local-Specific Guidelines                 Japanese           Arabic Language          Hinglish
+03 Steps and Requirements
+   ⚠ Step 4: Correctness Guideline Callouts
+
+
+II. Error categories for unnecessary edits
+
+
+Error Category                                 Explanation
+
+Punctuation change that does not touch on
+syntax, expressivity, or the meaning of the        Altering punctuation when the original was correct and the change offers no grammatical improvement.
+input text
+
+Optional capitalization                            Changing capitalization when both the original and new forms are grammatically or stylistically acceptable.
+
+                                                   Modifying spacing (e.g., extra/missing spaces) when the original was already correct or within acceptable
+Spacing
+                                                   norms.
+
+Mechanical issues that may affect how a
+                                                   Subjective stylistic changes to grammar, articles, spelling, or phrasing that do not correct a clear error.
+sentence is expressed
+
+                                                   Inappropriately changing abbreviations (e.g., expanding when not needed, using an incorrect form, or failing
+Incorrect handling of abbreviations
+                                                   to expand as required by the guidelines).
+
+
+
+
+                                          Introduction          I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to
+  navigate to another section.            Step 1          Step 2        Step 3        Step 4        Step 5                         Appendix
+                                      Local-Specific Guidelines              Japanese          Arabic Language         Hinglish
+03 Steps and Requirements
+Q3-1: “Did any edits alter the original meaning, tone, style, or register?” - Examples
+
+       Input Text             Response                       Correct Answer                        Rationale
+
+1      The apple was           John ate the apple by          Yes, at least one edit altered the    The input is grammatically fine, but it sounds awkward
+       eaten by John           the window at lunch            original meaning, tone, style, or     because of the double "by" phrase and clunky word order.
+       yesterday at lunch      yesterday.                     register.                             The style and fluidity of the response is improved; however,
+       by the window.                                                                               that's beyond the scope of the Proofread feature.
+                                                                                                    The automatically derived score of this response would be
+                                                                                                    🙁 Poor.
+
+2      Hey, can you let        Hey, can you let Andrew        No, none of the edits altered the     The response expands the contractions ("can't" →
+       Andrew know I           know I cannot make the         original meaning, tone, style, or     "cannot").
+       can't make the call     call today?                    register.                             This doesn't really change the meaning, tone, or style of the
+       today?                                                                                       input; however, it fails to preserve the original expressive
+                               Thanks,                                                              elements.
+       Thanks,                 Faye                                                                 The automatically derived score of this response would be
+       Faye                                                                                         😐 Fair.
+
+3      Hi Sneha!               Hi, Sneha,                     No, none of the edits altered the     The response changes the expressive punctuation ("Hi
+       Lunch tomorrow???       Lunch tomorrow?                original meaning, tone, style, or     Sneha!" → Hi, Sneha," ; "???" → "?")
+                                                              register.                             These don't really change the meaning of the input, but this
+                                                                                                    change violates the rule to preserve style and expressivity
+                                                                                                    (how meaning is expressed).
+                                                                                                    The automatically derived score of this response would be
+                                                                                                    😐 Fair.
+
+
+
+                                           Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+    Select the Chapters to                                                                                        Step 6
+    navigate to another section.           Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                         Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+03 Steps and Requirements
+ Q3-2: “Are all the edits in the response necessary?” - Examples
+
+                                            Correct
+Input Text         Response                                    Follow-up Questions                          Rationale
+                                            Answer
+
+                                                                                                            This response corrects two grammatical errors in the
+                   The team has                              Follow-up question:                            input text:
+                                           Yes, all edits in
+                   been working hard                         For the necessary edits only, are they all     • It corrects the subject-verb agreement from "team
+                                           the response are
+                   on the project; it's                      correct?                                          have" to "team has".
+                                           necessary.
+                   almost complete.                          • Yes, all necessary edits are correct         • It fixes the comma splice by replacing the comma
+                                                                                                               with a semicolon.
+                                                              Follow-up question 1:
+                                                                                                            This response corrects the necessary grammatical
+                                                              For the necessary edits only, are they all
+                   The team has been                                                                        errors (“has"and the comma splice). However, it also
+                                                              correct?
+                   working diligently      Mixed, only                                                      introduces stylistic changes that are not necessary for
+The team have                                                 • Yes, all necessary edits are correct.
+been working       on the project, and     some edits are                                                   grammatical correctness:
+                                                              Follow-up question 2: Select what
+hard on the        it's nearing            necessary.                                                       • Adding the adverb "diligently".
+project, it's                                                 best describes the unnecessary edits.
+                   completion.                                                                              • Replacing "almost complete" with "nearing
+almost complete.                                              • One or more unnecessary edits                  completion"
+                                                                altered the core content, style, or tone.
+                                                                                                            This response does not correct the existing
+                                                               Follow-up question 1:                        grammatical errors ("team have" and the comma
+                   The team have been                          Select what best describes the               splice). Instead, it makes purely stylistic changes:
+                   working tirelessly No, all edits are        unnecessary edits.                           • It replaces "hard" with "tirelessly".
+                   on the project, its unnecessary.            • One or more unnecessary edits              • It replaces "almost complete" with "nearly finished".
+                   nearly finished.                              altered the core content, style, or          Since none of the edits address the grammatical
+                                                                 tone                                         mistakes, they are all considered unnecessary.
+                                                                                                            • It also introduces a new error ("it's" → "its")
+
+                                            Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to                                                                                           Step 6
+  navigate to another section.              Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                          Local-Specific Guidelines          Japanese         Arabic Language         Hinglish
+03 Steps and Requirements
+Q3-2: “Are all the edits in the response necessary?” - Examples
+⚠ Do NOT expand common abbreviations of longer words. These are typically intentional and function as words in their own right; keep them as written
+(including casing and punctuation). This also applies to abbreviated slurs/insults and widely used internet slang.
+
+                                     Correct
+Input Text      Response                                 Follow-up Questions                           Rationale
+                                     Answer
+
+                                                                                                       This response makes two necessary edits according to
+                                                                                                       the guidelines:
+                btw, that                                                                                • It corrects the subject-verb agreement from
+                                     Yes, all edits in   Follow-up question: For the necessary
+                meeting was                                                                                   "meeting were" to "meeting was".
+                                     the response        edits only, are they all correct?
+                great. idk if you                                                                        • It fixes the comma splice.
+                                     are necessary.       • Yes, all necessary edits are correct.
+                agree?!                                                                                According to the Informal Word Lists, "btw" and "idk"
+                                                                                                       can appear in both upper case and lower case versions.
+                                                                                                       So it is correct for the response to preserve the style.
+btw that
+meeting
+                                                                                                       This response attempts make necessary edits.
+were great,                                              Follow-up question 1: For the
+idk if you                                                                                              ▪ It corrects the subject-verb agreement from
+                                                         necessary edits only, are they all
+agree?!                                                                                                      "meeting were" to "meeting was".
+                                                         correct?
+                                                                                                        ▪ It fixes the comma splice by adding a period.
+                By the way, that                          • Yes, all necessary edits are correct.
+                                     Mixed, only
+                meeting was
+                                     some edits are                                                    However, it also expands "btw" to "By the way" and
+                great. Idk if you                        Follow-up question 2: Select what
+                                     necessary.                                                        capitalizes "Idk." These edits are not necessary.
+                agree.                                   best describes the unnecessary edits.
+                                                          ▪ One or more unnecessary edits
+                                                                                                       Additionally, it changes the expressive punctuation ("?!)
+                                                               altered some mechanical aspects
+                                                                                                       to a period, which is not necessary as Proofread feature
+                                                               of the original text.
+                                                                                                       aims to preserve the original tone and style.
+
+
+                                         Introduction         I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to                                                                                          Step 6
+ navigate to another section.            Step 1          Step 2       Step 3        Step 4         Step 5                      Appendix
+                                       Local-Specific Guidelines           Japanese         Arabic Language          Hinglish
+03 Steps and Requirements
+Step 5: Evaluate the Completeness Dimension of the Response
+You will only be prompted to evaluate the Completeness of a response if you have made these selections in Step 2:
+ ▪ Q1. Is the input text grammatically correct? - No
+ ▪ Q2. Did the assistant make changes to the input? - Yes
+
+
+
+Question
+
+How completely does the response catch all errors that require correction?
+
+  • Complete - Identifies all errors
+  • Nearly Complete - Misses only a small portion (fewer than 20%, such as 1 out of 6)
+  • Partial - Misses a significant portion (20% or more, such as 2 out of 5)
+  • Incomplete - Misses most or all errors
+
+When you select Nearly, Partial or Incomplete, you ll also need to categorize the uncorrected or improperly corrected errors in the response
+
+            Incorrect handling of abbreviations
+            Awkward and unnatural edits
+            Punctuation and formatting issues that do not impede comprehension
+            Punctuation and formatting issues that impede comprehension
+            Common grammatical mix-ups
+            Spelling errors
+            Incorrect word usage that changes meaning or causes grammatical errors
+            Other. Briefly describe the errors.
+
+
+
+
+                                         Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to                                                                                        Step 6
+  navigate to another section.           Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                       Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+                                            ’
+03 Steps and Requirements
+
+⚠ Step 5: Completeness Guideline Callouts
+
+ 1. The intent behind the Completeness dimension
+ • Unlike Correctness, which focuses on the necessity and correctness of an edit, Completeness is intended to verify whether the response
+   successfully detects all errors.
+ • When evaluating Completeness, focus on whether the original errors in the Input are detected / corrected. If the response introduces a new
+   error, that would be penalized under Correctness.
+
+ 2. Derived scores will be visible to you
+ Different derived scores for Completeness will be displayed for you, depending on your answers to each question and its follow-ups. There
+ will be 4 scales:
+   • Excellent
+   • Good
+   • Fair
+   • Poor
+ You won't need to provide or engage with these scores explicitly (because they are automatically computed), but they are displayed for your
+ reference. You will base the pairwise comparison later on these derived scores.
+
+
+
+
+                                    Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to
+navigate to another section.        Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                 Local-Specific Guidelines           Japanese          Arabic Language         Hinglish
+03 Steps and Requirements
+   ⚠ Step 5: Completeness Guideline Callouts
+
+   3. Brief explanations for the error categories
+   When you select "No, one or more errors in the input remain uncorrected or improperly corrected," a list of error categories will surface. Refer to the
+   table below to guide your selections.
+
+
+
+Error Category                                      Explanation
+Incorrect handling of abbreviations                 Inappropriately changing abbreviations (e.g., expanding when not needed, using an incorrect form, or
+                                                    failing to expand as required by the guidelines).
+
+Awkward and unnatural edits                         The response reads poorly, sounds unnatural, or lacks the idiomatic flow of native language.
+
+Punctuation and formatting issues that do           Errors in punctuation or text formatting that do not significantly hinder the reader's ability to
+not impede comprehension                            understand the content.
+
+Punctuation and formatting issues that              Errors in punctuation or text formatting that make the content difficult to understand or lead to
+impede comprehension                                misinterpretation.
+
+Common grammatical mix-ups                          Frequent or basic grammatical errors such as subject-verb agreement, pronoun errors, incorrect tense
+                                                    usage, or sentence structure issues.
+
+Spelling errors                                     Incorrect spellings of words.
+
+Incorrect word usage that changes meaning           Using a word that is semantically wrong for the context, alters the intended meaning, or creates a
+or causes grammatical errors                        grammatical fault in the sentence.
+
+Other                                               Any other error not covered by the above categories. Please explain.
+
+
+
+                                           Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to
+  navigate to another section.             Step 1         Step 2       Step 3        Step 4        Step 5                        Appendix
+                                       Local-Specific Guidelines            Japanese          Arabic Language         Hinglish
+03 Steps and Requirements
+Q4: Are all errors in the input found and corrected in the response? - Examples
+
+Input Text with                                  Correct Answer
+                         Response                                              Rationale
+grammatical errors
+
+                         The team has                                          The response correctly identifies and fixes the subject-verb agreement by
+                         been working            Complete - Identifies all     changing "have" to "has".
+                         hard on the             errors                        It also properly corrects the comma splice by replacing the comma with
+                         project; it's                                         a semicolon.
+                         almost complete.                                      All original errors were found and corrected.
+
+                                                                               The response correctly identifies and fixes the subject-verb agreement by
+                                                                               changing "have" to "has".
+                         The team has
+                         been working                                          It also addresses the comma splice by adding the conjunction "and" after the
+                                                 Complete - Identifies all     comma.
+The team have been       diligently on the
+                                                 errors
+working hard on the      project, and it's                                     All original errors were found and corrected .
+project, it's almost     nearing
+complete.                                                                      Note: While the response also includes stylistic changes ("diligently," "nearing
+                         completion.
+                                                                               completion"), this aspect violates the Minimal Edit Principle and would be
+                                                                               downgraded under Correctness.
+
+                                                                               The response fails to correct the original subject-verb agreement error, leaving
+                         The team have                                         "team have" as is. The response also fails to detect the comma splice error.
+                         been working            Incomplete - Misses
+                                                                               None of the original errors are detected / fixed.
+                         tirelessly on the       most or all errors
+                         project, its nearly                                   Note: The response introduces a new error by changing the correct contraction
+                         finished.                                             "it's" (from the input) to the incorrect possessive pronoun "its". This would be
+                                                                               penalized under Correctness.
+
+
+                                        Introduction         I. Minimal Edit Principle     II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to                                                                                          Step 6
+ navigate to another section.           Step 1         Step 2        Step 3         Step 4         Step 5                      Appendix
+                                     Local-Specific Guidelines               Japanese        Arabic Language         Hinglish
+03 Steps and Requirements
+ Q4: Are all errors in the input found and corrected in the response? - Examples
+
+⚠ Do NOT expand common abbreviations of longer words. These are typically intentional and function as words in their own right; keep them as written
+(including casing and punctuation). This also applies to abbreviated slurs/insults and widely used internet slang.
+
+
+ Input Text with both
+ both SMS abbreviations          Response                 Correct Answer              Rationale
+ and grammatical error
+
+                                                                                      The response successfully corrects all targeted errors. It fixes the subject-verb
+                                                                                      agreement error by changing "were" to "was." It also fixes the comma splice.
+                                 btw, that meeting        Complete -
+                                 was great. idk if        Identifies all errors       In this context, the ending punctuation "?!" is treated as an expressive choice
+                                 you agree?!                                          to convey tone rather than a grammatical error, so retaining it is acceptable.
+
+                                                                                      All original errors were found and corrected.
+
+ btw that meeting were
+ great, idk if you agree?!                                                            The response successfully corrects all targeted errors. It fixes the subject-verb
+                                                                                      agreement error by changing "were" to "was." It also fixes the comma splice.
+
+                                 By the way, that         Complete -
+                                                                                      Note: the response unnecessarily expands the abbreviations and changes the
+                                 meeting was great.       Identifies all errors
+                                                                                      expressive punctuation "?!" to a period, which is considered as altering style
+                                 Idk if you agree.
+                                                                                      and tone. This would be penalized under Correctness.
+
+                                                                                      As for Completeness, the original errors were all found and corrected.
+
+
+
+
+                                           Introduction          I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to                                                                                              Step 6
+  navigate to another section.             Step 1         Step 2         Step 3          Step 4         Step 5                      Appendix
+                                         Local-Specific Guidelines                Japanese        Arabic Language        Hinglish
+03 Steps and Requirements
+Step 6: Compare Responses in Pair
+
+After you have evaluated each response, you will compare them in pair.
+
+
+Please base your comparison on the derived scores for each dimension, displayed for you in a table. Share any feedback you'd like the engineering
+team to be aware of and submit the task.
+
+
+
+
+                                       Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to                                                                                       Step 6
+ navigate to another section.           Step 1        Step 2       Step 3        Step 4         Step 5                      Appendix
+                                     Local-Specific Guidelines           Japanese        Arabic Language        Hinglish
+04
+
+Appendix — Informal
+Context Word Lists
+04 Appendix — Informal Context Word Lists
+
+1. Never Expand these Abbreviations - Part 1
+           • The words in the list below should NOT be extended or spelled out in full. They are listed in alphabetic order.
+           • Items that contain both upper and lower case versions indicate that both are acceptable and that Proofread SHOULD NOT change the user s input.
+
+
+                                                            Word/Abbreviation/Acronym/Etc.
+
+      4WD                 awks            brah                cya           EOD                 fo sho             GOAT               w / HW          ikr / IKR
+                                          bruh                cyu                               fo sure
+      4x4                 bae             bruv                cu            eta                                    goddammit          huh?            ily / ILY
+                                                                            ETA                 fr / FR            GODDAMMIT
+      af                  bbz             brb / BRB           da f                                                                    hun             imo / IMO
+                                                              dafuq         fam                 freakin            gnite              hon             imho
+      addy                babes           brolly                                                freakin
+                                                              dayum         FAO                                    grats              holibobs        innit
+      afaik / AFAIK       babez           btw / BTW                                             ftw / FTW          gratz
+                                                              delulu        fb / FB                                                   icymi           IOU
+      afk / AFK           bants           byob / BYOB                                           fwiw / FWIW        gtfo / GTFO        ICYMI
+                                                              DL            feels                                                                     irl / IRL
+      aint / ain't        bday / Bday     cba / CBA                         feelz               fyp                giiirrrrlll        idc / IDC
+                                                              D&D                                                                                     iykyk
+      aight               Benelux         cbf / CBF           DnD           ffs / FFS           g&t / G&T          guurl              idgaf / IDGAF
+                                                                                                                                                      jeez
+      AITA / AITAH        bestie          chuffed             dno           finsta              g2g / G2G          hangry             idk / IDK
+                                                              dunno                                                                                   JFC
+      aka / AKA           bev             COB                               fml / FML           gc                 hbd / HBD          IFYP
+                                                              DM                                                                                      jk / JK
+      AMA                 bf / BF         congrats                          fomo /              geez               hbu / HBU          ig / IG         jks
+                                                              dm / DM       FOMO                                                      insta
+      APAC                bff / BFF       cos                                                   gf / GF            helluva            gram            kmt / KMT
+                                          coz                 dw / DW       for reals                                                 on the gram
+      asap / ASAP         bffae                                             for realsies        gfy / GFY          hmu / HMU                          legit
+                                                              EMEA          for realz                                                 ick
+      avo                 bffl                                                                  gg / GG            hny / HNY          the ick         lmao / LMAO
+
+                                            Introduction        I. Minimal Edit Principle      II. Principles for Handling                            Ambi
+    Select the Chapters to                                                                                           Step 6
+    navigate to another section.            Step 1         Step 2       Step 3          Step 4         Step 5                        Appendix
+                                          Local-Specific Guidelines          Japanese           Arabic Language           Hinglish
+’
+                                                                                                                                                ’
+04 Appendix — Informal Context Word Lists
+
+1. Never Expand these Abbreviations - Part 2
+    • The words in the list below should NOT be extended or spelled out in full. They are listed in alphabetic order.
+    • Items that contain both upper and lower case versions indicate that both are acceptable and that Proofread SHOULD NOT change the user s input.
+
+
+                                                     Word/Abbreviation/Acronym/Etc.
+
+    lmk / LMK      noob / n00b /    omg / OMG         pov / POV        RPG              TBD            ttyn             wfh / WFH         yt / YT
+                   newbie           ZOMG
+    lol / LOL                                         probs            RUOK             tbf / TBF      ttyt             whatevz           z's (e.g. "catch
+    lols / LOLS    nm / NM          omw                                                                                                   some z's)
+    lolz / LOLZ                                       props            samesies         tbh / TBH      ttfn             wip / WIP
+                   no prob          OOO
+    luv ya         no probs                           PSA              scran            TIL            twunk            wowzers           zzz (or more z's)
+    luv u          no probz         owo
+                   np / NP          OwO               pwned            sec              til            twt              wtaf
+    lv / LV                                                                                            TwT
+                   no woz           op / OP           qt / QT          smh / SMH        tgif / TGIF                     wtf / WTF
+    mf / MF        no wozzas                                                                           ty / TY
+                                    ott / OTT         r&d / R&D        spenny           thx                             wth / WTH
+    mwah           nsa                                                                  thnx           tysm
+                                    P&P               rando            soz              kthnx                           wyd / WYD
+    nah            nsfw / NSFW                                                                         u2
+                                    peng              reem             stan             tldr                            wuu2
+    nb             nvm                                                                  TLDR           uwu
+    NB                              piff              riz              stfu / STFU      TL;DR          UwU              xmas
+    enby           obv                                rizz
+                   obvs             pic                                sup                             v                yaaaaas
+                                                                                        tmi / TMI
+    nepo baby                                         rn / RN                                          v.
+                   og / OG          pls / PLS                          sus                                              yas
+                                                                                        totes
+    ngl / NGL                       plz / PLZ         rofl / ROFL      suss                            vino
+                   omfg / OMFG                                                          ttyl                            yo
+    no biggie                       POA               roflcopter       tbc / TBC                       wbu / WBU
+                                                                                                                        yolo / YOLO
+
+                                     Introduction        I. Minimal Edit Principle     II. Principles for Handling                        Ambiguous
+Select the Chapters to                                                                                       Step 6
+navigate to another section.         Step 1         Step 2         Step 3       Step 4         Step 5                         Appendix
+                                   Local-Specific Guidelines           Japanese         Arabic Language          Hinglish
+
+
+
+
+                                                                                                                                      ’
+04 Appendix — Informal Context Word Lists
+
+2. Do Expand these Words
+•   The words in the list below SHOULD BE extended or spelled out in full.
+•   This is because it feels like these terms are generally not being used for stylistic reasons or to show any specific identity/group belonging, but
+    are primarily being used solely as a time-saver and warrant being turned into their longer, clearer form.
+
+
+
+
+            Word/Abbreviation/           Written out + Back                              Word/Abbreviation/        Written out + Back
+            Acronym/Etc.                 Translation                                     Acronym/Etc.              Translation
+
+        1   b4 / B4                      before                                   10 prolly                        probably
+
+        2   bby / BBY                    baby                                            rly                       really
+                                                                                  11
+                                                                                         o rly                     oh really
+        3   bc / BC                      because
+                                                                                  12 sry                           sorry
+        4   exc.                         excluding
+                                                                                  13 tho                           though
+        5   inc.                         including
+                                                                                  14 u                             you
+        6   m8 / M8                      mate                                     15 w8                            wait
+
+        7   msg                          message                                  16 w/                            with
+                                                                                  17 w/o                           without
+        8   ofc                          of course
+                                                                                  18 wot                           what
+        9   ppl                          people
+                                                                                         yo                        year old
+                                                                                  19
+                                                                                         YO                        years old
+
+
+
+                                         Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+Select the Chapters to                                                                                          Step 6
+navigate to another section.             Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                      Local-Specific Guidelines           Japanese               Arabic Language     Hinglish
+04 Appendix — Informal Context Word Lists
+
+3. Correct These Misspelled Abbreviations - Part 1
+       •    The following is a list of commonly misspelled abbreviations.
+       •    The table shows how they should be corrected, rather than extended.
+
+
+
+
+Word/Abbreviation/             Correct Spelling       Written out + Back Translation              Comments
+Acronym/Etc.
+
+atm                            ATM                    automated teller machine                    This requires a contextual understanding from the tool, but we
+                                                                                                  feel it's important to flag that lower-case 'atm' can only mean
+ATM                            atm                    at the moment
+                                                                                                  'at the moment', while upper-case 'ATM' means the place to
+                                                                                                  take money out...
+
+                                                                                                  If we were proofreading something that didn't follow this logic,
+                                                                                                  we would correct it.
+
+eg. / EG.                      e.g.                   From the Latin:"exempli gratia",            In addition to correcting the spelling of these, we feel it would
+                                                      which means "example"                       be ideal if the tool can also understand the context and
+                                                                                                  correct the misuse of either 'e.g.' or 'i.e.' as some people mix
+ie. / IE.                      i.e.                   From the Latin: "id est", which
+                                                                                                  these up, or use them interchangeably.
+ie / IE                                               means "that is" or "in other words".
+                                                      It's used to clarify or provide a more
+                                                                                                  Mark Daniels - just added this for now, would like your
+                                                      specific explanation of something
+                                                                                                  thoughts. Open to removing or changing
+                                                      that was previously stated.
+
+etc / ETC.                     etc.                   etcetera                                    Should be lower-case and have a full stop
+                                                      (and so on)
+
+
+
+                                          Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to                                                                                         Step 6
+  navigate to another section.            Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                        Local-Specific Guidelines          Japanese            Arabic Language        Hinglish
+04 Appendix — Informal Context Word Lists
+
+3. Correct These Misspelled Abbreviations - Part 2
+      •     The following is a list of commonly misspelled abbreviations.
+      •     The table shows how they should be corrected, rather than extended.
+
+
+
+
+Word/Abbreviation/
+                               Correct Spelling       Written out + Back Translation            Comments
+Acronym/Etc.
+
+faq / FAQ                      FAQ                    Frequently Asked Questions                Should be capitalised
+
+fyi / FYI                      FYI                    for your information                      Should be capitalised
+
+                                                                                                Should be capitalised
+goat / GOAT                    GOAT                   greatest of all time                      Requires contextual understanding, but is usually preceded by
+                                                                                                'the' (but then again, so are normal goats).
+                                                     Officially stands for "Ministry of
+                                                     Transport" but usually refers to the
+mot / MOT                      MOT                   annual test all cars over 3 years old      Should be capitalised
+                                                     must have. E.g.: "My car failed it's
+                                                     MOT"
+                                                                                                Should be capitalised, but shouldn't be confused with 'mo',
+mo                             MO                     modus operandi
+                                                                                                which is short for 'moment'. E.g.: "I'll be back in a mo"
+
+nda / NDA                      NDA                    non-disclosure agreement                  Should be capitalised
+
+
+
+
+                                          Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to                                                                                         Step 6
+  navigate to another section.            Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                        Local-Specific Guidelines            Japanese        Arabic Language       Hinglish
+    04 Appendix — Informal Context Word Lists
+
+    3. Correct These Misspelled Abbreviations - Part 3
+          •     The following is a list of commonly misspelled abbreviations.
+          •     The table shows how they should be corrected, rather than extended.
+
+
+
+
+    Word/Abbreviation/
+                                   Correct Spelling             Written out + Back Translation         Comments
+    Acronym/Etc.
+
+                                                                                                       re is the correct spelling according to the OED, but we feel
+                                                                                                       this goes against modern usage and norms, as it is an
+                                                                                                       abbreviation and these are typically marked by punctuation.
+
+                                                                                                       As such, we ask that the Proofread tool respects the user s
+                                   re                                                                  input between ‘re: , ‘RE: and ‘re . If, however, there s a full-stop
+    re. / RE.                                                   regarding
+                                   re: / RE:                                                           in the input, this should be changed to a colon. e.g.: “Did you
+                                                                                                       see my email re. the party?” should be changed to “Did you
+                                                                                                       see my email re: the party?”
+
+                                                                                                       But, “Did you see my email re the party?” should remain the
+                                                                                                       same.
+
+
+
+
+                                                 Introduction         I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+      Select the Chapters to                                                                                             Step 6
+      navigate to another section.               Step 1          Step 2       Step 3        Step 4         Step 5                      Appendix
+                                               Local-Specific Guidelines           Japanese         Arabic Language         Hinglish
+’
+                  ’
+                       ’
+                               ’
+                                                   ’
+                                                           ’
+05
+
+Locale-speci c
+Guidelines
+         fi
+05 Locale-speci c Guidelines
+
+
+
+We have provided specific guidelines for some locales, given that what counts as
+"unnecessary edits" can vary across languages and cultures.
+
+
+Please be sure to align with the locale-specific guidelines and refer to the grading
+framework under each dimension to make your evaluation.
+
+
+Currently, the locales below have specific guidelines:
+ •   Japanese
+ •   Arabic
+ •   Hinglish
+                                     fi
+05 Locale-speci c Guidelines
+
+Japanese Guidelines (ja_JP)
+ There are some complex areas in the Japanese language:
+  •     Script: The Japanese writing system uses a combination of three scripts: Hiragana, Katakana, and Kanji. While some flexibility exists, many words
+        and phrases have a standard script they are most commonly and appropriately written in.
+  •     Tone: Tone in Japanese is crucial for conveying the appropriate level of politeness (e.g., casual, polite, and formal/honorific). This is not just about
+        word choice; it is built into the grammar and directly affects how verbs and adjectives are conjugated.
+  •     Conjugation: Japanese verbs and adjectives change their endings (conjugate) to express tense (past/present), politeness, and mood (e.g.,
+        conditional, imperative).
+
+
+
+⚠ Guideline Callouts
+To account for the complexity and adhere to Minimal Edit Principle, review the table below to understand what counts as necessary correction for
+Proofread - Japanese.
+
+
+Type of Change              Necessary (Allowed) Correction                                    Unnecessary (Disallowed) Modification
+
+ Script Usage                Corrects a word or phrase written in a script that is not         Changes the script of a word or phrase that is already
+                             its usual form (e.g., a word commonly written in Kanji is         written in a correct and acceptable script.
+                             written in Hiragana).
+
+ Tone                        Corrects a clear disagreement between the tone of the             Changes or refines the tone when the original text is
+                             text and the verb or adjective conjugations.                      grammatically correct.
+
+ Conjugation                 Corrects an obvious grammatical error in verb or                  Changes a verb form that is grammatically correct but
+                             adjective conjugation (e.g., wrong tense).                        sounds "slightly unnatural."
+
+
+                                              Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to                                                                                              Step 6
+ navigate to another section.                 Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                            Local-Specific Guidelines          Japanese         Arabic Language         Hinglish
+                                       fi
+    05 Locale-speci c Guidelines
+
+     Japanese Guidelines (ja_JP) - Examples of Change in Script
+
+    User Request        Response          Initial Assessment                           Correctness                   Completeness            Comment
+
+
+                                           Q1. Does the input text contain
+                                                                                            Did any edits alter      You won't need to
+                                           errors that hinder comprehension or
+                                                                                            the original             rate Completeness in    Both 綺麗 and きれい
+                                           readability, considering its intended
+     池のほとりに花             池のほとりに                                                             meaning, tone,           this scenario.          are commonly used.
+                                           formality level?
+     ショウブが綺麗             花ショウブが            No errors.                                       style, or register?      The dimension           Changing 綺麗 to きれ
+     に咲いていまし             きれいに咲い                                                             Yes, at least one edit   would be computed
+                                                                                                                                             い or きれい to 綺麗 is
+                                           Q2. Did the assistant make changes               altered the original     to
+     た。                  ていました。            to the input?                                                                                     considered as an
+                                                                                            meaning, tone, style,    show Completenes
+                                           Yes, the response is different from the                                                           unnecessary edit.
+                                                                                            or register.             s is 😐 fair.
+                                           input.
+
+
+                                           Q1. Does the input text contain                  Are all the edits in
+                                           errors that hinder comprehension                 the response             How completely          The word 絶対 is
+                                           or readability, considering its                  necessary?               does the response
+     軟   の絶縁され           軟    の絶縁さ                                                                                                           usually written in Kanji,
+                                           intended formality level?                        Yes, all edits in the    catch all errors
+     た部屋およびよ             れた部屋およ                                                                                                              but it is incorrectly
+                                           Yes - The input contains errors that             response are             that require
+     いヒーターはサ             びよいヒー                                                                                                               written in Hiragana in
+                                           hinder comprehension or readability.             necessary.               correction?
+                                                                                                                                             the input text.
+     ウナのための              ターはサウナ
+                                                                                                                                             The response makes
+                                                                                            Follow-up: For the
+     ぜったい必要で             のための絶対                                                                                      Complete -              the correction, which is
+                                           Q2. Did the assistant make changes               necessary edits only,
+     ある。                 必要である。                                                                                      Identifies all errors   considered as a
+                                           to the input?                                    are they all correct?
+                                                                                                                                             grammatical fix.
+                                           Yes, the response is different from the          Yes, all necessary
+                                           input.                                           edits are correct.
+
+
+                                            Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+      Select the Chapters to                                                                                       Step 6
+      navigate to another section.          Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                          Local-Specific Guidelines          Japanese             Arabic Language        Hinglish
+木
+木
+                                     fi
+        05 Locale-speci c Guidelines
+
+         Japanese Guidelines (ja_JP) - Examples of Change in Tone
+
+        User Request Response            Initial Assessment                           Correctness                  Completeness           Comment
+
+                                          Q1. Does the input text contain
+                                          errors that hinder comprehension              Did any edits alter        You won't need to
+                                          or readability, considering its               the original               rate Completeness
+                                                                                                                   in this scenario.      The input text sounds casual but
+         先       、今     先   、今            intended formality level?                     meaning, tone, style,
+                                                                                                                   The dimension          is grammatically correct. The
+                                          No errors.                                    or register?
+         は天気が最          は天気が最                                                                                      would be computed      response modifies the tone and
+                                                                                        Yes, at least one edit
+          だぞ              ですね                                                                                      to show                makes it more formal, which is
+                                          Q2. Did the assistant make                    altered the original
+                                                                                                                   Completeness is         an unnecessary modification.
+                                          changes to the input?                         meaning, tone, style, or
+                                          Yes, the response is different from the       register.                  😐 fair.
+                                          input.
+
+                                                                                        Are all the edits in       How completely         The input text shows erroneous
+                                          Q1. Does the input text contain
+                                                                                        the response               does the               inconsistency in tone and
+                                          errors that hinder comprehension
+                                                                                        necessary?                 response catch         expressions.
+          中さんが            中が申し            or readability, considering its
+                                                                                        Yes, all edits in the      all errors that
+         申し上げた          上げた通              intended formality level?                                                                       “申し上げた” is a form of 謙譲語
+                                                                                        response are               require
+                                          Yes - The input contains errors that                                                            (humble language) and its
+         通り、そち          り、そちら                                                           necessary.                 correction?
+                                          hinder comprehension or readability.                                                            subject can t have any honorific
+         らは仕様と          は仕様と
+                                                                                        Follow-up: For the                                suffix like “さん” or “様”.
+         なっており          なっており             Q2. Did the assistant make                                               Complete -
+                                                                                        necessary edits only,                             The response makes the
+         ます             ます                changes to the input?                                                    Identifies all         correction by making the tone,
+                                                                                        are they all correct?
+                                          Yes, the response is different from the                                  errors                 verb conjugation, and
+                                                                                        Yes, all necessary edits
+                                          input.                                                                                          expression aligned.
+                                                                                        are correct.
+
+
+                                                     Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+          Select the Chapters to                                                                                            Step 6
+          navigate to another section.               Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                                   Local-Specific Guidelines          Japanese         Arabic Language         Hinglish
+高
+田
+田
+高
+    生
+    生
+             日
+             日
+                 ’
+                                              fi
+    05 Locale-speci c Guidelines
+
+    Japanese Guidelines (ja_JP)- Examples of Change in Conjugation
+
+User Request Response              Initial Assessment                            Correctness                 Completeness              Comment
+
+                                    Q1. Does the input text contain
+                                                                                                                                        The input text is
+                                    errors that hinder comprehension              Did any edits alter         You won't need to rate    grammatically correct,
+    タクシーを         タクシーを             or readability, considering its               the original meaning,       Completeness in this      although its fluidity could be
+    お呼びしま         お呼びしま             intended formality level?                     tone, style, or             scenario.                 improved.
+                                    No errors.                                    register?                   The dimension would
+    すがよろし         すがよろし                                                                                                                 The response refines the
+                                                                                  Yes, at least one edit      be computed to
+    かったで          いでしょう                                                                                                                 input text, which is
+                                    Q2. Did the assistant make                    altered the original        show Completeness         considered an unnecessary
+    しょうか          か                 changes to the input?                         meaning, tone, style, or
+                                                                                                              is 😐 fair.                modification for the scope of
+                                    Yes, the response is different from           register.
+                                                                                                                                        Proofread.
+                                    the input.
+
+                                                                                  Are all the edits in
+                                    Q1. Does the input text contain
+                                                                                  the response
+                                    errors that hinder comprehension
+                                                                                  necessary?                  How completely            The input text contains a
+                                    or readability, considering its
+                                                                                  Yes, all edits in the       does the response         tense error so the entire
+                                    intended formality level?
+                                                                                  response are                catch all errors that     sentence does not fully make
+                                    Yes - The input contains errors that
+    今、   供は       今、     供は                                                       necessary.                  require correction?       sense.
+                                    hinder comprehension or readability.
+    寝ます           寝ています                                                                                                                 The response corrects the
+                                                                                                              Complete - Identifies
+                                                                                  Follow-up: For the                                    verb conjugation so the
+                                    Q2. Did the assistant make                                                all errors
+                                                                                  necessary edits only,                                 meaning and the vern
+                                    changes to the input?
+                                                                                  are they all correct?                                 conjugation are aligned.
+                                    Yes, the response is different from
+                                                                                  Yes, all necessary edits
+                                    the input.
+                                                                                  are correct.
+
+
+                                                Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+    Select the Chapters to                                                                                             Step 6
+    navigate to another section.                Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                              Local-Specific Guidelines          Japanese         Arabic Language          Hinglish
+子
+子
+                                         fi
+05 Locale-speci c Guidelines
+
+ Arabic Guidelines for Modern Standard Arabic (MSA) and Arabic Dialects
+ For MSA and Arabic dialects, the Minimal Edit Principle applies. The response should preserve the tone, style, and register of the input text.
+ • If an input text is written in an Arabic dialect or a mixture of MSA and a dialect, the output should preserve the original register and corrects
+   grammatical errors only.
+ • Change in register or formality is considered a violation of the Minimal Edit Principle and should be penalized.
+
+ This task requires your attention to the authenticity of the response in the respective dialect. To learn more about it, refer to the Authenticity in Syntax
+ and Morphology table at the end of this section [1].
+
+
+
+
+⚠ Guideline Callouts
+Given that Arabic communities use both MSA and dialects, we'd like to call out some grading rules to align your expectations with the engineering team.
+ 1. When an input is written in an Arabic dialect, the response (output) should reflect the common, standardized practices of native speakers of that
+     dialect.
+ 2. The response should always preserve dialect variations in the input text, including phonetic variations.If the input text contains the phonetic variations
+     in dialect, the response should not modify them. This is considered unnecessary modifications.
+
+
+When a response does not meet any of these requirements, it should be penalized.
+
+
+
+
+                                            Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to                                                                                            Step 6
+ navigate to another section.               Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                          Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+                                     fi
+ 05 Locale-speci c Guidelines
+
+  Arabic Guidelines for Modern Standard Arabic (MSA) and Arabic Dialects
+
+  ⚠ Guideline Callout 1
+ When an input is written in an Arabic dialect, the response (output) should reflect the common, standardized practices of native
+ speakers of that dialect.
+ • This rule speaks to the common or standardized way of writing a language, encompassing spelling, punctuation, and capitalization (also known as
+    orthography).
+ • The response in dialect should reflect the common orthographic practices of native speakers of that dialect.
+
+
+
+Examples
+
+For example, certain phonetic representations are not typically written, so the response is not expected to include them.
+These phonetic representations include the letter ‫ ڤ‬for the /v/ sound.
+
+
+
+
+                                            Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+   Select the Chapters to                                                                                          Step 6
+   navigate to another section.             Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                          Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+                                     fi
+05 Locale-speci c Guidelines
+
+Arabic Guidelines for Modern Standard Arabic (MSA) and Arabic Dialects
+
+⚠ Guideline Callout 2
+The response should always preserve dialect variations in the input text.
+• The output must preserve informal writing styles found in the input, including slang, common typos, and dialect
+• The response in dialect should reflect the common orthographic practices of native speakers of that dialect.
+
+Example 1 - Phonetic Variations                                           Sound       MSA              Gulf Arabic                       Levantine Arabic
+
+                                                                          ‫( ج‬j)       /ʤ/ as in ‫ماجد‬   → ‫ ي‬/y/ in some Gulf accents      —
+This table shows phonetic variations across Arabic dialects
+(ex: Gulf Arabic, Levantine Arabic, etc).                                             (Mājid)          ‫( مايد‬Mayed)
+
+                                                                          ‫( ق‬q)       /q/ as in ‫قدر‬    → ‫ ج‬/ʤ/ or /g/ in Gulf (varies:   Qal → ʔ (glottal stop) in
+In Gulf Arabic:
+                                                                                      (Qidr)           e.g. Emirati) ‫( جدر‬Jidr, Gulf)    Levantine ʔāl
+  • ‫( ج‬j) may soften to ‫( ي‬y) in
+  • ‫( ق‬q) is often pronounced /g/ or /ʤ/.
+  • Female suffixes often shift ‫( ك‬k) → ‫( ج‬dj) (e.g., ‫)عساج‬.              ‫( ك‬k)       /k/ as in ‫عساك‬   → ‫ چ‬/ʤ/ or j when                 —
+                                                                                                       addressing females
+In Levantine Arabic:                                                                                   ‫( عساج‬ʿasāj) (Gulf female)
+  • ‫( ث‬th) often becomes ‫( ت‬t).
+                                                                          ‫( ث‬th)      /θ/ as in ‫كثير‬   —                                 → ‫ ت‬/t/
+  • ‫( ق‬q) is pronounced as a glottal stop /ʔ/ in urban
+                                                                                                                                         ‫( كتير‬kteer)
+     varieties
+
+
+     If the input contains the phonetic variations in dialect, the output should not modify them.
+
+
+
+                                            Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to                                                                                            Step 6
+ navigate to another section.               Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                          Local-Specific Guidelines          Japanese          Arabic Language       Hinglish
+                                     fi
+05 Locale-speci c Guidelines
+
+Arabic Guidelines for Modern Standard Arabic (MSA) and Arabic Dialects
+
+⚠ Guideline Callout 2
+The response should always preserve dialect variations in the input text.
+• The output must preserve informal writing styles found in the input, including slang, common typos, and dialect
+• The response in dialect should reflect the common orthographic practices of native speakers of that dialect.
+
+
+Example 2 - Numbers and Diacritics
+
+ •   In Arabic, users use two forms of numbers; Western Arabic (123) and Eastern Arabic (١٢٣). The numerals in the response should match
+     the input text. If not, please penalize the response.
+
+ •   There are 2 tanween (diacritic) practices in Arabic: 1) the tanween falls on the last letter ً ‫ استنادا‬or 2) on the letter before the last ‫استنا ًدا‬. The
+     response should match the input. If not, please penalize the response.
+
+
+
+
+                                            Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to                                                                                            Step 6
+ navigate to another section.               Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                          Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+                                     fi
+05 Locale-speci c Guidelines
+
+Arabic Guidelines for Modern Standard Arabic (MSA) and Arabic Dialects
+
+Reference [1]: Authenticity in Syntax and Morphology
+The goal of the Proofread feature is to make grammatical corrections while preserving the intent, style, and dialectical authenticity of the input.
+To meet this goal, you can rely on common dialectal verb and noun phrases to help you assess if the response effectively preserves
+authenticity of the input text.
+
+             Dialect                                Phrase
+
+             Emirati                                ‫( ما سويت‬ma sawwēt)
+
+             Saudi                                  ‫( ما سويت‬ma sawwēt)
+
+        1    Levantine                              ‫( ما عملت‬ma ʿmelt)
+
+             Egyptian                               ‫( ما عملتش‬ma ʿmalt-esh)
+
+             Maghrebi                               ‫( ما درتش‬ma dertsh)
+
+             Emirati                                ‫( هذا ما ينفع‬hāḏa ma yinfaʿ)
+
+             Saudi                                  ‫( هذا ما ينفع‬hāḏa ma yinfaʿ)
+
+        2    Levantine                              ‫( هادا ما بينفع‬hēda ma byinfaʿ)
+
+             Egyptian                               ‫( ده ما بينفعش‬da ma byinfaʿsh)
+
+             Maghrebi                               ‫( هاد ما كاينفعش‬hād ma kaynfaʿsh)
+
+
+                                          Introduction        I. Minimal Edit Principle      II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to                                                                                            Step 6
+ navigate to another section.             Step 1         Step 2       Step 3          Step 4         Step 5                      Appendix
+                                        Local-Specific Guidelines          Japanese           Arabic Language        Hinglish
+                                   fi
+05 Locale-speci c Guidelines
+
+Hinglish Guidelines (hi_LATN)
+ Hinglish is a blend of Romanised Hindi and English. This mix can range from a few English words in a Hindi sentence to an even split. Your
+ corrections should result in a Hinglish output that mirrors the tone and level of code-switching present in the input.
+
+
+ For Hinglish, the Minimal Edit Principle applies. The response should preserve the tone, style, and register of the input text. The goal is to
+ refine Hinglish text by correcting clear errors while respecting its nature as a mixed language.
+
+
+
+⚠ Note
+Given that Hinglish includes both Indian English (en_IN) and Hindi Devanagari, below are the expectations for outputs / responses generated by the model:
+
+
+• When the input text includes English words and sentences, the rules of Indian English (en_IN) apply. This includes correcting clear spelling errors.
+• When the input text includes Hindi Latin words and sentences, the grammatical rules of Hindi Devanagari apply, simply transliterated into the Latin
+  script.
+• Word Variations: Multiple accepted spellings for a Hindi Latin word are permissible as long as they are phonetically correct and not overly shortened
+  chat-speak. A good response should correct clear errors, not to enforce a single stylistic choice among several valid ones.
+• Important: There should be no Devanagari present in a response, unless the input text has any. If this occurs, please penalize the response.
+• Skip the task: If the input text is largely in Devanagari Hindi (ex: आज का वातावरण ब त राब kal accha tha.), please click on Skip the Current Task and
+  select "The language or content in the input text is not typical of this locale.”
+
+
+
+
+                                             Introduction        I. Minimal Edit Principle         II. Principles for Handling Ambiguous or Informal Contexts
+ Select the Chapters to                                                                                                  Step 6
+ navigate to another section.                Step 1         Step 2       Step 3             Step 4         Step 5                      Appendix
+                                           Local-Specific Guidelines          Japanese              Arabic Language        Hinglish
+                                      fi
+                                                                                  हु
+                                                                                       ख़
+                                                                                              है
+       05 Locale-speci c Guidelines
+
+        Hinglish Guidelines (hi_LATN)
+
+      ⚠ Guideline Callout 1
+       Correct common misspellings to their standard phonetic form.
+
+       An output should correct words that are phonetically misspelled to their more accurate and common Latin script representation. The goal is to
+       correct clear typos or non-standard spellings, not to choose between two acceptable variations.
+
+
+
+      User Request        Response        Initial Assessment                    Correctness                  Completeness             Comment
+
+                                           Q1. Does the input text                Are all the edits in                                   can be written in several
+                                           contain errors that hinder             the response                                         forms such as mein/mei/main/
+                                           comprehension or                       necessary?                 How completely            m. To align with the feature
+       Hello, m           Hello, mein      readability, considering its           Yes, all edits in the      does the response         goal, the model should convert
+       Abhishek           Abhishek         intended formality level?              response are               catch all errors that     it to the most phonetically
+       Sharma aapka       Sharma aapka     Yes - The input contains               necessary.                 require correction?       correct forms, which are mein
+       fridge repair      fridge repair    errors that hinder                                                                          or main here.
+       krne ke liye aaj   karne ke liye    comprehension or readability.                                                               (If the input input contained
+                                                                                                             Complete - Identifies
+       shaam              aaj shaam                                               Follow-up: For the                                   mai, the output should correct
+                                                                                                             all errors
+       aaunga             aaunga           Q2. Did the assistant make             necessary edits only,                                it to main and mei to mein).
+                                           changes to the input?                  are they all correct?                                krne should be corrected to
+                                           Yes, the response is different         Yes, all necessary edits                             karne since that is more
+                                           from the input.                        are correct.                                         phonetically acceptable.
+
+
+
+                                                  Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+         Select the Chapters to                                                                                          Step 6
+         navigate to another section.             Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                                Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+मैं
+                                           fi
+ 05 Locale-speci c Guidelines
+
+ Hinglish Guidelines (hi_LATN)
+
+⚠ Guideline Callout 2
+ Preserve the tone and code-switching in the input text.
+
+ It is critical to preserve the author's original voice. Do not "over-correct" or change the fundamental meaning or tone of the message.
+   •   Words like "tu," "tum," and "aap" (and their variations) carry specific social connotations. Changing them fundamentally alters the
+       relationship implied in the text. The proofread feature must respect this.
+   •   Additionally, mixing English and Hindi (or other languages) is a natural part of how many people communicate. The feature must not
+       translate words from one language to another.
+
+
+
+
+Examples
+See next page for examples.
+
+
+
+
+                                           Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to                                                                                          Step 6
+  navigate to another section.             Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                         Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+                                    fi
+05 Locale-speci c Guidelines
+
+ Hinglish Guidelines (hi_LATN)
+
+ ⚠ Guideline Callout 2 - Examples
+ Preserve the tone and code-switching in the input text.
+
+
+User Request        Response                      Correctness - Are all the edits in the response necessary?                       Comment
+
+Tjhy kab aana h?    Tujhe kab aana hai?           Correctness - Are all the edits in the response necessary?                       The response meets the requirement. It corrected the
+                                                  Yes, all edits in the response are necessary.                                    spelling of the pronoun and didn't replace it with a
+                                                                                                                                   different one.
+
+                    Aapko kab aana hai?           Correctness - Are all the edits in the response necessary?                       The response changes the formality from informal to
+                                                  No, all edits are unnecessary.                                                   formal.
+
+Tereko jaana hai    Tereko jaana hai kya?         You won't need to evaluate the Correctness dimension when the input text         The response preserves Tereko, since it is a valid,
+kya?                                              is grammatically correct and the response is identical to the input text (i.e.   though informal, regional form.
+                                                  no changes made)
+                                                  The Correctness score would be computed to show 😍 excellent.
+
+                    Tujhko jaana hai kya?         Did any edits alter the original meaning, tone, style, or register?              While tujhko and tereko can be used interchangeably
+                                                  Yes, at least one edit altered the original meaning, tone, style, or register.   but the change alters the way someone is referred and
+                                                                                                                                   result in a downgraded response.
+
+Hello, mein         Hello, mein Abhishek          You won't need to evaluate the Correctness dimension when the input text         Mixing English and Hindi (or other languages) is a natural
+Abhishek            Sharma aapka fridge           is grammatically correct and the response is identical to the input text (i.e.   part of how many people communicate. The response
+Sharma aapka        repair karne ke liye          no changes made)                                                                 correctly preserves the English phrase in the input.
+fridge repair       aaj shaam aaunga.             The Correctness score would be computed to show 😍 excellent.
+karne ke liye aaj
+shaam aaunga.
+                    Hello, mein Abhishek          Did any edits alter the original meaning, tone, style, or register?              The response does not preserve the English phrase and
+                    Sharma aapka fridge           Yes, at least one edit altered the original meaning, tone, style, or register.   translate repair to theek, which is not aligned with the
+                    theek karne ke liye                                                                                            feature goal to preserve the original tone and style.
+                    aaj shaam aaunga
+
+
+                                                   Introduction            I. Minimal Edit Principle        II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to                                                                                                          Step 6
+  navigate to another section.                     Step 1          Step 2           Step 3           Step 4         Step 5                      Appendix
+                                                 Local-Specific Guidelines                 Japanese            Arabic Language         Hinglish
+                                            fi
+05 Locale-speci c Guidelines
+
+ Hinglish Guidelines (hi_LATN)
+
+⚠ Guideline Callout 3
+ Do Not Assume or Change Gender. Fix the incorrect use of gender.
+
+ A response should not change the gender indicated in the input. If an input writes "karti hai," the response must not change it to "karta hai.”
+  •   Use Neutral Forms for Ambiguity: When the input does not specify a gender, and a neutral form is available, the response should use
+      the neutral form.
+        ◦   For example, if an input text doesn't specify gender, the response should not use “karti hai” or “karta hai.” Instead, a correct
+            response would use “karte .”
+  •   Incorrect use of gender should be corrected: In Hindi, inanimate objects have a grammatical gender. Errors in verb conjugation related
+      to object gender should be corrected to ensure grammatical accuracy.
+
+
+
+
+User Request                             Response                              Correctness                            Comment
+
+                                                                                Are all the edits in the response
+                                                                                necessary?                              "Gaadi" is a feminine object, and the
+ Gaadi chal raha hai                      Gaadi chal rahi hai
+                                                                                Yes, all edits in the response are      response made the correction.
+                                                                                necessary.
+
+
+
+
+                                          Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to                                                                                         Step 6
+  navigate to another section.            Step 1         Step 2       Step 3        Step 4         Step 5                      Appendix
+                                        Local-Specific Guidelines          Japanese         Arabic Language        Hinglish
+                                   fi
+05 Locale-speci c Guidelines
+
+ Hinglish Guidelines (hi_LATN)
+
+References
+To provide a more robust grading framework, the examples below demonstrate what should be corrected vs what counts as unnecessary changes
+for Proofread - hi_LATN (Hindi Latin).
+
+
+1. Correct changes                                                              Incorrect Input                      Correct Output
+
+If an input text contains an error of similar types as listed             1     Yeh batao ke jaane ka mn h ya nhi    Yeh batao ke jaane ka mann hai ya nahi?
+below, and the response/output makes edits show below,
+those edits are considered correct and necessary.                         2     vo sb kuch kro jisse tume            Woh sab kuch karo jisse tumhe inspiration
+                                                                                inspiration milti rhe.               milti rahe/rahey.
+
+                                                                          3     Ek bda, patla or behtar iphone       Ek bada, patla, aur behtar iPhone.
+2. Unnecessary Changes
+                                                                          4     dhyan dein ki sbjiyo ko pakaane      Dhyaan dein ki sabziyon/sabjiyon ko pakaane
+As mentioned previously, multiple accepted spellings for a                      se phle achhi tarah dho lein.        se pehle achhi tarah dho lein.
+Hindi Latin word are permissible as long as they are
+phonetically correct and not overly shortened chat-speak.                 5     Mene unhe manaa kar diya hai.        Meine/Maine/Mainne unhe manaa kar diya
+Below are changes that would be considered unnecessary. If                                                           hai.
+a response/output unnecessarily modifies how a word is                    6     bhut bhook lagi hai!                 Bahut/Bohot/Bahot bhook lagi hai!
+spelled, it would be downgraded under Correctness.
+                                                                          7     theek-thak ho jaega                  Theek-thaak ho jaega
+  • fir ↔ phir
+  • jaega ↔ jayega ↔ jaayega ↔ jaaega                                     8     thumse kuchh discuss karna hai       Tumse kuchh discuss karna hai.
+  • Dhanyavaad ↔ Dhanyawad
+  • Sufi ↔ Soofi                                                          9     Kya kr rhe ho                        Kya kar rahe ho?
+  • Pooja ↔ Puja
+  • Raam ↔ Ram                                                            10 Vo bol rha tha k tu milne a.            Woh bol raha tha ki tu milne aa.
+  • Dharm ↔ Dharma
+
+                                                Introduction        I. Minimal Edit Principle    II. Principles for Handling Ambiguous or Informal Contexts
+  Select the Chapters to                                                                                               Step 6
+  navigate to another section.                  Step 1         Step 2         Step 3      Step 4         Step 5                      Appendix
+                                              Local-Specific Guidelines           Japanese        Arabic Language        Hinglish
+                                         fi
+

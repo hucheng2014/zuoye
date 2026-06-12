@@ -11,7 +11,7 @@ User reported two recurring operational issues in the Trae python-timesheet tria
 Working project root:
 
 ```text
-/home/jianglei/zuoye/traedocker
+/Users/xaa/zuoye/traedocker
 ```
 
 ## PPE Settings Mentioned
@@ -62,8 +62,8 @@ TRAE_AUTO_CONTINUE_ON_TIMEOUT=on TRAE_AUTO_CONTINUE_MAX=3 TRAE_SUBMIT_MODE=cli T
 
 Updated the `trae-trial-runner` skill:
 
-- `/home/jianglei/.codex/skills/trae-trial-runner/SKILL.md`
-- `/home/jianglei/.codex/skills/trae-trial-runner/references/workflow.md`
+- `/Users/xaa/.codex/skills/trae-trial-runner/SKILL.md`
+- `/Users/xaa/.codex/skills/trae-trial-runner/references/workflow.md`
 
 The skill now records:
 

@@ -1,0 +1,77 @@
+contexts 1
+context 0 pages 1
+PAGE 0 0 Annotation Tool https://starshot.scilliance.com/?broker=true&ref=2a9e9931-fe7e-45db-8282-4ade007b238c
+TEXT_START
+Message smart action Corrective Eval
+
+31s
+
+Instructions
+TEXT_END
+CONTROLS [
+  {
+    "i": 0,
+    "tag": "DIV",
+    "type": null,
+    "role": "button",
+    "name": null,
+    "id": "timer",
+    "text": "31s",
+    "classes": "Box-sc-18eybku-0 fMXcIr"
+  },
+  {
+    "i": 1,
+    "tag": "BUTTON",
+    "type": "button",
+    "role": null,
+    "name": null,
+    "id": "",
+    "text": "Tool Help",
+    "disabled": false,
+    "classes": "Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 dMYZKc ibqbgV hhNXJt gBLiXA"
+  },
+  {
+    "i": 2,
+    "tag": "BUTTON",
+    "type": "button",
+    "role": null,
+    "name": null,
+    "id": "",
+    "text": "Report a Problem",
+    "disabled": false,
+    "classes": "Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 dMYZKc ibqbgV hhNXJt gBLiXA"
+  },
+  {
+    "i": 3,
+    "tag": "BUTTON",
+    "type": "button",
+    "role": null,
+    "name": null,
+    "id": "",
+    "text": "Settings",
+    "disabled": false,
+    "classes": "Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 dMYZKc ibqbgV hhNXJt gBLiXA"
+  },
+  {
+    "i": 4,
+    "tag": "BUTTON",
+    "type": "button",
+    "role": null,
+    "name": null,
+    "id": "starshot_instructions_button",
+    "text": "Instructions",
+    "disabled": false,
+    "classes": "Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 hCsqOx ibqbgV cTxCgN pwJkH"
+  },
+  {
+    "i": 5,
+    "tag": "BUTTON",
+    "type": "button",
+    "role": null,
+    "name": null,
+    "id": "starshot_submit_button",
+    "text": "Done",
+    "disabled": false,
+    "classes": "Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 dPbjnB ibqbgV imVZDm iBCABx"
+  }
+]

@@ -1,0 +1,121 @@
+Proofreading V2.0 Cert Feedback – Dec.18
+RECAP:
+Minimal edit principle
+It means preserving the original text as much as possible, but obvious errors that do not fall under the
+exceptions should still be fixed.
+Remember the principles for handling formal/informal texts as well. If the text is formal, corrections are
+expected. Neutral or when formality is unclear/ambiguous, side with the corrections being made. Only
+for informal texts, these are not necessary
+Correctness
+Evaluates whether the changes that have been made altered the meaning (3.1) or were they necessary
+and correct (3.2).
+Keep in mind for Q3.1, using synonyms, similar words is NOT automatically an altered meaning, tone,
+style. The change would have to comprise of an actual change in tone, style, register, etc. (e.g. “hey
+Mark” was changed to “Dear Mark”; but “hey” vs “hi” is not a change that affects the requisites)
+Completeness
+Evaluates whether all the actual errors (for the scope of this task) were found and corrected properly. Do
+not confuse with the Correctness dimension, which only focuses on the actual edits made. In this
+dimension your focus points are just the actual errors and how they were fixed. Therefore, if the model
+missed an error from the input, it would affect this dimension.
+TASK:
+When answering the first question remember:
+- the minimal edit principles
+- the definition or expectation for what constitutes errors (pg.24)
+This will help you determine whether Q1 should be a ‘Yes’ or a ‘No’.
+Question 2 is quite straightforward and simple. Has the model made any corrections? You can compare
+the input with the response (proofread copy) and see if any changes have been made. The smallest
+change would qualify as a ‘Yes’. However, you must verify that the changes have been applied.
+Do NOT assume based on the coloring or proposed edits text box! Sometimes the proposed edit box
+might show changes done but when you compare the input with the response, you might see that
+they’re identical.
+IMPORTANT:
+If part of the text from the input is missing in the response (see example below), do not assume that this
+is a change from the model. Consider that the model has reviewed this content and thinks it is correct
+(no changes needed). This has been called out in the GLs as well.
+
+Centific Confidential ©
+
+Correctness:
+- IMPORTANT: you’re focusing primarily on the edits that have been made by the model;
+irrelevant if they’re needed or not.
+- IMPORTANT 2: you must clearly distinguish what was the necessary edit and what was the
+unnecessary one. These two will help you to answer Q3.2 and the follow-up options. Again, do
+not assume that every change the model has made was necessary.
+- Keep in mind the task is en-US, pay attention to British spelling.
+- Look out for spacing fixes between words, before or after punctuation.
+- Pay attention to punctuations, especially when determining if the input is formal vs informal.
+- Omitting a word can be acceptable if the word itself is incorrect in the sentence structure.
+- Any changes that were unnecessary will be penalized under this dimension only!
+- If any portion of the text is missing from the response, assume that the model thinks the missing
+section contains no errors. Concentrate your review on the text that is present in the response.
+Completeness:
+- IMPORTANT: errors may exist outside of what the model has found. Do not assume the proposed
+edits are everything there is to fix.
+- Your focus here is NOT the unnecessary changes the model made but only the actual errors. Do
+not let yourself get confused with the first dimension. If the text is formal and the first word was
+not capitalized in the sentence, that should be the error you focus on here, even if the model
+changed 2-3 other things (that were not necessary).
+- If even one obvious error was not detected or correctly fixed by the model (in the response), you
+should answer the question with ‘No’.
+- If the model fixes an error while introducing another change you should only focus that it found
+and fixed the actual error, and the extra change of tone/style would be affecting Correctness
+instead. E.g. <btw> was changed to <By the way, >); the comma was added as a necessary fix
+(error found and correctly fixed) but the model expanded btw to “by the way”, which was not
+necessary and this would be penalized in Correctness, NOT Completeness.
+
+EXAMPLES
+1.
+
+Centific Confidential ©
+
+•
+•
+•
+•
+
+Travelling is British spelling, not en-US.
+Note how some changes in spacing or punctuation highlight the actual words around it. This
+does not mean the word was changed, pay attention to the details in the changes.
+Notice the “pollution,people” section is missing a space and the model never noticed this
+(Completeness, answer is ‘No’). Many selected ‘yes’ on Q4.
+Also pay attention to the second sentence in the input with “although” and “however”. These
+are two words that signal contrast and don’t make grammatical sense in the same sentence.
+-------------------2.
+
+In the above example, a substantial portion of the text is missing from the response. According to the
+guidelines callout, when this occurs, assume the model thinks the omitted content is correct and
+contains no errors. The model only identified two errors and so only those two sentences were provided.
+•
+•
+•
+•
+•
+
+A third of the people looked at the above input text and still answered “yes, the input is correct”,
+with an obvious lower-case ‘yes’ issue at the start of the sentence. The input is somewhat
+formal/neutral, therefore corrections are expected.
+The model correctly identifies and fixes the Yes capitalization issue.
+However, it unnecessarily edits the “Call/page” part. Not only that, but it also introduced a new
+error (or fixes it incorrectly) by not adding a space between “or” and “page”. We choose “mixed,
+only some edits are necessary”.
+Therefore, the necessary edits (<yes.>) would be “yes, all necessary edits are correct”. However,
+a third of people still answered this wrong.
+In Completeness, 2/3 of people failed to choose the correct option, which was “Yes, all errors
+were found and properly corrected”, since the only real error was the lower-case ‘yes’.
+Remember, we only care about the actual errors and their correction. If unnecessary changes
+were done (whether correct or not), they would affect Correctness.
+--------------------
+
+3.
+
+Centific Confidential ©
+
+Similar to the previous example, straight off-the-bat we can see the input has errors, but some graders
+still marked the input as perfect. And while changes are also obvious, some graders still selected the
+response is identical to the input.
+Please note, “at glancing at” does not sound grammatically correct and the proposed correction in the
+above case is not exactly correct either. The ‘comma’ after schedule is fine.
+
+Centific Confidential ©
+
+

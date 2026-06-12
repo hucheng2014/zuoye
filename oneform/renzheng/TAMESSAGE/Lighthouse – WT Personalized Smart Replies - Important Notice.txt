@@ -1,0 +1,6 @@
+WT Personalized Smart Replies – Important Notice
+Please note that if there is no user profile in the PSR (personalized smart reply) tasks, you
+should skip the task as a ‘UI issue’. This refers to both certification tasks and future
+production tasks if you come across such a case.
+
+

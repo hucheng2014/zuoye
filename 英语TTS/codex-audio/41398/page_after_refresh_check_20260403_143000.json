@@ -1,0 +1,1659 @@
+{
+  "url": "https://ilabel.weixin.qq.com/mission/41536/label",
+  "title": "2026音频check_first_part199 - 任务标注",
+  "extractedAt": "2026-04-03T05:59:54.269Z",
+  "count": 127,
+  "items": [
+    {
+      "index": 0,
+      "filename": "20260127_00004353_yhlll_8_1869.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1869.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "左上角这里别忘了的话点点预预约。"
+    },
+    {
+      "index": 1,
+      "filename": "20260127_00004353_yhlll_8_2622.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2622.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "嗯，因为它是有打揽的所以它的一个包容性还是蛮好的，包括就是很显瘦。"
+    },
+    {
+      "index": 2,
+      "filename": "20260127_00004353_yhlll_8_655.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_655.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "嗯，而且的话呢大家可以看他是一个宽松的一个版型，下摆这里就是视觉上显得你那个腰线是很高的同时哇你看花花给你们搭配了另一种穿法，直接系起来这样可以拉高你那个腰线也是可以的两种穿法。"
+    },
+    {
+      "index": 3,
+      "filename": "20260127_00004353_yhlll_8_3603.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3603.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "白色我这里也收到一个白呃白色黑色还有粉色的一个这种撞色，像我因为我穿的是m 码，如果你们是一米五八的一个个子穿m 码可以直接当下半身失踪。"
+    },
+    {
+      "index": 4,
+      "filename": "20260127_00004353_yhlll_8_3047.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3047.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "像我搭配的一个是一个这种罗马鞋，这个罗马。"
+    },
+    {
+      "index": 5,
+      "filename": "20260127_00004353_yhlll_8_1144.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1144.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "像樱花直接搭配里面穿一个背心然后下面搭配一个白色的一个半身裙，都是没问题的。"
+    },
+    {
+      "index": 6,
+      "filename": "20260127_00004353_yhlll_8_1342.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1342.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "有设置方面的问题给大家马上解等我一下啊我再给你们再操作一下我先要不先切回来。"
+    },
+    {
+      "index": 7,
+      "filename": "20260127_00004353_yhlll_8_248.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_248.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那这个版型的话其实就很建议大家呃想要遮肉的包括想要显气质的，就可以入这样的一个风衣哦。"
+    },
+    {
+      "index": 8,
+      "filename": "20260127_00004353_yhlll_8_2767.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2767.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "嗯，加那个牛仔裤嘛，这样的话比较通勤。"
+    },
+    {
+      "index": 9,
+      "filename": "20260127_00004353_yhlll_8_1644.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1644.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "像大圈刚刚我们一花带的日常价格是要花一个三十呃将近四十多块钱的一个价格今天只要三十五块九是一对哦，那如果想要小圈的话今天只要三十二块九也是一对的。"
+    },
+    {
+      "index": 10,
+      "filename": "20260127_00004353_yhlll_8_2984.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2984.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "开之前有到一个下单的，从这个小黄车里有到一个下单的。"
+    },
+    {
+      "index": 11,
+      "filename": "20260127_00004353_yhlll_8_1766.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1766.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "就这么一身搭一个这样小包包，又能放手机又能放口红又能放粉饼，出门直接背一个它就可以了，是的。"
+    },
+    {
+      "index": 12,
+      "filename": "20260127_00004353_yhlll_8_476.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_476.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "包括这个凉鞋上脚非常的舒服因为内里和垫脚都是有做一个这种牛皮的哦，它的跟高是二点零厘米就是小个子高个子都是可以穿的橡胶的一个大底所以说你这个脚感非常的舒适。"
+    },
+    {
+      "index": 13,
+      "filename": "20260127_00004353_yhlll_8_583.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_583.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "要在抽送之前有到你的一个订单才可以哦直接立即领券就可以直接到一个购买了。"
+    },
+    {
+      "index": 14,
+      "filename": "20260127_00004353_yhlll_8_3122.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3122.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后，对的大家想看什么都可以直接扣在公屏上让我们给大家试穿。"
+    },
+    {
+      "index": 15,
+      "filename": "20260127_00004353_yhlll_8_60.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_60.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "是的那我们先切一下镜头吧好不好？"
+    },
+    {
+      "index": 16,
+      "filename": "20260127_00004353_yhlll_8_3595.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3595.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "一米六五穿哪个码好，一米六五是哪件衣服呀？"
+    },
+    {
+      "index": 17,
+      "filename": "20260127_00004353_yhlll_8_326.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_326.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "好的，看一下我们的珍珠耳饰哦。"
+    },
+    {
+      "index": 18,
+      "filename": "20260127_00004353_yhlll_8_899.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_899.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "而且这个涂鸦的设计也是与娘娘的一种联名，就是它有印上娘娘这种插画的一个图案就更加的有设计感了，整体它其实属于那种宽松直筒的一个这种版型就比较的一个遮肉比较的显瘦。"
+    },
+    {
+      "index": 19,
+      "filename": "20260127_00004353_yhlll_8_2269.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2269.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "个情侣款来穿对，而且可以当下半身失踪也可以的是的，对款嗯，还是蛮百搭的情侣款姐妹款不知道该买哪款直接就买它面料的话又可以做到这种防水，而且的话呢今天那个价格也划算，对它日常价的话是两百多的一个价格。"
+    },
+    {
+      "index": 20,
+      "filename": "20260127_00004353_yhlll_8_654.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_654.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "可以作为一个这种防晒穿哇他好薄啊你夏天穿是很凉快的，非常的轻薄。"
+    },
+    {
+      "index": 21,
+      "filename": "20260127_00004353_yhlll_8_947.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_947.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这个也是有到一个礼盒包装的，所以说这个需要的朋友可以去拍日常价格二百六日常价格六百，我说日常应该不应该这么日常价格六百今天只要一个二百六十九的一个价格哦是的对的。"
+    },
+    {
+      "index": 22,
+      "filename": "20260127_00004353_yhlll_8_1384.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1384.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "衣服的话呢是一个这种衬衫的一个版型，而且它是有两个颜色的一个是浅黄色一个是蓝色。"
+    },
+    {
+      "index": 23,
+      "filename": "20260127_00004353_yhlll_8_2647.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2647.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "啊，一米六三一百三十五我觉得你穿l l 码l 码姐妹来聚焦阿娃的美貌挡住来这里右边哦。"
+    },
+    {
+      "index": 24,
+      "filename": "20260127_00004353_yhlll_8_1143.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1143.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "同时的话呢因为它这个是有到一个三个颜色嘛所以你们自己可以根据你们自己喜欢的颜色去进行去搭配，黄色比较的显白哇这么一个搭配也好看主要它会更加的有设计感一点。"
+    },
+    {
+      "index": 25,
+      "filename": "20260127_00004353_yhlll_8_1341.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1341.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "哎，为什么等一下啊。"
+    },
+    {
+      "index": 26,
+      "filename": "20260127_00004353_yhlll_8_1887.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1887.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "包括它其实版型做的还是蛮立整的比较板正，就有点。"
+    },
+    {
+      "index": 27,
+      "filename": "20260127_00004353_yhlll_8_3330.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3330.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这个裙子的话价格也很划算，包括其是小个子因为我是一米五八嘛你看它其实在我的一个小腿小腿偏上一点点，所以不会压你的个子就是因为它这个腰线做的比较的一个这种高所以说小个子也都是可以放心入的。"
+    },
+    {
+      "index": 28,
+      "filename": "20260127_00004353_yhlll_8_2220.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2220.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "白色也是好看的，前后左右都是显瘦的是因为其实它那个袖子会有一点偏长一点点，但是它会更加的一个遮肉是的。"
+    },
+    {
+      "index": 29,
+      "filename": "20260127_00004353_yhlll_8_2303.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2303.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "小细节这里对有一个镂小镂空的一个这种设计所以说会更加的一个有设。"
+    },
+    {
+      "index": 30,
+      "filename": "20260127_00004353_yhlll_8_2393.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2393.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那我们接过来吧，给大家看一下我全身的一个效果。"
+    },
+    {
+      "index": 31,
+      "filename": "20260127_00004353_yhlll_8_1763.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1763.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以说想要又有质感又好看的就可以选这样的一款包包哦。"
+    },
+    {
+      "index": 32,
+      "filename": "20260127_00004353_yhlll_8_2446.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2446.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "而且我觉得喜欢他，他是自己自带的一个这种版型的就是你不需要调，然后直接他就给大家看一下浅色的一个细节吧。"
+    },
+    {
+      "index": 33,
+      "filename": "20260127_00004353_yhlll_8_2947.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2947.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后我穿是码如是和我一样身高体重的话你们可以再往小一码拍也是可以的。"
+    },
+    {
+      "index": 34,
+      "filename": "20260127_00004353_yhlll_8_3213.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3213.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "推荐哪个颜色，这就要看你平时的穿衣风格了。"
+    },
+    {
+      "index": 35,
+      "filename": "20260127_00004353_yhlll_8_3329.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3329.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "直接这一身都已经给你们搭配好了你们直接入就可以了。"
+    },
+    {
+      "index": 36,
+      "filename": "20260127_00004353_yhlll_8_586.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_586.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "啊也是而且今天都是有那个运费险还有那个运费补贴的哦。"
+    },
+    {
+      "index": 37,
+      "filename": "20260127_00004353_yhlll_8_981.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_981.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "转个圈可以让我们安安给大家转个圈。"
+    },
+    {
+      "index": 38,
+      "filename": "20260127_00004353_yhlll_8_1387.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1387.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "整体呢大家可以看一下我是一米五八这个我穿的是l 码，因为其实我我上半身肉有点多属于。"
+    },
+    {
+      "index": 39,
+      "filename": "20260127_00004353_yhlll_8_2225.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2225.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "好看白色有度数的应该如果我没有记错应该是一字开头应该是一百五十多的一个价格。"
+    },
+    {
+      "index": 40,
+      "filename": "20260127_00004353_yhlll_8_2306.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2306.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "你们想白色都已经这么显瘦那黑色就已经不用说了啊。"
+    },
+    {
+      "index": 41,
+      "filename": "20260127_00004353_yhlll_8_254.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_254.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "嗯是的，日常价格是四百四十九，今天只要四百零四的一个价格，而且还是有到一个运费险的所以大家可以去买喽。"
+    },
+    {
+      "index": 42,
+      "filename": "20260127_00004353_yhlll_8_524.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_524.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后他如果说你们找不到在这里右下角这里有那个天选他如果说你们找不到在这里右下角这里有一个天选点击立即参与看我已经参与了朋友们。"
+    },
+    {
+      "index": 43,
+      "filename": "20260127_00004353_yhlll_8_2398.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2398.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后整体呢它是一种因为其实像有肉肉的女生，大家可以看一下我因为我是属于那种苹果型我上半身是有肉肉的。"
+    },
+    {
+      "index": 44,
+      "filename": "20260127_00004353_yhlll_8_587.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_587.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "花花穿的是m 码啊，m 码然后阿兰穿的是l 码然后我穿的是s 码。"
+    },
+    {
+      "index": 45,
+      "filename": "20260127_00004353_yhlll_8_644.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_644.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后像这个我们已经弹出来讲解了直接领券抢购，领券抢购不要忘了领券哦领取一张三十七元优惠券直接立即购买到手只要一百八十三价格哇现在黄色诶聚焦。"
+    },
+    {
+      "index": 46,
+      "filename": "20260127_00004353_yhlll_8_746.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_746.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "好那我们切回来吧。"
+    },
+    {
+      "index": 47,
+      "filename": "20260127_00004353_yhlll_8_847.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_847.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "做了一个这种红色的一个这种印花他而且他这个印花是高清的一个这种胶印就是你洗呀它是不会容易掉的。"
+    },
+    {
+      "index": 48,
+      "filename": "20260127_00004353_yhlll_8_1338.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1338.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "详情页领取一张八十六的优惠券。"
+    },
+    {
+      "index": 49,
+      "filename": "20260127_00004353_yhlll_8_1388.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1388.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "苹果型，所以说我会选大一码。"
+    },
+    {
+      "index": 50,
+      "filename": "20260127_00004353_yhlll_8_3517.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3517.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "而且首先啊它这里是有做到一个就是显得你的腰很瘦，但是他是没有弹力的嘛所以你们卡码可以往大一码拍。"
+    },
+    {
+      "index": 51,
+      "filename": "20260127_00004353_yhlll_8_2100.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2100.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "是的，对运费补贴什么意思呢？"
+    },
+    {
+      "index": 52,
+      "filename": "20260127_00004353_yhlll_8_2307.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2307.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以说，两个颜色供你们去选择。"
+    },
+    {
+      "index": 53,
+      "filename": "20260127_00004353_yhlll_8_2399.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2399.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "但是它是有做一种微微的这种落肩，所以说它事实上是显瘦的一个这种效果的啊。"
+    },
+    {
+      "index": 54,
+      "filename": "20260127_00004353_yhlll_8_2640.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2640.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "等一下我帮你找一下。"
+    },
+    {
+      "index": 55,
+      "filename": "20260127_00004353_yhlll_8_3085.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3085.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "包括今天是有到半价的免单就剩两位哦两位朋友们所以大家可以参与一下我们的一个免单。"
+    },
+    {
+      "index": 56,
+      "filename": "20260127_00004353_yhlll_8_3518.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3518.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后它是从到这里做到一个这种往下这种伞裙的这种感觉。"
+    },
+    {
+      "index": 57,
+      "filename": "20260127_00004353_yhlll_8_316.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_316.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "最后一个小细节看一下我们的大长腿有到一个开叉的设计。"
+    },
+    {
+      "index": 58,
+      "filename": "20260127_00004353_yhlll_8_526.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_526.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "好，那我们切回来吧。"
+    },
+    {
+      "index": 59,
+      "filename": "20260127_00004353_yhlll_8_849.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_849.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "而且你们也可以像我一样搭配一个这种小裤子也可以的。"
+    },
+    {
+      "index": 60,
+      "filename": "20260127_00004353_yhlll_8_946.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_946.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "长款可以直接搭那个t 恤都是可以的当然你作为情侣款也都是没有任何的问题的。"
+    },
+    {
+      "index": 61,
+      "filename": "20260127_00004353_yhlll_8_1142.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1142.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "的的他因为他这个是有到一个这种棉锦混纺的一个这种面料所以说你手感会更更加的一个轻薄那种感觉，包括这是有这种飘带的就会更加的有设计感一点。"
+    },
+    {
+      "index": 62,
+      "filename": "20260127_00004353_yhlll_8_64.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_64.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后整点的话呢也会有到一个千元的免单包括我们还有不定时的一个单品免单，但是抽送抽我们抽送的一些呃福利呀你们都。"
+    },
+    {
+      "index": 63,
+      "filename": "20260127_00004353_yhlll_8_1340.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1340.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "来对我说过的价格和你刚刚说二百六十一个，然后直接立即购买。"
+    },
+    {
+      "index": 64,
+      "filename": "20260127_00004353_yhlll_8_658.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_658.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "就像一花这样搭配一个开搭配一个这种衬衫就可以了。"
+    },
+    {
+      "index": 65,
+      "filename": "20260127_00004353_yhlll_8_756.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_756.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "收到一个s 九二五纯银的所以说像我们耳朵有些敏敏的也都是可以戴的。"
+    },
+    {
+      "index": 66,
+      "filename": "20260127_00004353_yhlll_8_1850.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1850.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "主要他其实版型是显瘦的，加上你们可以看一下其实腰部他是有做一种微微的一个这种收腰，所以说像我们有肉肉的呀也都是可以能能够放心穿的。"
+    },
+    {
+      "index": 67,
+      "filename": "20260127_00004353_yhlll_8_1346.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1346.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "对是的，直接一键参与就可以了。"
+    },
+    {
+      "index": 68,
+      "filename": "20260127_00004353_yhlll_8_1648.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1648.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "你穿t 恤也可以穿吊带裙也都是可以的哦。"
+    },
+    {
+      "index": 69,
+      "filename": "20260127_00004353_yhlll_8_2445.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2445.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "今天只要六十九元。"
+    },
+    {
+      "index": 70,
+      "filename": "20260127_00004353_yhlll_8_246.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_246.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以说小个子的话你就可以选小一点的一个码数，因为它正好到我的一个小腿左右的位置它不会压个子，而且它是一个这种小翻领的一个这种设计，就会在你的一个这种风衣的基础上增加一点俏皮的一个感觉，整体垂感也都是很。"
+    },
+    {
+      "index": 71,
+      "filename": "20260127_00004353_yhlll_8_2450.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2450.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "九十四号链接码吧，那我们切回来吧。"
+    },
+    {
+      "index": 72,
+      "filename": "20260127_00004353_yhlll_8_2849.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2849.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "同时是有给大家做一个内衬的，当然它那个内衬那个长短正好在镂空那个上面，所以说也是更加那个放心的。"
+    },
+    {
+      "index": 73,
+      "filename": "20260127_00004353_yhlll_8_2650.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2650.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "你们要从这里有到你的订单哦，直接从这里领券购买就可以了。"
+    },
+    {
+      "index": 74,
+      "filename": "20260127_00004353_yhlll_8_2759.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2759.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "是的而且这衬衫挺阔感还是蛮好的对它很有型。"
+    },
+    {
+      "index": 75,
+      "filename": "20260127_00004353_yhlll_8_3328.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3328.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "穿的也是m 码的一个效果，搭配这样的一个小白包包然后配上这样的一个罗马的一个凉鞋也是很好看的。"
+    },
+    {
+      "index": 76,
+      "filename": "20260127_00004353_yhlll_8_897.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_897.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "但是，涂鸦的牛仔裤你的衣柜里应该是没有的。"
+    },
+    {
+      "index": 77,
+      "filename": "20260127_00004353_yhlll_8_976.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_976.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "比较那个显示你的一个身材三七分的圆领的一个这种设计的话呢也是比较的精致一点。"
+    },
+    {
+      "index": 78,
+      "filename": "20260127_00004353_yhlll_8_3573.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3573.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "是的哇我又看到了美女，什么码？"
+    },
+    {
+      "index": 79,
+      "filename": "20260127_00004353_yhlll_8_1382.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1382.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "刚才给大家解决那个裙子那个好可能好像应该是你们要自己去那个凑那个满减到时候满减那个价格更加划算都不是一百三十二了。"
+    },
+    {
+      "index": 80,
+      "filename": "20260127_00004353_yhlll_8_22.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_22.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "好的我们先切下镜头聚焦这里哦这里我们的右下角这里小黄车大家可以点进去然后先看一下我们今天那个品，如果说你们现在已经看到你们喜欢的了就抓紧时间去拍下。"
+    },
+    {
+      "index": 81,
+      "filename": "20260127_00004353_yhlll_8_1478.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1478.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "三点五厘米左右吧三点五厘米左右的一个这种跟高就小个子也是蛮适合的，而且它里面是有做一种牛皮加上这种就是比较的就质感比较好，而且上脚也是非常的一个舒适的。"
+    },
+    {
+      "index": 82,
+      "filename": "20260127_00004353_yhlll_8_1582.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1582.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后我后面还给它搭配了一个这样的颜色的一个小包。"
+    },
+    {
+      "index": 83,
+      "filename": "20260127_00004353_yhlll_8_268.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_268.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以日常你所上班呀需要带的一些东西都是能到能装下的。"
+    },
+    {
+      "index": 84,
+      "filename": "20260127_00004353_yhlll_8_399.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_399.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后嗯，然后包括其实这个小开衫你也可以单穿的，里面穿个吊带穿个牛仔裤也是可以进到一个很好的搭配的一件衣服，多种穿法，日常价格的话呢上衣是要要到一个二百三十八裙。"
+    },
+    {
+      "index": 85,
+      "filename": "20260127_00004353_yhlll_8_2088.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2088.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后你们直接喜欢哪个领券抢购不要忘记领券哦，因为券后价格会更加的划算也是一花给大家争取来的，同时也都是有到一个运费险还有到一个运费补贴的哦。"
+    },
+    {
+      "index": 86,
+      "filename": "20260127_00004353_yhlll_8_2218.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2218.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "少有这么两件短袖的嘛那你为什么不选一个有设计感一点的呢？"
+    },
+    {
+      "index": 87,
+      "filename": "20260127_00004353_yhlll_8_496.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_496.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "大方领的一个设计啊视觉上也会常显脸小同时大家可以看一下它这个下摆v 字的一个下摆好显颜腰瘦啊，你们可以直接看阿丸这个腰瘦，对小蛮腰，小蛮腰的一个感觉，对侧面看也很像腰瘦，包括后面它。"
+    },
+    {
+      "index": 88,
+      "filename": "20260127_00004353_yhlll_8_2299.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2299.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "而且这里是有做这种褶皱的一个设计，就算你的肚肚肉肉比较多也是可以做到这种修饰的。"
+    },
+    {
+      "index": 89,
+      "filename": "20260127_00004353_yhlll_8_723.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_723.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "首先它那个前面是给大家做这种方头的一个这种设计好显脚的一个秀气很显脚小。"
+    },
+    {
+      "index": 90,
+      "filename": "20260127_00004353_yhlll_8_2391.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2391.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "t 恤，我喜欢买大的因为我可以给它变小，然后我也给它变大。"
+    },
+    {
+      "index": 91,
+      "filename": "20260127_00004353_yhlll_8_917.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_917.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "其实这个包包的话它有点这种翻盖的一个设计，而且这种多口袋的一个这种机车风，就是它是你看一个侧边一个口袋两个口袋包括正面你看，就是你从这里你可以有个拉链嘛。"
+    },
+    {
+      "index": 92,
+      "filename": "20260127_00004353_yhlll_8_1195.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1195.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为我是一个黄皮嘛大家看它穿上上身也是非常的一个显白的，它那个啊阿兰穿也好好看我们高个子小个子都是可以穿的，我是一米五八。"
+    },
+    {
+      "index": 93,
+      "filename": "20260127_00004353_yhlll_8_1394.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1394.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这搭一会儿给大家搭配我们的一个小包包，或者说你去海边然后直接拍个照啊和你的小姐姐约个下午茶呀都是好看的。"
+    },
+    {
+      "index": 94,
+      "filename": "20260127_00004353_yhlll_8_1716.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1716.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "你可以像我跟一花都当开衫穿嘛，然后你也可以系起来当那个衬衫穿也是可以的。"
+    },
+    {
+      "index": 95,
+      "filename": "20260127_00004353_yhlll_8_2711.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2711.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那个抓夹就是你买一个你要领一个券，这样的话每一个到手的价格都是四十九的价格要不然是价格是不对的哦不要忘记领券哦。"
+    },
+    {
+      "index": 96,
+      "filename": "20260127_00004353_yhlll_8_2917.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2917.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后大家可以看一下前后左右都是非常的一个遮肉非常显瘦的。"
+    },
+    {
+      "index": 97,
+      "filename": "20260127_00004353_yhlll_8_3039.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3039.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为其实夏天的话可以选这种色彩比较亮一点的，也是比较好出片然后包括拍照也好看。"
+    },
+    {
+      "index": 98,
+      "filename": "20260127_00004353_yhlll_8_3396.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3396.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "裤子我们家裤子都是你就可以闭眼入，包括其实每一条裤子你都是可以去买一条的，因为版型都很好都很遮肉，包括的话也都是很百搭的。"
+    },
+    {
+      "index": 99,
+      "filename": "20260127_00004353_yhlll_8_3523.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_3523.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "同时你再看下面这里又是不一样的一个设计。"
+    },
+    {
+      "index": 100,
+      "filename": "20260127_00004353_yhlll_8_109.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_109.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "现货的所以大家可以抓紧时间去冲了。"
+    },
+    {
+      "index": 101,
+      "filename": "20260127_00004353_yhlll_8_574.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_574.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "日常价格二百二十九，今天只要一个一百七十九的一个价格，两个。"
+    },
+    {
+      "index": 102,
+      "filename": "20260127_00004353_yhlll_8_172.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_172.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "同时，然后大家不要忘了要从一花的一个直播间购物车链接里进行到一个购买因为价格的话真的都是很划算的，今天全场都是有到一个运费险或者有到一个运费补贴的哦。"
+    },
+    {
+      "index": 103,
+      "filename": "20260127_00004353_yhlll_8_889.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_889.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我穿的是s 码的一个效果。"
+    },
+    {
+      "index": 104,
+      "filename": "20260127_00004353_yhlll_8_298.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_298.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "只要一百七十九价格哎呀，现在现货已经没有了朋友们，第二批s ml 叉l 。"
+    },
+    {
+      "index": 105,
+      "filename": "20260127_00004353_yhlll_8_973.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_973.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我觉得小香风就本来就比较显气质嘛所以说你要看它的一个版型包括它的一个面料。"
+    },
+    {
+      "index": 106,
+      "filename": "20260127_00004353_yhlll_8_517.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_517.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "然后红色淡黄色薄荷蓝还有粉色，我们推荐大红色和淡黄色。"
+    },
+    {
+      "index": 107,
+      "filename": "20260127_00004353_yhlll_8_741.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_741.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "就右边这里有一个天选你看我已经参与到了。"
+    },
+    {
+      "index": 108,
+      "filename": "20260127_00004353_yhlll_8_841.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_841.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "但是抽送的朋友们我们是要在一花的一个直播间啊从这里小黄车点进去有到一个。"
+    },
+    {
+      "index": 109,
+      "filename": "20260127_00004353_yhlll_8_1475.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1475.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "大家看一下，给大家看一下细节，它有点那种就是说更加的精致一点因为它鞋面采用的是一个呃牛皮的制作而成的就比较的有色彩感而且更加的一个就有那种光泽感。"
+    },
+    {
+      "index": 110,
+      "filename": "20260127_00004353_yhlll_8_1129.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1129.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "半身裙都是一个m 码然后链接。"
+    },
+    {
+      "index": 111,
+      "filename": "20260127_00004353_yhlll_8_1578.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1578.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "嗯，是一个很，还有两个免单还有两个免单是很可爱的一个短袖。"
+    },
+    {
+      "index": 112,
+      "filename": "20260127_00004353_yhlll_8_395.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_395.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "刚刚的那个黑色的连衣裙那个是有到一个拉链的哦所以说你们可以自己进行到一个调节都是可以的。"
+    },
+    {
+      "index": 113,
+      "filename": "20260127_00004353_yhlll_8_1625.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1625.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "你看，软软的一个这种牛皮的一个设计，就是它又软又有型而且上身也比较的好搭配。"
+    },
+    {
+      "index": 114,
+      "filename": "20260127_00004353_yhlll_8_494.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_494.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "刚刚就有朋友一直要我们那个十四号那个吊带来喽来喽，这个的话今天真的很具有一个性价比。"
+    },
+    {
+      "index": 115,
+      "filename": "20260127_00004353_yhlll_8_720.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_720.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "如果说你肚子肉肉正常正好s 码就够了因为后面是有打揽的是的。"
+    },
+    {
+      "index": 116,
+      "filename": "20260127_00004353_yhlll_8_2031.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2031.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为那天会有很多呃夏天的一些连衣裙啊包括你们喜欢的一些衣服呀也都是有的哦。"
+    },
+    {
+      "index": 117,
+      "filename": "20260127_00004353_yhlll_8_1096.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1096.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为其实现在天气还是有一点点冷的所以说像我们出门还是要搭配一个这样的一个针织开衫。"
+    },
+    {
+      "index": 118,
+      "filename": "20260127_00004353_yhlll_8_292.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_292.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "来它都是一个小的一个泡泡袖，所以说胳膊有肉肉的话呢都是可以做到一个这种。"
+    },
+    {
+      "index": 119,
+      "filename": "20260127_00004353_yhlll_8_409.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_409.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "领到券以后你看立即领券直接领券成功，然后跳转直接立即领券购买就可以喽。"
+    },
+    {
+      "index": 120,
+      "filename": "20260127_00004353_yhlll_8_1392.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_1392.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "直接下面像我一样搭配这条裙子，三七分的一个效果。"
+    },
+    {
+      "index": 121,
+      "filename": "20260127_00004353_yhlll_8_2335.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2335.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "小香风有吗？"
+    },
+    {
+      "index": 122,
+      "filename": "20260127_00004353_yhlll_8_2296.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2296.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我身上穿的哇，气质女人来了朋友们，小个子也可以当一个这种气质女人，首先的话你看领口的一个设计到这种小镂空的一个设计，最近有没有什么聚会比较重视的一些。"
+    },
+    {
+      "index": 123,
+      "filename": "20260127_00004353_yhlll_8_2388.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2388.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这是我的衣服是吗？"
+    },
+    {
+      "index": 124,
+      "filename": "20260127_00004353_yhlll_8_2629.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2629.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "而且今天也是到有到一个运费险，还有是运费补贴，所以大家也可以抓紧时间去拍。"
+    },
+    {
+      "index": 125,
+      "filename": "20260127_00004353_yhlll_8_928.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_928.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "是的因为三个颜色嘛所以大家可以自己尽情去购买。"
+    },
+    {
+      "index": 126,
+      "filename": "20260127_00004353_yhlll_8_2745.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260402/20260127_00004353_yhlll_8_spk1/20260127_00004353_yhlll_8_2745.wav",
+      "selectedIndexes": [
+        -1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "今天痛失名字。"
+    }
+  ]
+}

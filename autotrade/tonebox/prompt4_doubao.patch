@@ -1,0 +1,256 @@
+diff --git a/music_models/music_models.py b/music_models/music_models.py
+index f526728..eb92d43 100644
+--- a/music_models/music_models.py
++++ b/music_models/music_models.py
+@@ -181,9 +181,11 @@ class Recital(Base):
+     status = Column(Enum(RecitalStatus), nullable=False, default=RecitalStatus.planning)
+     registration_deadline = Column(Date, nullable=True)
+     admission_fee = Column(Float, nullable=False, default=0.0)
++    max_capacity = Column(Integer, nullable=False, default=50)
+     notes = Column(Text, nullable=True)
+ 
+     organizer = relationship("User", back_populates="organized_recitals", lazy="selectin")
++    bookings = relationship("Booking", back_populates="recital", lazy="selectin")
+ 
+     @property
+     def performers(self):
+@@ -250,6 +252,7 @@ class Booking(Base):
+     user_id = Column(String, ForeignKey("users.id"), nullable=False)
+     lesson_id = Column(Integer, ForeignKey("lessons.id"), nullable=True)
+     room_id = Column(Integer, ForeignKey("studio_rooms.id"), nullable=True)
++    recital_id = Column(String, ForeignKey("recitals.id"), nullable=True)
+     booking_type = Column(String(50), nullable=False)
+     start_time = Column(DateTime, nullable=True)
+     end_time = Column(DateTime, nullable=True)
+@@ -260,3 +263,4 @@ class Booking(Base):
+     user = relationship("User")
+     lesson = relationship("Lesson", back_populates="bookings")
+     room = relationship("StudioRoom")
++    recital = relationship("Recital", back_populates="bookings")
+diff --git a/recital_hall/recital_bookings.py b/recital_hall/recital_bookings.py
+index a902743..e6f2d12 100644
+--- a/recital_hall/recital_bookings.py
++++ b/recital_hall/recital_bookings.py
+@@ -23,6 +23,7 @@ class RecitalSeatBookingCreate(BaseModel):
+ class RecitalBookingResponse(BaseModel):
+     id: int
+     user_id: str
++    recital_id: Optional[str]
+     booking_type: str
+     status: str
+     notes: Optional[str]
+@@ -44,8 +45,21 @@ async def book_recital_seat(
+         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Recital not found")
+     if recital.status == "cancelled":
+         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Recital is cancelled")
++    
++    # Check capacity
++    bookings_result = await db.execute(
++        select(Booking).where(
++            Booking.recital_id == recital_id,
++            Booking.status.in_(["pending", "confirmed"])
++        )
++    )
++    current_bookings = len(list(bookings_result.scalars().all()))
++    if current_bookings >= recital.max_capacity:
++        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Recital is at full capacity")
++    
+     booking = Booking(
+         user_id=payload.user_id,
++        recital_id=recital_id,
+         booking_type="recital",
+         status="pending",
+         notes=payload.notes,
+@@ -67,6 +81,6 @@ async def list_recital_seats(
+     if not recital:
+         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Recital not found")
+     bookings_result = await db.execute(
+-        select(Booking).where(Booking.booking_type == "recital")
++        select(Booking).where(Booking.recital_id == recital_id)
+     )
+     return list(bookings_result.scalars().all())
+diff --git a/recital_hall/recital_manager.py b/recital_hall/recital_manager.py
+index c6deeb7..448cde9 100644
+--- a/recital_hall/recital_manager.py
++++ b/recital_hall/recital_manager.py
+@@ -30,6 +30,7 @@ class RecitalCreate(BaseModel):
+     status: RecitalStatus = RecitalStatus.planning
+     registration_deadline: Optional[datetime.date] = None
+     admission_fee: float = 0.0
++    max_capacity: int = 50
+     notes: Optional[str] = None
+ 
+ 
+@@ -54,6 +55,7 @@ class RecitalResponse(BaseModel):
+     status: RecitalStatus
+     registration_deadline: Optional[datetime.date]
+     admission_fee: float
++    max_capacity: int
+     notes: Optional[str]
+ 
+     model_config = {"from_attributes": True}
+@@ -70,6 +72,7 @@ class RecitalResponse(BaseModel):
+             status=obj.status,
+             registration_deadline=obj.registration_deadline,
+             admission_fee=obj.admission_fee,
++            max_capacity=obj.max_capacity,
+             notes=obj.notes,
+         )
+ 
+diff --git a/tests/test_prompt4.py b/tests/test_prompt4.py
+new file mode 100644
+index 0000000..1b55549
+--- /dev/null
++++ b/tests/test_prompt4.py
+@@ -0,0 +1,151 @@
++from __future__ import annotations
++
++import pytest
++from httpx import AsyncClient
++from datetime import date
++
++from tests.conftest import api_key_header, register_user
++
++
++async def make_admin(client: AsyncClient, username: str) -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "admin")
++
++
++async def make_teacher(client: AsyncClient, username: str) -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "teacher")
++
++
++async def make_recital(
++    client: AsyncClient,
++    api_key: str,
++    title: str = "Spring Recital",
++    max_capacity: int = 50,
++) -> dict:
++    resp = await client.post(
++        "/recitals",
++        json={
++            "title": title,
++            "event_date": str(date.today()),
++            "venue": "Main Hall",
++            "organizer_id": "dummy",  # We'll fix this later
++            "max_capacity": max_capacity,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def test_recital_has_max_capacity(client: AsyncClient):
++    admin = await make_admin(client, "r_admin1")
++    recital = await make_recital(client, admin["api_key"], max_capacity=25)
++    assert recital["max_capacity"] == 25
++
++
++async def test_recital_seat_booking(client: AsyncClient):
++    admin = await make_admin(client, "r_admin2")
++    student = await register_user(client, "r_student1", "r_student1@test.com", "pass", "student")
++    
++    # First, we need to create an organizer properly
++    organizer = await make_teacher(client, "r_organizer1")
++    
++    # Create recital with correct organizer_id
++    resp = await client.post(
++        "/recitals",
++        json={
++            "title": "Test Recital",
++            "event_date": str(date.today()),
++            "venue": "Main Hall",
++            "organizer_id": organizer["id"],
++            "max_capacity": 2,
++        },
++        headers=api_key_header(admin["api_key"]),
++    )
++    assert resp.status_code == 201, resp.text
++    recital = resp.json()
++    
++    # Book first seat
++    resp1 = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student["id"]},
++        headers=api_key_header(student["api_key"]),
++    )
++    assert resp1.status_code == 201, resp1.text
++    booking1 = resp1.json()
++    assert booking1["recital_id"] == recital["id"]
++    
++    # Book second seat
++    student2 = await register_user(client, "r_student2", "r_student2@test.com", "pass", "student")
++    resp2 = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student2["id"]},
++        headers=api_key_header(student2["api_key"]),
++    )
++    assert resp2.status_code == 201, resp2.text
++    
++    # Third booking should fail (capacity reached)
++    student3 = await register_user(client, "r_student3", "r_student3@test.com", "pass", "student")
++    resp3 = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student3["id"]},
++        headers=api_key_header(student3["api_key"]),
++    )
++    assert resp3.status_code == 409, resp3.text
++    assert resp3.json()["detail"] == "Recital is at full capacity"
++
++
++async def test_list_recital_seats(client: AsyncClient):
++    admin = await make_admin(client, "r_admin3")
++    organizer = await make_teacher(client, "r_organizer2")
++    student1 = await register_user(client, "r_student4", "r_student4@test.com", "pass", "student")
++    student2 = await register_user(client, "r_student5", "r_student5@test.com", "pass", "student")
++    
++    # Create recital 1
++    resp1 = await client.post(
++        "/recitals",
++        json={
++            "title": "Recital 1",
++            "event_date": str(date.today()),
++            "venue": "Main Hall",
++            "organizer_id": organizer["id"],
++            "max_capacity": 10,
++        },
++        headers=api_key_header(admin["api_key"]),
++    )
++    recital1 = resp1.json()
++    
++    # Create recital 2
++    resp2 = await client.post(
++        "/recitals",
++        json={
++            "title": "Recital 2",
++            "event_date": str(date.today()),
++            "venue": "Small Hall",
++            "organizer_id": organizer["id"],
++            "max_capacity": 10,
++        },
++        headers=api_key_header(admin["api_key"]),
++    )
++    recital2 = resp2.json()
++    
++    # Book seat in recital 1
++    await client.post(
++        f"/recitals/{recital1['id']}/seats",
++        json={"user_id": student1["id"]},
++        headers=api_key_header(student1["api_key"]),
++    )
++    
++    # Book seat in recital 2
++    await client.post(
++        f"/recitals/{recital2['id']}/seats",
++        json={"user_id": student2["id"]},
++        headers=api_key_header(student2["api_key"]),
++    )
++    
++    # List recital 1 seats, should only have 1
++    list_resp = await client.get(
++        f"/recitals/{recital1['id']}/seats",
++        headers=api_key_header(admin["api_key"]),
++    )
++    assert list_resp.status_code == 200
++    assert len(list_resp.json()) == 1

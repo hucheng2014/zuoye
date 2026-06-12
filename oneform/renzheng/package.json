@@ -1,0 +1,24 @@
+{
+  "name": "renzheng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mcp:playwright": "playwright-mcp --browser chrome --isolated --output-dir .playwright-mcp-output",
+    "mcp:playwright:headless": "playwright-mcp --browser chrome --headless --isolated --output-dir .playwright-mcp-output",
+    "mcp:playwright:cdp": "playwright-mcp --cdp-endpoint http://127.0.0.1:9222 --output-dir .playwright-mcp-output",
+    "chrome:cdp": "google-chrome --remote-debugging-port=9222 --user-data-dir=.chrome-cdp-profile --no-first-run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/mcp": "^0.0.75"
+  },
+  "dependencies": {
+    "chrome-remote-interface": "^0.34.0",
+    "puppeteer-core": "^25.1.0",
+    "ws": "^8.20.1"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "batch_id": "2026-05-25_batch_002",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-05-25T19:50:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "01KSFC207Z8NGP85FR2KR7208A",
+      "query": "双色球开奖结果",
+      "query_intent": "User wants to check Double Color Ball (双色球) lottery draw results - one of China's most popular lottery games.",
+      "ad": {
+        "name": "球速体育-足球世界杯体育比分预测专家",
+        "subtitle": "足球篮球体育比分竞猜预测",
+        "developer": "Tianjin Haoge Technology Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "local knowledge",
+          "note": "双色球 is one of China's most popular welfare lottery games. Users searching for its results want to check winning numbers. The ad app focuses on sports (football/basketball) score tracking and predictions."
+        },
+        {
+          "source": "SOP calibration",
+          "note": "Similar to 'texas lott' → 'Slots Casino HD Slotomania' = Acceptable. Both involve gambling/betting entertainment but different specific forms (lottery results vs sports betting predictions)."
+        }
+      ],
+      "relationship_analysis": "Both are loosely connected through gambling/betting entertainment: lottery vs sports predictions. However, the specific needs are very different - checking lottery draw results vs sports score prediction. The user wants lottery numbers, not sports betting advice.",
+      "why_not_higher": "The specific functions are different: lottery result checking vs sports prediction/betting. Users looking for lottery results are unlikely to be interested in sports score predictions.",
+      "why_not_lower": "Both exist in the broad gambling/betting entertainment category. A lottery player might also be interested in sports betting. The connection is weak but not jarringly irrelevant - similar to the 'texas lott' → 'Slots Casino' example in guidelines.",
+      "rating": "Acceptable",
+      "comment": "The query \"双色球开奖结果\" indicates the user wants to check Double Color Ball lottery results, one of China's most popular lottery games. The advertised app \"球速体育\" is a sports score tracking and prediction app for football and basketball. While both exist in the broad gambling/betting entertainment space, checking lottery results and sports betting predictions serve different specific needs. A user looking for lottery numbers would not be particularly likely to click on a sports prediction app, but would understand why it appeared. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "01KSFC20863J3K3RVSQSZB4KCH",
+      "query": "歪马送酒",
+      "query_intent": "User is looking for 歪马送酒, an alcohol delivery service/app that delivers beer, wine, and spirits to your door.",
+      "ad": {
+        "name": "叮咚买菜——品质之爱",
+        "subtitle": "蔬果生鲜快手好菜，烘焙米面粮油食品",
+        "developer": "Shanghai 100 meters Network Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store search",
+          "note": "歪马送酒 is confirmed as an alcohol delivery app. 叮咚买菜 is a major grocery delivery platform that also sells alcohol beverages."
+        },
+        {
+          "source": "SOP calibration",
+          "note": "Similar to 'doordash' → 'Pizza Hut' = Good. General delivery platform vs more specific food/drink delivery. Here: specific alcohol delivery → broader grocery delivery that includes alcohol."
+        }
+      ],
+      "relationship_analysis": "歪马送酒 is specifically for alcohol delivery. 叮咚买菜 is a grocery delivery platform that also sells beer, wine, and spirits. Both are delivery services for consumable goods. The user wants alcohol delivered; 叮咚买菜 can fulfill this need as part of its broader grocery service. Similar to the Doordash/Pizza Hut example where a general food delivery service and a specific food delivery are related.",
+      "why_not_higher": "叮咚买菜 is primarily a grocery delivery app, not specifically for alcohol. The user specifically wanted alcohol delivery, and 叮咚买菜's alcohol selection may be more limited than a dedicated alcohol delivery service.",
+      "why_not_lower": "叮咚买菜 does sell alcohol and provides delivery service. Users wanting alcohol delivered would quite likely be interested in an app that can deliver alcohol along with groceries. The core need (getting beverages delivered) is directly addressed.",
+      "rating": "Good",
+      "comment": "The query \"歪马送酒\" indicates the user wants an alcohol delivery service. The advertised app \"叮咚买菜\" is a major grocery delivery platform that also delivers alcohol beverages including beer, wine, and spirits. While not specifically an alcohol delivery app, it directly fulfills the user's need for alcohol delivery as part of its broader grocery service. The user searching for alcohol delivery would quite likely be interested in an app that can deliver this. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "01KSFC20869W3MBC026EJSXVKV",
+      "query": "工银e生活",
+      "query_intent": "User is looking for 工银e生活, the ICBC (Industrial and Commercial Bank of China) lifestyle and financial service platform app.",
+      "ad": {
+        "name": "rednote",
+        "subtitle": "share, connect, love",
+        "developer": "Xingin",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store search",
+          "note": "工银e生活 is ICBC's personal customer lifestyle service platform, providing financial services, shopping deals, food discounts, and installment payment. rednote (小红书) is a social media lifestyle sharing platform with 20.8M+ reviews."
+        },
+        {
+          "source": "SOP calibration",
+          "note": "Per SOP: '12123' → '饿了么' = Bad (government traffic service vs food delivery, no logical connection). Similarly, ICBC banking/lifestyle vs social content sharing has no logical relationship."
+        }
+      ],
+      "relationship_analysis": "工银e生活 is a bank-driven lifestyle and financial service platform. rednote (小红书) is a social media lifestyle sharing platform. While both contain the concept of lifestyle (生活), they serve fundamentally different core functions: banking/financial services vs social content sharing. The user wants ICBC's specific financial and deal services, not social media content.",
+      "why_not_higher": "The core functionalities are completely different: banking/financial services vs social content sharing. There is no direct competitor or functional overlap. The 'lifestyle' word overlap is superficial.",
+      "why_not_lower": "Cannot be lower than Bad as there is truly no logical connection between the user's intent and the ad.",
+      "rating": "Bad",
+      "comment": "The query \"工银e生活\" indicates the user is looking for ICBC's lifestyle and financial service platform, providing banking, payment, and shopping deal services. The advertised app \"rednote\" (小红书) is a social media lifestyle sharing platform for user-generated content. Although both involve the concept of lifestyle (生活), their core functionalities are completely different: one is a banking/financial service, the other is social content sharing. A user looking for ICBC banking services would not be interested in a social media platform. There is no logical relationship. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "01KSFC208CXNQWKJZB8S3RGC3T",
+      "query": "奇兵到家",
+      "query_intent": "User is looking for 奇兵到家, an O2O home service platform providing cleaning, appliance repair, installation, and housekeeping services.",
+      "ad": {
+        "name": "万师傅家居服务",
+        "subtitle": "百万商家选择的全国安装维修售后服务平台",
+        "developer": "深圳百师傅科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "local knowledge",
+          "note": "奇兵到家 provides home services including appliance cleaning, repair, installation, and housekeeping. 万师傅 focuses specifically on installation, repair, and after-sales service for home furniture and appliances. Both are O2O home service platforms connecting users with service professionals."
+        },
+        {
+          "source": "SOP guidelines",
+          "note": "Direct competitors with similar functionality should be rated Excellent (e.g., Uber vs Lyft, Camera+ vs ProCamera)."
+        }
+      ],
+      "relationship_analysis": "Both apps are direct competitors in the home services O2O market. 奇兵到家 offers general home services (cleaning, repair, installation). 万师傅 specializes in home installation and repair services. They serve the same user need: getting professional home service technicians to come to your home. This is similar to Uber vs Lyft - same category, same core function, direct competitors.",
+      "why_not_higher": "Excellent is the highest rating. These are direct competitors satisfying the same user need for home services.",
+      "why_not_lower": "The apps are not just in the same broad category - they directly compete for the same users with overlapping service offerings (home repair, installation). A user searching for home services would be very likely to click on a competing home services app.",
+      "rating": "Excellent",
+      "comment": "The query \"奇兵到家\" indicates the user wants a home services platform for repairs, installation, and cleaning. The advertised app \"万师傅家居服务\" is a competing home services platform specializing in installation, repair, and after-sales service. Both apps connect users with home service professionals for the same core needs - appliance installation, repair, and home maintenance. These are direct competitors satisfying the same user intent, and a user looking for home services would be very likely to click on this alternative. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "01KSFC208GY07DN3D55MJ0H05G",
+      "query": "爱加速",
+      "query_intent": "User is looking for 爱加速, a network acceleration/VPN service (static IP proxy) for improving network speed and stability.",
+      "ad": {
+        "name": "一嗨租车-全国直营租车",
+        "subtitle": "全国异地还车 0元车辆押金",
+        "developer": "上海一嗨信息技术服务有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store search",
+          "note": "爱加速 is confirmed as a static IP network accelerator/VPN service. 一嗨租车 is a major car rental platform with 24K+ reviews. These two have absolutely no functional overlap."
+        }
+      ],
+      "relationship_analysis": "爱加速 is a network acceleration/VPN service for improving internet speed and connection stability. 一嗨租车 is a car rental service. There is absolutely no logical connection between network acceleration and car rental. The user wants faster/more stable internet; the ad offers car rental. These are completely unrelated.",
+      "why_not_higher": "There is no perceivable relationship between network acceleration and car rental.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"爱加速\" indicates the user is looking for a network acceleration/VPN service to improve internet speed and stability. The advertised app \"一嗨租车\" is a car rental platform with nationwide service. There is absolutely no logical connection between network acceleration and car rental. A user seeking to speed up their internet connection would be confused and not interested in a car rental app. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-05-25T19:43:28",
+    "post_submit_status": "Looking for surveys..."
+  }
+}

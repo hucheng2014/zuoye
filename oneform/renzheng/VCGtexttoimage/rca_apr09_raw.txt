@@ -1,0 +1,1148 @@
+--- Page 1 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 2 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 3 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 4 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 5 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 6 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 7 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 8 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 9 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 10 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 11 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 12 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 13 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 14 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 15 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 16 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 17 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 18 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 19 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 20 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 21 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 22 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded
+
+
+--- Page 23 ---
+VCG Base Creation Feedback Apr09'26
+
+Error Analysis
+
+‘+ High concentration of errors in the following areas:
+‘Structural Integrity -> High (5+)
+Style Match -> High (5+)
+Contains All Requests > High (4-5)
+Text-related errors > Also significant (5)
+
+aose
+
+Grader team is struggling most with:
+'* Understanding what the image should look like structurally
+‘+ Interpreting style incorrectly (Genmoji, Chibi, etc.)
+‘+ Fully checking prompt completeness
+
+Error Breakup
+‘* Under-penalization is the dominant issue
+
+‘© Across multiple entries:
+‘Minor issues marked when they should be major
+‘= Missing elements not penalized enough
+‘Structural issues downplayed
+
+‘© Example pattern:
+‘Extra fingers / distorted limbs -> marked “minor”
+‘= Missing key prompt elements ~ still marked “captures most”
+
+‘©. Trend: Team is being lenient / conservative in grading
+
+= “GL Misunderstanding”
+* “Misread Context”
+“Missed Key Information”
+© Especially it
+Style Match
+Text inclusion
+* A/8 comparisons
+(©. Trend: Not a skill issue — it’s a gui
+
+clarity + interpretation issue
+
+‘© Text handling is messy
+© Common issues:
+Missing text not caught
+Text present but wrongly judged
+*  Spelling/case errors ignored or misgraded

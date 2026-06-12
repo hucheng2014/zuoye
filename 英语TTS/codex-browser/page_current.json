@@ -1,0 +1,329 @@
+﻿{
+  "url": "https://ilabel.weixin.qq.com/mission/41239/label",
+  "title": "2026音频check_first_part193 - 任务标注",
+  "count": 23,
+  "items": [
+    {
+      "index": 0,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_65.wav",
+      "duration": 1.194667,
+      "filename": "20260127_00004314_zqbl_329_65.wav",
+      "text": "这个nike skin 的话。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 1,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_51.wav",
+      "duration": 6.848,
+      "filename": "20260127_00004314_zqbl_329_51.wav",
+      "text": "球鞋也没有这么多没有这样的感觉那么我只是来分享一下我穿过一些球鞋的感受供大家去参考。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 2,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_3.wav",
+      "duration": 10.24,
+      "filename": "20260127_00004314_zqbl_329_3.wav",
+      "text": "传奇鬼牌跟毒分都是j p 二七零，刺客的话是穿j p 二六五，但是说在这一次终端的尺码上有一些偏差。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 3,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_99.wav",
+      "duration": 2.922667,
+      "filename": "20260127_00004314_zqbl_329_99.wav",
+      "text": "那么综合来说的话如果让我来选择。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 4,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_14.wav",
+      "duration": 13.248,
+      "filename": "20260127_00004314_zqbl_329_14.wav",
+      "text": "形变的周期比较长，如果是相同面积的袋鼠皮跟牛皮相比的话，袋鼠皮变形这一天的到来会比较早就是说松垮啊还有说支撑不够啊这些情况出现的会比较早。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 5,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_1.wav",
+      "duration": 4.138667,
+      "filename": "20260127_00004314_zqbl_329_1.wav",
+      "text": "今天我们来聊一聊耐克世界杯配色的四款中端。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 6,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_93.wav",
+      "duration": 3.925333,
+      "filename": "20260127_00004314_zqbl_329_93.wav",
+      "text": "这种微微凸起是非常非常重要的它会给你怎么说呢？",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 7,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_0.wav",
+      "duration": 1.258667,
+      "filename": "20260127_00004314_zqbl_329_0.wav",
+      "text": "欢迎大家收看本期节目。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 8,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_10.wav",
+      "duration": 16.426667,
+      "filename": "20260127_00004314_zqbl_329_10.wav",
+      "text": "在这款终端上因为加入了两个飞线的设计，它会在这个包裹性上有一个很大的提升，而且在镜头中大家可以看到我在实战的时候一些变向，像这种情况出现的就比较少这种边缘褶皱的情况就会比较少整个包裹性还是比较舒适的。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 9,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_34.wav",
+      "duration": 2.474667,
+      "filename": "20260127_00004314_zqbl_329_34.wav",
+      "text": "这个也不知道是为啥可能是。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 10,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_54.wav",
+      "duration": 1.258667,
+      "filename": "20260127_00004314_zqbl_329_54.wav",
+      "text": "这理论没错对吧？",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 11,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_41.wav",
+      "duration": 5.568,
+      "filename": "20260127_00004314_zqbl_329_41.wav",
+      "text": "但是美中不足的也是似乎是没有中底的，这是这一点是比较怎么说呢。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 12,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_27.wav",
+      "duration": 12.096,
+      "filename": "20260127_00004314_zqbl_329_27.wav",
+      "text": "用手摸起来的话也是稍微硬一些，这个跟顶级的刺客穿起来感觉还是不太一样，顶级和超顶级的刺客前面包裹都会比较紧，但是这双刺客中端的话前掌非常的宽。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 13,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_46.wav",
+      "duration": 1.664,
+      "filename": "20260127_00004314_zqbl_329_46.wav",
+      "text": "我感觉踢起来反而是要比。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 14,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_23.wav",
+      "duration": 8,
+      "filename": "20260127_00004314_zqbl_329_23.wav",
+      "text": "似乎是一个半中底的状态，而且刺客的里面它没有这些缓震的材料，但是总体来说这双刺客还是很不错的。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 15,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_55.wav",
+      "duration": 11.370667,
+      "filename": "20260127_00004314_zqbl_329_55.wav",
+      "text": "但是对于一个呃职业球员来说，或者说他有非常强烈个性的还有说有自己一些踢球习惯的人来说，选一些好球鞋早晚会成为他们的需求之一。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 16,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_92.wav",
+      "duration": 4.266667,
+      "filename": "20260127_00004314_zqbl_329_92.wav",
+      "text": "这个位置它都是这样圆润过来的没有这样的一些微微的凸起。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 17,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_53.wav",
+      "duration": 2.517333,
+      "filename": "20260127_00004314_zqbl_329_53.wav",
+      "text": "呃你只要技术好其实穿什么球鞋都一样的。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 18,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_21.wav",
+      "duration": 6.890667,
+      "filename": "20260127_00004314_zqbl_329_21.wav",
+      "text": "然后再加上这种橙色的速度感的配色，整个鞋子就会显得比较轻盈，再加上鞋面非常非常的柔软它。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 19,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_29.wav",
+      "duration": 4.117333,
+      "filename": "20260127_00004314_zqbl_329_29.wav",
+      "text": "所以说这双中端刺客的鞋圈设计应该是比较友好的。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 20,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_52.wav",
+      "duration": 5.12,
+      "filename": "20260127_00004314_zqbl_329_52.wav",
+      "text": "当然这不是所所有人都会有我这种问题你也可能会说太矫情了对吧？",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 21,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_91.wav",
+      "duration": 11.818667,
+      "filename": "20260127_00004314_zqbl_329_91.wav",
+      "text": "而且这双中端刺客的鞋底看一下它的后跟的鞋底是有棱有角的不是那不是像毒蜂这种边缘比较圆润的顶级的刺客还有超顶级的刺客的鞋底这个后跟呀。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    },
+    {
+      "index": 22,
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260330/20260127_00004314_zqbl_329_spk0/20260127_00004314_zqbl_329_44.wav",
+      "duration": 1.813333,
+      "filename": "20260127_00004314_zqbl_329_44.wav",
+      "text": "呃这是一个比较重要的原因吧。",
+      "selected": [
+        "",
+        "否",
+        "否",
+        "是",
+        "否"
+      ]
+    }
+  ]
+}

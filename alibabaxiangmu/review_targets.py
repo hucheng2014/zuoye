@@ -1,17 +1,16 @@
 import argparse
 import json
+import os
 import re
 from pathlib import Path
 
 from google import genai
 from google.genai import types
 
-
-import os
-
 API_KEY = os.environ["GEMINI_API_KEY"]
+VERTEX_MODEL = os.environ.get("VERTEX_MODEL", "gemini-2.0-flash-001")
 client = genai.Client(vertexai=True, api_key=API_KEY)
-BASE_DIR = Path("/home/jianglei/zuoye/alibabaxiangmu")
+BASE_DIR = Path("/Users/xaa/zuoye/alibabaxiangmu")
 SCRATCH = BASE_DIR / "scratch"
 
 
@@ -54,7 +53,7 @@ def review_item(result: dict) -> dict:
 {result["caption"]}
 """
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model=VERTEX_MODEL,
         contents=[types.Part.from_bytes(data=video_data, mime_type="video/mp4"), prompt],
     )
     raw = response.text or ""

@@ -1,0 +1,29 @@
+name: controlled-browser-local
+
+services:
+  browser:
+    build:
+      context: .
+    image: controlled-browser-local-browser
+    container_name: controlled-browser-local-browser
+    init: true
+    shm_size: "2gb"
+    environment:
+      START_URL: "${START_URL:-about:blank}"
+      SCREEN_WIDTH: "${SCREEN_WIDTH:-1920}"
+      SCREEN_HEIGHT: "${SCREEN_HEIGHT:-1080}"
+      SCREEN_DEPTH: "${SCREEN_DEPTH:-24}"
+      CDP_PORT: "${CDP_PORT:-9222}"
+      CDP_PROXY_PORT: "${CDP_PROXY_PORT:-9223}"
+      VNC_PASSWORD: "${VNC_PASSWORD:-}"
+    ports:
+      - "${NOVNC_HOST_PORT:-6083}:6080"
+      - "${CDP_HOST_PORT:-9234}:9222"
+      - "${CDP_PROXY_HOST_PORT:-9235}:9223"
+    volumes:
+      - browser-profile:/home/pwuser/chrome-profile
+    mem_limit: 2g
+    restart: unless-stopped
+
+volumes:
+  browser-profile:

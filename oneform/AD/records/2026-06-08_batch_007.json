@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_007",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T13:20:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689638220",
+      "query": "韩 tv",
+      "query_intent": "User is searching for '韩剧TV' (Korean TV), an application dedicated to streaming Korean dramas and television shows.",
+      "ad": {
+        "name": "抖音精选-精挑细选独家好视频",
+        "developer": "Beijing Douyin Technology Co., Ltd."
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"韩 tv\" indicates an intent to find a video streaming application specifically for Korean dramas and TV shows. The ad \"抖音精选\" is a curated short-to-medium video streaming application. While it does not focus exclusively on Korean dramas, both apps operate in the broader video entertainment category, offering a weak but valid topical connection. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689638221",
+      "query": "择 天 记",
+      "query_intent": "User is searching for '择天记' (Ze Tian Ji/Fighter of the Destiny), a popular Chinese fantasy novel that was adapted into a mobile MMORPG.",
+      "ad": {
+        "name": "狂刀屠龙-传奇1.76怀旧版",
+        "developer": "Guangzhou Kexuan Network Technology Co., Ltd"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"择 天 记\" indicates an intent to find the specific Xianxia (Chinese fantasy) MMORPG based on the famous IP. The ad \"狂刀屠龙\" is a retro 'Chuanqi' (Legend of Mir) style classic MMORPG. While they have different art styles and lore, both are Chinese fantasy/martial arts MMORPGs targeting core mobile RPG players, making it a weakly associated alternative. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689638222",
+      "query": "携 程",
+      "query_intent": "User is searching for '携程' (Ctrip), a major online travel agency (OTA) app for booking flights, hotels, and tours.",
+      "ad": {
+        "name": "抖音来客",
+        "developer": "成都所见所得科技有限公司"
+      },
+      "rating": "Bad",
+      "comment": "The query \"携 程\" indicates an intent to find a consumer travel booking and OTA platform. The ad \"抖音来客\" is a business management tool for local life merchants to manage their stores on the Douyin platform. Since a consumer travel booking app and a B2B merchant management tool serve completely different user intents and operate in unrelated domains, there is no relevance. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689638223",
+      "query": "蜀 汉 传",
+      "query_intent": "User is searching for '蜀汉传' (Shu Han Zhuan), a tactical role-playing and strategy game set in the Three Kingdoms era.",
+      "ad": {
+        "name": "三国杀",
+        "developer": "杭州游卡网络技术有限公司"
+      },
+      "rating": "Good",
+      "comment": "The query \"蜀 汉 传\" indicates an intent to play a strategy or RPG game based on the Three Kingdoms historical period. The ad \"三国杀\" (San Guo Sha) is a highly popular card strategy game that is also heavily based on the Three Kingdoms theme. Because both games share the exact same historical IP and appeal to strategy game players, the ad is a highly relevant alternative within the same thematic category. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689638224",
+      "query": "推 荐 荐 片",
+      "query_intent": "User is searching for '荐片' (Jianpian), a popular movie and video streaming/downloading application.",
+      "ad": {
+        "name": "抖音商城",
+        "developer": "Beijing Douyin Technology Co., Ltd."
+      },
+      "rating": "Bad",
+      "comment": "The query \"推 荐 荐 片\" indicates an intent to find a movie recommendation and video streaming application. The ad \"抖音商城\" is the dedicated e-commerce and online shopping platform for Douyin. Since a movie streaming utility and an e-commerce shopping app operate in completely different categories and address entirely unrelated user needs, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T12:29:14",
+    "post_submit_status": "No errors visible"
+  }
+}

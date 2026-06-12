@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_005",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T21:45:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688685918",
+      "query": "螃 蟹 账 号 app",
+      "query_intent": "User is searching for '螃蟹账号' (Pangxie Zhanghao), a highly popular, specialized secondhand game account transaction and secure trading platform in China, primarily used by gamers to securely buy and sell mobile game accounts.",
+      "ad": {
+        "name": "闲鱼 - 上闲鱼，赚一笔 !",
+        "subtitle": "买就省，卖就赚，5亿人都在用",
+        "developer": "浙江阿里巴巴闲鱼网络科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id510909506) & Web research",
+          "note": "闲鱼 is Alibaba's leading secondhand marketplace app in China. It supports a massive user base and features a highly active secondhand game account and virtual item trading section."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both platforms facilitate the buying and selling of secondhand game accounts. '螃蟹账号' is a specialized, secure vertical platform focusing strictly on game account transactions, while '闲鱼' is a massive general secondhand marketplace that covers game accounts under its broad categories. They compete in the secondhand game trading demand chain."
+        }
+      ],
+      "relationship_analysis": "The query '螃 蟹 账 号 app' is a dedicated vertical platform for secure secondhand game account trading. The advertised app '闲鱼' is a massive general secondhand marketplace that hosts a large volume of secondhand game account listings. Both satisfy the user's underlying intent to trade used game accounts. Since Xianyu is a broader secondhand marketplace representing a strong alternative in the same transactional demand chain, the relationship is Good.",
+      "why_not_higher": "They are not exact equivalents. '螃蟹账号' is a specialized vertical platform with dedicated game transaction insurance and secure recovery guarantees, whereas '闲鱼' is a broad, general secondhand C2C marketplace without dedicated game-specific verification structures.",
+      "why_not_lower": "They satisfy the same basic transactional need of buying and selling secondhand game accounts, sharing highly related user demographics in the secondhand gaming market.",
+      "rating": "Good",
+      "comment": "The query \"螃 蟹 账 号 app\" refers to \"螃蟹账号\", a specialized secure secondhand game account trading and transaction platform. The advertised app \"闲鱼 - 上闲鱼，赚一笔 !\" is Alibaba's massive general secondhand marketplace which features a very active category for used game account trading. Since both platforms satisfy the user's intent to buy or sell secondhand game accounts, the advertised app represents a highly relevant alternative in the same secondhand trading demand chain. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688685919",
+      "query": "legrand eliot",
+      "query_intent": "User is searching for Legrand's official smart home automation program and device connection platform 'Legrand Eliot', designed to connect and control smart switches, sockets, and home IoT appliances remotely.",
+      "ad": {
+        "name": "抖音精选-精挑细选独家好视频",
+        "subtitle": "AI总结课堂宝藏知识",
+        "developer": "Beijing Douyin Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6444170965) & Web research",
+          "note": "抖音精选 (Douyin Selected) is a curated video streaming and medium-to-long form knowledge sharing platform developed by ByteDance."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Legrand Eliot is a hardware-integrated smart home IoT management application. Douyin Selected is a mobile video streaming and online educational feed. There is absolutely no functional, nominal, or contextual relationship."
+        }
+      ],
+      "relationship_analysis": "The query 'legrand eliot' is a smart home IoT control and home automation application. The advertised app '抖音精选' is a video streaming and knowledge aggregation feed. Connecting smart switches and managing home automation has nothing to do with watching mobile videos. There is zero functional overlap or logical relation, which would completely confuse a user.",
+      "why_not_higher": "No functional, developer, or contextual relation whatsoever.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"legrand eliot\" specifies Legrand's \"Legrand Eliot\" application, which is a smart home and IoT device control platform for remote home automation. The advertised app \"抖音精选-精挑细选独家好视频\" is a mobile video streaming and knowledge feed platform. Managing home automated IoT devices and watching online videos satisfy completely unrelated user needs, functions, and scenarios, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688685920",
+      "query": "classin 在 线 教 室",
+      "query_intent": "User wants to download or use 'ClassIn 在线教室' (ClassIn), a famous global interactive virtual classroom software and live video-teaching SaaS tool widely used by schools and tutors to host live online classes.",
+      "ad": {
+        "name": "好课在线",
+        "subtitle": "高中全科提升",
+        "developer": "Guangdong Haoke online education and training center",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1597243555)",
+          "note": "好课在线 is an online academic tutoring platform offering specific video courses, tutoring materials, and mock exams for high school students."
+        },
+        {
+          "source": "local knowledge",
+          "note": "ClassIn is a generic, interactive online classroom video software tool (the SaaS classroom itself). 好课在线 is an academic course-provider app offering tutoring lessons. While both relate to online learning, one is a video teaching tool and the other is a tutoring tutoring course platform. Their core utilities differ."
+        }
+      ],
+      "relationship_analysis": "The query 'classin 在 线 教 室' represents the virtual classroom software tool 'ClassIn'. The advertised app '好课在线' is an academic tutoring course platform. Both operate in the broad online education sector. However, the query is for a generic video classroom software tool, while the ad is a specific student tutoring content app. Their core functional categories differ (education SaaS software vs. student tutoring content). This represents a weak/broad category association, making it Acceptable.",
+      "why_not_higher": "The user wants a teaching SaaS software tool to host interactive classes, not a specific academic tutoring course platform for high schoolers. They serve different functional tiers.",
+      "why_not_lower": "They share a broad educational category link, meaning a student or educator using virtual classrooms might have a weak interest in tutoring content platforms.",
+      "rating": "Acceptable",
+      "comment": "The query \"classin 在 线 教 室\" refers to ClassIn, a global interactive online classroom and live teaching SaaS software tool used to host online classes. The advertised app \"好课在线\" is an academic tutoring and course platform providing lessons for high school students. While both belong to the broad online education sector, a video-teaching software tool and a specific academic tutoring platform satisfy different core needs and utility types. The connection is weak but understandable. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688685921",
+      "query": "提 词 器 免 费",
+      "query_intent": "User is performing a broad category search for a free mobile teleprompter app ('提词器 免费') to scroll script text and help them film spoken-word videos, speeches, or vlogs.",
+      "ad": {
+        "name": "悬浮提词器 -口播直播题词器",
+        "subtitle": "短视频vlog拍摄神器",
+        "developer": "辰亮 倪",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1629572423) & Web research",
+          "note": "悬浮提词器 is a dedicated mobile teleprompter app featuring a floating window overlay, scrolling scripts, and script writing tools designed for vloggers and video creators."
+        },
+        {
+          "source": "local knowledge",
+          "note": "The query is a broad category search ('teleprompter free') and the advertised app is a dedicated teleprompter app that satisfies this exact core category demand. They are functionally identical."
+        }
+      ],
+      "relationship_analysis": "The query '提 词 器 免 费' is a broad category search for a free teleprompter app to scroll text during video shooting. The advertised app '悬浮提词器' is a dedicated mobile teleprompter app. Since the query represents a broad category need and the advertised app is a dedicated product in that category that directly satisfies the user's intent, this is a strong, highly relevant match. Rated Excellent.",
+      "why_not_higher": "Cannot be higher than Excellent.",
+      "why_not_lower": "The ad's core functionality perfectly and directly satisfies the user's category search for a teleprompter.",
+      "rating": "Excellent",
+      "comment": "The query \"提 词 器 免 费\" is a broad category search for a free teleprompter application to scroll script text. The advertised app \"悬浮提词器 -口播直播题词器\" is a dedicated mobile teleprompter app featuring scrolling text overlays for video filming and live broadcasts. Since the query is a broad category demand and the advertised app is a dedicated product in that category that directly satisfies the user's core intent, this is Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688685922",
+      "query": "券 商 官 方 app",
+      "query_intent": "User is looking for the official mobile trading and account opening app of a registered securities brokerage firm ('券商官方app') in China to open a trading account and trade stocks/funds.",
+      "ad": {
+        "name": "涨乐财富通-炒股票理财就选华泰",
+        "subtitle": "华泰证券官方开户炒股理财平台",
+        "developer": "华泰证券股份有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id379594830) & Web research",
+          "note": "涨乐财富通 is the official mobile wealth management and stock trading platform of Huatai Securities (华泰证券), one of the largest and most prominent securities brokerage firms in China."
+        },
+        {
+          "source": "local knowledge",
+          "note": "The query represents a broad category search for 'official broker app'. The ad is a leading official broker app by Huatai Securities that perfectly meets this category demand. They are strongly aligned."
+        }
+      ],
+      "relationship_analysis": "The query '券 商 官 方 app' is a broad category search for the official mobile app of a securities broker. The advertised app '涨乐财富通' is the official stock trading and account opening platform of Huatai Securities, a leading broker in China. Since the query is a broad category search and the ad is a leading official product in that category that directly and fully satisfies the user's intent, the relationship is Excellent.",
+      "why_not_higher": "Cannot be higher than Excellent.",
+      "why_not_lower": "The ad's official brokerage trading utility directly and fully satisfies the user's category search for an official broker app.",
+      "rating": "Excellent",
+      "comment": "The query \"券 商 官 方 app\" represents a broad category search for the official mobile stock trading and account opening application of a registered securities broker. The advertised app \"涨乐财富通-炒股票理财就选华泰\" is the official wealth management and trading platform of Huatai Securities, one of China's largest brokers. Since the query is a broad category search and the ad is a leading official product in that category that directly and fully meets the user's intent, this is Excellent.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T13:44:56",
+    "post_submit_status": "No errors visible"
+  }
+}

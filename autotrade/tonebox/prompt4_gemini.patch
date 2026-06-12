@@ -1,0 +1,215 @@
+diff --git a/music_models/music_models.py b/music_models/music_models.py
+index f526728..d517ce5 100644
+--- a/music_models/music_models.py
++++ b/music_models/music_models.py
+@@ -181,6 +181,7 @@ class Recital(Base):
+     status = Column(Enum(RecitalStatus), nullable=False, default=RecitalStatus.planning)
+     registration_deadline = Column(Date, nullable=True)
+     admission_fee = Column(Float, nullable=False, default=0.0)
++    max_capacity = Column(Integer, nullable=False, default=50)
+     notes = Column(Text, nullable=True)
+ 
+     organizer = relationship("User", back_populates="organized_recitals", lazy="selectin")
+@@ -250,6 +251,7 @@ class Booking(Base):
+     user_id = Column(String, ForeignKey("users.id"), nullable=False)
+     lesson_id = Column(Integer, ForeignKey("lessons.id"), nullable=True)
+     room_id = Column(Integer, ForeignKey("studio_rooms.id"), nullable=True)
++    recital_id = Column(String, ForeignKey("recitals.id"), nullable=True)
+     booking_type = Column(String(50), nullable=False)
+     start_time = Column(DateTime, nullable=True)
+     end_time = Column(DateTime, nullable=True)
+diff --git a/recital_hall/recital_bookings.py b/recital_hall/recital_bookings.py
+index a902743..a8c47e8 100644
+--- a/recital_hall/recital_bookings.py
++++ b/recital_hall/recital_bookings.py
+@@ -44,8 +44,21 @@ async def book_recital_seat(
+         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Recital not found")
+     if recital.status == "cancelled":
+         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Recital is cancelled")
++    
++    # Check max capacity
++    bookings_count_result = await db.execute(
++        select(Booking).where(
++            Booking.recital_id == recital_id,
++            Booking.status.in_(["confirmed", "pending"])
++        )
++    )
++    current_count = len(bookings_count_result.scalars().all())
++    if current_count >= recital.max_capacity:
++        raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Recital is at full capacity")
++
+     booking = Booking(
+         user_id=payload.user_id,
++        recital_id=recital_id,
+         booking_type="recital",
+         status="pending",
+         notes=payload.notes,
+@@ -67,6 +80,6 @@ async def list_recital_seats(
+     if not recital:
+         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Recital not found")
+     bookings_result = await db.execute(
+-        select(Booking).where(Booking.booking_type == "recital")
++        select(Booking).where(Booking.booking_type == "recital", Booking.recital_id == recital_id)
+     )
+     return list(bookings_result.scalars().all())
+diff --git a/recital_hall/recital_manager.py b/recital_hall/recital_manager.py
+index c6deeb7..448cde9 100644
+--- a/recital_hall/recital_manager.py
++++ b/recital_hall/recital_manager.py
+@@ -30,6 +30,7 @@ class RecitalCreate(BaseModel):
+     status: RecitalStatus = RecitalStatus.planning
+     registration_deadline: Optional[datetime.date] = None
+     admission_fee: float = 0.0
++    max_capacity: int = 50
+     notes: Optional[str] = None
+ 
+ 
+@@ -54,6 +55,7 @@ class RecitalResponse(BaseModel):
+     status: RecitalStatus
+     registration_deadline: Optional[datetime.date]
+     admission_fee: float
++    max_capacity: int
+     notes: Optional[str]
+ 
+     model_config = {"from_attributes": True}
+@@ -70,6 +72,7 @@ class RecitalResponse(BaseModel):
+             status=obj.status,
+             registration_deadline=obj.registration_deadline,
+             admission_fee=obj.admission_fee,
++            max_capacity=obj.max_capacity,
+             notes=obj.notes,
+         )
+ 
+diff --git a/tests/test_prompt4.py b/tests/test_prompt4.py
+new file mode 100644
+index 0000000..9c90693
+--- /dev/null
++++ b/tests/test_prompt4.py
+@@ -0,0 +1,127 @@
++from __future__ import annotations
++
++import pytest
++from httpx import AsyncClient
++
++from tests.conftest import api_key_header, register_user
++
++async def make_teacher(client: AsyncClient, username: str) -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "teacher")
++
++async def test_recital_capacity_limit(client: AsyncClient):
++    # Register teacher to create recital
++    teacher = await make_teacher(client, "teacher1")
++    
++    # Create recital with max_capacity = 2
++    resp = await client.post(
++        "/recitals",
++        json={
++            "title": "Spring Recital",
++            "event_date": "2024-05-01",
++            "venue": "Main Hall",
++            "organizer_id": teacher["id"],
++            "max_capacity": 2
++        },
++        headers=api_key_header(teacher["api_key"])
++    )
++    assert resp.status_code == 201, resp.text
++    recital = resp.json()
++    assert recital["max_capacity"] == 2
++    
++    # Register students
++    student1 = await register_user(client, "student1", "student1@test.com", "pass", "student")
++    student2 = await register_user(client, "student2", "student2@test.com", "pass", "student")
++    student3 = await register_user(client, "student3", "student3@test.com", "pass", "student")
++    
++    # Book 1st seat
++    resp = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student1["id"]},
++        headers=api_key_header(student1["api_key"])
++    )
++    assert resp.status_code == 201, resp.text
++    
++    # Book 2nd seat
++    resp = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student2["id"]},
++        headers=api_key_header(student2["api_key"])
++    )
++    assert resp.status_code == 201, resp.text
++    
++    # Book 3rd seat - should fail with 409
++    resp = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student3["id"]},
++        headers=api_key_header(student3["api_key"])
++    )
++    assert resp.status_code == 409
++    assert resp.json()["detail"] == "Recital is at full capacity"
++
++async def test_list_recital_seats_filters_by_recital(client: AsyncClient):
++    teacher = await make_teacher(client, "teacher2")
++    
++    # Create recital 1
++    resp = await client.post(
++        "/recitals",
++        json={
++            "title": "Recital 1",
++            "event_date": "2024-06-01",
++            "venue": "Hall A",
++            "organizer_id": teacher["id"],
++            "max_capacity": 10
++        },
++        headers=api_key_header(teacher["api_key"])
++    )
++    recital1 = resp.json()
++    
++    # Create recital 2
++    resp = await client.post(
++        "/recitals",
++        json={
++            "title": "Recital 2",
++            "event_date": "2024-06-02",
++            "venue": "Hall B",
++            "organizer_id": teacher["id"],
++            "max_capacity": 10
++        },
++        headers=api_key_header(teacher["api_key"])
++    )
++    recital2 = resp.json()
++    
++    student1 = await register_user(client, "student4", "student4@test.com", "pass", "student")
++    student2 = await register_user(client, "student5", "student5@test.com", "pass", "student")
++    
++    # Book seat for recital 1
++    await client.post(
++        f"/recitals/{recital1['id']}/seats",
++        json={"user_id": student1["id"]},
++        headers=api_key_header(student1["api_key"])
++    )
++    
++    # Book seat for recital 2
++    await client.post(
++        f"/recitals/{recital2['id']}/seats",
++        json={"user_id": student2["id"]},
++        headers=api_key_header(student2["api_key"])
++    )
++    
++    # List seats for recital 1
++    resp = await client.get(
++        f"/recitals/{recital1['id']}/seats",
++        headers=api_key_header(teacher["api_key"])
++    )
++    assert resp.status_code == 200
++    seats1 = resp.json()
++    assert len(seats1) == 1
++    assert seats1[0]["user_id"] == student1["id"]
++    
++    # List seats for recital 2
++    resp = await client.get(
++        f"/recitals/{recital2['id']}/seats",
++        headers=api_key_header(teacher["api_key"])
++    )
++    assert resp.status_code == 200
++    seats2 = resp.json()
++    assert len(seats2) == 1
++    assert seats2[0]["user_id"] == student2["id"]

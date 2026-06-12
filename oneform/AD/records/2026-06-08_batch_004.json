@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_004",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T12:35:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689630942",
+      "query": "oppo 互 传",
+      "query_intent": "User is searching for OPPO's official file transfer app 'OPPO互传' (OPPO Share).",
+      "ad": {
+        "name": "vivo 商城-官方正品安心服务",
+        "developer": "广东天宸网络科技有限公司"
+      },
+      "rating": "Bad",
+      "comment": "The query \"oppo 互 传\" indicates an intent to find a specific device-to-device file transfer utility, particularly the OPPO Share tool. The ad \"vivo 商城\" is an official e-commerce store for purchasing Vivo smartphones and electronics. Since a file sharing utility and a device hardware store operate in completely different domains and serve entirely unrelated needs, there is no relevance. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689630943",
+      "query": "万 能 遥 控 器",
+      "query_intent": "User is searching for a universal remote control app for home appliances.",
+      "ad": {
+        "name": "iTV Remote: Universal Control",
+        "developer": "HIGHONE (HK) Inc"
+      },
+      "rating": "Excellent",
+      "comment": "The query \"万 能 遥 控 器\" indicates an intent to find a universal remote control app to operate TVs, air conditioners, and other home appliances. The ad \"iTV Remote\" is exactly a universal control app for TV and air conditioning. Since the ad directly and fully satisfies the user's specific functional intent, it is an exact match. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689630944",
+      "query": "交 管 12123",
+      "query_intent": "User is searching for the official traffic management app '交管12123' to handle traffic violations, points, or license issues.",
+      "ad": {
+        "name": "学法减分",
+        "developer": "广州蜂羽云科技有限公司"
+      },
+      "rating": "Good",
+      "comment": "The query \"交 管 12123\" indicates an intent to use the official traffic management app, commonly used for handling traffic violations and license point deductions. The ad \"学法减分\" is an app dedicated to 'learning law to reduce points' (学法减分), which is a closely related official policy and process linked to traffic management. Since it offers highly relevant driving penalty reduction services related to the core intent, it is a good alternative. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689630945",
+      "query": "咪 咕 视 频",
+      "query_intent": "User is searching for '咪咕视频' (Migu Video), a major streaming platform known for broadcasting live sports, movies, and TV shows.",
+      "ad": {
+        "name": "Z8Score - Soccer & Basketball",
+        "developer": "Nanjing Xinji Technology Co., Ltd"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"咪 咕 视 频\" indicates an intent to find the Migu Video streaming platform, which is heavily associated with live sports broadcasting (e.g., soccer, basketball). The ad \"Z8Score\" is a live sports scores and data app. While it is not a video streaming platform, it targets the same sports audience demographic looking for real-time match updates, offering a weak but valid topical connection. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689630946",
+      "query": "深 圳 app",
+      "query_intent": "User is searching for official or prominent local service applications for Shenzhen (such as 'i深圳' or Shenzhen Metro).",
+      "ad": {
+        "name": "乐有家-租房子-找房软件-二手房买卖，新房大学生租房0中介费",
+        "developer": "Jia Jia Shun Technology Co. Ltd."
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"深 圳 app\" indicates a broad intent to find local municipal, transit, or lifestyle applications relevant to living in Shenzhen. The ad \"乐有家\" is a major regional real estate and rental property app heavily operating in the Guangdong/Shenzhen area. While it is a specific real estate tool rather than a general city portal, it caters to the local life and housing needs of users in the region, presenting a weak association. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T11:48:21",
+    "post_submit_status": "No errors visible"
+  }
+}

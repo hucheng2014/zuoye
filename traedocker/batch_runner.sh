@@ -13,16 +13,16 @@ RUNNER_PID="$BASHPID"
 REPO_DIR="$BASE_DIR/repo"
 LOG_FILE="$BASE_DIR/trial_log.csv"
 RUNNER_LOCK_FILE="${TRAE_RUNNER_LOCK_FILE:-$BASE_DIR/.batch_runner.lock}"
-TRAE_LOG_DIR="/home/jianglei/.config/Trae CN/logs"
+TRAE_LOG_DIR="/Users/xaa/.config/Trae CN/logs"
 DEFAULT_TRAE_CLI_BIN="trae-cn"
 if [ -x "/usr/share/trae-cn/bin/trae-cn" ]; then
   DEFAULT_TRAE_CLI_BIN="/usr/share/trae-cn/bin/trae-cn"
 fi
 TRAE_CLI_BIN="${TRAE_CLI_BIN:-$DEFAULT_TRAE_CLI_BIN}"
 TRAE_REPO_TARGET="${TRAE_REPO_TARGET:-docker}" # docker | local
-TRAE_DOCKER_CONTAINER="${TRAE_DOCKER_CONTAINER:-python-grade-container}"
+TRAE_DOCKER_CONTAINER="${TRAE_DOCKER_CONTAINER:-studentsystem-container}"
 TRAE_DOCKER_REPO_DIR="${TRAE_DOCKER_REPO_DIR:-/app}"
-TRAE_REMOTE_HOST="${TRAE_REMOTE_HOST:-odc-python-grade-container-55501f}"
+TRAE_REMOTE_HOST="${TRAE_REMOTE_HOST:-odc-studentsystem-container}"
 TRAE_REMOTE_WORKSPACE_URI="${TRAE_REMOTE_WORKSPACE_URI:-vscode-remote://ssh-remote%2B${TRAE_REMOTE_HOST}${TRAE_DOCKER_REPO_DIR}}"
 TRAE_SUBMIT_MODE="${TRAE_SUBMIT_MODE:-manual}"   # manual | cli | bridge
 TRAE_CONFIRM_MODE="${TRAE_CONFIRM_MODE:-manual}" # manual | auto
@@ -60,7 +60,8 @@ TRAE_AUTO_CONTINUE_MAX="${TRAE_AUTO_CONTINUE_MAX:-3}"
 TRAE_REQUIRE_LOG_MODEL_MATCH="${TRAE_REQUIRE_LOG_MODEL_MATCH:-off}" # off | on
 TRAE_NEW_TASK_MODE="${TRAE_NEW_TASK_MODE:-manual}" # manual | state | command | off
 TRAE_REQUIRE_EXPECTED_SESSION="${TRAE_REQUIRE_EXPECTED_SESSION:-off}" # off | on
-TEST_BASELINE_PASSED="${TEST_BASELINE_PASSED:-61}"
+TRAE_AUTO_MODE_GUARD="${TRAE_AUTO_MODE_GUARD:-on}" # off | on
+TEST_BASELINE_PASSED="${TEST_BASELINE_PASSED:-29}"
 
 # ====== 评分与模型配置 ======
 # 评分: 0=失败, 1=有瑕疵, 2=完美
@@ -94,13 +95,13 @@ rollout_model_spec() {
 get_prompt() {
   local pn=$1
   case "$pn" in
-    1) echo -n '请详细解释 `src/services/grade_service.py` 中 `GradeService.calculate_final` 与 `src/services/gpa_service.py` 中 `GPAService.recalculate` 的成绩计算链路：它们如何读取 `Assignment.weight`、`Assignment.max_score` 和 `Score.value` 来计算课程最终分数与 GPA？另外，请指出这两处重复计算逻辑可能带来的维护风险，以及 `CourseGrade._cached_final` 这个未使用缓存字段为什么容易造成误导。' ;;
-    2) echo -n '目前 `src/services/grade_service.py` 的 `submit_score` 只检查 assignment 是否存在，没有严格校验成绩范围，也没有确认提交的 `course_grade_id` 与作业所属课程成绩一致。请完善成绩提交校验：1. 当 `value < 0` 或 `value > assignment.max_score` 时抛出 `ValueError("成绩超出允许范围")`。2. 当 `ScoreCreate.course_grade_id` 为空时默认使用 `assignment.course_grade_id`；当传入值与 `assignment.course_grade_id` 不一致时抛出 `ValueError("成绩与课程记录不匹配")`。3. 成功创建或更新成绩时写入 `graded_at=datetime.utcnow()`。4. 更新 `src/routers/grade_router.py`，把这些 `ValueError` 转成 400 响应。5. 在 `tests/test_grade.py` 中补充新增、更新、越界和课程不匹配的测试。' ;;
-    3) echo -n '目前作业权重只有一个全局 `weight` 字段，`WeightCalculator` 也只能把所有作业直接归一化。我们需要支持按类别归一化权重：1. 在 `Assignment` 模型和 `AssignmentCreate/AssignmentResponse` Schema 中新增 `category` 字段，默认值为 `"homework"`。2. 修改 `WeightCalculator.normalize_weights` 和 `validate_weights`，让它们按 `category` 分组返回每组的权重总和、归一化结果和是否合法。3. 修改 `GradeService.calculate_final`、`GPAService.recalculate` 和 `TranscriptService.update`，在计算最终成绩时仍能正确使用归一化后的作业权重，且兼容没有类别的旧数据。4. 为分类权重、空分类、原有单分类行为补充测试。' ;;
-    4) echo -n '目前 `src/services/curve_service.py` 的评分曲线会原地覆盖 `Score.value`，没有审计记录，也无法撤销。请增加可撤销的曲线调整能力：1. 新增一个持久化模型 `CurveAdjustment`，记录 `score_id`、`course_grade_id`、`curve_type`、`original_value`、`adjusted_value` 和 `created_at`。2. `apply_bell_curve` 和 `apply_flat_curve` 在修改分数时必须写入调整记录，并且不要为未实际变化的分数写记录。3. 新增 `CurveService.undo_last_curve(course_grade_id)`，按最近一批曲线调整恢复每个分数的 `original_value` 并删除或标记该批记录。4. 在 `src/routers/academic_router.py` 暴露撤销接口。5. 为曲线应用、审计记录和撤销恢复补充测试。' ;;
-    5) echo -n '目前成绩单只保存 `records_json`，缺少可验证的官方凭证。请为成绩单增加验证码与校验接口：1. 在 `Transcript` 模型中新增 `verification_code` 和 `checksum` 字段。2. 更新 `TranscriptResponse` Schema。3. 修改 `TranscriptService.update`，根据 `student_id`、排序后的课程记录和生成时间生成稳定的 `checksum`，并生成不重复的 `verification_code`。4. 新增 `TranscriptService.verify(verification_code)`，返回校验结果、学生 ID 和 checksum。5. 在 `src/routers/academic_router.py` 增加查询验证码的接口。6. 补充测试，覆盖首次生成、重复更新、篡改 records_json 后校验失败、未知验证码。' ;;
-    6) echo -n '目前 `GPAService.recalculate` 把每门课学分硬编码为 `3.0`，这会导致累计 GPA 不准确。请将课程成绩记录升级为支持真实学分：1. 在 `CourseGrade` 模型中新增 `credits` 字段，默认 `3.0`。2. 更新 `CourseGradeCreate/CourseGradeResponse` Schema 和 `CourseGradeFactory`。3. 修改 `GPAService.recalculate` 使用每个 `CourseGrade.credits`，并拒绝小于等于 0 的学分，抛出 `ValueError("课程学分必须为正数")`。4. 修改相关路由，将该错误转换为 400。5. 更新 GPA、累计 GPA、课程创建和工厂相关测试，确保不同学分会影响最终 GPA。' ;;
-    7) echo -n '目前 `ReportService.student_ranking` 只是按学生平均分排序并使用顺序名次，无法处理同分并列，也没有百分位信息。请增强排名报表：1. 使用 `GradeService.calculate_final` 等价的加权最终分，而不是简单平均分。2. 同分学生使用并列名次，下一名采用竞赛排名规则（例如 1, 1, 3）。3. 每条记录新增 `percentile` 字段，按班级人数和名次计算，第一名为 100.0。4. 支持只返回某个 semester 的排名。5. 更新 `src/routers/academic_router.py` 暴露排名接口，并在 `tests/test_extras.py` 或新增测试中覆盖加权计算、并列名次、percentile 和 semester 过滤。' ;;
+    1) echo -n '请详细解释 `studentsystem.py` 中学生信息的录入、保存、查询、删除、修改与排序流程：`insert/save` 如何把字典写入 `students.txt`，`search/delete/modify/sort` 又如何读取并回写文件。另外，请指出使用 `eval` 解析文件行、`save` 追加写入、以及 `search` 中用 `is not ""` 判断字符串等实现会带来哪些数据一致性和安全风险。' ;;
+    2) echo -n '目前 `insert()` 允许重复 ID 追加写入，且空 ID/姓名时只是跳出循环，没有明确提示。请完善录入校验：1. `id` 和 `name` 不能为空，否则抛出 `ValueError("学生ID和姓名不能为空")`。2. 新录入前检查 `students.txt` 中是否已存在相同 `id`，重复时抛出 `ValueError("学生ID已存在")`。3. 将校验逻辑抽到 `validate_student_record(record, existing_ids)` 供 `insert` 复用。4. 在 `tests/` 中补充测试覆盖成功录入、空字段、重复 ID，以及重复录入不会追加第二条同 ID 记录。' ;;
+    3) echo -n '目前 `search()` 用 `eval` 解析每行记录，并用 `id is not ""` / `name is not ""` 判断查询条件，存在安全和逻辑隐患。请改为安全读取：1. 新增 `load_students()`，用 `ast.literal_eval` 逐行解析 `students.txt`，文件不存在时返回空列表，格式错误时抛出 `ValueError("学生数据格式无效")`。2. `search()` 改为基于 `load_students()` 过滤，并使用 `==` 比较 ID/姓名。3. 保留原有交互菜单，但查无结果时打印 `未找到匹配学生`。4. 补充测试覆盖按 ID/姓名查询、无结果提示、损坏数据行报错。' ;;
+    4) echo -n '目前 `modify()` 在找不到目标 ID 时仍会原样写回所有行，且 `delete()` 删除后会再次调用 `show()` 造成重复输出。请修复修改/删除流程：1. `modify()` 找不到 ID 时抛出 `ValueError("学生不存在")`，且不得丢失其他记录。2. `delete()` 删除成功后只打印一次结果，不再自动调用 `show()`。3. 抽取 `rewrite_students(records)` 统一覆盖写回 `students.txt`。4. 补充测试覆盖修改成功、修改不存在 ID、删除后文件只剩目标记录、以及删除不存在 ID 的提示。' ;;
+    5) echo -n '目前成绩录入只校验能转成整数，不限制合理区间，可能出现负分或超过 100 分。请增加成绩边界校验：1. 新增 `validate_scores(english, python, c)`，三门课成绩都必须是 0-100 的整数，否则抛出 `ValueError("成绩必须是0到100之间的整数")`。2. `insert()` 和 `modify()` 录入成绩时统一调用该校验。3. 非法输入时保留现有重试交互，不要崩溃退出。4. 补充测试覆盖合法分数、负数、超 100、非整数输入。' ;;
+    6) echo -n '目前 `show_student()` 只显示总分，无法快速看到平均分。请增强展示：1. 在表头和每行数据中新增 `平均分` 列，计算 `(english + python + c) / 3` 并保留 1 位小数。2. `total()` 除人数外，再输出全体平均总分 `(sum(total)/count)`，保留 1 位小数；没有学生时仍保持现有提示。3. 保持原有列对齐风格，不要破坏菜单其它功能。4. 补充测试覆盖单行平均分、多行展示、total 平均分和空文件提示。' ;;
+    7) echo -n '目前 `save()` 采用追加写入，重复导入或修复后容易产生重复记录，也缺少统一读取入口。请重构存储层：1. 用 `load_students()` 读取全部学生到列表；没有文件时返回空列表。2. 将 `save(student)` 改为 `save_students(records)`，按 ID 覆盖更新后整文件重写，不再追加。3. `insert()` 录入完成后应基于内存列表去重保存，避免同一 ID 多条记录。4. 保持 `show/search/delete/modify/sort` 行为兼容。5. 补充测试覆盖重复 ID 覆盖写入、整文件重写、以及加载空文件。' ;;
     *) echo "Invalid prompt"; return 1 ;;
   esac
 }
@@ -117,7 +118,7 @@ copy_prompt() {
     echo "WARN: 找不到 xclip，跳过剪贴板复制；当前提交模式为 $TRAE_SUBMIT_MODE"
     return 0
   fi
-  if echo -n "$text" | xclip -selection clipboard; then
+  if echo -n "$text" | xclip -selection clipboard 9>&-; then
     echo "✅ Prompt $pn 已复制到剪贴板"
     return 0
   fi
@@ -349,6 +350,87 @@ check_privacy_mode() {
       echo "WARN: 无法从日志确认 Trae 隐私模式；当前继续执行"
       ;;
   esac
+}
+
+check_manual_model_after_auto_switch() {
+  local model_name="$1"
+  if [ "$TRAE_AUTO_MODE_GUARD" = "off" ]; then
+    return 0
+  fi
+  if [ "$TRAE_SUBMIT_MODE" != "bridge" ] && [ "$TRAE_CONFIRM_MODE" != "auto" ]; then
+    return 0
+  fi
+
+  python3 - "$TRAE_LOG_DIR" "$model_name" <<'PY'
+import json
+import re
+import sys
+from pathlib import Path
+
+log_dir = Path(sys.argv[1])
+target = sys.argv[2]
+
+files = []
+if log_dir.exists():
+    files = sorted(
+        [p for p in log_dir.rglob("renderer.log")],
+        key=lambda p: (p.stat().st_mtime, str(p)),
+    )
+
+last_auto = None
+last_target_manual_evidence = None
+order = 0
+payload_re = re.compile(r"params:\s+(\{.*\})")
+
+for path in files:
+    try:
+        lines = path.read_text(encoding="utf-8", errors="ignore").splitlines()
+    except OSError:
+        continue
+    for lineno, line in enumerate(lines, 1):
+        order += 1
+        if "switch auto mode when model offline" in line:
+            last_auto = (order, str(path), lineno, line[:240])
+            continue
+        if (
+            "model_select_click" not in line
+            and "code_comp_trigger" not in line
+            and "code_comp_shown" not in line
+            and "code_comp_complete_shown" not in line
+        ):
+            continue
+        match = payload_re.search(line)
+        if not match:
+            continue
+        try:
+            payload = json.loads(match.group(1))
+        except Exception:
+            continue
+        chat_model = str(payload.get("chat_model") or "")
+        if chat_model.lower() != target.lower():
+            continue
+        if payload.get("chat_model_mode") == "manual":
+            last_target_manual_evidence = (order, str(path), lineno, line[:240])
+            continue
+        if payload.get("is_auto_mode") == 0:
+            last_target_manual_evidence = (order, str(path), lineno, line[:240])
+
+if not last_auto:
+    raise SystemExit(0)
+if last_target_manual_evidence and last_target_manual_evidence[0] > last_auto[0]:
+    raise SystemExit(0)
+
+print("ERROR: Trae 最近一次模型离线后已切换到 Auto，且之后没有看到目标模型的手动选择日志。")
+print(f"       target_model: {target}")
+if last_auto:
+    print(f"       last_auto: {last_auto[1]}:{last_auto[2]}")
+if last_target_manual_evidence:
+    print(f"       last_manual_target: {last_target_manual_evidence[1]}:{last_target_manual_evidence[2]}")
+else:
+    print("       last_manual_target: NOT_FOUND")
+print("       请在 Trae 输入框模型选择器中手动选择目标模型后再重试。")
+raise SystemExit(1)
+PY
 }
 
 check_ppe_config() {
@@ -665,6 +747,27 @@ else:
 PY
 }
 
+session_log_model_guard() {
+  local sid="$1" offsets_file="$2" model_short="$3"
+  if [ "$TRAE_REQUIRE_LOG_MODEL_MATCH" != "on" ] || [ -z "$model_short" ]; then
+    return 0
+  fi
+
+  local expected actual
+  expected=$(expected_model_id "$model_short")
+  actual=$(session_model_id_from_logs "$sid" "$offsets_file" || true)
+  if [ "$actual" = "NOT_FOUND" ] || [ -z "$actual" ]; then
+    return 0
+  fi
+  if [ "$actual" != "$expected" ]; then
+    echo "ERROR: 本轮新增日志显示模型不是目标模型，立即停止等待。"
+    echo "       session_id: $sid"
+    echo "       expected:   $expected"
+    echo "       actual:     $actual"
+    return 1
+  fi
+}
+
 repo_fingerprint() {
   {
     repo_cmd git status --porcelain=v1
@@ -720,6 +823,7 @@ wait_for_completion() {
       echo "  → 自动确认: 等待 Trae 新 session 启动: $TRAE_EXPECTED_SESSION_ID"
       while true; do
         status=$(session_log_status "$TRAE_EXPECTED_SESSION_ID" "$TRAE_LOG_OFFSETS_FILE" || true)
+        session_log_model_guard "$TRAE_EXPECTED_SESSION_ID" "$TRAE_LOG_OFFSETS_FILE" "${TRAE_EXPECTED_MODEL_SHORT:-}" || return 1
         if [ "$status" = "started" ] || [ "$status" = "completed" ]; then
           echo "  → 新 session 已进入日志: $status"
           break
@@ -742,6 +846,7 @@ wait_for_completion() {
       echo "  → 自动确认: 等待新 session 完成"
       while true; do
         status=$(session_log_status "$TRAE_EXPECTED_SESSION_ID" "$TRAE_LOG_OFFSETS_FILE" || true)
+        session_log_model_guard "$TRAE_EXPECTED_SESSION_ID" "$TRAE_LOG_OFFSETS_FILE" "${TRAE_EXPECTED_MODEL_SHORT:-}" || return 1
         if [ "$status" = "completed" ]; then
           echo "  → 新 session 已完成"
           if ! wait_for_repo_stable; then
@@ -806,27 +911,27 @@ show_prompt() {
   echo "  📋 Prompt $pn"
   echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
   case "$pn" in
-    1) echo "  背景: 成绩最终分与 GPA 计算链路"
-       echo "  需求: 解释 GradeService/GPAService 的权重计算和重复逻辑风险"
+    1) echo "  背景: 学生信息录入、保存、查询与排序流程"
+       echo "  需求: 解释 insert/save/search/delete/modify/sort 与 students.txt 的关系"
        echo "  关键: 纯解释题，通常用 ask 模式，无需代码 diff" ;;
-    2) echo "  背景: 成绩提交缺少范围和课程一致性校验"
-       echo "  需求: submit_score 校验 + graded_at + 路由 400 + 测试"
-       echo "  关键: Service/Router/测试多点联动" ;;
-    3) echo "  背景: 作业权重不支持类别"
-       echo "  需求: Assignment.category + 分类归一化 + 计算链路兼容"
-       echo "  关键: 模型/Schema/Service/GPA/Transcript/测试级联修改" ;;
-    4) echo "  背景: 曲线调整原地覆盖且不可撤销"
-       echo "  需求: CurveAdjustment 审计模型 + 撤销接口"
-       echo "  关键: 持久化记录、批次恢复、路由和测试" ;;
-    5) echo "  背景: 成绩单缺少官方验证码"
-       echo "  需求: verification_code/checksum + verify 接口"
-       echo "  关键: 稳定校验、重复更新、篡改检测" ;;
-    6) echo "  背景: GPA 学分硬编码为 3.0"
-       echo "  需求: CourseGrade.credits + 真实学分计算 + 非法学分校验"
-       echo "  关键: 模型/Schema/工厂/GPA/路由/测试全链路" ;;
-    7) echo "  背景: 学生排名只用简单平均且无并列规则"
-       echo "  需求: 加权最终分 + 竞赛排名 + percentile + semester 过滤"
-       echo "  关键: 计算复用、并列名次、报表接口和测试" ;;
+    2) echo "  背景: 录入允许重复 ID 且空字段处理不明确"
+       echo "  需求: validate_student_record + 重复 ID 拦截 + 测试"
+       echo "  关键: 录入校验、重复检测、文件不追加重复记录" ;;
+    3) echo "  背景: search 使用 eval 和不安全的字符串比较"
+       echo "  需求: load_students + ast.literal_eval + 查无结果提示"
+       echo "  关键: 安全解析、按 ID/姓名过滤、损坏数据报错" ;;
+    4) echo "  背景: modify/delete 写回和输出行为有缺陷"
+       echo "  需求: rewrite_students + 不存在 ID 报错 + 删除后不再 show"
+       echo "  关键: 覆盖写回、不丢记录、删除提示准确" ;;
+    5) echo "  背景: 成绩只校验整数，不限制 0-100"
+       echo "  需求: validate_scores + insert/modify 复用 + 测试"
+       echo "  关键: 边界分数、非法输入重试、不崩溃退出" ;;
+    6) echo "  背景: 展示只有总分，没有平均分"
+       echo "  需求: show_student 增加平均分列 + total 输出全体平均"
+       echo "  关键: 保留列对齐、空文件提示不变" ;;
+    7) echo "  背景: save 追加写入易产生重复记录"
+       echo "  需求: load_students + save_students 整文件重写"
+       echo "  关键: 按 ID 覆盖、insert 去重保存、兼容现有功能" ;;
   esac
   echo ""
 }
@@ -1053,6 +1158,7 @@ if log_dir.exists():
     )
 
 models = []
+auto_seen = False
 for path in files:
     try:
         start = offsets.get(path, 0)
@@ -1071,8 +1177,15 @@ for path in files:
             except Exception:
                 continue
             model = payload.get("chat_model")
+            is_auto_mode = payload.get("is_auto_mode")
+            if model == "auto" or str(is_auto_mode) == "1" or payload.get("chat_model_mode") == "auto":
+                auto_seen = True
             if model:
                 models.append(model)
+
+if auto_seen:
+    print("AUTO_MODE")
+    raise SystemExit(0)
 
 if not models:
     print("NOT_FOUND")
@@ -1236,6 +1349,10 @@ decide_score() {
 log_entry() {
   local pn="$1" model="$2" sid="$3" score="$4" reason="$5" patch="$6"
   reason="${reason//,/，}"
+  if [ -f "$BASE_DIR/bitable_score_reason.py" ]; then
+    reason=$(python3 "$BASE_DIR/bitable_score_reason.py" enrich \
+      --prompt "$pn" --model "$model" --score "$score" --reason "$reason" --patch "$patch")
+  fi
   if [ ! -f "$LOG_FILE" ]; then
     echo "prompt,model,session_id,score,score_reason,patch_file" > "$LOG_FILE"
   fi
@@ -1286,7 +1403,18 @@ submit_rollouts_to_bitable() {
   python3 "$BASE_DIR/submit_fresh_task_pipeline.py" --apply
 }
 
+normalize_score_reasons() {
+  if [ ! -f "$BASE_DIR/bitable_score_reason.py" ]; then
+    echo "ERROR: 找不到 score_reason 规范化脚本: $BASE_DIR/bitable_score_reason.py" >&2
+    return 1
+  fi
+  echo ""
+  echo "📝 规范化 trial_log.csv 的 score_reason（写入 prompt 任务点 + patch 证据）"
+  python3 "$BASE_DIR/bitable_score_reason.py" normalize-log
+}
+
 review_rollouts_before_submit() {
+  normalize_score_reasons || return 1
   if [ ! -f "$BASE_DIR/review_rollouts.py" ]; then
     echo "ERROR: 找不到填表前复检脚本: $BASE_DIR/review_rollouts.py" >&2
     return 1
@@ -1344,6 +1472,7 @@ run_one() {
   if ! switch_model_state "$model_short" "$model_name"; then
     echo "WARN: 自动写入 Trae 模型状态失败；请在 Trae 里手动确认模型为 $model_name"
   fi
+  check_manual_model_after_auto_switch "$model_name"
   local expected_sid=""
   expected_sid=$(create_new_trae_task "$model_short")
   if [ -n "$expected_sid" ]; then
@@ -1355,6 +1484,7 @@ run_one() {
   capture_log_offsets > "$log_offsets_file"
   local TRAE_EXPECTED_SESSION_ID="$expected_sid"
   local TRAE_LOG_OFFSETS_FILE="$log_offsets_file"
+  local TRAE_EXPECTED_MODEL_SHORT="$model_short"
 
   # Step 1: 复制 prompt
   copy_prompt "$pn"
@@ -1572,8 +1702,13 @@ autobatch_run() {
   echo "🚀 自动批量跑 Prompt $pn (5个模型)"
   echo "================================================"
 
-  local m
+  local m model_name model_short
   for m in 1 2 3 4 5; do
+    if rollout_logged "$pn" "$m"; then
+      IFS=':' read -r model_name model_short <<< "$(rollout_model_spec "$pn" "$m")"
+      echo "  → 跳过已完成: P${pn}/M${m} $model_name"
+      continue
+    fi
     autorun_one "$pn" "$m"
     echo ""
     echo "--- 下一个 ---"
@@ -1673,6 +1808,7 @@ case "${1:-}" in
   sid)    extract_sid ;;
   preflight) preflight_status ;;
   review) review_rollouts_before_submit ;;
+  normalize-scores) normalize_score_reasons ;;
   verify-table) verify_bitable_after_submit ;;
   submit-fresh) submit_fresh_task ;;
   archive-completed) archive_completed_trial "${@:2}" ;;
@@ -1711,6 +1847,7 @@ case "${1:-}" in
     echo "提取SID:   $0 sid"
     echo "预检状态:  $0 preflight"
     echo "填表前复检: $0 review"
+    echo "规范化评分理由: $0 normalize-scores"
     echo "填表后复检: $0 verify-table"
     echo "新表提交:  $0 submit-fresh"
     echo "归档完成任务并停容器: $0 archive-completed [--label name]"

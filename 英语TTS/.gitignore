@@ -1,0 +1,38 @@
+# Python
+**/__pycache__/
+*.pyc
+
+# Re-creatable environments
+codex-audio/.venv-audio/
+codex-browser/node_modules/
+
+# Browser runtime state
+codex-browser/edge-profile/
+codex-browser/edge-profile-41393/
+codex-browser/*.out.json
+codex-browser/*.status.json
+codex-browser/*.stdout.log
+codex-browser/*.stderr.log
+
+# Large local artifacts kept on disk but not versioned
+codex-browser/models/**/model.bin
+codex-audio/**/audios/
+codex-audio/**/audios_*/
+codex-browser/page_*_audio/
+
+# Local logs
+logs/
+
+# Screenshots
+*.png
+**/screenshots/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store

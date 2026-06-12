@@ -1,0 +1,84 @@
+.aider*
+
+# Python / Node cache and local virtualenvs
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+node_modules/
+**/node_modules/
+
+# Local secrets/env files
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Local assistant/editor state
+.claude/
+.openclaude/
+**/.openclaude/
+**/.commandcode/
+**/.roo/
+
+# Browser/runtime profiles and generated browser cache
+**/.chrome-cdp-profile*/
+**/.browser_profile/
+**/.browser-data/
+**/.browser-auto*/
+**/browser-profile/
+**/.playwright-mcp-output/
+**/.playwright-mcp/
+**/.bdata/
+**/.kilo/
+**/.current_question.json
+
+# Generated media/runtime outputs
+generated_audio/
+*.log
+*.pid
+*.stdout
+*.stderr
+
+# Large local model artifacts (GitHub rejects files >100MB without LFS)
+RQOAE/models/
+
+# 大文件：超过 GitHub 警告线，不纳入版本管理
+renzheng/VCGtexttoimage/03_VCG Base Creation Model v.26.04.28.pdf
+.alma-snapshots
+
+# Screenshots
+**/screenshots/*.png
+*.png
+
+# Session logs
+**/.claw/sessions/
+
+# Task runs/results
+**/runs/*.json
+**/runs/*.jsonl
+**/runs/*.png
+**/runs/*.md
+
+# Task temporary outputs
+**/task*_assets/
+
+# Task check images
+**/current-*.png
+**/page*.png
+**/shot*.png
+**/scratch/*.png
+
+# Cache
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store

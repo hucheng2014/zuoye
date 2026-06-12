@@ -1,0 +1,123 @@
+diff --git a/recital_hall/recital_bookings.py b/recital_hall/recital_bookings.py
+index a902743..91719dc 100644
+--- a/recital_hall/recital_bookings.py
++++ b/recital_hall/recital_bookings.py
+@@ -1,7 +1,7 @@
+ from __future__ import annotations
+ 
+ from typing import List, Optional
+-from datetime import datetime
++from datetime import datetime, date
+ 
+ from fastapi import APIRouter, Depends, HTTPException, status
+ from pydantic import BaseModel
+@@ -44,6 +44,8 @@ async def book_recital_seat(
+         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Recital not found")
+     if recital.status == "cancelled":
+         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Recital is cancelled")
++    if recital.registration_deadline is not None and date.today() > recital.registration_deadline:
++        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Registration deadline has passed")
+     booking = Booking(
+         user_id=payload.user_id,
+         booking_type="recital",
+diff --git a/tests/test_prompt7.py b/tests/test_prompt7.py
+new file mode 100644
+index 0000000..af88eaa
+--- /dev/null
++++ b/tests/test_prompt7.py
+@@ -0,0 +1,94 @@
++from __future__ import annotations
++
++from datetime import date, timedelta
++
++import pytest
++from httpx import AsyncClient
++
++from music_models.music_models import Recital, RecitalStatus
++from tests.conftest import api_key_header, register_user, TestSessionFactory
++
++
++async def make_admin(client: AsyncClient, username: str) -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "admin")
++
++
++async def create_recital(
++    client: AsyncClient,
++    api_key: str,
++    *,
++    title: str = "Spring Recital",
++    event_date: date | None = None,
++    venue: str = "Main Hall",
++    registration_deadline: date | None = None,
++    admission_fee: float = 10.0,
++) -> dict:
++    if event_date is None:
++        event_date = date.today() + timedelta(days=30)
++    payload = {
++        "title": title,
++        "event_date": event_date.isoformat(),
++        "venue": venue,
++        "organizer_id": "dummy",  # will be replaced below
++        "admission_fee": admission_fee,
++        "status": "planning",
++    }
++    if registration_deadline is not None:
++        payload["registration_deadline"] = registration_deadline.isoformat()
++    resp = await client.post(
++        "/recitals",
++        json=payload,
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def book_seat(
++    client: AsyncClient,
++    api_key: str,
++    recital_id: str,
++    user_id: str,
++    notes: str | None = None,
++) -> dict:
++    resp = await client.post(
++        f"/recitals/{recital_id}/seats",
++        json={"user_id": user_id, "notes": notes},
++        headers=api_key_header(api_key),
++    )
++    return {"status_code": resp.status_code, "body": resp.json() if resp.status_code < 400 else resp.json()["detail"]}
++
++
++async def test_book_recital_seat_no_deadline(client: AsyncClient):
++    admin = await make_admin(client, "r_admin_nodl")
++    student = await register_user(client, "r_stud_nodl", "r_stud_nodl@test.com", "pass", "student")
++    recital = await create_recital(client, admin["api_key"])
++    result = await book_seat(client, student["api_key"], recital["id"], student["id"])
++    assert result["status_code"] == 201
++    assert result["body"]["status"] == "pending"
++
++
++async def test_book_recital_seat_before_deadline(client: AsyncClient):
++    admin = await make_admin(client, "r_admin_before")
++    student = await register_user(client, "r_stud_before", "r_stud_before@test.com", "pass", "student")
++    future_deadline = date.today() + timedelta(days=7)
++    recital = await create_recital(
++        client, admin["api_key"],
++        registration_deadline=future_deadline,
++    )
++    result = await book_seat(client, student["api_key"], recital["id"], student["id"])
++    assert result["status_code"] == 201
++    assert result["body"]["status"] == "pending"
++
++
++async def test_book_recital_seat_after_deadline(client: AsyncClient):
++    admin = await make_admin(client, "r_admin_after")
++    student = await register_user(client, "r_stud_after", "r_stud_after@test.com", "pass", "student")
++    past_deadline = date.today() - timedelta(days=1)
++    recital = await create_recital(
++        client, admin["api_key"],
++        registration_deadline=past_deadline,
++    )
++    result = await book_seat(client, student["api_key"], recital["id"], student["id"])
++    assert result["status_code"] == 400
++    assert result["body"] == "Registration deadline has passed"
+\ No newline at end of file

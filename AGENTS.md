@@ -1,3 +1,15 @@
+# Platform: macOS (Apple Silicon / Intel)
+
+This workspace has been migrated from Ubuntu Linux to macOS. Key differences:
+
+- **Home directory**: `/Users/xaa` replaces `/home/jianglei`
+- **Project root**: `/Users/xaa/zuoye`
+- **Docker**: Use Docker Desktop for Mac (no systemd, no nvidia GPU passthrough)
+- **Shell**: zsh is the default (bash scripts still work via `#!/usr/bin/env bash`)
+- **Package managers**: Use `brew` instead of `apt`
+- **GPU**: No CUDA/nvidia; ML workloads must use CPU or Apple Metal (MPS)
+- **Scripts referencing nvidia-smi, systemctl, /dev/nvme\***: These are Linux-only and won't work on macOS
+
 # Workspace Browser Automation Rules
 
 This workspace uses two browser-control layers:
@@ -18,10 +30,10 @@ This workspace uses two browser-control layers:
 Use the root helper so browser IDs, sessions, and CDP ports stay consistent:
 
 ```bash
-/home/jianglei/zuoye/tools/agent-browser.sh list
-/home/jianglei/zuoye/tools/agent-browser.sh asr snapshot -i
-/home/jianglei/zuoye/tools/agent-browser.sh alibaba screenshot /tmp/alibaba.png
-/home/jianglei/zuoye/tools/agent-browser.sh work-a get url
+/Users/xaa/zuoye/tools/agent-browser.sh list
+/Users/xaa/zuoye/tools/agent-browser.sh asr snapshot -i
+/Users/xaa/zuoye/tools/agent-browser.sh alibaba screenshot /tmp/alibaba.png
+/Users/xaa/zuoye/tools/agent-browser.sh work-a get url
 ```
 
 Common targets:
@@ -38,12 +50,12 @@ Common targets:
 1. Inspect with `agent-browser`:
 
 ```bash
-/home/jianglei/zuoye/tools/agent-browser.sh <target> snapshot -i
-/home/jianglei/zuoye/tools/agent-browser.sh <target> screenshot /tmp/current.png
+/Users/xaa/zuoye/tools/agent-browser.sh <target> snapshot -i
+/Users/xaa/zuoye/tools/agent-browser.sh <target> screenshot /tmp/current.png
 ```
 
 2. Implement durable logic in a project script when the action must be repeated.
 
 3. Submit only through the project-specific safe script or a code path with equivalent verification.
 
-See `/home/jianglei/zuoye/docs/agent-browser-integration.md` for details.
+See `/Users/xaa/zuoye/docs/agent-browser-integration.md` for details.

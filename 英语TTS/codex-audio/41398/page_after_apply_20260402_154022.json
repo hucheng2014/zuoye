@@ -1,0 +1,138 @@
+{
+  "url": "https://ilabel.weixin.qq.com/mission/41398/label",
+  "title": "2026音频check_first_part196 - 任务标注",
+  "extractedAt": "2026-04-02T07:40:22.754Z",
+  "count": 10,
+  "items": [
+    {
+      "index": 0,
+      "filename": "20260127_00004326_wjdlh_680_5.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_680_spk0/20260127_00004326_wjdlh_680_5.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我不知道你们在我评论区留言的时候有没有很多人给你们私信啊？"
+    },
+    {
+      "index": 1,
+      "filename": "20260127_00004326_wjdlh_680_18.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_680_spk0/20260127_00004326_wjdlh_680_18.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "二十七度。"
+    },
+    {
+      "index": 2,
+      "filename": "20260127_00004326_wjdlh_680_25.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_680_spk0/20260127_00004326_wjdlh_680_25.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "因为这个是不明来历的味道。"
+    },
+    {
+      "index": 3,
+      "filename": "20260127_00004326_wjdlh_680_26.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_680_spk0/20260127_00004326_wjdlh_680_26.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "头疼啊。"
+    },
+    {
+      "index": 4,
+      "filename": "20260127_00004326_wjdlh_680_0.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_680_spk0/20260127_00004326_wjdlh_680_0.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "八十年的窖藏老酒，口感如何？"
+    },
+    {
+      "index": 5,
+      "filename": "20260127_00004326_wjdlh_680_29.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_680_spk0/20260127_00004326_wjdlh_680_29.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以说大家千万不要相信这什么八十年窖藏老酒，真正八十年的老酒他也不会直接卖给你，早就是自己家里的稀世珍藏了，以示警戒，我拿去倒掉。"
+    },
+    {
+      "index": 6,
+      "filename": "20260127_00004326_wjdlh_680_22.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_680_spk0/20260127_00004326_wjdlh_680_22.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我相信酒精还是能消毒杀菌的啊。"
+    },
+    {
+      "index": 7,
+      "filename": "20260127_00004326_wjdlh_680_1.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_680_spk0/20260127_00004326_wjdlh_680_1.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "到底好不好喝酒是不是越老越好？"
+    },
+    {
+      "index": 8,
+      "filename": "20260127_00004326_wjdlh_680_12.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_680_spk0/20260127_00004326_wjdlh_680_12.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这还得了啊，它这个酒精剂完全就沉不下去。"
+    },
+    {
+      "index": 9,
+      "filename": "20260127_00004326_wjdlh_680_27.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_680_spk0/20260127_00004326_wjdlh_680_27.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "给大家看看颜色吧。"
+    }
+  ]
+}

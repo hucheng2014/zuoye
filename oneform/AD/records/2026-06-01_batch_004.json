@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_004",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T21:35:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688684920",
+      "query": "camera connect",
+      "query_intent": "User is searching for camera connection and remote control utilities (like Canon Camera Connect or Nikon Wireless Mobile Utility) to connect their mobile phone to a hardware digital camera (DSLR/mirrorless) via Wi-Fi/Bluetooth to transfer photos and control shooting.",
+      "ad": {
+        "name": "像素蛋糕 - 专业级AI修图软件",
+        "subtitle": "人像美容｜图片美化｜照片修图｜胶片滤镜｜AI追色",
+        "developer": "Xiamen Truesight Technology Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6743614900) & Web research",
+          "note": "像素蛋糕 is an advanced AI-powered portrait retouching, photo editing, and color correction app."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both apps are photo-related utility applications. However, camera connection apps are hardware pairing and file transfer utilities, whereas the ad is a software-based post-production AI editor. They belong to the same broad photography class but serve different specific functions."
+        }
+      ],
+      "relationship_analysis": "The query 'camera connect' refers to hardware connectivity and photo transfer tools for digital cameras. The advertised app '像素蛋糕' is a professional post-processing AI photo editor. Both are in the broad photography/imaging utility category. However, their core functions differ completely (hardware Wi-Fi connection vs. software-based photo editing/retouching). It represents a weak/broad category association with mismatched specific utilities. Rated Acceptable.",
+      "why_not_higher": "They serve entirely different functions. A user looking to pair their physical DSLR camera to transfer photos will not find their need met by a portrait beauty and filter editing app.",
+      "why_not_lower": "There is a broad category association in the photography utilities sector, so the ad is not completely out of context.",
+      "rating": "Acceptable",
+      "comment": "The query \"camera connect\" refers to wireless hardware connection and photo transfer utilities for digital cameras. The advertised app \"像素蛋糕 - 专业级AI修图软件\" is a software-based AI photo editor and beautifier. While both applications operate under the broad photography utility category, they serve entirely separate functions (hardware-to-phone connection vs. post-production image editing). The relationship is weak but understandable. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688684921",
+      "query": "话 树 趣 聊",
+      "query_intent": "User is searching for '话树趣聊' (or '话树' - Chatree), a specialized text-to-video / chat theatre novel promotion and creation utility App designed for self-media creators to generate mock chat video dialogues and novel promotion videos.",
+      "ad": {
+        "name": "朵朵兔语音",
+        "subtitle": "语音聊天连麦互动有趣灵魂交友",
+        "developer": "海南集驰文化科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6698876853) & Web research",
+          "note": "朵朵兔语音 is a social networking voice app featuring group chatrooms, voice matchmaking, dating, and social entertainment."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Hua Shu Qu Liao (话树趣聊) is a productivity/video creation tool. Duo Duo Tu (朵朵兔) is a social matchmaking and dating app. Despite the nominal presence of the word 'chat' (聊), their core utilities are completely different."
+        }
+      ],
+      "relationship_analysis": "The query '话 树 趣 聊' is a productivity video/script generation tool for creators. The advertised app '朵朵兔语音' is a casual voice chatroom and stranger dating social network. Although the query name contains the word 'chat' (聊), and the ad is a live chat app, their functionalities (video creation/promotion vs. social voice dating) and target audiences share absolutely no logical connection. A creator wanting a mock chat video generator has no interest in a voice dating room, making this Bad.",
+      "why_not_higher": "No functional or logical relationship. They serve completely distinct industries and user demographics.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"话 树 趣 聊\" refers to \"话树\" (Chatree), a content creator productivity tool designed to generate mock chat video dialogues and novel promotion videos. The advertised app \"朵朵兔语音\" is a casual voice chat, group matching, and social dating platform. Despite a nominal overlap in the concept of \"chatting\", a video creation utility and a social dating chatroom serve completely distinct functions and audiences. There is no logical connection, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688684922",
+      "query": "百 度 输 入 法",
+      "query_intent": "User is looking for '百度输入法' (Baidu Input Method), a highly popular, general-purpose mobile keyboard and Chinese input method App featuring voice typing, skins, and smart predictions.",
+      "ad": {
+        "name": "微脉输入法-私域必备，人人销冠",
+        "subtitle": "私域成交话术、销冠键盘！",
+        "developer": "助梦工场",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1273759358)",
+          "note": "微脉输入法 is a specialized vertical mobile keyboard app designed specifically for e-commerce customer service, online merchants, and sales teams to utilize fast replies, pre-configured sales scripts, and commercial shortcuts."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both apps are mobile input methods/keyboards. Baidu Input Method is a general-purpose keyboard for everyday typing, while Weimai is a specialized sales keyboard. They share the same core functional category (keyboards)."
+        }
+      ],
+      "relationship_analysis": "The query '百 度 输 入 法' is a mainstream, general-purpose keyboard app. The advertised app '微脉输入法' is a specialized, sales-focused keyboard. Both applications are mobile input methods satisfying the exact same core functional category of text typing. While one is general-purpose and the other is tailored for customer service and merchant scripts, they represent highly relevant alternative keyboards, making this relationship Good.",
+      "why_not_higher": "They are not direct equivalents. Baidu is a general consumer input tool, while Weimai is a highly specialized vertical keyboard for sales teams, which contains distinct commercial features and structures.",
+      "why_not_lower": "They share the identical core app category (input methods) and satisfy the basic user need of text typing, representing a strong functional association.",
+      "rating": "Good",
+      "comment": "The query \"百 度 输 入 法\" refers to Baidu's popular, general-purpose mobile keyboard and input method application. The advertised app \"微脉输入法-私域必备，人人销冠\" is a specialized keyboard app designed specifically for e-commerce merchants and sales teams featuring pre-configured selling scripts and fast replies. Since both applications are mobile input methods satisfying the identical core functional category of text typing, they represent strongly related alternatives in the keyboard domain. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688684923",
+      "query": "qq",
+      "query_intent": "User is searching for Tencent's famous instant messaging and multi-functional social platform 'QQ'. The user intent is extremely specific: the official Tencent QQ application for chatting, social networking, and file transfer.",
+      "ad": {
+        "name": "声屿-语音直播匹配交友",
+        "subtitle": "用声音遇见同频的人",
+        "developer": "Shanghai Jiakande Information Technology Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6756353123)",
+          "note": "声屿 is a niche, anonymous voice live-streaming and stranger social dating app focused on matchmaking users in voice chatrooms."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Tencent QQ is a massive general instant messenger for known contacts, family, work, and study. Sound Island (声屿) is an anonymous matchmaking dating app for strangers. They share the broad social category but serve completely different scales, audiences, and usage scenarios."
+        }
+      ],
+      "relationship_analysis": "The query 'qq' is Tencent's massive, multi-functional instant messenger. The advertised app '声屿' is a niche, anonymous voice matchmaking dating app for strangers. Both belong to the broad 'social and communication' category. However, their target user groups, usage scales, and functional scenarios (chatting with known contacts/files vs stranger dating/voice matching) are completely separate. This represents a broad category association with mismatched specific utilities. Rated Acceptable.",
+      "why_not_higher": "They serve entirely different scales and roles. A user looking for a mainstream, multi-purpose instant messenger like QQ would not find a niche anonymous stranger dating chat app to be a relevant alternative.",
+      "why_not_lower": "Both applications are mobile social and communication utilities, maintaining a broad thematic relationship under the social networking domain.",
+      "rating": "Acceptable",
+      "comment": "The query \"qq\" refers to Tencent's massive, multi-functional instant messaging and social communication platform. The advertised app \"声屿-语音直播匹配交友\" is a niche, anonymous stranger voice matchmaking and dating application. While both applications fall under the broad social and communication category, they serve completely different scales, target audiences, and usage scenarios (messaging known friends/colleagues vs anonymous stranger dating). The relationship is weak but understandable. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688684924",
+      "query": "到 位",
+      "query_intent": "User is searching for the leading O2O (online-to-offline) home service marketplace platform '到位' (Daowei) to hire professional technicians for home cleaning, push massage, appliance repairs, moving, or beauty services at home.",
+      "ad": {
+        "name": "拼多多 - 多多买菜，百亿补贴",
+        "subtitle": "拼着买，才便宜",
+        "developer": "上海寻梦信息技术有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1044283059) & Web research",
+          "note": "拼多多 is a massive e-commerce and retail group-buying platform in China, primarily selling physical goods, and includes '多多买菜' for local grocery pickup."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Daowei is an O2O manual services marketplace (booking services delivered to home). Pinduoduo is a retail e-commerce platform (buying physical merchandise delivered to home). Hiring services and buying retail products are completely separate business domains."
+        }
+      ],
+      "relationship_analysis": "The query '到 位' is an O2O on-demand home service booking marketplace. The advertised app '拼多多' is a massive general merchandise e-commerce platform. Booking physical manual labor services (cleaning, massage, plumbing) at home and buying retail consumer goods (groceries, clothing, electronics) satisfy entirely different functional domains, user demographics, and usage scenarios. There is no logical relevance, so this is Bad.",
+      "why_not_higher": "No functional or transactional connection. Buying merchandise on Pinduoduo cannot satisfy a user's intent to hire an in-home cleaning or repair technician.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"到 位\" refers to \"Daowei\", a leading O2O local home service marketplace where users hire technicians for home cleaning, push massage, and appliance repairs. The advertised app \"拼多多 - 多多买菜，百亿补贴\" is a massive general e-commerce and retail shopping platform. Booking manual in-home services and purchasing physical retail goods serve entirely different functional domains, target demographics, and usage scenarios. There is no logical connection, so this is Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T13:35:10",
+    "post_submit_status": "No errors visible"
+  }
+}

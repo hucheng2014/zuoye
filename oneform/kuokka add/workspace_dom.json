@@ -1,0 +1,68 @@
+{
+  "body_text": "Kuokka Add\n\n76s\n\nInstructions\nDone",
+  "buttons": [
+    {
+      "text": "",
+      "id": "",
+      "className": "Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 dMYZKc ibqbgV hhNXJt gBLiXA",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "id": "",
+      "className": "Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 dMYZKc ibqbgV hhNXJt gBLiXA",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "id": "",
+      "className": "Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 dMYZKc ibqbgV hhNXJt gBLiXA",
+      "disabled": false
+    },
+    {
+      "text": "Instructions",
+      "id": "starshot_instructions_button",
+      "className": "Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 hCsqOx ibqbgV cTxCgN pwJkH",
+      "disabled": false
+    },
+    {
+      "text": "Done",
+      "id": "starshot_submit_button",
+      "className": "Box-sc-18eybku-0 Text__BaseText-sc-4nqr4q-0 Text-sc-4nqr4q-1 base__InteractiveText-sc-cmy001-0 dPbjnB ibqbgV imVZDm iBCABx",
+      "disabled": false
+    }
+  ],
+  "iframe_body_text": "Annotations\nSignals\n0.00\n1000.00\n2000.00\n3000.00\n4000.00\n5000.00\n6000.00\n7000.00\n8000.00\n9000.00\n10000.00\n11000.00\n12000.00\nAudio\n0\n5000\n10000\n15000\n20000\n25000\n30000\n35000\n40000\n45000\n50000\n55000\n0\n5000\n10000\n15000\n20000\n25000\n30000\n35000\n40000\n45000\n50000\n55000\n00:00:000\nQuestions\nLabel the Audio:\nInvocation\nUser Turn\nSiri Turn\nBystander Speech\nFiller\nPause\nx1\nPlayhead: 0\nMouse: ----\nNo Annotations\n|\n0 Selected\nThe data shown in this screen is not customer data.",
+  "iframe_buttons": [
+    {
+      "text": "",
+      "id": "",
+      "className": "btn selected btn btn-secondary btn-sm active",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "id": "",
+      "className": "btn unselected btn btn-secondary btn-sm",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "id": "play-start-button",
+      "className": "btn btn-secondary",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "id": "play-button",
+      "className": "btn btn-secondary",
+      "disabled": false
+    },
+    {
+      "text": "",
+      "id": "play-end-button",
+      "className": "btn btn-secondary",
+      "disabled": false
+    }
+  ]
+}

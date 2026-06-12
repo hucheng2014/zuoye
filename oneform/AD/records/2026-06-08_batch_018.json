@@ -1,0 +1,128 @@
+{
+  "batch_id": "2026-06-08_batch_018",
+  "project": "AD Search Ads Relevance",
+  "operator": "cursor-agent",
+  "created_at": "2026-06-08T22:15:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689661626",
+      "query": "模 拟 器",
+      "query_intent": "User is searching for a game emulator app to run games on their device.",
+      "ad": {
+        "name": "苍蓝前线",
+        "developer": "Shanghai Lingyu Technology Co., LTD",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "苍蓝前线 is a mobile game; 模拟器 refers to emulator software tools."
+        }
+      ],
+      "relationship_analysis": "Emulator utility tool vs a mobile game — completely different product types.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"模 拟 器\" indicates the user wants a game emulator app to run games on their device. [Ad Analysis] The advertised app \"苍蓝前线\" is a mobile game published by Shanghai Lingyu Technology. [Relevance Breakdown] An emulator tool and a mobile game are entirely different product types; users searching for emulator software would not want a game download. [Why not higher/lower] Not Acceptable because there is no functional overlap between emulator tools and game content. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689661627",
+      "query": "刺 猬 错 题 本",
+      "query_intent": "User is searching for 刺猬错题本, a wrong-question notebook app for students to collect and review mistakes.",
+      "ad": {
+        "name": "蜜蜂试卷 - 试卷一键擦除，AI整理错题，错题答疑辅导",
+        "developer": "Linguan Data",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "蜜蜂试卷 offers AI wrong-question organization and tutoring, same education category."
+        }
+      ],
+      "relationship_analysis": "Both are education apps for managing wrong questions and helping students review mistakes.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"刺 猬 错 题 本\" indicates the user wants a wrong-question notebook app for collecting and reviewing study mistakes. [Ad Analysis] The advertised app \"蜜蜂试卷\" provides exam paper scanning, AI wrong-question organization, and tutoring support. [Relevance Breakdown] Both serve the same education need of managing and reviewing wrong questions; users searching for one wrong-question app would likely consider a direct alternative. [Why not higher/lower] Not Excellent because it is not the exact app searched; not Acceptable because the functional overlap in wrong-question management is strong and direct. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689661628",
+      "query": "stress watch",
+      "query_intent": "User is searching for Stress Watch, a stress monitoring and wellness tracking app (likely for Apple Watch).",
+      "ad": {
+        "name": "Keep - AI 运动教练",
+        "developer": "Keep",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "Keep is a fitness/exercise app with AI coaching; Stress Watch focuses on stress monitoring."
+        }
+      ],
+      "relationship_analysis": "Both are health/wellness apps but stress monitoring and fitness coaching serve different specific needs.",
+      "rating": "Acceptable",
+      "comment": "[Query Intent] The query \"stress watch\" indicates the user wants a stress monitoring and wellness tracking app. [Ad Analysis] The advertised app \"Keep - AI 运动教练\" is a fitness and exercise coaching platform with AI workout guidance. [Relevance Breakdown] Both fall within health and wellness apps, but stress monitoring and fitness exercise coaching address different specific health needs. [Why not higher/lower] Not Good because the core functions (stress tracking vs exercise coaching) do not directly align; not Bad because the broad wellness category creates a weak but understandable connection. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689661629",
+      "query": "meta",
+      "query_intent": "User is searching for Meta platform apps such as Facebook, Instagram, WhatsApp, or Meta Quest.",
+      "ad": {
+        "name": "千问 - 阿里AI助手",
+        "developer": "Shanghai Zhixin Puhui Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "Meta is a social media/VR company; 千问 is Alibaba's AI chatbot."
+        }
+      ],
+      "relationship_analysis": "Social media/VR platform vs AI chatbot assistant — no meaningful connection.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"meta\" indicates the user wants Meta platform apps such as Facebook, Instagram, WhatsApp, or Meta Quest. [Ad Analysis] The advertised app \"千问 - 阿里AI助手\" is Alibaba's general-purpose AI chatbot assistant. [Relevance Breakdown] Meta social media/VR platforms and an Alibaba AI assistant serve entirely different needs with no brand, functional, or audience overlap. [Why not higher/lower] Not Acceptable because there is no logical connection between Meta's social ecosystem and a Chinese AI chatbot. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689661630",
+      "query": "优 e 出 行 司 机 端",
+      "query_intent": "User is searching for the 优e出行 driver-side ride-hailing app to accept orders and earn income.",
+      "ad": {
+        "name": "T3车主",
+        "developer": "Nanjing Leading Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "T3出行 is a competing ride-hailing platform with a driver app."
+        }
+      ],
+      "relationship_analysis": "Both are ride-hailing driver-side apps from competing platforms serving the same core need.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"优 e 出 行 司 机 端\" indicates the user wants the 优e出行 driver-side ride-hailing application. [Ad Analysis] The advertised app \"T3车主\" is the driver-side app for T3 Chuxing, a competing ride-hailing platform. [Relevance Breakdown] Both are driver-side ride-hailing apps serving the same core need of accepting passenger orders; drivers frequently consider multiple platforms. [Why not higher/lower] Not Excellent because it is a different ride-hailing brand; not Acceptable because the direct functional overlap in driver ride-hailing is strong. Rated Good.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T14:17:55",
+    "post_submit_status": "No errors visible"
+  }
+}

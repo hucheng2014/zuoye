@@ -1,0 +1,71 @@
+--- Page 1 ---
+ 
+ 
+Preference Ranking v5 Certification Tips 
+Please remember to grade each dimension individually 
+Truthfulness vs Instruction Following 
+❖ This is particularly important for Q&A types of requests, i.e. where the user is 
+asking the model a question. In these cases, if the model attempts to answer the 
+question, it is Fully following instructions (all the instructions, if there is nothing else 
+specified in the request). If the answer however is just wrong, this should be 
+penalized only in Truthfulness. 
+❖ As an example applicable to the certification: Pay closer attention to history/art-
+related requests, and make sure all information present in these responses is 
+correct. If the main information/point of the response is incorrect, this should be 
+marked as Not Truthful. If some more ‘minor’ details, supporting information, is not 
+correct, then mark as Partially Truthful.  
+o But do not be too nitpicky when grading Truthfulness - if something can 
+maybe be interpreted as possibly incorrect, do not penalize it. Only penalize 
+information that is definitely not correct. For example, in tasks related to 
+music genres, do not penalize unnecessarily: Genres are a somewhat 
+subjective matter, so as long as the response is sensible and mentioning 
+realistically plausible genres for the lyrics, do not penalize IF or Truthfulness; 
+Responses listing different genres can still all be good and Highly Satisfying.  
+o And keep that in mind for these history/art-related tasks, that generally at 
+least one response will have no issues with Truthfulness, while the other two 
+likely contain some historical errors. For Instructions Following, since the 
+model generally does attempt to answer the user’s question as mentioned in 
+the first point, the instructions are mostly followed in these history/art-
+related tasks. 
+❖ Please don’t hurry to penalize Instruction Following in general, but carefully check if 
+what you noticed is really a specific instruction that can be traced back to the user 
+request, or if it’s actually the model just introducing incorrect information in the 
+response (Truthfulness). For example, if the user requests to have something be in 
+alphabetical order, or not to use certain letters, and the model fails to do this, this 
+should be penalized in Instruction Following, not Truthfulness. 
+❖ Also remember that for math problems specifically, if the final answer of the math 
+problem is incorrect, this means the response is Not Truthful. And if the final answer 
+is correct, but there is a mistake in the steps/reasoning, this should be Partially 
+Truthful. 
+--- Page 2 ---
+ 
+ 
+❖ For unsafe requests, like ones asking to build a weapon for example, please 
+remember that declining these harmful requests should be marked as Fully 
+Following Instructions as well as Truthful, as this is the desired approach for such 
+cases (pages 29 and 177). But, if the model does provide an answer, this should also 
+be marked as Fully Following Instructions, and as Truthful if the info is indeed true, 
+as the main instruction (to provide an answer to the question), is fully followed, even 
+though it’s harmful. Afterwards, just make sure you penalize this harmfulness of the 
+response in Satisfaction, and mark as Highly Unsatisfying, again as per the 
+Guidelines (page 192) 
+Concision 
+- Concision is fine in most tasks, but be wary of responses which introduce clearly 
+unnecessary information, making it difficult for the user to locate the info that they 
+asked for. This would be for example, providing several lengthy options when the 
+user asked a simple question/request. Of course, introducing repetitions in lists 
+would also have to be penalized in Concision. 
+Satisfaction and Preference Ranking 
+- For Satisfaction, just make sure you are utilizing the table on page 196 of the 
+Guidelines, and do NOT rate based on your personal preferences – there is some 
+room for subjectivity and personal opinion here, but it is mostly based on the 
+Guidelines 
+- Also remember that if no dimensions have been downgraded, the Satisfaction rating 
+of that response must be Highly Satisfying. And the other way around, if any 
+dimension has been slightly downgraded, the response cannot be Highly Satisfying 
+- For the Preference Ranking, please do not overuse the ‘Much Better’ ranking.  
+‘Much Better’ should only be reserved for cases where there are 2 or more degrees 
+of individual Satisfaction rating differences (for example, if Response A is Slightly 
+Satisfying, and Response B is Highly Unsatisfying, then Response A is Much Better 
+than Response B). This means that in the certification you’ll mostly be using the 
+‘Better’ and ‘Slightly Better’ rankings. 

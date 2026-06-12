@@ -2,6 +2,7 @@ import argparse
 import asyncio
 import hashlib
 import json
+import os
 import re
 from pathlib import Path
 from typing import Any
@@ -13,13 +14,10 @@ from playwright.async_api import Locator, Page, async_playwright
 from preflight_checks import preflight_caption, print_preflight_report
 from solve_single_task import format_caption
 
-
-import os
-
 API_KEY = os.environ["GEMINI_API_KEY"]
+VERTEX_MODEL = os.environ.get("VERTEX_MODEL", "gemini-2.0-flash-001")
 client = genai.Client(vertexai=True, api_key=API_KEY)
-
-BASE_DIR = Path("/home/jianglei/zuoye/alibabaxiangmu")
+BASE_DIR = Path("/Users/xaa/zuoye/alibabaxiangmu")
 SCRATCH = BASE_DIR / "scratch"
 CDP = "http://127.0.0.1:9237"
 
@@ -232,7 +230,7 @@ def generate_caption(
             + "\n请重新观看/聆听视频后修正这些问题，输出完整最终答案，不要只输出差异。"
         )
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model=VERTEX_MODEL,
         contents=[
             types.Part.from_bytes(data=video_data, mime_type="video/mp4"),
             f"{MAIN_PROMPT}\n\n【视频实际时长】{duration:.3f} 秒。所有时间戳必须在 00:00:00.000 到该时长范围内。\n\n【原始 Caption】\n{original}\n{correction}",
@@ -252,7 +250,7 @@ def review_caption(
     duration: float,
 ) -> tuple[dict[str, Any], list[str], str]:
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model=VERTEX_MODEL,
         contents=[
             types.Part.from_bytes(data=video_data, mime_type="video/mp4"),
             (

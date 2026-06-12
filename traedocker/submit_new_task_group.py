@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a fresh Bitable task group for the current python-grade run.
+"""Create a fresh Bitable task group for the current studentsystem run.
 
 This script intentionally does not use submit_missing_rollouts.py because that
 older flow matches rows globally by session_id and can accidentally attach new
@@ -30,7 +30,13 @@ BACKUP_DIR = BASE_DIR / "new_task_backups"
 BASE_TOKEN = "B4SgbbhcyaJfwWsWHvcc1AtgnYd"
 TABLE_ID = "tblcXB0RGGaHGm1r"
 VIEW_ID = "vewxWP7trZ"
-OLD_ROOT_RECORD_ID = "recvltHcbs9Y6q"
+PROTECTED_ROOT_RECORDS = {
+    "B00001573": "recvltHcbs9Y6q",
+    "B00008611": "recvlMqEuYIzqL",
+    "B00010768": "recvlQJ9JaXxg3",
+}
+PROTECTED_ROOT_IDS = frozenset(PROTECTED_ROOT_RECORDS.values())
+OLD_ROOT_RECORD_ID = PROTECTED_ROOT_RECORDS["B00001573"]
 
 FIELDS = {
     "docker_build_status": "fldNEkQ4Mt",
@@ -127,13 +133,13 @@ MODEL_ROLLOUT_ID = {
 }
 
 PROMPT_META = {
-    1: ("困难", "代码理解与分析", "Python, FastAPI, SQLAlchemy, pytest", "成绩计算,GPA,代码分析"),
-    2: ("中等", "Bug 修复 / 调试", "Python, FastAPI, SQLAlchemy, pytest", "成绩提交,校验,路由错误处理"),
-    3: ("困难", "功能迭代", "Python, FastAPI, SQLAlchemy, pytest", "作业权重,分类归一化,成绩计算"),
-    4: ("困难", "功能迭代", "Python, FastAPI, SQLAlchemy, pytest", "评分曲线,审计记录,撤销"),
-    5: ("困难", "功能迭代", "Python, FastAPI, SQLAlchemy, pytest", "成绩单,验证码,校验接口"),
-    6: ("中等", "功能迭代", "Python, FastAPI, SQLAlchemy, pytest", "GPA,课程学分,数据模型"),
-    7: ("中等", "功能迭代", "Python, FastAPI, SQLAlchemy, pytest", "排名报表,并列名次,百分位"),
+    1: ("中等", "代码理解与分析", "Python, FastAPI, SQLAlchemy, pytest", "支付查询,状态更新,代码分析"),
+    2: ("中等", "Bug 修复 / 调试", "Python, FastAPI, SQLAlchemy, pytest", "支付校验,交易号唯一性,路由错误处理"),
+    3: ("困难", "功能迭代", "Python, FastAPI, SQLAlchemy, pytest", "退款,支付关联,余额校验"),
+    4: ("困难", "功能迭代", "Python, FastAPI, SQLAlchemy, pytest", "交易状态机,外部交易号,状态流转"),
+    5: ("困难", "功能迭代", "Python, FastAPI, SQLAlchemy, pytest", "结算批次,金额汇总,幂等"),
+    6: ("困难", "功能迭代", "Python, FastAPI, SQLAlchemy, pytest", "审计日志,支付操作,查询统计"),
+    7: ("中等", "功能迭代", "Python, FastAPI, SQLAlchemy, pytest", "支付报表,退款抵扣,多币种汇总"),
 }
 
 
@@ -182,19 +188,28 @@ def load_prompts() -> dict[int, str]:
 
 
 def load_rollouts() -> list[Rollout]:
+    from bitable_score_reason import build_score_reason
+
     rows: list[Rollout] = []
     with (BASE_DIR / "trial_log.csv").open(newline="", encoding="utf-8") as handle:
         for row in csv.DictReader(handle):
             prompt = int(row["prompt"])
             model = row["model"]
             patch_file = BASE_DIR / row["patch_file"]
+            score_reason = build_score_reason(
+                prompt,
+                model,
+                row["score"].strip(),
+                row["patch_file"],
+                row["score_reason"].strip(),
+            )
             rows.append(
                 Rollout(
                     prompt=prompt,
                     model=model,
                     session_id=row["session_id"].strip(),
                     score=row["score"].strip(),
-                    score_reason=row["score_reason"].strip(),
+                    score_reason=score_reason,
                     patch_file=patch_file,
                     rollout_id=MODEL_ROLLOUT_ID[model],
                     model_option=MODEL_OPTION_TEXT[model],
@@ -248,7 +263,7 @@ def prompt_quality_text(prompt_index: int, prompt_text: str) -> str:
         {
             "qualified": True,
             "score": 92 if prompt_index in {1, 6, 7} else 95,
-            "summary": "该prompt符合真实代码仓库任务标注要求，贴近成绩管理系统开发场景且具体可执行",
+            "summary": "该prompt符合真实代码仓库任务标注要求，贴近支付系统开发场景且具体可执行",
             "reasons": [
                 "明确引用当前仓库中的具体服务、模型、Schema、路由或测试文件，建立了强仓库上下文",
                 f"任务类型为{category}，难度为{difficulty}，技术栈为{tech_stack}，模块标签为{module_tags}",
@@ -376,16 +391,54 @@ def file_names(cell: Any) -> list[str]:
     return [str(item.get("name") or item.get("attachmentToken") or item.get("id")) for item in value if isinstance(item, dict)]
 
 
-def validate_old_root_clean(rows: list[dict[str, Any]], local_sessions: set[str]) -> None:
-    by_id = {row["recordId"]: row for row in rows}
-    if OLD_ROOT_RECORD_ID not in by_id:
-        raise RuntimeError(f"old root {OLD_ROOT_RECORD_ID} not found")
-    old_prompts = [row for row in rows if row["parent"] == [OLD_ROOT_RECORD_ID] and not row["session_id"]]
-    old_prompt_ids = {row["recordId"] for row in old_prompts}
-    old_rollouts = [row for row in rows if row["parent"] and row["parent"][0] in old_prompt_ids and row["session_id"]]
-    local_rows = [row for row in rows if row["session_id"] in local_sessions]
-    if len(old_prompts) != 7 or len(old_rollouts) != 35:
-        raise RuntimeError(f"old root shape mismatch: prompts={len(old_prompts)} rollouts={len(old_rollouts)}")
+def session_value_matches(value: str, short_session_id: str) -> bool:
+    if not value or not short_session_id:
+        return False
+    return value == short_session_id or short_session_id in value
+
+
+def assert_not_protected_root(root_id: str, *, action: str = "modify") -> None:
+    if root_id in PROTECTED_ROOT_IDS:
+        labels = [label for label, rid in PROTECTED_ROOT_RECORDS.items() if rid == root_id]
+        raise RuntimeError(
+            f"refusing to {action} protected old task group {labels[0] if labels else root_id} ({root_id})"
+        )
+
+
+def collect_protected_record_ids(rows: list[dict[str, Any]]) -> set[str]:
+    protected = set(PROTECTED_ROOT_IDS)
+    changed = True
+    while changed:
+        changed = False
+        for row in rows:
+            record_id = row["recordId"]
+            if record_id in protected:
+                continue
+            parent = row.get("parent") or []
+            if parent and parent[0] in protected:
+                protected.add(record_id)
+                changed = True
+    return protected
+
+
+def assert_not_protected_records(
+    record_ids: list[str],
+    rows: list[dict[str, Any]],
+    *,
+    action: str = "delete",
+) -> None:
+    protected = collect_protected_record_ids(rows)
+    blocked = [record_id for record_id in record_ids if record_id in protected]
+    if blocked:
+        raise RuntimeError(f"refusing to {action} protected old task records: {blocked[:5]}")
+
+
+def validate_no_current_sessions(rows: list[dict[str, Any]], local_sessions: set[str]) -> None:
+    local_rows = [
+        row
+        for row in rows
+        if any(session_value_matches(row["session_id"], session_id) for session_id in local_sessions)
+    ]
     if local_rows:
         raise RuntimeError(f"current-run session rows already exist before create: {[row['recordId'] for row in local_rows]}")
 
@@ -557,7 +610,12 @@ async def create_stage(page, label: str, records: dict[str, dict[str, Any]], cre
     await page.wait_for_timeout(5000)
 
 
-async def delete_records(page, record_ids: list[str]) -> dict[str, Any]:
+async def delete_records(page, record_ids: list[str], rows: list[dict[str, Any]] | None = None) -> dict[str, Any]:
+    if rows is not None:
+        assert_not_protected_records(record_ids, rows, action="delete")
+    blocked_roots = [record_id for record_id in record_ids if record_id in PROTECTED_ROOT_IDS]
+    if blocked_roots:
+        raise RuntimeError(f"refusing to delete protected old task roots: {blocked_roots}")
     return await page.evaluate(
         """
         ({ table, view, recordIds }) => {
@@ -603,10 +661,10 @@ def verify_new_group(
         bad_rollout_parent = [row["recordId"] for row in rollout_rows if not row["parent"] or row["parent"][0] not in prompt_id_set]
         if bad_rollout_parent:
             errors.append(f"rollout parent mismatch: {bad_rollout_parent[:5]}")
-    session_counts = Counter(row["session_id"] for row in rows if row["session_id"])
     for rollout in rollouts:
-        if session_counts[rollout.session_id] != 1:
-            errors.append(f"session count mismatch for {rollout.session_id}: {session_counts[rollout.session_id]}")
+        matching_rows = [row for row in rows if session_value_matches(row["session_id"], rollout.session_id)]
+        if len(matching_rows) != 1:
+            errors.append(f"session count mismatch for {rollout.session_id}: {len(matching_rows)}")
     children_by_prompt = Counter()
     for row in rows:
         if row["parent"] and row["parent"][0] in prompt_ids.values() and row["session_id"]:
@@ -640,13 +698,13 @@ async def run(apply: bool, cleanup_marker: str | None, quality_reviewed: bool) -
         before_payload = await fetch_payload(page)
         before_path = write_backup(before_payload, "before_new_task_group")
         before_rows = summarize_records(before_payload)
-        validate_old_root_clean(before_rows, local_sessions)
+        validate_no_current_sessions(before_rows, local_sessions)
 
         if cleanup_marker:
-            targets = [row["recordId"] for row in before_rows if row["notes"] == cleanup_marker or row["session_id"] in local_sessions]
+            targets = [row["recordId"] for row in before_rows if row["notes"] == cleanup_marker]
             print(f"cleanup_marker={cleanup_marker} targets={len(targets)}")
             if targets and apply:
-                result = await delete_records(page, targets)
+                result = await delete_records(page, targets, before_rows)
                 print(f"DeleteRecords result={result.get('result')} records={len(targets)}")
                 await page.wait_for_timeout(8000)
             await browser.close()
@@ -654,6 +712,7 @@ async def run(apply: bool, cleanup_marker: str | None, quality_reviewed: bool) -
 
         ids = await get_new_record_ids(page, 43)
         root_id = ids[0]
+        assert_not_protected_root(root_id, action="create")
         prompt_ids = {idx: ids[idx] for idx in range(1, 8)}
         rollout_ids: dict[tuple[int, str, str], str] = {}
         cursor = 8
@@ -661,7 +720,7 @@ async def run(apply: bool, cleanup_marker: str | None, quality_reviewed: bool) -
             rollout_ids[(rollout.prompt, rollout.model, rollout.session_id)] = ids[cursor]
             cursor += 1
 
-        marker = f"python-grade-new-task-group:{datetime.now().strftime('%Y%m%d_%H%M%S')}:{root_id}"
+        marker = f"studentsystem-new-task-group:{datetime.now().strftime('%Y%m%d_%H%M%S')}:{root_id}"
         records = build_records(prompts, rollouts, root_id, prompt_ids, rollout_ids, marker, quality_reviewed=quality_reviewed)
         plan_path = write_backup(
             {
@@ -697,7 +756,10 @@ async def run(apply: bool, cleanup_marker: str | None, quality_reviewed: bool) -
         after_rows = summarize_records(after_payload)
         errors = verify_new_group(after_rows, root_id, prompt_ids, set(rollout_ids.values()), rollouts)
         old_local_rows = [
-            row for row in after_rows if row["session_id"] in local_sessions and row["recordId"] not in set(rollout_ids.values())
+            row
+            for row in after_rows
+            if any(session_value_matches(row["session_id"], session_id) for session_id in local_sessions)
+            and row["recordId"] not in set(rollout_ids.values())
         ]
         if old_local_rows:
             errors.append(f"local sessions outside new rollout records: {[row['recordId'] for row in old_local_rows]}")

@@ -1,0 +1,88 @@
+{
+  "batch_id": "2026-06-08_batch_010",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-08T14:05:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689643449",
+      "query": "香 肠 派 对",
+      "query_intent": "User is searching for '香肠派对' (Sausage Man), a popular cartoon-style battle royale mobile game.",
+      "ad": {
+        "name": "汽水音乐 - 随时听好歌",
+        "developer": "Beijing Douyin Technology Co., Ltd."
+      },
+      "rating": "Bad",
+      "comment": "The query \"香 肠 派 对\" indicates an intent to play a specific battle royale mobile game. The ad \"汽水音乐\" is a music and audio streaming application. Since a mobile action game and a music streaming utility operate in completely different categories and address entirely unrelated user needs, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689643450",
+      "query": "三 麗 鷗",
+      "query_intent": "User is searching for apps related to 'Sanrio' (三丽鸥), such as Hello Kitty themed games, wallpapers, or official merchandise stores.",
+      "ad": {
+        "name": "rednote",
+        "developer": "Xingin"
+      },
+      "rating": "Acceptable",
+      "comment": "The query \"三 麗 鷗\" indicates a broad intent to find Sanrio-related content, merchandise, or games. The ad \"rednote\" (Xiaohongshu international) is a comprehensive lifestyle sharing and discovery platform that hosts a massive amount of Sanrio community content, merchandise reviews, and wallpapers. While it is not a dedicated Sanrio app, it provides highly relevant user-generated content for fans, offering a valid topical association. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689643451",
+      "query": "欧 洲 卡 车 模 拟 器",
+      "query_intent": "User is searching for 'Euro Truck Simulator', a vehicle driving and simulation video game.",
+      "ad": {
+        "name": "驾照考试题库 - 考驾照新规理论题",
+        "developer": "飞跃 戴"
+      },
+      "rating": "Bad",
+      "comment": "The query \"欧 洲 卡 车 模 拟 器\" indicates an intent to play a driving simulation and entertainment game. The ad \"驾照考试题库\" is a formal educational utility for studying for real-life driver's license theoretical exams. Because a vehicle simulation video game and an exam preparation study tool serve completely different primary intents (entertainment vs formal education) and target different needs, they are unrelated. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689643452",
+      "query": "音 乐",
+      "query_intent": "User is performing a broad search for music applications, such as music streaming services or audio players.",
+      "ad": {
+        "name": "音集",
+        "developer": "Xi'an Yunyi Spatiotemporal Network Technology Co., Ltd"
+      },
+      "rating": "Bad",
+      "comment": "The query \"音 乐\" indicates an intent to find an app for streaming and listening to music media. The ad \"音集\" is an online voice dating and social networking platform (connecting people via voice chatting). Since a media streaming utility and a social dating application operate in entirely different domains and serve different user intents, there is no relevance. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689643453",
+      "query": "酷 狗 音 乐",
+      "query_intent": "User is searching for '酷狗音乐' (Kugou Music), a major music streaming application.",
+      "ad": {
+        "name": "得物 - 得到美好事物",
+        "developer": "Shanghai Dewu Information Group Co., Ltd."
+      },
+      "rating": "Bad",
+      "comment": "The query \"酷 狗 音 乐\" indicates an intent to find a specific music streaming and audio playback application. The ad \"得物\" (Dewu) is a trendy lifestyle e-commerce and sneaker shopping platform. Since a music streaming utility and a retail shopping platform operate in completely different categories and address entirely unrelated user needs, there is no logical connection between them. Rated Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T12:59:47",
+    "post_submit_status": "No errors visible"
+  }
+}

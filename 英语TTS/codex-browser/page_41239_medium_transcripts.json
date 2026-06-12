@@ -1,0 +1,110 @@
+[
+  {
+    "index": 0,
+    "filename": "20260127_00004314_zqbl_421_0.wav",
+    "expected_text": "大家好我是老k 今天的话来聊一聊这种ic 平底球鞋所适合的一些场地。",
+    "medium_text": "大家好,我是老K今天的话来聊一聊这种IC平底球鞋所适合的一些场地",
+    "ratio": 0.9688,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 1,
+    "filename": "20260127_00004314_zqbl_421_1.wav",
+    "expected_text": "那么一般来说呀i c 使用的场地一定得是要这种平坦的，国际上呢一般是用一些塑胶还有一些木板。",
+    "medium_text": "那么一般来说 IC 使用的场地一定是需要这种平台的国际上一般是用一些塑胶 还有一些木板",
+    "ratio": 0.9048,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 2,
+    "filename": "20260127_00004314_zqbl_421_8.wav",
+    "expected_text": "那就是这样的场地啊它一般呢？",
+    "medium_text": "那就是这样的场地啊 它一般呢",
+    "ratio": 0.963,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 3,
+    "filename": "20260127_00004314_zqbl_421_15.wav",
+    "expected_text": "今天的内容对您有帮助吗？",
+    "medium_text": "今天的内容对您有帮助吗?",
+    "ratio": 1.0,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 4,
+    "filename": "20260127_00004314_zqbl_421_14.wav",
+    "expected_text": "如果呢你还不知道什么是球鞋的一个缓震材料呢就请赶紧关注我们的骚客go 茫茫多的这个球鞋测评呀还有一些选装备的小知识啊小技巧都在我们的平台可以找到。",
+    "medium_text": "如果你还不知道什么是球鞋的一个缓震材料呢就请赶紧关注我们的骚客购茫茫多的这个球鞋测评呀还有一些选装备的小知识小技巧都在我们的平台可以找到",
+    "ratio": 0.9571,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 5,
+    "filename": "20260127_00004314_zqbl_421_12.wav",
+    "expected_text": "这个球鞋里面带有比较好的这种缓震的材料。",
+    "medium_text": "这个球鞋里面带有比较好的这种火镇的材料",
+    "ratio": 0.8718,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 6,
+    "filename": "20260127_00004314_zqbl_421_10.wav",
+    "expected_text": "但是如果你踢的是水泥场地呢，就肯定是完全没有缓震了。",
+    "medium_text": "但是如果你踢的是水泥场地呢就肯定是完全没有缓震了",
+    "ratio": 0.96,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 7,
+    "filename": "20260127_00004314_zqbl_421_13.wav",
+    "expected_text": "这一点呢大家在购买球鞋的时候一定要注意。",
+    "medium_text": "这一点大家在购买球鞋的时候一定要注意",
+    "ratio": 0.9474,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 8,
+    "filename": "20260127_00004314_zqbl_421_11.wav",
+    "expected_text": "所以啊针对这种缓震性能特别差的场地呢，我们就一定要选择的。",
+    "medium_text": "所以针对这种缓震性的特别差的场地我们就一定要选择的",
+    "ratio": 0.8889,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 9,
+    "filename": "20260127_00004314_zqbl_421_9.wav",
+    "expected_text": "都比较的硬塑胶的场地呢可能还会有一点点的所谓的缓震功能。",
+    "medium_text": "都比较的硬 塑胶的场地可能还会有一点点缓震功能",
+    "ratio": 0.88,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 10,
+    "filename": "20260127_00004314_zqbl_421_4.wav",
+    "expected_text": "比较常见的呢是一些这种水泥的场地，还有一些就是那种沥青和煤渣。",
+    "medium_text": "比较常见的是一些这种水泥的场地 还有一些就是那种沥青和煤渣",
+    "ratio": 0.9492,
+    "language": "zh",
+    "language_probability": 1
+  },
+  {
+    "index": 11,
+    "filename": "20260127_00004314_zqbl_421_3.wav",
+    "expected_text": "但是呢在我们实际生活当中可能不会有这么好的条件。",
+    "medium_text": "但是呢 在我们实际生活当中 可能不会有这么好的条件",
+    "ratio": 0.9787,
+    "language": "zh",
+    "language_probability": 1
+  }
+]

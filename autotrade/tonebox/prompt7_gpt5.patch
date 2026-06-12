@@ -1,0 +1,93 @@
+diff --git a/recital_hall/recital_bookings.py b/recital_hall/recital_bookings.py
+index a902743..140a964 100644
+--- a/recital_hall/recital_bookings.py
++++ b/recital_hall/recital_bookings.py
+@@ -1,7 +1,7 @@
+ from __future__ import annotations
+ 
++import datetime
+ from typing import List, Optional
+-from datetime import datetime
+ 
+ from fastapi import APIRouter, Depends, HTTPException, status
+ from pydantic import BaseModel
+@@ -26,7 +26,7 @@ class RecitalBookingResponse(BaseModel):
+     booking_type: str
+     status: str
+     notes: Optional[str]
+-    created_at: Optional[datetime]
++    created_at: Optional[datetime.datetime]
+ 
+     model_config = {"from_attributes": True}
+ 
+@@ -44,6 +44,8 @@ async def book_recital_seat(
+         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Recital not found")
+     if recital.status == "cancelled":
+         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Recital is cancelled")
++    if recital.registration_deadline and datetime.date.today() > recital.registration_deadline:
++        raise HTTPException(status_code=400, detail="Registration deadline has passed")
+     booking = Booking(
+         user_id=payload.user_id,
+         booking_type="recital",
+diff --git a/tests/test_prompt7.py b/tests/test_prompt7.py
+new file mode 100644
+index 0000000..3c88417
+--- /dev/null
++++ b/tests/test_prompt7.py
+@@ -0,0 +1,56 @@
++from __future__ import annotations
++
++import datetime
++
++from httpx import AsyncClient
++
++from tests.conftest import api_key_header, register_user
++
++
++async def make_staff(client: AsyncClient, username: str) -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "staff")
++
++
++async def make_recital(
++    client: AsyncClient,
++    api_key: str,
++    organizer_id: str,
++    registration_deadline: datetime.date | None = None,
++) -> dict:
++    resp = await client.post(
++        "/recitals",
++        json={
++            "title": "Spring Gala",
++            "event_date": (datetime.date.today() + datetime.timedelta(days=30)).isoformat(),
++            "venue": "Main Hall",
++            "organizer_id": organizer_id,
++            "performers": [],
++            "status": "confirmed",
++            "registration_deadline": registration_deadline.isoformat() if registration_deadline else None,
++            "admission_fee": 20.0,
++            "notes": None,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def test_book_recital_seat_rejects_when_registration_deadline_has_passed(client: AsyncClient):
++    staff = await make_staff(client, "recital_staff_1")
++    student = await register_user(client, "recital_student_1", "recital_student_1@test.com", "pass", "student")
++    recital = await make_recital(
++        client,
++        staff["api_key"],
++        staff["id"],
++        registration_deadline=datetime.date.today() - datetime.timedelta(days=1),
++    )
++
++    resp = await client.post(
++        f"/recitals/{recital['id']}/seats",
++        json={"user_id": student["id"], "notes": "Front row if possible"},
++        headers=api_key_header(student["api_key"]),
++    )
++
++    assert resp.status_code == 400
++    assert resp.json()["detail"] == "Registration deadline has passed"

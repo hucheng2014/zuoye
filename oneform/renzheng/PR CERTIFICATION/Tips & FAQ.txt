@@ -1,0 +1,95 @@
+--- Page 1 ---
+ 
+1 
+ 
+Disclaimer for all Participants 
+ 
+Zero Tolerance for Breaches. As part of Centific, you are trusted with sensitive customer 
+information. Any violation of confidentiality will result in severe consequences, including 
+legal action. 
+ 
+ABSOLUTE DON’TS (STRICTLY PROHIBITED) 
+NO Screen Recording or Screenshots – Capturing training 
+material in any form is forbidden 
+ 
+NO Sharing on Public Platforms or Social 
+NO Discussing Confidential Information with Anyone 
+NO Modifying or Reproducing Training Content 
+ 
+Centific InfoSec Internal 
+DO’S 
+Understand & Follow NDA Instructions – You are 
+legally bound by the NDA; ensure full compliance at 
+all times 
+Follow Centific’s Security Policies 
+Access Training Only on Secure Networks 
+Use Only Approved & Secure Devices
+--- Page 2 ---
+ 
+2 
+ 
+ 
+General:    
+ Always remember that each dimension is evaluated individually. Do not let your judgment be influenced by the rating from 
+another dimension    
+ Focus on each answer individually in order to rate the based on the dimension requirements. If they meet the requi rements 
+do not downgrade one answer just because you prefer how the other one looks. Focus on the key points and the user 
+prompt (what is the main ask, are there any specific instructions such as length, list, etc.).    
+ Do not rush the cert, particularly the tasks that require more reading, fact -checking.    
+ Do not be subjective or strict in your evaluations for the dimensions. Use the guideline descriptions and examples as 
+reference points during your evaluation.    
+    
+Instruction following:    
+ Look for the specific requirements like length (word count, no. of sentence of paragraphs, list or bullet points, bold or 
+highlights, etc.). Verify if the answers adhere to these explicit instructions. 200 words requested but 500 provided is not 
+following. One sentence request but multiple sentences provided would be partially following. Refer to the examples in the 
+guides.    
+ Most instructions are explicit but keep on the lookout for potential implicit instructions (eg. “provide details”, “how to make XY 
+dish” – likely looking for ingredients and steps).    
+ For math, pay attention to everything being asked and the format in which it should be presented.    
+    
+ 
+ 
+--- Page 3 ---
+ 
+3 
+ 
+ 
+Truthfulness:    
+ When evaluating something based on the input text provided (like a summary or extraction request), check the 
+groundedness of the response against the input text. eg. if the article says orcas live 10 years but the response lists that they 
+live 15-20 years, this is not grounded and therefore not accurate information.    
+ When evaluating open questions and answers (eg. history of police report, mandarin lang), make sure to fact -check the 
+key/important pieces of information to make sure they ’re truthful.    
+ When the primary information of the ask is wrong, fail the dimension. When the primary info is correct, but the secondary info 
+is wrong, mark it as partially. Eg. Who won the world cup 2022?    
+ Resp A: The 2022 world cup was won by Argentina. The final match was played on December 08, 2022. (primary ask “who 
+won” is correct; secondary info, not asked, is wrong).    
+ For prompts that don’t have fact checking or groundedness from the input text, you evaluate it based on the details given by 
+the prompt (eg. creative writing or non-fiction content, like coming up with slogans for something).    
+    
+Concision:    
+ It can be related to instruction following in the sense that explicit length instructions might be provided in the prompt (eg . 
+number of words, sentences, p aragraphs, etc.). Based on these instructions you have to evaluate if it ’s concise or not. 
+Excessively longer/shorter responses than requested would be bad. Slightly longer/shorter, would be acceptable.    
+ Make sure there are no distractions in the text. B ut note that these are in reference to unrelated content to the main topic OR 
+excessive information that does not directly address the user query.    
+ 
+ 
+    
+--- Page 4 ---
+ 
+4 
+ 
+Satisfaction:    
+ When evaluating satisfaction follow this table (below) from the guidelines as a bas is for your evaluation.    
+ Any time an individual response is downgraded, even if partially, it cannot be considered highly satisfying.    
+ For side-by-side satisfaction, a 1-level satisfaction difference between the individual responses cannot lead to a 3 -level gap 
+in the side-by-side evaluation. If respA is highly satisfying and respB is slightly satisfying, A cannot be much better than B.    
+ If both responses are highly unsatisfying, they would rank “same” side-by-side. But if they’re both slightly 
+unsatisfying/satisfying or highly satisfying, you can evaluate them as either “same” or upgrade by one level the one that you 
+feel might be better overall (i.e. rate is as slightly better than the other).     
+ The responses cannot be multiple levels apart if they have the same individual satisfaction rating (eg. both response are 
+slightly satisfying but you marked A and better/much better than B).    
+ 
+  

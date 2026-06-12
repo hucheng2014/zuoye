@@ -1,0 +1,1438 @@
+Proofread Feedback May 22 '26
+Objective:
+•Understand error trends across dimensions
+•Identify root causes driving annotation mistakes
+•Define action plan for calibration and quality improvement
+
+Error Breakdown
+Completeness and Correctness are the main contributors to the error trend issues, followed by pairwise
+comparison, which is a result of mistakes being made in the individual dimensions. For Chinese, Korean,
+Japanese and Vietnamese, Edit Necessity (equivalent to Correctness) and actual Errors found and corrected
+(equivalent to Completeness) have the highest amount of issues found.
+1. Completeness
+Many graders seem to miss mistakes that weren’t caught by the model, rating responses one level above
+where they should be rated (ie complete instead of nearly complete, or nearly complete instead of partial).
+2. Edit Necessity & Correctness
+There is a lot of inconsistency when annotating correctness. This applies to both incorrectly up-grading
+(marking all when only some are necessary, or mixed when none are) and down-grading (marking none
+when some are necessary, or mixed when all of them are).
+3. Pairwise Comparison
+Similar issue as in correctness, there is a lot of inconsistency. There are many cases of ranking two
+responses equally when one is slightly better, but also cases of ranking one response better than another
+even though they are of equal quality.
+4. Q1 text grammatically correct
+A minor issue in terms of frequency, but there are cases where graders marked the text as containing no
+errors when some errors are present.
+5. Q2 Assistant make changes to the input
+Occasionally, some annotators mark input and response as being different despite being identical.
+6. Formality
+In Korean and Japanese locales, there are a few instances of a formal text being marked as informal.
+
+Centific Confidential
+
+Root Cause Analysis
+•Very inconsistent understanding of graded/tiered answers. Graders have issues adjudicating what
+“level” to evaluate the response for completeness, correctness, and pairwise comparison.
+•Graders easily overlook changes in the response when they are minor, such as changes in spacing,
+punctuation, or capitalization.
+•Lack of understanding of the distinction between formal/semi-formal and informal leads graders to
+often over-penalize edit necessity in informal texts.
+Action Plan
+•Completeness: read input text attentively before checking the responses. Don’t assume the
+response has caught all mistakes.
+•Correctness: make sure whether the edits in the response match their formality level.
+•Pairwise comparison: compare the two responses closely; make sure you take the grading for the
+completeness and correctness dimensions into account.
+•Q1 text grammatically correct: read the input text closely and take into account the formality level.
+•Q2 assistant make changes to input: pay special attention to things like changes in spacing and
+punctuation, as these are easily overlooked.
+Severity Calibration
+Completeness
+•Complete: the response edits all errors (that require changing, in accordance to formality and
+minimal edit principle).
+•Nearly complete: misses less than 20% of errors (misses 1 error out of every 6/7/8+ present).
+•Partial: misses 20% or more of errors (misses 1 error out of every 3/4/5).
+•Incomplete: misses most or all errors (misses half the errors or more).
+Correctness
+•Yes, all edits are necessary: all of the edits in the response are necessary according to formality
+level and minimal edit principle.
+•Mixed: some of the edits are unnecessary (even if it’s just one).
+•No, all edits are unnecessary: none of the edits are necessary.
+Calibration note: formality can determine whether an edit is necessary or not. In informal inputs, errors in
+punctuation, capitalization, and spacing are acceptable.
+Pairwise comparison
+•About the same: the grading for both dimensions is the same for each response. The responses
+don’t need to be identical!
+•Slightly better: the grading for both dimensions is close; one response has a slightly better grade in
+one of the dimensions.
+•Much better: the grading for one response is much better than the grading of the other.
+Calibration note: use the final grading as a guide for comparison. Two responses that are different will often
+still be equally acceptable if they’re of the same quality.
+
+Centific Confidential
+
+Q1 text grammatically correct
+•No errors: the text contains no errors, according to its formality level.
+•Yes, the input contains errors: the text contains one or more errors, according to its formality level.
+Calibration note: as noted in correctness, pay close attention to whether the text is informal or not.
+Informal texts don’t require changes to punctuation, capitalization, etc. if they don’t alter the meaning.
+Q2 assistant make changes to input
+•Yes, the response is different: the response made changes to the input, including spacing,
+capitalization, and punctuation.
+•No, the response is identical: the response made no changes whatsoever to the input.
+
+EXAMPLES
+
+da_DK ................................................................................................................................................... 4
+de_DE ................................................................................................................................................... 4
+en_GB ................................................................................................................................................... 5
+fr_FR ..................................................................................................................................................... 6
+it_IT ...................................................................................................................................................... 7
+nb_NO .................................................................................................................................................. 7
+tr_TR ..................................................................................................................................................... 8
+en_IN .................................................................................................................................................... 9
+nl_NL .................................................................................................................................................. 10
+pt_PT .................................................................................................................................................. 11
+sv_SE................................................................................................................................................... 12
+ja_JP ................................................................................................................................................... 13
+ko_KR.................................................................................................................................................. 14
+vi_VN .................................................................................................................................................. 16
+zh_CN ................................................................................................................................................. 16
+zh_HK ................................................................................................................................................. 17
+zh_TW ................................................................................................................................................ 18
+
+Centific Confidential
+
+Locale
+
+Input
+
+da_DK
+
+Kære Jesper, Dit abonnement på
+Kære Jesper, Dit abonnement på
+Completeness:
+'videnskab nu' og sin digitale udgave
+'videnskab nu' og sin digitale udgave
+The response
+udløber den 31-05-2024. Jeg skriver for at udløber den 31-05-2024. Jeg skriver for at corrects some of
+spørge, om du ønskker at forny for et år spørge, om du ønsker at forny for et år
+the mistakes, but
+mere? Du kan få 15% rabat ved at svare mere? Du kan få 15 % rabat ved at svare not all of them
+på denne mail inden ugens udgan. Med på denne mail inden ugens udgang. Med (mark as “Nearly
+venlig hilsen- Sofie og sin afdeling
+venlig hilsen Sofie og sin afdeling
+complete”).
+
+da_DK
+
+Hej alle i IT, vi i festudvalget har en lille
+henvendelse angående sommerfesten d.
+15.06.Ville I have mulighed for at hjælpe
+os med at sætte projektor og højttalere
+frem? Vi kvitterer selvfølgelig med "kolde
+drikkevarer" i baren!
+
+Hej alle i IT, vi i festudvalget har en lille
+henvendelse angående sommerfesten d. Correctness:
+15.06. Ville I have mulighed for at hjælpe Only some edits
+os med at sætte projektor og højttalere are necessary
+frem? Vi kvitterer selvfølgelig med „kolde (“Mixed”).
+drikkevarer“ i baren!
+
+da_DK
+
+Kære Hr. Jensen, her er adressen til
+lageret på Industrivej 14, 4000 Roskilde.
+For at slå to fluer med et smæk får du
+også jeres referencekode: ORDRE-ID:
+74B3-91. Mvh Martin
+
+Kære Hr. Jensen, her er adressen til
+lageret på Industrivej 14, 4000 Roskilde.
+For at slå to fluer med et smæk får du
+også jeres referencekode: ORDRE-ID:
+74B3-91. Mvh Martin
+
+de_DE
+
+Completeness:
+The response
+Hallo Sabine, danke für die Unterlagen.
+Hallo Sabine, danke für die Unterlagen.
+misses one of the
+Ich schaue sie mir Vor unserem Termin am Ich schaue sie mir vor unserem Termin am
+two errors (so,
+25.05. an, Viele Grüße, Anja
+25.05. an, Viele Grüße, Anja
+half). Mark as
+“Partial”.
+
+de_DE
+
+Also bei meiner F+ und mir ist das ganz
+Also bei meiner F+ und mir ist das ganz
+unkompliziert. Wir sehen uns so 1-2 Mal unkompliziert. Wir sehen uns so 1–2 Mal Correctness:
+die Woche, je nachdem wie es passt.
+die Woche, je nachdem, wie es passt.
+Not all of the
+Mehr muss auch nicht sein, da kocht ja
+Mehr muss auch nicht sein, da kocht ja
+edits are
+jeder sein eigenes Süppchen. Wir treffen jeder sein eigenes Süppchen. Wir treffen necessary
+uns meistens bei mir in der Schillerstraße, uns meistens bei mir in der Schillerstraße, (“Mixed”).
+ist am einfachsten.
+ist am einfachsten.
+
+de_DE
+
+Response B:
+Sehr geehrter Herr Richter, hiermit
+Sehr geehrter Herr Richter, hiermit
+möchte ich Sie darüber informieren, dass
+möchte ich Sie darüber informieren, dass
+die Generalüberholung Ihrer
+die Generalüberholung Ihrer
+Automatikuhr's erfolgreich abgeschlosen
+Pairwise
+Automatikuhr erfolgreich abgeschlossen
+wurde. Sie liegt seid dem 15.10.2023 zur
+Comparison:
+wurde. Sie liegt seit dem 15.10.2023 zur
+Abholung bei uns bereit. Die Kosten für
+Response C is
+Abholung bei uns bereit. Die Kosten für
+die Reparatur belaufen sich auf Exakt
+slightly better
+die Reparatur belaufen sich auf exakt
+125,50 € Es war mir eine Freude, dieses
+than response B.
+125,50 € Es war mir eine Freude, dieses
+Schöne Stük das Sie besitzen für Sie zu
+schöne Stück, das Sie besitzen, für Sie zu
+warten. Wir freuen uns auf Ihren baldigen
+warten. Wir freuen uns auf Ihren baldigen
+Besuch in unserer Werkstatt.
+Besuch in unserer Werkstatt.
+
+Centific Confidential
+
+Response
+
+Comment
+
+Q2 Assistant
+make changes to
+the input:
+The response is
+identical to the
+input.
+
+Response C:
+Sehr geehrter Herr Richter, hiermit
+möchte ich Sie darüber informieren, dass
+die Generalüberholung Ihrer
+Automatikuhr erfolgreich abgeschlossen
+wurde. Sie liegt seit dem 15.10.2023 zur
+Abholung bei uns bereit. Die Kosten für
+die Reparatur belaufen sich auf exakt
+125,50 €. Es war mir eine Freude, dieses
+schöne Stück, das Sie besitzen, für Sie zu
+warten. Wir freuen uns auf Ihren baldigen
+Besuch in unserer Werkstatt.
+
+en_GB
+
+Completeness:
+The response
+corrects some of
+the mistakes, but
+Finally watched that new Sally
+Finally watched that new Sally Wainwright not all of them:
+Wainwrights series and blimey, their
+series and blimey, it’s 'brilliant'—that final the verb
+'brilliant'—that final twist has had my
+twist has had my head in a "proper" spin “license”
+head in a "proper" spin allmorning, you'd all morning. You’d need a special licence should’ve been
+need a special license to get away with
+to get away with that. I wouldn't licence corrected, as
+that, I wouldn't licence it.
+it.
+“licence” only
+refers to the
+noun. Mark as
+“Nearly
+complete”.
+
+en_GB
+
+Just a few thoughts for anyone
+considering the Pro line: 1. I've had the
+Pro 1 for about 2 years now and its been
+absolutely fantastic, still works perfectly.
+2. I haven't tried the Pro 2 myself, but if
+it's anything like the first one then it's
+gotta be quality lol. Highly recommend!
+Check it out here if you're
+interested: www.techgadgetsuk.co.uk/pro2
+
+en_GB
+
+Just a few thoughts for anyone
+considering the Pro line: 1. I've had the
+Pro 1 for about two years now, and it’s
+been absolutely fantastic, still works
+perfectly. 2. I haven't tried the Pro 2
+myself, but if it's anything like the first
+one, then it's gotta be quality lol. Highly
+recommend!
+Check it out here if
+you're interested: www.techgadgetsuk.co.uk/pro2
+
+John said the brand is `XyZ_v2` but thats from 12/03/2022
+
+Centific Confidential
+
+Correctness:
+Some of the
+changes are
+unnecessary:
+numbers written
+in digits should
+not be written
+out.
+
+Q1 text
+gramatically
+correct:
+The text contains
+errors.
+
+fr_FR
+
+J'ai découvrir le nouveau portail de
+J'ai découvert le nouveau portail de
+données ouvertes du Réseau de transport données ouvertes du Réseau de transport
+local. C'est une excellente nouvelle,
+local. C'est une excellente nouvelle,
+notamment, pour l'accès aux données
+notamment pour l'accès aux données GPS
+GPS des bus en temps réel, une vraie
+des bus en temps réel, une vraie mine
+Completeness:
+mine d'or pour les développeurs. Par
+d'or pour les développeurs. Par contre, je The response
+contre, je constate un délai constant dans constate un délai constant dans les 45
+missed 2 of the
+les 45 decondes, ce qui est un peu
+décondes, ce qui est un peu paradoxal,
+errors in the text.
+paradoxal, pour du 'temps réel'. Les
+pour du 'temps réel'. Les plateformes
+Mark as “partial”.
+plateformes d'autres villes comme Lyon d'autres villes comme Lyon, Marseille ou
+Marseille ou Paris ont-elles une meilleure Paris ont-elles une meilleure réactivité ou
+réactivité ou est-ce une contrainte
+est-ce une contrainte technique
+technique générale ?
+générale ?
+
+fr_FR
+
+J'ai découvrir le nouveau portail de
+J'ai découvert le nouveau portail de
+données ouvertes du Réseau de transport données ouvertes du Réseau de transport
+local. C'est une excellente nouvelle,
+local. C'est une excellente nouvelle,
+notamment, pour l'accès aux données
+notamment pour l'accès aux données GPS
+Correctness:
+GPS des bus en temps réel, une vraie
+des bus en temps réel, une vraie mine
+The response
+mine d'or pour les développeurs. Par
+d'or pour les développeurs. Par contre, je
+contains an
+contre, je constate un délai constant dans constate un délai constant dans les 45
+unnecessary
+les 45 decondes, ce qui est un peu
+décondes, ce qui est un peu paradoxal,
+subjective
+paradoxal, pour du 'temps réel'. Les
+pour du 'temps réel'. Les plateformes
+stylistic change.
+plateformes d'autres villes comme Lyon d'autres villes comme Lyon, Marseille ou
+Marseille ou Paris ont-elles une meilleure Paris ont-elles une meilleure réactivité ou
+réactivité ou est-ce une contrainte
+est-ce une contrainte technique
+technique générale ?
+générale ?
+
+fr_FR
+
+Response A:
+Nous vous assurons que la réussite de
+l'ensemble de nos projets ne dépend pas
+que du budget alloué, mais surtout de la
+Pairwise
+cohésion de nos équipes qui partagent
+Comparison:
+une vision commune, c’est là que se situe
+Response C is
+notre véritable force.
+slightly better
+than Response A
+Response C:
+as it avoids
+Nous vous assurons que la réussite de
+unnecessary
+l'ensemble de nos projets ne dépend pas
+edits.
+que des budgets alloués, mais surtout de
+la cohésion de nos équipes qui partagent
+une vision commune, c'est là que siège
+notre véritable force.
+
+Nous vous assurons que la reussite de
+l'ensembl…
+
+Centific Confidential
+
+it_IT
+
+Ciao a tutti, dico la mia. È una cosa che
+Ciao a tutti, dico la mia. È una cosa che
+Completeness:
+succedono a tanti secondo me. Anche io succede a tanti secondo me. Anche io,
+The response
+quando ero più giovane ho provato a
+quando ero più giovane, ho provato a
+should be
+cambiare per farmi accettare da un
+cambiare per farmi accettare da un
+marked as Partial
+gruppo. Ho iniziato a usare le loro parole, gruppo. Ho iniziato a usare le loro parole,
+for Completeness
+a seguire i loro interessi... ma non ero io. a seguire i loro interessi... ma non ero io.
+because it fails to
+Comunque alla fine ho capito che non ne Comunque alla fine ho capito che non ne
+correct the
+vale la pena. L'amicizia vera è un'alta
+vale la pena. L'amicizia vera è un'alta
+incorrect form
+cosa. Se volete parlarne il mio numero è cosa. Se volete parlarne, il mio numero è
+"un'alta cosa"
+333 1234567. L'importante è trovare
+333 1234567. L'importante è trovare
+to"un'altra cosa,"
+persone che te apprezzino per come sei. persone che ti apprezzino per come sei.
+
+it_IT
+
+Correctness:
+Ciao Marco, tieni presente che il percorso Ciao Marco, tieni presente che il percorso Only some edits
+calcolato si interrompe in prossimità della calcolato si interrompe in prossimità della are necessary as
+meta, da circa 50 metri dal punto esatto. meta, a circa 50 metri dal punto esatto. Se it unnecessarily
+Se l amico tuo si perde, o è in difficoltà,
+l'amico tuo si perde o è in difficoltà, digli changes
+digli di chiamarmi al 333 123 4567. Anche di chiamarmi al 333 123 4567. Anche altri punctuation and
+altri amici anno avuto problemi, ma non amici hanno avuto problemi, ma non so wording like “a
+so qual'è il problema. Qual è la cosa che qual è il problema. Qual è la cosa che non circa” and
+non ho chiara?
+ho chiara?
+removes
+commas.
+
+Godt å høre. Begge deler, aktuelt. Denne
+eksamenslesingen tar knekken på meg.
+Jeg drikker kaffe som en helt, det er min
+nb_NO siste «last». Men jeg er klar for å roe ned
+når dette er endelig over. Blir gal av å
+være så avhengig. Nå jeg føler meg helt
+kjørt.
+
+Godt å høre. Begge deler, aktuelt. Denne
+eksamenslesingen tar knekken på meg.
+Jeg drikker kaffe som en helt, det er min
+siste «last». Men jeg er klar for å roe ned
+når dette er endelig over. Blir gal av å
+være så avhengig. Nå føler jeg meg helt
+kjørt.
+
+Completeness:
+The response
+misses one error
+from the input
+text.
+
+God natt kjære. Håper du får sove godt. God natt, kjære. Håper du får sove godt.
+Correctness:
+Fant forresten en link jeg tror du vil like, ta Fant forresten en lenke jeg tror du vil like,
+Unnecessary
+en titt på den før du sovner
+ta en titt på den før du sovner
+nb_NO
+change of word
+www.nrk.no/kultur/en-ny-artikkel. Jeg
+www.nrk.no/kultur/en-ny-artikkel. Jeg
+"en link" to "en
+elsker deg! Ring meg på 99887766 hvis du elsker deg! Ring meg på 99887766 hvis du
+lenke".
+våkner før meg i morgen. Natti natt.
+våkner før meg i morgen. Natti natt.
+Response A:
+Godt å høre. Begge deler, aktuelt. Denne
+eksamenslesingen tar knekken på meg.
+Jeg drikker kaffe som en helt, det er min
+Godt å høre. Begge deler, aktuelt. Denne
+siste «last». Men jeg er klar for å roe ned
+eksamenslesingen tar knekken på meg.
+når dette endelig er over. Blir gal av å
+Jeg drikker kaffe som en helt, det er min
+være så avhengig. Nå føler jeg meg helt
+nb_NO siste «last». Men jeg er klar for å roe ned
+kjørt.
+når dette er endelig over. Blir gal av å
+være så avhengig. Nå jeg føler meg helt
+Response C:
+kjørt.
+Godt å høre. Begge deler, aktuelt. Denne
+eksamenslesingen tar knekken på meg.
+Jeg drikker kaffe som en helt, det er min
+siste «last». Men jeg er klar for å roe ned
+
+Centific Confidential
+
+Pairwise
+Comparison:
+Response A is
+better than
+Response C due
+to better error
+correction.
+
+når dette er endelig over. Blir gal av å
+være så avhengig. Nå føler jeg meg helt
+kjørt.
+For og kunne gi deg en personlig musikk opplevelse og sende relevante varsler,
+Q1 text
+samler vi i MusikkStream inn data om din aktivitet. Dette inkluderer hvilke sanger du
+gramatically
+spiller og varigeten av avspillingene. Disse dataene brukes også for å kompensere
+nb_NO
+correct:
+våre 150+ partnere. For spørsmål angående vår personvernerklæring (punkt 4.2B),
+There are minor
+kan du kontakte oss på telefon 22 33 44 55 eller per post til MusikkStream Norge AS,
+errors present.
+Storgata 5, 0155 Oslo.
+
+tr_TR
+
+tr_TR
+
+tr_TR
+
+Canım, o tatliciya gideceksen biraz sıra
+beklemeyide göze almalısın çünkü bu
+aralar aşırı popüleroldu bilyosun.
+
+Harcama reddiniz için fişiniz var mı??
+Revizyon için 15.08.2023 tarihinde ki
+550,00 ₺'lik işlem Fişi gereklli.
+
+Canım, o tatlıcıya gideceksen biraz sıra
+beklemeyi de göze almalısın çünkü bu
+aralar aşırı popüler oldu bilyosun.
+
+Harcama reddiniz için fişiniz var mı?
+Revizyon için 15.08.2023 tarihli 550,00
+₺'lik işlem fişi gerekiyor.
+
+Sayın Korkmaz, son çeyrekte (3 ay) sergilemiş olduğunuz metanetin, yani dışarıya
+yansıttığınız pozitifliğin ardında yatan ve kimse tarafından bilinmeyen sorunlarla tek
+başınıza mücadele ettiğinizin farkındalığıyla, bu durumu takdirle karşıladığımızı
+belirtmek isteriz. Gerekli durumlarda başvurabileceğiniz kaynaklar: 1.
+`HR.support_ticket('urgent')` 2. ik@sirket.net
+
+Centific Confidential
+
+Completeness:
+The response is
+Nearly complete
+as it didn't
+correct
+"bilyosun" to
+"biliyorsun".
+Correctness:
+Response made
+wrong
+corrections:
+"mı??" changed
+to"mı?" which is
+wrong, "tarihinde
+ki" should be
+"tarihindeki" not
+"tarihli",
+"Fişigereklli"
+should be
+"Fişigerekli".
+Q1 text
+gramatically
+correct:
+The text contains
+no errors.
+
+en_IN
+
+I think our team are able to use the legacy I think our team is able to use the legacy
+database wrapper starting on tomorrow, database wrapper starting tomorrow,
+btw. IMPORTANT: the staff needs to know BTW. IMPORTANT: the staff needs to
+it will have an impact on the primary data know it will have an impact on the
+bus though.
+primary data bus though.
+
+Completeness:
+The response
+missed the
+spelling for ‘data
+bus’ as per the
+context provided
+in the input the
+word is supposed
+to be ‘database’.
+Therefore,
+itshould have
+been marked
+‘Nearly complete
+- Misses only a
+small portion
+(fewer than 20%,
+such as 1 out of
+6)’.
+
+Correctness:
+The response is
+mixed and
+contains some
+unnecessary
+edits. Changing
+‘prepone’ to
+‘postpone’ is an
+unnecessary edit
+Sameer, hoping you are doing well. Just a
+and alters the
+gentle reminder about the pending
+intended
+invoice from 15-06-2024 for ₹5,0,000.
+meaning. The
+Also, were you going through the new
+response
+proposal I shared? Kindly let me know if
+partially catches
+we can postpone the discussion to
+all errors, as it
+tomorrow, say around 11:00, to discuss
+misses issues
+the same.
+such as the
+awkward
+phrasing (‘were
+you going
+through thenew
+proposal’) and
+does not correct
+the punctuation
+in ₹5,0,000.
+
+en_IN
+
+Sameer, hoping you are doing well just a
+gentle reminder about the pending
+invoice from 15-06-2024 for ₹5,0,000.
+Also, were you going through the new
+proposal I shared? Kindly let me know if
+we can prepone the discussion to
+tomorrow, say around 11:00, to discuss
+the same
+
+en_IN
+
+Sameer - Rohan - Arre yaar! Guess what? I Sameer - Rohan - Arre yaar! Guess what? I Localization:
+somehow got two pass for the RCB match somehow got two passes for the RCB
+There is a
+this Friday, 25-10-2024. The match starts match this Friday, 25-10-2024. The match localisation error
+on 19:30. I have an extra pass just for you starts at 19:30. I have an extra pass just where '100,000'
+if you want to come. Priya and Karan are for you if you want to come. Priya and
+is in international
+also joining. Your going to love it! Please Karan are also joining. You’re going to love numbering
+confirm fast, okay? It's going to be a full it! Please confirm fast, okay? It’s going to system in the
+
+Centific Confidential
+
+house! Almost 100000 people will be
+there!
+
+be a full house! Almost 100,000 people
+will be there!
+
+nl_NL
+
+Reminder: vergeet niet om te inchecken
+online in uw verblijf bij Hotel Oranje. U
+kunt sowiso inchecken tot 21:00 uur
+alleen op de dag dat u komt aan.
+Controleer in via
+https://kort.link/pietjanssen123 Boeking
+nummer: HO-789012
+
+Reminder: vergeet niet om online in te
+checken bij uw verblijf in Hotel Oranje. U
+kunt sowieso inchecken tot 21:00 uur,
+alleen op de dag dat u aankomt.
+Controleer in via
+https://kort.link/pietjanssen123 Boeking
+nummer: HO-789012
+
+nl_NL
+
+Beste deelnemers,wat leuk dat jullie je als Beste deelnemers, wat leuk dat jullie je
+Groep hebbe aangemelt voor onze
+als groep hebben aangemeld voor onze
+Correctness:
+creatieve workshop vol ideeen op 25-10- creatieve workshop vol ideeën op 25-10Only some edits
+2024 om 14:00 uur!. jullie
+2024 om 14:00 uur! Jullie
+arenecessary.
+reserveringscode is GRP-882C.Zien we
+reserveringscode is GRP-882C. Zien we
+Jullie dan?
+jullie dan?
+
+nl_NL
+
+Response B:
+Ik ken niet meer hoeveelste dag het is.
+Dag 100 van het wachten? Dag 200? Ik
+vraag me af wanneer dit ten einde komt.
+Het voelt iig als een eeuwigheid. Iedereen
+ik ken niet meer de hoeveelste dag het is.
+zegt dat het beter wordt, maar WANNEER
+dag 100 van het wachten? dag 200? Ik
+dan. Mijn vrienden zeggen het ook, maar
+vraag me af wanneer komt dit ten einde.
+zij weten het ook niet. Ik probeer het echt
+het vоelt iig als een eeuwigheid. iedereen
+hoor, ik heb geen idee hoe lang nog: 1.
+zeggen dat het beter wordt maar
+Opstaan op tijd, rond 8.30 uur 2. Naar
+WANNEER dan. Mijn vrienden zeggen het
+buiten gaan 3. Praten tegen mensen maar
+ook, maar hun weten het ook niet. ik
+alles wat ik doe, voelt allemaal zo... nep. Pairwise
+probeer het echt hoor, ik heb niet een
+Geforceerd. Alsof ik een rol speel in een Comparison:
+idee hoe lang nog: 1- opsta op tijd, rond
+of ander kut toneelstuk. Mijn hoofd was Response C is
+8.30 uur 2. ga naar buiten toe 3. praat
+een chaos en de stilte maakt het alleen
+better than
+tegen mensen maar alles dat ik doe, voelt
+maar erger dan voorheen. Soms wil ik
+response B as it
+allemaal zo... nep. geforceerd. alsof ik een
+gewoon schreeuwen, maar er komt niks catches the
+rol doe in een of ander kut toneelstuk.
+uit. Ben gewoon moe, zo verdomd moe majority of the
+mijn hoofd was een chao's en het stilte
+van alles. Wss is dat het gewoon, dus dit errors.
+maakt het alleen maar erger als
+doormodderen en hopen dat de mist ooit
+voorheen. soms wilt ik gewoon
+optrekt. Maar ik zie nog niks :(:
+schreeuwen maar er komt niks uit. ben
+gewoon moe, zo verdomd moe van alles.
+Response C:
+wss is dat het gewoon, dus dit
+Ik weet niet meer de hoeveelste dag het
+doormodderen en hopen dat de mist ooit
+is. Dag 100 van het wachten? Dag 200? Ik
+optrekt. maar ik zie nog niks :(:
+vraag me af wanneer komt dit ten einde.
+Het voelt in ieder geval als een
+eeuwigheid. Iedereen zegt dat het beter
+wordt, maar WANNEER dan. Mijn
+vrienden zeggen het ook, maar zij weten
+
+Centific Confidential
+
+output, whereas
+'1,00,000' is in
+Indian numbering
+system and
+should have been
+introduced as the
+correct format.
+Completeness:
+The response is
+nearly complete
+as it left one
+error
+unidentified.
+
+het ook niet. Ik probeer het echt hoor, ik
+heb niet een idee hoe lang nog: 1. Sta op
+tijd op, rond 8.30 uur 2. Ga naar buiten
+toe 3. Praat tegen mensen Maar alles dat
+ik doe, voelt allemaal zo... nep.
+Geforceerd. Alsof ik een rol speel in een
+of ander kut toneelstuk. Mijn hoofd was
+een chaos en de stilte maakt het alleen
+maar erger dan voorheen. Soms wil ik
+gewoon schreeuwen, maar er komt niks
+uit. Ben gewoon moe, zo verdomd moe
+van alles. Waarschijnlijk is dat het
+gewoon, dus dit doormodderen en hopen
+dat de mist ooit optrekt. Maar ik zie nog
+niks :(:
+Q1 text
+gramatically
+correct:
+There is a
+punctuation
+error in the
+input.
+
+nl_NL
+
+Hoi Sanne, pa & ik dachten, misschien wat halen vanavond? Geen zin om te koken.
+Wat dacht je van: 1. Patat van De Smulhoek 2. Pizza. Menu van de Smulhoek is
+hier: www.desmulhoek-bestellen.nl
+
+nl_NL
+
+Hoi Sanne, pa & ik dachten, misschien wat Hoi Sanne, pa & ik dachten, misschien wat Q2 Assistant
+halen vanavond? Geen zin om te koken. halen vanavond? Geen zin om te koken. make changes to
+Wat dacht je van: 1. Patat van De
+Wat dacht je van: 1. Patat van De
+the input:
+Smulhoek 2. Pizza. Menu van de
+Smulhoek 2. Pizza. Menu van de
+Input and
+Smulhoek is hier: www.desmulhoekSmulhoek is hier: www.desmulhoekresponse are
+bestellen.nl
+bestellen.nl
+identical.
+
+pt_PT
+
+Completeness:
+A gente ficamos tão felizes por ti com essa A gente ficámos tão felizes por ti com essa
+The response
+tua nova aventura profissional, depois da tua nova aventura profissional, depois da
+misses a
+fase complicada de que safas-te-te,
+fase complicada de que safaste-te,
+significant part of
+mesmo mereces algo que dê-te tanto
+mesmo mereces algo que te dê tanto
+the errors. Mark
+Gozo. Força nisso
+Gozo. Força nisso.
+as “partial”.
+
+pt_PT
+
+Exmo. Senhor Silva, agradecemos a sua
+Exmo. Senhor Silva, agradecemos a sua
+Correctness:
+paciência. Se contactará assim que
+paciência. Contactaremos-lhe assim que
+Only some of the
+houverem novidades sobre o seu
+houver novidades sobre o seu processo.
+edits in the
+processo. Pode aguardar com
+Pode aguardar com tranquilidade. Os
+response are
+tranquilidade. Os nossos escritórios na Av. nossos escritórios na Av. da Liberdade, 15,
+necessary.
+da Liberdade, 15, estão á seu dispor.
+estão à sua disposição.
+
+pt_PT
+
+Para aprender culinária portuguesa,
+Response B:
+rapidamente te mostro os meus favoritos, Para aprender culinária portuguesa,
+Pairwise
+senão te despachas não aprendes nada. rapidamente te mostro os meus favoritos, Comparison:
+Senão houver um bom concerto para a
+senão te despachas não aprendes nada. Response C is
+panela de pressão, não dá para fazer o
+Senão houver um bom concerto para a
+better than
+cozido. As receitas foram escolhido por
+panela de pressão, não dá para fazer o
+response B:
+mim, espero que gostes.
+cozido. As receitas foram escolhidas por
+
+Centific Confidential
+
+https://www.cozinhadalurdes.pt/ - Uma mim, espero que gostes.
+sugestao da Ana Sousa. Ela disse que
+https://www.cozinhadalurdes.pt/ – Uma
+senão fosse este site, ela não cozinhava sugestão da Ana Sousa. Ela disse que
+tão bem.
+senão fosse este site, ela não cozinhava
+https://www.receitascomsabor.pt/ "A
+tão bem.
+Tradição portuguesa há sua mesa, todos https://www.receitascomsabor.pt/ «A
+os dias." Canal do
+Tradição portuguesa à sua mesa, todos os
+YouTube:https://www.youtube.com/tacho dias.» Canal do YouTube:
+setravessas "Vídeos de receitas diretas e https://www.youtube.com/tachosetraves
+deliciosas, para fazer a pressa e referente sas «Vídeos de receitas diretas e
+a tradição portuguesa."
+deliciosas, para fazer a pressa e referente
+à tradição portuguesa.»
+Response C:
+Para aprender culinária portuguesa,
+rapidamente te mostro os meus favoritos;
+senão te despachas, não aprendes nada.
+Senão houver um bom concerto para a
+panela de pressão, não dá para fazer o
+cozido. As receitas foram escolhidas por
+mim, espero que gostes.
+https://www.cozinhadalurdes.pt/ - Uma
+sugestão da Ana Sousa. Ela disse que
+senão fosse este site, ela não cozinhava
+tão bem.
+https://www.receitascomsabor.pt/ "A
+Tradição portuguesa à sua mesa, todos os
+dias." Canal do
+YouTube:https://www.youtube.com/tacho
+setravessas "Vídeos de receitas diretas e
+deliciosas, para fazer à pressa e referentes
+à tradição portuguesa."
+
+sv_SE
+
+Vi menar att vara tidigare erfarenheter
+visar,att detta inte funkar.
+
+sv_SE
+
+Du bad om en idé, så här kommer en:
+Du bad om en idé, så här kommer en:
+Beskriv vardagen för en jurrist, en kompis Beskriv vardagen för en jurist, en kompis
+till huvud personen, som försöker få ihop till huvudpersonen, som försöker få ihop
+en krävande karriär med ansvare för fyra en krävande karriär med ansvar för fyra
+barn. Fokusera på de inre och yttre
+barn. Fokusera på de inre och yttre
+konflikterna som uppstår.
+konflikterna som uppstår.
+
+sv_SE
+
+Response B:
+Pairwise
+Tja Anna! Asså du MÅSTE lyssna på nya P3 Comparison:
+Tja anna! Asså du MÅSTE Lyssna på nya P3
+Doku-avsnittet om Palmemordet, helt
+B and C are
+Doku-avsnittet om Palmemordet, helt
+sjukt bra – har du hunnit än? ;)
+about the same,
+sjukt bra har du hunnit än? ;)
+as they are nearly
+Response C:
+identical and
+
+Centific Confidential
+
+Vi menar att tidigare erfarenheter visar
+att detta inte funkar.
+
+Completeness:
+The response
+identifies all
+errors.
+Correctness:
+Most of the
+necessary edits
+are correct, but
+not All. The
+response
+Introduced a new
+error.
+
+Tja Anna! Asså du MÅSTE lyssna på nya P3 both are fully
+Doku-avsnittet om Palmemordet, helt
+correct.
+sjukt bra! Har du hunnit än? ;)
+
+sv_SE
+
+Q1 text
+gramatically
+correct:
+Helt otroligt hur man förändras. Från att tycka växter var det tråkigaste som fanns till
+The input
+att nu typ älska dem. Skrev om det på min blogg Själsljus.se för den som är nyfiken,
+contains
+helt jävla fascinerande hur intelligent naturen är.
+errorsthat hinder
+comprehension
+orreadability.
+
+ja_JP
+
+田中さん、今週のレポート読ましても 田中さん、今週のレポート読んでもら
+らったわ。ユーザーエンゲージメント ったわ。ユーザーエンゲージメントが Edit correctness:
+が30%も低下してるけどこの結果を聞 30%も低下してるけど、この結果を聞 All necessary
+いたら、クライアントもきっとお喜び いたら、クライアントもきっとお喜び edits are correct.
+になられるでしょうね。
+になられるでしょうね。
+
+ja_JP
+
+田中さん、今週のレポート読ましても 田中さん、今週のレポート、読ませて Edit necessity:
+らったわ。ユーザーエンゲージメント もらったわ。ユーザーエンゲージメン Only some of the
+が30%も低下してるけどこの結果を聞 トが30%も低下しているけど、この結 edits are
+いたら、クライアントもきっとお喜び 果を聞いたらクライアントもきっと喜 necessary. Mark
+as “mixed”.
+になられるでしょうね。
+ぶでしょうね。
+
+ja_JP
+
+田中さん、来週月曜日の券ですが、また変更ですみなせん。渋谷1ー2ー3の
+件、朝令暮改で本当に申し訳ないです。
+
+Input
+correctness:
+The input
+contains errors,
+wrong kanji "券"
+is used for"件"
+and "すみなせん
+" is a typo of "す
+みません"
+
+ja_JP
+
+Errors found and
+corrected:
+【Wi-Fi接続ができない場合】 下記の 【Wi-Fi接続ができない場合】 下記の
+The response is
+手順をお試しくだいさい。 1. スマー 手順をお試しください。 1. スマート nearly complete
+トフォンの「設定」から「Wi-Fi」を友 フォンの「設定」から「Wi-Fi」を有効 as it is missing a
+好にします。 2. ネットワーク一覧画 にします。 2. ネットワーク一覧画面 small portion of
+面で、以下のいずれかのネットワーク で、以下のいずれかのネットワーク名 the error which is
+名を探して接続してください。 ・
+を探して接続してください。 ・
+under Common
+「Camera-ABC-XXXX」 ・
+「Camera-ABC-XXXX」 ・
+grammatical mix「Photo_Share_YYYY」 3. 接続後、この 「Photo_Share_YYYY」 3. 接続後、この ups for the part
+アプリに戻り、設定を完了させてくだ アプリに戻り、設定を完了させてくだ of the "カメラ本
+さい。 ※接続にパスワードが必要な さい。 ※接続にパスワードが必要な 体の底⾯で記載
+場合、カメラ本体の底面で記載されて 場合、カメラ本体の底面で記載されて
+されている
+いる「KEY」がパスワードです。
+いる「KEY」がパスワードです。
+"should be
+corrected.
+
+Centific Confidential
+
+ja_JP
+
+Unnecessary Edit
+Description:
+私、佐藤としては、例の件が解決し 私、佐藤としては、例の件が解決し All unnecessary
+て、コンプライアンス的にOKをでな て、コンプライアンス的にOKでない edits are for
+いと、うちのﾀﾚﾝﾄの器用は正直ムズい と、うちのタレントの起用は正直ムズ minor formatting
+と考えてます。とりま、状況を見守る いと考えています。とりま、状況を見 changes, ”考えて
+ます" is correct
+感じですね。
+守る感じですね。
+for semiformal
+tone.
+
+ja_JP
+
+この新作ケーキ,追いしそう。
+
+Changes to
+input:
+The response is
+different from
+the input as the
+comma has been
+changed.
+
+ja_JP
+
+Formality:
+The task is
+会員のにな様へ。システムメンテナンンスのため 2024/11/20の2:00～4:00の written in formal
+間、サービスを一時停止してます。ご不便をおかけしますが、ご理解のほど way which is
+honorific form for
+よろしく お願いいたします。運命チーム
+notification to
+customers.
+
+ko_KR
+
+Edit correctness:
+The response
+correctly changes
+사회 발전는 어느 한쪽의 노력만으로는 사회 발전는 어느 한쪽의 노력만으로는 the misspelling of
+불가능하며, 모두의 적그적인 참여이 불가능하며, 모두의 적극적인 참여가 "적그적인" ->
+"적극적인" and
+필수적입니다.
+필수적입니다.
+grammatical
+error"참여이" →
+“참여가".
+
+ko_KR
+
+Edit necessity:
+Only some edits
+are necessary.
+because the
+제가 널 좋아하는 이유 리스트: 얼굴이 제가 널 좋아하는 이유 리스트: 얼굴이
+spacing for
+잘생기심.이건 팩트. ...는 아직 생각 중. 잘생기심.이건 팩트. ...는 아직 생각 중.
+조아하는거지 is
+이게 다아? 왜 너를 조아하는거지?
+이게 다야? 왜 너를 조아하는 거지?
+not a critical
+ㅋㅋㅋㅋ
+ㅋㅋㅋㅋ
+error given that
+the text is
+informal. Mark as
+“mixed”.
+
+ko_KR
+
+언니, 저 요즘 매일 야근이라 배달 음식만 시켜먹었더니 월급이 그냥 스쳐
+지나가시네요 진짜 눈물나여…
+
+Centific Confidential
+
+この新作ケーキ、追いしそう。
+
+Input
+correctness:
+The input text
+
+has one critical
+error
+( "지나가시네요
+"), two minor
+error
+("시켜먹었더니"
+and no period
+after
+“지나가시네요")
+.
+
+ko_KR
+
+Errors found and
+corrected:
+Misses a
+significant
+민지야, 나 어제 대박인 디저트 카페
+민지야, 나 어제 대박인 디저트 카페
+portion (20% or
+찾았어!! 여기 시그니처인 얼그레이
+찾았어!! 여기 시그니처인 얼그레이
+more, such as2
+쉬폰 케이크 먹어봤는데, 완전 내 dls생 쉬폰 케이크 먹어 봤는데, 완전 내 딸생 out of 5) because
+캐이크야. 한 조각에 9500원이라 조금 케이크야. 한 조각에 9500원이라 조금 the correction
+made for
+비싼가 했는데, 맛보면 그런 생각 싹
+비싼가 했는데, 맛보면 그런 생각 싹
+'dls생'>'딸생' is
+사라져. 분위기 도 아늑하고 사진
+사라져. 분위기도 아늑하고 사진
+incorrect, it
+찍기에도 최고야.우리가 좋아하는
+찍기에도 최고야.우리가 좋아하는
+고양이 소품도 10cm 크기로 잔뜩 있고! 고양이 소품도 10cm 크기로 잔뜩 있고! should be
+인생because 'dls'
+다음에 우리 15:00쯤 가서 같이 수다
+다음에 우리 15:00쯤 가서 같이 수다
+spells 인, the
+떨자고. 여기 2024-05-20에 새로 연
+떨자고. 여기 2024-05-20에 새로 연
+spelling for 쉬폰
+곳이래?
+곳이래?
+is also not
+corrected as it
+should be 시폰.
+Mark “partial”.
+
+ko_KR
+
+Unnecessary Edit
+Description:
+제가 널 좋아하는 이유 리스트: 얼굴이 제가 널 좋아하는 이유 리스트: 얼굴이 All unnecessary
+잘생기심.이건 팩트. ...는 아직 생각 중. 잘생기심.이건 팩트. ...는 아직 생각 중. edits are for
+minor formatting
+이게 다아? 왜 너를 조아하는거지?
+이게 다야? 왜 너를 조아하는 거지?
+changes, which is
+ㅋㅋㅋㅋ
+ㅋㅋㅋㅋ
+the spacing of
+조아하는거지.
+
+ko_KR
+
+Formality:
+Formal because
+the input uses an
+academic,
+objective tone
+typical of essays
+or reports with
+structured
+phrasing such as
+"~는
+~필수적입니다"
+which is
+
+사회 발전는 어느 한쪽의 노력만으로는 불가능하며, 모두의 적그적인 참여이
+필수적입니다.
+
+Centific Confidential
+
+commonly found
+in formal written
+Korean.
+Edit correctness:
+All necessary
+edits are correct.
+The omission of
+the word
+correction "suất
+-> xuất" should
+be rated poorly in
+the
+Completeness
+section. B's
+correction (xắc ->
+sắc) is correct.
+
+vi_VN
+
+Nè Linh ơi, hôm bữa anh mới ăn quán
+Nè Linh ơi, hôm bữa anh mới ăn quán
+phở bò ở gần trườngg mình á, ngon suất phở bò ở gần trường mình á, ngon suất
+xắc luôn! Cuối tuần đi thử không em :>
+sắc luôn! Cuối tuần đi thử không em :>
+
+vi_VN
+
+Errors found and
+corrected:
+Misses a
+significant
+portion (20% or
+Không sửađược liên hệ của anh Chần à? Không sửa được liên hệ của anh Chần à?
+more, such as 2
+Mực này chỉ để xem Thôi, không sửa trực Mực này chỉ để xem thôi, không sửa trực
+out of 5) some
+tiếp duoc đâu. nếu muốn update sđt
+tiếp được đâu. Nếu muốn update số điện
+errors remains
+0901234567 hoặc thông tin khéc, bạn
+thoại 0901234567 hoặc thông tin khác,
+unchanged:
+bám vào link phía trên để sửa trogn
+bạn bám vào link phía trên để sửa trong
+"Chần, Mực,
+Autlook nhé./
+Autlook nhé?
+Autlook", "bám"
+=> should be
+corrected to
+"Trần, Mục,
+Outlook, bấm”.
+
+zh_CN
+
+Edit necessity:
+All edits are
+necessary, as
+亲爱的，刚开始健身的话，先从简单的 亲爱的，刚开始健身的话，先从简单的 changing 别⽤⼒
+拉深做起就行，别用力过猛一上来就。 拉深做起就行，别一上来就用力过猛。
+过猛⼀上来就 to
+别⼀上来就⽤⼒
+过猛is necessary.
+
+zh_CN
+
+小琳，咱们，原定2024-10-25，晚上
+19:00的聚餐，还算术吗？我刚订好位
+子，但还没订到，等你回复哦！
+
+Errors found and
+corrected:
+The response
+小琳，咱们原定2024-10-25晚上19:00的 fails to correct
+聚餐，还算数吗？我刚订好位子，但还 awkward writing
+刚订好位⼦，但
+没订到，等你回复哦！
+还没订到, should
+be Nearly
+complete -
+
+Centific Confidential
+
+Misses only a
+small portion
+(fewer than 20%,
+such as 1 out of
+6)3Link Error
+Type Error
+Description Error
+Counts (How
+many analyst
+made this error?
+– not including
+consensus)
+
+zh_HK
+
+喂，純粹喺我既意見，唔代表我哋公司 喂，純粹喺我嘅意見，唔代表我哋公司
+Edit necessity:
+立埸。你係不是講咗嗰個姓梁嘅KOL？ 立場。你係咪講咗嗰個姓梁嘅KOL？嗰
+All edits in the
+嗰個根本就係靠煽動情緒嚟呃like。搵 個根本就係靠煽動情緒嚟呃like。搵咗
+response are
+咗少少嘢就無限放大，其實無材料，正 少少嘢就無限放大，其實無材料，正一 necessary.
+一神棍。
+神棍。
+
+zh_HK
+
+Input
+correctness:
+The input
+啲人成日話肯搏肯捱就實會上到位，，根本係自欺人啦。當個社會嘅遊戲規則 contains errors
+本身已經唔公平，成功與否就唔再關個人努力事，而係睇你本身有冇Capital。 that hinder
+comprehension
+or readability (typo ⾃欺⼈).
+
+zh_HK
+
+Errors found and
+corrected:
+Nearly completeMisses only a
+small
+喂，純粹喺我既意見，唔代表我哋公司 喂，純粹喺我嘅意見，唔代表我哋公司
+portion(fewer
+立埸。你係不是講咗嗰個姓梁嘅KOL？ 立場。你係咪講咗嗰個姓梁嘅KOL？嗰
+than 20%,such as
+嗰個根本就係靠煽動情緒嚟呃like。搵 個根本就係靠煽動情緒嚟呃like。搵咗
+1 out of
+咗少少嘢就無限放大，其實無材料，正 少少嘢就無限放大，其實無材料，正一 6)Incorrect word
+一神棍。
+神棍。
+usage that
+changes meaning
+or causes
+grammatical
+errors (typo喺).
+
+zh_HK
+
+你問我們，誰能代表這支軍隊的靈魂？ 你問我們，誰能代表這支軍隊的靈魂？
+在我們心中，那個人就是朱德總司令。 在我們心中，那個人就是朱德總司令。
+Changes to
+我們記得，他來自川北的貧脊土地，一 我們記得，他來自川北的貧窮土地，一
+input:
+個佃農的兒子，卻懷抱著改變世界的決 個佃農的兒子，卻懷抱著改變世界的決
+The response is
+心。他曾是舊軍隊的高級將領，卻毅然 心。他曾是舊軍隊的高級將領，卻毅然
+different from
+拋棄一切，遠赴歐洲尋找真理。我們見 拋棄一切，遠赴歐洲尋找真理。我們見
+the input.
+證了他在南昌城頭的決絕，從那一刻 證了他在南昌城頭的決絕，從那一刻
+起，他便將生命融入了革命的洪流。 起，他便將生命融入了革命的洪流。
+
+Centific Confidential
+
+我們不會忘記，在井岡山上，他和毛澤 我們不會忘記，在井岡山上，他和毛澤
+東的雙手緊緊握在一起，「朱毛紅軍」 東的雙手緊緊握在一起，「朱毛紅軍」
+的旗幟從此飄揚。長征路上，他以無比 的旗幟從此飄揚。長征路上，他以無比
+的毅力走過雪山草地。抗日烽火中，他 的毅力走過雪山草地。抗日烽火中，他
+身為八路軍總司令，指揮我們在敵後給 身為八路軍總司令，指揮我們在敵後給
+予侵略者沉痛打擊。他是一個真正的英 予侵略者沉痛打擊。他是一個真正的英
+雄 (HERO)，一個從未動搖過的戰士。 雄 (HERO)，一個從未動搖過的戰士。
+他不像有些將領那樣鋒芒畢露，他的偉 他不像有些將領那樣鋒芒畢露，他的偉
+大是內斂的，像山⼀樣厚重，像海⼀樣 大是內斂的，像山⼀樣厚重，像海⼀樣
+寬廣。他教導我們，作為軍⼈，不僅要 寬廣。他教導我們，作為軍⼈，不僅要
+會打仗，更要心裡裝著⼈民。這就是我 會打仗，更要心裡裝著⼈民。這就是我
+們心中永恆的軍魂，這就是朱德。
+
+zh_TW
+
+們心中永恆的軍魂，這就是朱德。
+
+我們團隊內部討論過後，決定將專案節 我們團隊內部討論過後，決定將專案截 Edit correctness:
+All necessary
+止日期延長⼀週，請大家們注意，
+止日期延長⼀週，請大家注意，
+edits are correct.
+
+zh_TW
+
+你看那條河，几十年前我小時候還可以 你看那條河，幾十年前我小時候還可以
+Edit necessity:
+在裡面玩水欸。現在喔...唉，整個都便 在裡面玩水欸。現在喔...唉，整個都變
+All edits in the
+色了。人類就是這樣，取之於自然 → 色了。人類就是這樣，取之於自然 →
+response are
+卻不懂的珍惜。這真是太SAD了，希望 卻不懂得珍惜。這真是太SAD了，希望 necessary.
+你長大後不會變成這樣的大人。
+你長大後不會變成這樣的大人。
+
+zh_TW
+
+Input
+correctness:
+The input
+contains errors
+that hinder
+comprehension
+or readability.
+
+zh_TW
+
+親愛的，我剛看了一下，我們上次說的那家花蓮民宿下週末只賸⼀間雙⼈房
+了，妳方便的話先幫我刷卡訂下來嗎？費⽤我馬上轉帳給妳！
+
+學長，我這幾天在研究我們的便當推薦 學長，我這幾天在研究我們的便當推薦
+系統，發現API回應速度有時候真的很 系統，發現 API 回應速度有時候真的很 Changes to
+慢。追查後發現瓶頸似乎是後端的資料 慢。追查後發現瓶頸似乎是後端的資料 input:
+庫查詢。我在想，如果導入像是
+庫查詢。我在想，如果導入像是
+The response is
+「redis"的快取機制，效能應該能提升 「redis」的快取機制，效能應該能提升 different from
+不少？我整理了初步的想法跟預期效 不少？我整理了初步的想法跟預期效 the input.
+益，您方便時能幫我看看給點建議嗎？ 益，您方便時能幫我看看給點建議嗎？
+
+Centific Confidential
+
+

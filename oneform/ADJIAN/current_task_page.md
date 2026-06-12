@@ -1,0 +1,120 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic:
+      - generic:
+        - generic:
+          - button "Close"
+    - navigation [ref=e5]:
+      - button [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+      - list [ref=e15]:
+        - listitem [ref=e18]:
+          - list [ref=e19]:
+            - listitem [ref=e24]:
+              - link [ref=e25] [cursor=pointer]:
+                - /url: /app/home
+                - generic "Home" [ref=e26]:
+                  - img [ref=e27]
+        - listitem [ref=e30]:
+          - list [ref=e31]:
+            - listitem [ref=e36]:
+              - link [ref=e37] [cursor=pointer]:
+                - /url: /app/rating-history
+                - generic "Rating History" [ref=e38]:
+                  - img [ref=e39]
+        - listitem [ref=e42]:
+          - list [ref=e43]:
+            - listitem [ref=e48]:
+              - link [active] [ref=e49] [cursor=pointer]:
+                - /url: /app/survey
+                - generic "Survey" [ref=e50]:
+                  - img [ref=e51]
+        - listitem [ref=e54]:
+          - list [ref=e55]:
+            - listitem [ref=e60]:
+              - link [ref=e61] [cursor=pointer]:
+                - /url: /app/announcementManagement
+                - generic "Announcements" [ref=e62]:
+                  - img [ref=e63]
+      - button "JL" [ref=e68] [cursor=pointer]:
+        - generic [ref=e73]: JL
+    - generic [ref=e75]:
+      - generic [ref=e77]:
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]: Task Type
+            - generic [ref=e83]: Broad Match Ratings
+          - generic [ref=e84]:
+            - generic [ref=e85]: Estimated Rating Time
+            - generic [ref=e87]: 45 seconds
+        - generic [ref=e88]:
+          - button "Rating Guidelines" [ref=e89] [cursor=pointer]
+          - button "Release Survey" [ref=e90] [cursor=pointer]
+          - button "Submit Rating" [ref=e91] [cursor=pointer]
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - generic [ref=e96]:
+            - generic [ref=e97]: Task ID
+            - generic [ref=e98]: 01KR5V330ZFN2WC21NJ1GDS2YQ
+          - generic [ref=e108]:
+            - paragraph [ref=e125]:
+              - strong [ref=e127]: "Rating Locale:"
+              - text: china
+            - generic [ref=e140]:
+              - generic [ref=e145]:
+                - generic [ref=e151]:
+                  - heading "KEYWORD" [level=6] [ref=e152]:
+                    - strong [ref=e154]: KEYWORD
+                  - paragraph [ref=e155]:
+                    - strong [ref=e157]: "12615"
+                - paragraph [ref=e168]:
+                  - strong [ref=e170]: "App search for original keyword:"
+                - paragraph [ref=e177]:
+                  - link "fnd.io" [ref=e178] [cursor=pointer]:
+                    - /url: https://fnd.io/#/cn/search?mediaType=all&term=12615
+                - paragraph [ref=e189]:
+                  - strong [ref=e191]: "Web search for original keyword:"
+                - paragraph [ref=e198]:
+                  - link "Baidu" [ref=e199] [cursor=pointer]:
+                    - /url: http://www.baidu.com/s?wd=12615
+                  - text: "|"
+                  - link "Sogou" [ref=e200] [cursor=pointer]:
+                    - /url: https://www.sogou.com/web?query=12615
+              - generic [ref=e208]:
+                - generic [ref=e214]:
+                  - heading "EXPANSION" [level=6] [ref=e215]:
+                    - strong [ref=e217]: EXPANSION
+                  - paragraph [ref=e218]:
+                    - strong [ref=e220]: "6188"
+                - paragraph [ref=e231]:
+                  - strong [ref=e233]: "App search for expansion:"
+                - paragraph [ref=e240]:
+                  - link "fnd.io" [ref=e241] [cursor=pointer]:
+                    - /url: https://fnd.io/#/cn/search?mediaType=all&term=6188
+                    - insertion [ref=e243]: fnd.io
+                  - generic:
+                    - insertion
+                - paragraph [ref=e254]:
+                  - strong [ref=e256]: "Web search for expansion:"
+                - paragraph [ref=e263]:
+                  - link "Baidu" [ref=e264] [cursor=pointer]:
+                    - /url: http://www.baidu.com/s?wd=6188
+                  - text: "|"
+                  - link "Sogou" [ref=e265] [cursor=pointer]:
+                    - /url: https://www.sogou.com/web?query=6188
+            - generic [ref=e286]:
+              - generic [ref=e288] [cursor=pointer]:
+                - radio "Good" [ref=e289]
+                - text: Good
+              - generic [ref=e291] [cursor=pointer]:
+                - radio "Acceptable" [ref=e292]
+                - text: Acceptable
+              - generic [ref=e294] [cursor=pointer]:
+                - radio "Bad" [ref=e295]
+                - text: Bad
+            - generic [ref=e314]:
+              - generic [ref=e315]: "Comments:"
+              - textbox [ref=e317]
+          - separator [ref=e318]
+        - button "Submit Rating" [ref=e320] [cursor=pointer]
+  - generic [ref=e321]: Relevance

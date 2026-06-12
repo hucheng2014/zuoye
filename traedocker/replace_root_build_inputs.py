@@ -22,7 +22,7 @@ INPUT_SPECS = [
 async def run(plan_path: Path, artifact_dir: Path, apply: bool) -> int:
     plan = attachments.load_plan(plan_path)
     root_id = str(plan["root_id"])
-    if root_id == group.OLD_ROOT_RECORD_ID:
+    if root_id in group.PROTECTED_ROOT_IDS:
         raise RuntimeError("refusing to replace inputs on old root record")
 
     targets = [

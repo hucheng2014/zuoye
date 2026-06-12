@@ -1,0 +1,346 @@
+{
+  "url": "https://ilabel.weixin.qq.com/mission/41398/label",
+  "title": "2026音频check_first_part196 - 任务标注",
+  "extractedAt": "2026-04-02T09:35:37.907Z",
+  "count": 26,
+  "items": [
+    {
+      "index": 0,
+      "filename": "20260127_00004326_wjdlh_652_8.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_8.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "他们的特点在哪里，差异在哪里。"
+    },
+    {
+      "index": 1,
+      "filename": "20260127_00004326_wjdlh_652_13.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_13.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "所以说它的香气会被影响，那它闻香就是恰到好处刚刚好。"
+    },
+    {
+      "index": 2,
+      "filename": "20260127_00004326_wjdlh_652_17.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_17.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "如果你比较喜欢大口喝酒，一口酒一口菜的情况下。"
+    },
+    {
+      "index": 3,
+      "filename": "20260127_00004326_wjdlh_652_9.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_9.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "闻香我已经出来了一个初步的结果大家一定要相信我，闻香香气释放力展现力最好的居然是它，我以为五十三度的香气释放力会最好芝香最好。"
+    },
+    {
+      "index": 4,
+      "filename": "20260127_00004326_wjdlh_652_15.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_15.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "香气跟他们比起来明确的弱了。"
+    },
+    {
+      "index": 5,
+      "filename": "20260127_00004326_wjdlh_652_2.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_2.wav",
+      "selectedIndexes": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "text": "但是他的差评其实也很多啊不管网上怎么说，我还是能听到很多负面的声音说这个酒酒精感重说这个酒太辣太爆了。"
+    },
+    {
+      "index": 6,
+      "filename": "20260127_00004326_wjdlh_652_7.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_7.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "对比看一看啊，看看究竟应该要怎么选。"
+    },
+    {
+      "index": 7,
+      "filename": "20260127_00004326_wjdlh_652_10.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_10.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "text": "但是是它展现最好，它呢其实并不是说脂香弱。"
+    },
+    {
+      "index": 8,
+      "filename": "20260127_00004326_wjdlh_652_22.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_22.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "酒体的冲击感也会有提高，辣感并没有明显的增强，适口柔润。"
+    },
+    {
+      "index": 9,
+      "filename": "20260127_00004326_wjdlh_652_23.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_23.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "喝完它再喝明显感受到它更甜也更香，但是它的辣感提升的比较多。"
+    },
+    {
+      "index": 10,
+      "filename": "20260127_00004326_wjdlh_652_14.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_14.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这个蚊香真的弱了啊。"
+    },
+    {
+      "index": 11,
+      "filename": "20260127_00004326_wjdlh_652_0.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_0.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这款汾酒有可能真的是最适合做口粮的汾酒了，为什么这么说呢？"
+    },
+    {
+      "index": 12,
+      "filename": "20260127_00004326_wjdlh_652_11.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_11.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "但是因为它闻香可以明确的感受到还是有一点点的冲击感，有一点刺鼻感。"
+    },
+    {
+      "index": 13,
+      "filename": "20260127_00004326_wjdlh_652_18.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_18.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "这款酒其实已经很好了，四十二度的其实当口粮也很好。"
+    },
+    {
+      "index": 14,
+      "filename": "20260127_00004326_wjdlh_652_24.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_24.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "没有喝过四十八度汾酒的试一试吧，你既可以感受到汾酒的香气，又可以少摄入一点酒精不是挺好吗？"
+    },
+    {
+      "index": 15,
+      "filename": "20260127_00004326_wjdlh_652_1.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_1.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "很多人之前都喜欢这款黄盖粉对不对？"
+    },
+    {
+      "index": 16,
+      "filename": "20260127_00004326_wjdlh_652_21.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_21.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "香气是有提高的。"
+    },
+    {
+      "index": 17,
+      "filename": "20260127_00004326_wjdlh_652_25.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_25.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "好喝，而且更柔和，它很有可能可以作为你未来的新口粮。"
+    },
+    {
+      "index": 18,
+      "filename": "20260127_00004326_wjdlh_652_4.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_4.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "那这一款呢它其实是一款四十八度的黄标粉，四十八度的这个度数啊在我的理解当中作为口粮其实是非常非常适口的一个度数。"
+    },
+    {
+      "index": 19,
+      "filename": "20260127_00004326_wjdlh_652_19.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_19.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "但是它的香气如果你要感受酒香来说会差点意思。"
+    },
+    {
+      "index": 20,
+      "filename": "20260127_00004326_wjdlh_652_16.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_16.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "低度的往高度喝了不然这个低度真的没法喝。"
+    },
+    {
+      "index": 21,
+      "filename": "20260127_00004326_wjdlh_652_6.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_6.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "第一次喝重点来品一品它，那这款四十二度的汾酒我也品过了，太淡啊，真的喝起来还是水不拉几的。"
+    },
+    {
+      "index": 22,
+      "filename": "20260127_00004326_wjdlh_652_26.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_26.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "我大胆在这里预估。"
+    },
+    {
+      "index": 23,
+      "filename": "20260127_00004326_wjdlh_652_20.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_20.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "而且它度数低了你喝起来略微更能感受到它的这种酸感会明显一些，因为它没有更浓郁的酒香来压制它的酸感。"
+    },
+    {
+      "index": 24,
+      "filename": "20260127_00004326_wjdlh_652_12.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_12.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "酒精挥发起来带来的这种鼻腔冲击呢，会比较明显一些。"
+    },
+    {
+      "index": 25,
+      "filename": "20260127_00004326_wjdlh_652_3.wav",
+      "src": "https://mmilabel-1258344707.cos.ap-guangzhou.myqcloud.com/upload/unpack/hiccupli/20260401/20260127_00004326_wjdlh_652_spk0/20260127_00004326_wjdlh_652_3.wav",
+      "selectedIndexes": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "text": "当然这款酒也有更多的拥护者因为它本身就是很多人的口粮酒，国民口粮之一。"
+    }
+  ]
+}

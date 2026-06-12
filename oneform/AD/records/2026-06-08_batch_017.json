@@ -1,0 +1,133 @@
+{
+  "batch_id": "2026-06-08_batch_017",
+  "project": "AD Search Ads Relevance",
+  "operator": "cursor-agent",
+  "created_at": "2026-06-08T22:05:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "689659393",
+      "query": "gorecenter",
+      "query_intent": "User is searching for an app named Gorecenter, likely related to horror/gore content or a specific entertainment platform.",
+      "ad": {
+        "name": "御剑封魔-修仙幸存者",
+        "subtitle": "",
+        "developer": "Chengdu Colocess Technology Co., Ltd.",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "御剑封魔 is a xianxia cultivation survivor mobile game."
+        }
+      ],
+      "relationship_analysis": "Horror/gore content platform vs xianxia fantasy cultivation game — unrelated themes and audiences.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"gorecenter\" indicates the user is searching for an app related to gore/horror content or a platform with that name. [Ad Analysis] The advertised app \"御剑封魔-修仙幸存者\" is a xianxia fantasy cultivation survivor mobile game. [Relevance Breakdown] Horror/gore content and xianxia cultivation gaming serve entirely different themes, audiences, and use cases. [Why not higher/lower] Not Acceptable because there is no meaningful topical or functional overlap. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "689659394",
+      "query": "腾 讯 事 故 车",
+      "query_intent": "User is searching for Tencent's accident-damaged vehicle service app for used car trading or accident vehicle reporting.",
+      "ad": {
+        "name": "乐道汽车",
+        "subtitle": "",
+        "developer": "NIO Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview",
+          "note": "乐道 is NIO's family EV brand sales platform."
+        }
+      ],
+      "relationship_analysis": "Accident vehicle/used car service vs new family EV brand — different automotive services and user goals.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"腾 讯 事 故 车\" indicates the user wants Tencent's accident-damaged vehicle trading or reporting service. [Ad Analysis] The advertised app \"乐道汽车\" is NIO's family-oriented electric vehicle brand and sales platform. [Relevance Breakdown] Accident vehicle services and new family EV purchasing serve completely different automotive needs and user intents. [Why not higher/lower] Not Acceptable because both involve cars but the specific services and audiences are entirely mismatched. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "689659395",
+      "query": "云 星 穹 铁 道",
+      "query_intent": "User is searching for 崩坏星穹铁道 (Honkai: Star Rail) — likely a typo omitting 崩坏.",
+      "ad": {
+        "name": "武侠大明星-割草闯江湖",
+        "subtitle": "",
+        "developer": "星火成炬工作室",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "Honkai Star Rail is a turn-based RPG; 武侠大明星 is a wuxia roguelike survivor game."
+        }
+      ],
+      "relationship_analysis": "Turn-based gacha RPG vs wuxia bullet-heaven roguelike — different play styles, IPs, and genres.",
+      "rating": "Bad",
+      "comment": "[Query Intent] The query \"云 星 穹 铁 道\" indicates the user wants 崩坏星穹铁道 (Honkai: Star Rail), a popular turn-based RPG gacha game. [Ad Analysis] The advertised app \"武侠大明星-割草闯江湖\" is a wuxia-themed roguelike survivor/bullet-heaven mobile game. [Relevance Breakdown] Both are mobile games but turn-based RPG gacha and wuxia roguelike survivor have completely different play styles, themes, and target audiences. [Why not higher/lower] Not Acceptable because merely being mobile games is insufficient when genres are entirely unrelated. Rated Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "689659396",
+      "query": "辐 射 避 难 所 ol",
+      "query_intent": "User is searching for Fallout Shelter Online (辐射避难所), a post-apocalyptic vault management survival game.",
+      "ad": {
+        "name": "无尽冬日",
+        "subtitle": "",
+        "developer": "Shanghai Qingdi Technology Company Limited",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "无尽冬日 is a frozen-wasteland survival strategy game with base building."
+        }
+      ],
+      "relationship_analysis": "Both are survival games with base-building in harsh environments; similar gameplay themes despite different settings.",
+      "rating": "Good",
+      "comment": "[Query Intent] The query \"辐 射 避 难 所 ol\" indicates the user wants Fallout Shelter Online, a post-apocalyptic vault management survival game. [Ad Analysis] The advertised app \"无尽冬日\" is a frozen-wasteland survival strategy game with base building and resource management. [Relevance Breakdown] Both are survival games centered on base building and resource management in harsh environments; players interested in Fallout Shelter would likely find a similar survival strategy game appealing. [Why not higher/lower] Not Excellent because it is a different IP and setting; not Acceptable because the survival/base-building gameplay overlap is strong. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "689659397",
+      "query": "德 州",
+      "query_intent": "User is most likely searching for 德州扑克 (Texas Hold'em poker) or a poker/card game app.",
+      "ad": {
+        "name": "欢喜斗地主-欢乐真人斗地主",
+        "subtitle": "",
+        "developer": "Shenzhen Shangyu Technology Co., Ltd.",
+        "type": "game"
+      },
+      "evidence": [
+        {
+          "source": "Ad preview / local knowledge",
+          "note": "斗地主 is a Chinese card game distinct from Texas Hold'em poker."
+        }
+      ],
+      "relationship_analysis": "Both are card games but Texas Hold'em poker and Dou Dizhu have different rules and player expectations.",
+      "rating": "Acceptable",
+      "comment": "[Query Intent] The query \"德 州\" most likely indicates the user wants a Texas Hold'em poker or card game app. [Ad Analysis] The advertised app \"欢喜斗地主-欢乐真人斗地主\" is a Dou Dizhu (Fight the Landlord) multiplayer card game. [Relevance Breakdown] Both are card games appealing to casual card players, but Texas Hold'em poker and Dou Dizhu are different games with distinct rules and audiences. [Why not higher/lower] Not Good because the specific card game requested does not match; not Bad because the broad card-game category creates a weak but understandable connection. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-08T14:08:09",
+    "post_submit_status": "No errors visible"
+  }
+}

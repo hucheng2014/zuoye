@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_006",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T21:54:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688686979",
+      "query": "寓 小 二",
+      "query_intent": "User is searching for '寓小二' (Yuxiaoer), a specialized B2B SaaS property management and rental management platform designed for apartment operators, landlords, and property managers to manage leases, collect rent, and oversee listings.",
+      "ad": {
+        "name": "安居客-买卖二手房新房租房房价查询",
+        "subtitle": "AI找房：租房买房二手房商铺写字楼交易平台，房东卖房更省心",
+        "developer": "Anjuke Inc.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id415606289) & Web research",
+          "note": "安居客 is one of China's largest consumer real estate marketplaces for renting, buying secondhand/new homes, and checking property prices."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both apps operate in the real estate and housing sector. However, Yuxiaoer is a B2B SaaS property management tool for landlords to run their operations, whereas Anjuke is a B2C/C2C marketplace for house hunters. They satisfy completely different functional needs in the housing ecosystem."
+        }
+      ],
+      "relationship_analysis": "The query '寓 小 二' is a B2B SaaS lease and property management platform for apartment operators. The advertised app '安居客' is a massive consumer-facing housing search and transaction marketplace. While both apps belong to the broad housing and rental sector, the query seeks a business administrative tool while the ad is a consumer transaction portal, serving different functional classes. The relationship is weak but understandable under the broad housing category. Rated Acceptable.",
+      "why_not_higher": "They have different core functions and target audiences. Yuxiaoer is an operational SaaS tool for landlords, whereas Anjuke is a consumer property listing search marketplace. They do not share functional parity.",
+      "why_not_lower": "They belong to the same broad real estate/rental sector, so they are not entirely out of context.",
+      "rating": "Acceptable",
+      "comment": "The query \"寓 小 二\" refers to \"Yuxiaoer\", a specialized B2B SaaS property and lease management platform for landlords and apartment operators. The advertised app \"安居客-买卖二手房新房租房房价查询\" is a massive consumer-facing real estate search and rental transaction marketplace. While both applications operate within the broad housing and rental domain, a property management SaaS tool and a consumer housing portal satisfy different functional tiers and target roles. The relationship is weak but understandable. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688686980",
+      "query": "书",
+      "query_intent": "User is performing an extremely broad, general-purpose category query for '书' (Books), indicating an interest in reading digital books, buying publications, or listening to audiobooks.",
+      "ad": {
+        "name": "帆书-「原樊登读书」精选好书，轻松阅读",
+        "subtitle": "30分钟读懂一本好书，陪伴千万家庭精神成长",
+        "developer": "Shanghai Soybean Network Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id963152777) & Web research",
+          "note": "帆书 (formerly 樊登读书) is a premier mobile audio reading and audiobook summarization platform, providing voice narrations and expert summaries of books."
+        },
+        {
+          "source": "local knowledge",
+          "note": "The query '书' is a broad category. The advertised app '帆书' is a leading mobile audio reading and book-listening service that directly satisfies the broad category demand."
+        }
+      ],
+      "relationship_analysis": "The query '书' is a highly broad category search representing a general desire for books and reading. The advertised app '帆书' is a leading reading and audiobook summary application. Since the query represents a broad category demand and the advertised app is a premier product in that category that directly and fully satisfies the user's intent to read/listen to books, the relationship is Excellent.",
+      "why_not_higher": "Cannot be higher than Excellent.",
+      "why_not_lower": "The ad's reading utility directly and fully satisfies the general category search for books.",
+      "rating": "Excellent",
+      "comment": "The query \"书\" is an extremely broad category search for books and reading. The advertised app \"帆书-「原樊登读书」精选好书，轻松阅读\" is a premier mobile audio reading and audiobook narration platform. Since the query is a broad category demand and the advertised app is a leading product in that category that directly and fully satisfies the user's core intent to read and listen to books, this is Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688686981",
+      "query": "zoom",
+      "query_intent": "User is searching specifically for the globally famous virtual meeting and online video conferencing platform 'Zoom' to download, sign up, or join a live virtual conference.",
+      "ad": {
+        "name": "听脑AI - 实时录音转文字总结助手",
+        "subtitle": "AI全能助手：快速转写 知识总结 AI工作流",
+        "developer": "上海秀御网络科技有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6670379647) & Web research",
+          "note": "听脑AI is a specialized voice recording, real-time transcription, and meeting summarization assistant powered by AI."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Zoom is a video conferencing platform. Tingnao AI is an auxiliary tool that transcribes and summarizes meetings. Since users holding Zoom virtual meetings frequently require transcription, notes, and summaries, this app acts as a highly relevant auxiliary meeting companion."
+        }
+      ],
+      "relationship_analysis": "The query 'zoom' refers to the virtual video conferencing platform Zoom. The advertised app '听脑AI' is a specialized meeting recording and AI transcription/summarization assistant. Since transcribing meeting audio and summarizing meeting notes are primary auxiliary needs for users of Zoom virtual conferences, this app serves as a highly related companion utility. This directly fits the auxiliary tool criteria. Rated Good.",
+      "why_not_higher": "They are not equivalent platforms. Zoom is a comprehensive video conferencing platform, whereas '听脑AI' is merely a supportive voice transcription and summary utility.",
+      "why_not_lower": "There is a strong functional relationship, as the ad acts as a direct, valuable helper tool designed specifically for meeting and conference environments.",
+      "rating": "Good",
+      "comment": "The query \"zoom\" refers to the well-known virtual meeting and video conferencing platform Zoom. The advertised app \"听脑AI - 实时录音转文字总结助手\" is a specialized AI voice recording, real-time transcription, and meeting summarization assistant. Since recording meeting audio and generating transcripts/summaries are major auxiliary needs during Zoom virtual conferences, this app acts as a highly relevant companion tool. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688686982",
+      "query": "记 录 体 重 的 软 件",
+      "query_intent": "User is performing a broad category query for an app to record and track body weight ('记录体重的软件'), intending to monitor their weight fat-loss or fitness progress over time.",
+      "ad": {
+        "name": "减脂食谱-食物热量计算法减肥神器，减脂食谱瘦身计划打卡软件",
+        "subtitle": "热量计算法减脂瘦身！！！",
+        "developer": "Bstmle Technology Co., Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6448336195)",
+          "note": "减脂食谱 is a comprehensive weight-loss and diet app featuring fat-loss recipes, calorie counting, diet logging, and weight tracking."
+        },
+        {
+          "source": "local knowledge",
+          "note": "The query is a category search for a weight tracker. The advertised app is a weight-loss planner that includes weight logging and weight fitness check-ins as a core feature. They share the same health management domain."
+        }
+      ],
+      "relationship_analysis": "The query '记 录 体 重 的 软 件' is a broad category search for a weight-tracking app. The advertised app '减脂食谱' is a comprehensive weight-loss and diet app that features weight tracking, fitness check-ins, and calorie logging as core components. While the ad includes recipe planning, weight logging is a fundamental feature of its weight-loss management, making it a highly related choice. Rated Good.",
+      "why_not_higher": "It is not a pure, simple weight tracker. The app's primary focus is fat-loss recipes and calorie counting, which is broader than the user's specific request for a weight logger.",
+      "why_not_lower": "It directly provides the requested weight logging and tracking features within its core weight-loss functions.",
+      "rating": "Good",
+      "comment": "The query \"记 录 体 重 的 软 件\" is a broad category search for an application to track and log body weight. The advertised app \"减脂食谱-食物热量计算法减肥神器，减脂食谱瘦身计划打卡软件\" is a comprehensive weight-loss and diet app that features weight tracking, fitness check-ins, and calorie logging. Since weight logging is a core feature of any fat-loss management plan, the advertised app represents a highly related alternative in the health category. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688686983",
+      "query": "fake location",
+      "query_intent": "User is looking for a mobile utility or GPS mock spoofer ('fake location') to virtually spoof, mock, or virtualize their phone's actual GPS location coordinates.",
+      "ad": {
+        "name": "指南针-海拔测量仪实时高度GPS经纬度定位",
+        "subtitle": "精准海拔高度测量 出行轨迹记录 全球GPS定位 专业户外工具",
+        "developer": "泽友 颜",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6743743282)",
+          "note": "指南针 is an outdoor tool designed to display actual real GPS coordinates, altitude, heading, and GPS location tracking using physical device sensors."
+        },
+        {
+          "source": "local knowledge",
+          "note": "'Fake Location' is a GPS mocking spoofer (hiding/spoofing actual coordinates). The ad '指南针' is an outdoor compass that displays actual, real GPS coordinates. They serve completely opposite intents."
+        }
+      ],
+      "relationship_analysis": "The query 'fake location' represents a specific intent to spoof, mock, or virtualize the phone's GPS location. The advertised app '指南针' is an outdoor tool designed to display the actual real GPS coordinates, altitude, and heading. Although both apps nominally involve GPS and positioning, their core functions and usage scenarios are completely opposite (spoofing/hiding vs. real tracking/locating). A user wanting to spoof coordinates has absolutely no use for an outdoor compass showing real data. This is a mismatch in core intent, so it is Bad.",
+      "why_not_higher": "No functional or logical relationship. An outdoor compass showing actual location cannot fulfill a user's intent to mock or spoof location coordinates.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"fake location\" indicates a specific intent to mock, spoof, or virtualize the phone's GPS location. The advertised app \"指南针-海拔测量仪实时高度GPS经纬度定位\" is an outdoor tool designed to display the actual real GPS coordinates, altitude, and heading. Although both apps nominally involve GPS and positioning, their core functions and usage scenarios are completely opposite (spoofing vs. real tracking). There is no logical relevance, so this is Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T13:54:33",
+    "post_submit_status": "No errors visible"
+  }
+}

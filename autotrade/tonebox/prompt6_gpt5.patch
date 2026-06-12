@@ -1,0 +1,245 @@
+diff --git a/lesson_schedule/lesson_billing.py b/lesson_schedule/lesson_billing.py
+index a232220..a3767df 100644
+--- a/lesson_schedule/lesson_billing.py
++++ b/lesson_schedule/lesson_billing.py
+@@ -5,7 +5,7 @@ from typing import List, Optional
+ 
+ from fastapi import APIRouter, Depends, HTTPException, status
+ from pydantic import BaseModel
+-from sqlalchemy import Column, DateTime, Float, ForeignKey, Integer, String, select
++from sqlalchemy import Column, DateTime, Float, ForeignKey, Integer, String, Text, select
+ from sqlalchemy.ext.asyncio import AsyncSession
+ from sqlalchemy.sql import func
+ 
+@@ -21,6 +21,7 @@ class Invoice(Base):
+     student_id = Column(String, ForeignKey("users.id"), nullable=False)
+     amount = Column(Float, nullable=False, default=0.0)
+     status = Column(String, default="unpaid")
++    refund_notes = Column(Text, nullable=True)
+     created_at = Column(DateTime, server_default=func.now())
+     paid_at = Column(DateTime, nullable=True)
+ 
+@@ -37,6 +38,7 @@ class InvoiceResponse(BaseModel):
+     student_id: str
+     amount: float
+     status: str
++    refund_notes: Optional[str]
+     paid_at: Optional[datetime]
+ 
+     model_config = {"from_attributes": True}
+diff --git a/lesson_schedule/lesson_booking.py b/lesson_schedule/lesson_booking.py
+index 5f666e4..753e701 100644
+--- a/lesson_schedule/lesson_booking.py
++++ b/lesson_schedule/lesson_booking.py
+@@ -10,9 +10,10 @@ from sqlalchemy import and_, select
+ from sqlalchemy.ext.asyncio import AsyncSession
+ 
+ from core.db import get_db
++from lesson_schedule.lesson_billing import Invoice
+ from music_accounts.account_auth import get_current_user, require_teacher_or_admin
+-from music_models.music_models import OldLesson, LessonScheduleType, LessonStatus
+ from music_instruments.instrument_catalog import get_instrument
++from music_models.music_models import OldLesson, LessonScheduleType, LessonStatus
+ 
+ 
+ class LessonCreate(BaseModel):
+@@ -108,6 +109,40 @@ async def list_lessons(
+     return list(result.scalars().all())
+ 
+ 
++def calculate_refund_ratio(lesson: OldLesson, current_time: Optional[datetime.datetime] = None) -> float:
++    lesson_start = datetime.datetime.combine(lesson.lesson_date, lesson.start_time)
++    reference_time = current_time or datetime.datetime.now()
++    if lesson_start - reference_time >= datetime.timedelta(hours=24):
++        return 1.0
++    return 0.5
++
++
++async def apply_cancellation_policy(db: AsyncSession, lesson: OldLesson) -> None:
++    result = await db.execute(select(Invoice).where(Invoice.lesson_id == lesson.id))
++    invoices = list(result.scalars().all())
++    if not invoices:
++        return
++
++    refund_ratio = calculate_refund_ratio(lesson)
++
++    for invoice in invoices:
++        if invoice.status == "unpaid":
++            if refund_ratio == 1.0:
++                invoice.amount = 0.0
++                invoice.status = "void"
++            else:
++                invoice.amount = round(invoice.amount * 0.5, 2)
++            continue
++
++        if invoice.status == "paid":
++            refund_amount = round(invoice.amount * refund_ratio, 2)
++            refund_percentage = int(refund_ratio * 100)
++            invoice.status = "refund_pending"
++            invoice.refund_notes = (
++                f"Refund amount pending: {refund_amount:.2f} ({refund_percentage}% of invoice amount)"
++            )
++
++
+ async def update_lesson_status(
+     db: AsyncSession,
+     lesson: OldLesson,
+@@ -115,11 +150,14 @@ async def update_lesson_status(
+     notes: Optional[str] = None,
+     recording_url: Optional[str] = None,
+ ) -> OldLesson:
++    previous_status = lesson.status
+     lesson.status = status
+     if notes is not None:
+         lesson.notes = notes
+     if recording_url is not None:
+         lesson.recording_url = recording_url
++    if previous_status != LessonStatus.cancelled and status == LessonStatus.cancelled:
++        await apply_cancellation_policy(db, lesson)
+     await db.commit()
+     await db.refresh(lesson)
+     return lesson
+diff --git a/tests/test_prompt6.py b/tests/test_prompt6.py
+new file mode 100644
+index 0000000..2895bd2
+--- /dev/null
++++ b/tests/test_prompt6.py
+@@ -0,0 +1,138 @@
++from __future__ import annotations
++
++from datetime import datetime, timedelta
++
++import pytest
++from httpx import AsyncClient
++
++from tests.conftest import api_key_header, register_user
++
++
++async def make_staff(client: AsyncClient, username: str) -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "staff")
++
++
++async def make_student(client: AsyncClient, username: str) -> dict:
++    return await register_user(client, username, f"{username}@test.com", "pass", "student")
++
++
++async def make_instrument(client: AsyncClient, api_key: str, teacher_id: str) -> dict:
++    resp = await client.post(
++        "/instruments",
++        json={
++            "instrument_name": "Policy Piano",
++            "category": "keyboard",
++            "lesson_type": "private",
++            "levels": ["beginner"],
++            "teacher_id": teacher_id,
++            "duration_minutes": 60,
++            "price_per_session": 80.0,
++            "is_active": True,
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def make_scheduled_lesson(
++    client: AsyncClient,
++    api_key: str,
++    teacher_id: str,
++    student_id: str,
++    instrument_id: str,
++    start_at: datetime,
++) -> dict:
++    resp = await client.post(
++        "/lessons",
++        json={
++            "teacher_id": teacher_id,
++            "student_id": student_id,
++            "instrument_id": instrument_id,
++            "lesson_date": start_at.date().isoformat(),
++            "start_time": start_at.time().replace(microsecond=0).isoformat(),
++            "duration_minutes": 60,
++            "lesson_type": "regular",
++        },
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++async def make_invoice(
++    client: AsyncClient,
++    api_key: str,
++    lesson_id: str,
++    student_id: str,
++    amount: float = 80.0,
++) -> dict:
++    resp = await client.post(
++        "/invoices",
++        json={"lesson_id": lesson_id, "student_id": student_id, "amount": amount},
++        headers=api_key_header(api_key),
++    )
++    assert resp.status_code == 201, resp.text
++    return resp.json()
++
++
++@pytest.mark.parametrize(
++    ("invoice_state", "hours_until_lesson", "expected_status", "expected_amount", "expected_refund"),
++    [
++        ("unpaid", 30, "void", 0.0, None),
++        ("unpaid", 2, "unpaid", 40.0, None),
++        ("paid", 30, "refund_pending", 80.0, "80.00"),
++        ("paid", 2, "refund_pending", 80.0, "40.00"),
++    ],
++)
++async def test_lesson_cancellation_invoice_policy(
++    client: AsyncClient,
++    invoice_state: str,
++    hours_until_lesson: int,
++    expected_status: str,
++    expected_amount: float,
++    expected_refund: str | None,
++):
++    staff = await make_staff(client, f"policy_staff_{invoice_state}_{hours_until_lesson}")
++    student = await make_student(client, f"policy_student_{invoice_state}_{hours_until_lesson}")
++    instrument = await make_instrument(client, staff["api_key"], staff["id"])
++    lesson_start = datetime.now() + timedelta(hours=hours_until_lesson)
++    lesson = await make_scheduled_lesson(
++        client,
++        staff["api_key"],
++        staff["id"],
++        student["id"],
++        instrument["id"],
++        lesson_start,
++    )
++    invoice = await make_invoice(client, staff["api_key"], lesson["id"], student["id"])
++
++    if invoice_state == "paid":
++        pay_resp = await client.patch(
++            f"/invoices/{invoice['id']}/pay",
++            headers=api_key_header(student["api_key"]),
++        )
++        assert pay_resp.status_code == 200, pay_resp.text
++
++    cancel_resp = await client.patch(
++        f"/lessons/{lesson['id']}/status",
++        json={"status": "cancelled"},
++        headers=api_key_header(staff["api_key"]),
++    )
++    assert cancel_resp.status_code == 200, cancel_resp.text
++    assert cancel_resp.json()["status"] == "cancelled"
++
++    invoice_resp = await client.get(
++        f"/invoices/{invoice['id']}",
++        headers=api_key_header(staff["api_key"]),
++    )
++    assert invoice_resp.status_code == 200, invoice_resp.text
++
++    invoice_data = invoice_resp.json()
++    assert invoice_data["status"] == expected_status
++    assert invoice_data["amount"] == expected_amount
++
++    if expected_refund is None:
++        assert invoice_data["refund_notes"] is None
++    else:
++        assert expected_refund in invoice_data["refund_notes"]

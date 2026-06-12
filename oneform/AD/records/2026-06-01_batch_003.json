@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_003",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T21:25:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688683879",
+      "query": "微 信 听 书",
+      "query_intent": "User is searching for '微信听书' (WeChat Audio Books), a specific audiobook and audio reading App developed by Tencent/WeChat, which allows users to listen to books, novels, and podcasts.",
+      "ad": {
+        "name": "帆书-「原樊登读书」精选好书，轻松阅读",
+        "subtitle": "30分钟读懂一本好书，陪伴千万家庭精神成长",
+        "developer": "Shanghai Soybean Network Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store lookup (id963152777) & Web research",
+          "note": "帆书 (formerly 樊登读书) is a premier audiobook and reading summary service that provides professional summaries and voice narrations of non-fiction and self-improvement books."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both '微信听书' and '帆书' are leading mobile audio reading and audiobook platforms in China. They are direct competitors satisfying the identical core user interest of listening to books and audio publications on mobile devices."
+        }
+      ],
+      "relationship_analysis": "The query '微 信 听 书' is Tencent's specific audiobook and audio reading platform. The advertised app '帆书' is a leading audiobook summarization and audio reading app. Since both applications serve the identical core functional category (audiobooks, book-listening, voice narration) and compete directly for the same mobile audio reading player base, '帆书' is a direct competitor that perfectly satisfies the user's core intent. Rated Excellent.",
+      "why_not_higher": "Cannot be higher than Excellent.",
+      "why_not_lower": "They are direct competitors satisfying the same core audio-reading need in the Chinese mobile reading sector.",
+      "rating": "Excellent",
+      "comment": "The query \"微 信 听 书\" refers to WeChat's official audiobook and audio reading application. The advertised app \"帆书-「原樊登读书」精选好书，轻松阅读\" is a leading audiobook narration and book-summarization service. Since both applications operate in the same core category of mobile audiobooks and audio reading, and compete directly for the same audience of book-listening users, the advertised app is a direct competitor that satisfies the user's intent. Rated Excellent.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688683880",
+      "query": "个 人 所 得 税 app 下 载",
+      "query_intent": "User wants to download the official personal income tax application ('个人所得税 App') of the State Taxation Administration of China to declare tax filings and manage income tax refunds.",
+      "ad": {
+        "name": "点淘-淘宝直播官方APP",
+        "subtitle": "看直播刷视频，边看边买！",
+        "developer": "Zhejiang Diantao HaoWu Network Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1448831879)",
+          "note": "点淘 is Alibaba's official live-stream shopping and e-commerce platform, enabling users to watch merchant streams and purchase goods."
+        },
+        {
+          "source": "local knowledge",
+          "note": "The Personal Income Tax App is an official government utility. Diantao is a commercial live-stream shopping app. There is zero relation between filing income taxes and video-based e-commerce."
+        }
+      ],
+      "relationship_analysis": "The query '个 人 所 得 税 app 下 载' indicates an extremely specific intent to download the official Chinese government personal taxation utility. The advertised app '点淘' is a commercial live-stream and video shopping app. Declaring taxes and live-stream shopping serve completely distinct needs, industries, and user demographics. There is no logical relevance between the two, which would confuse a user.",
+      "why_not_higher": "No functional, developer, or contextual relation whatsoever.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"个 人 所 得 税 app 下 载\" specifies a need to download the official Chinese government Personal Income Tax App for tax declarations. The advertised app \"点淘-淘宝直播官方APP\" is a live-stream e-commerce and shopping platform. Declaring taxes and watching live-stream product sales serve entirely unrelated user needs, functions, and contexts. There is no logical connection between government tax filing and e-commerce video shopping, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688683881",
+      "query": "橘 汁",
+      "query_intent": "User is searching for '橘汁影视' (or '橘汁视频'), which is a popular third-party video and movie streaming application aggregating movies, TV series, anime, and online video players.",
+      "ad": {
+        "name": "西瓜视频",
+        "subtitle": "海量影视随心看",
+        "developer": "Beijing Douyin Information Service Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1134496215) & Web research",
+          "note": "西瓜视频 is ByteDance's official video sharing and movie streaming platform in China, hosting a vast collection of movies, TV dramas, short clips, and original content."
+        },
+        {
+          "source": "local knowledge",
+          "note": "橘汁 (or 橘汁影视) is a third-party movie aggregator app. 西瓜视频 is a mainstream official video streaming app that offers a large database of movies and TV dramas for free. Both belong to the video/movie playback category and satisfy the intent of streaming media."
+        }
+      ],
+      "relationship_analysis": "The query '橘 汁' refers to the movie-streaming App '橘汁影视'. The advertised app '西瓜视频' is a major video streaming and movie player app by ByteDance. Both apps operate within the movie and video streaming category, satisfying the user's intent to watch film and television content. While Xigua is an official licensed platform and Yuzhi is an unofficial aggregator, they are highly relevant alternatives in the same media category, making this Good.",
+      "why_not_higher": "They are not exact equivalents. '橘汁' is a specialized, third-party pirate aggregator movie player, whereas '西瓜视频' is a mainstream, licensed UGC/PGC video platform with a broader scope of short videos and licensed films.",
+      "why_not_lower": "Both belong to the exact same movie and video playback segment, meeting the same basic need of watching video streams on a mobile device.",
+      "rating": "Good",
+      "comment": "The query \"橘 汁\" refers to \"橘汁影视\", a third-party video and movie aggregator app used to watch movies, TV series, and anime. The advertised app \"西瓜视频\" is ByteDance's official video sharing and movie streaming platform hosting a large volume of movies and TV shows. Since both apps belong to the movie and video playback category and satisfy the user's underlying intent to stream videos, they represent highly relevant alternatives in the video segment. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688683882",
+      "query": "火 币 交 易 平 台",
+      "query_intent": "User is looking for the '火币交易平台' (Huobi cryptocurrency exchange, now HTX) to download, register, or trade cryptocurrencies and digital tokens.",
+      "ad": {
+        "name": "中泰期货APP",
+        "subtitle": "中泰期货官方交易行情综合一体化平台",
+        "developer": "中泰期货股份有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1585299542)",
+          "note": "中泰期货 is a fully regulated, domestic commodity and financial futures brokerage and trading platform in China."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Huobi is an unregulated global cryptocurrency exchange specializing in blockchain tokens. Zhongtai Futures is a regulated traditional futures broker trading domestic agricultural/industrial commodities and stock index futures. Both involve speculative financial derivatives but have mismatched asset classes and regulatory frameworks."
+        }
+      ],
+      "relationship_analysis": "The query '火 币 交 易 平 台' refers to a digital token/cryptocurrency trading exchange. The advertised app '中泰期货' is a regulated domestic futures trading brokerage app. Both belong to the broad category of financial trading platforms involving leveraged derivatives. However, their asset classes (cryptocurrencies vs traditional physical/financial futures) and regulatory structures are completely different. Following the SOP that financial apps with a broad category relation but different core assets are Acceptable, we rate it as Acceptable.",
+      "why_not_higher": "They involve different financial systems and assets. Cryptocurrency trading (blockchain-based digital assets) is completely separate from regulated traditional futures trading (regulated commodities like copper, grain, or stock indices).",
+      "why_not_lower": "There is a broad category relevance. Both are speculative, mobile financial derivative trading and investment platforms.",
+      "rating": "Acceptable",
+      "comment": "The query \"火 币 交 易 平 台\" refers to an international cryptocurrency exchange for trading digital assets and blockchain tokens. The advertised app \"中泰期货APP\" is a regulated domestic commodity and financial futures trading platform. While both belong to the broad category of high-risk financial derivative trading and investment platforms, they deal with completely different asset classes and regulatory environments. The connection is weak but understandable. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688683883",
+      "query": "12123",
+      "query_intent": "User is searching for the official traffic management utility app '交管12123', which features driver and vehicle services, traffic violation payments, and the official '学法减分' (learning traffic rules to deduct points) online testing.",
+      "ad": {
+        "name": "微微学法减分 — 拍照搜题模拟考试驾考助手",
+        "subtitle": "拍照搜题海量题库高效备考",
+        "developer": "川 何",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6763009795)",
+          "note": "微微学法减分 is an educational study assistant that helps drivers pass the official '学法减分' test by providing a database of traffic questions, photo searches, and mock exams."
+        },
+        {
+          "source": "local knowledge",
+          "note": "The official '交管12123' App hosts the official '学法减分' point deduction tests. The ad '微微学法减分' is a specialized preparation helper app designed specifically to help users pass those exams inside the 12123 platform. It is a direct auxiliary tool for a major feature of the target app."
+        }
+      ],
+      "relationship_analysis": "The query '12123' refers to the official government traffic administration app '交管12123'. The advertised app '微微学法减分' is a private study assistant and exam prep tool. While '学法减分' is an online test feature inside the 12123 app, the core utility of 12123 is public administrative service (managing licenses, paying fines, vehicle registration), not education or tutoring. The advertised app is essentially an educational prep helper, which represents a mismatched core user intent. Thus, the connection is weak and should be rated Acceptable rather than Good.",
+      "why_not_higher": "The user's primary intent is government traffic administration services, not study tutoring or learning test prep. The core functions are fundamentally different, so it cannot be Good.",
+      "why_not_lower": "There is a minor/tangential relation since the prep app is designed specifically for a test feature located inside the target traffic management app, meaning a user looking for 12123 and needing to clear points would not be completely surprised.",
+      "rating": "Acceptable",
+      "comment": "The query \"12123\" refers to China's official traffic management application \"交管12123\", which is a government administrative utility for driver licenses, vehicles, and fines. The advertised app \"微微学法减分 — 拍照搜题模拟考试驾考助手\" is an educational study prep and exam helper tool. While the official app contains the \"学法减分\" online test, a government administrative service and a private tutoring/prep tool satisfy entirely different core intents and functional classes. The connection is weak but understandable. Rated Acceptable.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T13:25:19",
+    "post_submit_status": "No errors visible"
+  }
+}

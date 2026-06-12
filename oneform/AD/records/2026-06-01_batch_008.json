@@ -1,0 +1,163 @@
+{
+  "batch_id": "2026-06-01_batch_008",
+  "project": "AD Search Ads Relevance",
+  "operator": "pi-agent",
+  "created_at": "2026-06-01T22:13:00",
+  "source_page": "tryrating current page",
+  "tasks": [
+    {
+      "index": 1,
+      "task_id": "688689775",
+      "query": "光 圈 手 册",
+      "query_intent": "User is searching for photography reference guides or manuals for camera aperture settings ('光圈手册'), depth of field calculations, and exposure techniques for DSLR/mirrorless photography.",
+      "ad": {
+        "name": "Universal Zoom - Science Guide",
+        "subtitle": "Universe Scale & Comparison",
+        "developer": "GamifyIt",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id807673066)",
+          "note": "Universal Zoom is an educational scientific guide app that visualizes and compares physical scales of objects in the universe—from subatomic particles to stars and galaxies."
+        },
+        {
+          "source": "local knowledge",
+          "note": "The ad contains the word 'Zoom', which in photography refers to focal length adjustment. However, 'Universal Zoom' is an astronomy/physics scale explorer. It does not provide any photography settings, aperture guides, or camera tutorials. The nominal similarity of the word 'zoom' leads to an complete intent mismatch."
+        }
+      ],
+      "relationship_analysis": "The query '光 圈 手 册' refers to a photography handbook or exposure setting reference guide for camera aperture. The advertised app 'Universal Zoom - Science Guide' is an educational science app illustrating scale and size comparisons of the universe. Although the ad contains the word 'Zoom' (a common photography term), it is a scientific scaling tool with absolutely no relevance to camera aperture or photography instructions. This represents a nominal mismatch, so it is Bad.",
+      "why_not_higher": "No functional or contextual relation whatsoever. One is a camera manual, while the other is a science educational guide.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"光 圈 手 册\" refers to a photography manual, depth of field calculator, or exposure setting guide for camera aperture. The advertised app \"Universal Zoom - Science Guide\" is a scientific educational application for comparing physical scales in the universe (atoms to galaxies). Although the ad name contains \"Zoom\" (a common photography term), it is an astronomical scale guide and does not provide photography instructions. There is no logical connection, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 2,
+      "task_id": "688689776",
+      "query": "金 源 优 品",
+      "query_intent": "User is searching for the '金源优品' App, which is a mobile consumer micro-loan lending platform and credit consulting application used to borrow quick money.",
+      "ad": {
+        "name": "广发易淘金-证券开户炒股票 基金理财",
+        "subtitle": "一站式证券开户炒股票基金理财平台",
+        "developer": "广发证券股份有限公司",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id705795925) & Web research",
+          "note": "广发易淘金 is the official mobile wealth management and stock trading platform of Guangfa Securities, a major registered securities broker in China."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both apps are mobile financial applications. However, micro-lending apps are used to borrow money (credit debt), while securities brokerage apps are used to invest money in stocks/funds. They serve different specific financial intents."
+        }
+      ],
+      "relationship_analysis": "The query '金 源 优 品' refers to a mobile consumer lending and micro-loan application. The advertised app '广发易淘金' is a regulated stock trading and securities investment platform by a major national broker. While both belong to the broad financial category, borrowing micro-loans and investing in stocks/funds satisfy completely different specific intents (debt financing vs. asset investment). There is a weak/broad category association, so it is Acceptable.",
+      "why_not_higher": "They involve different financial sectors. A user looking to borrow a micro-credit loan to cover immediate cash needs will not satisfy their intent with a securities brokerage account to invest capital in stocks.",
+      "why_not_lower": "Both applications are mobile financial utilities, maintaining a broad category relationship under the finance domain.",
+      "rating": "Acceptable",
+      "comment": "The query \"金 源 优 品\" refers to a mobile consumer micro-loan lending and credit consulting app. The advertised app \"广发易淘金-证券开户炒股票 基金理财\" is a regulated mobile stock trading and securities investment platform. While both applications belong to the broad financial category, borrowing consumer loans and investing capital in the stock market satisfy completely different specific intents and user needs. The connection is weak but understandable under the broad finance sector. Rated Acceptable.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 3,
+      "task_id": "688689777",
+      "query": "音 遇",
+      "query_intent": "User is searching for '音遇' (Yinyu), a highly popular, interactive mobile social singing game in China where players compete in singing battles, lyric matching, and voice-based multiplayer games. Core intent is active social singing and music gaming.",
+      "ad": {
+        "name": "TataLand",
+        "subtitle": "Voice-guided Relaxation",
+        "developer": "Hainan Xinhe Network Technology Company Limited.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1664036357) & Web research",
+          "note": "TataLand is a personal meditation, soundscape, and voice-guided relaxation application designed to assist with sleep, mental wellness, and solitary calm."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Yinyu is an active, high-energy multiplayer competitive social singing game. TataLand is a quiet, personal, meditative sleep aid. Although both center on voice and audio, their play styles, themes, and target demographics are completely separate."
+        }
+      ],
+      "relationship_analysis": "The query '音 遇' is an interactive, high-energy multiplayer competitive social singing game. The advertised app 'TataLand' is a calm, solitary voice-guided meditation and sleep aid application. Although both apps utilize voice and audio, an active social singing game and a quiet personal meditation tool serve completely separate play styles, presentation themes, and target audiences. There is no logical relevance, representing a category mismatch. Rated Bad.",
+      "why_not_higher": "No gameplay, functional, or thematic overlap. A gamer wanting competitive multiplayer karaoke has no interest in a solitary meditation and sleep aid tool.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"音 遇\" refers to \"Yinyu\", a highly interactive mobile social singing game featuring competitive multiplayer karaoke and lyric matching. The advertised app \"TataLand\" is a quiet, voice-guided meditation and sleep aid application. Although both applications are centered around voice and audio, an active multiplayer music game and a solitary meditation tool serve completely split play styles, themes, and audiences, so this is Bad.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 4,
+      "task_id": "688689778",
+      "query": "腾 讯 成 长 守 护",
+      "query_intent": "User is searching for Tencent's official parental control and child guardian platform '腾讯成长守护' to remotely monitor and limit their child's game time, lock Tencent games, and manage child gaming expenses.",
+      "ad": {
+        "name": "家长守护助手-家长端",
+        "subtitle": "家长助手远程管控定位孩子防手机沉迷引导孩子健康使用手机",
+        "developer": "Amity Zone Technology Co Ltd",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id1668766056)",
+          "note": "家长守护助手 is a third-party parental control app that allows parents to remotely monitor, lock, and manage their child's screen time, GPS location, and app usage."
+        },
+        {
+          "source": "local knowledge",
+          "note": "Both apps are designed for parenting, child monitoring, and screen time locks. Tencent's platform specifically locks Tencent mobile games, whereas this ad is a broader system parental control app that can lock the entire phone. They are highly relevant alternatives in the parental guardian sector."
+        }
+      ],
+      "relationship_analysis": "The query '腾 讯 成 长 守 护' refers to Tencent's official parental control platform for managing child game time. The advertised app '家长守护助手' is a third-party parental control app for managing child mobile screen time and app usage. Since both apps operate in the child digital safety and parental control domain, satisfying the same core parenting intent of preventing mobile/game addiction, the ad represents a highly relevant alternative, making this Good.",
+      "why_not_higher": "They are not exact equivalents. Tencent's tool is a native, platform-specific guardian specifically for Tencent games, while the ad is a general third-party mobile system locking and GPS tracking app.",
+      "why_not_lower": "They target the exact same parental audience and satisfy the same basic need of managing child device limits and preventing screen addiction.",
+      "rating": "Good",
+      "comment": "The query \"腾 讯 成 长 守 护\" refers to Tencent's official parental control platform used by parents to manage their children's game time and expenses across Tencent games. The advertised app \"家长守护助手-家长端\" is a third-party parental control app that allows parents to remotely manage screen time, block apps, and track GPS location. Since both applications serve the identical parenting intent of managing children's digital habits and preventing mobile/game addiction, the ad is a highly relevant alternative. Rated Good.",
+      "pre_submit_checked": true
+    },
+    {
+      "index": 5,
+      "task_id": "688689779",
+      "query": "换 你 助 手",
+      "query_intent": "User is likely searching for '换机助手' (Phone Switch/Clone Assistant) due to a common typing error, which is a technical system utility tool used to migrate data (contacts, photos, messages) from an old phone to a new phone.",
+      "ad": {
+        "name": "红果短剧 - 海量热门短剧随心看",
+        "subtitle": "海量高清短剧视频内容，追剧必备神器app",
+        "developer": "Beijing Bimo Liuxiang Technology Co., Ltd.",
+        "type": "app"
+      },
+      "evidence": [
+        {
+          "source": "App Store listing (id6451407032)",
+          "note": "红果短剧 (now 番茄短剧) is a popular vertical short drama video streaming platform developed by ByteDance."
+        },
+        {
+          "source": "local knowledge",
+          "note": "A phone migration/clone utility is a system utility tool to transfer files. Hongguo is an entertainment video streaming app. There is zero relation between a data migration utility and a short drama streaming app."
+        }
+      ],
+      "relationship_analysis": "The query '换 你 助 手' represents a data migration/phone clone utility tool. The advertised app '红果短剧' is a popular vertical short drama video streaming platform. A technical system utility tool and an entertainment video streaming app serve completely unrelated functional domains, user needs, and use cases. There is no logical connection between data migration and watching online short dramas, so this is Bad.",
+      "why_not_higher": "No functional or contextual relation whatsoever.",
+      "why_not_lower": "Cannot be lower than Bad.",
+      "rating": "Bad",
+      "comment": "The query \"换 你 助 手\" refers to a phone migration or data clone utility tool (commonly \"换机助手\"). The advertised app \"红果短剧 - 海量热门短剧随心看\" is a popular video streaming app specifically for watching vertical short dramas. A technical data transfer system tool and an entertainment video streaming platform satisfy entirely unrelated functional domains and use cases. There is no logical connection, so this is Bad.",
+      "pre_submit_checked": true
+    }
+  ],
+  "pre_submit_verification": {
+    "all_radios_selected": true,
+    "all_comments_present": true,
+    "comments_match_each_task": true,
+    "bad_comments_explain_why": true,
+    "no_required_errors": true,
+    "record_matches_page": true
+  },
+  "submit": {
+    "authorized_by_user": true,
+    "submitted": true,
+    "submitted_at": "2026-06-01T14:14:50",
+    "post_submit_status": "No errors visible"
+  }
+}
