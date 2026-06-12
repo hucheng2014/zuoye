@@ -4,15 +4,15 @@ profile:
   store-fake-ip: true
 external-controller: 0.0.0.0:9090
 secret: ''
-external-ui: /Users/xaa/V2RUI/ui
+external-ui: /home/jianglei/V2RUI/ui
 mixed-port: 7897
 tun:
   auto-redir: true
   enable: true
-  stack: system
+  stack: mixed
   auto-route: true
   auto-detect-interface: true
-  interface-name: en0
+  interface-name: wlp2s0
   dns-hijack:
   - any:53
   - tcp://any:53

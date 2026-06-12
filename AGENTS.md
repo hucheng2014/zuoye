@@ -1,14 +1,18 @@
-# Platform: macOS (Apple Silicon / Intel)
+# Platform: macOS
 
-This workspace has been migrated from Ubuntu Linux to macOS. Key differences:
+This workspace has been migrated from Ubuntu Linux (192.168.50.97) to macOS. Key differences:
 
 - **Home directory**: `/Users/xaa` replaces `/home/jianglei`
 - **Project root**: `/Users/xaa/zuoye`
-- **Docker**: Use Docker Desktop for Mac (no systemd, no nvidia GPU passthrough)
+- **Docker**: Use Docker Desktop for Mac
 - **Shell**: zsh is the default (bash scripts still work via `#!/usr/bin/env bash`)
 - **Package managers**: Use `brew` instead of `apt`
-- **GPU**: No CUDA/nvidia; ML workloads must use CPU or Apple Metal (MPS)
-- **Scripts referencing nvidia-smi, systemctl, /dev/nvme\***: These are Linux-only and won't work on macOS
+
+## Key platform notes
+
+- **FireRedASR**: Runs in **CPU mode** (`firered-use-gpu=0`), not triton_tensorrt. The triton_tensorrt deployment in `putonghuaasr/third_party/FireRedASR/runtime/triton_tensorrt/` is NOT used — it requires nvidia GPU. The actual ASR uses `local_segment_dual_asr.py` with Qwen3-ASR + FireRedASR-AED on CPU.
+- **mihomo (代理)**: Runs on **192.168.5.64** (Ubuntu, `wlp2s0`, `stack: mixed`), NOT on this machine. The `mihomo-full.yaml` in this repo is a copy of that remote config. Do not change it for local macOS use.
+- **Scripts referencing systemctl, /dev/nvme\***: These are Linux-only and won't work on macOS.
 
 # Workspace Browser Automation Rules
 

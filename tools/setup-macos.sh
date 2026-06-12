@@ -41,5 +41,8 @@ else
 fi
 
 echo ""
-echo "==> Environment ready. Project root: $ZUOYE_ROOT"
-echo "==> Run 'docker compose up' in subprojects to start services."
+echo "==> Notes:"
+echo "  - FireRedASR runs in CPU mode (firered-use-gpu=0)"
+echo "  - mihomo proxy runs on 192.168.5.64, not this machine"
+echo "  - Set HTTP_PROXY=http://192.168.5.64:7897 if you need proxy"
+echo "  - Run 'docker compose up' in subprojects to start services"
