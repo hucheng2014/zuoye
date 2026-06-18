@@ -1,0 +1,32 @@
+# config.yaml
+browser:
+  cdp_url: "http://192.168.50.97:9239"
+  annotation_title_contains: "点云语义分割"
+  annotation_url_host: "ui.appen.com.cn"
+
+page:
+  recruitment_id: "70cdad27e3bd477ddbea203017cbae76"
+  step_id: "f4df8436e476999dfc01c001e3892986"
+  template_id: "c06f722e-ae78-4757-9815-27936270c7ca"
+  tdl_id: "e1e275f92655366b8ca77d78a6fa93d2"
+  project_id: "c71cae9a-24c5-4637-9b07-b5f8906f3aec"
+  worker_id: "863abe62-3533-4ddc-b1e7-9a144495fc93"
+  tenant_id: "aaaaaaaa-pppp-pppp-eeee-nnnnnnnnnnnn"
+
+segmentation:
+  ground_height_tolerance: 0.10        # 10cm
+  ransac_max_trials: 100
+  ransac_min_samples: 3
+  ransac_residual_threshold: 0.05      # 5cm initial plane fit
+  roi_distance_front: 50.0             # meters
+  roi_distance_side: 25.0
+  noise_neighbors: 5
+  noise_radius: 0.5                    # meters
+
+heartbeat:
+  interval_seconds: 25
+  move_pixels: 5
+
+logging:
+  screenshot_dir: "logs/screenshots"
+  log_file: "logs/run.log"
