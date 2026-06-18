@@ -16,6 +16,8 @@
   3. 脚本会自动启动 Chrome 并打开做题页面
 """
 
+from __future__ import annotations
+
 import asyncio
 import base64
 import json
@@ -35,8 +37,7 @@ from urllib import error, parse, request
 try:
     import edge_tts
 except ImportError:
-    print("❌ edge-tts not installed. Run: py -m pip install edge-tts")
-    sys.exit(1)
+    edge_tts = None
 
 try:
     from playwright.async_api import TimeoutError as PlaywrightTimeoutError
@@ -72,8 +73,9 @@ if IS_WINDOWS:
 else:
     CHROME_PROFILE = "Default"
 
-# Chrome 远程调试端口
+# Chrome 远程调试端口；如需连接现有 Docker 浏览器，可设置 SPEECH_CDP_URL=http://127.0.0.1:9225
 CHROME_DEBUG_PORT = 9222
+SPEECH_CDP_URL = os.environ.get("SPEECH_CDP_URL", "").strip()
 
 # 做题页面 URL
 TASK_URL = "https://www.tryrating.com/app/survey/rate"
@@ -95,13 +97,14 @@ SOVITS_MIN_DURATION_RATIO = 0.65
 SOVITS_MIN_MEAN_ABS_RATIO = 0.22
 SOVITS_MIN_PEAK_RATIO = 0.25
 SOVITS_POSTPROCESS_GENERATED_AUDIO = True
-SOVITS_POSTPROCESS_FILTER = "afftdn=nf=-20:nt=w"
+SOVITS_POSTPROCESS_FILTER = "highpass=f=80,afftdn=nf=-28:nt=w,lowpass=f=12000"
 SOVITS_REFERENCE_WARN_NOISE_FLOOR_RATIO = 0.03
-SOVITS_OUTPUT_NOISE_FLOOR_RATIO = 0.06
+# 生成音频底噪阈值：原来偏宽松，容易把“有背景沙沙声”的结果放过。
+SOVITS_OUTPUT_NOISE_FLOOR_RATIO = 0.03
 SOVITS_OUTPUT_CONSTANT_NOISE_CV = 0.95
-SOVITS_POSTPROCESS_TRIGGER_NOISE_FLOOR_RATIO = 0.04
-SOVITS_POSTPROCESS_KEEP_MEAN_ABS_RATIO = 0.60
-SOVITS_POSTPROCESS_MIN_NOISE_IMPROVEMENT = 0.18
+SOVITS_POSTPROCESS_TRIGGER_NOISE_FLOOR_RATIO = 0.018
+SOVITS_POSTPROCESS_KEEP_MEAN_ABS_RATIO = 0.45
+SOVITS_POSTPROCESS_MIN_NOISE_IMPROVEMENT = 0.08
 SOVITS_ENGLISH_RESCORING = True
 
 # ASR 模型路径 (跨平台)
@@ -1088,8 +1091,189 @@ def validate_generated_audio(output_path: str, text: str, reference: dict) -> No
         raise RuntimeError("；".join(issues))
 
 
+def _fft_inplace(values: list[complex], invert: bool = False) -> None:
+    """小型纯 Python FFT，作为没有 ffmpeg 时的降噪兜底。"""
+    n = len(values)
+    j = 0
+    for i in range(1, n):
+        bit = n >> 1
+        while j & bit:
+            j ^= bit
+            bit >>= 1
+        j ^= bit
+        if i < j:
+            values[i], values[j] = values[j], values[i]
+
+    length = 2
+    while length <= n:
+        angle = (2 * math.pi / length) * (1 if invert else -1)
+        wlen = complex(math.cos(angle), math.sin(angle))
+        for i in range(0, n, length):
+            w = 1 + 0j
+            half = length // 2
+            for k in range(i, i + half):
+                u = values[k]
+                v = values[k + half] * w
+                values[k] = u + v
+                values[k + half] = u - v
+                w *= wlen
+        length <<= 1
+
+    if invert:
+        for i in range(n):
+            values[i] /= n
+
+
+def _write_mono_wav(path: Path, samples: list[float], sample_rate: int) -> None:
+    import array
+
+    ints = array.array("h")
+    for sample in samples:
+        value = max(-1.0, min(1.0, sample))
+        ints.append(int(round(value * 32767)))
+
+    with wave.open(str(path), "wb") as wf:
+        wf.setnchannels(1)
+        wf.setsampwidth(2)
+        wf.setframerate(sample_rate)
+        wf.writeframes(ints.tobytes())
+
+
+def pure_python_spectral_denoise(input_path: Path, output_path: Path) -> bool:
+    """无 ffmpeg 时使用频谱减法降噪；主要处理 GPT-SoVITS 常见的恒定底噪。"""
+    try:
+        import array
+
+        with wave.open(str(input_path), "rb") as wf:
+            nchannels = wf.getnchannels()
+            sampwidth = wf.getsampwidth()
+            sample_rate = wf.getframerate()
+            frames = wf.getnframes()
+            raw = wf.readframes(frames)
+
+        if sampwidth != 2 or frames <= 0:
+            return False
+
+        pcm = array.array("h")
+        pcm.frombytes(raw)
+        if nchannels > 1:
+            mono = []
+            for index in range(0, len(pcm), nchannels):
+                chunk = pcm[index:index + nchannels]
+                mono.append(sum(chunk) / max(len(chunk), 1) / 32768.0)
+        else:
+            mono = [sample / 32768.0 for sample in pcm]
+
+        if len(mono) < sample_rate * 0.25:
+            return False
+
+        frame_size = 1024
+        hop_size = 256
+        if sample_rate <= 16000:
+            frame_size = 512
+            hop_size = 128
+
+        window = [0.5 - 0.5 * math.cos(2 * math.pi * i / (frame_size - 1)) for i in range(frame_size)]
+        frames_data = []
+        starts = list(range(0, len(mono), hop_size))
+        for start in starts:
+            frame = mono[start:start + frame_size]
+            if len(frame) < frame_size:
+                frame = frame + [0.0] * (frame_size - len(frame))
+            rms = math.sqrt(sum(sample * sample for sample in frame) / frame_size)
+            spectrum = [complex(frame[i] * window[i], 0.0) for i in range(frame_size)]
+            _fft_inplace(spectrum, invert=False)
+            frames_data.append((start, rms, spectrum))
+
+        if not frames_data:
+            return False
+
+        sorted_frames = sorted(frames_data, key=lambda item: item[1])
+        noise_count = max(3, min(len(sorted_frames), int(len(sorted_frames) * 0.22)))
+        noise_frames = sorted_frames[:noise_count]
+        noise_profile = [0.0] * frame_size
+        for _, _, spectrum in noise_frames:
+            for index, value in enumerate(spectrum):
+                noise_profile[index] += abs(value)
+        noise_profile = [value / noise_count for value in noise_profile]
+
+        out = [0.0] * (len(mono) + frame_size)
+        norm = [0.0] * (len(mono) + frame_size)
+        strength = 1.18
+        min_gain = 0.075
+
+        for start, _, spectrum in frames_data:
+            cleaned = []
+            for index, value in enumerate(spectrum):
+                mag = abs(value)
+                if mag <= 1e-12:
+                    cleaned.append(0j)
+                    continue
+                noise_mag = noise_profile[index]
+                gain = 1.0 - strength * noise_mag / mag
+                if mag < noise_mag * 1.8:
+                    gain = min(gain, min_gain)
+                gain = max(min_gain, min(1.0, gain))
+
+                freq = min(index, frame_size - index) * sample_rate / frame_size
+                if freq < 70 or freq > 13500:
+                    gain *= 0.20
+                cleaned.append(value * gain)
+
+            _fft_inplace(cleaned, invert=True)
+            for i in range(frame_size):
+                pos = start + i
+                weighted = cleaned[i].real * window[i]
+                out[pos] += weighted
+                norm[pos] += window[i] * window[i]
+
+        processed = []
+        for i in range(len(mono)):
+            if norm[i] > 1e-8:
+                processed.append(out[i] / norm[i])
+            else:
+                processed.append(out[i])
+
+        # 轻量下扩展：把明显低于语音能量的片段压低，减少句首句尾沙沙声。
+        gate_frame = max(1, int(sample_rate * 0.025))
+        rms_values = []
+        for start in range(0, len(processed), gate_frame):
+            chunk = processed[start:start + gate_frame]
+            if chunk:
+                rms_values.append(math.sqrt(sum(x * x for x in chunk) / len(chunk)))
+        floor = percentile(rms_values, 0.20)
+        speech = max(percentile(rms_values, 0.82), 1e-6)
+        gate_threshold = max(floor * 2.2, speech * 0.035)
+        for start in range(0, len(processed), gate_frame):
+            chunk = processed[start:start + gate_frame]
+            if not chunk:
+                continue
+            rms = math.sqrt(sum(x * x for x in chunk) / len(chunk))
+            if rms < gate_threshold:
+                factor = 0.18 + 0.82 * (rms / max(gate_threshold, 1e-9))
+                for i in range(start, min(start + gate_frame, len(processed))):
+                    processed[i] *= factor
+
+        original_peak = max(max(abs(x) for x in mono), 1e-9)
+        peak = max(max(abs(x) for x in processed), 1e-9)
+        # 频谱减法会降低整体音量；这里按峰值补回，避免后续“人声受损”校验误判。
+        target_peak = min(0.92, original_peak * 0.98)
+        if peak < target_peak:
+            gain = min(3.0, target_peak / peak)
+            processed = [x * gain for x in processed]
+            peak = max(max(abs(x) for x in processed), 1e-9)
+        if peak > 0.98:
+            processed = [x * (0.98 / peak) for x in processed]
+
+        _write_mono_wav(output_path, processed, sample_rate)
+        return True
+    except Exception as exc:
+        print(f"  ⚠️ 内置频谱降噪失败: {exc}")
+        return False
+
+
 def postprocess_generated_audio(output_path: str, reference_stats: dict | None = None) -> None:
-    """对生成结果做一层轻量降噪，降低背景底噪"""
+    """对生成结果做一层降噪，降低背景底噪"""
     if not SOVITS_POSTPROCESS_GENERATED_AUDIO:
         return
 
@@ -1097,39 +1281,43 @@ def postprocess_generated_audio(output_path: str, reference_stats: dict | None =
     if raw_stats["noise_floor_ratio"] <= max(SOVITS_POSTPROCESS_TRIGGER_NOISE_FLOOR_RATIO, noise_floor_limit(reference_stats) * 0.75):
         return
 
-    ffmpeg = resolve_ffmpeg_exe()
-    if not ffmpeg:
-        print("  ⚠️ 未找到 ffmpeg，跳过生成后降噪。")
-        return
-
     src = Path(output_path)
     tmp = src.with_name(f"{src.stem}.post.wav")
-    cmd = [
-        ffmpeg,
-        "-y",
-        "-i",
-        str(src),
-        "-af",
-        SOVITS_POSTPROCESS_FILTER,
-        "-ac",
-        "1",
-        "-ar",
-        "32000",
-        str(tmp),
-    ]
-    result = subprocess.run(
-        cmd,
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.PIPE,
-        text=True,
-        timeout=180,
-    )
-    if result.returncode != 0 or not tmp.exists():
-        if tmp.exists():
-            tmp.unlink(missing_ok=True)
-        err = result.stderr[-400:].strip() if result.stderr else "unknown ffmpeg error"
-        print(f"  ⚠️ 生成后降噪失败，保留原音频: {err}")
-        return
+
+    ffmpeg = resolve_ffmpeg_exe()
+    if ffmpeg:
+        cmd = [
+            ffmpeg,
+            "-y",
+            "-i",
+            str(src),
+            "-af",
+            SOVITS_POSTPROCESS_FILTER,
+            "-ac",
+            "1",
+            "-ar",
+            "32000",
+            str(tmp),
+        ]
+        result = subprocess.run(
+            cmd,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.PIPE,
+            text=True,
+            timeout=180,
+        )
+        if result.returncode != 0 or not tmp.exists():
+            if tmp.exists():
+                tmp.unlink(missing_ok=True)
+            err = result.stderr[-400:].strip() if result.stderr else "unknown ffmpeg error"
+            print(f"  ⚠️ ffmpeg 降噪失败，改用内置频谱降噪: {err}")
+            if not pure_python_spectral_denoise(src, tmp):
+                return
+    else:
+        print("  ⚠️ 未找到 ffmpeg，使用内置频谱降噪。")
+        if not pure_python_spectral_denoise(src, tmp):
+            print("  ⚠️ 内置降噪失败，保留原音频。")
+            return
 
     processed_stats = inspect_wav(tmp)
     raw_noise = noise_severity(raw_stats, reference_stats)
@@ -1174,6 +1362,9 @@ def request_sovits_wav(req_data: dict, output_path: str) -> None:
 
 async def generate_audio_edge(text: str, output_path: str) -> float:
     """备用 Edge-TTS"""
+    if edge_tts is None:
+        print("  ❌ edge-tts not installed. Run: python3 -m pip install edge-tts")
+        return 0
     voice = get_voice(text)
     print(f"  🔊 TTS (Edge): {voice}")
     communicate = edge_tts.Communicate(text, voice, rate=RATE)
@@ -1298,18 +1489,19 @@ JS_INSTALL_HOOK = """
     if (!window._gumHookInstalled) {
         window._gumHookInstalled = true;
         window._originalGUM = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+        window._injectedDuration = 0;
 
+        // Pre-create AudioContext (may start suspended - that's OK)
         const AudioCtxParams = window.AudioContext || window.webkitAudioContext;
         window._sharedAudioContext = new AudioCtxParams();
         window._sharedAudioDest = window._sharedAudioContext.createMediaStreamDestination();
-        window._injectedDuration = 0;
-
-        console.log('[Hook INIT] Shared Audio Context State: ' + window._sharedAudioContext.state);
+        console.log('[Hook] AudioContext pre-created, state: ' + window._sharedAudioContext.state);
 
         window._playInjectedAudio = async (base64string) => {
             try {
+                // Resume if needed (requires user gesture from Record click)
                 if (window._sharedAudioContext.state === 'suspended') {
-                    console.log('[Hook] Resuming AudioContext...');
+                    console.log('[Hook] Resuming suspended AudioContext...');
                     await window._sharedAudioContext.resume();
                 }
 
@@ -1337,7 +1529,7 @@ JS_INSTALL_HOOK = """
         };
 
         navigator.mediaDevices.getUserMedia = async (constraints) => {
-            console.log('[Hook] App requested getUserMedia! returning shared injected stream');
+            console.log('[Hook] App requested getUserMedia, returning shared injected stream');
             if (constraints && constraints.audio) {
                 return window._sharedAudioDest.stream;
             }
@@ -1484,10 +1676,37 @@ async def wait_for_upload_success(page, timeout: int = 10000) -> bool:
 
 
 async def fill_validation(page):
-    """填两个 Yes"""
+    """填两个 Yes — 必须用 Playwright 真实点击，JS 直接改 checked 不会更新 React 状态。"""
+    results = []
     try:
-        results = await page.evaluate(JS_FILL_VALIDATION)
-        return results
+        radios = await page.locator('input[type="radio"]').all()
+        clicked_names: set[str] = set()
+        for radio in radios:
+            value = (await radio.get_attribute("value") or "").strip().lower()
+            name = await radio.get_attribute("name") or ""
+            if value != "yes" or name in clicked_names:
+                continue
+            await radio.click(force=True)
+            clicked_names.add(name)
+            results.append(name)
+            await asyncio.sleep(0.3)
+
+        verified = await page.evaluate(
+            """
+            () => {
+              const groups = new Map();
+              for (const r of document.querySelectorAll('input[type="radio"]')) {
+                const key = r.name || `group-${groups.size}`;
+                if (!groups.has(key)) groups.set(key, false);
+                if ((r.value || '').trim().toLowerCase() === 'yes' && r.checked) {
+                  groups.set(key, true);
+                }
+              }
+              return [...groups.values()].every(Boolean);
+            }
+            """
+        )
+        return results if verified else []
     except Exception:
         return []
 
@@ -1497,6 +1716,11 @@ async def run_single_task(page, task_count: int) -> bool:
     print(f"\n{'=' * 50}")
     print(f"  Task #{task_count}")
     print(f"{'=' * 50}")
+
+    body_text = await page.evaluate("document.body.innerText || ''")
+    if "Speech Human Recording" not in body_text:
+        print("  ⚠️ 当前页面不是 Speech Human Recording，停止，避免误操作其它 TryRating 题型。")
+        return False
 
     utterance = await page.evaluate(JS_READ_UTTERANCE)
     if not utterance:
@@ -1587,7 +1811,9 @@ async def main():
         else:
             print("  ⚠️ 本地 GPT-SoVITS 不可用！由于已禁用 Edge-TTS，脚本将无法生成语音。")
 
-    if not is_port_in_use(CHROME_DEBUG_PORT):
+    if SPEECH_CDP_URL:
+        print(f"  ✅ 使用现有浏览器 CDP: {SPEECH_CDP_URL}")
+    elif not is_port_in_use(CHROME_DEBUG_PORT):
         launch_chrome()
         print("  ⏳ Waiting for Chrome debug port to open...")
         if not wait_for_port(CHROME_DEBUG_PORT, timeout=15):
@@ -1604,7 +1830,7 @@ async def main():
         browser = None
         for attempt in range(5):
             try:
-                browser = await p.chromium.connect_over_cdp(f"http://localhost:{CHROME_DEBUG_PORT}")
+                browser = await p.chromium.connect_over_cdp(SPEECH_CDP_URL or f"http://localhost:{CHROME_DEBUG_PORT}")
                 break
             except Exception as e:
                 if attempt < 4:
