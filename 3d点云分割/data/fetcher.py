@@ -44,8 +44,8 @@ class DataFetcher:
 
         await page.route("**/*", route_handler)
         try:
-            await page.reload(wait_until="load", timeout=60000)
-            for _ in range(30):
+            await page.reload(wait_until="domcontentloaded", timeout=60000)
+            for _ in range(45):
                 await page.wait_for_timeout(1000)
                 if captured_body is not None:
                     break
