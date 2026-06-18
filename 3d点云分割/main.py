@@ -3,8 +3,9 @@ import yaml
 from pathlib import Path
 
 from browser.controller import BrowserController
-from browser.injector import ResultInjector
 from data.fetcher import DataFetcher
+from data.annotation_encoder import build_annotation_result, update_task_data
+from data.submitter import Submitter
 from segmentation.ground_ransac import extract_ground_ransac
 from segmentation.height_filter import classify_by_height
 from segmentation.noise_filter import detect_noise
@@ -33,21 +34,32 @@ async def main():
     logger.info("Connected to browser, page=%s", page.url)
 
     fetcher = DataFetcher(config)
-    injector = ResultInjector(page)
+    submitter = Submitter(config)
 
     heartbeat_task = asyncio.create_task(
         heartbeat_loop(ctrl, config["heartbeat"]["interval_seconds"])
     )
 
     try:
-        for frame_idx in [1, 2]:
+        task_data = await fetcher.fetch_task_data(page)
+        if task_data is None:
+            logger.error("Failed to fetch taskData")
+            raise RuntimeError("TaskData fetch failed")
+
+        annotation_template = await fetcher.fetch_annotation_template(page)
+        if annotation_template is None:
+            logger.error("Failed to fetch annotation template")
+            raise RuntimeError("Annotation template fetch failed")
+
+        labels_by_frame = []
+        for frame_idx in [0, 1]:
             logger.info("Processing frame %s", frame_idx)
             await save_screenshot(page, f"frame_{frame_idx}_start", config["logging"]["screenshot_dir"])
 
             points = None
             for attempt in range(3):
                 try:
-                    points = await fetcher.fetch(page)
+                    points = await fetcher.fetch(page, frame_index=frame_idx)
                     if points is not None:
                         break
                 except Exception as e:
@@ -83,20 +95,21 @@ async def main():
                 int(labels["non_ground"].sum()),
                 int(labels["noise"].sum()),
             )
+            labels_by_frame.append(labels)
 
-            ok = await injector.inject_labels(labels)
-            if not ok:
-                logger.error("Failed to inject labels for frame %s", frame_idx)
-                raise RuntimeError("Injection failed")
-            await save_screenshot(page, f"frame_{frame_idx}_labeled", config["logging"]["screenshot_dir"])
+        category_map = {
+            "ground": "0",
+            "non_ground": "1",
+            "noise": "255",
+        }
+        annotation_result = build_annotation_result(annotation_template, labels_by_frame, category_map)
+        updated_task_data_b64 = update_task_data(task_data, annotation_result)
 
-            if frame_idx == 1:
-                next_btn = page.locator("button.next-frame, [title='下一帧']")
-                if await next_btn.count():
-                    await next_btn.click()
-                    await page.wait_for_timeout(2000)
+        result = await submitter.submit_via_api(page, updated_task_data_b64)
+        if result is None:
+            logger.error("API submit failed, falling back to UI")
+            await submitter.submit_via_ui(page)
 
-        await injector.submit()
         await save_screenshot(page, "submitted", config["logging"]["screenshot_dir"])
         logger.info("Submitted trial")
     except Exception as e:

@@ -5,6 +5,33 @@ from pathlib import Path
 PointCloud = np.ndarray  # shape (N, 3+) with x,y,z in first 3 columns
 
 
+def _struct_code(size: int, pcd_type: str) -> str:
+    if pcd_type == "F":
+        if size == 4:
+            return "f"
+        if size == 8:
+            return "d"
+    elif pcd_type == "U":
+        if size == 1:
+            return "B"
+        if size == 2:
+            return "H"
+        if size == 4:
+            return "I"
+        if size == 8:
+            return "Q"
+    elif pcd_type == "I":
+        if size == 1:
+            return "b"
+        if size == 2:
+            return "h"
+        if size == 4:
+            return "i"
+        if size == 8:
+            return "q"
+    raise ValueError(f"Unsupported PCD field size={size} type={pcd_type}")
+
+
 def parse_pcd_file(path: str) -> PointCloud:
     text = Path(path).read_text(errors="ignore")
     lines = text.splitlines()
@@ -12,35 +39,34 @@ def parse_pcd_file(path: str) -> PointCloud:
     header = lines[:data_start]
     fields = [line.split()[1:] for line in header if line.startswith("FIELDS")][0]
     sizes = [int(x) for x in [line.split()[1:] for line in header if line.startswith("SIZE")][0]]
+    types = [line.split()[1:] for line in header if line.startswith("TYPE")][0]
     counts = [int(x) for x in [line.split()[1:] for line in header if line.startswith("COUNT")][0]]
     width = int([line.split()[1] for line in header if line.startswith("WIDTH")][0])
     data_type = lines[data_start].split()[1]
-    fmt_parts = []
-    for s, c in zip(sizes, counts):
-        if s == 1:
-            code = "b"
-        elif s == 2:
-            code = "h"
-        elif s == 4:
-            code = "f"
-        else:
-            raise ValueError(f"Unsupported size {s}")
-        fmt_parts.append(f"{c}{code}")
-    fmt = "".join(fmt_parts)
 
     if data_type == "ascii":
-        data = np.loadtxt(lines[data_start + 1:], dtype=np.float32)
-    elif data_type == "binary":
-        raw = Path(path).read_bytes()
-        marker = f"DATA {data_type}\n"
-        offset = text.find(marker) + len(marker)
-        total = struct.calcsize(fmt) * width
-        data = np.array(
-            struct.unpack(fmt * width, raw[offset:offset + total]),
-            dtype=np.float32,
-        ).reshape(width, -1)
-    else:
+        data = np.loadtxt(lines[data_start + 1 :], dtype=np.float32)
+        return data[:, :3]
+
+    if data_type != "binary":
         raise ValueError(f"Unsupported PCD DATA type: {data_type}")
+
+    # Build per-point struct format using little-endian byte order (PCD binary is LE on x86).
+    record_fmt = "".join(
+        f"{count}{_struct_code(size, pcd_type)}"
+        for size, pcd_type, count in zip(sizes, types, counts)
+    )
+    record_size = struct.calcsize("<" + record_fmt)
+    total = record_size * width
+
+    raw = Path(path).read_bytes()
+    marker = f"DATA {data_type}\n"
+    offset = text.find(marker) + len(marker)
+    full_fmt = "<" + record_fmt * width
+    data = np.array(
+        struct.unpack(full_fmt, raw[offset : offset + total]),
+        dtype=np.float32,
+    ).reshape(width, -1)
     return data[:, :3]
 
 
