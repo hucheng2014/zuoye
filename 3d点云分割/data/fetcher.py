@@ -2,7 +2,7 @@ import json
 import base64
 import urllib.request
 from pathlib import Path
-from typing import Optional, List, Dict, Tuple
+from typing import Optional, List, Dict
 from playwright.async_api import Page
 
 import numpy as np
@@ -17,29 +17,46 @@ class DataFetcher:
         self._pcd_urls: Optional[List[str]] = None
 
     async def fetch_task_data(self, page: Page) -> Optional[dict]:
-        """Fetch and decode taskData from /api/v1/tdl using browser credentials."""
+        """Fetch and decode taskData from /api/v1/tdl using browser credentials.
+
+        Uses Playwright route interception to capture the page's own API call,
+        which carries the correct cookies and headers.
+        """
         if self._task_data is not None:
             return self._task_data
+
         c = self.config["page"]
-        url = (
-            f"https://ui.appen.com.cn/api/v1/tdl?"
-            f"stepId={c['step_id']}&pageIndex=0&pageSize=1&"
-            f"tdlId={c['tdl_id']}&workerId={c['worker_id']}&"
-            f"projectId={c['project_id']}&dataSource=TDL&"
-            f"recruitmentId={c['recruitment_id']}&templateId={c['template_id']}&"
-            f"isRecruitmentCommonConfig="
-        )
+        api_url_marker = "/api/v1/tdl?"
+
+        captured_body: Optional[bytes] = None
+
+        async def route_handler(route, request):
+            nonlocal captured_body
+            if api_url_marker in request.url and "submit" not in request.url:
+                try:
+                    response = await route.fetch()
+                    captured_body = await response.body()
+                    await route.fulfill(response=response)
+                except Exception:
+                    await route.continue_()
+            else:
+                await route.continue_()
+
+        await page.route("**/*", route_handler)
         try:
-            resp = await page.evaluate(
-                f"""async () => {{
-                    const r = await fetch("{url}", {{credentials: "include"}});
-                    const text = await r.text();
-                    return {{status: r.status, text: text}};
-                }}"""
-            )
-            if resp.get("status") != 200:
-                return None
-            api_data = json.loads(resp["text"])
+            await page.reload(wait_until="load", timeout=60000)
+            for _ in range(30):
+                await page.wait_for_timeout(1000)
+                if captured_body is not None:
+                    break
+        finally:
+            await page.unroute("**/*", route_handler)
+
+        if captured_body is None:
+            return None
+
+        try:
+            api_data = json.loads(captured_body.decode("utf-8"))
             task_data_b64 = api_data.get("taskData")
             if not task_data_b64:
                 return None
