@@ -116,3 +116,4 @@ postgres_data/
 # Trae/Cursor IDE
 .trae/
 .cursor/
+.worktrees/
