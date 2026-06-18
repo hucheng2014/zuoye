@@ -46,6 +46,7 @@ services:
       - ${HOST_AD_DIR:-/Users/xaa/zuoye/oneform/AD}:/app/AD:rw
       - ${HOST_ADJIAN_DIR:-/Users/xaa/zuoye/oneform/ADJIAN}:/app/ADJIAN:rw
       - ${HOST_RQOAE_DIR:-/Users/xaa/zuoye/oneform/RQOAE}:/app/RQOAE:rw
+      - ${HOST_TOOLS_DIR:-/Users/xaa/zuoye/oneform/tools}:/app/tools:rw
     mem_limit: 4g
     restart: unless-stopped
 
