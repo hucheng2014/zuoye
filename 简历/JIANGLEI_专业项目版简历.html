@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>蒋磊 · 专业项目版简历</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --line: #d8d8d8;
+    --accent: #1f4e79;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    font: 11.5pt/1.55 "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #fff;
+  }
+  .page {
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 14mm 16mm 16mm;
+  }
+  h1 {
+    margin: 0 0 4px;
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 10pt;
+    margin-bottom: 10px;
+  }
+  .meta span { margin-right: 1.2em; }
+  h2 {
+    margin: 14px 0 8px;
+    font-size: 12pt;
+    color: var(--accent);
+    border-bottom: 1.5px solid var(--accent);
+    padding-bottom: 3px;
+    letter-spacing: 0.06em;
+  }
+  h3 {
+    margin: 10px 0 4px;
+    font-size: 11pt;
+  }
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: baseline;
+  }
+  .job-head .time { color: var(--muted); font-size: 10pt; white-space: nowrap; }
+  p { margin: 4px 0 6px; }
+  ul { margin: 4px 0 8px; padding-left: 1.2em; }
+  li { margin: 2px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10pt;
+    margin: 6px 0 8px;
+  }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 5px 8px;
+    vertical-align: top;
+    text-align: left;
+  }
+  th { background: #f3f6f9; color: var(--accent); width: 18%; }
+  .summary { color: #222; }
+  .note {
+    margin-top: 12px;
+    font-size: 9pt;
+    color: var(--muted);
+  }
+  @media print {
+    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .page { padding: 10mm 12mm; }
+    h2 { break-after: avoid; }
+    h3, .job-head { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <h1>蒋磊</h1>
+    <div class="meta">
+      <span>求职方向：AI 数据标注 / 质检工程 / 标注流程自动化</span>
+      <span>工作时段：2026.04 — 2026.08</span>
+      <span>联系方式：（请按原简历补填）</span>
+    </div>
+
+    <h2>专业摘要</h2>
+    <p class="summary">专注 AI 训练数据生产链路中的标注、质检与流程自动化。能独立消化标注规范，设计「模型辅助 + 规则校验 + 人工复核 + 安全提交」闭环；熟练使用 Python、本地 ASR/Whisper、Playwright/CDP、Docker 受控浏览器，在语音、多模态、广告相关性、道路视觉、Agent 轨迹等场景中完成规模化交付与质量门禁落地。</p>
+
+    <h2>技能清单</h2>
+    <table>
+      <tr><th>标注与质检</th><td>ASR 转写与 ITN、方言正字、音频 Caption、搜索广告相关性、关键词 Broad Match、AI 回答多维评估、偏好排序、校对 Eval、道路 Bounding Box、3D 点云分割、Agent 行为标签质检</td></tr>
+      <tr><th>自动化工程</th><td>Python、Playwright / Chrome CDP、Docker + noVNC 受控浏览器、页面回填与刷新复验、提交前硬门禁、批量流水线编排</td></tr>
+      <tr><th>语音与模型</th><td>Qwen3-ASR、FireRedASR-AED、Faster-Whisper、Fun-ASR 方言模型；双模型交叉复核、增益/能量分析、幻觉与空识别排查</td></tr>
+      <tr><th>工程协作</th><td>规则 SOP 沉淀、知识库按需检索、运行记录与批次校验、结构化任务填报自动化</td></tr>
+    </table>
+
+    <h2>工作经历</h2>
+    <div class="job-head">
+      <h3>AI 数据标注与质检工程师（项目制）</h3>
+      <span class="time">2026.04 — 2026.08</span>
+    </div>
+    <p>负责多条 AI 数据生产与评测任务的规范落地、质量把关与工具链建设。不依赖平台「一键自动标注」，坚持本地模型 / 规则双轨验证；所有可重复写操作走脚本，提交前必须通过回填持久化校验。</p>
+    <ul>
+      <li>搭建普通话 ASR 双模型分段复核链路，覆盖分类标签、静音无效题、短音频幻觉抑制与标点规范。</li>
+      <li>建设 Docker 化受控浏览器集群（多 CDP 端口隔离），统一「巡检 → 生产脚本填写 → 安全提交」工作流。</li>
+      <li>在广告相关性、Broad Match、AI 回答评估、音频质量、道路渲染、认证 Eval 等任务中沉淀 SOP 与离线校验器。</li>
+      <li>完成 3D 点云试标题几何分割自动化，以及代码生成试标多模型 Rollout 的记录、自检与结构化提交。</li>
+    </ul>
+
+    <h2>项目经历</h2>
+
+    <div class="job-head">
+      <h3>1. 普通话 ASR 标注与双模型质检自动化</h3>
+      <span class="time">2026.05 — 2026.08</span>
+    </div>
+    <ul>
+      <li>Qwen3-ASR + FireRedASR-AED 双路识别，结合备注与能量分析判定 SC / SA / BS。</li>
+      <li>禁止依赖页面自动标注；短音频重点排查复读幻觉与空识别。</li>
+      <li>实现「填写 → 保存等待 → 刷新复验 → 行级一致性硬校验」后才允许提交。</li>
+    </ul>
+
+    <div class="job-head">
+      <h3>2. 河南话方言 ASR 与正字表辅助标注</h3>
+      <span class="time">2026.04 — 2026.05</span>
+    </div>
+    <ul>
+      <li>落地方言 ASR 本地推理与正字表结构化缓存，支撑离线对照与半自动标注。</li>
+    </ul>
+
+    <div class="job-head">
+      <h3>3. 英语 TTS / 语音标注复核工作流</h3>
+      <span class="time">2026.04 — 2026.05</span>
+    </div>
+    <ul>
+      <li>基于 Faster-Whisper（large-v3 / medium）离线识别与交叉比对，结合判噪与标准图固化工作流。</li>
+    </ul>
+
+    <div class="job-head">
+      <h3>4. 多任务评估与认证质检（Oneform 体系）</h3>
+      <span class="time">2026.05 — 2026.08</span>
+    </div>
+    <ul>
+      <li>搜索广告相关性、Broad Match、AI 助手 5+1 维评估、音频编辑/过渡质量、道路 Bounding Box、容器 ASR 标注。</li>
+      <li>认证类：中文校对 Eval、投票生成评估、文生图背景质量、邮件智能回复、偏好排序认证等。</li>
+      <li>统一独立判断、禁止模板批量判分；建设知识库查询与流水线编排，提交前复检。</li>
+    </ul>
+
+    <div class="job-head">
+      <h3>5. 视频音频字幕（Audio Caption）标注自动化</h3>
+      <span class="time">2026.06 — 2026.07</span>
+    </div>
+    <ul>
+      <li>当前页动态任务数抽取 → 离线 Caption → 定向复核 → 回填 reload 校验 → 预检后提交。</li>
+    </ul>
+
+    <div class="job-head">
+      <h3>6. Agent 行为标签质检</h3>
+      <span class="time">2026.06 — 2026.07</span>
+    </div>
+    <ul>
+      <li>复核 Agent 轨迹正/负向标签与 0–5 质量分；与机标不一致时写清依据。</li>
+    </ul>
+
+    <div class="job-head">
+      <h3>7. 3D 点云分割试标题自动化</h3>
+      <span class="time">2026.06 — 2026.07</span>
+    </div>
+    <ul>
+      <li>CDP 抓取点云，RANSAC 地面 + 高度/噪声滤波，编码提交；含心跳防掉线与截图留证。</li>
+    </ul>
+
+    <div class="job-head">
+      <h3>8. 代码生成试标与多模型 Rollout 评估</h3>
+      <span class="time">2026.06 — 2026.07</span>
+    </div>
+    <ul>
+      <li>多 Prompt × 多模型 rollout、评分规则执行、批处理流水线与结构化任务组提交。</li>
+    </ul>
+
+    <div class="job-head">
+      <h3>9. 多模态任务浏览器自动化底座</h3>
+      <span class="time">2026.06 — 2026.08</span>
+    </div>
+    <ul>
+      <li>Docker + noVNC + CDP 隔离；巡检与生产提交解耦，降低误提交风险。</li>
+    </ul>
+
+    <div class="job-head">
+      <h3>10. 量化交易研究环境（个人技术项目）</h3>
+      <span class="time">2026.05 — 2026.06</span>
+    </div>
+    <ul>
+      <li>Freqtrade/FreqAI 容器化、配置隔离与快照备份恢复（非对外商业交付）。</li>
+    </ul>
+
+    <h2>工作方式</h2>
+    <ul>
+      <li>规范优先：先读 SOP，不确定即查库或上报。</li>
+      <li>证据驱动：模型输出、页面状态、规则条文交叉一致才定稿。</li>
+      <li>提交门禁：刷新复验失败禁止提交；关键逻辑脚本化可复现。</li>
+    </ul>
+
+    <p class="note">说明：本版仅收录已做项目，不出现具体公司 / 商业平台名称。联系方式与教育背景请从个人底稿补全。时间依据各项目文档与任务批次日期，工作经历统一至 2026 年 8 月。</p>
+  </div>
+</body>
+</html>
