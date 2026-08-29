@@ -117,3 +117,6 @@ postgres_data/
 .trae/
 .cursor/
 .worktrees/
+
+# 含未脱敏原件，不入库
+简历/原件/*.pdf

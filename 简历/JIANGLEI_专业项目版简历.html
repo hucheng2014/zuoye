@@ -2,201 +2,124 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>姜磊 · 专业项目版简历</title>
+<title>姜磊 · 简历</title>
 <style>
-  :root {
-    --ink: #1a1a1a;
-    --muted: #555;
-    --line: #d8d8d8;
-    --accent: #1f4e79;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    color: var(--ink);
-    font: 11.5pt/1.55 "Source Han Sans SC", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
-    background: #fff;
-  }
-  .page {
-    max-width: 210mm;
-    margin: 0 auto;
-    padding: 14mm 16mm 16mm;
-  }
-  h1 {
-    margin: 0 0 4px;
-    font-size: 22pt;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    color: var(--accent);
-  }
-  .meta {
-    color: var(--muted);
-    font-size: 10pt;
-    margin-bottom: 10px;
-  }
-  .meta span { margin-right: 1.2em; }
-  h2 {
-    margin: 14px 0 8px;
-    font-size: 12pt;
-    color: var(--accent);
-    border-bottom: 1.5px solid var(--accent);
-    padding-bottom: 3px;
-    letter-spacing: 0.06em;
-  }
-  h3 {
-    margin: 10px 0 4px;
-    font-size: 11pt;
-  }
-  .job-head {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    align-items: baseline;
-  }
-  .job-head .time { color: var(--muted); font-size: 10pt; white-space: nowrap; }
-  p { margin: 4px 0 6px; }
-  ul { margin: 4px 0 8px; padding-left: 1.2em; }
-  li { margin: 2px 0; }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 10pt;
-    margin: 6px 0 8px;
-  }
-  th, td {
-    border: 1px solid var(--line);
-    padding: 5px 8px;
-    vertical-align: top;
-    text-align: left;
-  }
-  th { background: #f3f6f9; color: var(--accent); width: 18%; }
-  .summary { color: #222; }
-  .note {
-    margin-top: 12px;
-    font-size: 9pt;
-    color: var(--muted);
-  }
-  @media print {
-    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    .page { padding: 10mm 12mm; }
-    h2 { break-after: avoid; }
-    h3, .job-head { break-after: avoid; }
-  }
+  :root { --ink:#1a1a1a; --muted:#555; --line:#cfd6de; --acc:#1d4f7a; --hi:#fff8e8; }
+  * { box-sizing:border-box; }
+  body { margin:0; color:var(--ink); font:10.3pt/1.42 "Source Han Sans SC","Noto Sans CJK SC","PingFang SC","Microsoft YaHei",sans-serif; }
+  .page { max-width:210mm; margin:0 auto; padding:10mm 12mm 9mm; }
+  h1 { margin:0; font-size:19pt; letter-spacing:.12em; color:var(--acc); }
+  .sub { color:var(--acc); font-size:10.5pt; font-weight:600; margin:2px 0 3px; }
+  .meta { color:var(--muted); font-size:8.8pt; margin-bottom:6px; }
+  h2 { margin:8px 0 4px; font-size:10.6pt; color:var(--acc); border-bottom:1.6px solid var(--acc); padding-bottom:2px; letter-spacing:.07em; }
+  h3 { margin:6px 0 2px; font-size:10.1pt; }
+  .row { display:flex; justify-content:space-between; gap:8px; align-items:baseline; }
+  .time { color:var(--muted); font-size:8.7pt; white-space:nowrap; }
+  p { margin:2px 0 4px; }
+  ul { margin:1px 0 5px; padding-left:1.12em; }
+  li { margin:1px 0; }
+  table { width:100%; border-collapse:collapse; font-size:8.8pt; margin:3px 0 5px; }
+  th,td { border:1px solid var(--line); padding:3px 6px; vertical-align:top; text-align:left; }
+  th { background:#f2f6fa; color:var(--acc); font-weight:600; }
+  .align th { width:22%; }
+  .tag { color:var(--acc); font-weight:600; font-size:8.6pt; }
+  .job { margin:3px 0 5px; }
+  .muted { color:var(--muted); font-size:8.6pt; }
+  @media print { body { -webkit-print-color-adjust:exact; print-color-adjust:exact; } .page { padding:8mm 10mm; } h2,h3,.row { break-after:avoid; } }
 </style>
 </head>
 <body>
-  <div class="page">
-    <h1>姜磊</h1>
-    <div class="meta">
-      <span>求职方向：AI 数据标注 / 数据质检 / 语音与多模态评测</span>
-      <span>工作时段：2026.04 — 2026.08</span>
-      <span>联系方式：13103605150</span>
-    </div>
+<div class="page">
+  <h1>姜磊</h1>
+  <div class="sub">算法开发｜数据工程｜量化策略研发</div>
+  <div class="meta">近 12 个月持续亲手编写 SQL、算法与策略代码，直接对纸交易 / 实盘运行结果负责<br>
+  电话 13103605150　邮箱 49985974@qq.com　现居 广东深圳　材料已脱敏，不含任职单位与商业平台名称</div>
 
-    <h2>专业摘要</h2>
-    <p class="summary">具备 AI 训练数据生产全流程经验，覆盖语音转写、方言正字、音频字幕、搜索广告相关性、关键词匹配、助手回答评估、道路视觉与点云标注、Agent 轨迹质检等场景。熟悉标注规范解读与落地，注重证据交叉核对与交付前复核，能稳定产出高质量标注与评测结果。</p>
+  <h2>与访谈方向对齐的实操能力（本人已做过）</h2>
+  <table class="align">
+    <tr><th>招募关注点</th><th>本人对应实操</th></tr>
+    <tr><td>量化交易开发</td><td>自研 RL 策略与环境，跑通训练/回测/纸交易/实盘监控；开源仓完成 A 股双均线回测与多智能体交易回放复现</td></tr>
+    <tr><td>数据工程开发</td><td>行情落地、成交/订单入 PostgreSQL、纸交易与实盘分库、SQL 复盘、快照备份恢复</td></tr>
+    <tr><td>近 12 个月写代码</td><td>持续编写策略、RL 环境、Walk-forward、SQL、监控与审计脚本，非纯管理/文职</td></tr>
+    <tr><td>线上/实盘结果</td><td>容器内交易进程运行；接口巡检持仓与成交；决策审计 raw→sanitized→final；故障日志告警</td></tr>
+    <tr><td>同类核心项目 ≥2</td><td>① RL 量化交易系统　② A 股策略回测（开源仓）　③ 多智能体交易回放（开源仓）</td></tr>
+    <tr><td>能讲全流程</td><td>各项目按「工作内容 / 技术选型 / 关键决策 / 落地成果 / 优化思路」组织，可当面复述</td></tr>
+  </table>
 
-    <h2>技能清单</h2>
-    <table>
-      <tr><th>语音标注</th><td>普通话 / 方言 ASR 转写、ITN 与标点规范、静音与噪声判定、音频字幕（Caption）、过渡与编辑听感评估</td></tr>
-      <tr><th>文本与广告评测</th><td>搜索广告相关性、Broad Match 意图匹配、中文校对、偏好排序、邮件回复质量评估</td></tr>
-      <tr><th>视觉与多模态</th><td>道路 Bounding Box 质量判定、3D 点云地面/非地面分割标注、文生图背景质量对比</td></tr>
-      <tr><th>质量方法</th><td>规范 SOP 执行、双模型交叉复核、能量/增益辅助听辨、批次记录与交付前一致性检查</td></tr>
-      <tr><th>工具基础</th><td>Python、本地 ASR（Qwen3-ASR、FireRedASR、Whisper、Fun-ASR）、常用办公与协作文档</td></tr>
-    </table>
+  <h2>职业概述</h2>
+  <p>软件技术大专出身。近年独立落地量化交易与数据工程：亲手写策略、算法和 SQL，并对纸交易/实盘运行结果负责；同时建设语音、字幕、点云等数据生产与质检链路。</p>
 
-    <h2>工作经历</h2>
-    <div class="job-head">
-      <h3>数据标注与质检工程师</h3>
-      <span class="time">2026.04 — 2026.08</span>
-    </div>
-    <p>负责多条 AI 数据标注与评测任务的规范执行、质量把关与结果交付。严格按官方教程与 SOP 独立判断，交付前完成标签、文本与页面一致性复核。</p>
-    <ul>
-      <li>普通话与方言语音转写、分类标签判定及字幕撰写；本地识别结果仅作辅助对照，不以单一模型输出直接定稿。</li>
-      <li>搜索广告、关键词匹配、助手回答等多维评测，按意图与事实核查独立打分并撰写依据。</li>
-      <li>道路渲染、点云分割等视觉类标注与问题分级；Agent 行为轨迹标签与质量分人工复核。</li>
-      <li>参与试标与认证类任务（校对、投票生成、文生图、偏好排序等），按时长与完整度要求完成交付。</li>
-    </ul>
+  <h2>核心能力</h2>
+  <table>
+    <tr><th>策略与算法代码</th><td>Freqtrade / FreqAI、PureRL_FullAuto、MyRLEnv_FullAuto、Walk-forward、Lookahead / Recursive；双均线交叉策略；RANSAC 点云分割</td></tr>
+    <tr><th>SQL 与数据工程</th><td>PostgreSQL 查询成交/订单/持仓；OHLCV 清洗与前复权；纸交易库与实盘库隔离；库导出快照与回滚</td></tr>
+    <tr><th>实盘/纸交易交付</th><td>Docker 编排交易进程；按分钟巡检接口与持仓；决策审计与异常告警；收益、回撤、Sharpe、Sortino 汇总</td></tr>
+    <tr><th>数据质检</th><td>文本 / 语音 / 音视频 / 页面 / 代码结果核验；规则拆解、独立复核、异常归因</td></tr>
+  </table>
 
-    <h2>项目经历</h2>
+  <h2>核心项目</h2>
 
-    <div class="job-head">
-      <h3>1. 普通话语音转写与质检</h3>
-      <span class="time">2026.05 — 2026.08</span>
-    </div>
-    <ul>
-      <li>完成 SC / SA / BS 分类；可转写文本补全合理中文标点。</li>
-      <li>短音频、低音量场景结合增益与能量分析，排除空识别与复读类误判。</li>
-      <li>静音或无效音频按无效题处理；交付前核对分段、标签与文本一致。</li>
-    </ul>
+  <div class="row"><h3>1. 强化学习量化交易系统（FreqAI RL）</h3><span class="time">2025.10 — 2026.08</span></div>
+  <div class="tag">量化交易 · 数据工程 · 实盘/纸交易　｜　独立负责策略、SQL、评估与运行结果</div>
+  <ul>
+    <li><b>工作内容：</b>编写策略 PureRL_FullAuto 与 RL 环境 MyRLEnv_FullAuto；容器拉起交易进程与 PostgreSQL；纸交易与实盘配置及数据库隔离；SQL 查成交、订单、开仓状态。</li>
+    <li><b>技术选型：</b>FreqAI 强化学习；K 线 feather 落地；Walk-forward 按周切窗，对比 from-scratch 与 continual learning，多种子重复。</li>
+    <li><b>关键决策：</b>回测关闭 live-only 状态增强，避免评估与实盘错配；上线前 lookahead / recursive；巡检无效 logits、时间戳漂移、限流、库损坏。</li>
+    <li><b>落地与优化：</b>训练/回测 → 偏差检查 → 指标汇总 → 纸交易观察 → 实盘监控；审计 raw / sanitized / final action；备份含库导出，可按快照回滚。</li>
+  </ul>
 
-    <div class="job-head">
-      <h3>2. 河南话方言转写与正字对照</h3>
-      <span class="time">2026.04 — 2026.05</span>
-    </div>
-    <ul>
-      <li>依据方言正字表完成转写与用字核对，整理正字条目与批次记录。</li>
-    </ul>
+  <div class="row"><h3>2. A 股策略回测（GitHub 开源仓 backtesting.py）</h3><span class="time">2026.03</span></div>
+  <div class="tag">策略代码 · 行情数据工程　｜　亲自改策略、接行情、跑回测</div>
+  <ul>
+    <li><b>工作内容：</b>双均线交叉（金叉开仓、死叉平仓）；A 股日线拉取、字段映射与数值化；输出收益、回撤、胜率等统计。</li>
+    <li><b>技术选型 / 决策：</b>事件驱动回测；前复权日线；佣金万三、新信号覆盖旧订单。不用内置外盘样例，改为 A 股行情以贴近国内成本。</li>
+    <li><b>落地与优化：</b>可复现策略脚本 + 回测统计；策略与取数拆分目录，便于换标的、换周期。</li>
+  </ul>
 
-    <div class="job-head">
-      <h3>3. 英语语音标注与文本复核</h3>
-      <span class="time">2026.04 — 2026.05</span>
-    </div>
-    <ul>
-      <li>英语相关音频听写、文本复核与噪声判定；对照标准图与听感结论定稿。</li>
-    </ul>
+  <div class="row"><h3>3. 多智能体交易回放（GitHub 开源仓 AI-Trader）</h3><span class="time">2025.10 — 2026.03</span></div>
+  <div class="tag">量化研究复现　｜　公开框架本地搭建，非自研产品</div>
+  <ul>
+    <li>日线行情获取与合并、回放服务、多智能体同期仿真、绩效统计；历史回放带防未来信息过滤，成交持仓 JSONL 留存。</li>
+    <li>讲清仿真回放与交易所订单链路差异；可将记账/风控字段迁到自有 RL 审计日志。</li>
+  </ul>
 
-    <div class="job-head">
-      <h3>4. 广告与助手类多维评测</h3>
-      <span class="time">2026.05 — 2026.08</span>
-    </div>
-    <ul>
-      <li>搜索广告相关性、Broad Match、助手回答多维评分、音频编辑/过渡质量、道路 Bounding Box。</li>
-      <li>认证类：中文校对、投票生成、文生图背景质量、邮件回复、偏好排序等。</li>
-      <li>每题独立研究与判断，不套用模板结论。</li>
-    </ul>
+  <div class="row"><h3>4. 语音与字幕数据生产链路</h3><span class="time">2026.04 — 2026.08</span></div>
+  <ul>
+    <li>分段转写、方言正字、字幕时间戳与听感复核；双模型交叉对照，识别只作辅助。短音频/静音分类；交付前刷新复核。</li>
+  </ul>
 
-    <div class="job-head">
-      <h3>5. 视频音频字幕（Audio Caption）</h3>
-      <span class="time">2026.06 — 2026.07</span>
-    </div>
-    <ul>
-      <li>撰写符合规范的字幕文本，覆盖时间戳、语种与音效相关规则；存疑条目二次听校后交付。</li>
-    </ul>
+  <div class="row"><h3>5. 3D 点云分割算法</h3><span class="time">2026.06</span></div>
+  <ul>
+    <li>RANSAC 地面拟合 + 高度阈值 + 噪声过滤；解析 PCD/BIN/LAS 并编码。优先可解释几何分割，保证边界可复盘。</li>
+  </ul>
 
-    <div class="job-head">
-      <h3>6. Agent 行为标签质检</h3>
-      <span class="time">2026.06 — 2026.07</span>
-    </div>
-    <ul>
-      <li>通读轨迹判定正/负向标签与 0–5 质量分；与机标不一致时写明依据。</li>
-    </ul>
+  <div class="row"><h3>6. 前端页面与代码交付质检</h3><span class="time">2026.06 — 2026.08</span></div>
+  <ul>
+    <li>核查渲染、交互与功能完整性；证据与实际运行结果一致，未运行不得记为通过。</li>
+  </ul>
 
-    <div class="job-head">
-      <h3>7. 3D 点云分割标注</h3>
-      <span class="time">2026.06 — 2026.07</span>
-    </div>
-    <ul>
-      <li>完成地面 / 非地面 / 噪声等类别划分；结合平面拟合、高度区间与离群点辅助判断。</li>
-    </ul>
+  <h2>工作经历</h2>
+  <div class="job"><div class="row"><b>数据工程 / 量化策略研发 / 数据质检（项目制）</b><span class="time">2024.12 — 至今</span></div>
+  亲手编写策略、SQL 与评估代码，对纸交易/实盘运行结果负责；同时按项目标准完成数据标注、结果复核与问题反馈。</div>
+  <div class="job"><div class="row"><b>大型农牧企业｜环保员</b><span class="time">2023.10 — 2024.12</span></div>
+  污水、无害化、固废、空气与噪声等合规处理；规范台账与日报、月报。</div>
+  <div class="job"><div class="row"><b>大型农牧企业｜养殖技术员</b><span class="time">2023.01 — 2023.07</span></div>
+  协助办公室、生产与后勤，完成日常执行和异常反馈。</div>
+  <div class="job"><div class="row"><b>大型粮农企业｜养殖技术员</b><span class="time">2021.11 — 2022.04</span></div>
+  母猪饲喂、仔猪接生、栋舍清洁、防疫执行、异常上报与采样。</div>
+  <div class="job"><div class="row"><b>大型农牧企业｜养殖技术员</b><span class="time">2020.12 — 2021.11</span></div>
+  哺乳段母猪及仔猪饲养，支援后勤和配怀相关工作。</div>
+  <div class="job"><div class="row"><b>个体经营</b><span class="time">2012.12 — 2019.03</span></div>
+  服装与餐饮零售：采购、销售、客户服务及日常运营。</div>
+  <div class="job"><div class="row"><b>快递物流企业｜快递员</b><span class="time">2011.01 — 2012.12</span></div>
+  快件收取与配送，保证时效和准确性。</div>
+  <div class="job"><div class="row"><b>连锁餐饮｜服务员 / 骑手</b><span class="time">2008.12 — 2009.12</span></div>
+  餐品制作、配送及高峰期岗位协作。</div>
 
-    <div class="job-head">
-      <h3>8. 代码生成试标与结果评估</h3>
-      <span class="time">2026.06 — 2026.07</span>
-    </div>
-    <ul>
-      <li>按试标规则完成多组输出的记录、评分与材料整理，自检后提交。</li>
-    </ul>
-
-    <h2>工作原则</h2>
-    <ul>
-      <li>规范优先：先读教程与 SOP，不确定则查规则。</li>
-      <li>证据交叉：听感、识别辅助结果与规则条文一致后再定稿。</li>
-      <li>交付复核：提交前核对关键字段完整、一致。</li>
-    </ul>
-
-    <p class="note">姓名：姜磊。不出现具体公司名称。近期项目经历整理至 2026 年 8 月；更早完整工作经历与教育背景待原简历合并补全。</p>
-  </div>
+  <h2>教育经历</h2>
+  <div class="row"><span>河南农业大学　动物医学｜本科</span><span class="time">2022.03 — 2024.07</span></div>
+  <div class="row"><span>重庆信息技术职业学院　软件技术｜大专</span><span class="time">2002.09 — 2005.06</span></div>
+  <p class="muted" style="margin-top:6px;">英语：可阅读常见英文工具界面、技术文档与开源项目说明。</p>
+</div>
 </body>
 </html>
